@@ -1,6 +1,18 @@
 """
 CNCEF Scraper - Chambre Nationale des Conseils Experts Financiers
-Scrapes the directory at https://www.cncef.org/annuaire/ via AJAX pagination.
+Scrapes the directory at https://www.cncef.org/annuaire/ via HTML pagination.
+
+HTML structure (verified April 2026):
+- Grid container: div.annuaire__grid
+- Each card: div.annuaire__item
+  - Name: h2.annuaire__item__name
+  - Location: p.annuaire__item__place  (e.g. "Paris (75)")
+  - Activities: div.annuaire__item__tag-list ul li  (e.g. "Assurance", "Credit", "Patrimoine")
+  - Detail link: div.annuaire__item__bottom a.annuaire__item__button
+- Pagination: ul.pagination
+  - Current: li.current
+  - Next: li.next.btn > a
+  - Pages numbered 1..411
 """
 import logging
 import re
@@ -12,59 +24,120 @@ from .base import fetch, make_member_dict
 logger = logging.getLogger(__name__)
 
 ANNUAIRE_URL = "https://www.cncef.org/annuaire/"
-AJAX_URL = "https://www.cncef.org/wp-admin/admin-ajax.php"
+
+# Map CNCEF activity labels to standard codes
+ACTIVITY_MAP = {
+    "assurance": "COA",
+    "crédit": "IOBSP",
+    "credit": "IOBSP",
+    "patrimoine": "CIF",
+    "expertise financière": "CIF",
+    "expertise financiere": "CIF",
+    "immobilier": "Immobilier",
+    "france m&a": "CIF",
+}
 
 
-def _get_page_html(page_url):
-    """Fetch a page of the directory and return the HTML."""
-    resp = fetch(page_url, delay=0.8)
-    if not resp:
+def _parse_card(card):
+    """Parse a single .annuaire__item card."""
+    name_el = card.select_one(".annuaire__item__name")
+    if not name_el:
         return None
-    return resp.text
+    name = name_el.get_text(strip=True)
+    if not name or len(name) < 2:
+        return None
+
+    # Location: "Paris (75)" or "Isere (38)"
+    place_el = card.select_one(".annuaire__item__place")
+    city = ""
+    department = ""
+    if place_el:
+        place_text = place_el.get_text(strip=True)
+        dept_match = re.search(r'\((\d{2,3})\)', place_text)
+        if dept_match:
+            department = dept_match.group(1)
+            city = re.sub(r'\s*\(\d{2,3}\)\s*', '', place_text).strip()
+        else:
+            city = place_text
+
+    # Activities from tag-list
+    raw_activities = []
+    for li in card.select(".annuaire__item__tag-list li"):
+        text = li.get_text(strip=True)
+        if text:
+            raw_activities.append(text)
+
+    # Map to standard codes
+    activities = []
+    specialties = list(raw_activities)
+    for act in raw_activities:
+        mapped = ACTIVITY_MAP.get(act.lower(), "")
+        if mapped and mapped not in activities:
+            activities.append(mapped)
+
+    # Detail link
+    detail_link = card.select_one("a.annuaire__item__button")
+    detail_url = detail_link.get("href", "") if detail_link else ""
+
+    return {
+        "name": name,
+        "city": city,
+        "department": department,
+        "activities": activities,
+        "specialties": specialties,
+        "detail_url": detail_url,
+    }
 
 
 def _parse_detail_page(url):
-    """Fetch a member detail page and extract additional info."""
+    """Fetch a member detail page for phone/email/website/directors."""
     try:
-        resp = fetch(url, delay=0.8)
+        resp = fetch(url, delay=1.0)
         if not resp:
             return {}
         soup = BeautifulSoup(resp.text, "lxml")
         info = {}
 
-        # Look for phone
+        # Phone
         phone_el = soup.find("a", href=re.compile(r"^tel:"))
         if phone_el:
             info["phone"] = phone_el.get("href", "").replace("tel:", "").strip()
 
-        # Look for email
+        # Email
         email_el = soup.find("a", href=re.compile(r"^mailto:"))
         if email_el:
             info["email"] = email_el.get("href", "").replace("mailto:", "").strip()
 
-        # Look for website
+        # Website
         for a in soup.find_all("a", href=True):
             href = a.get("href", "")
             if href.startswith("http") and "cncef.org" not in href:
                 text = a.get_text(strip=True).lower()
-                if "site" in text or "web" in text or "www" in text:
+                if any(w in text for w in ["site", "web", "www"]) or any(w in href for w in ["www.", ".fr", ".com"]):
                     info["website"] = href
                     break
 
-        # Look for address in text
-        addr_section = soup.find("div", class_=re.compile(r"adresse|address|coordonnees", re.I))
-        if addr_section:
-            text = addr_section.get_text("\n", strip=True)
-            info["address_text"] = text
+        # Address
+        text = soup.get_text(" ", strip=True)
+        pc_match = re.search(r'(\d{5})\s+([A-Z][a-zA-ZÀ-ÿ\s\-]+)', text)
+        if pc_match:
+            info["postal_code"] = pc_match.group(1)
+            info["city"] = pc_match.group(2).strip()
 
-        # Look for directors/dirigeants
-        dirigeant_section = soup.find(string=re.compile(r"Dirigeant|Responsable|Contact", re.I))
-        if dirigeant_section:
-            parent = dirigeant_section.find_parent()
-            if parent:
-                next_el = parent.find_next_sibling()
-                if next_el:
-                    info["director_name"] = next_el.get_text(strip=True)
+        street_match = re.search(r'(\d+[\s,]+(?:rue|avenue|boulevard|place|chemin|impasse|allée|cours)\s+[^,\n]+)', text, re.I)
+        if street_match:
+            info["address_street"] = street_match.group(1).strip()
+
+        # Director
+        dirigeant_match = re.search(
+            r'(?:Dirigeant|Gérant|Président|Contact)\s*:?\s*(.+?)(?:\n|$|Téléphone|Email|Adresse)',
+            text, re.I
+        )
+        if dirigeant_match:
+            d_name = dirigeant_match.group(1).strip()
+            d_name = re.sub(r'\s+', ' ', d_name)
+            if 3 < len(d_name) < 60:
+                info["director_name"] = d_name
 
         return info
     except Exception as e:
@@ -72,62 +145,12 @@ def _parse_detail_page(url):
         return {}
 
 
-def _parse_member_card(card):
-    """Parse a single member card from the directory listing."""
-    member_data = {}
-
-    # Company name - usually in a heading or strong link
-    name_el = card.find(["h2", "h3", "h4", "strong"])
-    if not name_el:
-        name_link = card.find("a")
-        if name_link:
-            name_el = name_link
-    if name_el:
-        member_data["company_name"] = name_el.get_text(strip=True)
-
-    # Detail URL
-    link = card.find("a", href=True)
-    if link:
-        href = link.get("href", "")
-        if href and "cncef.org" in href:
-            member_data["detail_url"] = href
-
-    # Location - look for department code pattern like (75) or (13)
-    card_text = card.get_text(" ", strip=True)
-    dept_match = re.search(r'\((\d{2,3})\)', card_text)
-    if dept_match:
-        member_data["department"] = dept_match.group(1)
-
-    # City
-    location_el = card.find(class_=re.compile(r"location|ville|city|lieu", re.I))
-    if location_el:
-        loc_text = location_el.get_text(strip=True)
-        # Remove department code in parens
-        loc_text = re.sub(r'\(\d{2,3}\)', '', loc_text).strip()
-        member_data["city"] = loc_text
-
-    # Activities/domains - look for badge-like elements
-    activities = []
-    for badge in card.find_all(class_=re.compile(r"badge|tag|domain|activit", re.I)):
-        text = badge.get_text(strip=True)
-        if text and len(text) < 50:
-            activities.append(text)
-    # Also check list items
-    for li in card.find_all("li"):
-        text = li.get_text(strip=True)
-        if text and len(text) < 50:
-            activities.append(text)
-    member_data["activities"] = activities
-
-    return member_data
-
-
 def scrape_cncef(max_pages=500, enrich_details=False):
     """
-    Scrape the CNCEF directory.
+    Scrape the CNCEF directory by paginating through all pages.
 
     Args:
-        max_pages: Maximum pages to scrape (safety limit)
+        max_pages: Maximum pages to scrape (safety limit, total is ~411)
         enrich_details: If True, follow detail links for phone/email (much slower)
 
     Returns:
@@ -136,109 +159,78 @@ def scrape_cncef(max_pages=500, enrich_details=False):
     logger.info("Starting CNCEF scrape...")
     members = []
     seen_names = set()
-
-    # Start with the first page to understand the structure
     page_num = 1
-    base_url = ANNUAIRE_URL
 
     while page_num <= max_pages:
-        if page_num == 1:
-            url = base_url
-        else:
-            url = f"{base_url}page/{page_num}/"
-
-        logger.info(f"CNCEF: Scraping page {page_num}...")
+        url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
+        logger.info(f"CNCEF: page {page_num}...")
 
         try:
-            html = _get_page_html(url)
-            if not html:
+            resp = fetch(url, delay=1.0)
+            if not resp:
                 logger.warning(f"CNCEF: No response for page {page_num}, stopping")
                 break
 
-            soup = BeautifulSoup(html, "lxml")
+            soup = BeautifulSoup(resp.text, "lxml")
 
-            # Find member cards - try common container patterns
-            cards = soup.find_all("article")
+            # Find member cards using the correct CSS selector
+            cards = soup.select("div.annuaire__item")
             if not cards:
-                cards = soup.find_all("div", class_=re.compile(r"member|adherent|result|card|annuaire", re.I))
-            if not cards:
-                # Try finding a results container first
-                container = soup.find("div", class_=re.compile(r"results|listing|annuaire|archive", re.I))
-                if container:
-                    cards = container.find_all("div", recursive=False)
-
-            if not cards:
-                logger.info(f"CNCEF: No cards found on page {page_num}, stopping")
+                logger.info(f"CNCEF: No cards on page {page_num}, stopping")
                 break
 
             page_count = 0
             for card in cards:
-                data = _parse_member_card(card)
-                name = data.get("company_name", "").strip()
-                if not name or name in seen_names:
+                data = _parse_card(card)
+                if not data:
+                    continue
+
+                name = data["name"]
+                if name in seen_names:
                     continue
                 seen_names.add(name)
 
-                # Build member dict
-                city = data.get("city", "")
-                dept = data.get("department", "")
-                postal_code = f"{dept}000" if dept and not city else ""
+                # Enrich from detail page if requested
+                extra = {}
+                if enrich_details and data["detail_url"]:
+                    extra = _parse_detail_page(data["detail_url"])
 
-                activities = []
-                for act in data.get("activities", []):
-                    act_lower = act.lower()
-                    if "patrimoine" in act_lower or "cif" in act_lower:
-                        activities.append("CIF")
-                    elif "assurance" in act_lower:
-                        activities.append("COA")
-                    elif "credit" in act_lower or "iobsp" in act_lower:
-                        activities.append("IOBSP")
-                    elif "immobilier" in act_lower:
-                        activities.append("Immobilier")
-                    else:
-                        activities.append(act)
-
-                extra_info = {}
-                if enrich_details and data.get("detail_url"):
-                    extra_info = _parse_detail_page(data["detail_url"])
+                postal_code = extra.get("postal_code", "")
+                if not postal_code and data["department"]:
+                    postal_code = f"{data['department']}000"
 
                 directors = []
-                if extra_info.get("director_name"):
-                    directors = [{"name": extra_info["director_name"], "role": "Dirigeant"}]
+                if extra.get("director_name"):
+                    directors = [{"name": extra["director_name"], "role": "Dirigeant"}]
 
                 member = make_member_dict(
                     company_name=name,
+                    address_street=extra.get("address_street", ""),
                     postal_code=postal_code,
-                    city=city,
-                    phone=extra_info.get("phone", ""),
-                    email=extra_info.get("email", ""),
-                    website=extra_info.get("website", ""),
-                    activities=list(set(activities)),
-                    specialties=data.get("activities", []),
+                    city=extra.get("city") or data["city"],
+                    phone=extra.get("phone", ""),
+                    email=extra.get("email", ""),
+                    website=extra.get("website", ""),
+                    activities=data["activities"],
+                    specialties=data["specialties"],
                     directors=directors,
                     source="cncef",
-                    source_url=data.get("detail_url", ""),
+                    source_url=data["detail_url"],
                 )
                 members.append(member)
                 page_count += 1
 
-            logger.info(f"CNCEF: Page {page_num} -> {page_count} members")
+            logger.info(f"CNCEF: page {page_num} -> {page_count} new members")
 
-            # Check if there's a next page
-            next_link = soup.find("a", class_=re.compile(r"next", re.I))
-            if not next_link:
-                # Also check for pagination with page numbers
-                pagination = soup.find(class_=re.compile(r"pagination|nav-links", re.I))
-                if pagination:
-                    current = pagination.find(class_=re.compile(r"current|active", re.I))
-                    if current:
-                        next_page = current.find_next_sibling("a")
-                        if not next_page:
-                            break
-                    else:
-                        break
-                else:
-                    break
+            # Check pagination: is there a next page?
+            pagination = soup.select_one("ul.pagination")
+            if not pagination:
+                break
+
+            next_btn = pagination.select_one("li.next a")
+            if not next_btn:
+                # No "Suivant" button = last page
+                break
 
             page_num += 1
 
@@ -247,5 +239,5 @@ def scrape_cncef(max_pages=500, enrich_details=False):
             page_num += 1
             continue
 
-    logger.info(f"CNCEF: Total scraped = {len(members)} members")
+    logger.info(f"CNCEF: Total = {len(members)} members across {page_num} pages")
     return members

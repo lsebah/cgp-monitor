@@ -137,8 +137,8 @@ def _parse_list_items(items):
         if not text or len(text) < 3:
             continue
 
-        # Pattern: "COMPANY NAME (SIREN)"
-        match = re.match(r'^(.+?)\s*\((\d{9,14})\)\s*$', text)
+        # Pattern: "COMPANY NAME ( SIREN )" or "COMPANY NAME (SIREN)"
+        match = re.match(r'^(.+?)\s*\(\s*(\d{9,14})\s*\)\s*$', text)
         if match:
             name = match.group(1).strip()
             siren = match.group(2)
@@ -178,8 +178,8 @@ def _parse_text(text):
         if any(kw in line.lower() for kw in ["anacofi", "connexion", "accueil", "recherche", "menu"]):
             continue
 
-        # Pattern: "COMPANY NAME (SIREN)"
-        match = re.match(r'^[\*\-\s]*(.+?)\s*\((\d{9,14})\)\s*$', line)
+        # Pattern: "COMPANY NAME ( SIREN )" or "COMPANY NAME (SIREN)"
+        match = re.match(r'^[\*\-\s]*(.+?)\s*\(\s*(\d{9,14})\s*\)\s*$', line)
         if match:
             name = match.group(1).strip()
             siren = match.group(2)

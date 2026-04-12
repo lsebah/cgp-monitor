@@ -1,10 +1,54 @@
 {
-  "total_members": 0,
-  "new_today": 0,
-  "new_this_week": 0,
-  "new_this_month": 0,
-  "by_association": {},
-  "by_activity": {},
-  "by_department": {},
-  "last_updated": null
+  "total_members": 3482,
+  "new_today": 3482,
+  "new_this_week": 3482,
+  "new_this_month": 3482,
+  "by_association": {
+    "cncef": 239,
+    "anacofi": 3243
+  },
+  "by_activity": {
+    "COA": 210,
+    "IOBSP": 147,
+    "CIF": 3398,
+    "Immobilier": 96
+  },
+  "by_department": {
+    "75": 48,
+    "69": 19,
+    "33": 16,
+    "92": 13,
+    "44": 11,
+    "13": 8,
+    "37": 7,
+    "78": 7,
+    "01": 7,
+    "34": 6,
+    "35": 4,
+    "17": 3,
+    "06": 3,
+    "60": 3,
+    "94": 3,
+    "86": 3,
+    "73": 3,
+    "85": 3,
+    "14": 3,
+    "87": 3
+  },
+  "total_departments": 58,
+  "scrape_status": {
+    "cncef": {
+      "status": "success",
+      "count": 240
+    },
+    "anacofi": {
+      "status": "success",
+      "count": 3243
+    },
+    "cncgp": {
+      "status": "pending",
+      "count": 0
+    }
+  },
+  "last_updated": "2026-04-12T19:28:06.412902+00:00"
 }

@@ -94,7 +94,7 @@
       "full_name": "Chambre Nationale des Conseils Experts Financiers",
       "website": "https://www.cncef.org",
       "members_approx": 4800,
-      "description": "Syndicat professionnel depuis 1957. CNCEF Patrimoine, Credit, Assurance, Immobilier."
+      "description": "Syndicat professionnel depuis 1957. CNCEF Patrimoine, CNCEF Credit, CNCEF Assurance, CNCEF Immobilier."
     },
     {
       "key": "anacofi",
@@ -102,7 +102,7 @@
       "full_name": "Association Nationale des Conseils Financiers",
       "website": "https://www.anacofi.asso.fr",
       "members_approx": 2750,
-      "description": "Creee en 2004. Plus grande association de CIF. 12000+ professionnels."
+      "description": "Creee en 2004. Plus grande association de CIF en France. 12 000+ professionnels."
     },
     {
       "key": "affo",
@@ -113,5 +113,5 @@
       "description": "Creee en 2001. Multi-family offices, single family offices et experts."
     }
   ],
-  "last_updated": null
+  "last_updated": "2026-04-12T19:28:06.412902+00:00"
 }
