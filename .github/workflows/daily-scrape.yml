@@ -1,0 +1,65 @@
+name: Daily CGP Scrape
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 8:00 AM Paris (UTC+2)
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        working-directory: scraper
+        run: python main.py
+
+      - name: Check for new members
+        id: check_new
+        run: |
+          NEW_COUNT=$(python -c "
+          import json
+          try:
+              d = json.load(open('docs/data/new_members.json'))
+              print(d.get('count', 0))
+          except:
+              print(0)
+          ")
+          echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+          echo "Found $NEW_COUNT new members"
+
+      - name: Send push notification via ntfy.sh
+        if: steps.check_new.outputs.new_count != '0'
+        run: |
+          NEW=${{ steps.check_new.outputs.new_count }}
+          TOTAL=$(python -c "import json; d=json.load(open('docs/data/members.json')); print(d.get('stats',{}).get('total_members',0))")
+          curl -s \
+            -H "Title: ${NEW} nouveau(x) CGP detecte(s)!" \
+            -H "Priority: high" \
+            -H "Tags: office,sparkles" \
+            -H "Click: ${{ vars.PAGES_URL || 'https://lsebah.github.io/cgp-monitor/' }}" \
+            -d "${NEW} nouveau(x) cabinet(s) CGP detecte(s). ${TOTAL} cabinets suivis au total." \
+            https://ntfy.sh/cgp-monitor-cmf
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --staged --quiet || git commit -m "chore: daily scrape $(date -u +%Y-%m-%d)"
+          git push

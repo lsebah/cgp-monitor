@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGP Monitor - Veille CGP France</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>CGP Monitor</h1>
+                <p class="subtitle">Veille cabinets de gestion de patrimoine - France</p>
+            </div>
+            <div class="header-right">
+                <div class="header-meta">
+                    <div class="last-update" id="lastUpdate">Chargement...</div>
+                    <div class="sync-indicator"><span id="syncStatus">Offline</span></div>
+                </div>
+                <div class="header-links">
+                    <button class="profile-link notify-btn" onclick="setupNotifications()">Notif</button>
+                    <a href="data/folk_import.csv" download class="profile-link export-btn">Export Folk</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-number" id="statTotal">-</div>
+            <div class="stat-label">Total CGP</div>
+        </div>
+        <div class="stat-card highlight">
+            <div class="stat-number" id="statNew">-</div>
+            <div class="stat-label">Nouveaux (7j)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="statMonth">-</div>
+            <div class="stat-label">Nouveaux (30j)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="statContacted">0</div>
+            <div class="stat-label">Contactes</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="statAssociations">4</div>
+            <div class="stat-label">Associations</div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+        <button class="tab active" data-tab="dashboard">Dashboard</button>
+        <button class="tab" data-tab="directory">Annuaire <span class="tab-badge" id="badgeTotal"></span></button>
+        <button class="tab" data-tab="alerts">Alertes <span class="tab-badge" id="badgeNew"></span></button>
+        <button class="tab" data-tab="groupements">Groupements</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Dashboard Tab -->
+        <div id="tab-dashboard" class="tab-content active">
+            <!-- Association breakdown -->
+            <div class="assoc-grid" id="assocGrid"></div>
+            <!-- Recent new members -->
+            <h3 class="section-title">Derniers nouveaux CGP detectes</h3>
+            <div class="members-grid" id="recentNew"></div>
+        </div>
+
+        <!-- Directory Tab -->
+        <div id="tab-directory" class="tab-content">
+            <section class="filters">
+                <div class="filter-row">
+                    <input type="text" id="searchInput" placeholder="Rechercher par nom, ville, email..." class="search-input">
+                    <select id="filterAssociation" class="filter-select">
+                        <option value="">Toutes les associations</option>
+                        <option value="cncgp">CNCGP</option>
+                        <option value="cncef">CNCEF</option>
+                        <option value="anacofi">ANACOFI</option>
+                    </select>
+                    <select id="filterDepartment" class="filter-select">
+                        <option value="">Tous les departements</option>
+                    </select>
+                    <select id="filterActivity" class="filter-select">
+                        <option value="">Toutes les activites</option>
+                        <option value="CIF">CIF</option>
+                        <option value="COA">Courtier Assurance (COA)</option>
+                        <option value="IOBSP">IOBSP</option>
+                        <option value="Immobilier">Immobilier</option>
+                    </select>
+                    <label class="toggle-label">
+                        <input type="checkbox" id="filterHideContacted">
+                        Masquer contactes
+                    </label>
+                </div>
+            </section>
+            <div class="members-count" id="membersCount"></div>
+            <div class="members-grid" id="membersGrid"></div>
+            <button class="load-more-btn" id="loadMoreBtn" onclick="loadMore()" style="display:none">Charger plus...</button>
+        </div>
+
+        <!-- Alerts Tab -->
+        <div id="tab-alerts" class="tab-content">
+            <h3 class="section-title">Nouveaux membres detectes</h3>
+            <label class="toggle-label" style="margin-bottom:16px">
+                <input type="checkbox" id="alertsHideContacted">
+                Masquer contactes
+            </label>
+            <div class="members-grid" id="alertsGrid"></div>
+        </div>
+
+        <!-- Groupements Tab -->
+        <div id="tab-groupements" class="tab-content">
+            <h3 class="section-title">Associations professionnelles</h3>
+            <div class="groupements-grid" id="associationsGrid"></div>
+            <h3 class="section-title" style="margin-top:32px">Groupements & Plateformes CGP</h3>
+            <div class="groupements-grid" id="groupementsGrid"></div>
+        </div>
+
+    </main>
+
+    <!-- Notification Modal -->
+    <div id="notifModal" class="modal" style="display:none">
+        <div class="modal-content">
+            <h3>Notifications push</h3>
+            <p>Recevez une alerte a chaque nouveau CGP detecte.</p>
+            <div class="notify-options">
+                <div class="notify-option">
+                    <h4>Via ntfy.sh (mobile + desktop)</h4>
+                    <ol>
+                        <li>Installez <a href="https://ntfy.sh" target="_blank">ntfy.sh</a> sur votre telephone</li>
+                        <li>Abonnez-vous au topic : <code>cgp-monitor-cmf</code></li>
+                    </ol>
+                </div>
+            </div>
+            <button class="modal-close" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CGP Monitor - Capital Management France</p>
+        <p>Donnees: CNCGP, CNCEF, ANACOFI, ORIAS</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

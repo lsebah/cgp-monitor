@@ -1,0 +1,13 @@
+{
+  "name": "CGP Monitor",
+  "short_name": "CGP Monitor",
+  "description": "Veille cabinets de gestion de patrimoine - France",
+  "start_url": "/cgp-monitor/",
+  "display": "standalone",
+  "background_color": "#0f1923",
+  "theme_color": "#2563eb",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

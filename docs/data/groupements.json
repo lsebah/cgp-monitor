@@ -1,0 +1,117 @@
+{
+  "groupements": [
+    {
+      "name": "Crystal / Laplace",
+      "type": "plateforme",
+      "website": "https://groupe-crystal.com/",
+      "description": "Leader du marche, +30 acquisitions. Pole gestion privee Laplace."
+    },
+    {
+      "name": "Nortia (Groupe Apicil)",
+      "type": "plateforme",
+      "website": "https://www.nortia.fr/",
+      "description": "Marketplace patrimoniale, 1000+ CGP partenaires, 13 Mds EUR d'encours."
+    },
+    {
+      "name": "UAF Life Patrimoine",
+      "type": "plateforme",
+      "website": "https://www.uaflifepatrimoine.fr/",
+      "description": "Groupe Credit Agricole / Spirica."
+    },
+    {
+      "name": "Cyrus Conseil / Amplegest",
+      "type": "groupement",
+      "website": "https://www.cyrusconseil.fr/",
+      "description": "Groupe Cyrus: Cyrus Conseil, Amplegest, Octo AM, Eternam."
+    },
+    {
+      "name": "Primonial / Laplace",
+      "type": "plateforme",
+      "website": "https://www.primonial.com/",
+      "description": "Primonial Partenaires / L'Office by Primonial."
+    },
+    {
+      "name": "Consorteo",
+      "type": "groupement",
+      "website": "https://www.consorteo.fr/",
+      "description": "Groupement de CGPI independants."
+    },
+    {
+      "name": "Generali Patrimoine",
+      "type": "assureur",
+      "website": "https://www.generali.fr/",
+      "description": "Plateforme assureur pour CGP."
+    },
+    {
+      "name": "SwissLife Banque Privee",
+      "type": "assureur",
+      "website": "https://www.swisslife-am.com/",
+      "description": "Canal CGPI SwissLife."
+    },
+    {
+      "name": "Abeille Assurances (ex-Aviva)",
+      "type": "assureur",
+      "website": "https://www.abeille-assurances.fr/",
+      "description": "Plateforme assureur."
+    },
+    {
+      "name": "Cardif / BNP Paribas",
+      "type": "assureur",
+      "website": "https://www.cardif.fr/",
+      "description": "Plateforme assurance vie CGPI."
+    },
+    {
+      "name": "Groupe DLPK / Vie Plus",
+      "type": "plateforme",
+      "website": "https://www.dlpk.fr/",
+      "description": "Courtier grossiste, plateforme Vie Plus."
+    },
+    {
+      "name": "Patrimea",
+      "type": "plateforme",
+      "website": "https://www.patrimea.com/",
+      "description": "Plateforme digitale CGP."
+    },
+    {
+      "name": "UCGP",
+      "type": "groupement",
+      "website": "https://www.ucgp.fr/",
+      "description": "Union des Conseils en Gestion de Patrimoine."
+    }
+  ],
+  "associations": [
+    {
+      "key": "cncgp",
+      "name": "CNCGP",
+      "full_name": "Chambre Nationale des Conseillers en Gestion de Patrimoine",
+      "website": "https://www.cncgp.fr",
+      "members_approx": 4200,
+      "description": "Creee en 1978. 6900 adherents individuels, 4200 cabinets."
+    },
+    {
+      "key": "cncef",
+      "name": "CNCEF",
+      "full_name": "Chambre Nationale des Conseils Experts Financiers",
+      "website": "https://www.cncef.org",
+      "members_approx": 4800,
+      "description": "Syndicat professionnel depuis 1957. CNCEF Patrimoine, Credit, Assurance, Immobilier."
+    },
+    {
+      "key": "anacofi",
+      "name": "ANACOFI",
+      "full_name": "Association Nationale des Conseils Financiers",
+      "website": "https://www.anacofi.asso.fr",
+      "members_approx": 2750,
+      "description": "Creee en 2004. Plus grande association de CIF. 12000+ professionnels."
+    },
+    {
+      "key": "affo",
+      "name": "AFFO",
+      "full_name": "Association Francaise du Family Office",
+      "website": "https://www.affo.fr",
+      "members_approx": 120,
+      "description": "Creee en 2001. Multi-family offices, single family offices et experts."
+    }
+  ],
+  "last_updated": null
+}
