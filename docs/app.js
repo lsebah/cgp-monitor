@@ -21,10 +21,13 @@ let allMembers = [];
 let newMembers = [];
 let groupementsData = {};
 let cartoData = null;          // cartographie acteurs (groupements/assos/reseaux/FO)
-let actorsIndex = [];          // flat list of { id, nom, category, tier, ...entity }
+let actorsIndex = [];          // flat list of entities + CGP cabinets
+let actorsDisplayOffset = 0;
 let displayOffset = 0;
 let isSyncing = false;
 let saveTimer = null;
+
+const ACTORS_PAGE_SIZE = 60;
 
 // ============================================================
 // STATUS + FOLK TRACKER (localStorage)
@@ -554,61 +557,84 @@ function actorTier(actorId) {
 
 function buildActorsIndex() {
     actorsIndex = [];
-    if (!cartoData) return;
 
-    // Categories
-    for (const cat of cartoData.categories || []) {
-        for (const e of cat.entites || []) {
-            actorsIndex.push({
-                ...e,
-                _key: `actor:${e.id}`,
-                category_id: cat.id,
-                category_label: cat.label,
-                category_color: cat.couleur,
-                tier: actorTier(e.id),
-            });
+    // 1. Cartographie entities (high-level: associations, groupements, reseaux, FO, plateformes)
+    if (cartoData) {
+        for (const cat of cartoData.categories || []) {
+            for (const e of cat.entites || []) {
+                actorsIndex.push({
+                    ...e,
+                    _type: 'entity',
+                    _key: `actor:${e.id}`,
+                    category_id: cat.id,
+                    category_label: cat.label,
+                    category_color: cat.couleur,
+                    tier: actorTier(e.id),
+                });
+            }
+        }
+        const pd = cartoData.plateformes_distribution;
+        if (pd?.acteurs) {
+            for (const a of pd.acteurs) {
+                const id = (a.nom || '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+                actorsIndex.push({
+                    ...a,
+                    id,
+                    _type: 'entity',
+                    _key: `actor:${id}`,
+                    category_id: 'plateformes',
+                    category_label: 'Plateformes de distribution',
+                    category_color: '#0E7C8A',
+                    tier: actorTier(id),
+                });
+            }
         }
     }
 
-    // Plateformes (synthetic ids)
-    const pd = cartoData.plateformes_distribution;
-    if (pd?.acteurs) {
-        for (const a of pd.acteurs) {
-            const id = (a.nom || '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
-            actorsIndex.push({
-                ...a,
-                id,
-                _key: `actor:${id}`,
-                category_id: 'plateformes',
-                category_label: 'Plateformes de distribution',
-                category_color: '#0E7C8A',
-                tier: actorTier(id),
-            });
-        }
+    // 2. CGP cabinets from members.json
+    for (const m of allMembers) {
+        actorsIndex.push({
+            _type: 'cabinet',
+            _key: m.id,  // no prefix - reuses existing cgp-status keys
+            _member: m,
+            id: m.id,
+            nom: m.company_name,
+            category_id: 'cabinets_cgp',
+            category_label: 'Cabinets CGP',
+            category_color: '#4a9eff',
+            tier: null,
+        });
     }
 
     document.getElementById('badgeActors').textContent = actorsIndex.length || '';
     if (cartoData?.meta?.description) {
         const intro = document.getElementById('actorsIntro');
-        if (intro) intro.textContent = cartoData.meta.description;
+        if (intro) intro.textContent = cartoData.meta.description + ' Inclut egalement les ' + allMembers.length.toLocaleString('fr-FR') + ' cabinets CGP scrapes.';
     }
 }
 
 function populateActorsFilters() {
     const sel = document.getElementById('actorsCategoryFilter');
-    if (!sel || !cartoData) return;
-    // Reset (keep first option)
+    if (!sel) return;
     while (sel.options.length > 1) sel.remove(1);
-    for (const cat of cartoData.categories || []) {
-        const opt = document.createElement('option');
-        opt.value = cat.id;
-        opt.textContent = cat.label;
-        sel.appendChild(opt);
+    if (cartoData) {
+        for (const cat of cartoData.categories || []) {
+            const opt = document.createElement('option');
+            opt.value = cat.id;
+            opt.textContent = cat.label;
+            sel.appendChild(opt);
+        }
+        if (cartoData.plateformes_distribution?.acteurs?.length) {
+            const opt = document.createElement('option');
+            opt.value = 'plateformes';
+            opt.textContent = 'Plateformes de distribution';
+            sel.appendChild(opt);
+        }
     }
-    if (cartoData.plateformes_distribution?.acteurs?.length) {
+    if (allMembers.length) {
         const opt = document.createElement('option');
-        opt.value = 'plateformes';
-        opt.textContent = 'Plateformes de distribution';
+        opt.value = 'cabinets_cgp';
+        opt.textContent = `Cabinets CGP (${allMembers.length.toLocaleString('fr-FR')})`;
         sel.appendChild(opt);
     }
 }
@@ -626,14 +652,28 @@ function getFilteredActors() {
         if (statusFilter === '__none__' && cur) return false;
         if (statusFilter && statusFilter !== '__none__' && cur !== statusFilter) return false;
         if (catFilter && a.category_id !== catFilter) return false;
-        if (tierFilter && a.tier !== tierFilter) return false;
+        if (tierFilter) {
+            if (a._type === 'cabinet') return false; // cabinets have no tier
+            if (a.tier !== tierFilter) return false;
+        }
         if (search) {
-            const haystack = [
-                a.nom, a.nom_complet, a.president, a.directeur_executif,
-                a.cabinet_president, a.actionnaire, a.groupe,
-                a.pertinence_cmf, a.contact_cle, a.notes, a.description,
-                ...(a.statuts || []), ...(a.membres_notables || []),
-            ].filter(Boolean).join(' ').toLowerCase();
+            let haystack;
+            if (a._type === 'cabinet') {
+                const m = a._member;
+                haystack = [
+                    m.company_name, m.address?.city, m.address?.department_name,
+                    m.email, m.phone, m.siren, m.orias_number,
+                    ...(m.directors || []).map(d => d.name),
+                    ...(m.activities || []),
+                ].filter(Boolean).join(' ').toLowerCase();
+            } else {
+                haystack = [
+                    a.nom, a.nom_complet, a.president, a.directeur_executif,
+                    a.cabinet_president, a.actionnaire, a.groupe,
+                    a.pertinence_cmf, a.contact_cle, a.notes, a.description,
+                    ...(a.statuts || []), ...(a.membres_notables || []),
+                ].filter(Boolean).join(' ').toLowerCase();
+            }
             if (!haystack.includes(search)) return false;
         }
         return true;
@@ -643,9 +683,10 @@ function getFilteredActors() {
 function renderActorsStats() {
     const el = document.getElementById('actorsStats');
     if (!el) return;
-    let t1 = 0, t2 = 0, t3 = 0, contacted = 0, pending = 0, refused = 0, folk = 0;
+    let t1 = 0, t2 = 0, t3 = 0, cabinets = 0, contacted = 0, pending = 0, refused = 0, folk = 0;
     for (const a of actorsIndex) {
-        if (a.tier === 'tier1') t1++;
+        if (a._type === 'cabinet') cabinets++;
+        else if (a.tier === 'tier1') t1++;
         else if (a.tier === 'tier2') t2++;
         else if (a.tier === 'tier3') t3++;
         const s = getStatus(a._key);
@@ -658,6 +699,7 @@ function renderActorsStats() {
         <div class="actor-stat-pill tier1">Tier 1 : <b>${t1}</b></div>
         <div class="actor-stat-pill tier2">Tier 2 : <b>${t2}</b></div>
         <div class="actor-stat-pill tier3">Tier 3 : <b>${t3}</b></div>
+        <div class="actor-stat-pill cabinets">Cabinets CGP : <b>${cabinets.toLocaleString('fr-FR')}</b></div>
         <div class="actor-stat-pill pending">En cours : <b>${pending}</b></div>
         <div class="actor-stat-pill contacted">Contactes : <b>${contacted}</b></div>
         <div class="actor-stat-pill refused">Refus : <b>${refused}</b></div>
@@ -665,27 +707,58 @@ function renderActorsStats() {
     `;
 }
 
+function sortActors(list) {
+    // entities first (tier1 > tier2 > tier3 > no tier), then cabinets alpha
+    const tierOrder = { tier1: 0, tier2: 1, tier3: 2 };
+    return [...list].sort((a, b) => {
+        if (a._type !== b._type) return a._type === 'entity' ? -1 : 1;
+        if (a._type === 'entity') {
+            const ta = tierOrder[a.tier] ?? 9;
+            const tb = tierOrder[b.tier] ?? 9;
+            if (ta !== tb) return ta - tb;
+        }
+        return (a.nom || '').localeCompare(b.nom || '');
+    });
+}
+
+function renderOneActor(a) {
+    return a._type === 'cabinet' ? renderMemberCard(a._member) : renderActorCard(a);
+}
+
 function renderActors() {
     if (!actorsIndex.length) return;
     renderActorsStats();
-    const filtered = getFilteredActors();
+    actorsDisplayOffset = 0;
+    const filtered = sortActors(getFilteredActors());
     const grid = document.getElementById('actorsGrid');
     const countEl = document.getElementById('actorsCount');
-    if (countEl) countEl.textContent = `${filtered.length} acteur${filtered.length > 1 ? 's' : ''} affiche${filtered.length > 1 ? 's' : ''} sur ${actorsIndex.length}`;
+    const loadBtn = document.getElementById('actorsLoadMoreBtn');
+
+    if (countEl) countEl.textContent = `${filtered.length.toLocaleString('fr-FR')} acteur${filtered.length > 1 ? 's' : ''} sur ${actorsIndex.length.toLocaleString('fr-FR')}`;
 
     if (!filtered.length) {
         grid.innerHTML = '<div class="empty-state"><p>Aucun acteur correspondant aux filtres</p></div>';
+        if (loadBtn) loadBtn.style.display = 'none';
         return;
     }
-    // Sort: tier1 > tier2 > tier3 > others, then alpha
-    const tierOrder = { tier1: 0, tier2: 1, tier3: 2 };
-    const sorted = [...filtered].sort((a, b) => {
-        const ta = tierOrder[a.tier] ?? 9;
-        const tb = tierOrder[b.tier] ?? 9;
-        if (ta !== tb) return ta - tb;
-        return (a.nom || '').localeCompare(b.nom || '');
-    });
-    grid.innerHTML = sorted.map(renderActorCard).join('');
+
+    const page = filtered.slice(0, ACTORS_PAGE_SIZE);
+    grid.innerHTML = page.map(renderOneActor).join('');
+    actorsDisplayOffset = ACTORS_PAGE_SIZE;
+    if (loadBtn) loadBtn.style.display = filtered.length > ACTORS_PAGE_SIZE ? 'block' : 'none';
+    // Store for loadMoreActors
+    renderActors._filtered = filtered;
+}
+
+function loadMoreActors() {
+    const filtered = renderActors._filtered || sortActors(getFilteredActors());
+    const grid = document.getElementById('actorsGrid');
+    const loadBtn = document.getElementById('actorsLoadMoreBtn');
+
+    const page = filtered.slice(actorsDisplayOffset, actorsDisplayOffset + ACTORS_PAGE_SIZE);
+    grid.insertAdjacentHTML('beforeend', page.map(renderOneActor).join(''));
+    actorsDisplayOffset += ACTORS_PAGE_SIZE;
+    if (loadBtn) loadBtn.style.display = actorsDisplayOffset < filtered.length ? 'block' : 'none';
 }
 
 function fmtMds(v) {
@@ -873,6 +946,7 @@ function clearSyncSettings() {
 window.setStatus = setStatus;
 window.toggleFolk = toggleFolk;
 window.loadMore = loadMore;
+window.loadMoreActors = loadMoreActors;
 window.setupNotifications = setupNotifications;
 window.closeModal = closeModal;
 window.openSyncSettings = openSyncSettings;

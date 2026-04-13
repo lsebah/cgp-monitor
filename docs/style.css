@@ -543,15 +543,16 @@ body {
 .actor-stat-pill.tier1     { border-color: rgba(255, 69, 58, 0.5);   color: var(--accent-red); }
 .actor-stat-pill.tier2     { border-color: rgba(255, 149, 0, 0.5);   color: var(--accent-orange); }
 .actor-stat-pill.tier3     { border-color: rgba(74, 158, 255, 0.5);  color: var(--accent-light-blue); }
+.actor-stat-pill.cabinets  { border-color: rgba(74, 158, 255, 0.5);  color: var(--accent-light-blue); }
 .actor-stat-pill.pending   { border-color: rgba(255, 149, 0, 0.5);   color: var(--accent-orange); }
 .actor-stat-pill.contacted { border-color: rgba(52, 199, 89, 0.5);   color: var(--accent-green); }
 .actor-stat-pill.refused   { border-color: rgba(255, 69, 58, 0.5);   color: var(--accent-red); }
 .actor-stat-pill.folk      { border-color: rgba(155, 89, 231, 0.5);  color: #b48cff; }
 
 .actors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .actor-card {
     background: var(--bg-card);
