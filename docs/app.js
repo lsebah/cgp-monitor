@@ -20,6 +20,8 @@ const STATUS_LABELS = {
 let allMembers = [];
 let newMembers = [];
 let groupementsData = {};
+let cartoData = null;          // cartographie acteurs (groupements/assos/reseaux/FO)
+let actorsIndex = [];          // flat list of { id, nom, category, tier, ...entity }
 let displayOffset = 0;
 let isSyncing = false;
 let saveTimer = null;
@@ -213,10 +215,11 @@ async function cloudSave() {
 // ============================================================
 async function loadData() {
     try {
-        const [membersResp, newResp, groupResp] = await Promise.all([
+        const [membersResp, newResp, groupResp, cartoResp] = await Promise.all([
             fetch('data/members.json').catch(() => null),
             fetch('data/new_members.json').catch(() => null),
             fetch('data/groupements.json').catch(() => null),
+            fetch('data/20260413_cartographie_groupements_cgp.json').catch(() => null),
         ]);
 
         if (membersResp?.ok) {
@@ -260,6 +263,13 @@ async function loadData() {
         if (groupResp?.ok) {
             groupementsData = await groupResp.json();
             renderGroupements();
+        }
+
+        if (cartoResp?.ok) {
+            cartoData = await cartoResp.json();
+            buildActorsIndex();
+            populateActorsFilters();
+            renderActors();
         }
 
         document.getElementById('badgeTotal').textContent = allMembers.length || '';
@@ -531,6 +541,257 @@ function escHtml(text) {
 }
 
 // ============================================================
+// RENDERING - Actors (cartographie)
+// ============================================================
+function actorTier(actorId) {
+    if (!cartoData?.priorites_prospection_cmf) return null;
+    const p = cartoData.priorites_prospection_cmf;
+    if (p.tier1_contact_immediat?.includes(actorId)) return 'tier1';
+    if (p.tier2_moyen_terme?.includes(actorId)) return 'tier2';
+    if (p.tier3_veille?.includes(actorId)) return 'tier3';
+    return null;
+}
+
+function buildActorsIndex() {
+    actorsIndex = [];
+    if (!cartoData) return;
+
+    // Categories
+    for (const cat of cartoData.categories || []) {
+        for (const e of cat.entites || []) {
+            actorsIndex.push({
+                ...e,
+                _key: `actor:${e.id}`,
+                category_id: cat.id,
+                category_label: cat.label,
+                category_color: cat.couleur,
+                tier: actorTier(e.id),
+            });
+        }
+    }
+
+    // Plateformes (synthetic ids)
+    const pd = cartoData.plateformes_distribution;
+    if (pd?.acteurs) {
+        for (const a of pd.acteurs) {
+            const id = (a.nom || '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+            actorsIndex.push({
+                ...a,
+                id,
+                _key: `actor:${id}`,
+                category_id: 'plateformes',
+                category_label: 'Plateformes de distribution',
+                category_color: '#0E7C8A',
+                tier: actorTier(id),
+            });
+        }
+    }
+
+    document.getElementById('badgeActors').textContent = actorsIndex.length || '';
+    if (cartoData?.meta?.description) {
+        const intro = document.getElementById('actorsIntro');
+        if (intro) intro.textContent = cartoData.meta.description;
+    }
+}
+
+function populateActorsFilters() {
+    const sel = document.getElementById('actorsCategoryFilter');
+    if (!sel || !cartoData) return;
+    // Reset (keep first option)
+    while (sel.options.length > 1) sel.remove(1);
+    for (const cat of cartoData.categories || []) {
+        const opt = document.createElement('option');
+        opt.value = cat.id;
+        opt.textContent = cat.label;
+        sel.appendChild(opt);
+    }
+    if (cartoData.plateformes_distribution?.acteurs?.length) {
+        const opt = document.createElement('option');
+        opt.value = 'plateformes';
+        opt.textContent = 'Plateformes de distribution';
+        sel.appendChild(opt);
+    }
+}
+
+function getFilteredActors() {
+    const search = document.getElementById('actorsSearch')?.value.toLowerCase() || '';
+    const catFilter = document.getElementById('actorsCategoryFilter')?.value || '';
+    const tierFilter = document.getElementById('actorsTierFilter')?.value || '';
+    const statusFilter = document.getElementById('actorsStatusFilter')?.value || '';
+    const hideProcessed = document.getElementById('actorsHideProcessed')?.checked || false;
+
+    return actorsIndex.filter(a => {
+        const cur = getStatus(a._key);
+        if (hideProcessed && cur) return false;
+        if (statusFilter === '__none__' && cur) return false;
+        if (statusFilter && statusFilter !== '__none__' && cur !== statusFilter) return false;
+        if (catFilter && a.category_id !== catFilter) return false;
+        if (tierFilter && a.tier !== tierFilter) return false;
+        if (search) {
+            const haystack = [
+                a.nom, a.nom_complet, a.president, a.directeur_executif,
+                a.cabinet_president, a.actionnaire, a.groupe,
+                a.pertinence_cmf, a.contact_cle, a.notes, a.description,
+                ...(a.statuts || []), ...(a.membres_notables || []),
+            ].filter(Boolean).join(' ').toLowerCase();
+            if (!haystack.includes(search)) return false;
+        }
+        return true;
+    });
+}
+
+function renderActorsStats() {
+    const el = document.getElementById('actorsStats');
+    if (!el) return;
+    let t1 = 0, t2 = 0, t3 = 0, contacted = 0, pending = 0, refused = 0, folk = 0;
+    for (const a of actorsIndex) {
+        if (a.tier === 'tier1') t1++;
+        else if (a.tier === 'tier2') t2++;
+        else if (a.tier === 'tier3') t3++;
+        const s = getStatus(a._key);
+        if (s === 'contacted') contacted++;
+        else if (s === 'pending') pending++;
+        else if (s === 'refused') refused++;
+        if (isInFolk(a._key)) folk++;
+    }
+    el.innerHTML = `
+        <div class="actor-stat-pill tier1">Tier 1 : <b>${t1}</b></div>
+        <div class="actor-stat-pill tier2">Tier 2 : <b>${t2}</b></div>
+        <div class="actor-stat-pill tier3">Tier 3 : <b>${t3}</b></div>
+        <div class="actor-stat-pill pending">En cours : <b>${pending}</b></div>
+        <div class="actor-stat-pill contacted">Contactes : <b>${contacted}</b></div>
+        <div class="actor-stat-pill refused">Refus : <b>${refused}</b></div>
+        <div class="actor-stat-pill folk">Folk : <b>${folk}</b></div>
+    `;
+}
+
+function renderActors() {
+    if (!actorsIndex.length) return;
+    renderActorsStats();
+    const filtered = getFilteredActors();
+    const grid = document.getElementById('actorsGrid');
+    const countEl = document.getElementById('actorsCount');
+    if (countEl) countEl.textContent = `${filtered.length} acteur${filtered.length > 1 ? 's' : ''} affiche${filtered.length > 1 ? 's' : ''} sur ${actorsIndex.length}`;
+
+    if (!filtered.length) {
+        grid.innerHTML = '<div class="empty-state"><p>Aucun acteur correspondant aux filtres</p></div>';
+        return;
+    }
+    // Sort: tier1 > tier2 > tier3 > others, then alpha
+    const tierOrder = { tier1: 0, tier2: 1, tier3: 2 };
+    const sorted = [...filtered].sort((a, b) => {
+        const ta = tierOrder[a.tier] ?? 9;
+        const tb = tierOrder[b.tier] ?? 9;
+        if (ta !== tb) return ta - tb;
+        return (a.nom || '').localeCompare(b.nom || '');
+    });
+    grid.innerHTML = sorted.map(renderActorCard).join('');
+}
+
+function fmtMds(v) {
+    if (v == null) return null;
+    if (v >= 1) return `${v} Md€`;
+    return `${(v * 1000).toFixed(0)} M€`;
+}
+
+function renderActorCard(a) {
+    const cur = getStatus(a._key);
+    const folk = isInFolk(a._key);
+    const tierLabel = { tier1: 'TIER 1', tier2: 'TIER 2', tier3: 'TIER 3' }[a.tier] || '';
+    const statusLabel = cur ? STATUS_LABELS[cur] : '';
+
+    const facts = [];
+    if (a.fondation) facts.push(`<span><b>Fondation</b> ${a.fondation}</span>`);
+    if (a.cabinets) facts.push(`<span><b>${a.cabinets}</b> cabinets</span>`);
+    if (a.conseillers) facts.push(`<span><b>${a.conseillers}</b> conseillers</span>`);
+    if (a.cabinets_membres) facts.push(`<span><b>${a.cabinets_membres}</b> cabinets membres</span>`);
+    if (a.groupements_membres) facts.push(`<span><b>${a.groupements_membres}</b> groupements</span>`);
+    if (a.membres_benevoles) facts.push(`<span><b>${a.membres_benevoles}</b> benevoles</span>`);
+    if (a.encours_mds != null) facts.push(`<span><b>${fmtMds(a.encours_mds)}</b> encours</span>`);
+    if (a.ca_mds != null) facts.push(`<span><b>${fmtMds(a.ca_mds)}</b> CA</span>`);
+    if (a.collecte_annuelle_mds != null) facts.push(`<span><b>${fmtMds(a.collecte_annuelle_mds)}</b> collecte/an</span>`);
+    if (a.part_marche_ca_cif) facts.push(`<span><b>${a.part_marche_ca_cif}</b> CA CIF</span>`);
+    if (a.part_marche_cabinets) facts.push(`<span><b>${a.part_marche_cabinets}</b> cabinets</span>`);
+
+    const people = [];
+    if (a.president) people.push(`Pres. ${escHtml(a.president)}${a.cabinet_president ? ` (${escHtml(a.cabinet_president)})` : ''}`);
+    if (a.directeur_executif) people.push(`Dir. ${escHtml(a.directeur_executif)}`);
+    if (a.actionnaire) people.push(`Actionnaire : ${escHtml(a.actionnaire)}`);
+    if (a.groupe) people.push(`Groupe : ${escHtml(a.groupe)}`);
+
+    const statuts = (a.statuts || []).map(s => `<span class="badge badge-activity">${escHtml(s)}</span>`).join('');
+    const membres = a.membres_notables?.length
+        ? `<div class="actor-members"><b>Membres notables :</b> ${a.membres_notables.map(escHtml).join(', ')}</div>`
+        : '';
+
+    const linkedinUrl = a.president
+        ? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(a.president + ' ' + (a.nom || ''))}`
+        : null;
+
+    const statusOptions = Object.entries(STATUS_LABELS)
+        .map(([val, label]) => `<option value="${val}" ${cur === val ? 'selected' : ''}>${label}</option>`)
+        .join('');
+
+    const cardClasses = [
+        'actor-card',
+        cur ? `has-status status-${cur}` : '',
+        folk ? 'in-folk' : '',
+    ].filter(Boolean).join(' ');
+
+    const colorBar = a.category_color
+        ? `style="border-top: 3px solid ${a.category_color}"`
+        : '';
+
+    return `
+        <div class="${cardClasses}" ${colorBar} itemscope itemtype="https://schema.org/Organization" data-actor-id="${a._key}">
+            <div class="actor-header">
+                <div class="actor-title-row">
+                    <span class="actor-name" itemprop="name">${escHtml(a.nom)}</span>
+                    ${tierLabel ? `<span class="tier-badge ${a.tier}">${tierLabel}</span>` : ''}
+                    ${statusLabel ? `<span class="badge-status status-${cur}">${escHtml(statusLabel)}</span>` : ''}
+                </div>
+                ${a.nom_complet && a.nom_complet !== a.nom ? `<div class="actor-fullname">${escHtml(a.nom_complet)}</div>` : ''}
+                <div class="actor-category" style="${a.category_color ? `color: ${a.category_color}` : ''}">${escHtml(a.category_label)}</div>
+            </div>
+
+            ${people.length ? `<div class="actor-people">${people.map(p => `<div>${p}</div>`).join('')}</div>` : ''}
+
+            ${facts.length ? `<div class="actor-facts">${facts.join('')}</div>` : ''}
+
+            ${statuts ? `<div class="actor-statuts">${statuts}</div>` : ''}
+
+            ${a.pertinence_cmf ? `<div class="actor-pertinence"><b>Pertinence CMF :</b> ${escHtml(a.pertinence_cmf)}</div>` : ''}
+
+            ${a.contact_cle ? `<div class="actor-contact-cle"><b>Contact cle :</b> ${escHtml(a.contact_cle)}</div>` : ''}
+
+            ${membres}
+
+            ${a.notes ? `<div class="actor-notes">${escHtml(a.notes)}</div>` : ''}
+
+            <div class="actor-footer">
+                <div class="actor-links">
+                    ${a.site ? `<a href="${a.site}" target="_blank" rel="noopener" itemprop="url">Site</a>` : ''}
+                    ${a.site_event ? `<a href="${a.site_event}" target="_blank" rel="noopener">Evenement</a>` : ''}
+                    ${linkedinUrl ? `<a href="${linkedinUrl}" target="_blank" rel="noopener" class="director-link"><span class="linkedin-ico">in</span>${escHtml(a.president)}</a>` : ''}
+                </div>
+                <div class="actor-actions">
+                    <select class="status-select status-select-${cur || 'none'}"
+                            onchange="setStatus('${a._key}', this.value)"
+                            title="Statut de prospection">
+                        ${statusOptions}
+                    </select>
+                    <label class="folk-toggle" title="Marquer comme ajoute dans Folk">
+                        <input type="checkbox" ${folk ? 'checked' : ''} onchange="toggleFolk('${a._key}')">
+                        <span class="toggle-switch folk-switch"></span>
+                        <span>Folk</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// ============================================================
 // TABS
 // ============================================================
 function renderCurrentTab() {
@@ -541,6 +802,7 @@ function renderCurrentTab() {
         case 'dashboard': renderDashboard(); break;
         case 'directory': renderDirectory(); break;
         case 'alerts': renderAlerts(); break;
+        case 'actors': renderActors(); break;
         case 'groupements': renderGroupements(); break;
     }
 }
@@ -562,6 +824,13 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 document.getElementById('filterHideProcessed')?.addEventListener('change', renderDirectory);
 document.getElementById('alertsHideProcessed')?.addEventListener('change', renderAlerts);
+
+// Actors filters
+['actorsSearch', 'actorsCategoryFilter', 'actorsTierFilter', 'actorsStatusFilter'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener(el.type === 'text' ? 'input' : 'change', renderActors);
+});
+document.getElementById('actorsHideProcessed')?.addEventListener('change', renderActors);
 
 // ============================================================
 // NOTIFICATIONS / SYNC SETTINGS MODALS

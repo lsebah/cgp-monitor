@@ -514,6 +514,172 @@ body {
     color: var(--text-muted);
 }
 
+/* ============================================================
+   Actors (cartographie) tab
+   ============================================================ */
+.actors-intro {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+    max-width: 1000px;
+}
+.actors-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 16px;
+}
+.actor-stat-pill {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.actor-stat-pill b { color: var(--text-primary); margin-left: 4px; }
+.actor-stat-pill.tier1     { border-color: rgba(255, 69, 58, 0.5);   color: var(--accent-red); }
+.actor-stat-pill.tier2     { border-color: rgba(255, 149, 0, 0.5);   color: var(--accent-orange); }
+.actor-stat-pill.tier3     { border-color: rgba(74, 158, 255, 0.5);  color: var(--accent-light-blue); }
+.actor-stat-pill.pending   { border-color: rgba(255, 149, 0, 0.5);   color: var(--accent-orange); }
+.actor-stat-pill.contacted { border-color: rgba(52, 199, 89, 0.5);   color: var(--accent-green); }
+.actor-stat-pill.refused   { border-color: rgba(255, 69, 58, 0.5);   color: var(--accent-red); }
+.actor-stat-pill.folk      { border-color: rgba(155, 89, 231, 0.5);  color: #b48cff; }
+
+.actors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 14px;
+}
+.actor-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.2s;
+    position: relative;
+}
+.actor-card:hover { border-color: var(--accent-blue); background: var(--bg-hover); }
+.actor-card.has-status.status-contacted { opacity: 0.7; }
+.actor-card.has-status.status-refused   { opacity: 0.55; }
+.actor-card.in-folk { box-shadow: inset 3px 0 0 #9b59e7; }
+
+.actor-header { display: flex; flex-direction: column; gap: 2px; }
+.actor-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.actor-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.actor-fullname {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+.actor-category {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.tier-badge {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.8px;
+}
+.tier-badge.tier1 { background: rgba(255, 69, 58, 0.18);  color: var(--accent-red); }
+.tier-badge.tier2 { background: rgba(255, 149, 0, 0.18);  color: var(--accent-orange); }
+.tier-badge.tier3 { background: rgba(74, 158, 255, 0.18); color: var(--accent-light-blue); }
+
+.actor-people {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+.actor-people > div { padding: 1px 0; }
+.actor-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.actor-facts span {
+    font-size: 11px;
+    background: var(--bg-secondary);
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+.actor-facts b { color: var(--text-primary); margin-right: 3px; }
+.actor-statuts { display: flex; flex-wrap: wrap; gap: 4px; }
+.actor-pertinence,
+.actor-contact-cle,
+.actor-members,
+.actor-notes {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    padding: 8px 12px;
+    background: var(--bg-secondary);
+    border-left: 2px solid var(--border);
+    border-radius: 4px;
+}
+.actor-pertinence { border-left-color: var(--accent-gold); }
+.actor-contact-cle { border-left-color: var(--accent-light-blue); }
+.actor-members { border-left-color: var(--accent-green); }
+.actor-pertinence b,
+.actor-contact-cle b,
+.actor-members b { color: var(--text-primary); }
+.actor-notes { color: var(--text-muted); font-style: italic; }
+
+.actor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+.actor-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.actor-links > a {
+    font-size: 12px;
+    color: var(--accent-light-blue);
+    text-decoration: none;
+}
+.actor-links > a:hover { text-decoration: underline; }
+.actor-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    .actors-grid { grid-template-columns: 1fr; }
+    .actor-footer { flex-direction: column; align-items: stretch; }
+    .actor-actions { align-items: stretch; }
+}
+
 /* Groupements Grid */
 .groupements-grid {
     display: grid;

@@ -71,6 +71,7 @@
         <button class="tab active" data-tab="dashboard">Dashboard</button>
         <button class="tab" data-tab="directory">Annuaire <span class="tab-badge" id="badgeTotal"></span></button>
         <button class="tab" data-tab="alerts">Alertes <span class="tab-badge" id="badgeNew"></span></button>
+        <button class="tab" data-tab="actors">Acteurs <span class="tab-badge" id="badgeActors"></span></button>
         <button class="tab" data-tab="groupements">Groupements</button>
     </nav>
 
@@ -131,6 +132,39 @@
                 Masquer traites
             </label>
             <div class="members-grid" id="alertsGrid"></div>
+        </div>
+
+        <!-- Actors Tab (cartographie groupements/associations/reseaux/family office) -->
+        <div id="tab-actors" class="tab-content">
+            <p class="actors-intro" id="actorsIntro"></p>
+            <section class="filters">
+                <div class="filter-row">
+                    <input type="text" id="actorsSearch" placeholder="Rechercher acteur, president, statut..." class="search-input">
+                    <select id="actorsCategoryFilter" class="filter-select">
+                        <option value="">Toutes les categories</option>
+                    </select>
+                    <select id="actorsTierFilter" class="filter-select">
+                        <option value="">Tous les tiers</option>
+                        <option value="tier1">Tier 1 - Contact immediat</option>
+                        <option value="tier2">Tier 2 - Moyen terme</option>
+                        <option value="tier3">Tier 3 - Veille</option>
+                    </select>
+                    <select id="actorsStatusFilter" class="filter-select">
+                        <option value="">Tous les statuts</option>
+                        <option value="__none__">Non traites</option>
+                        <option value="pending">En cours</option>
+                        <option value="contacted">Contactes</option>
+                        <option value="refused">Refus</option>
+                    </select>
+                    <label class="toggle-label">
+                        <input type="checkbox" id="actorsHideProcessed">
+                        Masquer traites
+                    </label>
+                </div>
+            </section>
+            <div class="actors-stats" id="actorsStats"></div>
+            <div class="members-count" id="actorsCount"></div>
+            <div class="actors-grid" id="actorsGrid"></div>
         </div>
 
         <!-- Groupements Tab -->
