@@ -26,6 +26,7 @@
                     <div class="sync-indicator"><span id="syncStatus">Offline</span></div>
                 </div>
                 <div class="header-links">
+                    <button class="profile-link sync-btn" onclick="openSyncSettings()" title="Configurer la synchronisation multi-appareils">Sync</button>
                     <button class="profile-link notify-btn" onclick="setupNotifications()">Notif</button>
                     <a href="data/folk_import.csv" download class="profile-link export-btn">Export Folk</a>
                 </div>
@@ -47,13 +48,21 @@
             <div class="stat-number" id="statMonth">-</div>
             <div class="stat-label">Nouveaux (30j)</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card stat-pending">
+            <div class="stat-number" id="statPending">0</div>
+            <div class="stat-label">En cours</div>
+        </div>
+        <div class="stat-card stat-contacted">
             <div class="stat-number" id="statContacted">0</div>
             <div class="stat-label">Contactes</div>
         </div>
-        <div class="stat-card">
-            <div class="stat-number" id="statAssociations">4</div>
-            <div class="stat-label">Associations</div>
+        <div class="stat-card stat-refused">
+            <div class="stat-number" id="statRefused">0</div>
+            <div class="stat-label">Refus</div>
+        </div>
+        <div class="stat-card stat-folk">
+            <div class="stat-number" id="statFolk">0</div>
+            <div class="stat-label">Dans Folk</div>
         </div>
     </section>
 
@@ -62,6 +71,7 @@
         <button class="tab active" data-tab="dashboard">Dashboard</button>
         <button class="tab" data-tab="directory">Annuaire <span class="tab-badge" id="badgeTotal"></span></button>
         <button class="tab" data-tab="alerts">Alertes <span class="tab-badge" id="badgeNew"></span></button>
+        <button class="tab" data-tab="actors">Acteurs <span class="tab-badge" id="badgeActors"></span></button>
         <button class="tab" data-tab="groupements">Groupements</button>
     </nav>
 
@@ -70,9 +80,7 @@
 
         <!-- Dashboard Tab -->
         <div id="tab-dashboard" class="tab-content active">
-            <!-- Association breakdown -->
             <div class="assoc-grid" id="assocGrid"></div>
-            <!-- Recent new members -->
             <h3 class="section-title">Derniers nouveaux CGP detectes</h3>
             <div class="members-grid" id="recentNew"></div>
         </div>
@@ -81,7 +89,7 @@
         <div id="tab-directory" class="tab-content">
             <section class="filters">
                 <div class="filter-row">
-                    <input type="text" id="searchInput" placeholder="Rechercher par nom, ville, email..." class="search-input">
+                    <input type="text" id="searchInput" placeholder="Rechercher par nom, ville, email, dirigeant..." class="search-input">
                     <select id="filterAssociation" class="filter-select">
                         <option value="">Toutes les associations</option>
                         <option value="cncgp">CNCGP</option>
@@ -98,9 +106,16 @@
                         <option value="IOBSP">IOBSP</option>
                         <option value="Immobilier">Immobilier</option>
                     </select>
+                    <select id="filterStatus" class="filter-select">
+                        <option value="">Tous les statuts</option>
+                        <option value="__none__">Non traites</option>
+                        <option value="pending">En cours</option>
+                        <option value="contacted">Contactes</option>
+                        <option value="refused">Refus</option>
+                    </select>
                     <label class="toggle-label">
-                        <input type="checkbox" id="filterHideContacted">
-                        Masquer contactes
+                        <input type="checkbox" id="filterHideProcessed">
+                        Masquer traites
                     </label>
                 </div>
             </section>
@@ -113,10 +128,43 @@
         <div id="tab-alerts" class="tab-content">
             <h3 class="section-title">Nouveaux membres detectes</h3>
             <label class="toggle-label" style="margin-bottom:16px">
-                <input type="checkbox" id="alertsHideContacted">
-                Masquer contactes
+                <input type="checkbox" id="alertsHideProcessed">
+                Masquer traites
             </label>
             <div class="members-grid" id="alertsGrid"></div>
+        </div>
+
+        <!-- Actors Tab (cartographie groupements/associations/reseaux/family office) -->
+        <div id="tab-actors" class="tab-content">
+            <p class="actors-intro" id="actorsIntro"></p>
+            <section class="filters">
+                <div class="filter-row">
+                    <input type="text" id="actorsSearch" placeholder="Rechercher acteur, president, statut..." class="search-input">
+                    <select id="actorsCategoryFilter" class="filter-select">
+                        <option value="">Toutes les categories</option>
+                    </select>
+                    <select id="actorsTierFilter" class="filter-select">
+                        <option value="">Tous les tiers</option>
+                        <option value="tier1">Tier 1 - Contact immediat</option>
+                        <option value="tier2">Tier 2 - Moyen terme</option>
+                        <option value="tier3">Tier 3 - Veille</option>
+                    </select>
+                    <select id="actorsStatusFilter" class="filter-select">
+                        <option value="">Tous les statuts</option>
+                        <option value="__none__">Non traites</option>
+                        <option value="pending">En cours</option>
+                        <option value="contacted">Contactes</option>
+                        <option value="refused">Refus</option>
+                    </select>
+                    <label class="toggle-label">
+                        <input type="checkbox" id="actorsHideProcessed">
+                        Masquer traites
+                    </label>
+                </div>
+            </section>
+            <div class="actors-stats" id="actorsStats"></div>
+            <div class="members-count" id="actorsCount"></div>
+            <div class="actors-grid" id="actorsGrid"></div>
         </div>
 
         <!-- Groupements Tab -->
@@ -138,12 +186,57 @@
                 <div class="notify-option">
                     <h4>Via ntfy.sh (mobile + desktop)</h4>
                     <ol>
-                        <li>Installez <a href="https://ntfy.sh" target="_blank">ntfy.sh</a> sur votre telephone</li>
+                        <li>Installez <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy.sh</a> sur votre telephone</li>
                         <li>Abonnez-vous au topic : <code>cgp-monitor-cmf</code></li>
                     </ol>
                 </div>
+                <div class="notify-option">
+                    <h4>Extension Folk (import 1 clic)</h4>
+                    <p style="margin:6px 0 8px;color:var(--text-secondary);font-size:13px">
+                        Installez l'extension <a href="https://www.folk.app/product/chrome-extension" target="_blank" rel="noopener">Folk pour Chrome</a>.
+                        Ouvrez la fiche d'un CGP sur ce site, cliquez sur l'icone Folk dans la barre d'outils :
+                        l'extension detecte automatiquement le nom du cabinet, les dirigeants, email, telephone, site web
+                        et adresse (markup Schema.org incorpore) et les importe dans votre CRM Folk.
+                    </p>
+                    <p style="font-size:12px;color:var(--text-muted)">
+                        Astuce : le bouton "Folk" sur chaque carte permet de marquer manuellement les CGP deja importes dans votre CRM.
+                    </p>
+                </div>
             </div>
-            <button class="modal-close" onclick="closeModal()">Fermer</button>
+            <button class="modal-close" onclick="closeModal('notifModal')">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Sync Settings Modal -->
+    <div id="syncModal" class="modal" style="display:none">
+        <div class="modal-content">
+            <h3>Synchronisation multi-appareils</h3>
+            <p>Synchronisez vos statuts (contacte, en cours, refus, Folk) entre votre iPhone et vos differents PC via un GitHub Gist prive.</p>
+            <div class="notify-option">
+                <h4>Configuration</h4>
+                <ol>
+                    <li>Creez un <a href="https://gist.github.com/" target="_blank" rel="noopener">Gist GitHub</a> (prive, nom de fichier : <code>cgp-monitor-state.json</code>, contenu : <code>{}</code>).</li>
+                    <li>Copiez l'ID du Gist (dans l'URL, ex: <code>abc123def456</code>).</li>
+                    <li>Generez un token <a href="https://github.com/settings/tokens/new?scopes=gist&description=CGP%20Monitor%20Sync" target="_blank" rel="noopener">GitHub Personal Access Token</a> avec le scope <code>gist</code>.</li>
+                    <li>Collez les deux dans les champs ci-dessous puis Enregistrer. Repetez sur chaque appareil.</li>
+                </ol>
+            </div>
+            <div class="sync-form">
+                <label>
+                    Gist ID
+                    <input type="text" id="syncGistId" placeholder="ex: 9b1c7d8e4f5a6b7c8d9e0f" autocomplete="off">
+                </label>
+                <label>
+                    GitHub token (scope: gist)
+                    <input type="password" id="syncToken" placeholder="ghp_..." autocomplete="off">
+                </label>
+                <p class="sync-note">Les identifiants restent sur votre appareil (localStorage). Ils ne sont jamais envoyes ailleurs que vers api.github.com.</p>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-danger" onclick="clearSyncSettings()">Effacer</button>
+                <button class="modal-btn modal-btn-secondary" onclick="closeModal('syncModal')">Annuler</button>
+                <button class="modal-btn modal-btn-primary" onclick="saveSyncSettings()">Enregistrer</button>
+            </div>
         </div>
     </div>
 
