@@ -20,6 +20,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from sources.cncef import scrape_cncef
 from sources.cncgp import scrape_cncgp
 from sources.anacofi import scrape_anacofi
+from sources.affo import scrape_affo
+from sources.enricher import batch_enrich_emails
 from merger import merge_all_sources
 from detector import detect_changes, build_new_members_data, build_stats
 from folk_export import export_new_members_csv
@@ -106,9 +108,27 @@ def main():
         logger.error(f"ANACOFI scrape failed: {e}")
         scrape_status["anacofi"] = {"status": "error", "error": str(e), "timestamp": now_iso}
 
+    # --- AFFO ---
+    logger.info(">>> Scraping AFFO...")
+    try:
+        affo_members = scrape_affo()
+        source_results.append(affo_members)
+        scrape_status["affo"] = {
+            "status": "success",
+            "count": len(affo_members),
+            "timestamp": now_iso,
+        }
+    except Exception as e:
+        logger.error(f"AFFO scrape failed: {e}")
+        scrape_status["affo"] = {"status": "error", "error": str(e), "timestamp": now_iso}
+
     # Merge all sources
     logger.info(">>> Merging sources...")
     merged_members = merge_all_sources(*source_results)
+
+    # Enrich emails from company websites
+    logger.info(">>> Enriching emails from websites...")
+    merged_members = batch_enrich_emails(merged_members, max_lookups=200)
 
     # Detect new members
     logger.info(">>> Detecting new members...")

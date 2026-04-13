@@ -1,285 +1,226 @@
 """
 CNCGP Scraper - Chambre Nationale des Conseillers en Gestion de Patrimoine
-Scrapes the directory at https://www.cncgp.fr/annuaire by iterating departments.
+Scrapes the directory at https://www.cncgp.fr/annuaire using Playwright.
+
+The CNCGP site renders results via JavaScript after form submission.
+Requires Playwright with Chromium browser.
+
+HTML structure (verified April 2026):
+- Results container: div.oct_annuaire_result_items
+- Each card: div.oct_annuaire_result_item
+  - Name: div.oct_annuaire_result_item_title
+  - Address street: div.oct_annuaire_result_item_address_complete
+  - Postal+city: div.oct_annuaire_result_item_address (text after the inner div)
+  - Phone: div.oct_annuaire_result_item_telephone > a[href^=tel:]
+  - Website: div.oct_annuaire_result_item_site > a
+  - Director: div.oct_annuaire_result_item_adherent > span
+  - Lat/Lng: data-latitude, data-longitude attributes
+- Department select: select[name="departLabel"] with values like "75", "92", etc.
 """
 import logging
 import re
+import time
 
 from bs4 import BeautifulSoup
 
-from .base import fetch, make_member_dict
+from .base import make_member_dict
 
 logger = logging.getLogger(__name__)
 
 ANNUAIRE_URL = "https://www.cncgp.fr/annuaire"
 
+# Priority departments (most CGPs, scraped first)
+PRIORITY_DEPTS = [
+    "75", "92", "69", "33", "13", "31", "44", "06", "78", "91",
+    "94", "59", "67", "34", "35", "38", "57", "54", "76", "77",
+]
 
-def _parse_results_page(soup):
-    """Parse member entries from a CNCGP results page."""
+
+def _parse_results(soup):
+    """Parse all result items from a CNCGP results page."""
     members_data = []
+    items = soup.select(".oct_annuaire_result_item")
 
-    # Try various container patterns
-    results = soup.find_all("div", class_=re.compile(r"result|member|adherent|card|item", re.I))
-    if not results:
-        results = soup.find_all("article")
-    if not results:
-        # Try table-based layout
-        rows = soup.find_all("tr")
-        if rows:
-            results = rows[1:]  # skip header row
-
-    for item in results:
-        data = {}
-        text = item.get_text(" ", strip=True)
-        if not text or len(text) < 5:
+    for item in items:
+        # Company name
+        title_el = item.select_one(".oct_annuaire_result_item_title")
+        if not title_el:
+            continue
+        name = title_el.get_text(strip=True)
+        if not name or len(name) < 2:
             continue
 
-        # Company name - usually the first strong/heading element
-        name_el = item.find(["h2", "h3", "h4", "strong", "b"])
-        if name_el:
-            data["company_name"] = name_el.get_text(strip=True)
-        else:
-            # First link might be the name
-            link = item.find("a")
-            if link:
-                data["company_name"] = link.get_text(strip=True)
+        # Address: street is in the inner div, postal+city is text in the parent
+        street = ""
+        postal_code = ""
+        city = ""
+        street_el = item.select_one(".oct_annuaire_result_item_address_complete")
+        if street_el:
+            street = street_el.get_text(strip=True)
 
-        if not data.get("company_name"):
-            continue
-
-        # Detail link
-        link = item.find("a", href=True)
-        if link:
-            href = link.get("href", "")
-            if href.startswith("/") or "cncgp.fr" in href:
-                if href.startswith("/"):
-                    href = f"https://www.cncgp.fr{href}"
-                data["detail_url"] = href
-
-        # Address
-        addr_text = text
-        # Try to find postal code + city pattern
-        pc_match = re.search(r'(\d{5})\s+([A-Z\s\-]+)', addr_text)
-        if pc_match:
-            data["postal_code"] = pc_match.group(1)
-            data["city"] = pc_match.group(2).strip().title()
-
-        # Street address
-        street_match = re.search(r'(\d+[\s,]+(?:rue|avenue|boulevard|place|chemin|impasse|allee|cours)\s+[^,\d]+)', text, re.I)
-        if street_match:
-            data["address_street"] = street_match.group(1).strip()
+        addr_el = item.select_one(".oct_annuaire_result_item_address")
+        if addr_el:
+            # Get the full text and extract postal code + city
+            addr_text = addr_el.get_text(" ", strip=True)
+            # Remove the street part
+            if street:
+                addr_text = addr_text.replace(street, "").strip()
+            # Match postal code (5 digits) + city
+            pc_match = re.search(r'(\d{5})\s+([\w\s\-\'\u00C0-\u024F]+)', addr_text)
+            if pc_match:
+                postal_code = pc_match.group(1)
+                city = pc_match.group(2).strip().title()
 
         # Phone
-        phone_match = re.search(r'(?:Tel|Telephone|Tel\.?)\s*:?\s*([0-9\s\.\-+]{10,})', text, re.I)
-        if phone_match:
-            data["phone"] = phone_match.group(1).strip()
-        else:
-            # Direct phone pattern
-            phone_el = item.find("a", href=re.compile(r"^tel:"))
-            if phone_el:
-                data["phone"] = phone_el.get("href", "").replace("tel:", "")
+        phone = ""
+        phone_el = item.select_one(".oct_annuaire_result_item_telephone a")
+        if phone_el:
+            phone = phone_el.get_text(strip=True)
 
-        # Email
-        email_el = item.find("a", href=re.compile(r"^mailto:"))
-        if email_el:
-            data["email"] = email_el.get("href", "").replace("mailto:", "")
-        else:
-            email_match = re.search(r'[\w.+-]+@[\w-]+\.[\w.-]+', text)
-            if email_match:
-                data["email"] = email_match.group(0)
+        # Website
+        website = ""
+        site_el = item.select_one(".oct_annuaire_result_item_site a")
+        if site_el:
+            website = site_el.get("href", "").strip()
 
-        # Activities
-        activities = []
-        for kw, act in [("cif", "CIF"), ("assurance", "COA"), ("iobsp", "IOBSP"),
-                        ("immobilier", "Immobilier"), ("courtier", "COA")]:
-            if kw in text.lower():
-                activities.append(act)
-        data["activities"] = activities
+        # Director name
+        directors = []
+        adherent_el = item.select_one(".oct_annuaire_result_item_adherent span")
+        if adherent_el:
+            dir_name = " ".join(adherent_el.get_text().split())  # collapse whitespace
+            if dir_name and len(dir_name) > 2:
+                directors.append({"name": dir_name.title(), "role": "Adherent"})
 
-        members_data.append(data)
+        members_data.append({
+            "company_name": name,
+            "address_street": street,
+            "postal_code": postal_code,
+            "city": city,
+            "phone": phone,
+            "website": website,
+            "directors": directors,
+        })
 
     return members_data
 
 
-def _parse_detail_page(url):
-    """Fetch and parse a CNCGP member detail page."""
-    try:
-        resp = fetch(url, delay=1.0)
-        if not resp:
-            return {}
-        soup = BeautifulSoup(resp.text, "lxml")
-        info = {}
-
-        text = soup.get_text(" ", strip=True)
-
-        # Phone
-        phone_el = soup.find("a", href=re.compile(r"^tel:"))
-        if phone_el:
-            info["phone"] = phone_el.get("href", "").replace("tel:", "").strip()
-
-        # Email
-        email_el = soup.find("a", href=re.compile(r"^mailto:"))
-        if email_el:
-            info["email"] = email_el.get("href", "").replace("mailto:", "").strip()
-
-        # Website
-        for a in soup.find_all("a", href=True):
-            href = a.get("href", "")
-            if href.startswith("http") and "cncgp.fr" not in href:
-                link_text = a.get_text(strip=True).lower()
-                if any(w in link_text for w in ["site", "web", "www"]) or any(w in href for w in ["www.", ".fr", ".com"]):
-                    info["website"] = href
-                    break
-
-        # Dirigeant / Directors
-        dirigeant_match = re.search(
-            r'(?:Dirigeant|Gerant|President|Representant\s+legal|Contact)\s*:?\s*(.+?)(?:\n|$|<)',
-            text, re.I
-        )
-        if dirigeant_match:
-            name = dirigeant_match.group(1).strip()
-            # Clean up
-            name = re.sub(r'\s+', ' ', name)
-            if len(name) > 3 and len(name) < 80:
-                info["director_name"] = name
-
-        # ORIAS number
-        orias_match = re.search(r'(?:ORIAS|orias)\s*:?\s*(\d{8})', text)
-        if orias_match:
-            info["orias_number"] = orias_match.group(1)
-
-        # Address
-        addr_match = re.search(r'(\d+[\s,]+(?:rue|avenue|boulevard|place|chemin)\s+[^,\n]+)', text, re.I)
-        if addr_match:
-            info["address_street"] = addr_match.group(1).strip()
-
-        pc_match = re.search(r'(\d{5})\s+([A-Z][a-zA-Z\s\-]+)', text)
-        if pc_match:
-            info["postal_code"] = pc_match.group(1)
-            info["city"] = pc_match.group(2).strip()
-
-        return info
-    except Exception as e:
-        logger.debug(f"Error parsing CNCGP detail {url}: {e}")
-        return {}
-
-
-def scrape_cncgp(departments=None, enrich_details=True):
+def scrape_cncgp(departments=None):
     """
-    Scrape the CNCGP directory by department.
+    Scrape the CNCGP directory using Playwright (headless browser).
 
     Args:
-        departments: List of department codes to scrape (default: all)
-        enrich_details: If True, follow detail links for full info
+        departments: List of department codes to scrape (default: all from select)
 
     Returns:
         List of normalized member dicts
     """
-    from config import DEPARTMENTS
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        logger.error("CNCGP: Playwright not installed. Run: pip install playwright && python -m playwright install chromium")
+        return []
 
-    logger.info("Starting CNCGP scrape...")
-    dept_list = departments or list(DEPARTMENTS.keys())
+    logger.info("Starting CNCGP scrape (Playwright)...")
     members = []
     seen_names = set()
 
-    for dept_code in dept_list:
-        dept_name = DEPARTMENTS.get(dept_code, dept_code)
-        logger.info(f"CNCGP: Scraping department {dept_code} ({dept_name})...")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        )
+        page = context.new_page()
 
         try:
-            # Try search by department - the CNCGP form likely uses POST or GET params
-            # Attempt with GET parameters first
-            search_url = f"{ANNUAIRE_URL}?departement={dept_code}"
-            resp = fetch(search_url, delay=1.0)
-            if not resp:
-                # Try POST form
-                resp = fetch(
-                    ANNUAIRE_URL,
-                    method="POST",
-                    data={"departement": dept_code, "activite": "", "search": ""},
-                    delay=1.0,
-                )
-            if not resp:
-                logger.warning(f"CNCGP: No response for dept {dept_code}")
-                continue
+            # Navigate to annuaire
+            page.goto(ANNUAIRE_URL, timeout=30000)
+            page.wait_for_load_state("networkidle")
 
-            soup = BeautifulSoup(resp.text, "lxml")
-            entries = _parse_results_page(soup)
+            # Get available departments from the select
+            if departments is None:
+                dept_options = page.query_selector_all('select[name="departLabel"] option')
+                departments = []
+                for opt in dept_options:
+                    val = opt.get_attribute("value")
+                    if val:
+                        departments.append(val)
+                logger.info(f"CNCGP: Found {len(departments)} departments in select")
 
-            # Handle pagination within department
-            page = 2
-            while page <= 20:  # Safety limit per department
-                next_link = soup.find("a", class_=re.compile(r"next", re.I))
-                if not next_link:
-                    paging = soup.find(class_=re.compile(r"pagination", re.I))
-                    if paging:
-                        current = paging.find(class_=re.compile(r"current|active", re.I))
-                        if current:
-                            next_link = current.find_next_sibling("a")
-                    if not next_link:
-                        break
+                # Sort with priority departments first
+                priority_set = set(PRIORITY_DEPTS)
+                departments = sorted(departments, key=lambda d: (d not in priority_set, d))
 
-                next_url = next_link.get("href", "")
-                if not next_url:
-                    break
-                if next_url.startswith("/"):
-                    next_url = f"https://www.cncgp.fr{next_url}"
+            total_depts = len(departments)
+            for idx, dept_code in enumerate(departments):
+                logger.info(f"CNCGP: [{idx+1}/{total_depts}] Department {dept_code}...")
 
-                resp = fetch(next_url, delay=1.0)
-                if not resp:
-                    break
-                soup = BeautifulSoup(resp.text, "lxml")
-                page_entries = _parse_results_page(soup)
-                if not page_entries:
-                    break
-                entries.extend(page_entries)
-                page += 1
+                try:
+                    # Navigate fresh for each department to avoid state issues
+                    if idx > 0:
+                        page.goto(ANNUAIRE_URL, timeout=30000)
+                        page.wait_for_load_state("networkidle")
 
-            # Process entries
-            for data in entries:
-                name = data.get("company_name", "").strip()
-                if not name or name in seen_names:
+                    # Select department
+                    page.select_option('select[name="departLabel"]', dept_code)
+
+                    # Click search button
+                    search_btn = page.query_selector('button[type="submit"]:has-text("Rechercher")')
+                    if not search_btn:
+                        search_btn = page.query_selector('.oct_annuaire_form button[type="submit"]')
+                    if search_btn:
+                        search_btn.click()
+                    else:
+                        logger.warning(f"CNCGP: Search button not found for dept {dept_code}")
+                        continue
+
+                    # Wait for results to render
+                    page.wait_for_timeout(2000)
+                    try:
+                        page.wait_for_selector(".oct_annuaire_result_item", timeout=10000)
+                    except Exception:
+                        logger.info(f"CNCGP: No results for dept {dept_code}")
+                        continue
+
+                    # Get page content and parse
+                    content = page.content()
+                    soup = BeautifulSoup(content, "lxml")
+                    entries = _parse_results(soup)
+
+                    dept_count = 0
+                    for data in entries:
+                        name = data["company_name"]
+                        name_key = name.lower()
+                        if name_key in seen_names:
+                            continue
+                        seen_names.add(name_key)
+
+                        member = make_member_dict(
+                            company_name=name,
+                            address_street=data["address_street"],
+                            postal_code=data["postal_code"],
+                            city=data["city"],
+                            phone=data["phone"],
+                            website=data["website"],
+                            directors=data["directors"],
+                            activities=["CIF"],  # CNCGP members are primarily CIF
+                            source="cncgp",
+                        )
+                        members.append(member)
+                        dept_count += 1
+
+                    logger.info(f"CNCGP: Dept {dept_code} -> {dept_count} new ({len(entries)} total)")
+
+                    # Small delay between departments
+                    time.sleep(1)
+
+                except Exception as e:
+                    logger.error(f"CNCGP: Error for dept {dept_code}: {e}")
                     continue
-                seen_names.add(name)
-
-                # Enrich from detail page
-                extra = {}
-                if enrich_details and data.get("detail_url"):
-                    extra = _parse_detail_page(data["detail_url"])
-
-                # Merge data (detail takes precedence)
-                phone = extra.get("phone") or data.get("phone", "")
-                email = extra.get("email") or data.get("email", "")
-                website = extra.get("website", "")
-                directors = []
-                if extra.get("director_name"):
-                    directors = [{"name": extra["director_name"], "role": "Dirigeant"}]
-                orias = extra.get("orias_number", "")
-                postal_code = extra.get("postal_code") or data.get("postal_code", "")
-                city = extra.get("city") or data.get("city", "")
-                street = extra.get("address_street") or data.get("address_street", "")
-
-                member = make_member_dict(
-                    company_name=name,
-                    orias_number=orias,
-                    address_street=street,
-                    postal_code=postal_code,
-                    city=city,
-                    phone=phone,
-                    email=email,
-                    website=website,
-                    activities=data.get("activities", []),
-                    directors=directors,
-                    source="cncgp",
-                    source_url=data.get("detail_url", ""),
-                )
-                members.append(member)
-
-            logger.info(f"CNCGP: Dept {dept_code} -> {len(entries)} entries")
 
         except Exception as e:
-            logger.error(f"CNCGP: Error for dept {dept_code}: {e}")
-            continue
+            logger.error(f"CNCGP: Fatal error: {e}")
+        finally:
+            browser.close()
 
-    logger.info(f"CNCGP: Total scraped = {len(members)} members")
+    logger.info(f"CNCGP: Total = {len(members)} members across {len(departments)} departments")
     return members

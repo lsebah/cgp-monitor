@@ -1,54 +1,60 @@
 {
-  "total_members": 3482,
-  "new_today": 3482,
-  "new_this_week": 3482,
-  "new_this_month": 3482,
+  "total_members": 4973,
+  "new_today": 1491,
+  "new_this_week": 4973,
+  "new_this_month": 4973,
   "by_association": {
-    "cncef": 239,
-    "anacofi": 3243
+    "cncgp": 1364,
+    "cncef": 353,
+    "anacofi": 3243,
+    "affo": 20
   },
   "by_activity": {
-    "COA": 210,
-    "IOBSP": 147,
-    "CIF": 3398,
-    "Immobilier": 96
+    "CIF": 4857,
+    "COA": 303,
+    "IOBSP": 216,
+    "Immobilier": 138
   },
   "by_department": {
-    "75": 48,
-    "69": 19,
-    "33": 16,
-    "92": 13,
-    "44": 11,
-    "13": 8,
-    "37": 7,
-    "78": 7,
-    "01": 7,
-    "34": 6,
-    "35": 4,
-    "17": 3,
-    "06": 3,
-    "60": 3,
-    "94": 3,
-    "86": 3,
-    "73": 3,
-    "85": 3,
-    "14": 3,
-    "87": 3
+    "75": 576,
+    "69": 167,
+    "13": 129,
+    "92": 126,
+    "33": 124,
+    "31": 89,
+    "06": 87,
+    "44": 83,
+    "34": 83,
+    "59": 73,
+    "78": 12,
+    "37": 10,
+    "01": 9,
+    "35": 6,
+    "38": 5,
+    "74": 5,
+    "85": 5,
+    "42": 5,
+    "29": 5,
+    "30": 4
   },
-  "total_departments": 58,
+  "total_departments": 69,
   "scrape_status": {
+    "cncgp": {
+      "status": "success",
+      "count": 1497
+    },
     "cncef": {
       "status": "success",
-      "count": 240
+      "count": 180
     },
     "anacofi": {
       "status": "success",
       "count": 3243
     },
-    "cncgp": {
-      "status": "pending",
-      "count": 0
+    "affo": {
+      "status": "success",
+      "count": 20
     }
   },
-  "last_updated": "2026-04-12T19:28:06.412902+00:00"
+  "last_updated": "2026-04-13T03:58:48.083348+00:00"
 }
