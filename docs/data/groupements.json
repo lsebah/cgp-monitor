@@ -83,18 +83,18 @@
     {
       "key": "cncgp",
       "name": "CNCGP",
-      "full_name": "Chambre Nationale des Conseillers en Gestion de Patrimoine",
+      "full_name": "Chambre Nationale des Conseils en Gestion de Patrimoine",
       "website": "https://www.cncgp.fr",
       "members_approx": 4200,
-      "description": "Creee en 1978. 6900 adherents individuels, 4200 cabinets."
+      "description": "Fondee en 1978, agreee AMF et ACPR. 6 900 personnes physiques et 4 200 personnes morales adherentes (oct. 2025). La plus ancienne et la plus representative en nombre d'adherents."
     },
     {
       "key": "cncef",
-      "name": "CNCEF",
-      "full_name": "Chambre Nationale des Conseils Experts Financiers",
+      "name": "CNCEF Patrimoine",
+      "full_name": "Chambre Nationale des Conseils Experts Financiers - Patrimoine",
       "website": "https://www.cncef.org",
       "members_approx": 4800,
-      "description": "Syndicat professionnel depuis 1957. CNCEF Patrimoine, CNCEF Credit, CNCEF Assurance, CNCEF Immobilier."
+      "description": "Branche patrimoine de la CNCEF, presidee par Didier Kling. Tres active sur les sujets reglementaires (MIF2, retrocommissions). Regroupe CNCEF Patrimoine, Credit, Assurance, Immobilier."
     },
     {
       "key": "anacofi",
@@ -102,7 +102,31 @@
       "full_name": "Association Nationale des Conseils Financiers",
       "website": "https://www.anacofi.asso.fr",
       "members_approx": 2750,
-      "description": "Creee en 2004. Plus grande association de CIF en France. 12 000+ professionnels."
+      "description": "Creee en 2004. Accueille CIF, IOBSP, courtiers en assurance et agents immobiliers. Organise un congres annuel majeur et accompagne la transformation digitale du metier. 12 000+ professionnels."
+    },
+    {
+      "key": "compagnie_cgp",
+      "name": "La Compagnie des CGP",
+      "full_name": "La Compagnie des Conseils en Gestion de Patrimoine",
+      "website": "https://lacompagniedescgp.fr",
+      "members_approx": 500,
+      "description": "Presidee par Philippe Feuille. Association qui a fait evoluer son nom et son identite visuelle ces dernieres annees."
+    },
+    {
+      "key": "ancdgp",
+      "name": "ANCDGP",
+      "full_name": "Association Nationale des Conseils Diplomes en Gestion de Patrimoine",
+      "website": "https://www.ancdgp.fr",
+      "members_approx": 300,
+      "description": "Focalisee sur la certification et la formation des CGP diplomes."
+    },
+    {
+      "key": "cgpc",
+      "name": "CGPC / FPSB France",
+      "full_name": "Association Francaise des Conseils en Gestion de Patrimoine Certifies",
+      "website": "https://www.cgpc.fr",
+      "members_approx": 600,
+      "description": "Association des CGP certifies, affiliee au Financial Planning Standards Board Europe (FPSB)."
     },
     {
       "key": "affo",
@@ -110,8 +134,16 @@
       "full_name": "Association Francaise du Family Office",
       "website": "https://www.affo.fr",
       "members_approx": 120,
-      "description": "Creee en 2001. Multi-family offices, single family offices et experts."
+      "description": "Creee en 2001, presidee par Charles-Henri Bujard depuis fevrier 2025. Federe mono family offices, multi family offices, avocats, banques, fiscalistes, notaires. Plus d'une cinquantaine de benevoles engages."
+    },
+    {
+      "key": "club_mfo",
+      "name": "Club MFO",
+      "full_name": "Club Multi Family Office",
+      "website": "https://www.club-mfo.fr",
+      "members_approx": 20,
+      "description": "Fonde par cinq acteurs majeurs : Agami Family Office, Family Partners, Keepers, Letus Private Office et Xelis Family Office. Association loi 1901 dediee a definir des visions et pratiques communes basees sur la transparence et l'independance des MFO."
     }
   ],
-  "last_updated": "2026-04-13T03:58:48.083348+00:00"
+  "last_updated": "2026-04-13T07:15:00+00:00"
 }
