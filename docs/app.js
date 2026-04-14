@@ -3,6 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
+const APP_VERSION = '5';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -935,15 +936,61 @@ function openSyncSettings() {
 }
 
 async function saveSyncSettings() {
-    const gistId = document.getElementById('syncGistId').value.trim();
-    const token = document.getElementById('syncToken').value.trim();
-    setSyncConfig({ gistId, token });
-    closeModal('syncModal');
-    if (gistId) {
-        await cloudLoad();
-        if (token) await cloudSave();
-    } else {
-        setSyncStatus('offline');
+    try {
+        const gistIdInput = document.getElementById('syncGistId');
+        const tokenInput = document.getElementById('syncToken');
+        if (!gistIdInput || !tokenInput) {
+            alert('Erreur: champs du formulaire introuvables (app.js pas a jour ?)');
+            return;
+        }
+        const gistId = gistIdInput.value.trim();
+        const token = tokenInput.value.trim();
+
+        // Test localStorage availability
+        try {
+            localStorage.setItem('__test', '1');
+            localStorage.removeItem('__test');
+        } catch (e) {
+            alert('Erreur: localStorage indisponible sur cet appareil.\n\n' +
+                  'Causes possibles:\n' +
+                  '- Mode navigation privee\n' +
+                  '- Stockage desactive dans les parametres Safari\n' +
+                  '- Trop peu d\'espace libre\n\n' +
+                  'Detail: ' + e.message);
+            return;
+        }
+
+        setSyncConfig({ gistId, token });
+
+        // Verify write
+        const check = getSyncConfig();
+        if (check.gistId !== gistId || check.token !== token) {
+            alert('Erreur: ecriture localStorage echouee (les valeurs n\'ont pas ete persistees).');
+            return;
+        }
+
+        closeModal('syncModal');
+
+        if (gistId) {
+            try { await cloudLoad(); } catch (e) { console.warn('cloudLoad err', e); }
+            if (token) {
+                try { await cloudSave(); } catch (e) { console.warn('cloudSave err', e); }
+            }
+            const s = document.getElementById('syncStatus')?.textContent || '';
+            if (/err/i.test(s)) {
+                alert('Config enregistree mais le Gist GitHub a renvoye une erreur.\n\n' +
+                      'Verifie:\n' +
+                      '- Que le Gist ID est correct (sans le nom d\'utilisateur, juste la chaine apres le /)\n' +
+                      '- Que le token a bien le scope "gist"\n' +
+                      '- Que le Gist existe et est accessible avec ce token\n\n' +
+                      'Les identifiants sont conserves, tu peux reessayer depuis le bouton Sync.');
+            }
+        } else {
+            setSyncStatus('offline');
+        }
+    } catch (e) {
+        console.error('saveSyncSettings failed', e);
+        alert('Erreur inattendue: ' + e.message);
     }
 }
 
@@ -969,6 +1016,10 @@ window.clearSyncSettings = clearSyncSettings;
 // INIT
 // ============================================================
 async function init() {
+    // Show app version (helps verify whether the browser is on fresh code)
+    const lastUpdate = document.getElementById('lastUpdate');
+    if (lastUpdate) lastUpdate.title = `App v${APP_VERSION}`;
+    console.info(`CGP Monitor v${APP_VERSION} loaded`);
     migrateLegacyContacted();
     await loadData();
     await cloudLoad();
