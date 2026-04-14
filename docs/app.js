@@ -227,10 +227,23 @@ async function loadData() {
 
         if (membersResp?.ok) {
             const data = await membersResp.json();
-            allMembers = data.members || [];
+            const rawMembers = data.members || [];
             const stats = data.stats || {};
 
-            document.getElementById('statTotal').textContent = stats.total_members || allMembers.length;
+            // Filter out cabinets without any usable contact info:
+            // no email, no phone, no website, no directors
+            // (Many ORIAS / empty ANACOFI listings have no prospection value)
+            allMembers = rawMembers.filter(m => {
+                if (m.email) return true;
+                if (m.phone) return true;
+                if (m.website) return true;
+                if (m.directors && m.directors.length > 0) return true;
+                return false;
+            });
+            const filteredOut = rawMembers.length - allMembers.length;
+            console.info(`Members loaded: ${allMembers.length} with contact (${filteredOut} without contact filtered out)`);
+
+            document.getElementById('statTotal').textContent = allMembers.length;
             document.getElementById('statNew').textContent = stats.new_this_week || 0;
             document.getElementById('statMonth').textContent = stats.new_this_month || 0;
 
@@ -445,9 +458,8 @@ function renderGroupements() {
 // ============================================================
 // RENDERING - Member Card (shared)
 // ============================================================
-function linkedinSearchUrl(name, company) {
-    const query = [name, company].filter(Boolean).join(' ');
-    return `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(query)}&origin=GLOBAL_SEARCH_HEADER`;
+function linkedinSearchUrl(name) {
+    return `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(name || '')}&origin=GLOBAL_SEARCH_HEADER`;
 }
 
 function renderDirectorsHtml(m) {
@@ -455,7 +467,7 @@ function renderDirectorsHtml(m) {
     if (!directors.length) return '';
     const html = directors.map(d => {
         const safeName = escHtml(d.name || '');
-        const url = linkedinSearchUrl(d.name, m.company_name);
+        const url = linkedinSearchUrl(d.name);
         const roleTxt = d.role ? ` <span class="director-role">- ${escHtml(d.role)}</span>` : '';
         return `<a class="director-link" href="${url}" target="_blank" rel="noopener" title="Rechercher ${safeName} sur LinkedIn" itemprop="name">
                     <span class="linkedin-ico" aria-hidden="true">in</span>${safeName}
@@ -798,7 +810,7 @@ function renderActorCard(a) {
         : '';
 
     const linkedinUrl = a.president
-        ? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(a.president + ' ' + (a.nom || ''))}`
+        ? linkedinSearchUrl(a.president)
         : null;
 
     const statusOptions = Object.entries(STATUS_LABELS)
