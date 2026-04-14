@@ -306,11 +306,13 @@ async function loadData() {
 // ============================================================
 function renderAssociationCards(scrapeStatus, byAssociation) {
     const grid = document.getElementById('assocGrid');
+    // ORIAS intentionally excluded: it's used only for enrichment (lookup of
+    // registration number / categories), not as a primary scraping source,
+    // so it would always show 0 members in the breakdown.
     const assocs = [
         { key: 'cncgp', name: 'CNCGP', full: 'Conseillers en Gestion de Patrimoine' },
         { key: 'cncef', name: 'CNCEF', full: 'Conseils Experts Financiers' },
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
-        { key: 'orias', name: 'ORIAS', full: 'Registre officiel' },
     ];
 
     grid.innerHTML = assocs.map(a => {
