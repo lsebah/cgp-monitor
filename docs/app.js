@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '6';
+const APP_VERSION = '7';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -95,6 +95,7 @@ function toggleFolk(id) {
 // re-rendering the entire tab. Preserves pagination / scroll position.
 function refreshCardInPlace(id) {
     const esc = (typeof CSS !== 'undefined' && CSS.escape) ? CSS.escape(id) : id.replace(/"/g, '\\"');
+    let replaced = 0;
 
     // Member cards (Annuaire, Alerts, Dashboard, Acteurs cabinets)
     const memberCards = document.querySelectorAll(`[data-member-id="${esc}"]`);
@@ -105,7 +106,7 @@ function refreshCardInPlace(id) {
                 const tmp = document.createElement('div');
                 tmp.innerHTML = renderMemberCard(m);
                 const fresh = tmp.firstElementChild;
-                if (fresh) card.replaceWith(fresh);
+                if (fresh) { card.replaceWith(fresh); replaced++; }
             });
         }
     }
@@ -119,10 +120,12 @@ function refreshCardInPlace(id) {
                 const tmp = document.createElement('div');
                 tmp.innerHTML = a._type === 'cabinet' ? renderMemberCard(a._member) : renderActorCard(a);
                 const fresh = tmp.firstElementChild;
-                if (fresh) card.replaceWith(fresh);
+                if (fresh) { card.replaceWith(fresh); replaced++; }
             });
         }
     }
+
+    console.debug(`[refreshCardInPlace] id=${id} replaced=${replaced} cards`);
 
     // Update the Acteurs tab stat pills if that tab is currently visible
     if (document.getElementById('tab-actors')?.classList.contains('active')) {
@@ -442,7 +445,9 @@ function loadMore() {
     const loadBtn = document.getElementById('loadMoreBtn');
 
     const page = filtered.slice(displayOffset, displayOffset + PAGE_SIZE);
-    grid.innerHTML += page.map(m => renderMemberCard(m)).join('');
+    // insertAdjacentHTML preserves existing DOM nodes (incl. event listeners,
+    // focus, form state) instead of rebuilding the whole list like innerHTML +=.
+    grid.insertAdjacentHTML('beforeend', page.map(m => renderMemberCard(m)).join(''));
     displayOffset += PAGE_SIZE;
     loadBtn.style.display = displayOffset < filtered.length ? 'block' : 'none';
 }
