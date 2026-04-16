@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '5';
+const APP_VERSION = '6';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -72,7 +72,7 @@ function setStatus(id, status) {
     }
     localStorage.setItem(STATUS_KEY, JSON.stringify(map));
     updateStats();
-    renderCurrentTab();
+    refreshCardInPlace(id);
     scheduleCloudSave();
 }
 
@@ -87,8 +87,47 @@ function toggleFolk(id) {
     else map[id] = todayISO();
     localStorage.setItem(FOLK_KEY, JSON.stringify(map));
     updateStats();
-    renderCurrentTab();
+    refreshCardInPlace(id);
     scheduleCloudSave();
+}
+
+// Replace only the affected card DOM (in all visible tabs) instead of
+// re-rendering the entire tab. Preserves pagination / scroll position.
+function refreshCardInPlace(id) {
+    const esc = (typeof CSS !== 'undefined' && CSS.escape) ? CSS.escape(id) : id.replace(/"/g, '\\"');
+
+    // Member cards (Annuaire, Alerts, Dashboard, Acteurs cabinets)
+    const memberCards = document.querySelectorAll(`[data-member-id="${esc}"]`);
+    if (memberCards.length) {
+        const m = allMembers.find(x => x.id === id);
+        if (m) {
+            memberCards.forEach(card => {
+                const tmp = document.createElement('div');
+                tmp.innerHTML = renderMemberCard(m);
+                const fresh = tmp.firstElementChild;
+                if (fresh) card.replaceWith(fresh);
+            });
+        }
+    }
+
+    // Actor (cartographie) cards
+    const actorCards = document.querySelectorAll(`[data-actor-id="${esc}"]`);
+    if (actorCards.length) {
+        const a = actorsIndex.find(x => x._key === id);
+        if (a) {
+            actorCards.forEach(card => {
+                const tmp = document.createElement('div');
+                tmp.innerHTML = a._type === 'cabinet' ? renderMemberCard(a._member) : renderActorCard(a);
+                const fresh = tmp.firstElementChild;
+                if (fresh) card.replaceWith(fresh);
+            });
+        }
+    }
+
+    // Update the Acteurs tab stat pills if that tab is currently visible
+    if (document.getElementById('tab-actors')?.classList.contains('active')) {
+        renderActorsStats();
+    }
 }
 
 function updateStats() {
