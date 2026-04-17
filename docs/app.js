@@ -515,7 +515,8 @@ function renderDirectorsHtml(m) {
     const html = directors.map(d => {
         const safeName = escHtml(d.name || '');
         const url = linkedinSearchUrl(d.name);
-        const roleTxt = d.role ? ` <span class="director-role">- ${escHtml(d.role)}</span>` : '';
+        const role = d.role && d.role.toLowerCase() !== 'adherent' ? d.role : '';
+        const roleTxt = role ? ` <span class="director-role">- ${escHtml(role)}</span>` : '';
         return `<a class="director-link" href="${url}" target="_blank" rel="noopener" title="Rechercher ${safeName} sur LinkedIn" itemprop="name">
                     <span class="linkedin-ico" aria-hidden="true">in</span>${safeName}
                 </a>${roleTxt}`;
