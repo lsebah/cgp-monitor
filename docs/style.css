@@ -10,7 +10,7 @@
     --bg-hover: #253647;
     --text-primary: #e8edf2;
     --text-secondary: #8899aa;
-    --text-muted: #5a6b7c;
+    --text-muted: #9aa8b8;
     --accent-blue: #2563eb;
     --accent-light-blue: #4a9eff;
     --accent-green: #34c759;
@@ -360,6 +360,22 @@ body {
     font-size: 12px;
     color: var(--text-muted);
     margin-top: 4px;
+}
+.director-link {
+    color: var(--accent-light-blue);
+    text-decoration: none;
+}
+.director-link:hover { text-decoration: underline; }
+.li-icon {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 4px;
+    font-size: 10px;
+    font-weight: 700;
+    background: #0a66c2;
+    color: #fff;
+    border-radius: 2px;
+    vertical-align: middle;
 }
 .member-contact {
     font-size: 12px;

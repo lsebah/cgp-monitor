@@ -358,7 +358,12 @@ function renderMemberCard(m) {
     const addr = m.address || {};
     const location = [addr.city, addr.department ? `(${addr.department})` : ''].filter(Boolean).join(' ');
 
-    const directors = (m.directors || []).map(d => `${d.name}${d.role ? ' - ' + d.role : ''}`).join(', ');
+    const directors = (m.directors || []).map(d => {
+        const safeName = escHtml(d.name || '');
+        const safeRole = d.role ? ' - ' + escHtml(d.role) : '';
+        const searchUrl = `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent((d.name || '') + ' ' + (m.company_name || ''))}`;
+        return `<a class="director-link" href="${searchUrl}" target="_blank" rel="noopener" title="Rechercher sur LinkedIn">${safeName}<span class="li-icon">in</span></a>${safeRole}`;
+    }).join(', ');
 
     const contactInfo = [];
     if (m.phone) contactInfo.push(`<a href="tel:${m.phone}">${m.phone}</a>`);
@@ -379,7 +384,7 @@ function renderMemberCard(m) {
                     ${m.siren ? `<span>SIREN: ${m.siren}</span>` : ''}
                     ${m.orias_number ? `<span>ORIAS: ${m.orias_number}</span>` : ''}
                 </div>
-                ${directors ? `<div class="member-directors">Dirigeant(s): ${escHtml(directors)}</div>` : ''}
+                ${directors ? `<div class="member-directors">Dirigeant(s): ${directors}</div>` : ''}
                 ${contactInfo.length ? `<div class="member-contact">${contactInfo.join('')}</div>` : ''}
             </div>
             <div class="member-actions">
