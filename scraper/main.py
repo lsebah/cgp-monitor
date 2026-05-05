@@ -66,61 +66,40 @@ def main():
     scrape_status = {}
     source_results = []
 
-    # --- CNCEF ---
-    logger.info(">>> Scraping CNCEF...")
-    try:
-        cncef_members = scrape_cncef(max_pages=500, enrich_details=False)
-        source_results.append(cncef_members)
-        scrape_status["cncef"] = {
-            "status": "success",
-            "count": len(cncef_members),
-            "timestamp": now_iso,
-        }
-    except Exception as e:
-        logger.error(f"CNCEF scrape failed: {e}")
-        scrape_status["cncef"] = {"status": "error", "error": str(e), "timestamp": now_iso}
+    def run_source(name, fn, *args, **kwargs):
+        """Wrap a source scrape with timing + uniform status reporting.
 
-    # --- CNCGP ---
-    logger.info(">>> Scraping CNCGP...")
-    try:
-        cncgp_members = scrape_cncgp(enrich_details=True)
-        source_results.append(cncgp_members)
-        scrape_status["cncgp"] = {
-            "status": "success",
-            "count": len(cncgp_members),
-            "timestamp": now_iso,
-        }
-    except Exception as e:
-        logger.error(f"CNCGP scrape failed: {e}")
-        scrape_status["cncgp"] = {"status": "error", "error": str(e), "timestamp": now_iso}
+        Logs duration so a stalled source is obvious in CI logs (the workflow
+        was being killed at 180min without any signal of which step ate it).
+        """
+        logger.info(f">>> Scraping {name.upper()}...")
+        t0 = datetime.now(timezone.utc)
+        try:
+            members = fn(*args, **kwargs)
+            elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
+            logger.info(f"<<< {name.upper()} done in {elapsed:.0f}s ({len(members)} members)")
+            scrape_status[name] = {
+                "status": "success",
+                "count": len(members),
+                "timestamp": now_iso,
+                "duration_s": round(elapsed, 1),
+            }
+            return members
+        except Exception as e:
+            elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
+            logger.error(f"<<< {name.upper()} FAILED after {elapsed:.0f}s: {e}")
+            scrape_status[name] = {
+                "status": "error",
+                "error": f"{type(e).__name__}: {e}",
+                "timestamp": now_iso,
+                "duration_s": round(elapsed, 1),
+            }
+            return []
 
-    # --- ANACOFI ---
-    logger.info(">>> Scraping ANACOFI...")
-    try:
-        anacofi_members = scrape_anacofi()
-        source_results.append(anacofi_members)
-        scrape_status["anacofi"] = {
-            "status": "success",
-            "count": len(anacofi_members),
-            "timestamp": now_iso,
-        }
-    except Exception as e:
-        logger.error(f"ANACOFI scrape failed: {e}")
-        scrape_status["anacofi"] = {"status": "error", "error": str(e), "timestamp": now_iso}
-
-    # --- AFFO ---
-    logger.info(">>> Scraping AFFO...")
-    try:
-        affo_members = scrape_affo()
-        source_results.append(affo_members)
-        scrape_status["affo"] = {
-            "status": "success",
-            "count": len(affo_members),
-            "timestamp": now_iso,
-        }
-    except Exception as e:
-        logger.error(f"AFFO scrape failed: {e}")
-        scrape_status["affo"] = {"status": "error", "error": str(e), "timestamp": now_iso}
+    source_results.append(run_source("cncef", scrape_cncef, max_pages=500, enrich_details=False))
+    source_results.append(run_source("cncgp", scrape_cncgp))  # signature: (departments=None)
+    source_results.append(run_source("anacofi", scrape_anacofi))
+    source_results.append(run_source("affo", scrape_affo))
 
     # Merge all sources
     logger.info(">>> Merging sources...")
@@ -128,7 +107,15 @@ def main():
 
     # Enrich emails from company websites
     logger.info(">>> Enriching emails from websites...")
+    enrich_t0 = datetime.now(timezone.utc)
     merged_members = batch_enrich_emails(merged_members, max_lookups=200)
+    enrich_elapsed = (datetime.now(timezone.utc) - enrich_t0).total_seconds()
+    logger.info(f"<<< Email enrichment done in {enrich_elapsed:.0f}s")
+    scrape_status["email_enrichment"] = {
+        "status": "success",
+        "duration_s": round(enrich_elapsed, 1),
+        "timestamp": now_iso,
+    }
 
     # Detect new members
     logger.info(">>> Detecting new members...")

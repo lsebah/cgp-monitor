@@ -122,29 +122,37 @@ def enrich_from_cncef_detail(member, detail_url):
     return member
 
 
-def batch_enrich_emails(members, max_lookups=200):
+def batch_enrich_emails(members, max_lookups=200, max_workers=8):
     """
-    Batch enrich emails from company websites.
+    Batch enrich emails from company websites in parallel.
 
     Args:
-        members: List of member dicts
-        max_lookups: Maximum website lookups
+        members: List of member dicts (modified in place)
+        max_lookups: Maximum website lookups per run
+        max_workers: Concurrent fetches (8 keeps polite pressure on small sites)
 
     Returns:
         Updated member list
     """
-    count = 0
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    candidates = [m for m in members if not m.get("email") and m.get("website")][:max_lookups]
+    if not candidates:
+        logger.info("Email enrichment: nothing to enrich")
+        return members
+
     found = 0
-    for member in members:
-        if count >= max_lookups:
-            break
-        if member.get("email") or not member.get("website"):
-            continue
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        # enrich_email_from_website mutates the dict and returns it; we just
+        # need to make sure each fetch eventually completes or is bounded.
+        future_to_member = {ex.submit(enrich_email_from_website, m): m for m in candidates}
+        for fut in as_completed(future_to_member):
+            try:
+                m = fut.result(timeout=45)  # hard cap per fetch (fetch itself is 20s, retries 1)
+                if m.get("email"):
+                    found += 1
+            except Exception as e:
+                logger.debug(f"Enrich worker failed: {e}")
 
-        member = enrich_email_from_website(member)
-        count += 1
-        if member.get("email"):
-            found += 1
-
-    logger.info(f"Email enrichment: {found}/{count} emails found from websites")
+    logger.info(f"Email enrichment: {found}/{len(candidates)} emails found from websites")
     return members
