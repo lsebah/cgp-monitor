@@ -273,22 +273,38 @@ async function loadData() {
             const rawMembers = data.members || [];
             const stats = data.stats || {};
 
-            // Filter out cabinets without any usable contact info:
-            // no email, no phone, no website, no directors
-            // (Many ORIAS / empty ANACOFI listings have no prospection value)
-            allMembers = rawMembers.filter(m => {
-                if (m.email) return true;
-                if (m.phone) return true;
-                if (m.website) return true;
-                if (m.directors && m.directors.length > 0) return true;
-                return false;
-            });
-            const filteredOut = rawMembers.length - allMembers.length;
-            console.info(`Members loaded: ${allMembers.length} with contact (${filteredOut} without contact filtered out)`);
+            // Keep the full member list. The "actionable" filter (must have
+            // email/phone/website/director) used to run here, but it hid all
+            // 3243 ANACOFI entries (whose source provides only name + SIREN)
+            // and 346/353 CNCEF entries — making the association filter
+            // useless for those two. Now the contact filter only applies
+            // when the user is browsing the default view (no association
+            // selected), see getFilteredMembers().
+            allMembers = rawMembers;
+            const withContact = rawMembers.filter(m =>
+                m.email || m.phone || m.website || (m.directors && m.directors.length > 0)
+            ).length;
+            console.info(`Members loaded: ${allMembers.length} total, ${withContact} with contact info`);
 
-            document.getElementById('statTotal').textContent = allMembers.length;
-            document.getElementById('statNew').textContent = stats.new_this_week || 0;
-            document.getElementById('statMonth').textContent = stats.new_this_month || 0;
+            // Total CGP shows the actionable count (with contact) by default.
+            document.getElementById('statTotal').textContent = withContact;
+            // Recompute "new in 7d/30d" against the contact-filtered list so
+            // these stats stay aligned with Total CGP and never overflow it.
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            let new7 = 0, new30 = 0;
+            for (const m of allMembers) {
+                if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
+                const fs = m.first_seen;
+                if (!fs) continue;
+                const fsDt = new Date(fs);
+                if (isNaN(fsDt)) continue;
+                const days = Math.floor((today - fsDt) / 86400000);
+                if (days <= 7) new7++;
+                if (days <= 30) new30++;
+            }
+            document.getElementById('statNew').textContent = new7;
+            document.getElementById('statMonth').textContent = new30;
 
             if (data.last_updated) {
                 const d = new Date(data.last_updated);
@@ -401,6 +417,15 @@ function getFilteredMembers() {
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
 
     return allMembers.filter(m => {
+        // Default view (no association picked): hide cabinets with no
+        // reachable contact info — they're not actionable for prospection.
+        // When the user explicitly filters by an association (especially
+        // ANACOFI / CNCEF, where the source ships only name + SIREN), this
+        // filter is bypassed so the filter actually returns rows.
+        if (!assocFilter) {
+            const hasContact = m.email || m.phone || m.website || (m.directors && m.directors.length > 0);
+            if (!hasContact) return false;
+        }
         const currentStatus = getStatus(m.id);
         if (hideProcessed && currentStatus) return false;
         if (statusFilter === '__none__' && currentStatus) return false;
