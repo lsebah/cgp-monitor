@@ -155,25 +155,14 @@ def scrape_cncgp(departments=None):
                 logger.info(f"CNCGP: [{idx+1}/{total_depts}] Department {dept_code}...")
 
                 try:
-                    # Navigate fresh for each department to avoid state issues
-                    if idx > 0:
-                        page.goto(ANNUAIRE_URL, timeout=30000)
-                        page.wait_for_load_state("networkidle")
-
-                    # Select department
-                    page.select_option('select[name="departLabel"]', dept_code)
-
-                    # Click search button
-                    search_btn = page.query_selector('button[type="submit"]:has-text("Rechercher")')
-                    if not search_btn:
-                        search_btn = page.query_selector('.oct_annuaire_form button[type="submit"]')
-                    if search_btn:
-                        search_btn.click()
-                    else:
-                        logger.warning(f"CNCGP: Search button not found for dept {dept_code}")
-                        continue
-
-                    # Wait for results to render
+                    # Navigate via direct URL — the form-submit approach
+                    # silently dropped many departments (e.g. 35, 38, 67) and
+                    # under-counted big ones (Paris: 511 vs 593 expected).
+                    # The ?departLabel=NN URL renders the same results page
+                    # consistently for every department.
+                    dept_url = f"{ANNUAIRE_URL}?departLabel={dept_code}"
+                    page.goto(dept_url, timeout=30000)
+                    page.wait_for_load_state("networkidle")
                     page.wait_for_timeout(2000)
                     try:
                         page.wait_for_selector(".oct_annuaire_result_item", timeout=10000)
