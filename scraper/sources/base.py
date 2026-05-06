@@ -56,6 +56,40 @@ def fetch(url, method="GET", max_retries=3, delay=None, **kwargs):
     return None
 
 
+def fetch_browser(url: str, wait_ms: int = 2000) -> str:
+    """Fetch a URL using a real headless browser (Playwright).
+    Returns the page HTML. Falls back to requests if Playwright unavailable.
+    Used for endpoints behind Cloudflare or that require JS execution
+    (e.g. DuckDuckGo HTML, ORIAS advanced search forms).
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        logger.warning("Playwright not installed, falling back to requests")
+        resp = fetch(url)
+        return resp.text if resp else ""
+
+    rate_limit(1.5)
+    with sync_playwright() as p:
+        try:
+            browser = p.chromium.launch(headless=True, channel="msedge")
+        except Exception:
+            browser = p.chromium.launch(headless=True)
+        ctx = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36",
+            locale="fr-FR",
+            viewport={"width": 1280, "height": 800},
+        )
+        page = ctx.new_page()
+        try:
+            page.goto(url, timeout=25000)
+            page.wait_for_timeout(wait_ms)
+            html = page.content()
+        finally:
+            browser.close()
+    return html
+
+
 def make_member_id(company_name: str, siren: str = "", city: str = "") -> str:
     """Generate a stable unique ID for a CGP member."""
     if siren and len(siren) >= 9:
