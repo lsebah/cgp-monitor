@@ -428,7 +428,17 @@ function getFilteredMembers() {
     const deptFilter = document.getElementById('filterDepartment')?.value || '';
     const actFilter = document.getElementById('filterActivity')?.value || '';
     const statusFilter = document.getElementById('filterStatus')?.value || '';
+    const creationFilter = document.getElementById('filterCreation')?.value || '';
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
+
+    // creation_date is "YYYY-MM-DD" — compute the cutoff once (years ago)
+    let creationCutoff = null;
+    if (creationFilter) {
+        const years = parseInt(creationFilter, 10);
+        const d = new Date();
+        d.setFullYear(d.getFullYear() - years);
+        creationCutoff = d.toISOString().slice(0, 10);
+    }
 
     return allMembers.filter(m => {
         // Default view (no association picked): hide cabinets with no
@@ -447,6 +457,10 @@ function getFilteredMembers() {
         if (assocFilter && !m.associations?.[assocFilter]) return false;
         if (deptFilter && m.address?.department !== deptFilter) return false;
         if (actFilter && !m.activities?.includes(actFilter)) return false;
+        if (creationCutoff) {
+            // Reject if no creation_date or older than cutoff
+            if (!m.creation_date || m.creation_date < creationCutoff) return false;
+        }
         if (search) {
             const haystack = [
                 m.company_name, m.address?.city, m.address?.department_name,
@@ -615,6 +629,7 @@ function renderMemberCard(m) {
                     ${location ? `<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">${escHtml(location)}</span></span>` : ''}
                     ${m.siren ? `<span>SIREN: ${escHtml(m.siren)}</span>` : ''}
                     ${m.orias_number ? `<span>ORIAS: ${escHtml(m.orias_number)}</span>` : ''}
+                    ${m.creation_date ? `<span title="Date de creation (data.gouv)">Cree: ${escHtml(formatCreationDate(m.creation_date))}</span>` : ''}
                 </div>
                 ${renderDirectorsHtml(m)}
                 ${contactInfo.length ? `<div class="member-contact">${contactInfo.join('')}</div>` : ''}
@@ -634,6 +649,15 @@ function renderMemberCard(m) {
             </div>
         </div>
     `;
+}
+
+// Format an ISO date "2014-04-10" → "avr. 2014" — short and FR-friendly.
+function formatCreationDate(iso) {
+    if (!iso || iso.length < 7) return iso;
+    const [y, mo] = iso.split('-');
+    const months = ['janv.','fevr.','mars','avr.','mai','juin','juil.','aout','sept.','oct.','nov.','dec.'];
+    const m = parseInt(mo, 10);
+    return (months[m - 1] || mo) + ' ' + y;
 }
 
 function escHtml(text) {
@@ -990,7 +1014,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 // Filter event listeners
-['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus'].forEach(id => {
+['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus', 'filterCreation'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener(el.type === 'text' ? 'input' : 'change', renderDirectory);
 });

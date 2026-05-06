@@ -62,8 +62,10 @@ def enrich_member(member):
     if not siren or len(siren) != 9:
         return member
 
-    # Skip if directors already filled
-    if member.get("directors"):
+    # Skip only when ALL the data.gouv fields we care about are already filled,
+    # so a backfill that adds a new field (e.g. creation_date) re-hits the API
+    # for previously-enriched members.
+    if member.get("directors") and member.get("creation_date"):
         return member
 
     try:
@@ -95,6 +97,10 @@ def enrich_member(member):
     if formatted:
         member["directors"] = formatted
 
+    # Creation date (used by the "récents" UI filter). API returns YYYY-MM-DD.
+    if entry.get("date_creation") and not member.get("creation_date"):
+        member["creation_date"] = entry["date_creation"]
+
     # Admin state (informative, not blocking)
     etat = entry.get("etat_administratif")
     if etat:
@@ -124,17 +130,21 @@ def enrich_member(member):
 
 
 def batch_enrich(members, max_lookups=None, log_every=50):
-    """Enrich members missing dirigeants from data.gouv."""
-    candidates = [m for m in members if m.get("siren") and not m.get("directors")]
+    """Enrich members missing dirigeants OR creation_date from data.gouv."""
+    candidates = [
+        m for m in members
+        if m.get("siren") and (not m.get("directors") or not m.get("creation_date"))
+    ]
     if max_lookups is not None:
         candidates = candidates[:max_lookups]
 
     logger.info(f"data.gouv enrich: {len(candidates)} members to enrich")
 
-    found_dir = found_addr = 0
+    found_dir = found_addr = found_date = 0
     for i, m in enumerate(candidates, 1):
         before_dir = bool(m.get("directors"))
         before_addr = bool((m.get("address") or {}).get("street"))
+        before_date = bool(m.get("creation_date"))
 
         enrich_member(m)
 
@@ -142,15 +152,17 @@ def batch_enrich(members, max_lookups=None, log_every=50):
             found_dir += 1
         if not before_addr and (m.get("address") or {}).get("street"):
             found_addr += 1
+        if not before_date and m.get("creation_date"):
+            found_date += 1
 
         if i % log_every == 0:
             logger.info(
                 f"  data.gouv {i}/{len(candidates)} "
-                f"(+{found_dir} dirigeants, +{found_addr} addr fallback)"
+                f"(+{found_dir} dirigeants, +{found_date} dates, +{found_addr} addr fallback)"
             )
 
     logger.info(
-        f"data.gouv done: +{found_dir} dirigeants, +{found_addr} address fallbacks "
-        f"(out of {len(candidates)} lookups)"
+        f"data.gouv done: +{found_dir} dirigeants, +{found_date} creation_dates, "
+        f"+{found_addr} address fallbacks (out of {len(candidates)} lookups)"
     )
     return members
