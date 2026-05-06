@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T22:01:31.845052+00:00",
+  "last_updated": "2026-05-06T22:03:03.633425+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -19,7 +19,7 @@
     }
   },
   "stats": {
-    "total_members": 10708,
+    "total_members": 10730,
     "new_today": 1491,
     "new_this_week": 4973,
     "new_this_month": 4973,
@@ -27,7 +27,8 @@
       "cncgp": 2623,
       "cncef": 4829,
       "anacofi": 3243,
-      "affo": 20
+      "affo": 20,
+      "ucgp": 61
     },
     "by_activity": {
       "CIF": 4857,
@@ -11940,7 +11941,14 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Conseils investissements financiers",
+        "Optimisation fiscale",
+        "Protection de la famille",
+        "Retraite",
+        "Stratégie patrimoniale",
+        "Transmission de patrimoine"
+      ],
       "directors": [
         {
           "name": "ARNAUD DORIA",
@@ -11952,13 +11960,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "1999-10-18",
       "data_gouv": {
         "etat_administratif": "A",
@@ -12288,6 +12302,51 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ad-valum-patrimoine/"
+      }
+    },
+    {
+      "id": "cgp_19622cc0dd",
+      "company_name": "Adaequatio",
+      "company_name_normalized": "adaequatio",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Retraite",
+        "Epargne",
+        "Prévoyance"
+      ],
+      "directors": [
+        {
+          "name": "Mathieu ORSINI",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
       }
     },
     {
@@ -26967,7 +27026,12 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Epargne salariale",
+        "Optimisation rémunération du dirigeant",
+        "Protection sociale",
+        "Retraite"
+      ],
       "directors": [
         {
           "name": "GUILLAUME ROBILLIARD",
@@ -26979,13 +27043,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2003-07-11",
       "data_gouv": {
         "etat_administratif": "A",
@@ -29353,7 +29423,11 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Assurance Vie",
+        "Gestion locative",
+        "Immobilier de placement"
+      ],
       "directors": [
         {
           "name": "PIERRE BRUNET",
@@ -29365,13 +29439,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-06",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -52106,11 +52186,13 @@
       },
       "phone": "+33185390920",
       "email": "alice.foucault@atriapatrimoine.com",
-      "website": "",
+      "website": "http://atriapatrimoine.com",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "ATRIA PATRIMOINE"
+      ],
       "directors": [
         {
           "name": "ALICE FOUCAULT",
@@ -52122,13 +52204,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10512/atria-patrimoine/"
+      },
       "creation_date": "1991-01-15",
       "data_gouv": {
         "etat_administratif": "A",
@@ -58867,6 +58955,42 @@
       "orias_inscription_date": "2024-11-22"
     },
     {
+      "id": "cgp_ec95eb8008",
+      "company_name": "AXIS GP",
+      "company_name_normalized": "axis gp",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Finindep - Axis GP Accueil Notre groupement Notre histoire La Gouvernance Organigramme & membres Les comités FININDEP Charte Ethique Nos expertises Conseil en stratégie patrimoniale Conseil en investissement Suivi intuitu personae Nos cabinets Nos partenaires Blog Contact AXIS GP La philosophie de Axis GP repose sur la relation privilégiée que nous avons avec une clientèle très restreinte d’investisseurs et sur leur accompagnement dans la durée. Notre activité consiste au suivi des solutions les plus adaptées au développement, à la préservation, à la gestion et à la transmission des patrimoines. Cette approche est menée par Olivier CIBOT (Diplômes Universitaires Gestion de patrimoine Universités de Rennes et d’Angers) Nous contacter à Nantes : olivier.cibot@axis-gp.fr Site Internet : www.clarite-patrimoine.fr Responsable de la rédaction : O. CIBOT AXIS GP - SARL au capital de 20 000€, domiciliée Immeuble CRISTO 1 – 162 Route de Saint-Joseph",
+        "postal_code": "44300",
+        "city": "NANTES Conseil en investissement financier",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "012088203220952050",
+      "email": "finindep@finindep.com",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
+        }
+      },
+      "groupement": "Finindep",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/27197/clarite-patrimoine/"
+      }
+    },
+    {
       "id": "cgp_bc76ecc97e",
       "company_name": "AXISS CONSEIL",
       "company_name_normalized": "axiss conseil",
@@ -65063,7 +65187,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Un cabinet de conseil en gestion de patrimoine à votre service"
+      ],
       "directors": [
         {
           "name": "PASCALE BAUSSANT (BEAUMEVIEILLE)",
@@ -65079,13 +65205,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27439/baussant-conseil/"
+      },
       "creation_date": "2002-08-15",
       "data_gouv": {
         "etat_administratif": "A",
@@ -69304,6 +69436,47 @@
       }
     },
     {
+      "id": "cgp_4fcfb4ecdf",
+      "company_name": "Berger & Associés",
+      "company_name_normalized": "berger  associes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Laurence GODON",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
+    },
+    {
       "id": "cgp_032bda8fce",
       "company_name": "BERGER ET ASSOCIES",
       "company_name_normalized": "berger et associes",
@@ -71729,6 +71902,44 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/bg-intermediation-conseil/"
+      }
+    },
+    {
+      "id": "cgp_34bfea47fc",
+      "company_name": "BG2C FINANCES",
+      "company_name_normalized": "bg2c finances",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Finindep groupement de conseillers en gestion de patrimoine Saint-Germain-en-Laye Accueil Notre groupement Notre histoire La Gouvernance Organigramme & membres Les comités FININDEP Charte Ethique Nos expertises Conseil en stratégie patrimoniale Conseil en investissement Suivi intuitu personae Nos cabinets Nos partenaires Blog Contact BG2C FINANCE L’histoire du cabinet remonte à 1997, à Metz. Guy Blasselle décide, après une riche expérience bancaire, de fonder un cabinet indépendant, au service de ses clients. En 2005, il ouvre un second bureau à Cannes, à deux pas de la Croisette. Ses valeurs son : indépendance, proximité et excellence, des valeurs qui trouvent un accueil favorable auprès des clients. En 2012, Isabelle Gauthier, Ingénieur patrimonial, rejoint l’équipe de BG2C Finances. transmission, fiscalité, stratégie financière, immobilier, gestion d’actifs: le champ de compétences du cabinet recouvre celui du patrimoine, en tous ses aspects. Pour nous contacter : isabelle.gauthier@bgpatrimoine.com Responsable de la rédaction : Guy BLASSELLE Membre de FININDEP Adhérent de la Chambre Nationale des Conseils en Gestion de Patrimoine (CNCGP) Courtier en Opérations de banque et Services de Paiement (COBSP) Courtier en Assurances de catégorie B. Conseiller en investissement Financier (CIF) adhérent de la Chambre Nationale des Conseils en Gestion de Patrimoine, association agréée par l’ AMF . Agent Immobilier : Carte professionnelle transaction sur immeubles et fonds de commerce, N° : 0605 2018 000 030 724 Habilité à l’activité de démarchage bancaire et financier. Enregistré à l’ORIAS (registre des intermédiaires en assurances), n°070",
+        "postal_code": "01986",
+        "city": "Litige ou réclamation",
+        "department": "01",
+        "department_name": "Ain",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "012088203220952050",
+      "email": "finindep@finindep.com",
+      "website": "http://www.amf-france.org/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "BG2C FINANCES"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
+        }
+      },
+      "groupement": "Finindep",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10513/bg2c-finances/"
       }
     },
     {
@@ -88453,6 +88664,51 @@
       }
     },
     {
+      "id": "cgp_3fe27c5750",
+      "company_name": "Cabinet Chapot",
+      "company_name_normalized": "cabinet chapot",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Stratégie patrimoniale",
+        "Assurance Vie",
+        "Retraite"
+      ],
+      "directors": [
+        {
+          "name": "Bertrand CHAPOT",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
+    },
+    {
       "id": "cgp_b8ae177982",
       "company_name": "CABINET CHAREL",
       "company_name_normalized": "cabinet charel",
@@ -91165,6 +91421,42 @@
       "last_seen": "2026-05-06",
       "is_new": true,
       "source_urls": {}
+    },
+    {
+      "id": "cgp_a408df4a22",
+      "company_name": "CABINET JEAN-LUC HENRY",
+      "company_name_normalized": "cabinet jeanluc henry",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Fbp Associes Accueil Notre groupement Notre histoire La Gouvernance Organigramme & membres Les comités FININDEP Charte Ethique Nos expertises Conseil en stratégie patrimoniale Conseil en investissement Suivi intuitu personae Nos cabinets Nos partenaires Blog Contact FBP ASSOCIÉS Diplômé du DESS Gestion de Patrimoine de Clermont-Ferrand et du DESS Droit et Economie de l’Assurance de Toulouse, David Fasolo débute sa carrière chez BNP Paribas Banque Privée en 2002 en tant que conseil en gestion de patrimoine, ingénieur patrimonial et responsable d’équipe. En 2012, il fonde FBP Associés. Il assure la direction du cabinet et la gestion des clients. Johanna Rosello rejoint FBP Associés en 2019 comme apprentie, avant de devenir Conseil en Gestion de Patrimoine. Elle est Associée depuis 2023. Elle réalise les analyses patrimoniales et travaille sur la structuration des portefeuilles. Diplômée du Master 2 en Gestion du Patrimoine Privé et Professionnel de l’Université Paris-Panthéon-Assas, elle dispose de solides connaissances dans le domaine juridique, fiscal et financier. Marina Durand intègre l’entreprise en 2026, en qualité de Conseil en Gestion de Patrimoine. Diplômée du Master 2 en Gestion du Patrimoine Privé et Professionnel de l’Université Paris-Panthéon-Assas et titulaire du Mastère spécialisé IMPI – Gestion Patrimoniale et Immobilière de KEDGE Business School, Marina a débuté sa carrière chez Akane Patrimoine, Louvre Banque Privée et Scala Patrimoine en tant qu’ingénieur patrimonial avant de rejoindre La Crèmerie, cabinet spécialisé en finance durable. Sonia Fasolo rejoint FBP Associés en 2026, en tant que co-gérante du cabinet. Elle est diplômée du DESS Management Financier Européen de l’Université de Montpellier, du diplôme d’analyste financier de la SFAF et du Certificat en investissement durable du CFA Institute. Sonia a passé plus de 20 ans dans l’analyse financière, la gestion de fonds Actions responsables et à impact et en tant que responsable ESG au sein notamment de Berenberg Bank, LFDE et Eleva Capital. Sophie Guillet rejoint FBP Associés en 2026 en tant que Responsable Administrative et opérationnelle. Elle assure le suivi des opérations, de la réglementation, des relations avec nos partenaires et la gestion quotidienne du cabinet. Elle a auparavant passé 25 ans à la Direction Générale de BNP Paribas Cardif où elle a assisté les Directeurs Généraux Adjoints en charge des investissements, des gestions d’actifs et du Secrétariat Général. Nous contacter : david.fasolo@fbp-associes.fr Responsable de la rédaction : David Fasolo https://www.fbp-associes.fr Conseiller en Investissement Financier adhérant à la Chambre Nationale des Conseils en Gestion de Patrimoine agrée par l’Autorité des Marchés Financiers. Intermédiaire en opérations de banque et services de paiement référencé auprès de l’autorité de Contrôle Prudentiel. Société de courtage et d’assurance enregistrée à l’ORIAS n° 12 066 102. Activité de transaction sur immeubles et fonds de commerce, carte professionnelle n° 92/A/0467 délivrée par la préfecture des Hauts-de-Seine. Activité de démarchage bancaire et financier. Litige ou réclamation : en cas de litige, le client pourra adresser au cabinet une réclamation écrite à l’attention du gérant D. FASOLO, qui, sous dix jours, en accusera réception, et une réponse y sera apportée dans les deux mois. A défaut d’accord à l’amiable, le client pourra saisir, pour : – L’activité de CIF (médiateur public) : l’AMF – Mme Marielle COHEN-BRANCHE – 17 Place de la Bourse",
+        "postal_code": "75082",
+        "city": "Paris cedex",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "012088203220952050",
+      "email": "finindep@finindep.com",
+      "website": "https://www.fbp-associes.fr",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
+        }
+      },
+      "groupement": "Finindep",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10507/fbp-associes/"
+      }
     },
     {
       "id": "cgp_9751fcffca",
@@ -97320,7 +97612,12 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Fiscalité",
+        "Placement",
+        "Retraite",
+        "Successions"
+      ],
       "directors": [
         {
           "name": "Lydia Deletang",
@@ -97330,13 +97627,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_86e8db7768",
@@ -106129,11 +106432,13 @@
       },
       "phone": "+33139041905",
       "email": "lucie.nedellec@finindep.com",
-      "website": "",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "CEDELLEN PATRIMOINE"
+      ],
       "directors": [
         {
           "name": "LUCIE NEDELLEC",
@@ -106145,13 +106450,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10504/cedellen-patrimoine/"
+      },
       "creation_date": "1991-03-05",
       "data_gouv": {
         "etat_administratif": "A",
@@ -107374,7 +107685,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Une véritable expertise"
+      ],
       "directors": [
         {
           "name": "HELENE BARRAUD",
@@ -107392,13 +107705,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27683/centre-du-patrimoine/"
+      },
       "creation_date": "2002-02-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -109776,40 +110095,46 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "35000",
-        "city": "Ille et Vilaine",
-        "department": "35",
-        "department_name": "Ille-et-Vilaine",
-        "region": "Bretagne"
+        "street": "le Club des entrepreneurs CGP - CGP Expert LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE CGP Expert CGP Expert est un cabinet de Conseil en gestion de Patrimoine et Family Office, basé à Rennes depuis 2000. Nous conseillons une clientèle de dirigeants de PME en activité ou post-cession d’entreprise, principalement en Bretagne et à Paris. A ce jour, nous accompagnons environ 80 familles sur des sujets larges, tels que : L’organisation et la structuration du patrimoine, La transmission du patrimoine, La gouvernance familiale & la formation des jeunes générations, Le conseil en investissement (définition d’une allocation d’actifs cible et d’un cahier des charges d’investissement / Recherche de solutions d’investissement, suivi et analyse des investissements gérés par le cabinet et par des tiers, agrégation annuelle du patrimoine) La philanthropie. Notre objectif est toujours le même : avoir des clients sereins et confiants sur leur avenir patrimonial et la réalisation de leurs projets patrimoniaux ! Pour cela, nous sommes organisés autour d’une équipe de 10 personnes dont : 6 Conseils en Gestion de Patrimoine (chaque famille est suivie par un binôme de Conseils), un middle office composé de 2 personnes (Céline pour l’immobilier et Lucy pour le financier), un responsable conformité, organisation & marketing/communication (bientôt assisté d’un collaborateur en alternance), et une office-manager. Pour chacune de nos familles, nous travaillons en interprofessionnalité avec les autres conseils du chef d’entreprise (avocat, expert-comptable, banquier d’affaires, banquier privé, notaire, …) et sommes très impliqués pour animer cette équipe de conseils. En 2022, nous avons créé notre fondation d’entreprise, Graine d’Avenir – Fondation CGP Expert, pour renforcer notre action sociétale sur le territoire breton, en soutenant des initiatives en faveur de la jeunesse. DÉCOUVRIR LE CABINET ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
       },
-      "phone": "",
-      "email": "",
-      "website": "",
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.cgpexpert.fr/",
       "activities": [
+        "CIF",
         "COA",
         "IOBSP",
-        "Immobilier",
-        "CIF"
+        "Immobilier"
       ],
       "specialties": [
         "Assurance",
         "Crédit",
         "Immobilier",
-        "Patrimoine"
+        "Patrimoine",
+        "cabinet de Conseil en gestion de Patrimoine et Family Office"
       ],
       "directors": [],
       "associations": {
         "cncef": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
       "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/cgp-expert/"
+        "cncef": "https://www.cncef.org/annuaire/cgp-expert/",
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/33926/CGP Expert/"
       }
     },
     {
@@ -115128,7 +115453,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "A vos côtés dans chacun de vos projets"
+      ],
       "directors": [
         {
           "name": "MEYER AZOGUI",
@@ -115150,13 +115477,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/29167/cimea_patrimoine/"
+      },
       "creation_date": "2003-01-02",
       "data_gouv": {
         "etat_administratif": "A",
@@ -120471,7 +120804,14 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Cession d'entreprise",
+        "Optimisation fiscale",
+        "Placements immobiliers & financiers",
+        "Retraite",
+        "Stratégie patrimoniale",
+        "Transmission de patrimoine"
+      ],
       "directors": [
         {
           "name": "CEDRIC BIGOT",
@@ -120487,13 +120827,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2014-03-25",
       "data_gouv": {
         "etat_administratif": "A",
@@ -125188,7 +125534,11 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Ingénierie Patrimoniale",
+        "Investissement immobilier France et USA",
+        "Placements financiers"
+      ],
       "directors": [
         {
           "name": "CONSEILS ET PATRIMOINES PARTICIPATIONS",
@@ -125204,13 +125554,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2001-05-21",
       "data_gouv": {
         "etat_administratif": "A",
@@ -131473,11 +131829,13 @@
       },
       "phone": "+33387358823",
       "email": "christophe.philipon@cp-patrimoine.fr",
-      "website": "",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "CP PATRIMOINE CONSEIL"
+      ],
       "directors": [
         {
           "name": "CHRISTOPHE PHILIPON",
@@ -131489,13 +131847,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10503/cp-patrimoine-conseil/"
+      },
       "creation_date": "2005-11-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -131712,6 +132076,51 @@
       },
       "creation_date": "2022-01-03",
       "orias_inscription_date": "2022-03-05"
+    },
+    {
+      "id": "cgp_e52c414e0b",
+      "company_name": "CPM",
+      "company_name_normalized": "cpm",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Stratégie patrimoniale",
+        "Ingénierie financière",
+        "Allocation d'actifs"
+      ],
+      "directors": [
+        {
+          "name": "Patrick MERTZ",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_83ac4cd08d",
@@ -134498,38 +134907,44 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "75000",
-        "city": "Paris",
+        "street": "le Club des entrepreneurs CGP - Baussant Conseil LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. CP Culture Patrimoine Fondé en 2003, Culture Patrimoine est un multi family office dont l'ambition est d'offrir un conseil et un service d'excellence. L'accompagnement proposé vous permet d'avoir une véritable vision à 360° sur l'ensemble des sujets patrimoniaux (protection, finance, fiscalité, immobilier, juridique). Nos services s'inscrivent dans le long terme : ils démarrent par une phase de conseil, se poursuivent, le cas échéant, par la mise en oeuvre de la stratégie patrimoniale. DÉCOUVRIR LE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" \"Notre valeur ajoutée : l’ultra technicité avec pédagogie accessible\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 M D'euros d'encours Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Stratégie et planification patrimoniale Retraite Rémunération du dirigeant Cession d'entreprise Transmission Détention du patrimoine immobilier PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATION - CIF - Carte professionnelle immobilière (carte T) ASSOCIATION - CNCEF HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions \"Juin 2022 : Meilleur cabinet de gestion de patrimoine entre 150 et 500 millions d'encours \" Distinction décernée lors du sommet de patrimoine organisé par le groupe Ficade et Leader League \" janvier 2023 : Les 100 qui font le patrimoine \" Distinction décernée par le groupe Ficade et Leader League Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
         "department": "75",
         "department_name": "Paris",
         "region": "Ile-de-France"
       },
-      "phone": "",
-      "email": "",
-      "website": "",
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.culturepatrimoine.fr/",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
         "Crédit",
+        "L'interlocuteur de référence pour votre patrimoine",
         "Patrimoine"
       ],
       "directors": [],
       "associations": {
         "cncef": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
       "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/culture-patrimoine/"
+        "cncef": "https://www.cncef.org/annuaire/culture-patrimoine/",
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27440/CP-Culture-patrimoine/"
       }
     },
     {
@@ -137839,13 +138254,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2025-01-01",
       "data_gouv": {
         "etat_administratif": "A"
@@ -139061,6 +139482,44 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/daumesnil-et-cie/"
+      }
+    },
+    {
+      "id": "cgp_5cfd4d38f1",
+      "company_name": "DAUPHINE PATRIMOINE",
+      "company_name_normalized": "dauphine patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - Dauphine patrimoine LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. DAUPHINE PATRIMOINE Dauphine Patrimoine est une société de gestion de portefeuille, spécialisée dans la gestion de patrimoine. Dauphine Patrimoine a été créée le 22 octobre 2004 par François-Xavier Legendre, précédemment Directeur Adjoint de la gestion chez Rothschild & Cie. Notre projet est d’apporter un conseil global et objectif à nos clients. À l’image de ses dirigeants, Dauphine Patrimoine est une société bienveillante, toujours à l’écoute de ses clients. Les besoins de ceux-ci sont bien connus des équipes de Dauphine Patrimoine qui peuvent leur apporter des conseils réactifs et pertinents. En se mettant à la place de chacun, Dauphine Patrimoine sait rendre simple ce qui est compliqué. DÉCOUVRIR NOTRE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" \"Dauphine Patrimoine accompagne ses clients dans la durée et n’entretient aucune relation capitalistique avec un établissement promoteur de produits (établissement de crédit, entreprise d’investissement, compagnie d’assurance, société de gestion…).\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 EXPERTS À VOTRE SERVICE 0 FAMILLES ACCOMPAGNÉES 0 ANNÉES D’EXPÉRIENCE Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATIONs - CIF - COURTIER Association HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions \"Excellent\" Classement leader League \" Les 100 qui font le patrimoine\" Nommé par Leader League l'an dernier Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.dauphine-patrimoine.fr/la-societe/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Dauphine Patrimoine est une société de gestion de portefeuille"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/29166/dauphine-patrimoine/"
       }
     },
     {
@@ -140775,11 +141234,13 @@
       },
       "phone": "+33147202285",
       "email": "conseil@dejonghe-finance.com",
-      "website": "",
+      "website": "https://www.dejonghe-finance.com/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Experts en gestion et stratégies financières"
+      ],
       "directors": [
         {
           "name": "NATHALIE DE JONGHE D'ARDOYE",
@@ -140797,13 +141258,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27442/De-Jonghue-Finance/"
+      },
       "creation_date": "2012-10-31",
       "data_gouv": {
         "etat_administratif": "A",
@@ -142693,6 +143160,51 @@
       },
       "creation_date": "2024-01-19",
       "orias_inscription_date": "2024-07-19"
+    },
+    {
+      "id": "cgp_518c708c84",
+      "company_name": "DEFI",
+      "company_name_normalized": "defi",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Epargne / Placements financiers",
+        "Assurance vie",
+        "Retraite"
+      ],
+      "directors": [
+        {
+          "name": "Jean-Pierre HEUZE",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_03f33fdd58",
@@ -146760,6 +147272,44 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dg-courtage-associes/"
+      }
+    },
+    {
+      "id": "cgp_14e62c3df2",
+      "company_name": "DG FINANCE",
+      "company_name_normalized": "dg finance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - DG Finance LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. DG Finance Cabinet de Conseil en gestion de patrimoine, créé en 1994, composé de 4 membres permanents dont 3 CIF tous issus du monde du droit et diplômés en gestion de patrimoine, ingénierie patrimoniale du chef d’entreprise. Membres de la CNCGP et du club des entrepreneurs CGP. Notre profession réglementée et soumise au secret professionnel a pour objectif de proposer des stratégies d’organisation patrimoniales les mieux adaptées au profil du client et à la réalisation de ses objectifs. Le client est au centre de la démarche. DÉCOUVRIR LE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" \"Nos compétences nous permettent en outre de répondre aux problématiques de nos prospects et clients frontaliers.\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 Nombre de collaborateurs 0 CLIENTS 0 M d'euros d'ACTIFS SUIVIS Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES CIF Courtage en assurance COBSP transaction sur immeuble et fonds de commerce PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATIONS - CIF - COURTIER Association HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.dgfinances.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Cabinet de conseil en gestion de patrimoine"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27443/DG-Finance/"
       }
     },
     {
@@ -159354,7 +159904,13 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Conseil en transmission personnelle et professionnelle",
+        "Conseil fiscal",
+        "Gestion des avoirs financiers des particuliers",
+        "Optimisation de la trésorerie excédentaire des personnes morales",
+        "Optimisation du revenu du dirigeant"
+      ],
       "directors": [
         {
           "name": "EDGAR HAMBARTSOUMIAN",
@@ -159366,13 +159922,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2022-06-28",
       "data_gouv": {
         "etat_administratif": "A",
@@ -188922,13 +189484,15 @@
         "department_name": "Yvelines",
         "region": "Ile-de-France"
       },
-      "phone": "",
-      "email": "",
-      "website": "",
+      "phone": "+33188329550",
+      "email": "frederic.atlan@finindep.com",
+      "website": "https://www.horival.fr",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "FINA7 PATRIMOINE"
+      ],
       "directors": [
         {
           "name": "Frédéric Atlan",
@@ -188938,13 +189502,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/16206/fina7/"
+      }
     },
     {
       "id": "cgp_42b5300eb4",
@@ -223696,7 +224266,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "FAIRE MIEUX QUE VOTRE BANQUE PRIVEE"
+      ],
       "directors": [
         {
           "name": "EMMANUEL NARRAT",
@@ -223708,13 +224280,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/35077/haussmann-patrimoine/"
+      },
       "creation_date": "2002-10-02",
       "data_gouv": {
         "etat_administratif": "A",
@@ -226614,7 +227192,11 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Investissements financiers",
+        "Investissements immobiliers",
+        "Stratégie patrimoniale"
+      ],
       "directors": [
         {
           "name": "NICOLAS NUGUE",
@@ -226626,13 +227208,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-06",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -226867,7 +227455,14 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Allocation d'actifs",
+        "Assurance Vie",
+        "Optimisation fiscale",
+        "Placements immobiliers",
+        "Retraite",
+        "Stratégie patrimoniale"
+      ],
       "directors": [
         {
           "name": "ANGÈLE DEBONDANT (NGUYEN)",
@@ -226883,13 +227478,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2023-11-10",
       "data_gouv": {
         "etat_administratif": "A",
@@ -248343,6 +248944,51 @@
       "orias_inscription_date": "2025-01-24"
     },
     {
+      "id": "cgp_abb70eb83f",
+      "company_name": "JDCF",
+      "company_name_normalized": "jdcf",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Allocation d'actifs",
+        "Fiscalité",
+        "Droit de la famille"
+      ],
+      "directors": [
+        {
+          "name": "Jean DJENIDI",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
+    },
+    {
       "id": "cgp_eadb74b3c7",
       "company_name": "JDV CONSEIL",
       "company_name_normalized": "jdv conseil",
@@ -251427,11 +252073,13 @@
       },
       "phone": "+33611190313",
       "email": "jm.deguernel@yahoo.fr",
-      "website": "",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "JMD  ASSOCIES"
+      ],
       "directors": [
         {
           "name": "JEAN-MICHEL DEGUERNEL",
@@ -251443,13 +252091,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10493/jmd-associes/"
+      },
       "creation_date": "2014-04-10",
       "data_gouv": {
         "etat_administratif": "A",
@@ -262798,6 +263452,44 @@
       }
     },
     {
+      "id": "cgp_c815c0754f",
+      "company_name": "L' OFFIS",
+      "company_name_normalized": "l offis",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - L'Offis LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. L' OFFIS, MON CONSEIL EN GESTION DE PATRIMOINE Nous sommes un Conseil de Famille, votre Conseil de Famille. Bienveillance et goût de l’autre ! Cette expression n’est pas pour nous une figure de style à la mode mais véritablement notre ADN. Qu’il soit en phase de constitution, de gestion ou de transmission, le patrimoine de nos clients est comme vous : unique, différent et exigeant. DÉCOUVRIR NOTRE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATIONs - CIF - COURTIER Association HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions \"Excellent\" Classement leader League \" Les 100 qui font le patrimoine\" Nommé par Leader League l'an dernier Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "http://www.loffis.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Être(s) & Avoir(s)"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/29205/l_offis/"
+      }
+    },
+    {
       "id": "cgp_8ea27237a7",
       "company_name": "L'ALLOCATAIRE",
       "company_name_normalized": "lallocataire",
@@ -265856,7 +266548,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "LA JONCHERE PATRIMOINE"
+      ],
       "directors": [
         {
           "name": "MAXIME HERVE",
@@ -265868,13 +266562,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10509/la-jonchere/"
+      },
       "creation_date": "1992-10-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -267881,11 +268581,13 @@
       },
       "phone": "+33139041910",
       "email": "eric.robbe@laffittegp.com",
-      "website": "",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "LAFFITTE GESTION PRIVÉE"
+      ],
       "directors": [
         {
           "name": "JEAN-PHILIPPE MAUGARD",
@@ -267909,13 +268611,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/25582/finindep-laffitte-gestion-privee/"
+      },
       "creation_date": "2017-07-04",
       "data_gouv": {
         "etat_administratif": "A",
@@ -269279,11 +269987,13 @@
       },
       "phone": "+33467346636",
       "email": "clientele@groupe-crystal.com",
-      "website": "",
+      "website": "https://laplace-groupe.com/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Laplace, une marque du groupe Crystal"
+      ],
       "directors": [
         {
           "name": "JEAN-LUC DELSOL",
@@ -269313,13 +270023,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27628/laplace/"
+      },
       "creation_date": "1992-03-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -269634,7 +270350,11 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Allocation d'actifs",
+        "Assurance Vie",
+        "Epargne / Placements financiers"
+      ],
       "directors": [
         {
           "name": "NICOLAS BOUËT",
@@ -269646,13 +270366,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-06",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -280722,6 +281448,51 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2006-11-03"
+    },
+    {
+      "id": "cgp_f4a974d028",
+      "company_name": "LETAILLEUR Conseils et Patrimoine",
+      "company_name_normalized": "letailleur conseils et patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Epargne financière à moyen et long terme",
+        "Optimisation patrimoniale",
+        "Transmission"
+      ],
+      "directors": [
+        {
+          "name": "Christine LETAILLEUR",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_1189993954",
@@ -301495,7 +302266,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Respecter le Passé, gérer le Présent et préparer l'Avenir"
+      ],
       "directors": [
         {
           "name": "LIONEL LAFON",
@@ -301507,13 +302280,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27447/Cabinet-Massalia/"
+      },
       "creation_date": "2011-05-28",
       "data_gouv": {
         "etat_administratif": "A",
@@ -318144,6 +318923,44 @@
       }
     },
     {
+      "id": "cgp_23ebb7b027",
+      "company_name": "MONTRACHET",
+      "company_name_normalized": "montrachet",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - Montrachet LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. Montrachet Finance & Patrimoine Montrachet Finance & Patrimoine vous accompagne dans toutes les étapes de votre vie, de la constitution de votre patrimoine jusqu’à sa transmission, avec une spécialisation du cabinet envers les indépendants, les cadres supérieurs, et les chefs d’entreprises. Notre valeur ajoutée, l’accompagnement du chef d’entreprise avant, pendant et après la vente de sa société, pour un suivi durable lié à la transformation du patrimoine. Nous anticipons les effets fiscaux des décisions d’investissement afin d’alléger les droits à la succession. Après avoir analysé vos enjeux patrimoniaux de façon globale (famille, fiscalité, succession) et compris vos objectifs, nous composons ensemble une stratégie personnalisée. Vous êtes suivi par un associé du cabinet, un spécialiste patrimonial et un responsable des investissements : 3 experts qui assurent la continuité de la relation. Après 29 années quasiment seul à la tête du cabinet, le capital est désormais ouvert aux salariés, ainsi qu’à d’autres professionnels de notre métier, afin d’insuffler une dynamique nouvelle. DÉCOUVRIR NOTRE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 Collaborateurs 0 PARTENAIRES 0 Années à votre service Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATIONs - CIF - COURTIER Association HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions \"Excellent\" Classement leader League \" Les 100 qui font le patrimoine\" Nommé par Leader League l'an dernier Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://montrachet-finance.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Créons aujourd'hui votre patrimoine de demain"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/29356/proposition-pour-le-club/"
+      }
+    },
+    {
       "id": "cgp_a5e14ba73e",
       "company_name": "MONTSEGUR FAMILY OFFICE",
       "company_name_normalized": "montsegur family office",
@@ -333887,13 +334704,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "2025-03-20",
       "data_gouv": {
         "etat_administratif": "A"
@@ -340433,7 +341256,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Cabinet de conseil en gestion de patrimoine"
+      ],
       "directors": [
         {
           "name": "JEAN-MAXIMILIEN VANCAYEZEELE",
@@ -340445,13 +341270,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27448/OPES-Patrimoine/"
+      },
       "creation_date": "1993-05-03",
       "data_gouv": {
         "etat_administratif": "A",
@@ -347645,6 +348476,44 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pacif/"
+      }
+    },
+    {
+      "id": "cgp_6f445444a3",
+      "company_name": "PACOGEST",
+      "company_name_normalized": "pacogest",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - Membres LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE MEMBRES La volonté du Club est de rester un cercle fermé limité à un nombre restreint de cabinets (une vingtaine au maximum) pour privilégier l'échange et la proximité entre ses membres. L'adhésion d'un nouveau membre doit être approuvée à la majorité renforcée (avec un droit de veto si 3 membres s'opposent à l'adhésion d'un nouveau membre). DE JONGHE FINANCE Experts en gestion et stratégies financières TALLEYRAND FINANCES Cabinet de conseil en gestion de patrimoine BAUSSANT CONSEIL Un cabinet de conseil en gestion de patrimoine à votre service CULTURE PATRIMOINE L'interlocuteur de référence pour votre patrimoine PIERRE ET PLACEMENTS Conseil en investissement financier et stratégie patrimoniale ROUAULT PATRIMOINE Notre expertise au service de votre avenir OPES PATRIMOINE Cabinet de conseil en gestion de patrimoine DG FINANCE Cabinet de conseil en gestion de patrimoine MASSALIA FINANCE Respecter le Passé, gérer le Présent et préparer l'Avenir CENTRE DU PATRIMOINE Une véritable expertise HAUSSMANN PATRIMOINE FAIRE MIEUX QUE VOTRE BANQUE PRIVEE MONTRACHET Créons aujourd'hui votre patrimoine de demain SELENE PATRIMOINE Ensemble, anticipons demain SG PATRIMOINE Solutions patrimoniales personnalisées CGP Expert cabinet de Conseil en gestion de Patrimoine et Family Office Nos membres LAPLACE Laplace, une marque du groupe Crystal DAUPHINE PATRIMOINE Dauphine Patrimoine est une société de gestion de portefeuille CIMEA PATRIMOINE A vos côtés dans chacun de vos projets L' OFFIS Être(s) & Avoir(s) PACOGEST Pour une finance utile ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Pour une finance utile"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27058/membres/"
       }
     },
     {
@@ -364336,6 +365205,51 @@
       "orias_inscription_date": "2008-02-02"
     },
     {
+      "id": "cgp_b5a1363dc8",
+      "company_name": "Piane Finance",
+      "company_name_normalized": "piane finance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Allocation d’actifs",
+        "Ingénierie Patrimoniale",
+        "Gestion de patrimoine"
+      ],
+      "directors": [
+        {
+          "name": "Pierre-Louis FORLINI",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
+    },
+    {
       "id": "cgp_e6847d152f",
       "company_name": "PIANEFINANCE",
       "company_name_normalized": "pianefinance",
@@ -365288,6 +366202,44 @@
       "is_new": true,
       "source_urls": {
         "affo": "https://www.affo.fr/fr/nous-connaitre/l-organisation"
+      }
+    },
+    {
+      "id": "cgp_61dae825eb",
+      "company_name": "PIERRE ET PLACEMENTS",
+      "company_name_normalized": "pierre et placements",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "le Club des entrepreneurs CGP - Cabinet Pierre et Placements LE CLUB MEMBRES PRESSE CONTACT NOTRE CHARTE Venice Depuis 20 ans, Venice accompagne ses clients dans la constitution de leur patrimoine. Notre démarche indépendante et généraliste nous permet de sélectionner en toute objectivité les solutions les plus adaptées à votre situation. A travers une analyse personnalisée, nous constituons une stratégie patrimoniale sur-mesure avec des solutions responsables et éthiques. Pierre & Placements Pierre & Placements est un cabinet de gestion de patrimoine indépendant créé en 2003. Il s’adresse à une clientèle de Français résidents et non-résidents , notamment installés au Moyen-Orient et en Asie du Sud-Est. Forts de notre expertise en matière de problématique patrimoniale et de préparation retraite des expatriés, nous avons l’ambition de poursuivre ce développement au cours des prochaines années, tout en assurant le développement en France à partir de notre bureau parisien. Pierre & Placements offre des conseils en gestion de patrimoine en totale indépendance et en totale objectivité, ce qui nous permet de vous garantir des solutions de qualité adaptées à votre situation et à vos objectifs. Notre méthodologie passe par plusieurs étapes : diagnostic, recommandation, mise en œuvre des recommandations et suivi des solutions proposées. Nos recommandations s’appuient sur une large gamme de solutions d’investissement (actifs financiers et immobiliers principalement) qui bénéficient de différents modes de détention possibles (assurance-vie, comptes-titres, PEA, contrats de capitalisation, immobilier en direct, SCPI,…) et de solutions de prévoyance, dont le choix résulte d’une sélection rigoureuse. DÉCOUVRIR LE CABINET \"Venice, une vision indépendante et personnalisée de la gestion de patrimoine.\" \"Nous vous offrons des conseils en gestion de patrimoine en totale indépendance et en totale objectivité\" 0 Nombre de collaborateurs 0 NOMBRE DE CLIENTS 0 ACTIFS SUIVIS 0 Nombre de collaborateurs 0 CLIENTS 0 M€ d'ACTIFS SUIVIS Expertises Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Epargne Retraite Tontine PEA / PEA PME Comptes titres Epargne Salariale Défiscalisation Cryptoactifs Recherche de financements Prévoyance Ingénierie patrimoniale Allocation d’actifs EXPERTISES Non résidents PERSONNES PHYSIQUES Français résidents Non résidents US Persons TNS Chefs d’entreprises Personnes protégées PERSONNES MORALES Sociétés non commerciales Sociétés commerciales Associations Fondations HABILITATION NOUS CONTACTER HABILITATION - CIF Associations HABILITATION Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. Donec dictum, eros quis cursus vestibulum, metus nisi sagittis ex, ut sodales enim neque nec ante. Integer laoreet ex ac porta efficitur. Suspendisse quis ante id odio luctus accumsan id sed est. Cras et vehicula neque, nec maximus urna. Etiam vitae dui sed nisl interdum egestas. NOUS CONTACTER Distinctions \"Excellent\" Classement leader League \" Les 100 qui font le patrimoine\" Nommé par Leader League l'an dernier Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Vestibulum quis lectus eget felis venenatis pretium. Cras nec mi ex. Cras semper ornare eros in gravida. Victoire d'Actusite Distinctions \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\" ADRESSE 4 avenue de l’Opéra",
+        "postal_code": "75001",
+        "city": "Paris CONTACT",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33534418620",
+      "email": "%20contact@entrepreneurs-cgp.com",
+      "website": "https://www.pierreetplacements.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Conseil en investissement financier et stratégie patrimoniale"
+      ],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
+        }
+      },
+      "groupement": "Le Club des Entrepreneurs CGP",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27458/Cabinet-Pierre-et-Placements/"
       }
     },
     {
@@ -375181,7 +376133,7 @@
       },
       "phone": "+33139736966",
       "email": "philippe.legigand@prl-invest.com",
-      "website": "",
+      "website": "http://www.prl-invest.com",
       "activities": [
         "CIF"
       ],
@@ -375197,13 +376149,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10498/prl-invest/"
+      },
       "creation_date": "2002-02-22",
       "data_gouv": {
         "etat_administratif": "A",
@@ -377733,6 +378691,52 @@
       },
       "creation_date": "1900-01-01",
       "orias_inscription_date": "2011-03-18"
+    },
+    {
+      "id": "cgp_bdae7c44eb",
+      "company_name": "Prévoir & Investir",
+      "company_name_normalized": "prevoir  investir",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Crédit immobilier",
+        "Assurance emprunteur",
+        "SCPI - Transaction immobilière",
+        "Assurance vie"
+      ],
+      "directors": [
+        {
+          "name": "Michel CRETIN",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_0a7aa11ae4",
@@ -382439,6 +383443,51 @@
       },
       "creation_date": "2003-07-01",
       "orias_inscription_date": "2007-06-15"
+    },
+    {
+      "id": "cgp_667f0d4946",
+      "company_name": "RDI Conseil",
+      "company_name_normalized": "rdi conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Gestion de patrimoine",
+        "Successions",
+        "Assurance Vie"
+      ],
+      "directors": [
+        {
+          "name": "Régis D'INDY",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_c4a6f0bb5c",
@@ -391585,7 +392634,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Notre expertise au service de votre avenir"
+      ],
       "directors": [
         {
           "name": "PHILIPPE ROUAULT",
@@ -391609,13 +392660,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27460/Rouault-Patrimoine/"
+      },
       "creation_date": "2016-03-08",
       "data_gouv": {
         "etat_administratif": "A",
@@ -392825,6 +393882,51 @@
       },
       "creation_date": "2020-10-01",
       "orias_inscription_date": "2020-11-06"
+    },
+    {
+      "id": "cgp_ce87525ffe",
+      "company_name": "RP Consulting",
+      "company_name_normalized": "rp consulting",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Epargne salariale",
+        "Allocations d'actifs",
+        "Retraite"
+      ],
+      "directors": [
+        {
+          "name": "Rémy PRIORE",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_d68d6e2af5",
@@ -400725,12 +401827,14 @@
         "region": "Bourgogne-Franche-Comte"
       },
       "phone": "+33384267370",
-      "email": "",
-      "website": "",
+      "email": "finindep@finindep.com",
+      "website": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "ODYSSEE PATRIMOINE"
+      ],
       "directors": [
         {
           "name": "Julien Caizergues",
@@ -400740,13 +401844,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10500/odyssee-patrimoine/"
+      }
     },
     {
       "id": "cgp_8cfa2eaa83",
@@ -408075,11 +409185,13 @@
       },
       "phone": "+33241489642",
       "email": "contact@selene-patrimoine.fr",
-      "website": "",
+      "website": "https://www.selene-patrimoine.fr/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "SELENE PATRIMOINE Ensemble, anticipons demain"
+      ],
       "directors": [
         {
           "name": "CLAIRE REGIMBART",
@@ -408097,13 +409209,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/29559/selene_patrimoine/"
+      },
       "creation_date": "1999-05-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -411778,11 +412896,13 @@
       },
       "phone": "+33139041902",
       "email": "sgpatrimoine@aol.com",
-      "website": "",
+      "website": "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Solutions patrimoniales personnalisées"
+      ],
       "directors": [
         {
           "name": "STEPHANE GASIOROWSKI",
@@ -411798,13 +412918,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/33925/SG PATRIMOINE/"
+      },
       "creation_date": "2012-04-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -428599,11 +429725,13 @@
       },
       "phone": "+33144706340",
       "email": "infos@talleyrandfinances.fr",
-      "website": "",
+      "website": "http://www.talleyrandfinances.fr/",
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Cabinet de conseil en gestion de patrimoine"
+      ],
       "directors": [
         {
           "name": "DAVID PLAIS",
@@ -428615,13 +429743,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Le Club des Entrepreneurs CGP"
         }
       },
-      "groupement": null,
+      "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.entrepreneurs-cgp.com/page/27469/talleyrand-finances/"
+      },
       "creation_date": "2002-08-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -433044,13 +434178,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-06",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -434926,6 +436066,51 @@
       },
       "creation_date": "2018-01-02",
       "orias_inscription_date": "2018-11-23"
+    },
+    {
+      "id": "cgp_222a0a5e75",
+      "company_name": "Tiger Capital",
+      "company_name_normalized": "tiger capital",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Ingénierie patrimoniale",
+        "Allocation d'actifs",
+        "Gestion d'actions"
+      ],
+      "directors": [
+        {
+          "name": "Stephan CLERJAUD",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_0c479f1ae7",
@@ -438923,7 +440108,13 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Assurance Vie",
+        "Crédit immobilier",
+        "Droit de la Famille",
+        "Immobilier",
+        "Stratégie Patrimoniale"
+      ],
       "directors": [
         {
           "name": "VIRGINIE LACOUR",
@@ -438935,13 +440126,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-06",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -445094,7 +446291,12 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "Fiscalité",
+        "Ingénierie patrimoniale",
+        "Placements financiers",
+        "Transmission de patrimoine"
+      ],
       "directors": [
         {
           "name": "ARNAULD MASDEVALL",
@@ -445112,13 +446314,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
         }
       },
-      "groupement": null,
+      "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      },
       "creation_date": "1992-10-20",
       "data_gouv": {
         "etat_administratif": "A",
@@ -450552,7 +451760,9 @@
       "activities": [
         "CIF"
       ],
-      "specialties": [],
+      "specialties": [
+        "VIADUC FINANCES"
+      ],
       "directors": [
         {
           "name": "FLORIAN LEFER",
@@ -450564,13 +451774,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Finindep"
         }
       },
-      "groupement": null,
+      "groupement": "Finindep",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.finindep.com/page/10501/viaduc-finances/"
+      },
       "creation_date": "2009-02-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -455241,6 +456457,52 @@
       },
       "creation_date": "2009-03-04",
       "orias_inscription_date": "2012-12-17"
+    },
+    {
+      "id": "cgp_4ee1f43b0a",
+      "company_name": "VVO",
+      "company_name_normalized": "vvo",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "Family Office",
+        "Ingénierie Patrimoniale",
+        "Immobilier / Crédit",
+        "Epargne salariale"
+      ],
+      "directors": [
+        {
+          "name": "Véronique TOURRET",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Actualis Associes"
+        }
+      },
+      "groupement": "Actualis Associes",
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-06",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
+      }
     },
     {
       "id": "cgp_adebfa71b3",
