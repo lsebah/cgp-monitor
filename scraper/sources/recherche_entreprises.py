@@ -53,43 +53,93 @@ def _format_director(d):
     }
 
 
+def _norm(s):
+    """Quick name normalizer for fuzzy matching SIREN-finder hits."""
+    import re, unicodedata
+    if not s:
+        return ""
+    s = unicodedata.normalize('NFKD', s.lower())
+    s = ''.join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r'[^a-z0-9]+', ' ', s).strip()
+    # Drop legal suffixes
+    s = re.sub(r'\b(sas|sasu|sarl|eurl|sa|sci|scp|selarl|selas)\b', '', s)
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def _looks_like_match(member, entry):
+    """Confirm the API hit really is the same cabinet.
+
+    Without this check, a search for "PATRIMOINE CONSEIL" with no SIREN can
+    paste another firm's data onto the member.
+    """
+    member_postal = (member.get("address") or {}).get("postal_code") or ""
+    entry_postal = (entry.get("siege") or {}).get("code_postal") or ""
+    # Postal codes must match if we have one on either side
+    if member_postal and entry_postal and member_postal != entry_postal:
+        return False
+    # Name must be a meaningful prefix/contains relation
+    m_name = _norm(member.get("company_name", ""))
+    e_name = _norm(entry.get("nom_complet") or entry.get("nom_raison_sociale") or "")
+    if not m_name or not e_name:
+        return False
+    return m_name in e_name or e_name in m_name
+
+
 def enrich_member(member):
-    """Fetch dirigeants + admin state from data.gouv API by SIREN.
+    """Fetch dirigeants + creation_date from data.gouv API.
+
+    Strategy: prefer SIREN lookup. If SIREN is missing, fall back to a
+    name+postal_code search and validate before stamping the result on the
+    member (also captures the SIREN itself for downstream ORIAS lookup).
 
     Mutates and returns the member dict.
     """
     siren = (member.get("siren") or "").strip()
-    if not siren or len(siren) != 9:
+    has_siren = siren and len(siren) == 9
+    member_postal = (member.get("address") or {}).get("postal_code") or ""
+    member_name = (member.get("company_name") or "").strip()
+
+    # Skip only when ALL the data.gouv fields we care about are already filled.
+    if member.get("directors") and member.get("creation_date") and has_siren:
         return member
 
-    # Skip only when ALL the data.gouv fields we care about are already filled,
-    # so a backfill that adds a new field (e.g. creation_date) re-hits the API
-    # for previously-enriched members.
-    if member.get("directors") and member.get("creation_date"):
-        return member
+    # Build the right query
+    params = {"page": 1, "per_page": 1}
+    if has_siren:
+        params["q"] = siren
+    else:
+        if not member_name:
+            return member
+        params["q"] = member_name
+        if member_postal:
+            params["code_postal"] = member_postal
+            params["per_page"] = 3  # widen a bit so we can pick the best match
 
     try:
-        resp = fetch(
-            API_URL,
-            params={"q": siren, "page": 1, "per_page": 1},
-            delay=0.2,
-            max_retries=2,
-        )
+        resp = fetch(API_URL, params=params, delay=0.2, max_retries=2)
         if not resp:
             return member
         payload = resp.json()
     except Exception as e:
-        logger.debug(f"data.gouv fetch failed for {siren}: {e}")
+        logger.debug(f"data.gouv fetch failed for {siren or member_name}: {e}")
         return member
 
     results = payload.get("results", [])
     if not results:
         return member
-    entry = results[0]
 
-    # Sanity check: SIREN must match (the API can return broader matches)
-    if entry.get("siren") != siren:
-        return member
+    if has_siren:
+        entry = results[0]
+        if entry.get("siren") != siren:
+            return member
+    else:
+        # Pick first result that passes the name+postal validation
+        entry = next((r for r in results if _looks_like_match(member, r)), None)
+        if not entry:
+            return member
+        # Stamp the SIREN on the member so the ORIAS pass can use it next.
+        if entry.get("siren"):
+            member["siren"] = entry["siren"]
 
     # Directors. Merge with existing rather than overwrite, so LinkedIn URLs
     # added by linkedin_search.py on a previous run survive a data.gouv re-run.
@@ -149,21 +199,34 @@ def enrich_member(member):
 
 
 def batch_enrich(members, max_lookups=None, log_every=50):
-    """Enrich members missing dirigeants OR creation_date from data.gouv."""
-    candidates = [
-        m for m in members
-        if m.get("siren") and (not m.get("directors") or not m.get("creation_date"))
-    ]
+    """Enrich members missing dirigeants, creation_date, or SIREN from data.gouv.
+
+    Now also covers members WITHOUT a SIREN — the API is searched by
+    name + postal_code and the SIREN is captured if a confident match is
+    found.
+    """
+    candidates = []
+    for m in members:
+        has_siren = bool(m.get("siren"))
+        has_dirs = bool(m.get("directors"))
+        has_cd = bool(m.get("creation_date"))
+        # Need data.gouv if any of (siren, dirs, creation_date) is missing AND
+        # we have either a SIREN to query by or a name+postal to look up.
+        wants = (not has_siren) or (not has_dirs) or (not has_cd)
+        can_query = has_siren or (m.get("company_name") and (m.get("address") or {}).get("postal_code"))
+        if wants and can_query:
+            candidates.append(m)
     if max_lookups is not None:
         candidates = candidates[:max_lookups]
 
     logger.info(f"data.gouv enrich: {len(candidates)} members to enrich")
 
-    found_dir = found_addr = found_date = 0
+    found_dir = found_addr = found_date = found_siren = 0
     for i, m in enumerate(candidates, 1):
         before_dir = bool(m.get("directors"))
         before_addr = bool((m.get("address") or {}).get("street"))
         before_date = bool(m.get("creation_date"))
+        before_siren = bool(m.get("siren"))
 
         enrich_member(m)
 
@@ -173,15 +236,18 @@ def batch_enrich(members, max_lookups=None, log_every=50):
             found_addr += 1
         if not before_date and m.get("creation_date"):
             found_date += 1
+        if not before_siren and m.get("siren"):
+            found_siren += 1
 
         if i % log_every == 0:
             logger.info(
                 f"  data.gouv {i}/{len(candidates)} "
-                f"(+{found_dir} dirigeants, +{found_date} dates, +{found_addr} addr fallback)"
+                f"(+{found_siren} SIRENs, +{found_dir} dirigeants, +{found_date} dates)"
             )
 
     logger.info(
-        f"data.gouv done: +{found_dir} dirigeants, +{found_date} creation_dates, "
-        f"+{found_addr} address fallbacks (out of {len(candidates)} lookups)"
+        f"data.gouv done: +{found_siren} SIRENs, +{found_dir} dirigeants, "
+        f"+{found_date} creation_dates, +{found_addr} address fallbacks "
+        f"(out of {len(candidates)} lookups)"
     )
     return members

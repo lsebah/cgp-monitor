@@ -48,35 +48,47 @@ def save_members(data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def filter_anacofi(members):
-    return [m for m in members if (m.get("associations") or {}).get("anacofi", {}).get("member")]
+def filter_by_associations(members, assoc_codes):
+    """Keep members tagged with at least one of the given association codes."""
+    return [
+        m for m in members
+        if any(
+            (m.get("associations") or {}).get(code, {}).get("member")
+            for code in assoc_codes
+        )
+    ]
 
 
-def report_coverage(anacofi, label):
-    n = len(anacofi)
+def report_coverage(target, label):
+    n = len(target)
     if not n:
         return
-    addr = sum(1 for m in anacofi if (m.get("address") or {}).get("street"))
-    phone = sum(1 for m in anacofi if m.get("phone"))
-    email = sum(1 for m in anacofi if m.get("email"))
-    directors = sum(1 for m in anacofi if m.get("directors"))
+    siren = sum(1 for m in target if m.get("siren"))
+    addr = sum(1 for m in target if (m.get("address") or {}).get("street"))
+    phone = sum(1 for m in target if m.get("phone"))
+    email = sum(1 for m in target if m.get("email"))
+    directors = sum(1 for m in target if m.get("directors"))
+    cd = sum(1 for m in target if m.get("creation_date"))
+    od = sum(1 for m in target if m.get("orias_inscription_date"))
     li = sum(
         1
-        for m in anacofi
+        for m in target
         for d in (m.get("directors") or [])
         if d.get("linkedin")
     )
     logger.info(
-        f"[{label}] coverage: addr={addr}/{n} ({100*addr//n}%) | "
-        f"phone={phone}/{n} ({100*phone//n}%) | "
-        f"email={email}/{n} ({100*email//n}%) | "
-        f"dirigeants={directors}/{n} ({100*directors//n}%) | "
-        f"linkedin={li}"
+        f"[{label}] siren={siren}/{n} ({100*siren//n}%) | "
+        f"addr={100*addr//n}% | phone={100*phone//n}% | email={100*email//n}% | "
+        f"dirs={100*directors//n}% | creation_date={100*cd//n}% | "
+        f"orias_date={100*od//n}% | linkedin={li}"
     )
 
 
 def main():
     p = argparse.ArgumentParser()
+    p.add_argument("--associations", type=str, default="anacofi",
+                   help="Comma list of associations to backfill "
+                        "(e.g. anacofi, cncgp, cncef, all)")
     p.add_argument("--limit", type=int, default=None,
                    help="Limit each pass to N members (testing)")
     p.add_argument("--linkedin-limit", type=int, default=None,
@@ -90,35 +102,47 @@ def main():
                    help="Delay between DDG searches (seconds)")
     args = p.parse_args()
 
+    if args.associations == "all":
+        assoc_codes = ["anacofi", "cncgp", "cncef"]
+    else:
+        assoc_codes = [a.strip() for a in args.associations.split(",") if a.strip()]
+
     data = load_members()
     members = data["members"]
-    anacofi = filter_anacofi(members)
-    logger.info(f"Loaded {len(members)} total members, {len(anacofi)} ANACOFI")
-    report_coverage(anacofi, "BEFORE")
+    target = filter_by_associations(members, assoc_codes)
+    label = "+".join(c.upper() for c in assoc_codes)
+    logger.info(f"Loaded {len(members)} total members, {len(target)} target ({label})")
+    # data.gouv pass needs to come BEFORE ORIAS now: it can populate the
+    # SIREN by name+postal lookup when the source scraper didn't capture it.
+    # ORIAS keys all lookups on SIREN, so without that step CNCGP/CNCEF members
+    # can't be enriched at all.
+    report_coverage(target, "BEFORE")
 
     start = time.time()
 
-    # PASS 1 — ORIAS detail pages: address + phone + email
-    if not args.no_orias:
-        logger.info("=" * 60)
-        logger.info("PASS 1 — ORIAS detail pages (address + phone + email)")
-        logger.info("=" * 60)
-        t0 = time.time()
-        enrich_orias(anacofi, max_lookups=args.limit)
-        logger.info(f"Pass 1 done in {time.time()-t0:.0f}s")
-        save_members(data)
-        report_coverage(anacofi, "AFTER ORIAS")
-
-    # PASS 2 — data.gouv API: dirigeants
+    # PASS 1 — data.gouv API: dirigeants + creation_date + SIREN-finder for
+    # members where the source scraper didn't get one (CNCGP/CNCEF). MUST run
+    # before ORIAS because ORIAS needs the SIREN.
     if not args.no_datagouv:
         logger.info("=" * 60)
-        logger.info("PASS 2 — data.gouv API (dirigeants)")
+        logger.info("PASS 1 — data.gouv (dirigeants + creation_date + SIREN-by-name)")
         logger.info("=" * 60)
         t0 = time.time()
-        enrich_datagouv(anacofi, max_lookups=args.limit)
+        enrich_datagouv(target, max_lookups=args.limit)
+        logger.info(f"Pass 1 done in {time.time()-t0:.0f}s")
+        save_members(data)
+        report_coverage(target, "AFTER data.gouv")
+
+    # PASS 2 — ORIAS detail pages: address + phone + email + orias_inscription_date
+    if not args.no_orias:
+        logger.info("=" * 60)
+        logger.info("PASS 2 — ORIAS detail pages (address + phone + email + orias_date)")
+        logger.info("=" * 60)
+        t0 = time.time()
+        enrich_orias(target, max_lookups=args.limit)
         logger.info(f"Pass 2 done in {time.time()-t0:.0f}s")
         save_members(data)
-        report_coverage(anacofi, "AFTER data.gouv")
+        report_coverage(target, "AFTER ORIAS")
 
     # PASS 3 — DDG LinkedIn search (slow; can be skipped or capped tighter)
     li_limit = args.linkedin_limit if args.linkedin_limit is not None else args.limit
@@ -127,16 +151,16 @@ def main():
         logger.info(f"PASS 3 — DDG LinkedIn search (URLs for dirigeants, cap={li_limit})")
         logger.info("=" * 60)
         t0 = time.time()
-        enrich_linkedin(anacofi, max_lookups=li_limit, delay=args.linkedin_delay)
+        enrich_linkedin(target, max_lookups=li_limit, delay=args.linkedin_delay)
         logger.info(f"Pass 3 done in {time.time()-t0:.0f}s")
         save_members(data)
-        report_coverage(anacofi, "AFTER LinkedIn")
+        report_coverage(target, "AFTER LinkedIn")
 
     elapsed = time.time() - start
     logger.info("=" * 60)
     logger.info(f"BACKFILL DONE in {elapsed:.0f}s ({elapsed/60:.1f} min)")
     logger.info("=" * 60)
-    report_coverage(anacofi, "FINAL")
+    report_coverage(target, "FINAL")
 
 
 if __name__ == "__main__":
