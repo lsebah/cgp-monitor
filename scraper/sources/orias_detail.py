@@ -141,10 +141,13 @@ def enrich_member(member):
     return member
 
 
-def batch_enrich(members, max_lookups=None, log_every=50):
+def batch_enrich(members, max_lookups=None, log_every=50, checkpoint_fn=None,
+                 checkpoint_every=250):
     """Enrich members from ORIAS detail pages by SIREN.
 
-    `max_lookups=None` enriches everyone missing at least one of the 3 fields.
+    `max_lookups=None` enriches everyone missing at least one of the 4 fields.
+    `checkpoint_fn` is invoked every `checkpoint_every` rows so a crash
+    mid-pass doesn't lose hours of work.
     """
     candidates = []
     for m in members:
@@ -183,6 +186,13 @@ def batch_enrich(members, max_lookups=None, log_every=50):
                 f"  ORIAS detail {i}/{len(candidates)} "
                 f"(+{found_addr} addr, +{found_phone} phone, +{found_email} email)"
             )
+
+        if checkpoint_fn and (i % checkpoint_every == 0):
+            try:
+                checkpoint_fn()
+                logger.info(f"  -> checkpoint saved at {i}/{len(candidates)}")
+            except Exception as e:
+                logger.warning(f"  checkpoint failed: {e}")
 
     logger.info(
         f"ORIAS detail done: +{found_addr} addresses, +{found_phone} phones, "

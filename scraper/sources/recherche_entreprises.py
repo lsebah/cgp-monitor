@@ -184,12 +184,17 @@ def enrich_member(member):
         if siege.get("adresse"):
             from .base import extract_department
             from config import DEPARTMENTS, DEPT_TO_REGION
-            postal = siege.get("code_postal") or ""
+            postal = (siege.get("code_postal") or "")
+            commune = (siege.get("libelle_commune") or "")
             dept = extract_department(postal)
+            adresse = (siege.get("adresse") or "")
+            # Note: dict.get(key, default) returns the stored value if the key
+            # exists, even if that value is None — so always coalesce with `or ""`.
+            street = adresse.replace(postal, "").replace(commune, "").strip(",. ")
             member["address"] = {
-                "street": (siege.get("adresse") or "").replace(postal, "").replace(siege.get("libelle_commune", ""), "").strip(",. "),
+                "street": street,
                 "postal_code": postal,
-                "city": siege.get("libelle_commune") or "",
+                "city": commune,
                 "department": dept,
                 "department_name": DEPARTMENTS.get(dept, ""),
                 "region": DEPT_TO_REGION.get(dept, ""),
@@ -198,12 +203,17 @@ def enrich_member(member):
     return member
 
 
-def batch_enrich(members, max_lookups=None, log_every=50):
+def batch_enrich(members, max_lookups=None, log_every=50, checkpoint_fn=None,
+                 checkpoint_every=250):
     """Enrich members missing dirigeants, creation_date, or SIREN from data.gouv.
 
     Now also covers members WITHOUT a SIREN — the API is searched by
     name + postal_code and the SIREN is captured if a confident match is
     found.
+
+    `checkpoint_fn`, if provided, is called every `checkpoint_every` rows
+    so the in-memory enrichment is persisted to disk in case of a later
+    crash. Without this, a crash halfway through the pass loses everything.
     """
     candidates = []
     for m in members:
@@ -244,6 +254,13 @@ def batch_enrich(members, max_lookups=None, log_every=50):
                 f"  data.gouv {i}/{len(candidates)} "
                 f"(+{found_siren} SIRENs, +{found_dir} dirigeants, +{found_date} dates)"
             )
+
+        if checkpoint_fn and (i % checkpoint_every == 0):
+            try:
+                checkpoint_fn()
+                logger.info(f"  -> checkpoint saved at {i}/{len(candidates)}")
+            except Exception as e:
+                logger.warning(f"  checkpoint failed: {e}")
 
     logger.info(
         f"data.gouv done: +{found_siren} SIRENs, +{found_dir} dirigeants, "

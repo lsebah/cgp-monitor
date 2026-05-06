@@ -128,7 +128,10 @@ def main():
         logger.info("PASS 1 — data.gouv (dirigeants + creation_date + SIREN-by-name)")
         logger.info("=" * 60)
         t0 = time.time()
-        enrich_datagouv(target, max_lookups=args.limit)
+        # Pass a checkpoint callback so a crash mid-pass doesn't lose all the
+        # SIRENs we already found. Saves every 250 rows.
+        enrich_datagouv(target, max_lookups=args.limit,
+                        checkpoint_fn=lambda: save_members(data))
         logger.info(f"Pass 1 done in {time.time()-t0:.0f}s")
         save_members(data)
         report_coverage(target, "AFTER data.gouv")
@@ -139,7 +142,8 @@ def main():
         logger.info("PASS 2 — ORIAS detail pages (address + phone + email + orias_date)")
         logger.info("=" * 60)
         t0 = time.time()
-        enrich_orias(target, max_lookups=args.limit)
+        enrich_orias(target, max_lookups=args.limit,
+                     checkpoint_fn=lambda: save_members(data))
         logger.info(f"Pass 2 done in {time.time()-t0:.0f}s")
         save_members(data)
         report_coverage(target, "AFTER ORIAS")
