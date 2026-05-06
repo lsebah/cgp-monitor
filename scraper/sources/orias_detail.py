@@ -50,7 +50,7 @@ def _parse_address(addr):
 
 
 def enrich_member(member):
-    """Fetch ORIAS detail page by SIREN and fill address/phone/email if missing.
+    """Fetch ORIAS detail page by SIREN and fill address/phone/email/orias_inscription_date.
 
     Mutates and returns the member dict.
     """
@@ -58,11 +58,14 @@ def enrich_member(member):
     if not siren or len(siren) != 9:
         return member
 
-    # Skip if all 3 target fields are already populated
+    # Skip only if all target fields are already populated. orias_inscription_date
+    # is part of the skip key so previously-enriched members get re-fetched on
+    # backfills that add it.
     has_addr = (member.get("address") or {}).get("street")
     has_phone = member.get("phone")
     has_email = member.get("email")
-    if has_addr and has_phone and has_email:
+    has_orias_date = member.get("orias_inscription_date")
+    if has_addr and has_phone and has_email and has_orias_date:
         return member
 
     url = DETAIL_URL.format(siren=siren)
@@ -123,6 +126,18 @@ def enrich_member(member):
             if len(digits) == 8:
                 member["orias_number"] = digits
 
+    # ORIAS first registration date — earliest "Inscrit le DD/MM/YYYY".
+    # Some entities show "Supprimé le ..." for old/removed registrations; we
+    # explicitly only take "Inscrit le" matches, then keep the oldest one
+    # (= the year the cabinet first joined the registry).
+    if not has_orias_date:
+        all_text = soup.get_text(" ", strip=True)
+        inscrit_dates = re.findall(r'Inscrit le (\d{2})/(\d{2})/(\d{4})', all_text)
+        if inscrit_dates:
+            # Convert to ISO yyyy-mm-dd, take the earliest
+            iso_dates = [f"{y}-{mo}-{d}" for d, mo, y in inscrit_dates]
+            member["orias_inscription_date"] = min(iso_dates)
+
     return member
 
 
@@ -138,7 +153,8 @@ def batch_enrich(members, max_lookups=None, log_every=50):
         has_addr = (m.get("address") or {}).get("street")
         has_phone = m.get("phone")
         has_email = m.get("email")
-        if has_addr and has_phone and has_email:
+        has_orias_date = m.get("orias_inscription_date")
+        if has_addr and has_phone and has_email and has_orias_date:
             continue
         candidates.append(m)
 

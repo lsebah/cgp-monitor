@@ -262,10 +262,14 @@ async function cloudSave() {
 async function loadData() {
     try {
         const [membersResp, newResp, groupResp, cartoResp] = await Promise.all([
-            fetch('data/members.json').catch(() => null),
-            fetch('data/new_members.json').catch(() => null),
-            fetch('data/groupements.json').catch(() => null),
-            fetch('data/20260413_cartographie_groupements_cgp.json').catch(() => null),
+            // cache:'no-store' ensures we never serve stale data from the
+            // browser HTTP cache — the data files change every day after the
+            // scrape, and Last-Modified-based revalidation has been observed
+            // to keep stale copies around even after the SW reload.
+            fetch('data/members.json', { cache: 'no-store' }).catch(() => null),
+            fetch('data/new_members.json', { cache: 'no-store' }).catch(() => null),
+            fetch('data/groupements.json', { cache: 'no-store' }).catch(() => null),
+            fetch('data/20260413_cartographie_groupements_cgp.json', { cache: 'no-store' }).catch(() => null),
         ]);
 
         if (membersResp?.ok) {
@@ -288,23 +292,31 @@ async function loadData() {
 
             // Total CGP shows the actionable count (with contact) by default.
             document.getElementById('statTotal').textContent = withContact;
-            // Recompute "new in 7d/30d" against the contact-filtered list so
-            // these stats stay aligned with Total CGP and never overflow it.
+            // Stay aligned with Total CGP: only count members that have at least
+            // one piece of contact info, so these tiles can never exceed Total.
             const today = new Date();
             today.setHours(0, 0, 0, 0);
-            let new7 = 0, new30 = 0;
+            // creation_date cutoff: 4 months = ~122 days. Compute as ISO date.
+            const cutoff4m = new Date(today.getTime() - 122 * 86400000)
+                .toISOString().slice(0, 10);
+            let new7 = 0, recent4m = 0;
             for (const m of allMembers) {
                 if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
+                // "Nouveaux 7j" = first_seen by our scrape ≤ 7 days ago
                 const fs = m.first_seen;
-                if (!fs) continue;
-                const fsDt = new Date(fs);
-                if (isNaN(fsDt)) continue;
-                const days = Math.floor((today - fsDt) / 86400000);
-                if (days <= 7) new7++;
-                if (days <= 30) new30++;
+                if (fs) {
+                    const fsDt = new Date(fs);
+                    if (!isNaN(fsDt)) {
+                        const days = Math.floor((today - fsDt) / 86400000);
+                        if (days <= 7) new7++;
+                    }
+                }
+                // "Crees < 4 mois" = data.gouv creation_date within last 4 months
+                if (m.creation_date && m.creation_date >= cutoff4m) recent4m++;
             }
             document.getElementById('statNew').textContent = new7;
-            document.getElementById('statMonth').textContent = new30;
+            const elRecent = document.getElementById('statRecent4m');
+            if (elRecent) elRecent.textContent = recent4m;
 
             if (data.last_updated) {
                 const d = new Date(data.last_updated);
@@ -395,7 +407,47 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
 function filterByAssociation(key) {
     const filterEl = document.getElementById('filterAssociation');
     if (filterEl) filterEl.value = key;
+    _switchToDirectory();
+}
 
+// Click on a top dashboard stat tile → switch to Annuaire and apply the matching filter.
+// `kind` is one of: all | new7d | recent4m | pending | contacted | refused | folk
+function applyDashboardFilter(kind) {
+    // Reset all form filters first
+    const reset = ['searchInput', 'filterAssociation', 'filterDepartment',
+                   'filterActivity', 'filterStatus', 'filterCreation'];
+    reset.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+    const hide = document.getElementById('filterHideProcessed');
+    if (hide) hide.checked = false;
+    window.synthFilters = {};
+
+    switch (kind) {
+        case 'all':
+            // No extra filter — default actionable view (hides no-contact cabinets).
+            break;
+        case 'new7d':
+            window.synthFilters = { firstSeenDays: 7 };
+            break;
+        case 'recent4m':
+            document.getElementById('filterCreation').value = '4m';
+            break;
+        case 'pending':
+            document.getElementById('filterStatus').value = 'pending';
+            break;
+        case 'contacted':
+            document.getElementById('filterStatus').value = 'contacted';
+            break;
+        case 'refused':
+            document.getElementById('filterStatus').value = 'refused';
+            break;
+        case 'folk':
+            window.synthFilters = { folkOnly: true };
+            break;
+    }
+    _switchToDirectory();
+}
+
+function _switchToDirectory() {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
     const directoryTab = document.querySelector('.tab[data-tab="directory"]');
@@ -431,13 +483,30 @@ function getFilteredMembers() {
     const creationFilter = document.getElementById('filterCreation')?.value || '';
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
 
-    // creation_date is "YYYY-MM-DD" — compute the cutoff once (years ago)
+    // creation_date is "YYYY-MM-DD" — compute the cutoff once.
+    // Filter values: "4m" (months) or "1"|"2"|"3"|"5" (years).
     let creationCutoff = null;
     if (creationFilter) {
-        const years = parseInt(creationFilter, 10);
         const d = new Date();
-        d.setFullYear(d.getFullYear() - years);
+        if (creationFilter.endsWith('m')) {
+            const months = parseInt(creationFilter, 10);
+            d.setMonth(d.getMonth() - months);
+        } else {
+            const years = parseInt(creationFilter, 10);
+            d.setFullYear(d.getFullYear() - years);
+        }
         creationCutoff = d.toISOString().slice(0, 10);
+    }
+
+    // synthFilters is set by applyDashboardFilter (clicks on top stat tiles)
+    // for filters that have no UI widget (first_seen, Folk membership).
+    const synth = window.synthFilters || {};
+    const folkMap = synth.folkOnly ? getFolkMap() : null;
+    let firstSeenCutoff = null;
+    if (synth.firstSeenDays) {
+        const d = new Date();
+        d.setDate(d.getDate() - synth.firstSeenDays);
+        firstSeenCutoff = d.toISOString().slice(0, 10);
     }
 
     return allMembers.filter(m => {
@@ -449,6 +518,10 @@ function getFilteredMembers() {
         if (!assocFilter) {
             const hasContact = m.email || m.phone || m.website || (m.directors && m.directors.length > 0);
             if (!hasContact) return false;
+        }
+        if (folkMap && !folkMap[m.id]) return false;
+        if (firstSeenCutoff) {
+            if (!m.first_seen || m.first_seen < firstSeenCutoff) return false;
         }
         const currentStatus = getStatus(m.id);
         if (hideProcessed && currentStatus) return false;
@@ -630,6 +703,7 @@ function renderMemberCard(m) {
                     ${m.siren ? `<span>SIREN: ${escHtml(m.siren)}</span>` : ''}
                     ${m.orias_number ? `<span>ORIAS: ${escHtml(m.orias_number)}</span>` : ''}
                     ${m.creation_date ? `<span title="Date de creation (data.gouv)">Cree: ${escHtml(formatCreationDate(m.creation_date))}</span>` : ''}
+                    ${m.orias_inscription_date ? `<span title="Premiere inscription au registre ORIAS">ORIAS depuis: ${escHtml(formatCreationDate(m.orias_inscription_date))}</span>` : ''}
                 </div>
                 ${renderDirectorsHtml(m)}
                 ${contactInfo.length ? `<div class="member-contact">${contactInfo.join('')}</div>` : ''}

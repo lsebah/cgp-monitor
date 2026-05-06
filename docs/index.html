@@ -37,31 +37,31 @@
 
     <!-- Stats Bar -->
     <section class="stats-bar">
-        <div class="stat-card">
+        <div class="stat-card clickable" onclick="applyDashboardFilter('all')" title="Tous les cabinets avec coordonnees">
             <div class="stat-number" id="statTotal">-</div>
             <div class="stat-label">Total CGP</div>
         </div>
-        <div class="stat-card highlight">
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('new7d')" title="Cabinets detectes par notre scrape ces 7 derniers jours">
             <div class="stat-number" id="statNew">-</div>
             <div class="stat-label">Nouveaux (7j)</div>
         </div>
-        <div class="stat-card">
-            <div class="stat-number" id="statMonth">-</div>
-            <div class="stat-label">Nouveaux (30j)</div>
+        <div class="stat-card clickable" onclick="applyDashboardFilter('recent4m')" title="Cabinets crees au sens data.gouv il y a moins de 4 mois">
+            <div class="stat-number" id="statRecent4m">-</div>
+            <div class="stat-label">Crees < 4 mois</div>
         </div>
-        <div class="stat-card stat-pending">
+        <div class="stat-card stat-pending clickable" onclick="applyDashboardFilter('pending')" title="Cabinets dont vous avez marque le statut = En cours">
             <div class="stat-number" id="statPending">0</div>
             <div class="stat-label">En cours</div>
         </div>
-        <div class="stat-card stat-contacted">
+        <div class="stat-card stat-contacted clickable" onclick="applyDashboardFilter('contacted')" title="Cabinets dont vous avez marque le statut = Contactes">
             <div class="stat-number" id="statContacted">0</div>
             <div class="stat-label">Contactes</div>
         </div>
-        <div class="stat-card stat-refused">
+        <div class="stat-card stat-refused clickable" onclick="applyDashboardFilter('refused')" title="Cabinets dont vous avez marque le statut = Refus">
             <div class="stat-number" id="statRefused">0</div>
             <div class="stat-label">Refus</div>
         </div>
-        <div class="stat-card stat-folk">
+        <div class="stat-card stat-folk clickable" onclick="applyDashboardFilter('folk')" title="Cabinets que vous avez ajoutes a Folk">
             <div class="stat-number" id="statFolk">0</div>
             <div class="stat-label">Dans Folk</div>
         </div>
@@ -116,6 +116,7 @@
                     </select>
                     <select id="filterCreation" class="filter-select" title="Date de creation du cabinet (source: data.gouv)">
                         <option value="">Toute anciennete</option>
+                        <option value="4m">Crees < 4 mois</option>
                         <option value="1">Crees < 1 an</option>
                         <option value="2">Crees < 2 ans</option>
                         <option value="3">Crees < 3 ans</option>

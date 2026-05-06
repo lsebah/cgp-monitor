@@ -121,7 +121,11 @@ body {
     border-radius: var(--radius);
     padding: 16px 20px;
     text-align: center;
+    transition: border-color 0.15s, transform 0.1s, background 0.15s;
 }
+.stat-card.clickable { cursor: pointer; }
+.stat-card.clickable:hover { border-color: var(--accent-blue); background: rgba(255,255,255,0.03); }
+.stat-card.clickable:active { transform: scale(0.98); }
 .stat-card.highlight {
     border-color: var(--accent-blue);
     background: linear-gradient(135deg, var(--bg-card) 0%, #1a2040 100%);
