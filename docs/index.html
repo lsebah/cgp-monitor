@@ -41,9 +41,9 @@
             <div class="stat-number" id="statTotal">-</div>
             <div class="stat-label">Total CGP</div>
         </div>
-        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('new7d')" title="Cabinets detectes par notre scrape ces 7 derniers jours">
-            <div class="stat-number" id="statNew">-</div>
-            <div class="stat-label">Nouveaux (7j)</div>
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent7d')" title="Cabinets crees ces 7 derniers jours (data.gouv)">
+            <div class="stat-number" id="statRecent7d">-</div>
+            <div class="stat-label">Crees < 7 jours</div>
         </div>
         <div class="stat-card clickable" onclick="applyDashboardFilter('recent4m')" title="Cabinets crees au sens data.gouv il y a moins de 4 mois">
             <div class="stat-number" id="statRecent4m">-</div>
@@ -116,6 +116,8 @@
                     </select>
                     <select id="filterCreation" class="filter-select" title="Date de creation du cabinet (source: data.gouv)">
                         <option value="">Toute anciennete</option>
+                        <option value="7d">Crees < 7 jours</option>
+                        <option value="30d">Crees < 30 jours</option>
                         <option value="4m">Crees < 4 mois</option>
                         <option value="1">Crees < 1 an</option>
                         <option value="2">Crees < 2 ans</option>

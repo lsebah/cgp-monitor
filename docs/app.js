@@ -296,27 +296,23 @@ async function loadData() {
             // one piece of contact info, so these tiles can never exceed Total.
             const today = new Date();
             today.setHours(0, 0, 0, 0);
-            // creation_date cutoff: 4 months = ~122 days. Compute as ISO date.
+            // Both "7 jours" and "4 mois" tiles use creation_date (data.gouv)
+            // — first_seen would just count "rows our scraper picked up
+            // recently", which spikes whenever we widen the scrape coverage.
+            const cutoff7d = new Date(today.getTime() - 7 * 86400000)
+                .toISOString().slice(0, 10);
             const cutoff4m = new Date(today.getTime() - 122 * 86400000)
                 .toISOString().slice(0, 10);
-            let new7 = 0, recent4m = 0;
+            let recent7d = 0, recent4m = 0;
             for (const m of allMembers) {
                 if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
-                // "Nouveaux 7j" = first_seen by our scrape ≤ 7 days ago
-                const fs = m.first_seen;
-                if (fs) {
-                    const fsDt = new Date(fs);
-                    if (!isNaN(fsDt)) {
-                        const days = Math.floor((today - fsDt) / 86400000);
-                        if (days <= 7) new7++;
-                    }
-                }
-                // "Crees < 4 mois" = data.gouv creation_date within last 4 months
+                if (m.creation_date && m.creation_date >= cutoff7d) recent7d++;
                 if (m.creation_date && m.creation_date >= cutoff4m) recent4m++;
             }
-            document.getElementById('statNew').textContent = new7;
-            const elRecent = document.getElementById('statRecent4m');
-            if (elRecent) elRecent.textContent = recent4m;
+            const elRecent7d = document.getElementById('statRecent7d');
+            if (elRecent7d) elRecent7d.textContent = recent7d;
+            const elRecent4m = document.getElementById('statRecent4m');
+            if (elRecent4m) elRecent4m.textContent = recent4m;
 
             if (data.last_updated) {
                 const d = new Date(data.last_updated);
@@ -425,8 +421,8 @@ function applyDashboardFilter(kind) {
         case 'all':
             // No extra filter — default actionable view (hides no-contact cabinets).
             break;
-        case 'new7d':
-            window.synthFilters = { firstSeenDays: 7 };
+        case 'recent7d':
+            document.getElementById('filterCreation').value = '7d';
             break;
         case 'recent4m':
             document.getElementById('filterCreation').value = '4m';
@@ -484,11 +480,14 @@ function getFilteredMembers() {
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
 
     // creation_date is "YYYY-MM-DD" — compute the cutoff once.
-    // Filter values: "4m" (months) or "1"|"2"|"3"|"5" (years).
+    // Filter values: "7d"/"30d" (days), "4m" (months), or "1"|"2"|"3"|"5" (years).
     let creationCutoff = null;
     if (creationFilter) {
         const d = new Date();
-        if (creationFilter.endsWith('m')) {
+        if (creationFilter.endsWith('d')) {
+            const days = parseInt(creationFilter, 10);
+            d.setDate(d.getDate() - days);
+        } else if (creationFilter.endsWith('m')) {
             const months = parseInt(creationFilter, 10);
             d.setMonth(d.getMonth() - months);
         } else {
