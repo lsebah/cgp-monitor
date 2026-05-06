@@ -261,9 +261,11 @@ body {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 16px;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, transform 0.1s;
+    cursor: pointer;
 }
 .assoc-card:hover { border-color: var(--accent-blue); }
+.assoc-card:active { transform: scale(0.98); }
 .assoc-name {
     font-size: 18px;
     font-weight: 700;

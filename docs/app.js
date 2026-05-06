@@ -380,7 +380,7 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
         const statusText = status?.status === 'success' ? 'OK' : (status?.status === 'error' ? 'Erreur' : 'En attente');
 
         return `
-            <div class="assoc-card">
+            <div class="assoc-card" onclick="filterByAssociation('${a.key}')" role="button" tabindex="0">
                 <div class="assoc-name">${a.name}</div>
                 <div class="assoc-label">${a.full}</div>
                 <div class="assoc-count">${count.toLocaleString('fr-FR')}</div>
@@ -389,6 +389,20 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
             </div>
         `;
     }).join('');
+}
+
+// Click on an association card → switch to Annuaire tab and apply the filter.
+function filterByAssociation(key) {
+    const filterEl = document.getElementById('filterAssociation');
+    if (filterEl) filterEl.value = key;
+
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    const directoryTab = document.querySelector('.tab[data-tab="directory"]');
+    const directoryContent = document.getElementById('tab-directory');
+    if (directoryTab) directoryTab.classList.add('active');
+    if (directoryContent) directoryContent.classList.add('active');
+    renderDirectory();
 }
 
 function renderDashboard() {
