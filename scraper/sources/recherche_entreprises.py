@@ -91,11 +91,30 @@ def enrich_member(member):
     if entry.get("siren") != siren:
         return member
 
-    # Directors
+    # Directors. Merge with existing rather than overwrite, so LinkedIn URLs
+    # added by linkedin_search.py on a previous run survive a data.gouv re-run.
     raw_dirigeants = entry.get("dirigeants") or []
     formatted = [d for d in (_format_director(rd) for rd in raw_dirigeants) if d]
     if formatted:
-        member["directors"] = formatted
+        existing = member.get("directors") or []
+        existing_by_name = {(d.get("name") or "").lower(): d for d in existing}
+        merged = []
+        for d in formatted:
+            key = (d.get("name") or "").lower()
+            prior = existing_by_name.get(key)
+            if prior:
+                # Carry over fields the API doesn't set (linkedin, email, phone, etc.)
+                for k, v in prior.items():
+                    if k not in d and v:
+                        d[k] = v
+            merged.append(d)
+        # Preserve any director we used to know about that data.gouv no longer lists
+        # (e.g. if API lookup is partial)
+        new_keys = {(d.get("name") or "").lower() for d in merged}
+        for d in existing:
+            if (d.get("name") or "").lower() not in new_keys:
+                merged.append(d)
+        member["directors"] = merged
 
     # Creation date (used by the "récents" UI filter). API returns YYYY-MM-DD.
     if entry.get("date_creation") and not member.get("creation_date"):
