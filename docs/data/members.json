@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T07:05:33.919017+00:00",
+  "last_updated": "2026-05-07T07:50:43.969867+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -17552,9 +17552,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Advenis Gestion Privée",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Advenis Gestion Privée",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -17564,7 +17569,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "ETI"
       },
-      "orias_inscription_date": "2017-09-29"
+      "orias_inscription_date": "2017-09-29",
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_9afbd5d243",
@@ -29493,9 +29499,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Aliquis Conseil",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Aliquis Conseil",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -29505,7 +29516,8 @@
         "categorie_entreprise": "GE"
       },
       "creation_date": "1988-01-01",
-      "orias_inscription_date": "2007-01-30"
+      "orias_inscription_date": "2007-01-30",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_8d2bf4cef9",
@@ -29551,9 +29563,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Aliquis Conseil",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Aliquis Conseil",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -29563,7 +29580,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2012-01-19"
+      "orias_inscription_date": "2012-01-19",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_3d0a1204fe",
@@ -57248,9 +57266,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Astoria Finance",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Astoria Finance",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -57260,7 +57283,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "ETI"
       },
-      "orias_inscription_date": "2007-01-30"
+      "orias_inscription_date": "2007-01-30",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_61a6a4f07e",
@@ -57306,9 +57330,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Astoria Finance",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Astoria Finance",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -57318,7 +57347,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "ETI"
       },
-      "orias_inscription_date": "2007-01-30"
+      "orias_inscription_date": "2007-01-30",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_cd8710f7d7",
@@ -100078,9 +100108,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Premium",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Premium",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -100090,7 +100125,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2018-09-24",
-      "orias_inscription_date": "2019-08-30"
+      "orias_inscription_date": "2019-08-30",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_6687ac40ef",
@@ -106907,9 +106943,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Premium",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Premium",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -106919,7 +106960,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2018-07-01",
-      "orias_inscription_date": "2018-07-27"
+      "orias_inscription_date": "2018-07-27",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_a25f0a2acd",
@@ -193813,9 +193855,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Equance",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Equance",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -193825,7 +193872,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2006-02-03"
+      "orias_inscription_date": "2006-02-03",
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_627ae38ea9",
@@ -193865,9 +193913,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Equance",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Equance",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -193875,7 +193928,8 @@
       "creation_date": "2011-01-01",
       "data_gouv": {
         "etat_administratif": "C"
-      }
+      },
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_f8dc4e81ae",
@@ -236936,9 +236990,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Orion",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Orion",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -236948,7 +237007,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2022-12-16",
-      "orias_inscription_date": "2023-06-09"
+      "orias_inscription_date": "2023-06-09",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_5055333592",
@@ -248331,15 +248391,21 @@
       "associations": {
         "cncef": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe CIEC",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe CIEC",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/groupe-ciec/"
-      }
+      },
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_0d91502473",
@@ -302950,9 +303016,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Orion",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Orion",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -302962,7 +303033,8 @@
         "categorie_entreprise": "ETI"
       },
       "creation_date": "2009-05-05",
-      "orias_inscription_date": "2009-09-18"
+      "orias_inscription_date": "2009-09-18",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_f1e6874188",
@@ -303008,9 +303080,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Orion",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Orion",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -303020,7 +303097,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2012-02-23",
-      "orias_inscription_date": "2012-06-28"
+      "orias_inscription_date": "2012-06-28",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_b8d4de7e42",
@@ -320414,9 +320492,14 @@
       "associations": {
         "cncef": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Les Associés",
+          "tier": "User-listed"
         }
       },
-      "groupement": null,
+      "groupement": "Les Associés",
       "first_seen": "2026-04-12",
       "last_seen": "2026-05-06",
       "is_new": false,
@@ -320428,7 +320511,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2023-07-13"
+      "orias_inscription_date": "2023-07-13",
+      "groupement_tier": "User-listed"
     },
     {
       "id": "cgp_7c0c9ca420",
@@ -353223,9 +353307,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Metagram",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Metagram",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -353235,7 +353324,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2024-06-28"
+      "orias_inscription_date": "2024-06-28",
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_3d9c962e0a",
@@ -386818,13 +386908,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Olifan Group",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Olifan Group",
       "first_seen": "2026-04-13",
       "last_seen": "2026-04-13",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_443e78f416",
@@ -386851,13 +386947,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Olifan Group",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Olifan Group",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_3b9f5ae52e",
@@ -386884,9 +386986,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Olifan Group",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Olifan Group",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -386894,7 +387001,8 @@
       "creation_date": "2007-07-01",
       "data_gouv": {
         "etat_administratif": "C"
-      }
+      },
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_2582e2b2eb",
@@ -394671,9 +394779,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Orion",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Orion",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -394683,7 +394796,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2011-12-01",
-      "orias_inscription_date": "2014-01-10"
+      "orias_inscription_date": "2014-01-10",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_1c5d52f1fe",
@@ -394729,9 +394843,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Orion",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Orion",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -394741,7 +394860,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2009-10-20",
-      "orias_inscription_date": "2009-11-30"
+      "orias_inscription_date": "2009-11-30",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_9b3ce98481",
@@ -402906,9 +403026,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Patrimmofi",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Patrimmofi",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -402918,7 +403043,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2016-06-08",
-      "orias_inscription_date": "2016-07-08"
+      "orias_inscription_date": "2016-07-08",
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_28582e40ac",
@@ -402962,9 +403088,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Patrimmofi",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Patrimmofi",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -402974,7 +403105,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2017-10-20"
+      "orias_inscription_date": "2017-10-20",
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_f9552d864f",
@@ -403026,9 +403158,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Patrimmofi",
+          "tier": "Forte notoriété"
         }
       },
-      "groupement": null,
+      "groupement": "Patrimmofi",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -403038,7 +403175,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "1993-06-01",
-      "orias_inscription_date": "2006-04-26"
+      "orias_inscription_date": "2006-04-26",
+      "groupement_tier": "Forte notoriété"
     },
     {
       "id": "cgp_21cc61a0e5",
@@ -426461,9 +426599,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Premium",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Premium",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -426473,7 +426616,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2023-05-26"
+      "orias_inscription_date": "2023-05-26",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_3c70aac538",
@@ -426515,9 +426659,14 @@
       "associations": {
         "cncef": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Premium",
+          "tier": "Incontournable"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Premium",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -426529,7 +426678,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2024-05-17"
+      "orias_inscription_date": "2024-05-17",
+      "groupement_tier": "Incontournable"
     },
     {
       "id": "cgp_88b37d6685",
@@ -442299,9 +442449,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Rhétorès Groupe",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Rhétorès Groupe",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -442311,7 +442466,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2008-02-21",
-      "orias_inscription_date": "2008-05-04"
+      "orias_inscription_date": "2008-05-04",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_dbd2bf426b",
@@ -442363,9 +442519,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Rhétorès Groupe",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Rhétorès Groupe",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -442375,7 +442536,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2010-12-24",
-      "orias_inscription_date": "2011-02-21"
+      "orias_inscription_date": "2011-02-21",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_a8be83f120",
@@ -442415,9 +442577,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Rhétorès Groupe",
+          "tier": "Excellent"
         }
       },
-      "groupement": null,
+      "groupement": "Rhétorès Groupe",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -442427,7 +442594,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2022-03-09",
-      "orias_inscription_date": "2025-03-28"
+      "orias_inscription_date": "2025-03-28",
+      "groupement_tier": "Excellent"
     },
     {
       "id": "cgp_6462a707a1",
@@ -488840,9 +489008,14 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Groupe Synalp",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Groupe Synalp",
       "first_seen": "2026-04-12",
       "last_seen": "2026-04-13",
       "is_new": false,
@@ -488852,7 +489025,8 @@
         "categorie_entreprise": "PME"
       },
       "creation_date": "2012-11-28",
-      "orias_inscription_date": "2013-03-22"
+      "orias_inscription_date": "2013-03-22",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_8fce872aee",
@@ -509438,9 +509612,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Valoria",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Valoria",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -509450,7 +509629,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2012-07-13"
+      "orias_inscription_date": "2012-07-13",
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_fe7d55b8eb",
@@ -509488,9 +509668,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Valoria",
+          "tier": "Pratique réputée"
         }
       },
-      "groupement": null,
+      "groupement": "Valoria",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -509500,7 +509685,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2020-05-15"
+      "orias_inscription_date": "2020-05-15",
+      "groupement_tier": "Pratique réputée"
     },
     {
       "id": "cgp_b86d05c6be",
@@ -518168,9 +518354,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Vitalépargne",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Vitalépargne",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -518180,7 +518371,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2006-03-31"
+      "orias_inscription_date": "2006-03-31",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_c766749bd2",
@@ -518224,9 +518416,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Vitalépargne",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Vitalépargne",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -518236,7 +518433,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2009-06-12"
+      "orias_inscription_date": "2009-06-12",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_c5b5913ce7",
@@ -518282,9 +518480,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Vitalépargne",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Vitalépargne",
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -518294,7 +518497,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2020-03-20"
+      "orias_inscription_date": "2020-03-20",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_6ce3b4c11e",
@@ -518346,9 +518550,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Vitalépargne",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Vitalépargne",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -518358,7 +518567,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2020-09-11"
+      "orias_inscription_date": "2020-09-11",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_5358d2c025",
@@ -518398,9 +518608,14 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "leaders_league": {
+          "member": true,
+          "groupement": "Vitalépargne",
+          "tier": "Pratique de qualité"
         }
       },
-      "groupement": null,
+      "groupement": "Vitalépargne",
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
@@ -518410,7 +518625,8 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       },
-      "orias_inscription_date": "2015-11-27"
+      "orias_inscription_date": "2015-11-27",
+      "groupement_tier": "Pratique de qualité"
     },
     {
       "id": "cgp_9d9cabfe06",
