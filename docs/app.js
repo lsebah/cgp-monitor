@@ -430,7 +430,8 @@ function applyDashboardFilter(kind) {
     // Reset all form filters first
     const reset = ['searchInput', 'filterAssociation', 'filterDepartment',
                    'filterActivity', 'filterStatus', 'filterCreation',
-                   'filterGroupement'];
+                   'filterGroupement', 'filterCa', 'filterAum',
+                   'filterStructured', 'filterExpertise'];
     reset.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
     const hide = document.getElementById('filterHideProcessed');
     if (hide) hide.checked = false;
@@ -497,7 +498,17 @@ function getFilteredMembers() {
     const statusFilter = document.getElementById('filterStatus')?.value || '';
     const creationFilter = document.getElementById('filterCreation')?.value || '';
     const groupementFilter = document.getElementById('filterGroupement')?.value || '';
+    const caFilter = document.getElementById('filterCa')?.value || '';
+    const aumFilter = document.getElementById('filterAum')?.value || '';
+    const structuredFilter = document.getElementById('filterStructured')?.value || '';
+    const expertiseFilter = document.getElementById('filterExpertise')?.value || '';
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
+
+    // Threshold maps for the CA/AUM range filters
+    const CA_THRESHOLDS = { any: 0, '100k': 100_000, '500k': 500_000,
+                            '1M': 1_000_000, '5M': 5_000_000 };
+    const AUM_THRESHOLDS = { any: 0, '100M': 100_000_000,
+                             '500M': 500_000_000, '1B': 1_000_000_000 };
 
     // creation_date is "YYYY-MM-DD" — compute the cutoff once.
     // Filter values: "7d"/"30d" (days), "4m" (months), or "1"|"2"|"3"|"5" (years).
@@ -562,6 +573,27 @@ function getFilteredMembers() {
         if (creationCutoff) {
             // Reject if no creation_date or older than cutoff
             if (!m.creation_date || m.creation_date < creationCutoff) return false;
+        }
+        if (caFilter) {
+            const ca = m.finances_data_gouv?.ca_eur;
+            if (ca == null) return false;
+            const threshold = CA_THRESHOLDS[caFilter] ?? 0;
+            if (ca < threshold) return false;
+        }
+        if (aumFilter) {
+            const aum = m.website_data?.aum_eur;
+            if (aum == null) return false;
+            const threshold = AUM_THRESHOLDS[aumFilter] ?? 0;
+            if (aum < threshold) return false;
+        }
+        if (structuredFilter) {
+            const sp = m.website_data?.has_structured_products;
+            if (structuredFilter === 'yes' && sp !== true) return false;
+            if (structuredFilter === 'no' && sp !== false) return false;
+        }
+        if (expertiseFilter) {
+            const expertises = m.website_data?.expertises || [];
+            if (!expertises.includes(expertiseFilter)) return false;
         }
         if (search) {
             const haystack = [
@@ -753,6 +785,42 @@ function renderMemberCard(m) {
         ? `<span class="badge-status status-${currentStatus}">${STATUS_LABELS[currentStatus]}</span>`
         : '';
 
+    // Website-derived data (Phase B enrichment): structurés badge + expertises chips
+    const wd = m.website_data || {};
+    const structuredBadge = wd.has_structured_products
+        ? `<span class="badge badge-structured" title="${escHtml(wd.structured_evidence || 'Produits structures detectes sur le site')}">STRUCTURÉS</span>`
+        : '';
+    const expertiseBadges = (wd.expertises || [])
+        .filter(e => e !== 'produits-structures')
+        .map(e => `<span class="badge badge-expertise">${escHtml(EXPERTISE_LABELS[e] || e)}</span>`)
+        .join('');
+
+    // KPI line (CA / AUM / effectif): only render if at least one is present
+    const fd = m.finances_data_gouv || {};
+    const kpis = [];
+    if (wd.aum_eur) {
+        kpis.push(`<span class="kpi kpi-aum" title="Encours sous gestion (site web)">AUM: ${escHtml(formatEur(wd.aum_eur))}</span>`);
+    }
+    if (fd.ca_eur) {
+        const yearStr = fd.year ? ` (${fd.year})` : '';
+        kpis.push(`<span class="kpi kpi-ca" title="Chiffre d'affaires (data.gouv${yearStr})">CA: ${escHtml(formatEur(fd.ca_eur))}${yearStr}</span>`);
+    }
+    if (fd.resultat_net_eur != null) {
+        const cls = fd.resultat_net_eur < 0 ? 'kpi-rn-neg' : 'kpi-rn-pos';
+        kpis.push(`<span class="kpi ${cls}" title="Resultat net (data.gouv)">RN: ${escHtml(formatEur(fd.resultat_net_eur))}</span>`);
+    }
+    if (fd.effectif_label && fd.effectif_tranche && fd.effectif_tranche !== 'NN') {
+        kpis.push(`<span class="kpi kpi-eff" title="Tranche d'effectif INSEE">${escHtml(fd.effectif_label)}</span>`);
+    }
+    const kpiLine = kpis.length ? `<div class="member-kpis">${kpis.join('')}</div>` : '';
+
+    const teamLink = wd.team_url
+        ? `<a class="meta-link" href="${escHtml(wd.team_url)}" target="_blank" rel="noopener" title="Page equipe">Equipe</a>`
+        : '';
+    const liCompanyLink = wd.linkedin_company_url
+        ? `<a class="meta-link" href="${escHtml(wd.linkedin_company_url)}" target="_blank" rel="noopener" title="LinkedIn entreprise">LinkedIn</a>`
+        : '';
+
     const addr = m.address || {};
     const location = [addr.city, addr.department ? `(${addr.department})` : ''].filter(Boolean).join(' ');
 
@@ -785,7 +853,9 @@ function renderMemberCard(m) {
                     ${statusBadge}
                     ${assocBadges}
                     ${groupementBadge}
+                    ${structuredBadge}
                     ${actBadges}
+                    ${expertiseBadges}
                 </div>
                 <div class="member-meta">
                     ${location ? `<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">${escHtml(location)}</span></span>` : ''}
@@ -793,7 +863,10 @@ function renderMemberCard(m) {
                     ${m.orias_number ? `<span>ORIAS: ${escHtml(m.orias_number)}</span>` : ''}
                     ${m.creation_date ? `<span title="Date de creation (data.gouv)">Cree: ${escHtml(formatCreationDate(m.creation_date))}</span>` : ''}
                     ${m.orias_inscription_date ? `<span title="Premiere inscription au registre ORIAS">ORIAS depuis: ${escHtml(formatCreationDate(m.orias_inscription_date))}</span>` : ''}
+                    ${teamLink}
+                    ${liCompanyLink}
                 </div>
+                ${kpiLine}
                 ${renderDirectorsHtml(m)}
                 ${contactInfo.length ? `<div class="member-contact">${contactInfo.join('')}</div>` : ''}
             </div>
@@ -822,6 +895,39 @@ function formatCreationDate(iso) {
     const m = parseInt(mo, 10);
     return (months[m - 1] || mo) + ' ' + y;
 }
+
+// Format euros: 1_234_567 → "1,2 M€"; 250_000_000 → "250 M€"; 1_500_000_000 → "1,5 Md€".
+function formatEur(n) {
+    if (n == null || isNaN(n)) return '';
+    const abs = Math.abs(n);
+    if (abs >= 1_000_000_000) {
+        const v = n / 1_000_000_000;
+        return (v >= 100 ? v.toFixed(0) : v.toFixed(1).replace('.', ',')) + ' Md€';
+    }
+    if (abs >= 1_000_000) {
+        const v = n / 1_000_000;
+        return (v >= 100 ? v.toFixed(0) : v.toFixed(1).replace('.', ',')) + ' M€';
+    }
+    if (abs >= 1_000) {
+        return Math.round(n / 1_000).toLocaleString('fr-FR') + ' K€';
+    }
+    return Math.round(n).toLocaleString('fr-FR') + ' €';
+}
+
+const EXPERTISE_LABELS = {
+    'gestion-privee': 'Gestion privée',
+    'immobilier': 'Immobilier',
+    'retraite': 'Retraite',
+    'assurance-vie': 'Assurance vie',
+    'fiscalite': 'Fiscalité',
+    'succession': 'Succession',
+    'credit': 'Crédit',
+    'entreprise': 'Chef d\'entreprise',
+    'international': 'International',
+    'esg': 'ESG / ISR',
+    'private-equity': 'Private Equity',
+    'produits-structures': 'Structurés',
+};
 
 function escHtml(text) {
     const div = document.createElement('div');
@@ -1177,7 +1283,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 // Filter event listeners
-['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus', 'filterCreation', 'filterGroupement'].forEach(id => {
+['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus', 'filterCreation', 'filterGroupement', 'filterCa', 'filterAum', 'filterStructured', 'filterExpertise'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener(el.type === 'text' ? 'input' : 'change', renderDirectory);
 });

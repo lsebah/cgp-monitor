@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -128,6 +128,40 @@
                         <option value="2">Crees < 2 ans</option>
                         <option value="3">Crees < 3 ans</option>
                         <option value="5">Crees < 5 ans</option>
+                    </select>
+                    <select id="filterCa" class="filter-select" title="Chiffre d'affaires (source: data.gouv)">
+                        <option value="">Tous CA</option>
+                        <option value="any">Avec CA connu</option>
+                        <option value="100k">CA > 100 K€</option>
+                        <option value="500k">CA > 500 K€</option>
+                        <option value="1M">CA > 1 M€</option>
+                        <option value="5M">CA > 5 M€</option>
+                    </select>
+                    <select id="filterAum" class="filter-select" title="Encours sous gestion (depuis le site web)">
+                        <option value="">Tous AUM</option>
+                        <option value="any">Avec encours connu</option>
+                        <option value="100M">> 100 M€</option>
+                        <option value="500M">> 500 M€</option>
+                        <option value="1B">> 1 Md€</option>
+                    </select>
+                    <select id="filterStructured" class="filter-select" title="Propose des produits structures (detecte sur site web)">
+                        <option value="">Structures: tous</option>
+                        <option value="yes">Propose structures</option>
+                        <option value="no">Ne propose pas</option>
+                    </select>
+                    <select id="filterExpertise" class="filter-select" title="Domaines d'activite (detectes sur site web)">
+                        <option value="">Toutes expertises</option>
+                        <option value="gestion-privee">Gestion privée</option>
+                        <option value="immobilier">Immobilier</option>
+                        <option value="retraite">Retraite</option>
+                        <option value="assurance-vie">Assurance vie</option>
+                        <option value="fiscalite">Fiscalité</option>
+                        <option value="succession">Succession</option>
+                        <option value="credit">Crédit</option>
+                        <option value="entreprise">Chef d'entreprise</option>
+                        <option value="international">International</option>
+                        <option value="esg">ESG / ISR</option>
+                        <option value="private-equity">Private Equity</option>
                     </select>
                     <label class="toggle-label">
                         <input type="checkbox" id="filterHideProcessed">
@@ -263,7 +297,7 @@
         <p>Donnees: CNCGP, CNCEF, ANACOFI (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=10"></script>
     <script>
         // Register service worker with auto-update
         if ('serviceWorker' in navigator) {

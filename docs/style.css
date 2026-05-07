@@ -363,6 +363,67 @@ body {
     background: rgba(155, 89, 231, 0.12);
     border: 1px solid rgba(155, 89, 231, 0.35);
 }
+.badge-structured {
+    color: #ff9466;
+    background: rgba(255, 138, 76, 0.12);
+    border: 1px solid rgba(255, 138, 76, 0.4);
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.badge-expertise {
+    color: #82d6c1;
+    background: rgba(58, 179, 152, 0.10);
+    border: 1px solid rgba(58, 179, 152, 0.30);
+}
+.member-kpis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 6px 0 4px;
+    font-size: 12px;
+}
+.kpi {
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+.kpi-aum {
+    color: #f5c44a;
+    background: rgba(212, 168, 67, 0.12);
+    border-color: rgba(212, 168, 67, 0.35);
+    font-weight: 600;
+}
+.kpi-ca {
+    color: #6cb1ff;
+    background: rgba(74, 158, 255, 0.10);
+    border-color: rgba(74, 158, 255, 0.30);
+    font-weight: 600;
+}
+.kpi-rn-pos {
+    color: #5fd28a;
+    background: rgba(52, 199, 89, 0.10);
+    border-color: rgba(52, 199, 89, 0.30);
+}
+.kpi-rn-neg {
+    color: #ff7676;
+    background: rgba(255, 95, 95, 0.10);
+    border-color: rgba(255, 95, 95, 0.30);
+}
+.kpi-eff {
+    color: #b6b6b6;
+}
+.meta-link {
+    color: var(--accent-light-blue);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(74, 158, 255, 0.4);
+    padding-bottom: 1px;
+}
+.meta-link:hover {
+    border-bottom-style: solid;
+}
 .badge-new {
     font-size: 10px;
     font-weight: 700;
