@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T10:31:56.886858+00:00",
+  "last_updated": "2026-05-07T10:42:15.260481+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -360973,6 +360973,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.lepicdupatrimoine.fr/",
+          "https://www.lepicdupatrimoine.fr/le-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.lepicdupatrimoine.fr/",
+        "team_url": "https://www.lepicdupatrimoine.fr/le-cabinet",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -362197,6 +362216,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.lecapconseil.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.lecapconseil.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/lecapconseil",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -363440,6 +363475,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.legapole.fr",
+          "https://www.legapole.fr/metiers/geometre-expert/",
+          "https://www.legapole.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.legapole.fr",
+        "team_url": "https://www.legapole.fr/qui-sommes-nous/",
+        "linkedin_company_url": "https://www.linkedin.com/company/legapole",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -365769,6 +365824,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.lenapatrimoine.fr"
       }
     },
     {
@@ -366025,6 +366086,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19A"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.leoma-patrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.leoma-patrimoine.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/leoma-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -368505,6 +368588,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://letusprivateoffice.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://letusprivateoffice.com/",
+        "linkedin_company_url": "https://www.linkedin.com/company/letus-private-office/",
+        "expertises": [
+          "immobilier",
+          "credit",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -369546,6 +369645,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.lfbi.eu/plan-du-site"
       }
     },
     {
@@ -369773,6 +369878,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.lfbi.eu/"
       }
     },
     {
@@ -371209,6 +371320,32 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://libertypatrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://libertypatrimoine.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "rance-vie & contrats luxembourgeois → private equity & capital investissement → produits structures & gestion d'actifs → fonds obligataires & defiscalisation → realiser un bilan patrimonial a nancy poles d'expertise ingenierie patrimoniale",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -372306,6 +372443,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "ETI",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.linardcharbonnel.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.linardcharbonnel.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -372507,6 +372660,12 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/link-conseils-et-patrimoine"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://linkconseils.com/"
       }
     },
     {
@@ -372680,6 +372839,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.links-capital.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.links-capital.com",
+        "expertises": [
+          "gestion-privee",
+          "assurance-vie",
+          "fiscalite",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "s nous intervenons: compte titres pea assurance vie reduction d’impots ir / isf produits structures dedies les 4 etapes de notre relation agrements de l’autorite des marches financiers (amf) notre methode la demarche en 4 phases 1 - identif",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -372910,6 +373088,32 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.linxea.com",
+          "https://www.linxea.com/decouvrir-linxea/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.linxea.com",
+        "team_url": "https://www.linxea.com/decouvrir-linxea/qui-sommes-nous/",
+        "linkedin_company_url": "https://www.linkedin.com/company/linxea/",
+        "expertises": [
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "nts forestiers et viticoles defiscalisation scpi a credit scpi en nue-propriete produits structures exigence 36 spirit nouveau ! exigence 36 nouveau ! impulsion 14 nouveau ! autres placements contrats de capitalisation linxea avenir capital",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -377078,6 +377282,22 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://lc-finance.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://lc-finance.com",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -377432,6 +377652,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "68.32B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.louvre-gestionprivee.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.louvre-gestionprivee.com/",
+        "linkedin_company_url": "https://www.linkedin.com/company/louvregestionprivee",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -378796,6 +379032,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.cabinet-ls-patrimoine.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.cabinet-ls-patrimoine.com",
+        "linkedin_company_url": "https://www.linkedin.com/company/cabinet-ls-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -380889,6 +381146,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.lussalia.fr",
+          "https://www.lussalia.fr/le-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.lussalia.fr",
+        "team_url": "https://www.lussalia.fr/le-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -381797,6 +382073,20 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.12Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.ian-consultant.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.ian-consultant.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/wix-com",
+        "expertises": [
+          "retraite",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -382096,6 +382386,25 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://lyauteypatrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://lyauteypatrimoine.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/lyautey-patrimoine/about/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -382159,6 +382468,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://lybellis.fr/"
       }
     },
     {
@@ -382615,6 +382930,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.lyssor.fr/index.html"
       }
     },
     {
@@ -384119,7 +384440,28 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.m-conseils.fr",
+          "https://www.m-conseils.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.m-conseils.fr",
+        "team_url": "https://www.m-conseils.fr/qui-sommes-nous/",
+        "linkedin_company_url": "https://www.linkedin.com/company/105257962/admin/dashboard/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_5402e0224f",
@@ -385266,6 +385608,26 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
+          "https://www.ma-gestionprivee.com/page/11803/le-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
+        "team_url": "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -387688,6 +388050,29 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.mahretassocies.com",
+          "https://www.mahretassocies.com/les-services-aux-professionnels",
+          "https://www.mahretassocies.com/qui-sommes-nous"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.mahretassocies.com",
+        "team_url": "https://www.mahretassocies.com/qui-sommes-nous",
+        "linkedin_company_url": "https://www.linkedin.com/company/mahr-et-associés/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -390926,6 +391311,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.mansa-patrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.mansa-patrimoine.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -391711,7 +392115,37 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.recton.com",
+          "https://www.recton.com/services/",
+          "https://www.recton.com/a-propos/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.recton.com",
+        "team_url": "https://www.recton.com/a-propos/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "a une large gamme d’actifs souvent inaccessibles dans les contrats francais : • produits structures • titres cotes et non cotes • fonds alternatifs, immobiliers ou de capital-investissement (fcpr, etc.) • fonds internes dedies (fid), fonds",
+        "structured_keywords": [
+          "produits structures"
+        ]
+      }
     },
     {
       "id": "cgp_2f6890de18",
@@ -394772,6 +395206,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.massaliafinance.com"
       }
     },
     {
@@ -398593,6 +399033,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://mccpatrimoine.com/",
+          "https://mccpatrimoine.com/wp-content/uploads/2023/09/cabinet01.png"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://mccpatrimoine.com/",
+        "team_url": "https://mccpatrimoine.com/wp-content/uploads/2023/09/cabinet01.png",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -404315,6 +404774,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://farnault-investissement.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://farnault-investissement.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": ", nue propriete, sci, meuble, club deal, opci...) a l’investissement financier (produits structures, actions, obligations, girardin, pea...) notre equipe vous accompagne dans tout type de projets pour vous permettre d’obtenir les meilleurs",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -407929,6 +408408,21 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.millenium-patrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.millenium-patrimoine.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -408083,6 +408577,30 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.millesimepatrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.millesimepatrimoine.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "tualites cryptomonnaies : entre perspectives seduisantes et risques persistants produits structures : definition, avantages et risques a connaitre ginjer 360 plongez dans notre univers. notre vision, notre methode, et notre engagement au se",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -412776,7 +413294,33 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://monaliza.fr/",
+          "https://monaliza.fr/a-propos"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://monaliza.fr/",
+        "team_url": "https://monaliza.fr/a-propos",
+        "expertises": [
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "credit",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "ents. plus de 1000 supports d'investissement (etf, titres vifs, private equity, produits structures, etc.). des possibilites de referencement de fonds et de produits structures. s'inscrire courtiers cgp autres partenaires une approche patri",
+        "structured_keywords": [
+          "produits structures"
+        ]
+      }
     },
     {
       "id": "cgp_f5acac1a89",
@@ -414295,6 +414839,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.monplacement.fr/",
+          "https://www.monplacement.fr/qui-sommes-nous"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.monplacement.fr/",
+        "team_url": "https://www.monplacement.fr/qui-sommes-nous",
+        "linkedin_company_url": "https://fr.linkedin.com/company/monplacement?trk=public_profile_topcard-current-company",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -415767,7 +416333,29 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.montouxgestionprivee.fr",
+          "https://www.montouxgestionprivee.fr/nos-services/",
+          "https://www.montouxgestionprivee.fr/le-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.montouxgestionprivee.fr",
+        "team_url": "https://www.montouxgestionprivee.fr/le-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_e0ce7fa34f",
@@ -415821,6 +416409,35 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.montparnasse-gestionprivee.com",
+          "http://www.montparnasse-gestionprivee.com/nos-expertises-conseil-paris-6",
+          "http://www.montparnasse-gestionprivee.com/l-equipe-montparnasse-gestion-privee-experts-en-gestion-du-patrimoine"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.montparnasse-gestionprivee.com",
+        "team_url": "http://www.montparnasse-gestionprivee.com/l-equipe-montparnasse-gestion-privee-experts-en-gestion-du-patrimoine",
+        "linkedin_company_url": "https://www.linkedin.com/company/montparnasse-gestion-priv%C3%A9e/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "pargne retraite scpi & immobilier indirect pea & compte titres private equity & produits structures tresorerie d'entreprise prevoyance a propos l'equipe atouts contact blog prendre rdv du lundi au vendredi de 9h a 20h le samedi de 9h a 12h3",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -415929,6 +416546,25 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29356/proposition-pour-le-club/"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://montrachet-finance.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://montrachet-finance.com/",
+        "linkedin_company_url": "https://www.linkedin.com/company/montrachet-finance-et-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -421210,6 +421846,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.mustfinance.fr/"
       }
     },
     {
@@ -421451,6 +422093,23 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://mvpartenaires.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://mvpartenaires.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/mv-partenaires",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -421520,6 +422179,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.mondial-vision.com"
       }
     },
     {
@@ -421947,6 +422612,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.mycgp.fr"
       }
     },
     {
@@ -421985,7 +422656,23 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.myconseillerprive.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.myconseillerprive.com/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "credit",
+          "international"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_28716a334d",
@@ -422206,7 +422893,13 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://myfamilyofficer.fr/"
+      }
     },
     {
       "id": "cgp_d13fdc48ed",
@@ -423184,6 +423877,16 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-challes-eaux"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://intranet-magnacartagroup.web.app/login"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://intranet-magnacartagroup.web.app/login",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -423220,6 +423923,16 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-grenoble"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://intranet-magnacartagroup.web.app/login"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://intranet-magnacartagroup.web.app/login",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -423256,6 +423969,25 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-marseille"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://merimee.fr/",
+          "https://merimee.fr/nos-expertises/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://merimee.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/m%C3%A9rim%C3%A9e-gestion-priv%C3%A9e/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -423292,6 +424024,25 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-metz"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://merimee.fr/",
+          "https://merimee.fr/nos-expertises/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://merimee.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/m%C3%A9rim%C3%A9e-gestion-priv%C3%A9e/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -423328,6 +424079,25 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-nancy"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://merimee.fr/",
+          "https://merimee.fr/nos-expertises/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://merimee.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/m%C3%A9rim%C3%A9e-gestion-priv%C3%A9e/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -423364,6 +424134,16 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/meta-gestion-privee"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://intranet-magnacartagroup.web.app/login"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://intranet-magnacartagroup.web.app/login",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -429608,6 +430388,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.np-gestionprivee.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.np-gestionprivee.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -429724,6 +430521,16 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.nouvellegestionfinance.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.nouvellegestionfinance.com",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -429840,6 +430647,24 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.ng-patrimoine.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.ng-patrimoine.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -430463,7 +431288,19 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.nd-conseil.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.nd-conseil.com",
+        "expertises": [
+          "gestion-privee"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_de9ee468ee",
@@ -430681,6 +431518,34 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://valorispatrimoine.fr/",
+          "https://valorispatrimoine.fr/presentation/notre-metier"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://valorispatrimoine.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/valoris-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "e-vie, pea, contrats de capitalisation, fonds d’investissement, private equity, produits structures... nous privilegions la diversification, la performance et la securite. investissement immobilier conseil en investissement locatif, scpi, d",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -431415,6 +432280,20 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.nk-patrimoine.fr/",
+          "https://www.nk-patrimoine.fr/page/22488/notre-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.nk-patrimoine.fr/",
+        "team_url": "https://www.nk-patrimoine.fr/page/22488/notre-equipe/",
+        "expertises": [
+          "gestion-privee"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -433390,6 +434269,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.normaconseils.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.normaconseils.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/norma-conseils/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -436323,6 +437224,20 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.numaconseil.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.numaconseil.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -437241,6 +438156,16 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.o2investissement.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.o2investissement.com/",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -437815,6 +438740,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.cercle-france-patrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.cercle-france-patrimoine.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -438487,6 +439429,26 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://occiteo.fr/",
+          "https://occiteo.fr/a-propos"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://occiteo.fr/",
+        "team_url": "https://occiteo.fr/a-propos",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -444911,6 +445873,35 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.opera-bureaudefamille.fr",
+          "http://www.opera-bureaudefamille.fr/services-financiers/",
+          "http://www.opera-bureaudefamille.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.opera-bureaudefamille.fr",
+        "team_url": "http://www.opera-bureaudefamille.fr/qui-sommes-nous/",
+        "linkedin_company_url": "https://fr.linkedin.com/company/operagestiondevaleurs",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "entreprise",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "lacement opera rendement semestriel 2024 opera rendement semestriel 2024 est un produit structure disponible jusqu’au 26 avril 2024. il genere un rendement a 5.5%, distribue semestriellement (si le taux cms a 10 ans < 3.1%). le capital est",
+        "structured_keywords": [
+          "produit structure"
+        ]
       }
     },
     {
@@ -445045,6 +446036,34 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.opes.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.opes.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/laplace-groupe/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "mptes-titres pea - plan d'epargne en actions pea - pme / eti mandats de gestion produits structures placements immobiliers scpi / opci immobilier locatif notre offre immobiliere offre credit immobilier non-cote / private equity non cote fon",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -445311,6 +446330,30 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.opspatrimoine.fr/",
+          "https://www.opspatrimoine.fr/le-cabinet/notre-metier/",
+          "https://www.opspatrimoine.fr/le-cabinet/notre-methodologie/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.opspatrimoine.fr/",
+        "team_url": "https://www.opspatrimoine.fr/le-cabinet/notre-methodologie/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -445364,6 +446407,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://opsisconseil.fr/"
       }
     },
     {
@@ -447244,6 +448293,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://optimal-patrimoine.com/",
+          "http://optimal-patrimoine.com/notre-expertise/notre-metier/",
+          "http://optimal-patrimoine.com/notre-cabinet/a-propos/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://optimal-patrimoine.com/",
+        "team_url": "http://optimal-patrimoine.com/notre-cabinet/a-propos/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -449439,6 +450510,25 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://orekaconseil.fr/",
+          "http://orekaconseil.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://orekaconseil.fr/",
+        "team_url": "http://orekaconseil.fr/qui-sommes-nous/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -451088,6 +452178,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.ornay-finance.fr",
+          "https://www.ornay-finance.fr/a-propos-de-ornay-finance/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.ornay-finance.fr",
+        "team_url": "https://www.ornay-finance.fr/a-propos-de-ornay-finance/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -451634,6 +452744,25 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.orusgp.fr",
+          "http://www.orusgp.fr/expertises-1"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.orusgp.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -451697,6 +452826,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.gricourtconseil.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.gricourtconseil.com",
+        "expertises": [
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -454760,6 +455905,18 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27058/membres/"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj",
+        "expertises": [
+          "retraite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -454814,6 +455971,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.pact-gestionprivee.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.pact-gestionprivee.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -455628,6 +456802,16 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.palatin-conseils.com/b2b2c/entreesite/EntAccBou"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.palatin-conseils.com/b2b2c/entreesite/EntAccBou",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -457977,6 +459161,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://partenaires-patrimoine.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://partenaires-patrimoine.com/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -458088,6 +459289,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.partenariat-patrimoine.fr"
       }
     },
     {
@@ -458383,6 +459590,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.cabinetveslin.com/"
       }
     },
     {
@@ -460762,6 +461975,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.groupe-pcc.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.groupe-pcc.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -460916,7 +462148,13 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://pat-conseil.anthea-france.com/"
+      }
     },
     {
       "id": "cgp_858f90b94b",
@@ -461135,6 +462373,12 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/patrimoine-consultant-colmar"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://pc-alsace.fr/"
       }
     },
     {
@@ -461192,6 +462436,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.patrimoine-courtage.com"
       }
     },
     {
@@ -461348,6 +462598,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.patrimoine-design.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.patrimoine-design.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/patrimoine-design",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -462017,6 +463286,20 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.patrimoine-et-horizons.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.patrimoine-et-horizons.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -464533,6 +465816,24 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://patrimoniagroup.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://patrimoniagroup.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -465550,6 +466851,21 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.patrimony.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.patrimony.fr",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -466858,7 +468174,17 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://htpatrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://htpatrimoine.fr/",
+        "expertises": [],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_682d8ca63a",
@@ -467813,6 +469139,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.pcafinance.com",
+          "http://www.pcafinance.com/le-cabinet/notre-metier",
+          "http://www.pcafinance.com/le-cabinet/nos-bureaux-et-equipes"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.pcafinance.com",
+        "team_url": "http://www.pcafinance.com/le-cabinet/nos-bureaux-et-equipes",
+        "linkedin_company_url": "https://www.linkedin.com/company/pcafinance/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -468080,7 +469428,25 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.groupepea.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.groupepea.fr",
+        "linkedin_company_url": "https://fr.linkedin.com/company/groupe-pea-pau",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "esg"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_0c8ec0f896",
@@ -468452,6 +469818,36 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://peeterspatrimoine.fr/",
+          "https://peeterspatrimoine.fr/immobilier/investissement-immobilier-en-residence-services-geree-avec-le-statut-lmnp/",
+          "https://peeterspatrimoine.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://peeterspatrimoine.fr/",
+        "team_url": "https://peeterspatrimoine.fr/qui-sommes-nous/",
+        "linkedin_company_url": "https://www.linkedin.com/company/peeters-patrimoine",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "lutions ouvrir nos solutions placer mon epargne assurance-vie compte-titres pea produit structure private equity contrat de capitalisation ouvrir un compte au luxembourg diminuer mon imposition girardin industriel fip fcpi obtenir un credit",
+        "structured_keywords": [
+          "produit structure"
+        ]
       }
     },
     {
@@ -472151,6 +473547,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.perspectives.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.perspectives.fr",
+        "expertises": [
+          "fiscalite",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "la ou ambitions, resilience et creation de valeur se conjuguent. en savoir plus fonds a formules investir en fonds a formule, c’est acceder a l’univers des investissement structures sur mesure, alliant innovation et opportunisme. la lisibil",
+        "structured_keywords": [
+          "fonds a formule",
+          "fonds a formules"
+        ]
       }
     },
     {
@@ -473505,6 +474921,27 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.phpatrimoine.fr",
+          "https://www.phpatrimoine.fr/page/14184/presentation-du-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.phpatrimoine.fr",
+        "team_url": "https://www.phpatrimoine.fr/page/14184/presentation-du-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "succession",
+          "credit",
+          "entreprise",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -473538,7 +474975,28 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.phpatrimoine.fr/",
+          "https://www.phpatrimoine.fr/page/14184/presentation-du-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.phpatrimoine.fr/",
+        "team_url": "https://www.phpatrimoine.fr/page/14184/presentation-du-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "succession",
+          "credit",
+          "entreprise",
+          "private-equity"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_32263e8d53",
@@ -474139,6 +475597,23 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19A"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.phi-conseils.fr/",
+          "https://www.phi-conseils.fr/page/27056/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.phi-conseils.fr/",
+        "team_url": "https://www.phi-conseils.fr/page/27056/qui-sommes-nous/",
+        "expertises": [
+          "gestion-privee",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -476967,6 +478442,33 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27458/Cabinet-Pierre-et-Placements/"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.pierreetplacements.fr/",
+          "https://www.pierreetplacements.fr/cabinet-gestion-patrimoine/equipe"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.pierreetplacements.fr/",
+        "team_url": "https://www.pierreetplacements.fr/cabinet-gestion-patrimoine/equipe",
+        "linkedin_company_url": "https://www.linkedin.com/company/pierre-&-placements/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "ssurances-vie — club deal immobilier — plan epargne retraite — private equity — produits structures investissement immobilier — scpi — programmes en nue-propriete audit / bilan patrimonial pack retraite pour expatries methodologie conseil e",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -479192,6 +480694,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://pixelpatrimoine.fr",
+          "http://pixelpatrimoine.fr/details-meilleur+cabinet+de+courtage+avec+courtier+specialise+en+pret+immobilier+a+lille-709"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://pixelpatrimoine.fr",
+        "team_url": "http://pixelpatrimoine.fr/details-meilleur+cabinet+de+courtage+avec+courtier+specialise+en+pret+immobilier+a+lille-709",
+        "linkedin_company_url": "https://www.linkedin.com/company/pixel-courtage-patrimoine-assurances/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -479799,6 +481323,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.placetude.com/fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.placetude.com/fr",
+        "expertises": [
+          "gestion-privee",
+          "fiscalite",
+          "succession",
+          "international",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -480104,6 +481644,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.planifique.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.planifique.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -482089,7 +483645,22 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.pmppatrimoine.fr/",
+          "https://www.pmppatrimoine.fr/team/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.pmppatrimoine.fr/",
+        "team_url": "https://www.pmppatrimoine.fr/team/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_eb9079724e",
@@ -489839,6 +491410,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://primeconseils.fr"
       }
     },
     {
@@ -490308,6 +491885,26 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.prl-invest.com",
+          "https://www.prl-invest.com/a-propos-de-finindep/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.prl-invest.com",
+        "team_url": "https://www.prl-invest.com/a-propos-de-finindep/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -490962,6 +492559,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.proficap.com",
+          "http://www.proficap.com/equipe.html"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.proficap.com",
+        "team_url": "http://www.proficap.com/equipe.html",
+        "linkedin_company_url": "https://www.linkedin.com/company/proficap?original_referer=",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -491439,6 +493055,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.promethee-conseil.com",
+          "http://www.promethee-conseil.com/expertises",
+          "http://www.promethee-conseil.com/cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.promethee-conseil.com",
+        "team_url": "http://www.promethee-conseil.com/cabinet",
+        "linkedin_company_url": "https://www.linkedin.com/company/promethee-conseil/posts/?feedView=all",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -493121,6 +494758,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.proxima-patrimoine.fr/accueil/"
       }
     },
     {
@@ -493154,7 +494797,13 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.proxima-patrimoine.fr/accueil/"
+      }
     },
     {
       "id": "cgp_f8626f8975",
@@ -493187,7 +494836,13 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.proxima-patrimoine.fr/accueil/"
+      }
     },
     {
       "id": "cgp_d13f82dbb1",
@@ -495640,6 +497295,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://quantum-partner.com/"
       }
     },
     {
@@ -495981,6 +497642,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://quatrimonia.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://quatrimonia.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/quatrimonia/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -497136,6 +498817,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.r2advisors.fr"
       }
     },
     {
@@ -497487,6 +499174,27 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.rpouy-patrimoine.fr/",
+          "https://www.rpouy-patrimoine.fr/le-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.rpouy-patrimoine.fr/",
+        "team_url": "https://www.rpouy-patrimoine.fr/le-cabinet",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -498132,6 +499840,34 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://ramify.fr/",
+          "https://ramify.fr/a-propos/team"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://ramify.fr/",
+        "team_url": "https://ramify.fr/a-propos/team",
+        "linkedin_company_url": "https://www.linkedin.com/company/ramify-sas/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "t d’epargne compte a terme alternatifs private assets scpi club deal art crypto produits structures solutions patrimoniales assurance-vie luxembourgeoise credit lombard solutions pour entreprises personnes morales performances offres compar",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -500845,6 +502581,30 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.reduction-impots.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.reduction-impots.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/reduction-impots/",
+        "aum_eur": 150000000,
+        "aum_evidence": "sé Contactez nous ! Notre métier : vous conseiller + de 700 clients nous ont fait confiance 0 + de 150 millions d'euros investis par nos clients 0 Un c",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -501009,6 +502769,25 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.reflexe-patrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.reflexe-patrimoine.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/reflexe-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -501274,6 +503053,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.rbf.fr",
+          "https://www.rbf.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.rbf.fr",
+        "team_url": "https://www.rbf.fr/qui-sommes-nous/",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "assurance-vie"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -501904,6 +503699,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://remoissenet.fr/"
       }
     },
     {
@@ -508839,6 +510640,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.30Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.rochambeau-finance.com"
       }
     },
     {
@@ -511227,6 +513034,36 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.rouaultpatrimoine.fr",
+          "https://www.rouaultpatrimoine.fr/notre-metier/",
+          "https://www.rouaultpatrimoine.fr/notre-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.rouaultpatrimoine.fr",
+        "team_url": "https://www.rouaultpatrimoine.fr/notre-equipe/",
+        "linkedin_company_url": "https://www.linkedin.com/company/rouault-patrimoine1/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "le cabinet rouault patrimoine en 2022. specialiste des fonds immobiliers et des produits structures, quentin est diplome d’un master en ecole d’ingenieur. il est egalement diplome de l’aurep – expert en conseil patrimonial depuis 2023. quen",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -513035,6 +514872,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.gestionfinancepatrimoine.com"
       }
     },
     {
@@ -517466,6 +519309,21 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.saintonge-patrimoine-conseils.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.saintonge-patrimoine-conseils.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -519559,7 +521417,26 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://sapiensinvest.fr/",
+          "https://sapiensinvest.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://sapiensinvest.fr/",
+        "team_url": "https://sapiensinvest.fr/qui-sommes-nous/",
+        "linkedin_company_url": "https://www.linkedin.com/company/sapiensinvest",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_3d92a9e2f0",
@@ -520766,6 +522643,22 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "68.32B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://conception-finance.fr/",
+          "http://conception-finance.fr/qui-sommes-nous"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://conception-finance.fr/",
+        "team_url": "http://conception-finance.fr/qui-sommes-nous",
+        "expertises": [
+          "gestion-privee",
+          "assurance-vie",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -522144,7 +524037,17 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.heraclesfinance.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.heraclesfinance.com",
+        "expertises": [],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_3ef54aa31c",
@@ -523127,6 +525030,12 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10500/odyssee-patrimoine/"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.actusite.fr/page/13851/conseiller-gestion-patrimoine/"
       }
     },
     {
@@ -523935,7 +525844,32 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.groupesarro.com",
+          "https://www.groupesarro.com/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.groupesarro.com",
+        "team_url": "https://www.groupesarro.com/qui-sommes-nous/",
+        "linkedin_company_url": "https://fr.linkedin.com/company/groupe-sarro",
+        "aum_eur": 380000000,
+        "aum_evidence": "ité pour votre patrimoine. Créé en 2003 Encours gérés +380M€ Clients 4200 Logements vendus 1600 Effe",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_87f75e6bf2",
@@ -525177,6 +527111,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.kairos-gestionprivee.com/"
       }
     },
     {
@@ -525933,6 +527873,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://smb-patrimoine.com/",
+          "https://smb-patrimoine.com/a-propos/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://smb-patrimoine.com/",
+        "team_url": "https://smb-patrimoine.com/a-propos/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -531496,6 +533455,23 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.sefpatrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.sefpatrimoine.fr",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -531553,6 +533529,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "ETI",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.sefima.com"
       }
     },
     {
@@ -532027,7 +534009,26 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://selectfinances.fr/",
+          "https://selectfinances.fr/actu-nos-metiers/",
+          "https://selectfinances.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://selectfinances.fr/",
+        "team_url": "https://selectfinances.fr/qui-sommes-nous/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "esg"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_ee87970b07",
@@ -532406,6 +534407,16 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.selene-patrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.selene-patrimoine.fr/",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -533115,6 +535126,24 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.senja-partners.com/",
+          "https://www.senja-partners.com/about"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.senja-partners.com/",
+        "team_url": "https://www.senja-partners.com/about",
+        "expertises": [
+          "gestion-privee",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -534292,6 +536321,25 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.serendip-patrimoine.com/",
+          "https://www.serendip-patrimoine.com/a-propos"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.serendip-patrimoine.com/",
+        "team_url": "https://www.serendip-patrimoine.com/a-propos",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -534651,6 +536699,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.serenityspatrimoine.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.serenityspatrimoine.com/",
+        "linkedin_company_url": "https://www.linkedin.com/company/serenitys-patrimoine/posts/?feedView=all",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -534705,6 +536772,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://serenyconseil.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://serenyconseil.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/serenyconseil/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -534827,6 +536914,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.seria-patrimoine.fr/",
+          "https://www.seria-patrimoine.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.seria-patrimoine.fr/",
+        "team_url": "https://www.seria-patrimoine.fr/qui-sommes-nous/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -537086,6 +539192,18 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.google.com/maps/place/4+Av.+de+l'Op%C3%A9ra,+75001+Paris,+France/@48.8642517,2.3331461,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e250b4b0e83:0xedd1f64394279061!8m2!3d48.8642482!4d2.3353348!16s%2Fg%2F11cskgwvxj",
+        "expertises": [
+          "retraite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -538871,6 +540989,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://silmatec.com/finance/"
       }
     },
     {
@@ -539695,6 +541819,21 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.sin-as.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.sin-as.com/",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -539751,6 +541890,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.sindel-sarl.com"
       }
     },
     {
@@ -542819,7 +544964,20 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.guyennepatrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.guyennepatrimoine.fr",
+        "expertises": [
+          "immobilier",
+          "fiscalite"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_3c8d28ad94",
@@ -543265,6 +545423,21 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.segefi.com/",
+          "https://www.segefi.com/page/18507/notre-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.segefi.com/",
+        "team_url": "https://www.segefi.com/page/18507/notre-equipe/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -545455,6 +547628,26 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "69.20Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.solutionsdexpert.fr",
+          "http://www.solutionsdexpert.fr/notre-equipe"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.solutionsdexpert.fr",
+        "team_url": "http://www.solutionsdexpert.fr/notre-equipe",
+        "linkedin_company_url": "https://fr.linkedin.com/company/solutions-dexpert",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -550495,6 +552688,29 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.staterefinance.fr/",
+          "https://www.staterefinance.fr/nos-expertises/",
+          "https://www.staterefinance.fr/le-cabinet-statere-finance/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.staterefinance.fr/",
+        "team_url": "https://www.staterefinance.fr/le-cabinet-statere-finance/",
+        "linkedin_company_url": "https://www.linkedin.com/company/staterefinance/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -552440,7 +554656,26 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.strategie-finance.fr",
+          "https://www.strategie-finance.fr/qui-sommes-nous/notre-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.strategie-finance.fr",
+        "team_url": "https://www.strategie-finance.fr/qui-sommes-nous/notre-equipe/",
+        "linkedin_company_url": "https://www.linkedin.com/company/strategieetfinance/about/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_8122bbef60",
@@ -552679,6 +554914,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.strategiefinancepatrimoine.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.strategiefinancepatrimoine.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/strategiefinancepatrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -552733,6 +554987,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.haussmann-patrimoine.fr/"
       }
     },
     {
@@ -553221,7 +555481,31 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.strategies-patrimoniales.fr/",
+          "https://www.strategies-patrimoniales.fr/notre-metier",
+          "https://www.strategies-patrimoniales.fr/le-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.strategies-patrimoniales.fr/",
+        "team_url": "https://www.strategies-patrimoniales.fr/le-cabinet",
+        "linkedin_company_url": "https://www.linkedin.com/company/strategies-patrimoniales/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_5dd00e5fdd",
@@ -554091,6 +556375,16 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/stratege-patrimoine-et-finance"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://intranet-magnacartagroup.web.app/login"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://intranet-magnacartagroup.web.app/login",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -554824,6 +557118,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.suffrenpatrimoine.fr/"
       }
     },
     {
@@ -559052,6 +561352,24 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19A"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.talleyrandfinances.fr/",
+          "http://www.talleyrandfinances.fr/services/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.talleyrandfinances.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -559289,7 +561607,29 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.tanguyfinances.fr",
+          "https://www.tanguyfinances.fr/qui-sommes-nous/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.tanguyfinances.fr",
+        "team_url": "https://www.tanguyfinances.fr/qui-sommes-nous/",
+        "aum_eur": 250000000,
+        "aum_evidence": "Nantes et élargissement de l’équipe de Conseillers en Gestion de Patrimoine 1995 Reprise des Sociétés du Groupe par Laurence & Vincent TANGUY 2005 Les capitaux placés par nos clients dépassent 250 mil",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_0d96a1548c",
@@ -561068,6 +563408,16 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.teameos.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.teameos.fr",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -561592,6 +563942,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.teissedre-associes.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.teissedre-associes.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -562711,6 +565078,29 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.terrae-patrimoine.fr/",
+          "https://www.terrae-patrimoine.fr/notre-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.terrae-patrimoine.fr/",
+        "team_url": "https://www.terrae-patrimoine.fr/notre-cabinet/",
+        "linkedin_company_url": "https://www.linkedin.com/company/terrae-patrimoine",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "international",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -569656,6 +572046,22 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.tourny-patrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.tourny-patrimoine.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/wix-com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -570975,6 +573381,26 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.transpatrimoine.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.transpatrimoine.fr/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -572337,6 +574763,22 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.triceps.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.triceps.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/triceps-conseils/",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -574661,7 +577103,31 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.twentysixpatrimoine.com",
+          "http://www.twentysixpatrimoine.com/le-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.twentysixpatrimoine.com",
+        "team_url": "http://www.twentysixpatrimoine.com/le-cabinet",
+        "linkedin_company_url": "https://www.linkedin.com/company/twentysixpatrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "nts, ceux que vous ne trouvez pas • actions & obligations • fonds immobiliers • produits structures • private equity & dette privee pour gagner du temps et de l'argent • optimisation et transparence des frais • investissements alternatifs •",
+        "structured_keywords": [
+          "produits structures"
+        ]
+      }
     },
     {
       "id": "cgp_aefa9f9a36",
@@ -575116,6 +577582,16 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.ucmfinance.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.ucmfinance.com",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -575991,7 +578467,31 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.upfpatrimoine.com/",
+          "https://www.upfpatrimoine.com/details-upf+patrimoine+dans+forbes+business+inside+23+ans+d+expertise+et+une+vision+engagee+du+meti-1771.html",
+          "https://www.upfpatrimoine.com/details-decouvrez+upf+le+havre+et+toute+son+equipe-1187.html"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.upfpatrimoine.com/",
+        "team_url": "https://www.upfpatrimoine.com/details-decouvrez+upf+le+havre+et+toute+son+equipe-1187.html",
+        "linkedin_company_url": "https://fr.linkedin.com/company/upfuniondeplacementsfinanciers?trk=public_profile_topcard-current-company",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "esg",
+          "private-equity"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_073c1d9b4d",
@@ -578906,6 +581406,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.vipatrimoine.fr",
+          "https://www.vipatrimoine.fr/copie-de-le-cabinet-vip"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.vipatrimoine.fr",
+        "team_url": "https://www.vipatrimoine.fr/copie-de-le-cabinet-vip",
+        "aum_eur": 120000000,
+        "aum_evidence": "ns le développement de votre patrimoine Conseiller depuis 1990 800 clients 120 millions d'euros gérés VOS OBJECTIFS VALORISER R",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "fiscalite",
+          "succession"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -579815,6 +582334,21 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://valoreim.com/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://valoreim.com/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -580035,6 +582569,23 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.valoriacapital.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.valoriacapital.fr/",
+        "expertises": [
+          "gestion-privee",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -580533,6 +583084,34 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "82.99Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://valorispatrimoine.fr/",
+          "https://valorispatrimoine.fr/presentation/notre-metier"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://valorispatrimoine.fr/",
+        "linkedin_company_url": "https://www.linkedin.com/company/valoris-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "international",
+          "esg",
+          "private-equity",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "e-vie, pea, contrats de capitalisation, fonds d’investissement, private equity, produits structures... nous privilegions la diversification, la performance et la securite. investissement immobilier conseil en investissement locatif, scpi, d",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -581053,6 +583632,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.valoryssignature.fr/"
       }
     },
     {
@@ -581333,6 +583918,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.valytis.fr"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.valytis.fr",
+        "linkedin_company_url": "https://www.linkedin.com/company/valytis-conseil/about/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "succession",
+          "credit",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -581820,6 +584424,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://ieam.eu/"
       }
     },
     {
@@ -582125,6 +584735,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.vauban-patrimoine.com/",
+          "https://www.vauban-patrimoine.com/le-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.vauban-patrimoine.com/",
+        "team_url": "https://www.vauban-patrimoine.com/le-cabinet/",
+        "linkedin_company_url": "https://www.linkedin.com/company/vauban-patrimoine/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "credit",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -584125,6 +586756,16 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.venise-patrimoine.com"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.venise-patrimoine.com",
+        "expertises": [],
+        "has_structured_products": false
       }
     },
     {
@@ -584710,6 +587351,26 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.vernalfinance.fr",
+          "https://www.vernalfinance.fr/nos-expertises",
+          "https://www.vernalfinance.fr/notre-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.vernalfinance.fr",
+        "team_url": "https://www.vernalfinance.fr/notre-cabinet",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -585148,6 +587809,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://version-patrimoine.com/",
+          "https://version-patrimoine.com/notre-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://version-patrimoine.com/",
+        "team_url": "https://version-patrimoine.com/notre-equipe/",
+        "linkedin_company_url": "https://fr.linkedin.com/company/versionpatrimoine",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -585636,6 +588318,24 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.vested.fr/",
+          "https://www.vested.fr/qui-sommes-nous"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.vested.fr/",
+        "team_url": "https://www.vested.fr/qui-sommes-nous",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -586789,6 +589489,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "68.32B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.2Lfinances.com"
       }
     },
     {
@@ -586846,6 +589552,28 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://viafontis.fr/",
+          "https://viafontis.fr/nos-expertises/",
+          "https://viafontis.fr/le-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://viafontis.fr/",
+        "team_url": "https://viafontis.fr/le-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "private-equity"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -591055,7 +593783,27 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.compagnie-financiere-colbert.com/",
+          "https://www.compagnie-financiere-colbert.com/nos-metiers",
+          "https://www.compagnie-financiere-colbert.com/notre-equipe"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.compagnie-financiere-colbert.com/",
+        "team_url": "https://www.compagnie-financiere-colbert.com/notre-equipe",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_89ec4d023d",
@@ -592080,6 +594828,33 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.vousconseiller.com/",
+          "https://www.vousconseiller.com/notre-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.vousconseiller.com/",
+        "team_url": "https://www.vousconseiller.com/notre-cabinet",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "international",
+          "esg",
+          "produits-structures"
+        ],
+        "has_structured_products": true,
+        "structured_evidence": "estion de patrimoine (cncgp). assurance-vie, scpi, plan epargne retraite (per), produits structures, finance durable, etf, crypto-actifs defiscalisation girardin industriel, loueur meuble, demembrement de propriete, lois malraux & mh un acc",
+        "structured_keywords": [
+          "produits structures"
+        ]
       }
     },
     {
@@ -592618,6 +595393,12 @@
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.magnacarta.fr/vs-patrimoine-associes"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://vspatrimoine.fr/"
       }
     },
     {
@@ -594603,6 +597384,19 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://waves-investment.fr/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://waves-investment.fr/",
+        "expertises": [
+          "retraite",
+          "fiscalite"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -595039,6 +597833,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://www.wealth-conseil.com/",
+          "https://www.wealth-conseil.com/page/25860/l-equipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://www.wealth-conseil.com/",
+        "team_url": "https://www.wealth-conseil.com/page/25860/l-equipe/",
+        "linkedin_company_url": "https://www.linkedin.com/company/wealth-conseil/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -595899,6 +598714,25 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.welyspatrimoine.fr/accueil/",
+          "http://www.welyspatrimoine.fr/nos-services.php"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.welyspatrimoine.fr/accueil/",
+        "linkedin_company_url": "https://fr.linkedin.com/company/cpi-finances",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "entreprise"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -595937,7 +598771,26 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-05-06",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.welyspatrimoine.fr/accueil/",
+          "http://www.welyspatrimoine.fr/nos-services.php"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.welyspatrimoine.fr/accueil/",
+        "linkedin_company_url": "https://fr.linkedin.com/company/cpi-finances",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "entreprise"
+        ],
+        "has_structured_products": false
+      }
     },
     {
       "id": "cgp_5d4fae8449",
@@ -598254,6 +601107,29 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://wolframfinance.com/",
+          "https://wolframfinance.com/nos-services/",
+          "https://wolframfinance.com/qui-sommes-nous/lequipe/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://wolframfinance.com/",
+        "team_url": "https://wolframfinance.com/qui-sommes-nous/lequipe/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "assurance-vie",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -600951,6 +603827,27 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://ylvconseils.com/",
+          "https://ylvconseils.com/page-expertises/",
+          "https://ylvconseils.com/page-cabinet/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://ylvconseils.com/",
+        "team_url": "https://ylvconseils.com/page-cabinet/",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "entreprise",
+          "esg"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -601686,6 +604583,12 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://www.cabinet-gicquel.fr/"
       }
     },
     {
@@ -603513,6 +606416,12 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "https://www.zna-invest.fr"
       }
     },
     {
