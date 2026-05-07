@@ -1,8 +1,8 @@
-name: Daily CGP Scrape
+name: Weekly CGP Scrape
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 8:00 AM Paris (UTC+2)
+    - cron: '0 6 * * 2'   # Tuesday 07:00 Paris winter / 08:00 Paris summer (06:00 UTC)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -63,5 +63,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/
-          git diff --staged --quiet || git commit -m "chore: daily scrape $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "chore: weekly scrape $(date -u +%Y-%m-%d)"
           git push

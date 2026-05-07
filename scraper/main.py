@@ -22,6 +22,8 @@ from sources.cncgp import scrape_cncgp
 from sources.anacofi import scrape_anacofi
 from sources.affo import scrape_affo
 from sources.enricher import batch_enrich_emails
+from sources.recherche_entreprises import batch_enrich as batch_enrich_datagouv
+from sources.orias_detail import batch_enrich as batch_enrich_orias
 from merger import merge_all_sources
 from detector import detect_changes, build_new_members_data, build_stats
 from folk_export import export_new_members_csv
@@ -105,7 +107,51 @@ def main():
     logger.info(">>> Merging sources...")
     merged_members = merge_all_sources(*source_results)
 
-    # Enrich emails from company websites
+    # Enrich data.gouv (SIREN, dirigeants, creation_date) for any cabinet that's
+    # missing one of those — covers both newly detected members AND old ones the
+    # API failed on previously.
+    logger.info(">>> Enriching data.gouv (SIREN/dirigeants/creation_date)...")
+    dg_t0 = datetime.now(timezone.utc)
+    try:
+        batch_enrich_datagouv(merged_members)
+        dg_status = "success"
+        dg_err = None
+    except Exception as e:
+        dg_status = "error"
+        dg_err = f"{type(e).__name__}: {e}"
+        logger.error(f"data.gouv enrichment failed: {e}")
+    dg_elapsed = (datetime.now(timezone.utc) - dg_t0).total_seconds()
+    logger.info(f"<<< data.gouv enrichment done in {dg_elapsed:.0f}s")
+    scrape_status["datagouv_enrichment"] = {
+        "status": dg_status,
+        "duration_s": round(dg_elapsed, 1),
+        "timestamp": now_iso,
+        **({"error": dg_err} if dg_err else {}),
+    }
+
+    # Enrich ORIAS detail (address, phone, email, orias_inscription_date) for
+    # every cabinet with a SIREN that is missing one of those fields.
+    logger.info(">>> Enriching ORIAS detail (address/phone/email)...")
+    or_t0 = datetime.now(timezone.utc)
+    try:
+        batch_enrich_orias(merged_members)
+        or_status = "success"
+        or_err = None
+    except Exception as e:
+        or_status = "error"
+        or_err = f"{type(e).__name__}: {e}"
+        logger.error(f"ORIAS enrichment failed: {e}")
+    or_elapsed = (datetime.now(timezone.utc) - or_t0).total_seconds()
+    logger.info(f"<<< ORIAS enrichment done in {or_elapsed:.0f}s")
+    scrape_status["orias_enrichment"] = {
+        "status": or_status,
+        "duration_s": round(or_elapsed, 1),
+        "timestamp": now_iso,
+        **({"error": or_err} if or_err else {}),
+    }
+
+    # Enrich emails from company websites (last — fills the gaps the official
+    # registries didn't have)
     logger.info(">>> Enriching emails from websites...")
     enrich_t0 = datetime.now(timezone.utc)
     merged_members = batch_enrich_emails(merged_members, max_lookups=200)
