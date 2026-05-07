@@ -334,6 +334,24 @@ async function loadData() {
                 deptSelect.appendChild(opt);
             });
 
+            // Populate groupement filter (Cyrus, Laplace, Magnacarta, Actualis...)
+            const grpCounts = {};
+            allMembers.forEach(m => {
+                const g = m.groupement
+                    || (m.associations && m.associations.ucgp && m.associations.ucgp.groupement)
+                    || '';
+                if (g) grpCounts[g] = (grpCounts[g] || 0) + 1;
+            });
+            const grpSelect = document.getElementById('filterGroupement');
+            if (grpSelect) {
+                Object.keys(grpCounts).sort().forEach(g => {
+                    const opt = document.createElement('option');
+                    opt.value = g;
+                    opt.textContent = `${g} (${grpCounts[g]})`;
+                    grpSelect.appendChild(opt);
+                });
+            }
+
             renderAssociationCards(data.scrape_status || {}, stats.by_association || {});
         }
 
@@ -411,7 +429,8 @@ function filterByAssociation(key) {
 function applyDashboardFilter(kind) {
     // Reset all form filters first
     const reset = ['searchInput', 'filterAssociation', 'filterDepartment',
-                   'filterActivity', 'filterStatus', 'filterCreation'];
+                   'filterActivity', 'filterStatus', 'filterCreation',
+                   'filterGroupement'];
     reset.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
     const hide = document.getElementById('filterHideProcessed');
     if (hide) hide.checked = false;
@@ -477,6 +496,7 @@ function getFilteredMembers() {
     const actFilter = document.getElementById('filterActivity')?.value || '';
     const statusFilter = document.getElementById('filterStatus')?.value || '';
     const creationFilter = document.getElementById('filterCreation')?.value || '';
+    const groupementFilter = document.getElementById('filterGroupement')?.value || '';
     const hideProcessed = document.getElementById('filterHideProcessed')?.checked || false;
 
     // creation_date is "YYYY-MM-DD" — compute the cutoff once.
@@ -529,6 +549,16 @@ function getFilteredMembers() {
         if (assocFilter && !m.associations?.[assocFilter]) return false;
         if (deptFilter && m.address?.department !== deptFilter) return false;
         if (actFilter && !m.activities?.includes(actFilter)) return false;
+        if (groupementFilter) {
+            const memberGroupement = m.groupement
+                || (m.associations && m.associations.ucgp && m.associations.ucgp.groupement)
+                || '';
+            if (groupementFilter === '__none__') {
+                if (memberGroupement) return false;
+            } else if (memberGroupement !== groupementFilter) {
+                return false;
+            }
+        }
         if (creationCutoff) {
             // Reject if no creation_date or older than cutoff
             if (!m.creation_date || m.creation_date < creationCutoff) return false;
@@ -659,6 +689,14 @@ function renderMemberCard(m) {
     const actBadges = (m.activities || [])
         .map(a => `<span class="badge badge-activity">${a}</span>`)
         .join('');
+    // Groupement = parent network (Cyrus, Laplace, Magnacarta, Actualis, ...).
+    // Stored as m.groupement (canonical) — also nested in m.associations.ucgp.groupement.
+    const groupementName = m.groupement
+        || (m.associations && m.associations.ucgp && m.associations.ucgp.groupement)
+        || '';
+    const groupementBadge = groupementName
+        ? `<span class="badge badge-groupement" title="Groupement parent">${escHtml(groupementName)}</span>`
+        : '';
     const newBadge = m.is_new ? '<span class="badge-new">NOUVEAU</span>' : '';
     const statusBadge = currentStatus
         ? `<span class="badge-status status-${currentStatus}">${STATUS_LABELS[currentStatus]}</span>`
@@ -695,6 +733,7 @@ function renderMemberCard(m) {
                     ${newBadge}
                     ${statusBadge}
                     ${assocBadges}
+                    ${groupementBadge}
                     ${actBadges}
                 </div>
                 <div class="member-meta">
@@ -1087,7 +1126,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 // Filter event listeners
-['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus', 'filterCreation'].forEach(id => {
+['searchInput', 'filterAssociation', 'filterDepartment', 'filterActivity', 'filterStatus', 'filterCreation', 'filterGroupement'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener(el.type === 'text' ? 'input' : 'change', renderDirectory);
 });

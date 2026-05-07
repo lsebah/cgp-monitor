@@ -114,6 +114,11 @@
                         <option value="contacted">Contactes</option>
                         <option value="refused">Refus</option>
                     </select>
+                    <select id="filterGroupement" class="filter-select" title="Groupement parent du cabinet (UCGP, AFFO...)">
+                        <option value="">Tous les groupements</option>
+                        <option value="__none__">Sans groupement</option>
+                        <!-- options dynamiques injectees par renderGroupementOptions() -->
+                    </select>
                     <select id="filterCreation" class="filter-select" title="Date de creation du cabinet (source: data.gouv)">
                         <option value="">Toute anciennete</option>
                         <option value="7d">Crees < 7 jours</option>

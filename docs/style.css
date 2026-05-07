@@ -358,6 +358,11 @@ body {
     color: var(--accent-gold);
     background: rgba(212, 168, 67, 0.1);
 }
+.badge-groupement {
+    color: #c89bff;
+    background: rgba(155, 89, 231, 0.12);
+    border: 1px solid rgba(155, 89, 231, 0.35);
+}
 .badge-new {
     font-size: 10px;
     font-weight: 700;
