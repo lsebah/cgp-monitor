@@ -23,6 +23,11 @@ from sources.ucgp import (
     scrape_entrepreneurs,
     scrape_finindep,
     scrape_actualis,
+    scrape_laplace,
+    scrape_cercle_france_patrimoine,
+    scrape_cyrus,
+    scrape_magnacarta,
+    scrape_cercle_valeurs,
 )
 
 DATA_DIR = os.path.join(REPO, "docs", "data")
@@ -36,6 +41,11 @@ GROUPEMENTS = {
     "entrepreneurs": ("Le Club des Entrepreneurs CGP", scrape_entrepreneurs),
     "finindep":      ("Finindep",                       scrape_finindep),
     "actualis":      ("Actualis Associes",              scrape_actualis),
+    "laplace":       ("Laplace (Crystal+Witam+Capitole)", scrape_laplace),
+    "cfp":           ("Cercle France Patrimoine",       scrape_cercle_france_patrimoine),
+    "cyrus":         ("Cyrus Conseil",                  scrape_cyrus),
+    "magnacarta":    ("Magnacarta",                     scrape_magnacarta),
+    "cvp":           ("Cercle Valeurs Patrimoine",      scrape_cercle_valeurs),
 }
 
 # Fields that scrape OUTPUT may NOT overwrite on existing rows
