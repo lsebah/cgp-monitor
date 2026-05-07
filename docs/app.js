@@ -576,7 +576,9 @@ function getFilteredMembers() {
         }
         if (caFilter) {
             const ca = m.finances_data_gouv?.ca_eur;
-            if (ca == null) return false;
+            const fy = m.finances_data_gouv?.year;
+            // Reject pre-2023 OR missing OR ca:0 (data.gouv's "no declaration" code)
+            if (ca == null || ca === 0 || !fy || fy < 2023) return false;
             const threshold = CA_THRESHOLDS[caFilter] ?? 0;
             if (ca < threshold) return false;
         }
@@ -795,19 +797,24 @@ function renderMemberCard(m) {
         .map(e => `<span class="badge badge-expertise">${escHtml(EXPERTISE_LABELS[e] || e)}</span>`)
         .join('');
 
-    // KPI line (CA / AUM / effectif): only render if at least one is present
+    // KPI line (CA / AUM / effectif): only render if at least one is present.
+    // CA / RN: skip anything older than 2023 — pre-2023 figures are too stale
+    // to inform prospection (data.gouv often serves 2017-2019 for radiated SAS).
     const fd = m.finances_data_gouv || {};
+    // Treat 0 like missing — data.gouv returns ca:0 for empty declarations.
+    const showCa = fd.ca_eur != null && fd.ca_eur > 0 && fd.year && fd.year >= 2023;
+    // RN can legitimately be 0 or negative — only filter on year + non-null.
+    const showRn = fd.resultat_net_eur != null && fd.year && fd.year >= 2023;
     const kpis = [];
     if (wd.aum_eur) {
         kpis.push(`<span class="kpi kpi-aum" title="Encours sous gestion (site web)">AUM: ${escHtml(formatEur(wd.aum_eur))}</span>`);
     }
-    if (fd.ca_eur) {
-        const yearStr = fd.year ? ` (${fd.year})` : '';
-        kpis.push(`<span class="kpi kpi-ca" title="Chiffre d'affaires (data.gouv${yearStr})">CA: ${escHtml(formatEur(fd.ca_eur))}${yearStr}</span>`);
+    if (showCa) {
+        kpis.push(`<span class="kpi kpi-ca" title="Chiffre d'affaires (data.gouv ${fd.year})">CA: ${escHtml(formatEur(fd.ca_eur))} (${fd.year})</span>`);
     }
-    if (fd.resultat_net_eur != null) {
+    if (showRn) {
         const cls = fd.resultat_net_eur < 0 ? 'kpi-rn-neg' : 'kpi-rn-pos';
-        kpis.push(`<span class="kpi ${cls}" title="Resultat net (data.gouv)">RN: ${escHtml(formatEur(fd.resultat_net_eur))}</span>`);
+        kpis.push(`<span class="kpi ${cls}" title="Resultat net (data.gouv ${fd.year})">RN: ${escHtml(formatEur(fd.resultat_net_eur))}</span>`);
     }
     if (fd.effectif_label && fd.effectif_tranche && fd.effectif_tranche !== 'NN') {
         kpis.push(`<span class="kpi kpi-eff" title="Tranche d'effectif INSEE">${escHtml(fd.effectif_label)}</span>`);

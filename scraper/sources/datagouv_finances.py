@@ -55,9 +55,14 @@ EFFECTIF_LABELS = {
 }
 
 
-def _latest_finances(finances_dict):
+# Minimum financial year to keep — pre-2023 data is too stale for prospection
+# (data.gouv often serves 2017-2019 figures for radiated/dormant SAS).
+MIN_FINANCE_YEAR = 2023
+
+
+def _latest_finances(finances_dict, min_year=MIN_FINANCE_YEAR):
     """data.gouv returns {"2019": {"ca": ..., "resultat_net": ...}, "2020": {...}}.
-    Pick the most recent year with at least CA or resultat_net."""
+    Pick the most recent year >= min_year with at least CA or resultat_net."""
     if not finances_dict:
         return None, None
     try:
@@ -65,6 +70,8 @@ def _latest_finances(finances_dict):
     except (TypeError, ValueError):
         return None, None
     for y in years:
+        if y < min_year:
+            continue
         f = finances_dict.get(str(y)) or {}
         if f.get("ca") is not None or f.get("resultat_net") is not None:
             return y, f
