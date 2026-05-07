@@ -90,7 +90,16 @@ def _parse_card(card):
 
 
 def _parse_detail_page(url):
-    """Fetch a member detail page for phone/email/website/directors."""
+    """Fetch a CNCEF member detail page.
+
+    The CNCEF cabinet pages expose the real "Siège social" address (street +
+    postal + city) and the "Représentant légal" name. They do NOT expose
+    cabinet-level phone / email / website (only CNCEF-wide social links).
+
+    Returns a dict that may contain:
+      - address_street, postal_code, city
+      - director_name, director_role
+    """
     try:
         resp = fetch(url, delay=1.0)
         if not resp:
@@ -98,46 +107,36 @@ def _parse_detail_page(url):
         soup = BeautifulSoup(resp.text, "lxml")
         info = {}
 
-        # Phone
-        phone_el = soup.find("a", href=re.compile(r"^tel:"))
-        if phone_el:
-            info["phone"] = phone_el.get("href", "").replace("tel:", "").strip()
+        # --- "Siège social" block: typically a row with the label followed by
+        # the address in the same container.
+        for el in soup.find_all(string=re.compile(r"Si[èe]ge social", re.I)):
+            block = el.parent.find_parent("div") or el.parent
+            text = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
+            # Expected: "Siège social <STREET> <POSTAL> <CITY>"
+            m = re.search(
+                r"Si[èe]ge social\s+(.+?)\s+(\d{5})\s+([A-ZÀ-Ÿ][A-Za-zÀ-ÿ\-' ]+?)(?:\s+Contacter|$)",
+                text)
+            if m:
+                info["address_street"] = m.group(1).strip()
+                info["postal_code"] = m.group(2)
+                info["city"] = m.group(3).strip()
+                break
 
-        # Email
-        email_el = soup.find("a", href=re.compile(r"^mailto:"))
-        if email_el:
-            info["email"] = email_el.get("href", "").replace("mailto:", "").strip()
-
-        # Website
-        for a in soup.find_all("a", href=True):
-            href = a.get("href", "")
-            if href.startswith("http") and "cncef.org" not in href:
-                text = a.get_text(strip=True).lower()
-                if any(w in text for w in ["site", "web", "www"]) or any(w in href for w in ["www.", ".fr", ".com"]):
-                    info["website"] = href
-                    break
-
-        # Address
-        text = soup.get_text(" ", strip=True)
-        pc_match = re.search(r'(\d{5})\s+([A-Z][a-zA-ZÀ-ÿ\s\-]+)', text)
-        if pc_match:
-            info["postal_code"] = pc_match.group(1)
-            info["city"] = pc_match.group(2).strip()
-
-        street_match = re.search(r'(\d+[\s,]+(?:rue|avenue|boulevard|place|chemin|impasse|allée|cours)\s+[^,\n]+)', text, re.I)
-        if street_match:
-            info["address_street"] = street_match.group(1).strip()
-
-        # Director
-        dirigeant_match = re.search(
-            r'(?:Dirigeant|Gérant|Président|Contact)\s*:?\s*(.+?)(?:\n|$|Téléphone|Email|Adresse)',
-            text, re.I
-        )
-        if dirigeant_match:
-            d_name = dirigeant_match.group(1).strip()
-            d_name = re.sub(r'\s+', ' ', d_name)
-            if 3 < len(d_name) < 60:
-                info["director_name"] = d_name
+        # --- "Représentant légal" block: "NAME [Représentant légal] [- ROLE]"
+        for el in soup.find_all(string=re.compile(r"Repr[ée]sentant l[ée]gal", re.I)):
+            block = el.parent.find_parent("div") or el.parent
+            text = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
+            # Expected: "NOM Prénom Représentant légal[- ROLE]"
+            m = re.search(
+                r"^(.{3,60}?)\s*Repr[ée]sentant l[ée]gal(?:\s*-\s*([A-ZÉÈ \-]+))?",
+                text)
+            if m:
+                name = m.group(1).strip()
+                role = (m.group(2) or "").strip().title() or "Représentant légal"
+                if 3 < len(name) < 60 and not name.lower().startswith(("vos ", "partager")):
+                    info["director_name"] = name
+                    info["director_role"] = role
+                break
 
         return info
     except Exception as e:
