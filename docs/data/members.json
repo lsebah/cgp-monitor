@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T06:14:02.586348+00:00",
+  "last_updated": "2026-05-07T06:16:12.271146+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -19,7 +19,7 @@
     }
   },
   "stats": {
-    "total_members": 10730,
+    "total_members": 10823,
     "new_today": 1491,
     "new_this_week": 4973,
     "new_this_month": 4973,
@@ -28,7 +28,7 @@
       "cncef": 4829,
       "anacofi": 3243,
       "affo": 20,
-      "ucgp": 61
+      "ucgp": 181
     },
     "by_activity": {
       "CIF": 4857,
@@ -1497,6 +1497,42 @@
       },
       "creation_date": "2020-01-01",
       "orias_inscription_date": "2020-01-31"
+    },
+    {
+      "id": "cgp_132dcd69c6",
+      "company_name": "2NT Conseils",
+      "company_name_normalized": "2nt conseils",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "n.teissonnier@2ntconseils.fr",
+      "website": "https://2ntconseils.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/2nt-conseils"
+      }
     },
     {
       "id": "cgp_c15eab1ed5",
@@ -12767,7 +12803,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -13129,9 +13165,9 @@
         "CIF"
       ],
       "specialties": [
-        "Retraite",
         "Epargne",
-        "Prévoyance"
+        "Prévoyance",
+        "Retraite"
       ],
       "directors": [
         {
@@ -13147,7 +13183,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -16396,6 +16432,42 @@
       },
       "creation_date": "2022-02-24",
       "orias_inscription_date": "2022-09-23"
+    },
+    {
+      "id": "cgp_6de6855c94",
+      "company_name": "Adéquation Amiens - prochainement Laplace",
+      "company_name_normalized": "adequation amiens  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "8 bis rue André Chenier",
+        "postal_code": "80000",
+        "city": "Amiens",
+        "department": "80",
+        "department_name": "Somme",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33322977878",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_025df0c5da",
@@ -28814,7 +28886,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -29114,6 +29186,42 @@
       },
       "creation_date": "2021-10-28",
       "orias_inscription_date": "2021-12-10"
+    },
+    {
+      "id": "cgp_227303095c",
+      "company_name": "Alpes Patrimoine Conseil Grenoble - prochainement Laplace",
+      "company_name_normalized": "alpes patrimoine conseil grenoble  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "44 Cours Jean Jaurès",
+        "postal_code": "38000",
+        "city": "Grenoble",
+        "department": "38",
+        "department_name": "Isere",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33476418153",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_e63995d3aa",
@@ -31335,7 +31443,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": false,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -32664,10 +32772,10 @@
       },
       "phone": "+33781487462",
       "email": "franck.duchatel@altitude-patrimoine.fr",
-      "website": "",
+      "website": "https://altitude-patrimoine.fr/",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -32690,14 +32798,19 @@
       "associations": {
         "cncef": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/altitude-patrimoine/"
+        "cncef": "https://www.cncef.org/annuaire/altitude-patrimoine/",
+        "ucgp": "https://www.magnacarta.fr/altitude-patrimoine"
       },
       "creation_date": "2015-06-01",
       "data_gouv": {
@@ -38401,7 +38514,7 @@
       },
       "phone": "+33681169340",
       "email": "al@anneletanouxconseil.fr",
-      "website": "",
+      "website": "https://anneletanouxconseil.fr/",
       "activities": [
         "CIF"
       ],
@@ -38421,13 +38534,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/anne-letanoux-conseil"
+      },
       "creation_date": "2010-12-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -45730,6 +45849,42 @@
       "orias_inscription_date": "2018-01-12"
     },
     {
+      "id": "cgp_f24d342a7e",
+      "company_name": "Armonial Partners Montpellier - prochainement Laplace",
+      "company_name_normalized": "armonial partners montpellier  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "9 rue de la Vieille Intendance",
+        "postal_code": "",
+        "city": "34 000 Montpellier",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "+33467556471",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_491c53fa7b",
       "company_name": "ARMONYS PATRIMOINE",
       "company_name_normalized": "armonys patrimoine",
@@ -46636,6 +46791,78 @@
       "orias_inscription_date": "2016-01-29"
     },
     {
+      "id": "cgp_5b7afd5b60",
+      "company_name": "Artemis Consult Gap - prochainement Laplace",
+      "company_name_normalized": "artemis consult gap  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "7 Boulevard Général de Gaulle",
+        "postal_code": "05000",
+        "city": "Gap",
+        "department": "05",
+        "department_name": "Hautes-Alpes",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33492549090",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_8af9382e3a",
+      "company_name": "Artemis Consult Grenoble - prochainement Laplace",
+      "company_name_normalized": "artemis consult grenoble  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "44 Cours Jean Jaurès",
+        "postal_code": "38000",
+        "city": "Grenoble",
+        "department": "38",
+        "department_name": "Isere",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33476509787",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_e09ec971e2",
       "company_name": "ARTEMIS CONSULT SARL",
       "company_name_normalized": "artemis consult",
@@ -47062,7 +47289,7 @@
       },
       "phone": "+33380229624",
       "email": "contact@arthus-conseil.com",
-      "website": "",
+      "website": "https://www.arthus-conseil.com/",
       "activities": [
         "CIF"
       ],
@@ -47090,13 +47317,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle Valeurs Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle Valeurs Patrimoine",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://lecerclevaleurspatrimoine.fr/les-cabinets/"
+      },
       "creation_date": "2003-04-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -54664,6 +54897,51 @@
       "orias_inscription_date": "2010-10-22"
     },
     {
+      "id": "cgp_0791ae95e1",
+      "company_name": "Atlantique Patrimoine Conseil",
+      "company_name_normalized": "atlantique patrimoine conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11 rue Contrescarpe",
+        "postal_code": "44000",
+        "city": "Nantes",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Aloïs Lecomte",
+          "role": "Adherent"
+        },
+        {
+          "name": "Nina Moisan",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
+    },
+    {
       "id": "cgp_bf1b838faf",
       "company_name": "ATLANTIQUE PATRIMOINE CONSEIL A.P. CONSEIL",
       "company_name_normalized": "atlantique patrimoine conseil ap conseil",
@@ -55357,7 +55635,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10512/atria-patrimoine/"
@@ -55739,13 +56017,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "2015-01-29",
       "data_gouv": {
         "etat_administratif": "A",
@@ -62165,7 +62449,7 @@
       },
       "phone": "+33240124011",
       "email": "axiomeconseil@magnacarta.fr",
-      "website": "",
+      "website": "https://axiomeconseil.fr/",
       "activities": [
         "CIF"
       ],
@@ -62199,13 +62483,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/axiome-conseil"
+      },
       "creation_date": "2002-10-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -62478,7 +62768,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/27197/clarite-patrimoine/"
@@ -69039,7 +69329,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27439/baussant-conseil/"
@@ -73612,7 +73902,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -76260,7 +76550,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10513/bg2c-finances/"
@@ -88764,13 +89054,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/bsa-gestion-privee-0"
+      },
       "creation_date": "2001-10-15",
       "data_gouv": {
         "etat_administratif": "A",
@@ -89331,6 +89627,42 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/builles-nicolas/"
+      }
+    },
+    {
+      "id": "cgp_4236153b31",
+      "company_name": "Bulle de Cannelle",
+      "company_name_normalized": "bulle de cannelle",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "contact@bulledecannelle.fr",
+      "website": "https://bulledecannelle.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/bulle-cannelle"
       }
     },
     {
@@ -92653,6 +92985,51 @@
       "orias_inscription_date": "2008-10-03"
     },
     {
+      "id": "cgp_a73a3a980e",
+      "company_name": "Cabinet",
+      "company_name_normalized": "cabinet",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "51 boulevard Eugène Pelletan",
+        "postal_code": "83000",
+        "city": "Toulon",
+        "department": "83",
+        "department_name": "Var",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Corellon Pascal Jouve",
+          "role": "Adherent"
+        },
+        {
+          "name": "Corellon Corinne Sauze",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
+    },
+    {
       "id": "cgp_56ad914147",
       "company_name": "CABINET 2D FINANCE",
       "company_name_normalized": "cabinet 2d finance",
@@ -94184,9 +94561,9 @@
         "CIF"
       ],
       "specialties": [
-        "Stratégie patrimoniale",
         "Assurance Vie",
-        "Retraite"
+        "Retraite",
+        "Stratégie patrimoniale"
       ],
       "directors": [
         {
@@ -94202,7 +94579,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -94422,6 +94799,47 @@
       "orias_inscription_date": "2026-01-09"
     },
     {
+      "id": "cgp_03a5eb1343",
+      "company_name": "Cabinet Conseil",
+      "company_name_normalized": "cabinet conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "18 Avenue du Stade –",
+        "postal_code": "39000",
+        "city": "Lons-le-Saunier",
+        "department": "39",
+        "department_name": "Jura",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Torandell Loïc Torandell",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
+    },
+    {
       "id": "cgp_9e12d54094",
       "company_name": "CABINET CONSEIL COMPIEGNOIS",
       "company_name_normalized": "cabinet conseil compiegnois",
@@ -94568,6 +94986,42 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2006-11-07"
+    },
+    {
+      "id": "cgp_4cc31a55f3",
+      "company_name": "Cabinet Corellon Toulon - prochainement Laplace",
+      "company_name_normalized": "cabinet corellon toulon  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "51 boulevard Eugène Pelletan",
+        "postal_code": "83000",
+        "city": "TOULON",
+        "department": "83",
+        "department_name": "Var",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33484250036",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_6f52cbce97",
@@ -97077,7 +97531,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10507/fbp-associes/"
@@ -101269,6 +101723,42 @@
       "orias_inscription_date": "2011-07-08"
     },
     {
+      "id": "cgp_530a3c9de4",
+      "company_name": "Calci Patrimoine",
+      "company_name_normalized": "calci patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "contact@calci-patrimoine.com",
+      "website": "https://calci-patrimoine.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/www.calci-patrimoine.com"
+      }
+    },
+    {
       "id": "cgp_15c2360e4c",
       "company_name": "CALIGO CONSULTANTS SARL",
       "company_name_normalized": "caligo consultants",
@@ -102808,7 +103298,7 @@
       },
       "phone": "+33602171109",
       "email": "s.cachet@magnacarta.fr",
-      "website": "",
+      "website": "https://canopeepatrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -102828,13 +103318,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/canopee-patrimoine"
+      },
       "creation_date": "2017-10-16",
       "data_gouv": {
         "etat_administratif": "A",
@@ -103730,7 +104226,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -105802,13 +106298,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "1992-06-15",
       "data_gouv": {
         "etat_administratif": "A",
@@ -113181,7 +113683,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10504/cedellen-patrimoine/"
@@ -114478,7 +114980,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27683/centre-du-patrimoine/"
@@ -116330,7 +116832,7 @@
       },
       "phone": "+33770124019",
       "email": "jennifer.frasse-mathon@contalimpatrimoine.fr",
-      "website": "",
+      "website": "https://cgpatrimoine.net/",
       "activities": [
         "CIF"
       ],
@@ -116350,13 +116852,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/cg-patrimoine"
+      },
       "creation_date": "2021-03-17",
       "data_gouv": {
         "etat_administratif": "A",
@@ -117036,7 +117544,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cgp-expert/",
@@ -117314,7 +117822,7 @@
       },
       "phone": "+33251409242",
       "email": "chconseiletpatrimoine@magnacarta.fr",
-      "website": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
       "activities": [
         "CIF"
       ],
@@ -117330,13 +117838,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/ch-conseil-et-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -122755,7 +123269,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29167/cimea_patrimoine/"
@@ -128466,7 +128980,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -133507,7 +134021,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -135142,7 +135656,7 @@
       },
       "phone": "+33384246531",
       "email": "contact@convergence-patrimoine.fr",
-      "website": "",
+      "website": "https://convergence-patrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -135162,13 +135676,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/convergence-patrimoine"
+      },
       "creation_date": "2002-05-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -135221,6 +135741,42 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2023-07-13"
+    },
+    {
+      "id": "cgp_f166a5bd9f",
+      "company_name": "Convictions & Patrimoine",
+      "company_name_normalized": "convictions  patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "f.zanotti@cabinet-convictions.com",
+      "website": "https://cabinet-convictions.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/convictions-patrimoine"
+      }
     },
     {
       "id": "cgp_dc5da2db09",
@@ -135941,6 +136497,42 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2022-06-24"
+    },
+    {
+      "id": "cgp_705db65b90",
+      "company_name": "Corelliance Marseille - prochainement Laplace",
+      "company_name_normalized": "corelliance marseille  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "553 avenue du Prado",
+        "postal_code": "13008",
+        "city": "Marseille",
+        "department": "13",
+        "department_name": "Bouches-du-Rhone",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33486771816",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_8e8423469f",
@@ -140031,6 +140623,47 @@
       "orias_inscription_date": "2009-01-30"
     },
     {
+      "id": "cgp_15554e0cdc",
+      "company_name": "Cozanet & Cie",
+      "company_name_normalized": "cozanet  cie",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11b rue de la République – BP 60017",
+        "postal_code": "24000",
+        "city": "Périgueux",
+        "department": "24",
+        "department_name": "Dordogne",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Chistophe Cozanet",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
+    },
+    {
       "id": "cgp_8ad8df9aa0",
       "company_name": "CP CONSEIL ET PATRIMOINE",
       "company_name_normalized": "cp conseil et patrimoine",
@@ -140194,7 +140827,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10503/cp-patrimoine-conseil/"
@@ -140447,9 +141080,9 @@
         "CIF"
       ],
       "specialties": [
-        "Stratégie patrimoniale",
+        "Allocation d'actifs",
         "Ingénierie financière",
-        "Allocation d'actifs"
+        "Stratégie patrimoniale"
       ],
       "directors": [
         {
@@ -140465,7 +141098,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -143122,6 +143755,42 @@
       "orias_inscription_date": "2007-12-23"
     },
     {
+      "id": "cgp_fb225ff25a",
+      "company_name": "CT2 Conseil",
+      "company_name_normalized": "ct2 conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/ct2-conseil"
+      }
+    },
+    {
       "id": "cgp_c707077488",
       "company_name": "CTE CONSEIL",
       "company_name_normalized": "cte conseil",
@@ -143498,7 +144167,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/culture-patrimoine/",
@@ -144878,6 +145547,258 @@
         "categorie_entreprise": "ETI"
       },
       "orias_inscription_date": "2006-09-18"
+    },
+    {
+      "id": "cgp_7f8ec7bb19",
+      "company_name": "Cyrus Herez Lille",
+      "company_name_normalized": "cyrus herez lille",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Parc du Verseau Bâtiment « L’équinoxe », 29 avenue de la Marne",
+        "postal_code": "59290",
+        "city": "Wasquehal",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33320129790",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_f5769f06df",
+      "company_name": "Cyrus Herez Paris",
+      "company_name_normalized": "cyrus herez paris",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "50 boulevard Haussmann",
+        "postal_code": "75009",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33153932323",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_bb4c5a08d8",
+      "company_name": "Cyrus Herez Perpignan",
+      "company_name_normalized": "cyrus herez perpignan",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Tecnosud 2, 250 Rambla Hélios",
+        "postal_code": "66100",
+        "city": "Perpignan",
+        "department": "66",
+        "department_name": "Pyrenees-Orientales",
+        "region": "Occitanie"
+      },
+      "phone": "+33468219301",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_a580695345",
+      "company_name": "Cyrus Herez Rennes",
+      "company_name_normalized": "cyrus herez rennes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "URBAN QUARTZ, 22 rue de l’Alma",
+        "postal_code": "35000",
+        "city": "Rennes",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "+33223450076",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_13f6120885",
+      "company_name": "Cyrus Herez Toulouse",
+      "company_name_normalized": "cyrus herez toulouse",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "48 rue de Metz",
+        "postal_code": "31000",
+        "city": "Toulouse",
+        "department": "31",
+        "department_name": "Haute-Garonne",
+        "region": "Occitanie"
+      },
+      "phone": "+33534332633",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_a8ae694da9",
+      "company_name": "Cyrus Herez Vannes",
+      "company_name_normalized": "cyrus herez vannes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "3 rue Porte Poterne",
+        "postal_code": "56000",
+        "city": "Vannes",
+        "department": "56",
+        "department_name": "Morbihan",
+        "region": "Bretagne"
+      },
+      "phone": "+33297627471",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
+    },
+    {
+      "id": "cgp_e24d25df87",
+      "company_name": "Cyrus structure sa gouvernance et enrichit sa plateforme avec le lancement de MIRAE",
+      "company_name_normalized": "cyrus structure gouvernance et enrichit plateforme avec le lancement de mirae",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cyrus Conseil"
+        }
+      },
+      "groupement": "Cyrus Conseil",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.cyrusconseil.fr/implantations"
+      }
     },
     {
       "id": "cgp_2067f17536",
@@ -146971,7 +147892,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -148334,7 +149255,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29166/dauphine-patrimoine/"
@@ -150247,7 +151168,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27442/De-Jonghue-Finance/"
@@ -150866,6 +151787,114 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/de-sancy-patrimoine/"
+      }
+    },
+    {
+      "id": "cgp_3fd865a4df",
+      "company_name": "De Sancy Patrimoine - Angers",
+      "company_name_normalized": "de sancy patrimoine  angers",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "angers@desancy.fr",
+      "website": "https://desancy.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/sancy-patrimoine-angers"
+      }
+    },
+    {
+      "id": "cgp_5cc27cc49e",
+      "company_name": "De Sancy Patrimoine - Rennes",
+      "company_name_normalized": "de sancy patrimoine  rennes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "rennes@desancy.fr",
+      "website": "https://desancy.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/sancy-patrimoine-rennes"
+      }
+    },
+    {
+      "id": "cgp_aee9026c78",
+      "company_name": "De Sancy Patrimoine - Saint-Malo",
+      "company_name_normalized": "de sancy patrimoine  saintmalo",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "saint-malo@desancy.fr",
+      "website": "https://desancy.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/sancy-patrimoine-saint-malo"
       }
     },
     {
@@ -152291,8 +153320,8 @@
         "CIF"
       ],
       "specialties": [
-        "Epargne / Placements financiers",
         "Assurance vie",
+        "Epargne / Placements financiers",
         "Retraite"
       ],
       "directors": [
@@ -152309,7 +153338,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -156686,7 +157715,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27443/DG-Finance/"
@@ -170158,7 +171187,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -170537,7 +171566,7 @@
       },
       "phone": "+33474788409",
       "email": "contact@edifice-patrimonia.fr",
-      "website": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
       "activities": [
         "CIF"
       ],
@@ -170565,13 +171594,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/edifice-patrimonia"
+      },
       "creation_date": "2018-02-01",
       "data_gouv": {
         "etat_administratif": "A",
@@ -182492,6 +183527,47 @@
       "orias_inscription_date": "2026-01-23"
     },
     {
+      "id": "cgp_f9012a9073",
+      "company_name": "Espace",
+      "company_name_normalized": "espace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "16 av d’Aygu",
+        "postal_code": "26200",
+        "city": "Montelimar",
+        "department": "26",
+        "department_name": "Drome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Financier Kevin Hugon",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
+    },
+    {
       "id": "cgp_bc2459726b",
       "company_name": "ESPACE ASSURANCE & CONSEIL",
       "company_name_normalized": "espace assurance  conseil",
@@ -182678,6 +183754,47 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2007-03-02"
+    },
+    {
+      "id": "cgp_2d589c0253",
+      "company_name": "Espace Financier",
+      "company_name_normalized": "espace financier",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "16 av d’Aygu",
+        "postal_code": "26200",
+        "city": "Montelimar",
+        "department": "26",
+        "department_name": "Drome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Jean Paul Hugon",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
+        }
+      },
+      "groupement": "Cercle France Patrimoine",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      }
     },
     {
       "id": "cgp_e9a6629c54",
@@ -195858,13 +196975,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "2001-10-30",
       "data_gouv": {
         "etat_administratif": "A",
@@ -200318,7 +201441,7 @@
       },
       "phone": "+33610642019",
       "email": "e.gabriel@magnacarta.fr",
-      "website": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
       "activities": [
         "CIF"
       ],
@@ -200334,13 +201457,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/fiducia-gestion-privee"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -201343,7 +202472,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/16206/fina7/"
@@ -238382,7 +239511,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/35077/haussmann-patrimoine/"
@@ -239541,7 +240670,7 @@
       },
       "phone": "+33962562414",
       "email": "cgp@hedonys-patrimoine.fr",
-      "website": "",
+      "website": "https://hedonys-patrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -239557,13 +240686,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/hedonys-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -241461,7 +242596,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": false,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -241736,7 +242871,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -264634,8 +265769,8 @@
       ],
       "specialties": [
         "Allocation d'actifs",
-        "Fiscalité",
-        "Droit de la famille"
+        "Droit de la famille",
+        "Fiscalité"
       ],
       "directors": [
         {
@@ -264651,7 +265786,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -266300,7 +267435,7 @@
       },
       "phone": "+33262098540",
       "email": "contact.jfdpatrimoine@magnacarta.fr",
-      "website": "",
+      "website": "https://jfdpatrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -266320,13 +267455,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/jfd-patrimoine"
+      },
       "creation_date": "2011-10-23",
       "data_gouv": {
         "etat_administratif": "A",
@@ -267949,7 +269090,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10493/jmd-associes/"
@@ -273779,6 +274920,42 @@
       "orias_inscription_date": "2014-05-28"
     },
     {
+      "id": "cgp_1a17bd2121",
+      "company_name": "Kara Patrimoine Mulhouse - prochainement Laplace",
+      "company_name_normalized": "kara patrimoine mulhouse  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "28 rue François Spoerry",
+        "postal_code": "68100",
+        "city": "Mulhouse",
+        "department": "68",
+        "department_name": "Haut-Rhin",
+        "region": "Grand Est"
+      },
+      "phone": "+33389528202",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_80c99c3423",
       "company_name": "KARANTEK",
       "company_name_normalized": "karantek",
@@ -274416,6 +275593,42 @@
       },
       "creation_date": "2005-02-04",
       "orias_inscription_date": "2008-03-28"
+    },
+    {
+      "id": "cgp_f9923ae293",
+      "company_name": "Katia Lalevée Gestion Privée",
+      "company_name_normalized": "katia lalevee gestion privee",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "katia.lalevee@klgestionprivee.com",
+      "website": "https://klgestionprivee.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/katia-lalevee-gestion-privee"
+      }
     },
     {
       "id": "cgp_5ac9620d3e",
@@ -278706,6 +279919,78 @@
       }
     },
     {
+      "id": "cgp_f4144ab3a2",
+      "company_name": "Kribs Conseil Caen - prochainement Laplace",
+      "company_name_normalized": "kribs conseil caen  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 Av. Albert Sorel",
+        "postal_code": "14000",
+        "city": "Caen",
+        "department": "14",
+        "department_name": "Calvados",
+        "region": "Normandie"
+      },
+      "phone": "+33231475108",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_b96ec3905e",
+      "company_name": "Kribs Conseil Paris - prochainement Laplace",
+      "company_name_normalized": "kribs conseil paris  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "35A, quai de Grenelle",
+        "postal_code": "75015",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33757778166",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_f0a33b2296",
       "company_name": "KRIBS CONSEILS",
       "company_name_normalized": "kribs conseils",
@@ -279920,7 +281205,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29205/l_offis/"
@@ -283082,7 +284367,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10509/la-jonchere/"
@@ -285259,7 +286544,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/25582/finindep-laffitte-gestion-privee/"
@@ -286767,7 +288052,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27628/laplace/"
@@ -286778,6 +288063,906 @@
         "categorie_entreprise": "ETI"
       },
       "orias_inscription_date": "2006-10-19"
+    },
+    {
+      "id": "cgp_fd92dd5bed",
+      "company_name": "Laplace Aix-en-Provence",
+      "company_name_normalized": "laplace aixenprovence",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "La Robole, bâtiment A 100, rue Pierre Duhem",
+        "postal_code": "13290",
+        "city": "Aix-en-Provence",
+        "department": "13",
+        "department_name": "Bouches-du-Rhone",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33442972250",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_a3bdad866e",
+      "company_name": "Laplace Annecy",
+      "company_name_normalized": "laplace annecy",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "60 rue Cassiopée Parc Altais",
+        "postal_code": "74650",
+        "city": "Chavanod",
+        "department": "74",
+        "department_name": "Haute-Savoie",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33450695006",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_2283cd85bd",
+      "company_name": "Laplace Bordeaux",
+      "company_name_normalized": "laplace bordeaux",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "6 Quai Louis XVIII",
+        "postal_code": "33000",
+        "city": "Bordeaux",
+        "department": "33",
+        "department_name": "Gironde",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "+33556815600",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_9a9d6be236",
+      "company_name": "Laplace Bourges",
+      "company_name_normalized": "laplace bourges",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11/13 rue des Arènes",
+        "postal_code": "18000",
+        "city": "Bourges",
+        "department": "18",
+        "department_name": "Cher",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "+33248272790",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_73afc3f9f9",
+      "company_name": "Laplace Caen",
+      "company_name_normalized": "laplace caen",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 Av. Albert Sorel",
+        "postal_code": "14000",
+        "city": "Caen",
+        "department": "14",
+        "department_name": "Calvados",
+        "region": "Normandie"
+      },
+      "phone": "+33231440912",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_518fdb4baa",
+      "company_name": "Laplace Cambrai",
+      "company_name_normalized": "laplace cambrai",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "20 Mail Saint Martin",
+        "postal_code": "59400",
+        "city": "Cambrai",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33327740628",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_a13d73c7fb",
+      "company_name": "Laplace Clermont-Ferrand",
+      "company_name_normalized": "laplace clermontferrand",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Centre d'Affaires du Zénith 17 rue de Sarlieve",
+        "postal_code": "63800",
+        "city": "Cournon d’Auvergne",
+        "department": "63",
+        "department_name": "Puy-de-Dome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33473260116",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_933f2b9bb3",
+      "company_name": "Laplace Dijon",
+      "company_name_normalized": "laplace dijon",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "51 Avenue Françoise Giroud Parc Valmy",
+        "postal_code": "21000",
+        "city": "Dijon",
+        "department": "21",
+        "department_name": "Cote-d'Or",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "+33380741363",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_96c76c4da5",
+      "company_name": "Laplace La Rochelle",
+      "company_name_normalized": "laplace la rochelle",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "39 Rue de Montréal",
+        "postal_code": "17000",
+        "city": "La Rochelle",
+        "department": "17",
+        "department_name": "Charente-Maritime",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "+33546411010",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_c2e5e7e42a",
+      "company_name": "Laplace Lille",
+      "company_name_normalized": "laplace lille",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "33 avenue de Flandre,",
+        "postal_code": "59700",
+        "city": "Marcq-en-Baroeul",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33320053737",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_4dd6e6e397",
+      "company_name": "Laplace Lyon",
+      "company_name_normalized": "laplace lyon",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Grand Hôtel-Dieu 9 place Amédée Bonnet",
+        "postal_code": "69002",
+        "city": "Lyon",
+        "department": "69",
+        "department_name": "Rhone",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33437245200",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_846850dd7d",
+      "company_name": "Laplace Montargis",
+      "company_name_normalized": "laplace montargis",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 rue Louis Lacroix",
+        "postal_code": "45203",
+        "city": "Montargis",
+        "department": "45",
+        "department_name": "Loiret",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "+33238932075",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_fbf5b83ca7",
+      "company_name": "Laplace Montpellier [siège]",
+      "company_name_normalized": "laplace montpellier siege",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "939 rue de la Croix Verte",
+        "postal_code": "34090",
+        "city": "Montpellier",
+        "department": "34",
+        "department_name": "Herault",
+        "region": "Occitanie"
+      },
+      "phone": "+33467602578",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_c330a68124",
+      "company_name": "Laplace Nantes",
+      "company_name_normalized": "laplace nantes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "17 rue La Noue-Bras-de-Fer",
+        "postal_code": "44200",
+        "city": "Nantes",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33272881144",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_94be7d379a",
+      "company_name": "Laplace Nice",
+      "company_name_normalized": "laplace nice",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "470 promenade des Anglais Immeuble Air Promenade",
+        "postal_code": "06200",
+        "city": "Nice",
+        "department": "06",
+        "department_name": "Alpes-Maritimes",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33493724550",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_59e8ada928",
+      "company_name": "Laplace Paris [siège]",
+      "company_name_normalized": "laplace paris siege",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "13 rue Alphonse de Neuville",
+        "postal_code": "75017",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33184744444",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_45b88f564b",
+      "company_name": "Laplace Perpignan",
+      "company_name_normalized": "laplace perpignan",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "157, Avenue Eole, TechnoSud 2",
+        "postal_code": "66100",
+        "city": "Perpignan",
+        "department": "66",
+        "department_name": "Pyrenees-Orientales",
+        "region": "Occitanie"
+      },
+      "phone": "+33468666493",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_afe67d1401",
+      "company_name": "Laplace Rennes",
+      "company_name_normalized": "laplace rennes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "« Le Sextant »  255, rue de Saint-Malo",
+        "postal_code": "35000",
+        "city": "Rennes",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "+33223354444",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_a642f50784",
+      "company_name": "Laplace Rouen",
+      "company_name_normalized": "laplace rouen",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "L'Arche 32, rue Raymond Aron",
+        "postal_code": "76130",
+        "city": "Mont-Saint-Aignan",
+        "department": "76",
+        "department_name": "Seine-Maritime",
+        "region": "Normandie"
+      },
+      "phone": "+33232082660",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_2b992370d4",
+      "company_name": "Laplace Saint-Brieuc",
+      "company_name_normalized": "laplace saintbrieuc",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "69 rue du Général de Gaulle",
+        "postal_code": "22190",
+        "city": "Plérin",
+        "department": "22",
+        "department_name": "Cotes-d'Armor",
+        "region": "Bretagne"
+      },
+      "phone": "+33257676731",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_12519d01e7",
+      "company_name": "Laplace Saint-Rémy-de-Provence",
+      "company_name_normalized": "laplace saintremydeprovence",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "37A boulevard Marceau",
+        "postal_code": "13210",
+        "city": "Saint-Rémy-de-Provence",
+        "department": "13",
+        "department_name": "Bouches-du-Rhone",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33490905406",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_61157f3bd8",
+      "company_name": "Laplace Toulouse",
+      "company_name_normalized": "laplace toulouse",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "12 avenue Charles de Gaulle",
+        "postal_code": "31130",
+        "city": "Balma",
+        "department": "31",
+        "department_name": "Haute-Garonne",
+        "region": "Occitanie"
+      },
+      "phone": "+33561247676",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_2aaac534be",
+      "company_name": "Laplace Tours",
+      "company_name_normalized": "laplace tours",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "89 rue Mirabeau",
+        "postal_code": "37000",
+        "city": "Tours",
+        "department": "37",
+        "department_name": "Indre-et-Loire",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "+33247057090",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_6aeff2113a",
+      "company_name": "Laplace Valence",
+      "company_name_normalized": "laplace valence",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "38 rue Paul Henri Charles Spaak",
+        "postal_code": "26000",
+        "city": "Valence",
+        "department": "26",
+        "department_name": "Drome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33475814840",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_0d8cc46f37",
+      "company_name": "Laplace Vannes",
+      "company_name_normalized": "laplace vannes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "24 boulevard de la Résistance",
+        "postal_code": "56000",
+        "city": "Vannes",
+        "department": "56",
+        "department_name": "Morbihan",
+        "region": "Bretagne"
+      },
+      "phone": "+33297682425",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_d4998e3004",
@@ -287135,7 +289320,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": false,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -298865,7 +301050,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -301412,7 +303597,7 @@
       },
       "phone": "+33610020671",
       "email": "e.petit-jean@magnacarta.fr",
-      "website": "",
+      "website": "https://libertypatrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -301428,13 +303613,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/liberty-patrimoine"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -302524,6 +304715,42 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/link-conseils-patrimoine/"
+      }
+    },
+    {
+      "id": "cgp_2d3e952983",
+      "company_name": "Link Conseils et Patrimoine",
+      "company_name_normalized": "link conseils et patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "s.anceau@linkconseils.com",
+      "website": "https://linkconseils.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/link-conseils-et-patrimoine"
       }
     },
     {
@@ -310553,7 +312780,7 @@
       },
       "phone": "+33565674219",
       "email": "contact@lybellis.fr",
-      "website": "",
+      "website": "https://lybellis.fr/",
       "activities": [
         "CIF"
       ],
@@ -310569,13 +312796,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/lybellis-patrimoine"
+      },
       "creation_date": "2007-04-02",
       "data_gouv": {
         "etat_administratif": "A",
@@ -314407,13 +316640,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -319696,13 +321935,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "2020-12-22",
       "data_gouv": {
         "etat_administratif": "A",
@@ -321009,7 +323254,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27447/Cabinet-Massalia/"
@@ -329030,13 +331275,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/meyon-ultim-paris"
+      },
       "creation_date": "2003-02-26",
       "data_gouv": {
         "etat_administratif": "C",
@@ -338142,6 +340393,42 @@
       "orias_inscription_date": "2008-02-02"
     },
     {
+      "id": "cgp_0ba0b13c8b",
+      "company_name": "Montgrand Marseille - prochainement Laplace",
+      "company_name_normalized": "montgrand marseille  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "553 avenue du Prado",
+        "postal_code": "13008",
+        "city": "Marseille",
+        "department": "13",
+        "department_name": "Bouches-du-Rhone",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33486771816",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_757ac92c40",
       "company_name": "MONTHOLON CENTRE VAL-DE-LOIRE",
       "company_name_normalized": "montholon centre valdeloire",
@@ -338590,7 +340877,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29356/proposition-pour-le-club/"
@@ -344480,6 +346767,222 @@
       "is_new": true,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mediterranee-courtage/"
+      }
+    },
+    {
+      "id": "cgp_8f2acf276b",
+      "company_name": "Mérimée Gestion Privée - Challes-les-Eaux",
+      "company_name_normalized": "merimee gestion privee  challesleseaux",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-challes-eaux"
+      }
+    },
+    {
+      "id": "cgp_a7f5664a16",
+      "company_name": "Mérimée Gestion Privée - Grenoble",
+      "company_name_normalized": "merimee gestion privee  grenoble",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-grenoble"
+      }
+    },
+    {
+      "id": "cgp_06996ae6aa",
+      "company_name": "Mérimée Gestion Privée - Marseille",
+      "company_name_normalized": "merimee gestion privee  marseille",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "monpatrimoine@merimee.fr",
+      "website": "https://merimee.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-marseille"
+      }
+    },
+    {
+      "id": "cgp_b74cf42b7f",
+      "company_name": "Mérimée Gestion Privée - Metz",
+      "company_name_normalized": "merimee gestion privee  metz",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "monpatrimoine@merimee.fr",
+      "website": "https://merimee.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-metz"
+      }
+    },
+    {
+      "id": "cgp_5c5970a1cc",
+      "company_name": "Mérimée Gestion Privée - Nancy",
+      "company_name_normalized": "merimee gestion privee  nancy",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "monpatrimoine@merimee.fr",
+      "website": "https://merimee.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/merimee-gestion-privee-nancy"
+      }
+    },
+    {
+      "id": "cgp_04d5690bc5",
+      "company_name": "Méta Gestion Privée",
+      "company_name_normalized": "meta gestion privee",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/meta-gestion-privee"
       }
     },
     {
@@ -355316,7 +357819,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -356287,13 +358790,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "1989-12-07",
       "data_gouv": {
         "etat_administratif": "A",
@@ -362173,7 +364682,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27448/OPES-Patrimoine/"
@@ -362184,6 +364693,42 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2005-12-13"
+    },
+    {
+      "id": "cgp_1493c8d046",
+      "company_name": "Opes Patrimoine - prochainement Laplace",
+      "company_name_normalized": "opes patrimoine  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 avenue Didier",
+        "postal_code": "94210",
+        "city": "Saint-Maur-des-Fossés",
+        "department": "94",
+        "department_name": "Val-de-Marne",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33185330660",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_2aea7f5f88",
@@ -362658,6 +365203,402 @@
       "last_seen": "2026-05-06",
       "is_new": true,
       "source_urls": {}
+    },
+    {
+      "id": "cgp_b39462b124",
+      "company_name": "OPTI Finance Angers - prochainement Laplace",
+      "company_name_normalized": "opti finance angers  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Immeuble Métamorphose 11, Allée du Président Chirac",
+        "postal_code": "49000",
+        "city": "Angers",
+        "department": "49",
+        "department_name": "Maine-et-Loire",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33243235100",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_a1e5c19d8b",
+      "company_name": "OPTI Finance Brest - prochainement Laplace",
+      "company_name_normalized": "opti finance brest  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "18 Quai du Commandant Malbert",
+        "postal_code": "29200",
+        "city": "Brest",
+        "department": "29",
+        "department_name": "Finistere",
+        "region": "Bretagne"
+      },
+      "phone": "+33298009660",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_02a8c90c4d",
+      "company_name": "OPTI Finance Cholet - prochainement Laplace",
+      "company_name_normalized": "opti finance cholet  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Héliothèque – Parc du Carteron 6 rue Maisonneuve",
+        "postal_code": "49300",
+        "city": "Cholet",
+        "department": "49",
+        "department_name": "Maine-et-Loire",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33241468755",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_857585628b",
+      "company_name": "OPTI Finance La Rochelle - prochainement Laplace",
+      "company_name_normalized": "opti finance la rochelle  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "39 rue de Montréal",
+        "postal_code": "17000",
+        "city": "La Rochelle",
+        "department": "17",
+        "department_name": "Charente-Maritime",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "+33546411010",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_168607f6c9",
+      "company_name": "OPTI Finance Le Mans - prochainement Laplace",
+      "company_name_normalized": "opti finance le mans  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "15 boulevard René Levasseur",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "department": "72",
+        "department_name": "Sarthe",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33243235100",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_bba0306a5e",
+      "company_name": "OPTI Finance Nantes - prochainement Laplace",
+      "company_name_normalized": "opti finance nantes  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "17 rue La Noue-Bras-de-Fer",
+        "postal_code": "44200",
+        "city": "Nantes",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33249492845",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_6e52647684",
+      "company_name": "OPTI Finance Paris - prochainement Laplace",
+      "company_name_normalized": "opti finance paris  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "13 rue Alphonse de Neuville",
+        "postal_code": "75017",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33145207200",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_51e5f070bd",
+      "company_name": "OPTI Finance Rennes - prochainement Laplace",
+      "company_name_normalized": "opti finance rennes  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "\"Le Sextant\" 255, rue de Saint-Malo",
+        "postal_code": "35000",
+        "city": "Rennes",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "+33223354444",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_ec7630e2bf",
+      "company_name": "OPTI Finance Rouen - prochainement Laplace",
+      "company_name_normalized": "opti finance rouen  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "L'Arche 32, rue Raymond Aron",
+        "postal_code": "76130",
+        "city": "Mont-Saint-Aignan",
+        "department": "76",
+        "department_name": "Seine-Maritime",
+        "region": "Normandie"
+      },
+      "phone": "+33235880712",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_c0cd2dfcfb",
+      "company_name": "OPTI Finance Tours - prochainement Laplace",
+      "company_name_normalized": "opti finance tours  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "89 rue Mirabeau",
+        "postal_code": "37000",
+        "city": "Tours",
+        "department": "37",
+        "department_name": "Indre-et-Loire",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "+33247288051",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_0a71a53c5b",
+      "company_name": "OPTI Finance Vannes - prochainement Laplace",
+      "company_name_normalized": "opti finance vannes  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "24 boulevard de la Résistance",
+        "postal_code": "56000",
+        "city": "Vannes",
+        "department": "56",
+        "department_name": "Morbihan",
+        "region": "Bretagne"
+      },
+      "phone": "+33297684235",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_ac6d47c7a8",
@@ -369752,7 +372693,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27058/membres/"
@@ -372465,7 +375406,7 @@
       },
       "phone": "+33476040404",
       "email": "contact@partenaires-patrimoine.com",
-      "website": "",
+      "website": "https://partenaires-patrimoine.com/",
       "activities": [
         "CIF"
       ],
@@ -372481,13 +375422,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/partenaires-patrimoine"
+      },
       "creation_date": "2015-06-05",
       "data_gouv": {
         "etat_administratif": "A",
@@ -375123,6 +378070,42 @@
       "orias_inscription_date": "2018-11-09"
     },
     {
+      "id": "cgp_a3d7726e56",
+      "company_name": "Patrimoine Consultant Colmar",
+      "company_name_normalized": "patrimoine consultant colmar",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "e.bitschene@pc-alsace.fr",
+      "website": "https://pc-alsace.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/patrimoine-consultant-colmar"
+      }
+    },
+    {
       "id": "cgp_4ff90d0955",
       "company_name": "PATRIMOINE COURTAGE",
       "company_name_normalized": "patrimoine courtage",
@@ -375167,6 +378150,42 @@
         "categorie_entreprise": "PME"
       },
       "orias_inscription_date": "2014-11-07"
+    },
+    {
+      "id": "cgp_08b074b4e8",
+      "company_name": "Patrimoine Courtage Toulon - prochainement Laplace",
+      "company_name_normalized": "patrimoine courtage toulon  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11 rue Racine (Place de l'Opéra)",
+        "postal_code": "83000",
+        "city": "Toulon",
+        "department": "83",
+        "department_name": "Var",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33675797918",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
     },
     {
       "id": "cgp_f8d46bec34",
@@ -387266,8 +390285,8 @@
       ],
       "specialties": [
         "Allocation d’actifs",
-        "Ingénierie Patrimoniale",
-        "Gestion de patrimoine"
+        "Gestion de patrimoine",
+        "Ingénierie Patrimoniale"
       ],
       "directors": [
         {
@@ -387283,7 +390302,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -388336,7 +391355,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27458/Cabinet-Pierre-et-Placements/"
@@ -398189,6 +401208,438 @@
       "orias_inscription_date": "2007-04-19"
     },
     {
+      "id": "cgp_7c661d61bd",
+      "company_name": "Primonial Gestion Privée Aix-en-Provence - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee aixenprovence  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "La Robole, bâtiment A 100, rue Pierre Duhem",
+        "postal_code": "13290",
+        "city": "Aix-en-Provence",
+        "department": "13",
+        "department_name": "Bouches-du-Rhone",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33442535196",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_1e85a8fd55",
+      "company_name": "Primonial Gestion Privée Bordeaux - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee bordeaux  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "6 Quai Louis XVIII",
+        "postal_code": "33000",
+        "city": "Bordeaux",
+        "department": "33",
+        "department_name": "Gironde",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "+33556522754",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_8ddf01eb37",
+      "company_name": "Primonial Gestion Privée Lille - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee lille  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "14 rue du Vieux Faubourg - cs 30028",
+        "postal_code": "59042",
+        "city": "Lille",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33328330350",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_9806727912",
+      "company_name": "Primonial Gestion Privée Lyon - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee lyon  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "9 place Amédée Bonnet",
+        "postal_code": "69002",
+        "city": "Lyon",
+        "department": "69",
+        "department_name": "Rhone",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33437651870",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_bc3c92754b",
+      "company_name": "Primonial Gestion Privée Montpellier - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee montpellier  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "939 rue de la Croix Verte",
+        "postal_code": "34090",
+        "city": "Montpellier",
+        "department": "34",
+        "department_name": "Herault",
+        "region": "Occitanie"
+      },
+      "phone": "+33467602578",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_3a67f955ea",
+      "company_name": "Primonial Gestion Privée Nantes - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee nantes  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "17 rue La Noue-Bras-de-Fer",
+        "postal_code": "44200",
+        "city": "Nantes",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33240731313",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_205f7309a3",
+      "company_name": "Primonial Gestion Privée Nice - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee nice  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "470 promenade des Anglais Immeuble Air Promenade",
+        "postal_code": "06200",
+        "city": "Nice",
+        "department": "06",
+        "department_name": "Alpes-Maritimes",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33493041596",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_43f993e131",
+      "company_name": "Primonial Gestion Privée Paris - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee paris  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "8 rue du Général Foy",
+        "postal_code": "75008",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33144217000",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_6bd7fddab6",
+      "company_name": "Primonial Gestion Privée Rennes - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee rennes  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "\"Le Sextant\" 255, rue de Saint-Malo",
+        "postal_code": "35000",
+        "city": "Rennes",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "+33223354444",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_1d16130567",
+      "company_name": "Primonial Gestion Privée Rouen- prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee rouen prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "L'Arche 32, rue Raymond Aron",
+        "postal_code": "76130",
+        "city": "Mont-Saint-Aignan",
+        "department": "76",
+        "department_name": "Seine-Maritime",
+        "region": "Normandie"
+      },
+      "phone": "+33235598922",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_2889fd18ec",
+      "company_name": "Primonial Gestion Privée Strasbourg - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee strasbourg  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "Régus : Espace Européen de l’Entreprise - 16 avenue de l'Europe",
+        "postal_code": "67300",
+        "city": "Schiltigheim",
+        "department": "67",
+        "department_name": "Bas-Rhin",
+        "region": "Grand Est"
+      },
+      "phone": "+33390226900",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
+      "id": "cgp_7e8600cc5e",
+      "company_name": "Primonial Gestion Privée Toulouse - prochainement Laplace",
+      "company_name_normalized": "primonial gestion privee toulouse  prochainement laplace",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "12 avenue Charles de Gaulle",
+        "postal_code": "31130",
+        "city": "Balma",
+        "department": "31",
+        "department_name": "Haute-Garonne",
+        "region": "Occitanie"
+      },
+      "phone": "+33561228660",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Laplace (Groupe Crystal)"
+        }
+      },
+      "groupement": "Laplace (Groupe Crystal)",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://laplace-groupe.com/implantations-france-metropolitaine"
+      }
+    },
+    {
       "id": "cgp_65455d3b15",
       "company_name": "PRIORITES PATRIMOINE",
       "company_name_normalized": "priorites patrimoine",
@@ -398877,7 +402328,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10498/prl-invest/"
@@ -401613,10 +405064,10 @@
         "CIF"
       ],
       "specialties": [
-        "Crédit immobilier",
         "Assurance emprunteur",
-        "SCPI - Transaction immobilière",
-        "Assurance vie"
+        "Assurance vie",
+        "Crédit immobilier",
+        "SCPI - Transaction immobilière"
       ],
       "directors": [
         {
@@ -401632,7 +405083,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -403409,7 +406860,7 @@
       },
       "phone": "+33662012704",
       "email": "e.gaudry@magnacarta.fr",
-      "website": "",
+      "website": "https://quatrimonia.fr/",
       "activities": [
         "CIF"
       ],
@@ -403425,13 +406876,19 @@
       "associations": {
         "anacofi": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
+      "last_seen": "2026-05-07",
       "is_new": false,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/quatrimonia"
+      },
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
@@ -406659,9 +410116,9 @@
         "CIF"
       ],
       "specialties": [
+        "Assurance Vie",
         "Gestion de patrimoine",
-        "Successions",
-        "Assurance Vie"
+        "Successions"
       ],
       "directors": [
         {
@@ -406677,7 +410134,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -408504,13 +411961,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Cercle France Patrimoine"
         }
       },
-      "groupement": null,
+      "groupement": "Cercle France Patrimoine",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://cercle-france-patrimoine.fr/membres/"
+      },
       "creation_date": "2001-07-12",
       "data_gouv": {
         "etat_administratif": "A",
@@ -416419,7 +419882,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27460/Rouault-Patrimoine/"
@@ -417717,8 +421180,8 @@
         "CIF"
       ],
       "specialties": [
-        "Epargne salariale",
         "Allocations d'actifs",
+        "Epargne salariale",
         "Retraite"
       ],
       "directors": [
@@ -417735,7 +421198,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -426320,7 +429783,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10500/odyssee-patrimoine/"
@@ -434117,7 +437580,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/29559/selene_patrimoine/"
@@ -438009,7 +441472,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/33925/SG PATRIMOINE/"
@@ -451884,6 +455347,42 @@
       "orias_inscription_date": "2005-10-25"
     },
     {
+      "id": "cgp_d1c327aa15",
+      "company_name": "Stratège Patrimoine et Finance",
+      "company_name_normalized": "stratege patrimoine et finance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "",
+      "website": "https://intranet-magnacartagroup.web.app/login",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/stratege-patrimoine-et-finance"
+      }
+    },
+    {
       "id": "cgp_0adccf5276",
       "company_name": "STREET GESTION",
       "company_name_normalized": "street gestion",
@@ -455890,7 +459389,7 @@
       },
       "groupement": "Le Club des Entrepreneurs CGP",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.entrepreneurs-cgp.com/page/27469/talleyrand-finances/"
@@ -460554,7 +464053,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": false,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -462567,9 +466066,9 @@
         "CIF"
       ],
       "specialties": [
-        "Ingénierie patrimoniale",
         "Allocation d'actifs",
-        "Gestion d'actions"
+        "Gestion d'actions",
+        "Ingénierie patrimoniale"
       ],
       "directors": [
         {
@@ -462585,7 +466084,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -466868,7 +470367,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-12",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": false,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -473294,11 +476793,11 @@
       },
       "phone": "+33688090170",
       "email": "accueil@valoreim.com",
-      "website": "",
+      "website": "https://valoreim.com/",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -473316,14 +476815,19 @@
       "associations": {
         "cncef": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/valoreim-patrimoine/"
+        "cncef": "https://www.cncef.org/annuaire/valoreim-patrimoine/",
+        "ucgp": "https://www.magnacarta.fr/valoreim-patrimoine"
       },
       "creation_date": "2023-03-14",
       "data_gouv": {
@@ -473425,7 +476929,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-04-13",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
@@ -474913,7 +478417,7 @@
       },
       "phone": "+33763703503",
       "email": "valentin.vardan@vardangp.fr",
-      "website": "",
+      "website": "https://ieam.eu/",
       "activities": [
         "CIF"
       ],
@@ -474935,13 +478439,19 @@
       "associations": {
         "cncgp": {
           "member": true
+        },
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
         }
       },
-      "groupement": null,
+      "groupement": "Magnacarta",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
-      "source_urls": {},
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/vardan-gestion-privee"
+      },
       "creation_date": "2023-07-25",
       "data_gouv": {
         "etat_administratif": "A",
@@ -479093,7 +482603,7 @@
       },
       "groupement": "Finindep",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.finindep.com/page/10501/viaduc-finances/"
@@ -483892,6 +487402,42 @@
       }
     },
     {
+      "id": "cgp_77dc6e0b42",
+      "company_name": "VS Patrimoine & Associés",
+      "company_name_normalized": "vs patrimoine  associes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "city": "",
+        "department": "",
+        "department_name": "",
+        "region": ""
+      },
+      "phone": "",
+      "email": "s.virlin@vspatrimoine.fr",
+      "website": "https://vspatrimoine.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "ucgp": {
+          "member": true,
+          "groupement": "Magnacarta"
+        }
+      },
+      "groupement": "Magnacarta",
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "is_new": true,
+      "source_urls": {
+        "ucgp": "https://www.magnacarta.fr/vs-patrimoine-associes"
+      }
+    },
+    {
       "id": "cgp_d4e535cac4",
       "company_name": "VS PATRIMOINE ET ASSOCIES",
       "company_name_normalized": "vs patrimoine et associes",
@@ -484052,10 +487598,10 @@
         "CIF"
       ],
       "specialties": [
+        "Epargne salariale",
         "Family Office",
-        "Ingénierie Patrimoniale",
         "Immobilier / Crédit",
-        "Epargne salariale"
+        "Ingénierie Patrimoniale"
       ],
       "directors": [
         {
@@ -484071,7 +487617,7 @@
       },
       "groupement": "Actualis Associes",
       "first_seen": "2026-05-06",
-      "last_seen": "2026-05-06",
+      "last_seen": "2026-05-07",
       "is_new": true,
       "source_urls": {
         "ucgp": "https://www.actualisassocies.fr/trouver-un-conseiller-en-gestion-de-patrimoine"
