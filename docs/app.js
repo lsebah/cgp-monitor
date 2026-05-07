@@ -635,26 +635,77 @@ function renderAlerts() {
 function renderGroupements() {
     const assocGrid = document.getElementById('associationsGrid');
     const associations = groupementsData.associations || [];
-    assocGrid.innerHTML = associations.map(a => `
-        <div class="groupement-card">
-            <div class="groupement-name">${a.name}</div>
-            <span class="groupement-type groupement">${a.full_name}</span>
-            <div class="groupement-desc">${a.description}</div>
-            <div style="margin-top:4px;font-size:13px;color:var(--text-muted)">~${a.members_approx} membres</div>
-            <a href="${a.website}" target="_blank" class="groupement-link">${a.website}</a>
-        </div>
-    `).join('');
+    // Live cabinet count per association (asso code = name lowercased)
+    const assocCount = (code) => allMembers.filter(
+        m => (m.associations || {})[code]?.member
+    ).length;
+    assocGrid.innerHTML = associations.map(a => {
+        const code = a.name.toLowerCase();
+        const live = assocCount(code);
+        return `
+        <div class="groupement-card clickable" onclick="filterByAssociation('${code}')">
+            <div class="groupement-name">${escHtml(a.name)}</div>
+            <span class="groupement-type groupement">${escHtml(a.full_name)}</span>
+            <div class="groupement-desc">${escHtml(a.description)}</div>
+            <div style="margin-top:4px;font-size:13px;color:var(--text-muted)">
+                <strong>${live.toLocaleString('fr-FR')}</strong> cabinets en base
+                ${a.members_approx ? ` (sur ~${a.members_approx} annoncés)` : ''}
+            </div>
+            <a href="${a.website}" target="_blank" rel="noopener" class="groupement-link" onclick="event.stopPropagation()">${escHtml(a.website)}</a>
+        </div>`;
+    }).join('');
 
     const grpGrid = document.getElementById('groupementsGrid');
     const groupements = groupementsData.groupements || [];
-    grpGrid.innerHTML = groupements.map(g => `
-        <div class="groupement-card">
-            <div class="groupement-name">${g.name}</div>
+
+    // Live cabinet count per groupement (matches member.groupement OR
+    // member.associations.ucgp.groupement)
+    const grpCount = (name) => allMembers.filter(m => {
+        const g = m.groupement
+            || (m.associations && m.associations.ucgp && m.associations.ucgp.groupement)
+            || '';
+        return g === name;
+    }).length;
+
+    // Sort: tier order first (Incontournable > Excellent > ... ), then count desc
+    const TIER_ORDER = {
+        "Incontournable": 1, "Excellent": 2, "Forte notoriété": 3,
+        "Pratique réputée": 4, "Pratique de qualité": 5, "User-listed": 6,
+        "": 99,
+    };
+    const sorted = [...groupements].sort((a, b) => {
+        const ta = TIER_ORDER[a.tier || ""] || 99;
+        const tb = TIER_ORDER[b.tier || ""] || 99;
+        if (ta !== tb) return ta - tb;
+        return grpCount(b.name) - grpCount(a.name);
+    });
+
+    grpGrid.innerHTML = sorted.map(g => {
+        const live = grpCount(g.name);
+        const tierBadge = g.tier
+            ? `<span class="groupement-tier" title="Classement Leaders League 2025">${escHtml(g.tier)}</span>`
+            : '';
+        const countBadge = live
+            ? `<div style="margin-top:4px;font-size:13px;color:var(--text-muted)"><strong>${live}</strong> cabinet${live > 1 ? 's' : ''} dans la base</div>`
+            : `<div style="margin-top:4px;font-size:12px;color:var(--text-muted);font-style:italic">aucun cabinet identifié dans la base</div>`;
+        const clickable = live > 0;
+        return `
+        <div class="groupement-card ${clickable ? 'clickable' : ''}"
+             ${clickable ? `onclick="filterByGroupement('${g.name.replace(/'/g, "\\'")}')"` : ''}>
+            <div class="groupement-name">${escHtml(g.name)} ${tierBadge}</div>
             <span class="groupement-type ${g.type}">${g.type}</span>
-            <div class="groupement-desc">${g.description}</div>
-            ${g.website ? `<a href="${g.website}" target="_blank" class="groupement-link">${g.website}</a>` : ''}
-        </div>
-    `).join('');
+            <div class="groupement-desc">${escHtml(g.description)}</div>
+            ${countBadge}
+            ${g.website ? `<a href="${g.website}" target="_blank" rel="noopener" class="groupement-link" onclick="event.stopPropagation()">${escHtml(g.website)}</a>` : ''}
+        </div>`;
+    }).join('');
+}
+
+// Click a groupement card -> switch to Annuaire and apply the filter.
+function filterByGroupement(name) {
+    const sel = document.getElementById('filterGroupement');
+    if (sel) sel.value = name;
+    _switchToDirectory();
 }
 
 // ============================================================

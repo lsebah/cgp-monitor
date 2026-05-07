@@ -1,149 +1,49 @@
 {
   "groupements": [
-    {
-      "name": "Crystal / Laplace",
-      "type": "plateforme",
-      "website": "https://groupe-crystal.com/",
-      "description": "Leader du marche, +30 acquisitions. Pole gestion privee Laplace."
-    },
-    {
-      "name": "Nortia (Groupe Apicil)",
-      "type": "plateforme",
-      "website": "https://www.nortia.fr/",
-      "description": "Marketplace patrimoniale, 1000+ CGP partenaires, 13 Mds EUR d'encours."
-    },
-    {
-      "name": "UAF Life Patrimoine",
-      "type": "plateforme",
-      "website": "https://www.uaflifepatrimoine.fr/",
-      "description": "Groupe Credit Agricole / Spirica."
-    },
-    {
-      "name": "Cyrus Conseil / Amplegest",
-      "type": "groupement",
-      "website": "https://www.cyrusconseil.fr/",
-      "description": "Groupe Cyrus: Cyrus Conseil, Amplegest, Octo AM, Eternam."
-    },
-    {
-      "name": "Primonial / Laplace",
-      "type": "plateforme",
-      "website": "https://www.primonial.com/",
-      "description": "Primonial Partenaires / L'Office by Primonial."
-    },
-    {
-      "name": "Consorteo",
-      "type": "groupement",
-      "website": "https://www.consorteo.fr/",
-      "description": "Groupement de CGPI independants."
-    },
-    {
-      "name": "Generali Patrimoine",
-      "type": "assureur",
-      "website": "https://www.generali.fr/",
-      "description": "Plateforme assureur pour CGP."
-    },
-    {
-      "name": "SwissLife Banque Privee",
-      "type": "assureur",
-      "website": "https://www.swisslife-am.com/",
-      "description": "Canal CGPI SwissLife."
-    },
-    {
-      "name": "Abeille Assurances (ex-Aviva)",
-      "type": "assureur",
-      "website": "https://www.abeille-assurances.fr/",
-      "description": "Plateforme assureur."
-    },
-    {
-      "name": "Cardif / BNP Paribas",
-      "type": "assureur",
-      "website": "https://www.cardif.fr/",
-      "description": "Plateforme assurance vie CGPI."
-    },
-    {
-      "name": "Groupe DLPK / Vie Plus",
-      "type": "plateforme",
-      "website": "https://www.dlpk.fr/",
-      "description": "Courtier grossiste, plateforme Vie Plus."
-    },
-    {
-      "name": "Patrimea",
-      "type": "plateforme",
-      "website": "https://www.patrimea.com/",
-      "description": "Plateforme digitale CGP."
-    },
-    {
-      "name": "UCGP",
-      "type": "groupement",
-      "website": "https://www.ucgp.fr/",
-      "description": "Union des Conseils en Gestion de Patrimoine."
-    }
+    {"name": "Laplace (Groupe Crystal)", "type": "ucgp", "tier": "Incontournable", "website": "https://laplace-groupe.com/", "description": "Pôle gestion privée de Crystal — 30+ acquisitions. Inclut Witam et Financière du Capitole."},
+    {"name": "Cyrus Conseil", "type": "ucgp", "tier": "Incontournable", "website": "https://www.cyrusconseil.fr/", "description": "Cyrus-Herez : Cyrus Conseil, Amplegest, Octo AM, Eternam."},
+    {"name": "Astoria Finance", "type": "leaders_league", "tier": "Incontournable", "website": "https://www.astoria-finance.fr/", "description": "Groupe de gestion privée."},
+    {"name": "Groupe Premium", "type": "leaders_league", "tier": "Incontournable", "website": "https://www.groupepremium.com/", "description": "1500+ conseillers patrimoniaux."},
+    {"name": "Aliquis Conseil", "type": "leaders_league", "tier": "Excellent", "website": "https://www.aliquis-conseil.fr/", "description": "Conseil en gestion de patrimoine."},
+    {"name": "Groupe Orion", "type": "leaders_league", "tier": "Excellent", "website": "https://www.lafinancieredorion.fr/", "description": "La Financière d'Orion (Quimper / Paris)."},
+    {"name": "Rhétorès Groupe", "type": "leaders_league", "tier": "Excellent", "website": "https://www.rhetores.fr/", "description": "Rhétorès Finance, Courtage, Signature."},
+    {"name": "Finzzle Groupe", "type": "leaders_league", "tier": "Forte notoriété", "website": "https://www.finzzle.com/", "description": "Réseau Salveo. Distribution patrimoniale."},
+    {"name": "Groupe CIEC", "type": "leaders_league", "tier": "Forte notoriété", "website": "", "description": "CIEC conseil en investissement."},
+    {"name": "Patrimmofi", "type": "leaders_league", "tier": "Forte notoriété", "website": "https://www.groupe-patrimmofi.com/", "description": "Groupe Patrimmofi (siège Paris XVII)."},
+    {"name": "Olifan Group", "type": "leaders_league", "tier": "Forte notoriété", "website": "https://olifan-group.com/", "description": "Olifan Courtage / Olifan Finance."},
+    {"name": "Magnacarta", "type": "ucgp", "tier": "Forte notoriété", "website": "https://www.magnacarta.fr/", "description": "Carte des cabinets à travers la France (40+ cabinets, dont marque Mérimée Gestion Privée)."},
+    {"name": "Advenis Gestion Privée", "type": "leaders_league", "tier": "Pratique réputée", "website": "https://gestionprivee.advenis.com/", "description": "Filiale gestion privée d'Advenis."},
+    {"name": "Equance", "type": "leaders_league", "tier": "Pratique réputée", "website": "https://www.equance.fr/", "description": "Conseil patrimonial des expatriés."},
+    {"name": "Metagram", "type": "leaders_league", "tier": "Pratique réputée", "website": "", "description": "Cabinet Metagram (Paris)."},
+    {"name": "UFF (Union Financière de France)", "type": "leaders_league", "tier": "Pratique réputée", "website": "https://www.uff.net/", "description": "Banque conseil en gestion de patrimoine — réseau ~1200 conseillers (filiale Aviva/Abeille)."},
+    {"name": "Valoria", "type": "leaders_league", "tier": "Pratique réputée", "website": "https://www.valoria-patrimoine.com/", "description": "Valoria Capital / Valoria Patrimoine."},
+    {"name": "Groupe Rayne", "type": "leaders_league", "tier": "Pratique de qualité", "website": "https://www.rayne-finance.com/", "description": "Conseil en gestion de patrimoine."},
+    {"name": "Groupe Synalp", "type": "leaders_league", "tier": "Pratique de qualité", "website": "https://www.synalp.fr/", "description": "Synalp Finance et marques associées."},
+    {"name": "Pluralle", "type": "leaders_league", "tier": "Pratique de qualité", "website": "https://www.pluralle.fr/", "description": "Pluralle Groupe."},
+    {"name": "Vitalépargne", "type": "leaders_league", "tier": "Pratique de qualité", "website": "https://www.vitalepargne.fr/", "description": "Vitalépargne Aquitaine, Assurances, etc."},
+    {"name": "Le Club des Entrepreneurs CGP", "type": "ucgp", "tier": "", "website": "https://www.entrepreneurs-cgp.com/", "description": "Club d'entrepreneurs en gestion de patrimoine, ~22 cabinets membres."},
+    {"name": "Finindep", "type": "ucgp", "tier": "", "website": "https://www.finindep.com/", "description": "Réseau d'indépendants en gestion de patrimoine."},
+    {"name": "Actualis Associes", "type": "ucgp", "tier": "", "website": "https://www.actualisassocies.fr/", "description": "Réseau Actualis Associés."},
+    {"name": "Cercle France Patrimoine", "type": "ucgp", "tier": "", "website": "https://cercle-france-patrimoine.fr/", "description": "Cercle réunissant ~17 cabinets indépendants."},
+    {"name": "Cercle Valeurs Patrimoine", "type": "ucgp", "tier": "", "website": "https://lecerclevaleurspatrimoine.fr/", "description": "10 cabinets / 30 CGP / 12 villes."},
+    {"name": "Les Associés", "type": "leaders_league", "tier": "User-listed", "website": "https://www.les-associes.fr/", "description": "Réseau Les Associés (siège Aix-en-Provence)."},
+    {"name": "Nortia (Groupe Apicil)", "type": "plateforme", "tier": "", "website": "https://www.nortia.fr/", "description": "Marketplace patrimoniale, 1000+ CGP partenaires, 13 Mds EUR d'encours."},
+    {"name": "UAF Life Patrimoine", "type": "plateforme", "tier": "", "website": "https://www.uaflifepatrimoine.fr/", "description": "Groupe Crédit Agricole / Spirica."},
+    {"name": "Primonial / Laplace", "type": "plateforme", "tier": "", "website": "https://www.primonial.com/", "description": "Primonial Partenaires / L'Office by Primonial."},
+    {"name": "Consorteo", "type": "plateforme", "tier": "", "website": "https://www.consorteo.fr/", "description": "Groupement de CGPI indépendants."},
+    {"name": "Groupe DLPK / Vie Plus", "type": "plateforme", "tier": "", "website": "https://www.dlpk.fr/", "description": "Courtier grossiste, plateforme Vie Plus."},
+    {"name": "Patrimea", "type": "plateforme", "tier": "", "website": "https://www.patrimea.com/", "description": "Plateforme digitale CGP."},
+    {"name": "UCGP", "type": "plateforme", "tier": "", "website": "https://www.ucgp.fr/", "description": "Union des Conseils en Gestion de Patrimoine — fédère 15 groupements (Crystal, Cyrus, Magnacarta...)."},
+    {"name": "Generali Patrimoine", "type": "assureur", "tier": "", "website": "https://www.generali.fr/", "description": "Plateforme assureur pour CGP."},
+    {"name": "SwissLife Banque Privée", "type": "assureur", "tier": "", "website": "https://www.swisslife-am.com/", "description": "Canal CGPI SwissLife."},
+    {"name": "Abeille Assurances (ex-Aviva)", "type": "assureur", "tier": "", "website": "https://www.abeille-assurances.fr/", "description": "Plateforme assureur."},
+    {"name": "Cardif / BNP Paribas", "type": "assureur", "tier": "", "website": "https://www.cardif.fr/", "description": "Plateforme assurance vie CGPI."}
   ],
   "associations": [
-    {
-      "key": "cncgp",
-      "name": "CNCGP",
-      "full_name": "Chambre Nationale des Conseils en Gestion de Patrimoine",
-      "website": "https://www.cncgp.fr",
-      "members_approx": 4200,
-      "description": "Fondee en 1978, agreee AMF et ACPR. 6 900 personnes physiques et 4 200 personnes morales adherentes (oct. 2025). La plus ancienne et la plus representative en nombre d'adherents."
-    },
-    {
-      "key": "cncef",
-      "name": "CNCEF Patrimoine",
-      "full_name": "Chambre Nationale des Conseils Experts Financiers - Patrimoine",
-      "website": "https://www.cncef.org",
-      "members_approx": 4800,
-      "description": "Branche patrimoine de la CNCEF, presidee par Didier Kling. Tres active sur les sujets reglementaires (MIF2, retrocommissions). Regroupe CNCEF Patrimoine, Credit, Assurance, Immobilier."
-    },
-    {
-      "key": "anacofi",
-      "name": "ANACOFI",
-      "full_name": "Association Nationale des Conseils Financiers",
-      "website": "https://www.anacofi.asso.fr",
-      "members_approx": 2750,
-      "description": "Creee en 2004. Accueille CIF, IOBSP, courtiers en assurance et agents immobiliers. Organise un congres annuel majeur et accompagne la transformation digitale du metier. 12 000+ professionnels."
-    },
-    {
-      "key": "compagnie_cgp",
-      "name": "La Compagnie des CGP",
-      "full_name": "La Compagnie des Conseils en Gestion de Patrimoine",
-      "website": "https://lacompagniedescgp.fr",
-      "members_approx": 500,
-      "description": "Presidee par Philippe Feuille. Association qui a fait evoluer son nom et son identite visuelle ces dernieres annees."
-    },
-    {
-      "key": "ancdgp",
-      "name": "ANCDGP",
-      "full_name": "Association Nationale des Conseils Diplomes en Gestion de Patrimoine",
-      "website": "https://www.ancdgp.fr",
-      "members_approx": 300,
-      "description": "Focalisee sur la certification et la formation des CGP diplomes."
-    },
-    {
-      "key": "cgpc",
-      "name": "CGPC / FPSB France",
-      "full_name": "Association Francaise des Conseils en Gestion de Patrimoine Certifies",
-      "website": "https://www.cgpc.fr",
-      "members_approx": 600,
-      "description": "Association des CGP certifies, affiliee au Financial Planning Standards Board Europe (FPSB)."
-    },
-    {
-      "key": "affo",
-      "name": "AFFO",
-      "full_name": "Association Francaise du Family Office",
-      "website": "https://www.affo.fr",
-      "members_approx": 120,
-      "description": "Creee en 2001, presidee par Charles-Henri Bujard depuis fevrier 2025. Federe mono family offices, multi family offices, avocats, banques, fiscalistes, notaires. Plus d'une cinquantaine de benevoles engages."
-    },
-    {
-      "key": "club_mfo",
-      "name": "Club MFO",
-      "full_name": "Club Multi Family Office",
-      "website": "https://www.club-mfo.fr",
-      "members_approx": 20,
-      "description": "Fonde par cinq acteurs majeurs : Agami Family Office, Family Partners, Keepers, Letus Private Office et Xelis Family Office. Association loi 1901 dediee a definir des visions et pratiques communes basees sur la transparence et l'independance des MFO."
-    }
+    {"name": "ANACOFI", "full_name": "Association Nationale des Conseils Financiers", "description": "Association professionnelle des CIF, IAS, IOBSP. ~3243 cabinets dans la base.", "members_approx": 3500, "website": "https://www.anacofi.asso.fr/"},
+    {"name": "CNCGP", "full_name": "Chambre Nationale des Conseillers en Gestion de Patrimoine", "description": "~7500 adhérents (conseillers physiques). ~2623 cabinets dans la base.", "members_approx": 7500, "website": "https://www.cncgp.fr/"},
+    {"name": "CNCEF", "full_name": "Chambre Nationale des Conseils Experts Financiers", "description": "~4848 cabinets indexés via l'annuaire public, ~4829 dans la base.", "members_approx": 4848, "website": "https://www.cncef.org/"},
+    {"name": "AFFO", "full_name": "Association Française des Family Offices", "description": "Family Offices français. ~20 cabinets en base.", "members_approx": 60, "website": "https://www.affo.fr/"}
   ],
-  "last_updated": "2026-04-13T07:15:00+00:00"
+  "last_updated": "2026-05-07"
 }

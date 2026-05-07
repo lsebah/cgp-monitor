@@ -704,14 +704,28 @@ body {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 16px;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, transform 0.1s, background 0.15s;
 }
+.groupement-card.clickable { cursor: pointer; }
+.groupement-card.clickable:hover { border-color: var(--accent-blue); background: rgba(255,255,255,0.03); }
+.groupement-card.clickable:active { transform: scale(0.99); }
 .groupement-card:hover { border-color: var(--accent-blue); }
 .groupement-name {
     font-size: 15px;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 4px;
+}
+.groupement-tier {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 6px;
+    color: #c89bff;
+    background: rgba(155, 89, 231, 0.12);
+    border: 1px solid rgba(155, 89, 231, 0.35);
+    font-weight: 500;
+    vertical-align: middle;
 }
 .groupement-type {
     font-size: 11px;
@@ -722,6 +736,8 @@ body {
 }
 .groupement-type.plateforme { background: rgba(37, 99, 235, 0.15); color: var(--accent-blue); }
 .groupement-type.groupement { background: rgba(212, 168, 67, 0.15); color: var(--accent-gold); }
+.groupement-type.ucgp { background: rgba(212, 168, 67, 0.15); color: var(--accent-gold); }
+.groupement-type.leaders_league { background: rgba(155, 89, 231, 0.15); color: #c89bff; }
 .groupement-type.assureur { background: rgba(52, 199, 89, 0.15); color: var(--accent-green); }
 .groupement-desc {
     font-size: 13px;
