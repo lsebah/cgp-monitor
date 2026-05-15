@@ -642,6 +642,68 @@ function loadMore() {
 }
 
 // ============================================================
+// EXPORT - Directory CSV (Folk-compatible, respects active filters)
+// ============================================================
+function csvCell(value) {
+    const s = value == null ? '' : String(value);
+    return /[",\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+// Reproduces scraper/folk_export.py: one row per director, same columns.
+function buildFolkCsv(members) {
+    const columns = ['First Name', 'Last Name', 'Job Title', 'Company',
+        'Email', 'Phone', 'Address', 'City', 'Postal Code', 'Website', 'Notes'];
+    const rows = [columns.join(',')];
+
+    members.forEach(m => {
+        const directors = (m.directors && m.directors.length)
+            ? m.directors : [{ name: '', role: '' }];
+
+        directors.forEach(d => {
+            const parts = (d.name || '').trim().split(/\s+/).filter(Boolean);
+            const firstName = parts[0] || '';
+            const lastName = parts.slice(1).join(' ');
+
+            const notes = [];
+            const assocs = Object.keys(m.associations || {});
+            if (assocs.length) notes.push(`Associations: ${assocs.join(', ')}`);
+            if (m.activities && m.activities.length) notes.push(`Activites: ${m.activities.join(', ')}`);
+            if (m.orias_number) notes.push(`ORIAS: ${m.orias_number}`);
+            if (m.siren) notes.push(`SIREN: ${m.siren}`);
+            if (m.first_seen) notes.push(`Detecte: ${m.first_seen}`);
+            notes.push('Source: CGP Monitor');
+
+            const addr = m.address || {};
+            const cells = [
+                firstName, lastName, d.role || 'Dirigeant', m.company_name || '',
+                m.email || '', m.phone || '', addr.street || '', addr.city || '',
+                addr.postal_code || '', m.website || '', notes.join(' | '),
+            ];
+            rows.push(cells.map(csvCell).join(','));
+        });
+    });
+    return rows.join('\r\n');
+}
+
+function exportDirectoryCsv() {
+    const members = getFilteredMembers();
+    if (!members.length) {
+        alert('Aucun resultat a exporter avec les filtres actuels.');
+        return;
+    }
+    // Leading BOM (utf-8-sig) so Excel reads accents correctly, matching folk_export.py.
+    const blob = new Blob(['\uFEFF' + buildFolkCsv(members)], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `annuaire_cgp_${todayISO()}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+}
+
+// ============================================================
 // RENDERING - Alerts
 // ============================================================
 function renderAlerts() {
