@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '8';
+const APP_VERSION = '9';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -273,18 +273,21 @@ async function loadData() {
             const rawMembers = data.members || [];
             const stats = data.stats || {};
 
-            // Filter out cabinets without any usable contact info:
-            // no email, no phone, no website, no directors
-            // (Many ORIAS / empty ANACOFI listings have no prospection value)
+            // Keep cabinets with usable prospection info:
+            // a direct contact (email/phone/website/director) OR an
+            // identifiable firm (SIREN or address) so ORIAS-imported CGPs that
+            // are still pending email enrichment remain visible.
             allMembers = rawMembers.filter(m => {
                 if (m.email) return true;
                 if (m.phone) return true;
                 if (m.website) return true;
                 if (m.directors && m.directors.length > 0) return true;
+                if (m.siren) return true;
+                if (m.address?.city || m.address?.postal_code) return true;
                 return false;
             });
             const filteredOut = rawMembers.length - allMembers.length;
-            console.info(`Members loaded: ${allMembers.length} with contact (${filteredOut} without contact filtered out)`);
+            console.info(`Members loaded: ${allMembers.length} usable (${filteredOut} without any usable info filtered out)`);
 
             document.getElementById('statTotal').textContent = allMembers.length;
             document.getElementById('statNew').textContent = stats.new_this_week || 0;
@@ -348,10 +351,10 @@ async function loadData() {
 // ============================================================
 function renderAssociationCards(scrapeStatus, byAssociation) {
     const grid = document.getElementById('assocGrid');
-    // ORIAS intentionally excluded: it's used only for enrichment (lookup of
-    // registration number / categories), not as a primary scraping source,
-    // so it would always show 0 members in the breakdown.
+    // ORIAS is now a primary discovery source (full CIF registry import),
+    // capturing CGPs that are not members of any association.
     const assocs = [
+        { key: 'orias', name: 'ORIAS', full: 'Registre CIF officiel (complet)' },
         { key: 'cncgp', name: 'CNCGP', full: 'Conseillers en Gestion de Patrimoine' },
         { key: 'cncef', name: 'CNCEF', full: 'Conseils Experts Financiers' },
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
@@ -1051,7 +1054,6 @@ function clearSyncSettings() {
 // ADMIN PANEL - Scraper Management
 // ============================================================
 const ADMIN_CONFIG_KEY = 'cgp-admin-config';
-const MISSING_CGPS_KEY = 'cgp-missing-cgps';
 
 function getAdminConfig() {
     try { return JSON.parse(localStorage.getItem(ADMIN_CONFIG_KEY)) || {}; }
@@ -1062,35 +1064,12 @@ function setAdminConfig(cfg) {
     localStorage.setItem(ADMIN_CONFIG_KEY, JSON.stringify(cfg));
 }
 
-function getMissingCgps() {
-    try { return JSON.parse(localStorage.getItem(MISSING_CGPS_KEY)) || []; }
-    catch { return []; }
-}
-
-function setMissingCgps(list) {
-    localStorage.setItem(MISSING_CGPS_KEY, JSON.stringify(list));
-}
-
 function openAdminPanel() {
     document.getElementById('adminModal').style.display = 'flex';
     loadAdminPanel();
 }
 
 async function loadAdminPanel() {
-    // Load missing CGPs list
-    const missing = getMissingCgps();
-    const cgpsHtml = missing.length
-        ? missing.map((cgp, idx) => `
-            <div class="cgps-item">
-                <span>${escHtml(cgp)}</span>
-                <button class="cgps-remove" onclick="removeMissingCgp(${idx})" title="Supprimer">×</button>
-            </div>
-        `).join('')
-        : '<p style="color: var(--text-muted);">Aucune CGP a chercher pour le moment</p>';
-
-    const cgpsDiv = document.getElementById('cgpsToSearch');
-    if (cgpsDiv) cgpsDiv.innerHTML = cgpsHtml;
-
     // Load stats
     try {
         const stats = await fetch('data/stats.json').then(r => r.json());
@@ -1174,27 +1153,6 @@ async function loadScraperStatus() {
     }
 }
 
-function addMissingCgp() {
-    const input = document.getElementById('newCgpName');
-    if (!input || !input.value.trim()) return;
-
-    const names = input.value.split(',').map(s => s.trim()).filter(s => s);
-    let missing = getMissingCgps();
-    missing = [...new Set([...missing, ...names])]; // Avoid duplicates
-    setMissingCgps(missing);
-    input.value = '';
-    loadAdminPanel();
-    alert(`${names.length} CGP(s) ajoutee(s) a la liste de recherche`);
-}
-
-function removeMissingCgp(idx) {
-    let missing = getMissingCgps();
-    const removed = missing[idx];
-    missing.splice(idx, 1);
-    setMissingCgps(missing);
-    loadAdminPanel();
-}
-
 function saveAdminConfig() {
     const token = document.getElementById('githubToken')?.value || '';
     const repo = document.getElementById('githubRepo')?.value || 'lsebah/cgp-monitor';
@@ -1262,8 +1220,6 @@ window.openSyncSettings = openSyncSettings;
 window.saveSyncSettings = saveSyncSettings;
 window.clearSyncSettings = clearSyncSettings;
 window.openAdminPanel = openAdminPanel;
-window.addMissingCgp = addMissingCgp;
-window.removeMissingCgp = removeMissingCgp;
 window.saveAdminConfig = saveAdminConfig;
 window.triggerScrape = triggerScrape;
 

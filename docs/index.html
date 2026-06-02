@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=9">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -93,7 +93,8 @@
                 <div class="filter-row">
                     <input type="text" id="searchInput" placeholder="Rechercher par nom, ville, email, dirigeant..." class="search-input">
                     <select id="filterAssociation" class="filter-select">
-                        <option value="">Toutes les associations</option>
+                        <option value="">Toutes les sources</option>
+                        <option value="orias">ORIAS (registre complet)</option>
                         <option value="cncgp">CNCGP</option>
                         <option value="cncef">CNCEF</option>
                         <option value="anacofi">ANACOFI</option>
@@ -264,16 +265,13 @@
 
                 <!-- Missing CGPs -->
                 <div class="admin-section">
-                    <h3>Ajouter des CGPs manquantes</h3>
-                    <p class="admin-note">Entrez le nom des CGPs a chercher automatiquement sur ORIAS</p>
-                    <div class="missing-cgps-input">
-                        <input type="text" id="newCgpName" placeholder="Ex: Alpy Gestion, Blackwell Family Office..." class="input-field">
-                        <button class="btn-primary" onclick="addMissingCgp()">Ajouter</button>
-                    </div>
-                    <div id="missingCgpsList" class="missing-cgps-list">
-                        <h4>CGPs actuellement recherchees:</h4>
-                        <div id="cgpsToSearch">Chargement...</div>
-                    </div>
+                    <h3>Couverture des CGPs</h3>
+                    <p class="admin-note">
+                        Le registre <strong>ORIAS CIF complet</strong> est importe automatiquement a chaque scrape.
+                        Il contient TOUS les conseillers en investissements financiers enregistres en France,
+                        y compris ceux qui ne sont membres d'aucune association (CNCGP, CNCEF, ANACOFI, AFFO).
+                        Les CGPs manquantes sont donc detectees automatiquement, sans saisie manuelle.
+                    </p>
                 </div>
 
                 <!-- Statistics -->
@@ -309,7 +307,7 @@
         <p>Donnees: CNCGP, CNCEF, ANACOFI, AFFO (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=8"></script>
+    <script src="app.js?v=9"></script>
     <script>
         // Register service worker with auto-update
         if ('serviceWorker' in navigator) {
