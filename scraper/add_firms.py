@@ -66,6 +66,9 @@ def build_member(entry):
     cd = entry.get("date_creation")
     if cd:
         m["creation_date"] = cd
+    # Tag as a manually-requested firm so it survives any future
+    # "keep only CNCGP/CNCEF/ANACOFI" affiliation filter.
+    m.setdefault("associations", {})["manuel"] = {"member": True}
     return m
 
 
