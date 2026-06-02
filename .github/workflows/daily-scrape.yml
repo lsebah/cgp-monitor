@@ -2,75 +2,66 @@ name: Daily CGP Scrape
 
 on:
   schedule:
-    # Run every day at 2 AM UTC (3 AM CET)
-    - cron: '0 2 * * *'
-  # Allow manual trigger from GitHub Actions UI
-  workflow_dispatch:
+    - cron: '0 2 * * *'   # Every day 02:00 UTC (03:00 CET / 04:00 CEST)
+  workflow_dispatch:       # Allow manual trigger
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 180
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
 
-      - name: Run CGP Monitor scraper
+      - name: Run scraper
+        working-directory: scraper
+        run: python main.py
+
+      - name: Check for new members
+        id: check_new
         run: |
-          cd scraper
-          python main.py
+          NEW_COUNT=$(python -c "
+          import json
+          try:
+              d = json.load(open('docs/data/new_members.json'))
+              print(d.get('count', 0))
+          except Exception:
+              print(0)
+          ")
+          echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+          echo "Found $NEW_COUNT new members"
 
-      - name: Check for changes
-        id: verify
+      - name: Send push notification via ntfy.sh
+        if: steps.check_new.outputs.new_count != '0'
         run: |
-          if git diff --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "=== Changes detected ==="
-            git diff --name-only
-          fi
+          NEW=${{ steps.check_new.outputs.new_count }}
+          TOTAL=$(python -c "import json; d=json.load(open('docs/data/members.json')); print(d.get('stats',{}).get('total_members',0))")
+          curl -s \
+            -H "Title: ${NEW} nouveau(x) CGP detecte(s)!" \
+            -H "Priority: high" \
+            -H "Tags: office,sparkles" \
+            -H "Click: ${{ vars.PAGES_URL || 'https://lsebah.github.io/cgp-monitor/' }}" \
+            -d "${NEW} nouveau(x) cabinet(s) CGP detecte(s). ${TOTAL} cabinets suivis au total." \
+            https://ntfy.sh/cgp-monitor-cmf
 
-      - name: Commit and push updates
-        if: steps.verify.outputs.changed == 'true'
+      - name: Commit and push changes
         run: |
-          git config user.email "action@github.com"
-          git config user.name "CGP Monitor Bot"
-
-          # Get summary for commit message
-          MEMBER_COUNT=$(python -c "import json; data = json.load(open('docs/data/members.json')); print(len(data.get('members', [])))")
-          NEW_COUNT=$(python -c "import json; data = json.load(open('docs/data/new_members.json')); print(len(data.get('new_members', [])))")
-
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/
-          git commit -m "data: daily scrape update
-
-- Total CGPs: $MEMBER_COUNT
-- New this week: $NEW_COUNT
-- Timestamp: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-
+          git diff --staged --quiet || git commit -m "chore: daily scrape $(date -u +%Y-%m-%d)"
           git push
-
-      - name: No changes detected
-        if: steps.verify.outputs.changed == 'false'
-        run: echo "ℹ️ No data changes detected - database is up to date"
-
-      - name: Upload logs on failure
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: scraper-logs
-          retention-days: 7
