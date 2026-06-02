@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -29,6 +29,7 @@
                 <div class="header-links">
                     <button class="profile-link sync-btn" onclick="openSyncSettings()" title="Configurer la synchronisation multi-appareils">Sync</button>
                     <button class="profile-link notify-btn" onclick="setupNotifications()">Notif</button>
+                    <button class="profile-link admin-btn" onclick="openAdminPanel()" title="Gerer les mises a jour et CGPs manquantes">Admin</button>
                     <a href="data/folk_import.csv" download class="profile-link export-btn">Export Folk</a>
                 </div>
             </div>
@@ -242,13 +243,73 @@
         </div>
     </div>
 
+    <!-- Admin Panel Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Admin - Gestion des mises a jour</h2>
+                <button class="modal-close" onclick="closeModal('adminModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Scraper Status -->
+                <div class="admin-section">
+                    <h3>Etat des mises a jour</h3>
+                    <div id="scraperStatus" class="scraper-status">
+                        <p>Chargement...</p>
+                    </div>
+                    <button class="btn-primary" onclick="triggerScrape()" id="triggerBtn">
+                        Lancer le scrape maintenant
+                    </button>
+                </div>
+
+                <!-- Missing CGPs -->
+                <div class="admin-section">
+                    <h3>Ajouter des CGPs manquantes</h3>
+                    <p class="admin-note">Entrez le nom des CGPs a chercher automatiquement sur ORIAS</p>
+                    <div class="missing-cgps-input">
+                        <input type="text" id="newCgpName" placeholder="Ex: Alpy Gestion, Blackwell Family Office..." class="input-field">
+                        <button class="btn-primary" onclick="addMissingCgp()">Ajouter</button>
+                    </div>
+                    <div id="missingCgpsList" class="missing-cgps-list">
+                        <h4>CGPs actuellement recherchees:</h4>
+                        <div id="cgpsToSearch">Chargement...</div>
+                    </div>
+                </div>
+
+                <!-- Statistics -->
+                <div class="admin-section">
+                    <h3>Statistiques</h3>
+                    <div id="adminStats" class="admin-stats">
+                        <p>Chargement...</p>
+                    </div>
+                </div>
+
+                <!-- GitHub Actions Config -->
+                <div class="admin-section">
+                    <h3>Configuration GitHub (Optionnel)</h3>
+                    <p class="admin-note">Pour déclencher les scrapes via cette interface, configurez votre token GitHub</p>
+                    <label>
+                        Token GitHub Actions
+                        <input type="password" id="githubToken" placeholder="ghp_..." autocomplete="off" class="input-field">
+                    </label>
+                    <label>
+                        Dépôt (owner/repo)
+                        <input type="text" id="githubRepo" placeholder="lsebah/cgp-monitor" value="lsebah/cgp-monitor" class="input-field">
+                    </label>
+                    <button class="btn-secondary" onclick="saveAdminConfig()">Enregistrer</button>
+                    <p class="admin-note">Token sauvegarde localement sur votre appareil. <a href="https://github.com/settings/tokens" target="_blank">Creer un token</a> avec scope 'actions:write'</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <p>CGP Monitor - Capital Management France</p>
-        <p>Donnees: CNCGP, CNCEF, ANACOFI (enrichissement ORIAS)</p>
+        <p>Donnees: CNCGP, CNCEF, ANACOFI, AFFO (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=7"></script>
+    <script src="app.js?v=8"></script>
     <script>
         // Register service worker with auto-update
         if ('serviceWorker' in navigator) {

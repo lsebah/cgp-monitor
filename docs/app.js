@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '7';
+const APP_VERSION = '8';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -1047,6 +1047,210 @@ function clearSyncSettings() {
     setSyncStatus('offline');
 }
 
+// ============================================================
+// ADMIN PANEL - Scraper Management
+// ============================================================
+const ADMIN_CONFIG_KEY = 'cgp-admin-config';
+const MISSING_CGPS_KEY = 'cgp-missing-cgps';
+
+function getAdminConfig() {
+    try { return JSON.parse(localStorage.getItem(ADMIN_CONFIG_KEY)) || {}; }
+    catch { return {}; }
+}
+
+function setAdminConfig(cfg) {
+    localStorage.setItem(ADMIN_CONFIG_KEY, JSON.stringify(cfg));
+}
+
+function getMissingCgps() {
+    try { return JSON.parse(localStorage.getItem(MISSING_CGPS_KEY)) || []; }
+    catch { return []; }
+}
+
+function setMissingCgps(list) {
+    localStorage.setItem(MISSING_CGPS_KEY, JSON.stringify(list));
+}
+
+function openAdminPanel() {
+    document.getElementById('adminModal').style.display = 'flex';
+    loadAdminPanel();
+}
+
+async function loadAdminPanel() {
+    // Load missing CGPs list
+    const missing = getMissingCgps();
+    const cgpsHtml = missing.length
+        ? missing.map((cgp, idx) => `
+            <div class="cgps-item">
+                <span>${escHtml(cgp)}</span>
+                <button class="cgps-remove" onclick="removeMissingCgp(${idx})" title="Supprimer">×</button>
+            </div>
+        `).join('')
+        : '<p style="color: var(--text-muted);">Aucune CGP a chercher pour le moment</p>';
+
+    const cgpsDiv = document.getElementById('cgpsToSearch');
+    if (cgpsDiv) cgpsDiv.innerHTML = cgpsHtml;
+
+    // Load stats
+    try {
+        const stats = await fetch('data/stats.json').then(r => r.json());
+        const statsHtml = `
+            <div class="stat-box">
+                <div class="stat-box-label">Total CGPs</div>
+                <div class="stat-box-value">${stats.stats?.total_members || 0}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-box-label">Nouveaux cette semaine</div>
+                <div class="stat-box-value">${stats.stats?.new_this_week || 0}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-box-label">Nouveaux ce mois</div>
+                <div class="stat-box-value">${stats.stats?.new_this_month || 0}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-box-label">Dernière mise à jour</div>
+                <div class="stat-box-value" style="font-size:12px;">${new Date(stats.last_updated).toLocaleDateString('fr-FR')}</div>
+            </div>
+        `;
+        const statsDiv = document.getElementById('adminStats');
+        if (statsDiv) statsDiv.innerHTML = statsHtml;
+    } catch (e) {
+        console.warn('Error loading stats:', e);
+    }
+
+    // Load config
+    const cfg = getAdminConfig();
+    const tokenInput = document.getElementById('githubToken');
+    const repoInput = document.getElementById('githubRepo');
+    if (tokenInput) tokenInput.value = cfg.githubToken || '';
+    if (repoInput) repoInput.value = cfg.githubRepo || 'lsebah/cgp-monitor';
+
+    // Load scraper status
+    await loadScraperStatus();
+}
+
+async function loadScraperStatus() {
+    try {
+        const cfg = getAdminConfig();
+        if (!cfg.githubToken || !cfg.githubRepo) {
+            const statusDiv = document.getElementById('scraperStatus');
+            if (statusDiv) {
+                statusDiv.innerHTML = '<p style="color:var(--text-muted);">Configurez votre token GitHub pour voir l\'etat</p>';
+            }
+            return;
+        }
+
+        const [owner, repo] = cfg.githubRepo.split('/');
+        const resp = await fetch(
+            `https://api.github.com/repos/${owner}/${repo}/actions/workflows/daily-scrape.yml/runs?per_page=5`,
+            { headers: { 'Authorization': `token ${cfg.githubToken}` } }
+        );
+
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+
+        const data = await resp.json();
+        const runs = data.workflow_runs || [];
+
+        if (runs.length === 0) {
+            const statusDiv = document.getElementById('scraperStatus');
+            if (statusDiv) statusDiv.innerHTML = '<p>Aucun scrape effectue encore</p>';
+            return;
+        }
+
+        const lastRun = runs[0];
+        const statusDiv = document.getElementById('scraperStatus');
+        if (statusDiv) {
+            const statusClass = lastRun.status === 'completed' ? (lastRun.conclusion === 'success' ? 'success' : 'error') : 'running';
+            statusDiv.innerHTML = `
+                <div class="scraper-status ${statusClass}">
+                    <strong>Dernier scrape:</strong> ${new Date(lastRun.updated_at).toLocaleDateString('fr-FR')} ${new Date(lastRun.updated_at).toLocaleTimeString('fr-FR')}<br>
+                    <strong>Statut:</strong> ${lastRun.conclusion === 'success' ? '✅ Succes' : lastRun.status === 'in_progress' ? '⏳ En cours...' : '❌ Echec'}<br>
+                    <a href="${lastRun.html_url}" target="_blank" style="font-size:12px;color:var(--accent-blue);">Voir les details</a>
+                </div>
+            `;
+        }
+    } catch (e) {
+        console.warn('Error loading scraper status:', e);
+    }
+}
+
+function addMissingCgp() {
+    const input = document.getElementById('newCgpName');
+    if (!input || !input.value.trim()) return;
+
+    const names = input.value.split(',').map(s => s.trim()).filter(s => s);
+    let missing = getMissingCgps();
+    missing = [...new Set([...missing, ...names])]; // Avoid duplicates
+    setMissingCgps(missing);
+    input.value = '';
+    loadAdminPanel();
+    alert(`${names.length} CGP(s) ajoutee(s) a la liste de recherche`);
+}
+
+function removeMissingCgp(idx) {
+    let missing = getMissingCgps();
+    const removed = missing[idx];
+    missing.splice(idx, 1);
+    setMissingCgps(missing);
+    loadAdminPanel();
+}
+
+function saveAdminConfig() {
+    const token = document.getElementById('githubToken')?.value || '';
+    const repo = document.getElementById('githubRepo')?.value || 'lsebah/cgp-monitor';
+
+    if (!token.trim()) {
+        alert('Token GitHub requis');
+        return;
+    }
+
+    setAdminConfig({ githubToken: token, githubRepo: repo });
+    alert('Configuration enregistree');
+    loadAdminPanel();
+}
+
+async function triggerScrape() {
+    const cfg = getAdminConfig();
+    if (!cfg.githubToken || !cfg.githubRepo) {
+        alert('Configurez votre token GitHub pour declencher un scrape');
+        document.getElementById('githubToken').focus();
+        return;
+    }
+
+    const btn = document.getElementById('triggerBtn');
+    if (btn) btn.disabled = true;
+
+    try {
+        const [owner, repo] = cfg.githubRepo.split('/');
+        const resp = await fetch(
+            `https://api.github.com/repos/${owner}/${repo}/actions/workflows/daily-scrape.yml/dispatches`,
+            {
+                method: 'POST',
+                headers: {
+                    'Authorization': `token ${cfg.githubToken}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ ref: 'main' })
+            }
+        );
+
+        if (resp.status === 204) {
+            alert('✅ Scrape declenche! Verifiez GitHub Actions pour l\'etat');
+            await new Promise(r => setTimeout(r, 2000));
+            await loadScraperStatus();
+        } else if (resp.status === 403) {
+            alert('❌ Token GitHub invalide ou sans les permissions requises (action:write)');
+        } else {
+            alert(`❌ Erreur: ${resp.status}`);
+        }
+    } catch (e) {
+        alert('❌ Erreur: ' + e.message);
+        console.error(e);
+    } finally {
+        if (btn) btn.disabled = false;
+    }
+}
+
 // Expose handlers used by inline HTML
 window.setStatus = setStatus;
 window.toggleFolk = toggleFolk;
@@ -1057,6 +1261,11 @@ window.closeModal = closeModal;
 window.openSyncSettings = openSyncSettings;
 window.saveSyncSettings = saveSyncSettings;
 window.clearSyncSettings = clearSyncSettings;
+window.openAdminPanel = openAdminPanel;
+window.addMissingCgp = addMissingCgp;
+window.removeMissingCgp = removeMissingCgp;
+window.saveAdminConfig = saveAdminConfig;
+window.triggerScrape = triggerScrape;
 
 // ============================================================
 // INIT

@@ -1,6 +1,6 @@
 // CGP Monitor - Service Worker
 // Bump CACHE_NAME whenever app.js/index.html/style.css change substantially.
-const CACHE_NAME = 'cgp-monitor-v7';
+const CACHE_NAME = 'cgp-monitor-v8';
 
 self.addEventListener('install', e => {
     self.skipWaiting();
