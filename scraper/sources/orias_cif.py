@@ -13,7 +13,9 @@ columns flexibly, and keep only entries with usable prospection info
 """
 import io
 import logging
+import os
 import re
+from urllib.parse import urljoin
 
 import requests
 
@@ -26,11 +28,17 @@ from .base import (
 logger = logging.getLogger(__name__)
 
 # Official ORIAS publishable list of CIF (Conseillers en Investissements Financiers).
-# This is the full registry, not an association subset.
+# This is the full registry, not an association subset. The download now requires
+# an authenticated ORIAS pro session (see _authenticated_download).
 DOWNLOAD_URLS = [
     "https://pro.orias.fr/download/conseiller_en_investissement_financier_CIF.xls",
     "https://www.orias.fr/download/conseiller_en_investissement_financier_CIF.xls",
 ]
+
+# ORIAS pro login (Grails/Spring-Security). Credentials come from env vars
+# (GitHub secrets) - never hard-coded, never logged.
+LOGIN_PAGE_URL = "https://pro.orias.fr/login/auth"
+DEFAULT_LOGIN_ACTION = "https://pro.orias.fr/login/authenticate"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -109,14 +117,84 @@ def _fetch(url):
     return requests.get(url, headers=HEADERS, timeout=90, allow_redirects=True)
 
 
+def _authenticated_download():
+    """Log into the ORIAS pro portal and download the CIF file with that session.
+
+    Credentials are read from the ORIAS_USERNAME / ORIAS_PASSWORD env vars
+    (GitHub secrets). Returns (content, ctype) or (None, None). The password is
+    never logged.
+    """
+    user = os.environ.get("ORIAS_USERNAME")
+    pw = os.environ.get("ORIAS_PASSWORD")
+    if not (user and pw):
+        logger.info("ORIAS CIF: no ORIAS_USERNAME/ORIAS_PASSWORD set, skipping authenticated download")
+        return None, None
+
+    try:
+        from bs4 import BeautifulSoup
+        s = requests.Session()
+        s.headers.update(HEADERS)
+
+        # 1. Load the login page to obtain session cookie + form details.
+        r = s.get(LOGIN_PAGE_URL, timeout=60)
+        action = DEFAULT_LOGIN_ACTION
+        data = {}
+        user_field, pass_field = "username", "password"
+        try:
+            soup = BeautifulSoup(r.content, "lxml")
+            form = soup.find("form")
+            if form:
+                if form.get("action"):
+                    action = urljoin(r.url, form["action"])
+                for inp in form.find_all("input"):
+                    name = inp.get("name")
+                    if not name:
+                        continue
+                    itype = (inp.get("type") or "text").lower()
+                    if itype == "password":
+                        pass_field = name
+                    elif itype in ("text", "email") and inp.get("type") != "submit":
+                        # first text-like field is the username/login
+                        if user_field == "username":
+                            user_field = name
+                    elif itype == "hidden":
+                        data[name] = inp.get("value", "")
+        except Exception as e:
+            logger.warning(f"ORIAS CIF: login form parse failed, using defaults: {e}")
+
+        data[user_field] = user
+        data[pass_field] = pw
+        logger.info(f"ORIAS CIF: submitting login to {action} (user field '{user_field}')")
+
+        # 2. Authenticate.
+        s.post(action, data=data, timeout=60, allow_redirects=True)
+
+        # 3. Download with the authenticated session.
+        for url in DOWNLOAD_URLS:
+            r3 = s.get(url, timeout=90, allow_redirects=True)
+            if r3.status_code == 200 and r3.content and not _looks_like_html(
+                r3.content, r3.headers.get("Content-Type", "")
+            ):
+                logger.info(f"ORIAS CIF: authenticated download OK ({len(r3.content)} bytes) from {url}")
+                return r3.content, r3.headers.get("Content-Type", "")
+            logger.warning(f"ORIAS CIF: authenticated GET {url} still not a file "
+                           f"(status {r3.status_code}, ends at {r3.url})")
+        logger.error("ORIAS CIF: login appears to have failed (download still gated)")
+    except Exception as e:
+        logger.error(f"ORIAS CIF: authenticated download error: {e}")
+    return None, None
+
+
 def _download():
     """Download the ORIAS CIF file. Returns (content_bytes, content_type) or (None, None).
 
-    Accepts only a real tabular file; if a URL returns an HTML page (portal /
-    redirect / SPA shell) we diagnose it, follow any data-file link it exposes,
-    then fall through to the next candidate and finally the data.gouv fallback.
+    Order: authenticated pro download (if credentials set) -> public URLs
+    (rejecting HTML/login pages) -> data.gouv.fr fallback.
     """
-    from urllib.parse import urljoin
+    content, ctype = _authenticated_download()
+    if content:
+        return content, ctype
+
     for url in DOWNLOAD_URLS:
         try:
             logger.info(f"ORIAS CIF: downloading {url}")

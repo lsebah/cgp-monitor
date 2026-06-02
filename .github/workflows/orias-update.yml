@@ -27,6 +27,9 @@ jobs:
 
       - name: Run ORIAS discovery update
         working-directory: scraper
+        env:
+          ORIAS_USERNAME: ${{ secrets.ORIAS_USERNAME }}
+          ORIAS_PASSWORD: ${{ secrets.ORIAS_PASSWORD }}
         run: python orias_update.py
 
       - name: Commit and push changes
