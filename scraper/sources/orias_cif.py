@@ -87,7 +87,53 @@ def _download():
             logger.warning(f"ORIAS CIF: {url} -> HTTP {resp.status_code}")
         except requests.RequestException as e:
             logger.warning(f"ORIAS CIF: download failed for {url}: {e}")
+
+    # Fallback: discover an ORIAS CSV/XLS resource on data.gouv.fr dynamically.
+    content = _download_from_datagouv()
+    if content:
+        return content, "datagouv"
     return None, None
+
+
+# data.gouv.fr open-data API. Used as a fallback source: we search for any
+# ORIAS / "intermediaires" dataset and download its first CSV/XLS resource.
+DATAGOUV_API = "https://www.data.gouv.fr/api/1/datasets/"
+DATAGOUV_QUERIES = ["orias", "intermediaires assurance banque finance", "conseiller investissement financier"]
+
+
+def _download_from_datagouv():
+    """Search data.gouv.fr for an ORIAS intermediaries dataset and download a CSV/XLS resource."""
+    for q in DATAGOUV_QUERIES:
+        try:
+            logger.info(f"ORIAS CIF: data.gouv.fr fallback search '{q}'")
+            resp = requests.get(DATAGOUV_API, params={"q": q, "page_size": 20},
+                                headers=HEADERS, timeout=40)
+            if resp.status_code != 200:
+                logger.warning(f"data.gouv.fr search '{q}' -> HTTP {resp.status_code}")
+                continue
+            data = resp.json()
+            for ds in data.get("data", []):
+                title = (ds.get("title") or "").lower()
+                if "orias" not in title and "intermediaire" not in title and "intermédiaire" not in title:
+                    continue
+                for res in ds.get("resources", []):
+                    fmt = (res.get("format") or "").lower()
+                    rtitle = (res.get("title") or "").lower()
+                    url = res.get("url")
+                    if not url:
+                        continue
+                    # Prefer CIF / financial-investment resources, else any tabular file.
+                    if fmt in ("csv", "xls", "xlsx") or any(
+                        e in url.lower() for e in (".csv", ".xls", ".xlsx")
+                    ):
+                        logger.info(f"ORIAS CIF: data.gouv.fr resource '{rtitle}' ({fmt}) {url}")
+                        r2 = requests.get(url, headers=HEADERS, timeout=90)
+                        if r2.status_code == 200 and r2.content:
+                            logger.info(f"ORIAS CIF: data.gouv.fr download {len(r2.content)} bytes")
+                            return r2.content
+        except (requests.RequestException, ValueError) as e:
+            logger.warning(f"data.gouv.fr fallback '{q}' failed: {e}")
+    return None
 
 
 def _parse_rows(content, ctype):
@@ -173,13 +219,15 @@ def scrape_orias_cif():
     """
     Import all registered CIF from the official ORIAS publishable list.
 
-    Option B filtering: only keep entries with usable prospection info
-    (SIREN, address, or a direct contact), and skip clearly inactive records.
+    Option A: import EVERY active CIF, even cabinets that have no email / phone
+    / SIREN / address yet. Missing contact details are enriched later
+    (batch_enrich_emails) and on subsequent scrapes. Only clearly inactive
+    (radie / supprime) records and rows with no usable name are skipped.
 
     Returns:
         List of normalized member dicts.
     """
-    logger.info("Starting ORIAS CIF comprehensive import...")
+    logger.info("Starting ORIAS CIF comprehensive import (option A: import all)...")
     content, ctype = _download()
     if not content:
         logger.error("ORIAS CIF: download failed, no data imported")
@@ -190,12 +238,13 @@ def scrape_orias_cif():
 
     members = []
     skipped_inactive = 0
-    skipped_no_info = 0
+    skipped_no_name = 0
     seen = set()
 
     for rec in rows:
         company_name = rec.get("company_name", "").strip()
         if not company_name or len(company_name) < 2:
+            skipped_no_name += 1
             continue
 
         # Skip clearly inactive registrations
@@ -213,14 +262,10 @@ def scrape_orias_cif():
         if m:
             orias_number = m.group(1)
 
-        # Option B: require at least one usable prospection field
-        # (SIREN lets us enrich later; address/postal code locates the firm).
-        if not (siren or postal_code or address or city):
-            skipped_no_info += 1
-            continue
+        # Option A: no contact/SIREN/address requirement - import everything.
 
-        # Dedup within this import
-        key = siren or f"{company_name.lower()}|{city.lower()}"
+        # Dedup within this import (by SIREN, ORIAS number, or name+city)
+        key = siren or orias_number or f"{company_name.lower()}|{city.lower()}"
         if key in seen:
             continue
         seen.add(key)
@@ -239,7 +284,7 @@ def scrape_orias_cif():
         members.append(member)
 
     logger.info(
-        f"ORIAS CIF import complete: {len(members)} usable CGPs "
-        f"({skipped_inactive} inactive, {skipped_no_info} without usable info skipped)"
+        f"ORIAS CIF import complete: {len(members)} CGPs imported "
+        f"({skipped_inactive} inactive, {skipped_no_name} without a name skipped)"
     )
     return members

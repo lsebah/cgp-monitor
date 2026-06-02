@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '9';
+const APP_VERSION = '10';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
@@ -273,21 +273,12 @@ async function loadData() {
             const rawMembers = data.members || [];
             const stats = data.stats || {};
 
-            // Keep cabinets with usable prospection info:
-            // a direct contact (email/phone/website/director) OR an
-            // identifiable firm (SIREN or address) so ORIAS-imported CGPs that
-            // are still pending email enrichment remain visible.
-            allMembers = rawMembers.filter(m => {
-                if (m.email) return true;
-                if (m.phone) return true;
-                if (m.website) return true;
-                if (m.directors && m.directors.length > 0) return true;
-                if (m.siren) return true;
-                if (m.address?.city || m.address?.postal_code) return true;
-                return false;
-            });
+            // Option A: import everything. Show every cabinet that has a name,
+            // even those still pending email/phone enrichment, so no real CGP
+            // is ever hidden. Contact details get filled in over time.
+            allMembers = rawMembers.filter(m => m.company_name && m.company_name.trim());
             const filteredOut = rawMembers.length - allMembers.length;
-            console.info(`Members loaded: ${allMembers.length} usable (${filteredOut} without any usable info filtered out)`);
+            console.info(`Members loaded: ${allMembers.length} (${filteredOut} unnamed filtered out)`);
 
             document.getElementById('statTotal').textContent = allMembers.length;
             document.getElementById('statNew').textContent = stats.new_this_week || 0;
