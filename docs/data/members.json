@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T12:17:57.226658+00:00",
+  "last_updated": "2026-06-02T12:25:43.078982+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -20,7 +20,7 @@
     "registre_manual": {
       "status": "success",
       "added": 2,
-      "timestamp": "2026-06-02T09:43:26.032952+00:00"
+      "timestamp": "2026-06-02T12:25:43.078982+00:00"
     },
     "registre_naf_discovery": {
       "status": "success",
@@ -30,46 +30,47 @@
     }
   },
   "stats": {
-    "total_members": 10688,
-    "new_today": 17615,
-    "new_this_week": 17817,
-    "new_this_month": 23667,
+    "total_members": 10690,
+    "new_today": 2,
+    "new_this_week": 2,
+    "new_this_month": 5737,
     "by_association": {
       "anacofi": 3243,
       "cncef": 4829,
       "cncgp": 2623,
       "ucgp": 66,
-      "leaders_league": 36
+      "leaders_league": 36,
+      "registre": 2
     },
     "by_activity": {
-      "CIF": 25414,
+      "CIF": 7464,
       "COA": 4127,
       "IOBSP": 1873,
       "Immobilier": 941
     },
     "by_department": {
-      "75": 4691,
-      "92": 1375,
-      "69": 1221,
-      "33": 1010,
-      "13": 948,
-      "31": 925,
-      "78": 875,
-      "06": 788,
-      "59": 738,
-      "44": 731,
-      "34": 645,
-      "94": 616,
-      "77": 494,
-      "38": 490,
-      "67": 488,
-      "83": 455,
-      "35": 454,
-      "91": 445,
-      "95": 399,
-      "93": 392
+      "75": 1861,
+      "69": 579,
+      "92": 490,
+      "31": 434,
+      "33": 429,
+      "13": 391,
+      "44": 334,
+      "06": 318,
+      "78": 299,
+      "34": 267,
+      "59": 242,
+      "38": 241,
+      "67": 203,
+      "37": 191,
+      "94": 187,
+      "83": 183,
+      "35": 170,
+      "64": 147,
+      "77": 130,
+      "21": 118
     },
-    "total_departments": 109
+    "total_departments": 100
   },
   "members": [
     {
@@ -38331,6 +38332,61 @@
         "categorie_entreprise": "PME",
         "naf": "66.19B"
       }
+    },
+    {
+      "id": "cgp_7dba105bf5",
+      "company_name": "ALPY GESTION",
+      "company_name_normalized": "alpy gestion",
+      "siren": "103634739",
+      "orias_number": "",
+      "address": {
+        "street": "17 RUE FEUTRIER 75018 PARIS",
+        "postal_code": "75018",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "PAUL DAVID",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "YANN LE BLANC",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "ANTOINE TILLET",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-02",
+      "last_seen": "2026-06-02",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103634739"
+      },
+      "creation_date": "2026-02-27"
     },
     {
       "id": "cgp_14788a8d78",
@@ -96635,6 +96691,55 @@
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
       }
+    },
+    {
+      "id": "cgp_67f5496d00",
+      "company_name": "BLACKWELL FAMILY OFFICE",
+      "company_name_normalized": "blackwell family office",
+      "siren": "104453550",
+      "orias_number": "",
+      "address": {
+        "street": "49 RUE DE PONTHIEU 75008 PARIS",
+        "postal_code": "75008",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "JÉRÉMY BLACKWELL",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "FRANCK MOUCHEL",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-02",
+      "last_seen": "2026-06-02",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104453550"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_080152a16b",
