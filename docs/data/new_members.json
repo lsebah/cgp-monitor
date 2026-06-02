@@ -1,10 +1,10 @@
 {
   "last_updated": "2026-06-02",
-  "count": 2,
+  "count": 200,
   "new_members": [
     {
-      "id": "cgp_7dba105bf5",
-      "company_name": "ALPY GESTION",
+      "id": "cgp_e783c081eb",
+      "company_name": "CAFPI",
       "city": "PARIS",
       "department": "75",
       "activities": [
@@ -18,10 +18,2980 @@
       "email": ""
     },
     {
-      "id": "cgp_67f5496d00",
-      "company_name": "BLACKWELL FAMILY OFFICE",
+      "id": "cgp_80829fce01",
+      "company_name": "SYF (FINANCE CONSEIL) (FINANCE CONSEIL)",
       "city": "PARIS",
       "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9d7d0aaf72",
+      "company_name": "CENTRE DE CONSEIL ET DE SERVICE -CCS",
+      "city": "NANTES",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e0400523ce",
+      "company_name": "CREDIT SOCIAL FONCTIONNAIRES (CSF)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0aecbd9977",
+      "company_name": "FIDUCIAL CONSEIL EN ABREGE FINANCIAL",
+      "city": "COURBEVOIE",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b4a9fa054b",
+      "company_name": "AVICAP",
+      "city": "MEYLAN",
+      "department": "38",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5bfeb3ad92",
+      "company_name": "ROMAIN CLAPIER",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dc12c5a767",
+      "company_name": "APOLLINE (GROUPE APOLLINE COURTAGE & PATRIMOINE)",
+      "city": "LONS-LE-SAUNIER",
+      "department": "39",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5a85265582",
+      "company_name": "GR2SA2 (GR2SA2)",
+      "city": "LONS-LE-SAUNIER",
+      "department": "39",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_119249f89a",
+      "company_name": "SUNTOUR",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5e8d4b9647",
+      "company_name": "CONSEILS, ETUDES FINANCIERES, REALISATIONS, NEGOCE, C.E.R.N. (CERN)",
+      "city": "MISERIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_aed1b3638a",
+      "company_name": "LNC FINANCES (LNC FINANCES)",
+      "city": "RAMASSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f390b50c55",
+      "company_name": "CREDIT GAGNANT",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d19c42f992",
+      "company_name": "FIVE PATRIMOINE (MON-TAUX.COM)",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d46383089e",
+      "company_name": "MAURICE EVRARD",
+      "city": "JUJURIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2a2617c7cf",
+      "company_name": "DYNA FINANCEMENT (DYNAPRET)",
+      "city": "OULLINS-PIERRE-BENITE",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a251166ce6",
+      "company_name": "ACTIF COURTAGE (ACTIF COURTAGE) (AC)",
+      "city": "CERTINES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f9819e9035",
+      "company_name": "VR FINANCES",
+      "city": "PREVESSIN-MOENS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_985b6a2566",
+      "company_name": "SOCODE (IMMOPRET)",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8ad1f11136",
+      "company_name": "ANNIE PRA",
+      "city": "BOURG-SAINT-CHRISTOPHE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d3c48baa42",
+      "company_name": "MILLIEN DIDIER (NEGOCIATION DE TAUX.COM)",
+      "city": "VIC-LA-GARDIOLE",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_283ade60dd",
+      "company_name": "SARL ALTERENV",
+      "city": "MACON",
+      "department": "71",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2b959f7fa6",
+      "company_name": "AMANDINE DULLIN (AD EXPERTISE PATRIMONIALE)",
+      "city": "SAINT-GERMAIN-LES-PAROISSES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e4ebdb7a13",
+      "company_name": "FLORENCE CHRETIEN",
+      "city": "VILLIEU-LOYES-MOLLON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c15e0f5a4f",
+      "company_name": "NS CONSEIL (NAU COURTIER CONSEIL)",
+      "city": "CHAMBERY",
+      "department": "73",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_51ae22f29d",
+      "company_name": "VICTORIA ARONIAN (NEGOPRETS)",
+      "city": "VALSERHONE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c449a93275",
+      "company_name": "ROSIOL (ROSIOL SARL)",
+      "city": "VERSAILLEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e2ad1d6845",
+      "company_name": "JEAN CODINA",
+      "city": "OYONNAX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4f28c5c01b",
+      "company_name": "BERNARD MARQUE",
+      "city": "MONTLUEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_49437d33ee",
+      "company_name": "AURELIEN COFFY (ORIENTIS CONSEIL ET PATRIMOINE)",
+      "city": "SAINT-DIDIER-DE-FORMANS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c53c4e3768",
+      "company_name": "FRANCOIS-MARIE MONNET",
+      "city": "CHEVILLARD",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2831d30dd2",
+      "company_name": "BASSEVILLE FINANCES",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7d40b92190",
+      "company_name": "COM DEP AIDE LOGEMENT DE L AIN",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1cb2eec138",
+      "company_name": "LAURE ALBERTINI (LAURE ALBERTINI)",
+      "city": "BEAUREGARD",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fd76584044",
+      "company_name": "BANQUIMMO",
+      "city": "DECINES-CHARPIEU",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_542e77c9e2",
+      "company_name": "MAUDAM",
+      "city": "SAINT-JULIEN-SUR-REYSSOUZE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a8c9f2e4ee",
+      "company_name": "THOMAS LIBESKIND (LIBESKIND INVESTISSEMENTS)",
+      "city": "GORREVOD",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_641a31ab1e",
+      "company_name": "SEP PREVERT",
+      "city": "PREVESSIN-MOENS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_73775dcc65",
+      "company_name": "ALEXANDRE MARTINS ANTUNES",
+      "city": "MIRIBEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_58d106652e",
+      "company_name": "YOANN PIROUX",
+      "city": "JASSERON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_cc0db969ef",
+      "company_name": "KARIM DAOD NATHOO",
+      "city": "REPLONGES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_80b44bc404",
+      "company_name": "BETA (VOTRE FINANCEMENT PRO COURTAGE, VOTRE ASSURANCE PRO)",
+      "city": "CONFRANCON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_05078690f3",
+      "company_name": "VIRGILE KUHNEL",
+      "city": "LA BOISSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_bfa90b5bbc",
+      "company_name": "ATP CONSEILS & PATRIMOINE (ATP CONSEILS & PATRIMOINE)",
+      "city": "BELMONT-TRAMONET",
+      "department": "73",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e682f96d15",
+      "company_name": "KAREEN BRAS (COLLOMB)",
+      "city": "MACON",
+      "department": "71",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b1d282a4ce",
+      "company_name": "CORINNE METZ (CHAPUY)",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f87e537891",
+      "company_name": "JEREMY BOCQUEREAU",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7ad2c2e2e1",
+      "company_name": "OSAGZOLO",
+      "city": "CHATILLON-SUR-CHALARONNE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_436b5e16bf",
+      "company_name": "C&C FINANCES ET CONSULTING",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_07df7d5d80",
+      "company_name": "ROBERT LEONARD SHEEHY",
+      "city": "THOIRY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_86a302e8e6",
+      "company_name": "NICOLAS GUALDIERI",
+      "city": "MONTREAL-LA-CLUSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_54e76aeb39",
+      "company_name": "LIONEL BARRACHINA",
+      "city": "VILLIEU-LOYES-MOLLON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6c40037424",
+      "company_name": "DB CONSEIL",
+      "city": "BLYES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_553d6a9186",
+      "company_name": "AKTIO",
+      "city": "SAINT-DIDIER-DE-FORMANS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_111dd0b051",
+      "company_name": "LC CONSEIL PRO (LC CONSEIL PRO) (LCCP)",
+      "city": "PERONNAS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_997b678d16",
+      "company_name": "DSDB FINANCE (DSDB FINANCE)",
+      "city": "CIVRIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_025cb636e4",
+      "company_name": "ALEXANDRE CORTINOVIS (ACO CAPITAL)",
+      "city": "VIEU-D'IZENAVE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_839e663582",
+      "company_name": "PIERRE GAYET",
+      "city": "SAINT-DIDIER-DE-FORMANS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3378cdbc49",
+      "company_name": "CREDIT DE L'AIN",
+      "city": "VILLIEU-LOYES-MOLLON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_92619184d0",
+      "company_name": "ALEXANDRE PONS (OPTIM'BANK)",
+      "city": "PERON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_522017a7b0",
+      "company_name": "JEAN-CHRISTOPHE NALLET (NALLET JEAN-CHRISTOPHE)",
+      "city": "VIRIAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_521cdd2966",
+      "company_name": "ALD CONSEILS 71",
+      "city": "SAINT-LAURENT-SUR-SAONE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ffa88a093e",
+      "company_name": "HORIZON CARM",
+      "city": "VALSERHONE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_af53957bfe",
+      "company_name": "AMANDINE BRIN (VIALE)",
+      "city": "OYTIER-SAINT-OBLAS",
+      "department": "38",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7d0c0ab052",
+      "company_name": "GEOFFROY REY-COQUAIS (GEOFFROY) (GEOFFROY REY-COQUAIS)",
+      "city": "BEYNOST",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_af1a504d96",
+      "company_name": "REDICIO",
+      "city": "REYRIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_623ce6cd33",
+      "company_name": "LOUIS BERNARD (L&L FINANCES)",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6af63bbce1",
+      "company_name": "AB COURTAGE",
+      "city": "MONTAGNAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_27edd7bd1e",
+      "company_name": "MGMTX",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_aa8fe2247d",
+      "company_name": "KEY COURTAGE",
+      "city": "BELIGNEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b379f910fc",
+      "company_name": "LOUISSEN CONSEILS (LOUISSEN CONSEILS)",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_01f4c4d8d9",
+      "company_name": "SCM CONSEIL",
+      "city": "LOYETTES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_192a60bfc6",
+      "company_name": "SXBP PATRIMOINE",
+      "city": "POLLIAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c25cc8b564",
+      "company_name": "EXPECTANS EXPECTAVI (HOLDING SAS EXPECTANS EXPECTAVI)",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_87ab66ad9b",
+      "company_name": "MARIELLE GURNEL (LACROIX)",
+      "city": "THOIRY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2b97a8d760",
+      "company_name": "CHARLOTTE GANEM",
+      "city": "BEAUREGARD",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fc04d7f775",
+      "company_name": "FH SCI",
+      "city": "LOZANNE",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0badcfefe4",
+      "company_name": "LPLG COURTAGES",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_581d533b10",
+      "company_name": "HERITAGE FINANCIAL CONSULTING",
+      "city": "MIRIBEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e5f39d0fb9",
+      "company_name": "JSGINVEST",
+      "city": "GEX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_39c02a43bd",
+      "company_name": "PIERRE-LUCAS POBEL",
+      "city": "MACON",
+      "department": "71",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d2839f183c",
+      "company_name": "AURELIE HENRIQUES (FREULET) (LES CREDITS D'ORE)",
+      "city": "CHATILLON-SUR-CHALARONNE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2bedc61d46",
+      "company_name": "LAPIERRE COURTAGE",
+      "city": "MASSIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5fc6592600",
+      "company_name": "PROFINELA (PROFINELA)",
+      "city": "MASSIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_cfd55ea590",
+      "company_name": "MM COURTAGE (NEGOPRETS)",
+      "city": "GEX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b83acc0c43",
+      "company_name": "GWENDOLINE MONCEL (MAGGIAR)",
+      "city": "PONT-DE-VEYLE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_199d92c4f3",
+      "company_name": "STEPHANE VALLEE",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7e141401a9",
+      "company_name": "SOCIETE DE COURTAGE DU VAL DE SAONE",
+      "city": "SAINT-LAURENT-SUR-SAONE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_203b54052c",
+      "company_name": "JEAN PAOLI",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f061f05ce9",
+      "company_name": "THOMAS MUNOZ (THOMAS MUNOZ)",
+      "city": "MEXIMIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a0fe3ec7ff",
+      "company_name": "JEAN ANCENAY",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_31471ba848",
+      "company_name": "PROXITAUX.COM",
+      "city": "SERRIERES-SUR-AIN",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f9c797a2b5",
+      "company_name": "SOCIETE DE PARTICIPATIONS FINANCIERES CHENEVARD",
+      "city": "THIL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3f9c25269d",
+      "company_name": "JUDITH LELEYTER (MARTINS PAULOS) (BREVET JUDITH)",
+      "city": "VILLEMOTIER",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ab8dc0e5d8",
+      "company_name": "ARNAUD WALLE",
+      "city": "PREVESSIN-MOENS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4c78d63fad",
+      "company_name": "PATRIMOPTI",
+      "city": "GUZARGUES",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_cdef47211d",
+      "company_name": "EURL GRANFI",
+      "city": "MEZERIAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_68fb309014",
+      "company_name": "MONT BLANC PATRIMOINE (MB PATRIM)",
+      "city": "SAINT-GENIS-POUILLY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a6e1757d93",
+      "company_name": "SANDRINE NORMAND",
+      "city": "AMBERIEU-EN-BUGEY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d1d58eb7b3",
+      "company_name": "NICOLAS PUYDEBOIS",
+      "city": "CHATILLON-SUR-CHALARONNE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b1a3515021",
+      "company_name": "EXPERTISE FINANCEMENT (E.F)",
+      "city": "ROYAN",
+      "department": "17",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a7cf6a4ea4",
+      "company_name": "CHANTAL PELLETIER (CONSULT'IMMO FINANCE)",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_bcc6e3adb7",
+      "company_name": "AINVESTYS",
+      "city": "ANNECY",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dfd17d78d0",
+      "company_name": "DAVID DURAND ROJON",
+      "city": "AMBERIEU-EN-BUGEY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b37e88eee1",
+      "company_name": "AMBARO PATRIMOINE",
+      "city": "OYONNAX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e5362b1b6b",
+      "company_name": "CLAIRE JANIN",
+      "city": "CHALLEX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9adf65aa70",
+      "company_name": "AD FINANCEMENTS",
+      "city": "FETERNES",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dab1714106",
+      "company_name": "CHOSSON COURTAGE & PATRIMOINE",
+      "city": "VILLIEU-LOYES-MOLLON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ebeac7f565",
+      "company_name": "RACHID CHERIF",
+      "city": "BEYNOST",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d880cdce01",
+      "company_name": "PAULINE DEFAUT",
+      "city": "SAVIGNY-LES-BEAUNE",
+      "department": "21",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_37368eee27",
+      "company_name": "SARL MJL",
+      "city": "MONTLUEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d167e48751",
+      "company_name": "LL CONSEILS",
+      "city": "THIL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_aa10770a4d",
+      "company_name": "PITAXES 360",
+      "city": "THOIRY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_801ec17eb0",
+      "company_name": "ANTHONY ARCIDIACO (ANTHO INVESTISSEMENT)",
+      "city": "AMBERIEU-EN-BUGEY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_83fc0e0303",
+      "company_name": "RD CONSEIL & PATRIMOINE",
+      "city": "VILLARS-LES-DOMBES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_eefdd3d4a2",
+      "company_name": "BOUCHRA SAID",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ff71279f48",
+      "company_name": "JUSTIN GILLET",
+      "city": "CHAVEYRIAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4f8e192fb3",
+      "company_name": "KAYIL INNOV INTERNATIONAL & GLOBAL INVESTMENT (HIROZ) (K.I.I.N.G INVEST)",
+      "city": "ARENTHON",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b595687918",
+      "company_name": "LEON EMES (ECT SERVICES)",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_726567626b",
+      "company_name": "ANTOINE GALAS",
+      "city": "SAINT-CYR-SUR-MENTHON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_900e41d267",
+      "company_name": "ETIENNE MELINAND (ETIENNE MELINAND COURTAGE)",
+      "city": "CERTINES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2f1a5e5c14",
+      "company_name": "CAPITAL COURTAGE",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7388f43ecc",
+      "company_name": "NEGOPRETS",
+      "city": "SAINT-GENIS-POUILLY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1018dc741e",
+      "company_name": "CLE PATRIMOINE",
+      "city": "L'ABERGEMENT-CLEMENCIAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ae24bd9bf3",
+      "company_name": "AUDREY BRECHET",
+      "city": "MEXIMIEUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6bd5afe0fe",
+      "company_name": "ISSAM LABIDI (ADICCT SERVICES)",
+      "city": "SAINT-DIDIER-DE-FORMANS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_75bfddc890",
+      "company_name": "THOMAS RAULIN (TRC IMMO)",
+      "city": "CHAZEY-SUR-AIN",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dbe31cf9f9",
+      "company_name": "GABRIEL GOMES (GABRIEL GOMES)",
+      "city": "MIRIBEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a769f6b697",
+      "company_name": "EDENWISE",
+      "city": "VALSERHONE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_02e228f495",
+      "company_name": "AC CONSILIUM",
+      "city": "CHATILLON-SUR-CHALARONNE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_682cdcebaf",
+      "company_name": "VITRUVE",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1b2dcabd00",
+      "company_name": "REVES IMMO",
+      "city": "JASSERON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_be165e13c4",
+      "company_name": "HB SINIA",
+      "city": "ECHALLON",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_af1e1d6dad",
+      "company_name": "ALEXIS COUTIER",
+      "city": "MEILLONNAS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f51807cdc1",
+      "company_name": "MAXELLIA CONSEIL",
+      "city": "MASSIGNIEU-DE-RIVES",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_973322387f",
+      "company_name": "BENOIT FERRER TRICAUD (OPTIMEA PATRIMOINE)",
+      "city": "VERSONNEX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_bce9c15224",
+      "company_name": "OSF OLIVIER SEGUIN FINANCE",
+      "city": "LAGNIEU",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ed4a2cc74d",
+      "company_name": "ELVINA MOUREAU (ELVINA MOUREAU)",
+      "city": "ATTIGNAT",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_94eae1cda8",
+      "company_name": "QUENTIN LOCHE",
+      "city": "CESSY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_eb0d7cda3a",
+      "company_name": "CLEMENT BONNEFOY (BONNEFOY CLEMENT)",
+      "city": "TREVOUX",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b760e66eba",
+      "company_name": "LS & PARTNERS",
+      "city": "DIVONNE-LES-BAINS",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e5e23f8671",
+      "company_name": "AEON COURTAGE",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0e1b8540a6",
+      "company_name": "DOM SEYSSEL FINANCES",
+      "city": "SEYSSEL",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d89ad81925",
+      "company_name": "CARATERRA GROUPE",
+      "city": "SAINT-ANDRE-DE-CORCY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e21987f9e7",
+      "company_name": "AS CONSEILS",
+      "city": "AMBERIEU-EN-BUGEY",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3537833da8",
+      "company_name": "SOFIGEM",
+      "city": "LYON",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_cb68ef3f74",
+      "company_name": "SOCIETE PARTICIPATIONS DE LABORATOIRES",
+      "city": "BOURG-EN-BRESSE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_360c84fc81",
+      "company_name": "OSMOSE FINANCES MONEY CASH (O.F.)",
+      "city": "FERNEY-VOLTAIRE",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_456a31c058",
+      "company_name": "EF CONSEIL",
+      "city": "ANTHON",
+      "department": "38",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_27f915049d",
+      "company_name": "STEPHANIE PERNET",
+      "city": "SIMANDRE-SUR-SURAN",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_215264a115",
+      "company_name": "GAUTHIER PRETS CONSEILS",
+      "city": "SAINT-ELOI",
+      "department": "01",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0c60108909",
+      "company_name": "LEA FORICHON",
+      "city": "ROSNY-SOUS-BOIS",
+      "department": "[N",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a675c50efe",
+      "company_name": "JBA FINANCES",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7569e7b79e",
+      "company_name": "FINVENS (FINVENS WEB) (CATF)",
+      "city": "TOULOUSE",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e3e706b847",
+      "company_name": "MOINET COURTAGE (MOINEO)",
+      "city": "CHARLEVILLE-MEZIERES",
+      "department": "08",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_935fc0bc0b",
+      "company_name": "MASTAU IMMO (CCINVEST)",
+      "city": "NARBONNE",
+      "department": "11",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c98de86c7a",
+      "company_name": "C.A.P 02",
+      "city": "MAUBEUGE",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_263aa31afb",
+      "company_name": "VS COURTAGE",
+      "city": "MEAUX",
+      "department": "77",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e4853de7ce",
+      "company_name": "EUROCOURTAGE3",
+      "city": "SAINT-QUENTIN",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a162bd111f",
+      "company_name": "SAS AFIMMO",
+      "city": "RUMILLY-EN-CAMBRESIS",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_059af013b0",
+      "company_name": "NICOLAS LEQUEUX (CID CONSEILS)",
+      "city": "BRUGES",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3a4ed6ee31",
+      "company_name": "JPAC FINANCEMENT",
+      "city": "SOISSONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_702a80b008",
+      "company_name": "MCV CONSULTING",
+      "city": "REIMS",
+      "department": "51",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_250c931395",
+      "company_name": "ARNAUD LENGLET",
+      "city": "SOISSONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3b00d36972",
+      "company_name": "MAXIME SERT",
+      "city": "TROSLY-LOIRE",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1f7b16fcd1",
+      "company_name": "NEOVYA EXPERTISE (NEOVYA)",
+      "city": "SISSY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0c1ca058ee",
+      "company_name": "ALEXANDRE MORIN",
+      "city": "BENAY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d74df0434c",
+      "company_name": "PHILIPPE DELLIS",
+      "city": "MONTBREHAIN",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7d08cc6c1e",
+      "company_name": "PEGGY DROUILLET",
+      "city": "CROUY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_588e72f373",
+      "company_name": "AISNE COURTAGE (AISNE COURTAGE)",
+      "city": "LAON",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_aa079fa837",
+      "company_name": "R.F.C. (EURL)",
+      "city": "BUIRE",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_21f7c8fea0",
+      "company_name": "LENS COURTAGE CONSEIL",
+      "city": "LA VALLEE-MULATRE",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5d2cd2c077",
+      "company_name": "HAMZA EL ASSAD",
+      "city": "NEUILLY SUR MARNE",
+      "department": "93",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_07f64acbff",
+      "company_name": "ORLANDO ASSET (ORLANDO ASSET)",
+      "city": "CHATEAU-THIERRY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e9b8a3249f",
+      "company_name": "LAETITIA SELLIER (PAILLER) (HARMONIE FINANCEMENT)",
+      "city": "CHIVY-LES-ETOUVELLES",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_eef9fa5082",
+      "company_name": "FLORENT TOUSSAINT",
+      "city": "BRAINE",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_89cb4322c3",
+      "company_name": "EURL VAT FINANCES",
+      "city": "SINCENY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ba52794690",
+      "company_name": "CHRISTOPHE NIEN",
+      "city": "SAINT-QUENTIN",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c7898e0dc4",
+      "company_name": "SOLUTIS",
+      "city": "GLISY",
+      "department": "80",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6836fe4219",
+      "company_name": "SC LEOMAX",
+      "city": "BAYONNE",
+      "department": "64",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1ff8d14a27",
+      "company_name": "DIDIER JACQUET",
+      "city": "LAON",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fa02c351e8",
+      "company_name": "CT2LH",
+      "city": "AMIGNY ROUY",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_19d4fb7fd6",
+      "company_name": "MAXIME ALVES",
+      "city": "FLAVY-LE-MARTEL",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c236b2ac9b",
+      "company_name": "LUKEBA MALA NDA",
+      "city": "SOISSONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2b16dd038b",
+      "company_name": "ARMADA CAPITAL",
+      "city": "SAINT-QUENTIN",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f50aabf98e",
+      "company_name": "ELIS PATRIMOINE",
+      "city": "SOISSONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3907edba51",
+      "company_name": "CAMILLE GARIN",
+      "city": "SOISSONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4ffdeae630",
+      "company_name": "AL PATRIMOINE",
+      "city": "FERE-EN-TARDENOIS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ab320a0eb8",
+      "company_name": "LAURENT GERARDIN (LAURENT GERARDIN)",
+      "city": "REIMS",
+      "department": "51",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_11b5e91f11",
+      "company_name": "LE FINANCEMENT",
+      "city": "OUTREAU",
+      "department": "62",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5fdb448b1d",
+      "company_name": "NATHALIE LESAGE (ELLE M EN PIERRES)",
+      "city": "PAULE",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_2f90f5c734",
+      "company_name": "EURO COURTAGE (MEILLEURTAUX.COM)",
+      "city": "LILLE",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8c97f6276d",
+      "company_name": "JLB CREDIMMO",
+      "city": "SAINT-QUENTIN",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0d2dc047d3",
+      "company_name": "BRUNO PEQUIN",
+      "city": "LES SEPTVALLONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_760a795c2a",
+      "company_name": "EUROCOURTAGE 6 (MEILLEURTAUX.COM)",
+      "city": "LAON",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6db3f01247",
+      "company_name": "THOMAS MATELOT (THOMAS MATELOT CONSULTING)",
+      "city": "CUISY-EN-ALMONT",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_deb3e59dcf",
+      "company_name": "VICTOR DRUON (NEXORYA)",
+      "city": "SAINT-PAUL",
+      "department": "974",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_07d6c29aa3",
+      "company_name": "LES MAITRE-FINANCEURS",
+      "city": "LES SEPTVALLONS",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d2e525f75d",
+      "company_name": "NSL FELIX",
+      "city": "NANTEUIL-LES-MEAUX",
+      "department": "77",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre"
+      ],
+      "first_seen": "2026-06-02",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7bb37eda0f",
+      "company_name": "TRANNIN",
+      "city": "SAINT-QUENTIN",
+      "department": "02",
       "activities": [
         "CIF"
       ],

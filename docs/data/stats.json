@@ -1,46 +1,46 @@
 {
-  "total_members": 10825,
-  "new_today": 2,
-  "new_this_week": 2,
-  "new_this_month": 5852,
+  "total_members": 11025,
+  "new_today": 200,
+  "new_this_week": 202,
+  "new_this_month": 6052,
   "by_association": {
     "anacofi": 3243,
     "cncef": 4829,
     "cncgp": 2623,
     "ucgp": 181,
+    "registre": 202,
     "leaders_league": 36,
-    "registre": 2,
     "affo": 20
   },
   "by_activity": {
-    "CIF": 7599,
+    "CIF": 7799,
     "COA": 4127,
     "IOBSP": 1873,
     "Immobilier": 941
   },
   "by_department": {
-    "75": 1873,
-    "69": 581,
-    "92": 490,
-    "31": 437,
-    "33": 431,
+    "75": 1877,
+    "69": 585,
+    "92": 491,
+    "31": 438,
+    "33": 432,
     "13": 396,
-    "44": 339,
+    "44": 340,
     "06": 320,
     "78": 299,
-    "34": 269,
-    "59": 246,
-    "38": 243,
+    "34": 271,
+    "59": 249,
+    "38": 246,
     "67": 204,
+    "01": 198,
     "37": 193,
     "94": 188,
     "83": 186,
     "35": 174,
-    "64": 147,
-    "77": 130,
-    "21": 119
+    "64": 148,
+    "77": 132
   },
-  "total_departments": 100,
+  "total_departments": 101,
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -62,7 +62,13 @@
       "status": "success",
       "added": 2,
       "timestamp": "2026-06-02T09:43:26.032952+00:00"
+    },
+    "registre_naf_discovery": {
+      "status": "success",
+      "added": 200,
+      "naf": "66.19B",
+      "timestamp": "2026-06-02T09:50:26.421125+00:00"
     }
   },
-  "last_updated": "2026-06-02T09:43:26.032952+00:00"
+  "last_updated": "2026-06-02T09:50:26.421125+00:00"
 }
