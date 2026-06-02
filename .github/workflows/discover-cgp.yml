@@ -1,8 +1,6 @@
 name: Discover CGP (NAF 66.19B, official registry)
 
 on:
-  schedule:
-    - cron: '0 2 * * *'   # Daily 02:00 UTC - discover new CGP firms (no login)
   workflow_dispatch:
     inputs:
       cap:
