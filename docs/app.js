@@ -1517,34 +1517,40 @@ async function folkPushContact(member) {
     const key = getFolkApiKey();
     if (!key || !member) return;
     try {
-        const payload = {
-            name: member.company_name || '',
-            phones: member.phone ? [{ value: member.phone, label: 'Work' }] : [],
-            emails: member.email ? [{ value: member.email, label: 'Work' }] : [],
-        };
-        if (member.website) payload.urls = [{ value: member.website.startsWith('http') ? member.website : 'https://' + member.website, label: 'Website' }];
+        const payload = { name: member.company_name || '' };
+        if (member.phone) payload.phones = [member.phone];
+        if (member.email) payload.emails = [member.email];
+        if (member.website) {
+            const url = member.website.startsWith('http') ? member.website : 'https://' + member.website;
+            payload.urls = [url];
+        }
         if (member.address) {
             const a = member.address;
-            payload.address = {
+            payload.addresses = [{
                 city: a.city || '',
                 postalCode: a.postal_code || '',
                 country: 'France',
-            };
+            }];
         }
-        const r = await fetch(FOLK_API_BASE + '/people', {
+        const r = await fetch(FOLK_API_BASE + '/companies', {
             method: 'POST',
             headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
         });
         if (r.ok) {
             console.info(`[Folk] Pushed ${member.company_name}`);
+            return true;
         } else if (r.status === 409) {
             console.info(`[Folk] ${member.company_name} already exists`);
+            return true;
         } else {
-            console.warn(`[Folk] Push failed for ${member.company_name}: HTTP ${r.status}`);
+            const err = await r.text().catch(() => '');
+            console.warn(`[Folk] Push failed for ${member.company_name}: HTTP ${r.status}`, err);
+            return false;
         }
     } catch (e) {
         console.warn(`[Folk] Push error for ${member.company_name}:`, e);
+        return false;
     }
 }
 
