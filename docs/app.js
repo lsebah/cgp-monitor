@@ -3,12 +3,14 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '7';
+const APP_VERSION = '11';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
 const LEGACY_CONTACTED_KEY = 'cgp-contacted';
 const SYNC_CONFIG_KEY = 'cgp-sync-config'; // { gistId, token }
+const FOLK_API_KEY = 'cgp-folk-api-key';  // Folk CRM API key (localStorage)
+const FOLK_API_BASE = 'https://api.folk.app/v1';
 const PAGE_SIZE = 50;
 
 const STATUS_LABELS = {
@@ -83,12 +85,17 @@ function getFolkMap() {
 function isInFolk(id) { return !!getFolkMap()[id]; }
 function toggleFolk(id) {
     const map = getFolkMap();
-    if (map[id]) delete map[id];
-    else map[id] = todayISO();
+    const adding = !map[id];
+    if (adding) map[id] = todayISO();
+    else delete map[id];
     localStorage.setItem(FOLK_KEY, JSON.stringify(map));
     updateStats();
     refreshCardInPlace(id);
     scheduleCloudSave();
+    if (adding && getFolkApiKey()) {
+        const m = allMembers.find(x => x.id === id);
+        if (m) folkPushContact(m);
+    }
 }
 
 // Replace only the affected card DOM (in all visible tabs) instead of
@@ -1459,6 +1466,110 @@ window.closeModal = closeModal;
 window.openSyncSettings = openSyncSettings;
 window.saveSyncSettings = saveSyncSettings;
 window.clearSyncSettings = clearSyncSettings;
+
+// ============================================================
+// FOLK CRM INTEGRATION (API key in localStorage, never on GitHub)
+// ============================================================
+function getFolkApiKey() { return localStorage.getItem(FOLK_API_KEY) || ''; }
+function setFolkApiKey(key) { localStorage.setItem(FOLK_API_KEY, key); }
+
+function openFolkSettings() {
+    document.getElementById('folkApiKeyInput').value = getFolkApiKey();
+    document.getElementById('folkModal').style.display = 'flex';
+}
+
+function saveFolkSettings() {
+    const key = document.getElementById('folkApiKeyInput').value.trim();
+    setFolkApiKey(key);
+    closeModal('folkModal');
+    const indicator = document.getElementById('folkSyncStatus');
+    if (indicator) indicator.textContent = key ? 'Folk OK' : 'Folk Off';
+    if (indicator) indicator.style.color = key ? 'var(--accent-green)' : 'var(--text-muted)';
+    if (key) testFolkConnection(key);
+}
+
+function clearFolkSettings() {
+    if (!confirm('Effacer la cle API Folk ?')) return;
+    localStorage.removeItem(FOLK_API_KEY);
+    closeModal('folkModal');
+    const indicator = document.getElementById('folkSyncStatus');
+    if (indicator) { indicator.textContent = 'Folk Off'; indicator.style.color = 'var(--text-muted)'; }
+}
+
+async function testFolkConnection(key) {
+    try {
+        const r = await fetch(FOLK_API_BASE + '/groups', {
+            headers: { 'Authorization': 'Bearer ' + key }
+        });
+        const indicator = document.getElementById('folkSyncStatus');
+        if (r.ok) {
+            if (indicator) { indicator.textContent = 'Folk OK'; indicator.style.color = 'var(--accent-green)'; }
+        } else {
+            if (indicator) { indicator.textContent = 'Folk Err'; indicator.style.color = 'var(--accent-red)'; }
+            console.warn('Folk API test failed:', r.status);
+        }
+    } catch (e) {
+        console.warn('Folk API test error:', e);
+    }
+}
+
+async function folkPushContact(member) {
+    const key = getFolkApiKey();
+    if (!key || !member) return;
+    try {
+        const payload = {
+            name: member.company_name || '',
+            phones: member.phone ? [{ value: member.phone, label: 'Work' }] : [],
+            emails: member.email ? [{ value: member.email, label: 'Work' }] : [],
+        };
+        if (member.website) payload.urls = [{ value: member.website.startsWith('http') ? member.website : 'https://' + member.website, label: 'Website' }];
+        if (member.address) {
+            const a = member.address;
+            payload.address = {
+                city: a.city || '',
+                postalCode: a.postal_code || '',
+                country: 'France',
+            };
+        }
+        const r = await fetch(FOLK_API_BASE + '/people', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+        if (r.ok) {
+            console.info(`[Folk] Pushed ${member.company_name}`);
+        } else if (r.status === 409) {
+            console.info(`[Folk] ${member.company_name} already exists`);
+        } else {
+            console.warn(`[Folk] Push failed for ${member.company_name}: HTTP ${r.status}`);
+        }
+    } catch (e) {
+        console.warn(`[Folk] Push error for ${member.company_name}:`, e);
+    }
+}
+
+async function folkPushAll() {
+    const key = getFolkApiKey();
+    if (!key) { alert('Configurez votre cle API Folk d\'abord (bouton Folk dans le header)'); return; }
+    const folkMap = getFolkMap();
+    const ids = Object.keys(folkMap);
+    if (!ids.length) { alert('Aucun cabinet marque Folk. Cochez le toggle Folk sur les fiches a synchroniser.'); return; }
+    const members = ids.map(id => allMembers.find(m => m.id === id)).filter(Boolean);
+    if (!confirm(`Envoyer ${members.length} cabinet(s) vers Folk CRM ?`)) return;
+    let ok = 0, err = 0;
+    for (const m of members) {
+        try {
+            await folkPushContact(m);
+            ok++;
+        } catch { err++; }
+    }
+    alert(`Folk sync: ${ok} envoye(s), ${err} erreur(s)`);
+}
+
+window.openFolkSettings = openFolkSettings;
+window.saveFolkSettings = saveFolkSettings;
+window.clearFolkSettings = clearFolkSettings;
+window.folkPushAll = folkPushAll;
 
 // ============================================================
 // INIT

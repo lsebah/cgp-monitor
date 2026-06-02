@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=11">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -24,12 +24,13 @@
             <div class="header-right">
                 <div class="header-meta">
                     <div class="last-update" id="lastUpdate">Chargement...</div>
-                    <div class="sync-indicator"><span id="syncStatus">Offline</span></div>
+                    <div class="sync-indicator"><span id="syncStatus">Offline</span> | <span id="folkSyncStatus" style="cursor:pointer" onclick="openFolkSettings()">Folk Off</span></div>
                 </div>
                 <div class="header-links">
                     <button class="profile-link sync-btn" onclick="openSyncSettings()" title="Configurer la synchronisation multi-appareils">Sync</button>
-                    <button class="profile-link notify-btn" onclick="setupNotifications()">Notif</button>
-                    <a href="data/folk_import.csv" download class="profile-link export-btn">Export Folk</a>
+                    <button class="profile-link notify-btn" onclick="openFolkSettings()" title="Configurer Folk CRM">Folk</button>
+                    <button class="profile-link export-btn" onclick="folkPushAll()" title="Envoyer tous les Folk vers le CRM">Push Folk</button>
+                    <a href="data/folk_import.csv" download class="profile-link" style="border-color:var(--text-muted);color:var(--text-muted)">CSV</a>
                 </div>
             </div>
         </div>
@@ -292,13 +293,36 @@
         </div>
     </div>
 
+    <!-- Folk CRM Modal -->
+    <div id="folkModal" class="modal" style="display:none">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Folk CRM</h2>
+                <button class="modal-close" onclick="closeModal('folkModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="sync-note">Connectez votre CRM Folk pour synchroniser automatiquement les cabinets. Quand vous cochez le toggle Folk sur une fiche, elle est envoyee dans Folk.</p>
+                <label>
+                    Cle API Folk
+                    <input type="password" id="folkApiKeyInput" placeholder="FOLK..." autocomplete="off">
+                </label>
+                <p class="sync-note">La cle reste sur votre appareil (localStorage). <a href="https://www.folk.app" target="_blank">folk.app</a> &rarr; Settings &rarr; API &rarr; Generate Key</p>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-danger" onclick="clearFolkSettings()">Effacer</button>
+                <button class="modal-btn modal-btn-secondary" onclick="closeModal('folkModal')">Annuler</button>
+                <button class="modal-btn modal-btn-primary" onclick="saveFolkSettings()">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <p>CGP Monitor - Capital Management France</p>
         <p>Donnees: CNCGP, CNCEF, ANACOFI (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=12"></script>
+    <script src="app.js?v=11"></script>
     <script>
         // Register service worker with auto-update
         if ('serviceWorker' in navigator) {
