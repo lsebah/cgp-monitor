@@ -27,6 +27,7 @@
                     <div class="sync-indicator"><span id="syncStatus">Offline</span> | <span id="folkSyncStatus" style="cursor:pointer" onclick="openFolkSettings()">Folk Off</span></div>
                 </div>
                 <div class="header-links">
+                    <button class="profile-link" onclick="refreshData()" title="Recharger les donnees depuis le serveur" style="border-color:#4a9eff;color:#4a9eff;font-weight:700">&#x21bb; MAJ</button>
                     <button class="profile-link sync-btn" onclick="openSyncSettings()" title="Configurer la synchronisation multi-appareils">Sync</button>
                     <button class="profile-link notify-btn" onclick="openFolkSettings()" title="Configurer Folk CRM">Folk</button>
                     <button class="profile-link export-btn" onclick="folkPushAll()" title="Envoyer tous les Folk vers le CRM">Push Folk</button>

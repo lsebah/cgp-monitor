@@ -1579,4 +1579,42 @@ async function init() {
     await cloudLoad();
 }
 
+async function refreshData() {
+    const btn = document.querySelector('[onclick="refreshData()"]');
+    if (btn) { btn.textContent = '⏳'; btn.disabled = true; }
+    try {
+        // Clear service worker cache so fresh data is fetched
+        if ('caches' in window) {
+            const keys = await caches.keys();
+            await Promise.all(keys.map(k => caches.delete(k)));
+        }
+        // Reload data with cache-busting
+        const ts = Date.now();
+        const [membersResp, statsResp] = await Promise.all([
+            fetch('data/members.json?_=' + ts),
+            fetch('data/stats.json?_=' + ts),
+        ]);
+        if (membersResp?.ok) {
+            const data = await membersResp.json();
+            const rawMembers = data.members || [];
+            allMembers = rawMembers.filter(m => m.company_name && m.company_name.trim());
+            document.getElementById('statTotal').textContent = allMembers.length;
+            if (data.last_updated) {
+                const d = new Date(data.last_updated);
+                document.getElementById('lastUpdate').textContent =
+                    `Mis a jour: ${d.toLocaleDateString('fr-FR')} ${d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
+            }
+            updateStats();
+            renderCurrentTab();
+        }
+        if (btn) { btn.textContent = '✓ MAJ'; btn.style.color = 'var(--accent-green)'; btn.style.borderColor = 'var(--accent-green)'; }
+        setTimeout(() => { if (btn) { btn.textContent = '↻ MAJ'; btn.disabled = false; btn.style.color = '#4a9eff'; btn.style.borderColor = '#4a9eff'; } }, 2000);
+    } catch (e) {
+        console.warn('Refresh failed:', e);
+        if (btn) { btn.textContent = '✗ Erreur'; btn.style.color = 'var(--accent-red)'; }
+        setTimeout(() => { if (btn) { btn.textContent = '↻ MAJ'; btn.disabled = false; btn.style.color = '#4a9eff'; btn.style.borderColor = '#4a9eff'; } }, 3000);
+    }
+}
+window.refreshData = refreshData;
+
 init();
