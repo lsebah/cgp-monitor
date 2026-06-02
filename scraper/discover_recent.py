@@ -79,7 +79,9 @@ def build_member(e, today):
 def main():
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     now_iso = datetime.now(timezone.utc).isoformat()
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=DAYS)).strftime("%Y-%m-%d")
+    dt_cutoff = datetime.now(timezone.utc) - timedelta(days=DAYS)
+    cutoff = dt_cutoff.strftime("%Y-%m-%d")          # ISO, for client-side compare
+    cutoff_api = dt_cutoff.strftime("%d-%m-%Y")      # API expects DD-MM-YYYY
     log.info(f"Discovering NAF {NAF} firms created since {cutoff} (last {DAYS} days)")
 
     data = json.load(open(MEMBERS_PATH, encoding="utf-8"))
@@ -89,44 +91,65 @@ def main():
                 normalize_city(m.get("address", {}).get("city", ""))) for m in members}
 
     new_members = []
-    page = 1
-    while True:
-        j = api_get({
-            "activite_principale": NAF,
-            "etat_administratif": "A",
-            "date_creation_min": cutoff,
-            "page": page,
-            "per_page": 25,
-        })
-        time.sleep(0.25)
-        if not j:
-            break
-        results = j.get("results", [])
-        if not results:
-            break
-        for e in results:
-            cd = e.get("date_creation") or ""
-            if cd < cutoff:                      # safety: enforce window client-side
-                continue
-            siren = e.get("siren") or ""
-            name = e.get("nom_complet") or e.get("nom_raison_sociale") or ""
-            if not name:
-                continue
-            nn = normalize_name(name)
-            city = normalize_city((e.get("siege") or {}).get("libelle_commune") or "")
-            if siren in seen_siren or (nn, city) in seen_nc:
-                continue
-            m = build_member(e, today)
-            members.append(m)
-            new_members.append(m)
-            if siren:
-                seen_siren.add(siren)
-            seen_nc.add((nn, city))
-            log.info(f"  + {m['company_name']} (créé {cd}, SIREN {siren or '-'}, "
-                     f"{len(m['directors'])} dirigeant(s))")
-        if page >= (j.get("total_pages") or 1):
-            break
-        page += 1
+
+    def consider(e):
+        cd = e.get("date_creation") or ""
+        if cd < cutoff:                      # enforce window client-side
+            return
+        siren = e.get("siren") or ""
+        name = e.get("nom_complet") or e.get("nom_raison_sociale") or ""
+        if not name:
+            return
+        nn = normalize_name(name)
+        city = normalize_city((e.get("siege") or {}).get("libelle_commune") or "")
+        if siren in seen_siren or (nn, city) in seen_nc:
+            return
+        m = build_member(e, today)
+        members.append(m)
+        new_members.append(m)
+        if siren:
+            seen_siren.add(siren)
+        seen_nc.add((nn, city))
+        log.info(f"  + {m['company_name']} (créé {cd}, SIREN {siren or '-'}, "
+                 f"{len(m['directors'])} dirigeant(s))")
+
+    # 1. Fast path: national query with the date filter (DD-MM-YYYY).
+    probe = api_get({"activite_principale": NAF, "etat_administratif": "A",
+                     "date_creation_min": cutoff_api, "page": 1, "per_page": 25})
+    total = (probe or {}).get("total_results", 0)
+    log.info(f"National date-filtered query total_results = {total}")
+
+    if probe and 0 < total <= 3000:
+        # Filter honoured -> paginate the filtered set.
+        pages = min(probe.get("total_pages") or 1, 400)
+        for e in probe.get("results", []):
+            consider(e)
+        for page in range(2, pages + 1):
+            j = api_get({"activite_principale": NAF, "etat_administratif": "A",
+                         "date_creation_min": cutoff_api, "page": page, "per_page": 25})
+            time.sleep(0.2)
+            if not j or not j.get("results"):
+                break
+            for e in j["results"]:
+                consider(e)
+    else:
+        # Filter ignored -> reliable fallback: scan 66.19B department by department,
+        # keeping only firms created within the window.
+        log.info("Date filter not honoured; falling back to per-department scan.")
+        from config import DEPARTMENTS
+        for dept in sorted(DEPARTMENTS.keys()):
+            page = 1
+            while True:
+                j = api_get({"activite_principale": NAF, "etat_administratif": "A",
+                             "departement": dept, "page": page, "per_page": 25})
+                time.sleep(0.2)
+                if not j or not j.get("results"):
+                    break
+                for e in j["results"]:
+                    consider(e)
+                if page >= (j.get("total_pages") or 1):
+                    break
+                page += 1
 
     if not new_members:
         log.warning("No recently-created CGP firms missing. Nothing added.")
