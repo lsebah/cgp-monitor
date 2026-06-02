@@ -1,8 +1,6 @@
 name: ORIAS Discovery Update
 
 on:
-  schedule:
-    - cron: '0 3 * * *'   # Daily 03:00 UTC - fast ORIAS discovery + bounded enrichment
   workflow_dispatch:
 
 permissions:
