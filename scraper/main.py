@@ -21,7 +21,7 @@ from sources.cncef import scrape_cncef
 from sources.cncgp import scrape_cncgp
 from sources.anacofi import scrape_anacofi
 from sources.affo import scrape_affo
-from sources.missing_cgps import scrape_missing_cgps
+from sources.missing_cgps import scrape_orias_cgps
 from sources.enricher import batch_enrich_emails
 from merger import merge_all_sources
 from detector import detect_changes, build_new_members_data, build_stats
@@ -123,19 +123,19 @@ def main():
         logger.error(f"AFFO scrape failed: {e}")
         scrape_status["affo"] = {"status": "error", "error": str(e), "timestamp": now_iso}
 
-    # --- MISSING CGPs (search ORIAS) ---
-    logger.info(">>> Searching ORIAS for missing CGPs...")
+    # --- ORIAS CGPs (comprehensive scrape) ---
+    logger.info(">>> Scraping ORIAS for all registered CGPs...")
     try:
-        missing_members = scrape_missing_cgps()
-        source_results.append(missing_members)
-        scrape_status["missing_cgps"] = {
+        orias_members = scrape_orias_cgps()
+        source_results.append(orias_members)
+        scrape_status["orias"] = {
             "status": "success",
-            "count": len(missing_members),
+            "count": len(orias_members),
             "timestamp": now_iso,
         }
     except Exception as e:
-        logger.error(f"Missing CGPs search failed: {e}")
-        scrape_status["missing_cgps"] = {"status": "error", "error": str(e), "timestamp": now_iso}
+        logger.error(f"ORIAS scrape failed: {e}")
+        scrape_status["orias"] = {"status": "error", "error": str(e), "timestamp": now_iso}
 
     # Merge all sources
     logger.info(">>> Merging sources...")
