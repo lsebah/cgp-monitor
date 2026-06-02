@@ -19,20 +19,28 @@ GROUP_ID = os.environ.get("FOLK_GROUP", "")
 
 
 def push_company(m):
+    # Step 1: create company with name only (guaranteed to work)
     payload = {"name": m.get("company_name", "")}
-    if m.get("phone"): payload["phones"] = [m["phone"]]
-    if m.get("email"): payload["emails"] = [m["email"]]
+    r = requests.post(BASE + "/companies", headers=H, json=payload, timeout=15)
+    if not r.ok:
+        return r
+    company = r.json().get("data", {})
+    cid = company.get("id")
+    if not cid:
+        return r
+    # Step 2: patch with contact details (best effort)
+    update = {}
+    if m.get("phone"): update["phones"] = [m["phone"]]
+    if m.get("email"): update["emails"] = [m["email"]]
     if m.get("website"):
         url = m["website"] if m["website"].startswith("http") else "https://" + m["website"]
-        payload["urls"] = [url]
-    addr = m.get("address") or {}
-    if addr.get("city") or addr.get("postal_code"):
-        payload["addresses"] = [{
-            "city": addr.get("city", ""),
-            "postalCode": addr.get("postal_code", ""),
-            "country": "France",
-        }]
-    r = requests.post(BASE + "/companies", headers=H, json=payload, timeout=15)
+        update["urls"] = [url]
+    if update:
+        r2 = requests.patch(BASE + f"/companies/{cid}", headers=H, json=update, timeout=15)
+        if r2.ok:
+            log.info(f"  Updated {cid} with {list(update.keys())}")
+        else:
+            log.warning(f"  PATCH {cid} failed ({r2.status_code}): {r2.text[:200]}")
     return r
 
 
