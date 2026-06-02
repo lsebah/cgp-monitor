@@ -1555,21 +1555,10 @@ async function folkPushContact(member) {
 }
 
 async function folkPushAll() {
-    const key = getFolkApiKey();
-    if (!key) { alert('Configurez votre cle API Folk d\'abord (bouton Folk dans le header)'); return; }
     const folkMap = getFolkMap();
     const ids = Object.keys(folkMap);
     if (!ids.length) { alert('Aucun cabinet marque Folk. Cochez le toggle Folk sur les fiches a synchroniser.'); return; }
-    const members = ids.map(id => allMembers.find(m => m.id === id)).filter(Boolean);
-    if (!confirm(`Envoyer ${members.length} cabinet(s) vers Folk CRM ?`)) return;
-    let ok = 0, err = 0;
-    for (const m of members) {
-        try {
-            await folkPushContact(m);
-            ok++;
-        } catch { err++; }
-    }
-    alert(`Folk sync: ${ok} envoye(s), ${err} erreur(s)`);
+    alert(`${ids.length} cabinet(s) marque(s) Folk.\n\nL'envoi vers Folk CRM se fait cote serveur (le navigateur ne peut pas appeler l'API Folk directement).\n\nDemandez-moi "push folk" et je lance l'envoi immediatement.`);
 }
 
 window.openFolkSettings = openFolkSettings;

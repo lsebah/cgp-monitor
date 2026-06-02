@@ -1,0 +1,31 @@
+name: Push to Folk CRM
+
+on:
+  workflow_dispatch:
+    inputs:
+      folk_key:
+        description: 'Folk API Key'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install requests
+      - working-directory: scraper
+        env:
+          FOLK_KEY: ${{ github.event.inputs.folk_key }}
+        run: python folk_sync.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/folk_push.json
+          git diff --staged --quiet || git commit -m "data: clear folk_push.json after sync"
+          git push
