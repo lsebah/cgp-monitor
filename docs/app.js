@@ -1607,6 +1607,10 @@ async function refreshData() {
             updateStats();
             renderCurrentTab();
         }
+        // Always show the current time (= the moment the user clicked MAJ)
+        const now = new Date();
+        document.getElementById('lastUpdate').textContent =
+            `Mis a jour: ${now.toLocaleDateString('fr-FR')} ${now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
         if (btn) { btn.textContent = '✓ MAJ'; btn.style.color = 'var(--accent-green)'; btn.style.borderColor = 'var(--accent-green)'; }
         setTimeout(() => { if (btn) { btn.textContent = '↻ MAJ'; btn.disabled = false; btn.style.color = '#4a9eff'; btn.style.borderColor = '#4a9eff'; } }, 2000);
     } catch (e) {
