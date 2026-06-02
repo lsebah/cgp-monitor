@@ -74,17 +74,72 @@ def _map_columns(headers):
     return mapping
 
 
+def _looks_like_html(content, ctype):
+    if "html" in (ctype or "").lower():
+        return True
+    head = content[:512].lstrip().lower()
+    return head.startswith(b"<!doctype html") or head.startswith(b"<html") or b"<head" in head
+
+
+def _diagnose_html(content, url):
+    """Log a snippet + any data-file / download links found in an HTML response."""
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(content, "lxml")
+        title = (soup.title.get_text(strip=True) if soup.title else "")[:120]
+        logger.warning(f"ORIAS CIF: {url} returned HTML (title={title!r})")
+        links = []
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if re.search(r"\.(xls|xlsx|csv)(\?|$)", href, re.I) or "download" in href.lower():
+                links.append(href)
+        # meta refresh redirect
+        meta = soup.find("meta", attrs={"http-equiv": re.compile("refresh", re.I)})
+        if meta and meta.get("content"):
+            logger.warning(f"ORIAS CIF: meta refresh -> {meta['content']}")
+        if links:
+            logger.warning(f"ORIAS CIF: candidate data links: {links[:10]}")
+        return links
+    except Exception as e:
+        logger.warning(f"ORIAS CIF: html diagnose failed: {e}")
+        return []
+
+
+def _fetch(url):
+    return requests.get(url, headers=HEADERS, timeout=90, allow_redirects=True)
+
+
 def _download():
-    """Download the ORIAS CIF file. Returns (content_bytes, content_type) or (None, None)."""
+    """Download the ORIAS CIF file. Returns (content_bytes, content_type) or (None, None).
+
+    Accepts only a real tabular file; if a URL returns an HTML page (portal /
+    redirect / SPA shell) we diagnose it, follow any data-file link it exposes,
+    then fall through to the next candidate and finally the data.gouv fallback.
+    """
+    from urllib.parse import urljoin
     for url in DOWNLOAD_URLS:
         try:
             logger.info(f"ORIAS CIF: downloading {url}")
-            resp = requests.get(url, headers=HEADERS, timeout=60)
-            if resp.status_code == 200 and resp.content:
-                ctype = resp.headers.get("Content-Type", "")
-                logger.info(f"ORIAS CIF: got {len(resp.content)} bytes ({ctype})")
+            resp = _fetch(url)
+            if resp.status_code != 200 or not resp.content:
+                logger.warning(f"ORIAS CIF: {url} -> HTTP {resp.status_code}")
+                continue
+            ctype = resp.headers.get("Content-Type", "")
+            logger.info(f"ORIAS CIF: got {len(resp.content)} bytes ({ctype}) from {resp.url}")
+            if not _looks_like_html(resp.content, ctype):
                 return resp.content, ctype
-            logger.warning(f"ORIAS CIF: {url} -> HTTP {resp.status_code}")
+            # HTML: diagnose and try to follow an embedded data-file link
+            for href in _diagnose_html(resp.content, url):
+                target = urljoin(resp.url, href)
+                try:
+                    r2 = _fetch(target)
+                    if r2.status_code == 200 and r2.content and not _looks_like_html(
+                        r2.content, r2.headers.get("Content-Type", "")
+                    ):
+                        logger.info(f"ORIAS CIF: followed link -> {target} ({len(r2.content)} bytes)")
+                        return r2.content, r2.headers.get("Content-Type", "")
+                except requests.RequestException:
+                    continue
         except requests.RequestException as e:
             logger.warning(f"ORIAS CIF: download failed for {url}: {e}")
 
