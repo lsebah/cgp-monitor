@@ -1,0 +1,35 @@
+name: Discover Recent CGP (created < N days)
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # Daily 05:00 UTC - catch newly created CGP firms
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Look back window in days'
+        required: false
+        default: '7'
+
+permissions:
+  contents: write
+
+jobs:
+  discover-recent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - working-directory: scraper
+        env:
+          DAYS: ${{ github.event.inputs.days || '7' }}
+        run: python discover_recent.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --staged --quiet || git commit -m "data: discover recent CGP (created < N days) $(date -u +%Y-%m-%d)"
+          git push
