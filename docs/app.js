@@ -421,7 +421,7 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
         { key: 'cncgp', name: 'CNCGP', full: 'Conseillers en Gestion de Patrimoine' },
         { key: 'cncef', name: 'CNCEF', full: 'Conseils Experts Financiers' },
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
-        { key: 'other', name: 'Hors association', full: 'CIF hors des 3 chambres', clickable: false },
+        { key: 'other', name: 'Hors association', full: 'CIF hors des 3 chambres' },
     ];
 
     // Count each cabinet in only ONE association (priority: cncgp > cncef > anacofi)
@@ -457,7 +457,14 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
 // Click on an association card → switch to Annuaire tab and apply the filter.
 function filterByAssociation(key) {
     const filterEl = document.getElementById('filterAssociation');
-    if (filterEl) filterEl.value = key;
+    window.synthFilters = {};
+    if (key === 'other') {
+        // CIF outside the 3 chambers (e.g. manually added cabinets)
+        if (filterEl) filterEl.value = '';
+        window.synthFilters = { unaffiliated: true };
+    } else if (filterEl) {
+        filterEl.value = key;
+    }
     _switchToDirectory();
 }
 
@@ -590,9 +597,13 @@ function getFilteredMembers() {
         // When the user explicitly filters by an association (especially
         // ANACOFI / CNCEF, where the source ships only name + SIREN), this
         // filter is bypassed so the filter actually returns rows.
-        if (!assocFilter) {
+        if (!assocFilter && !synth.unaffiliated) {
             const hasContact = m.email || m.phone || m.website || (m.directors && m.directors.length > 0);
             if (!hasContact) return false;
+        }
+        if (synth.unaffiliated) {
+            const a = m.associations || {};
+            if (a.cncgp || a.cncef || a.anacofi) return false;
         }
         if (folkMap && !folkMap[m.id]) return false;
         if (firstSeenCutoff) {
