@@ -1595,42 +1595,21 @@ async function init() {
 async function refreshData() {
     const btn = document.querySelector('[onclick="refreshData()"]');
     if (btn) { btn.textContent = '⏳'; btn.disabled = true; }
+    // Wipe any cached assets, then hard-reload the WHOLE page (HTML+CSS+JS)
+    // with a cache-busting URL so the browser can never serve a stale version.
     try {
-        // Clear service worker cache so fresh data is fetched
+        if ('serviceWorker' in navigator) {
+            const regs = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(regs.map(r => r.unregister()));
+        }
         if ('caches' in window) {
             const keys = await caches.keys();
             await Promise.all(keys.map(k => caches.delete(k)));
         }
-        // Reload data with cache-busting
-        const ts = Date.now();
-        const [membersResp, statsResp] = await Promise.all([
-            fetch('data/members.json?_=' + ts),
-            fetch('data/stats.json?_=' + ts),
-        ]);
-        if (membersResp?.ok) {
-            const data = await membersResp.json();
-            const rawMembers = data.members || [];
-            allMembers = rawMembers.filter(m => m.company_name && m.company_name.trim());
-            document.getElementById('statTotal').textContent = allMembers.length;
-            if (data.last_updated) {
-                const d = new Date(data.last_updated);
-                document.getElementById('lastUpdate').textContent =
-                    `Mis a jour: ${d.toLocaleDateString('fr-FR')} ${d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
-            }
-            updateStats();
-            renderCurrentTab();
-        }
-        // Always show the current time (= the moment the user clicked MAJ)
-        const now = new Date();
-        document.getElementById('lastUpdate').textContent =
-            `Mis a jour: ${now.toLocaleDateString('fr-FR')} ${now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
-        if (btn) { btn.textContent = '✓ MAJ'; btn.style.color = 'var(--accent-green)'; btn.style.borderColor = 'var(--accent-green)'; }
-        setTimeout(() => { if (btn) { btn.textContent = '↻ MAJ'; btn.disabled = false; btn.style.color = '#4a9eff'; btn.style.borderColor = '#4a9eff'; } }, 2000);
-    } catch (e) {
-        console.warn('Refresh failed:', e);
-        if (btn) { btn.textContent = '✗ Erreur'; btn.style.color = 'var(--accent-red)'; }
-        setTimeout(() => { if (btn) { btn.textContent = '↻ MAJ'; btn.disabled = false; btn.style.color = '#4a9eff'; btn.style.borderColor = '#4a9eff'; } }, 3000);
-    }
+    } catch (e) { console.warn('cache clear failed', e); }
+    // Reload with a fresh URL (?_=timestamp) -> bypasses the browser HTTP cache
+    const base = location.origin + location.pathname;
+    location.replace(base + '?_=' + Date.now());
 }
 window.refreshData = refreshData;
 
