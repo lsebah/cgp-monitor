@@ -397,18 +397,23 @@ async function loadData() {
 // ============================================================
 function renderAssociationCards(scrapeStatus, byAssociation) {
     const grid = document.getElementById('assocGrid');
-    // ORIAS intentionally excluded: it's used only for enrichment (lookup of
-    // registration number / categories), not as a primary scraping source,
-    // so it would always show 0 members in the breakdown.
     const assocs = [
         { key: 'cncgp', name: 'CNCGP', full: 'Conseillers en Gestion de Patrimoine' },
         { key: 'cncef', name: 'CNCEF', full: 'Conseils Experts Financiers' },
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
     ];
 
+    // Always recount from the actual loaded members (never trust cached stats)
+    const liveCounts = {};
+    for (const m of allMembers) {
+        for (const a of Object.keys(m.associations || {})) {
+            liveCounts[a] = (liveCounts[a] || 0) + 1;
+        }
+    }
+
     grid.innerHTML = assocs.map(a => {
         const status = scrapeStatus[a.key];
-        const count = byAssociation[a.key] || 0;
+        const count = liveCounts[a.key] || 0;
         const statusClass = status?.status === 'success' ? 'success' : (status?.status === 'error' ? 'error' : '');
         const statusText = status?.status === 'success' ? 'OK' : (status?.status === 'error' ? 'Erreur' : 'En attente');
 
