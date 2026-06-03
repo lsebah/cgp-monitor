@@ -439,6 +439,14 @@ function filterByAssociation(key) {
 // Click on a top dashboard stat tile → switch to Annuaire and apply the matching filter.
 // `kind` is one of: all | new7d | recent4m | pending | contacted | refused | folk
 function applyDashboardFilter(kind) {
+    // Highlight the clicked tile (active state). Tiles are in DOM order:
+    // all, recent7d, recent4m, pending, contacted, refused, folk
+    const order = ['all', 'recent7d', 'recent4m', 'pending', 'contacted', 'refused', 'folk'];
+    const cards = document.querySelectorAll('.stats-bar .stat-card');
+    cards.forEach(c => c.classList.remove('active'));
+    const idx = order.indexOf(kind);
+    if (idx >= 0 && cards[idx]) cards[idx].classList.add('active');
+
     // Reset all form filters first
     const reset = ['searchInput', 'filterAssociation', 'filterDepartment',
                    'filterActivity', 'filterStatus', 'filterCreation',

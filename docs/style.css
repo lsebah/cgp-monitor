@@ -138,6 +138,24 @@ body {
 .stat-card.stat-refused   .stat-number { color: var(--accent-red); }
 .stat-card.stat-folk       { border-color: rgba(155, 89, 231, 0.45); }
 .stat-card.stat-folk      .stat-number { color: #b48cff; }
+
+/* Active (selected filter) state - stronger border + glow + bold */
+.stat-card.active {
+    border-color: var(--accent-light-blue);
+    box-shadow: 0 0 0 2px var(--accent-light-blue), 0 4px 18px rgba(74, 158, 255, 0.30);
+    background: linear-gradient(135deg, #1a2040 0%, #243a6e 100%);
+}
+.stat-card.active .stat-number { color: #6cb2ff; font-weight: 800; }
+.stat-card.active .stat-label  { color: var(--accent-light-blue); font-weight: 700; }
+.stat-card.stat-pending.active   { border-color: var(--accent-orange); box-shadow: 0 0 0 2px var(--accent-orange), 0 4px 18px rgba(255,149,0,0.30); }
+.stat-card.stat-pending.active   .stat-number, .stat-card.stat-pending.active .stat-label { color: var(--accent-orange); }
+.stat-card.stat-contacted.active { border-color: var(--accent-green); box-shadow: 0 0 0 2px var(--accent-green), 0 4px 18px rgba(52,199,89,0.30); }
+.stat-card.stat-contacted.active .stat-number, .stat-card.stat-contacted.active .stat-label { color: var(--accent-green); }
+.stat-card.stat-refused.active   { border-color: var(--accent-red); box-shadow: 0 0 0 2px var(--accent-red), 0 4px 18px rgba(255,69,58,0.30); }
+.stat-card.stat-refused.active   .stat-number, .stat-card.stat-refused.active .stat-label { color: var(--accent-red); }
+.stat-card.stat-folk.active      { border-color: #b48cff; box-shadow: 0 0 0 2px #b48cff, 0 4px 18px rgba(155,89,231,0.30); }
+.stat-card.stat-folk.active      .stat-number, .stat-card.stat-folk.active .stat-label { color: #b48cff; }
+
 .stat-number {
     font-size: 32px;
     font-weight: 700;

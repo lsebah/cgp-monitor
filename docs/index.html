@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=1780494734">
+    <link rel="stylesheet" href="style.css?v=1780495230">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -39,7 +39,7 @@
 
     <!-- Stats Bar -->
     <section class="stats-bar">
-        <div class="stat-card clickable" onclick="applyDashboardFilter('all')" title="Tous les cabinets avec coordonnees">
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('all')" title="Tous les cabinets avec coordonnees">
             <div class="stat-number" id="statTotal">-</div>
             <div class="stat-label">Total CGP</div>
         </div>
@@ -47,7 +47,7 @@
             <div class="stat-number" id="statRecent7d">-</div>
             <div class="stat-label">Crees < 7 jours</div>
         </div>
-        <div class="stat-card clickable" onclick="applyDashboardFilter('recent4m')" title="Cabinets crees au sens data.gouv il y a moins de 4 mois">
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent4m')" title="Cabinets crees au sens data.gouv il y a moins de 4 mois">
             <div class="stat-number" id="statRecent4m">-</div>
             <div class="stat-label">Crees < 4 mois</div>
         </div>
@@ -323,7 +323,7 @@
         <p>Donnees: CNCGP, CNCEF, ANACOFI (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=1780494734"></script>
+    <script src="app.js?v=1780495230"></script>
     <script>
         // UNREGISTER all service workers and clear all caches.
         // The SW was causing stale-data problems that are worse than offline support.
