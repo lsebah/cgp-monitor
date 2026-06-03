@@ -421,31 +421,34 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
         { key: 'cncgp', name: 'CNCGP', full: 'Conseillers en Gestion de Patrimoine' },
         { key: 'cncef', name: 'CNCEF', full: 'Conseils Experts Financiers' },
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
+        { key: 'other', name: 'Hors association', full: 'CIF hors des 3 chambres', clickable: false },
     ];
 
-    // Recount from the SAME browsable population as the Total CGP tile
-    // (members with at least one contact), so the dashboard is fully coherent.
-    const liveCounts = {};
+    // Count each cabinet in only ONE association (priority: cncgp > cncef > anacofi)
+    // so a cabinet in two associations isn't double-counted. This makes the cards
+    // a clean partition: their sum = number of affiliated cabinets.
+    const liveCounts = { cncgp: 0, cncef: 0, anacofi: 0 };
+    let affiliated = 0, unaffiliated = 0;
     for (const m of allMembers) {
         if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
-        for (const a of Object.keys(m.associations || {})) {
-            liveCounts[a] = (liveCounts[a] || 0) + 1;
-        }
+        const as = m.associations || {};
+        if (as.cncgp) { liveCounts.cncgp++; affiliated++; }
+        else if (as.cncef) { liveCounts.cncef++; affiliated++; }
+        else if (as.anacofi) { liveCounts.anacofi++; affiliated++; }
+        else { unaffiliated++; }
     }
+    liveCounts.other = unaffiliated;
 
     grid.innerHTML = assocs.map(a => {
-        const status = scrapeStatus[a.key];
         const count = liveCounts[a.key] || 0;
-        const statusClass = status?.status === 'success' ? 'success' : (status?.status === 'error' ? 'error' : '');
-        const statusText = status?.status === 'success' ? 'OK' : (status?.status === 'error' ? 'Erreur' : 'En attente');
-
+        const clickable = a.clickable !== false && count > 0;
+        const onclick = clickable ? `onclick="filterByAssociation('${a.key}')" role="button" tabindex="0"` : '';
         return `
-            <div class="assoc-card" onclick="filterByAssociation('${a.key}')" role="button" tabindex="0">
+            <div class="assoc-card" ${onclick}>
                 <div class="assoc-name">${a.name}</div>
                 <div class="assoc-label">${a.full}</div>
                 <div class="assoc-count">${count.toLocaleString('fr-FR')}</div>
                 <div class="assoc-label">membres</div>
-                ${status ? `<span class="assoc-status ${statusClass}">${statusText}</span>` : ''}
             </div>
         `;
     }).join('');
