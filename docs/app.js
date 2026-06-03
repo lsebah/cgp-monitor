@@ -591,7 +591,7 @@ function getFilteredMembers() {
         firstSeenCutoff = d.toISOString().slice(0, 10);
     }
 
-    return allMembers.filter(m => {
+    const result = allMembers.filter(m => {
         // Default view (no association picked): hide cabinets with no
         // reachable contact info — they're not actionable for prospection.
         // When the user explicitly filters by an association (especially
@@ -664,6 +664,18 @@ function getFilteredMembers() {
         }
         return true;
     });
+
+    // Sort by company creation date, most recent first. Cabinets without a
+    // known creation date go last (kept in name order among themselves).
+    result.sort((a, b) => {
+        const da = a.creation_date || '';
+        const db = b.creation_date || '';
+        if (da && db) return db.localeCompare(da);
+        if (da) return -1;
+        if (db) return 1;
+        return (a.company_name || '').localeCompare(b.company_name || '');
+    });
+    return result;
 }
 
 function renderDirectory() {
