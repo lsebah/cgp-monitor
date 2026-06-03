@@ -325,30 +325,15 @@
 
     <script src="app.js?v=12"></script>
     <script>
-        // Register service worker with auto-update
+        // UNREGISTER all service workers and clear all caches.
+        // The SW was causing stale-data problems that are worse than offline support.
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').then(reg => {
-                    // Check for updates every time we get focus
-                    reg.update();
-                    reg.addEventListener('updatefound', () => {
-                        const newWorker = reg.installing;
-                        newWorker?.addEventListener('statechange', () => {
-                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                console.info('[SW] New version available, reloading...');
-                                newWorker.postMessage({ type: 'SKIP_WAITING' });
-                            }
-                        });
-                    });
-                }).catch(err => console.warn('[SW] registration failed', err));
-
-                let refreshing = false;
-                navigator.serviceWorker.addEventListener('controllerchange', () => {
-                    if (refreshing) return;
-                    refreshing = true;
-                    window.location.reload();
-                });
+            navigator.serviceWorker.getRegistrations().then(regs => {
+                regs.forEach(r => r.unregister());
             });
+        }
+        if ('caches' in window) {
+            caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
         }
     </script>
 </body>
