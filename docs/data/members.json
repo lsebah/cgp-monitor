@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T15:09:08.351528+00:00",
+  "last_updated": "2026-06-03T09:24:44.425651+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -27,45 +27,52 @@
       "added": 17615,
       "naf": "66.19B",
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
+    },
+    "registre_recent": {
+      "status": "success",
+      "added": 22,
+      "days": 7,
+      "timestamp": "2026-06-03T09:24:44.425651+00:00"
     }
   },
   "stats": {
-    "total_members": 10690,
-    "new_today": 2,
-    "new_this_week": 2,
-    "new_this_month": 5737,
+    "total_members": 10712,
+    "new_today": 22,
+    "new_this_week": 24,
+    "new_this_month": 5759,
     "by_association": {
       "anacofi": 3243,
       "cncef": 4829,
       "cncgp": 2623,
       "ucgp": 66,
       "leaders_league": 36,
-      "registre": 2
+      "registre": 24,
+      "manuel": 22
     },
     "by_activity": {
-      "CIF": 7464,
+      "CIF": 7486,
       "COA": 4127,
       "IOBSP": 1873,
       "Immobilier": 941
     },
     "by_department": {
-      "75": 1861,
+      "75": 1867,
       "69": 579,
-      "92": 490,
-      "31": 434,
+      "92": 491,
+      "31": 435,
       "33": 429,
       "13": 391,
-      "44": 334,
+      "44": 335,
       "06": 318,
-      "78": 299,
+      "78": 301,
       "34": 267,
-      "59": 242,
+      "59": 243,
       "38": 241,
-      "67": 203,
+      "67": 204,
       "37": 191,
-      "94": 187,
+      "94": 188,
       "83": 183,
-      "35": 170,
+      "35": 172,
       "64": 147,
       "77": 130,
       "21": 118
@@ -36022,6 +36029,58 @@
         "categorie_entreprise": "PME",
         "naf": "45.11Z"
       }
+    },
+    {
+      "id": "cgp_d15a64b338",
+      "company_name": "ALMAX PARTNERS",
+      "company_name_normalized": "almax partners",
+      "siren": "104934088",
+      "orias_number": "",
+      "address": {
+        "street": "23 RUE JEAN-JACQUES ROUSSEAU 75001 PARIS",
+        "postal_code": "75001",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ALPE CAPITAL",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne morale"
+        },
+        {
+          "name": "MANO CAPITAL",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne morale"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104934088"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_49e97219c0",
@@ -181431,6 +181490,52 @@
       }
     },
     {
+      "id": "cgp_7dd49dced0",
+      "company_name": "DAVID RITO",
+      "company_name_normalized": "david rito",
+      "siren": "105563985",
+      "orias_number": "",
+      "address": {
+        "street": "1 ALLEE RAMEAU 78340 CLAYES-SOUS-BOIS (LES)",
+        "postal_code": "78340",
+        "city": "CLAYES-SOUS-BOIS (LES)",
+        "department": "78",
+        "department_name": "Yvelines",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "DAVID RITO",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105563985"
+      },
+      "creation_date": "2026-05-27"
+    },
+    {
       "id": "cgp_d49955b2b4",
       "company_name": "DAVIDE BARROSO DIAS",
       "company_name_normalized": "davide barroso dias",
@@ -216024,6 +216129,52 @@
       }
     },
     {
+      "id": "cgp_e1eed67056",
+      "company_name": "ENJOY STUDY",
+      "company_name_normalized": "enjoy study",
+      "siren": "104621719",
+      "orias_number": "",
+      "address": {
+        "street": "33 AVENUE PHILIPPE-AUGUSTE 75011 PARIS",
+        "postal_code": "75011",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "XOLALI KAPOU",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104621719"
+      },
+      "creation_date": "2026-07-01"
+    },
+    {
       "id": "cgp_489bc84694",
       "company_name": "ENNOIA PATRIMOINE",
       "company_name_normalized": "ennoia patrimoine",
@@ -220453,6 +220604,52 @@
       }
     },
     {
+      "id": "cgp_3737b745a4",
+      "company_name": "ERIC HUANG (HG FINANCE)",
+      "company_name_normalized": "eric huang hg finance",
+      "siren": "105565881",
+      "orias_number": "",
+      "address": {
+        "street": "25 RUE DU CHEMIN VERT 75011 PARIS",
+        "postal_code": "75011",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ERIC HUANG",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105565881"
+      },
+      "creation_date": "2026-06-15"
+    },
+    {
       "id": "cgp_e1880909ee",
       "company_name": "ERIC JEAN FINANCE ET PATRIMOINE",
       "company_name_normalized": "eric jean finance et patrimoine",
@@ -220964,6 +221161,52 @@
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/raphael-errera/"
       }
+    },
+    {
+      "id": "cgp_58aa80add5",
+      "company_name": "ERWAN QUENEZ",
+      "company_name_normalized": "erwan quenez",
+      "siren": "101337046",
+      "orias_number": "",
+      "address": {
+        "street": "2 ALLEE DES CAMELIAS 76100 ROUEN",
+        "postal_code": "76100",
+        "city": "ROUEN",
+        "department": "76",
+        "department_name": "Seine-Maritime",
+        "region": "Normandie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ERWAN QUENEZ",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/101337046"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_19eb8e2826",
@@ -259846,6 +260089,52 @@
       }
     },
     {
+      "id": "cgp_f57a3e5dac",
+      "company_name": "FRANCOIS LANZARINI",
+      "company_name_normalized": "francois lanzarini",
+      "siren": "105384283",
+      "orias_number": "",
+      "address": {
+        "street": "60 RUE DE SERIEYSSOLS 81000 ALBI",
+        "postal_code": "81000",
+        "city": "ALBI",
+        "department": "81",
+        "department_name": "Tarn",
+        "region": "Occitanie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "FRANCOIS LANZARINI",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105384283"
+      },
+      "creation_date": "2026-06-01"
+    },
+    {
       "id": "cgp_c9ab074783",
       "company_name": "FRANK PASCAL",
       "company_name_normalized": "frank pascal",
@@ -267003,6 +267292,52 @@
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
       }
+    },
+    {
+      "id": "cgp_da2dfffb90",
+      "company_name": "GAUTHIER CRESSET (OSEZ CONSEILS)",
+      "company_name_normalized": "gauthier cresset osez conseils",
+      "siren": "104919162",
+      "orias_number": "",
+      "address": {
+        "street": "8 PLACE DE L'EGLISE 85500 MESNARD-LA-BAROTIERE",
+        "postal_code": "85500",
+        "city": "MESNARD-LA-BAROTIERE",
+        "department": "85",
+        "department_name": "Vendee",
+        "region": "Pays de la Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "GAUTHIER CRESSET",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104919162"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_3be45d2390",
@@ -284575,6 +284910,52 @@
       }
     },
     {
+      "id": "cgp_75366602c9",
+      "company_name": "GUILLAUME GUILLAUME PELLERIN (PELLERIN)",
+      "company_name_normalized": "guillaume guillaume pellerin pellerin",
+      "siren": "104972567",
+      "orias_number": "",
+      "address": {
+        "street": "14 RUE FAIDHERBE 59520 MARQUETTE-LEZ-LILLE",
+        "postal_code": "59520",
+        "city": "MARQUETTE-LEZ-LILLE",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "GUILLAUME PELLERIN",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104972567"
+      },
+      "creation_date": "2026-06-08"
+    },
+    {
       "id": "cgp_d2a398d86f",
       "company_name": "GUILLEMAIN MURIELLE",
       "company_name_normalized": "guillemain murielle",
@@ -300405,6 +300786,45 @@
       }
     },
     {
+      "id": "cgp_b5343428bd",
+      "company_name": "HUGO GALVEZ (GALVEZ) (HUGO GALVEZ)",
+      "company_name_normalized": "hugo galvez galvez hugo galvez",
+      "siren": "105375984",
+      "orias_number": "",
+      "address": {
+        "street": "203 RUE MARS 31140 LAUNAGUET",
+        "postal_code": "31140",
+        "city": "LAUNAGUET",
+        "department": "31",
+        "department_name": "Haute-Garonne",
+        "region": "Occitanie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105375984"
+      },
+      "creation_date": "2026-06-01"
+    },
+    {
       "id": "cgp_cbc8b8ca86",
       "company_name": "HUILLET STEPHANE",
       "company_name_normalized": "huillet stephane",
@@ -305565,6 +305985,45 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       }
+    },
+    {
+      "id": "cgp_3e1f5b34a4",
+      "company_name": "IMANE ELHIMRI (IE CONSULTING)",
+      "company_name_normalized": "imane elhimri ie consulting",
+      "siren": "105708135",
+      "orias_number": "",
+      "address": {
+        "street": "APPA401 12 RUE PIERRE GRANGE 94170 LE PERREUX-SUR-MARNE",
+        "postal_code": "94170",
+        "city": "LE PERREUX-SUR-MARNE",
+        "department": "94",
+        "department_name": "Val-de-Marne",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105708135"
+      },
+      "creation_date": "2026-07-01"
     },
     {
       "id": "cgp_882e44f6b3",
@@ -336659,6 +337118,52 @@
       }
     },
     {
+      "id": "cgp_7f2bb8069f",
+      "company_name": "KILLYAN RICHARD (RICHARD)",
+      "company_name_normalized": "killyan richard richard",
+      "siren": "105409387",
+      "orias_number": "",
+      "address": {
+        "street": "APPARTEMENT 6 146 B ROUTE DE RENNES 44300 NANTES",
+        "postal_code": "44300",
+        "city": "NANTES",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "KILLYAN RICHARD (RICHARD)",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105409387"
+      },
+      "creation_date": "2026-06-01"
+    },
+    {
       "id": "cgp_15a4185bc8",
       "company_name": "KIMPA",
       "company_name_normalized": "kimpa",
@@ -360361,6 +360866,52 @@
       }
     },
     {
+      "id": "cgp_8eb37ded9a",
+      "company_name": "LEO SAARBACH (SAARBACH PATRIMOINE)",
+      "company_name_normalized": "leo saarbach saarbach patrimoine",
+      "siren": "105552517",
+      "orias_number": "",
+      "address": {
+        "street": "14 RUE DESAIX 75015 PARIS",
+        "postal_code": "75015",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "LÉO SAARBACH",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552517"
+      },
+      "creation_date": "2026-06-12"
+    },
+    {
       "id": "cgp_9e4aa6359a",
       "company_name": "LEOMA PATRIMOINE",
       "company_name_normalized": "leoma patrimoine",
@@ -373812,6 +374363,52 @@
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
       }
+    },
+    {
+      "id": "cgp_f5c5398a51",
+      "company_name": "LUCAS MANDOFIA (MANDOFIA PATRIMOINE)",
+      "company_name_normalized": "lucas mandofia mandofia patrimoine",
+      "siren": "105552475",
+      "orias_number": "",
+      "address": {
+        "street": "18 ALLEE DES COUTURELLES 95560 MAFFLIERS",
+        "postal_code": "95560",
+        "city": "MAFFLIERS",
+        "department": "95",
+        "department_name": "Val-d'Oise",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "LUCAS MANDOFIA",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552475"
+      },
+      "creation_date": "2026-06-22"
     },
     {
       "id": "cgp_74fd2663a0",
@@ -389864,6 +390461,98 @@
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
       }
+    },
+    {
+      "id": "cgp_9101042073",
+      "company_name": "MATHIEU GRASSER",
+      "company_name_normalized": "mathieu grasser",
+      "siren": "105615041",
+      "orias_number": "",
+      "address": {
+        "street": "4 RUE SAINTE ODILE 67230 SAND",
+        "postal_code": "67230",
+        "city": "SAND",
+        "department": "67",
+        "department_name": "Bas-Rhin",
+        "region": "Grand Est"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "MATHIEU GRASSER",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105615041"
+      },
+      "creation_date": "2026-05-28"
+    },
+    {
+      "id": "cgp_249878682f",
+      "company_name": "MATHIEU LE MINOUX (MATHIEU GESTION PRIVEE)",
+      "company_name_normalized": "mathieu le minoux mathieu gestion privee",
+      "siren": "105552491",
+      "orias_number": "",
+      "address": {
+        "street": "125 BOULEVARD BRUNE 75014 PARIS",
+        "postal_code": "75014",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "MATHIEU LE MINOUX",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552491"
+      },
+      "creation_date": "2026-06-14"
     },
     {
       "id": "cgp_663762c884",
@@ -430813,6 +431502,52 @@
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
       }
+    },
+    {
+      "id": "cgp_a3fcf22506",
+      "company_name": "NUMMI GESTION PRIVEE (NUMMI GESTION PRIVEE)",
+      "company_name_normalized": "nummi gestion privee nummi gestion privee",
+      "siren": "105503791",
+      "orias_number": "",
+      "address": {
+        "street": "22 RUE D'ASTORG 75008 PARIS",
+        "postal_code": "75008",
+        "city": "PARIS",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "MARTIN DEREMBLE",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105503791"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_fa4152a219",
@@ -491287,6 +492022,52 @@
       }
     },
     {
+      "id": "cgp_10702586c0",
+      "company_name": "RAISSA KIABOUNA MATONDO (RAISSA FINANCE)",
+      "company_name_normalized": "raissa kiabouna matondo raissa finance",
+      "siren": "103106175",
+      "orias_number": "",
+      "address": {
+        "street": "1 RUE DES ALOUETTES 35160 TALENSAC",
+        "postal_code": "35160",
+        "city": "TALENSAC",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "RAISSA KIABOUNA MATONDO",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103106175"
+      },
+      "creation_date": "2026-06-01"
+    },
+    {
       "id": "cgp_aa8b34c3cd",
       "company_name": "RAJCH KEVIN",
       "company_name_normalized": "rajch kevin",
@@ -491758,6 +492539,52 @@
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rapaud-philippe/"
       }
+    },
+    {
+      "id": "cgp_8ba5ae27fc",
+      "company_name": "RAPHAELLE YVERT",
+      "company_name_normalized": "raphaelle yvert",
+      "siren": "102989464",
+      "orias_number": "",
+      "address": {
+        "street": "39 AVENUE DES TERRES BLANCHES 78360 MONTESSON",
+        "postal_code": "78360",
+        "city": "MONTESSON",
+        "department": "78",
+        "department_name": "Yvelines",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "RAPHAELLE YVERT",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/102989464"
+      },
+      "creation_date": "2026-06-08"
     },
     {
       "id": "cgp_3ed1be9789",
@@ -520275,6 +521102,52 @@
       }
     },
     {
+      "id": "cgp_7056661c52",
+      "company_name": "SASU LF COURTAGE (LF COURTAGE) (LF COURTAGE)",
+      "company_name_normalized": "lf courtage lf courtage lf courtage",
+      "siren": "103774568",
+      "orias_number": "",
+      "address": {
+        "street": "30 RUE ERIC TABARLY 62840 SAILLY-SUR-LA-LYS",
+        "postal_code": "62840",
+        "city": "SAILLY-SUR-LA-LYS",
+        "department": "62",
+        "department_name": "Pas-de-Calais",
+        "region": "Hauts-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "LUDIVINE FARDOUX (PETITPRE)",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103774568"
+      },
+      "creation_date": "2026-06-01"
+    },
+    {
       "id": "cgp_24d8953a93",
       "company_name": "SASU MYRIAM MITOIRE",
       "company_name_normalized": "myriam mitoire",
@@ -520335,6 +521208,52 @@
         "categorie_entreprise": "PME",
         "naf": "66.19B"
       }
+    },
+    {
+      "id": "cgp_4d60b5a83a",
+      "company_name": "SASU SILENCE CAPITAL (FACILIFINANCES)",
+      "company_name_normalized": "silence capital facilifinances",
+      "siren": "103722179",
+      "orias_number": "",
+      "address": {
+        "street": "5 RUE DE CONSTANTINE 72000 LE MANS",
+        "postal_code": "72000",
+        "city": "LE MANS",
+        "department": "72",
+        "department_name": "Sarthe",
+        "region": "Pays de la Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "KOLÉ N'DRI",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103722179"
+      },
+      "creation_date": "2026-06-15"
     },
     {
       "id": "cgp_721ae3d6a1",
@@ -540185,6 +541104,52 @@
       }
     },
     {
+      "id": "cgp_8a8c8aeb8d",
+      "company_name": "SOREL FINANCIAL & SOLUTIONS",
+      "company_name_normalized": "sorel financial  solutions",
+      "siren": "103459368",
+      "orias_number": "",
+      "address": {
+        "street": "5 RUE DE LA PAILLETTE 35000 RENNES",
+        "postal_code": "35000",
+        "city": "RENNES",
+        "department": "35",
+        "department_name": "Ille-et-Vilaine",
+        "region": "Bretagne"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ALEXANDRE SOREL",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103459368"
+      },
+      "creation_date": "2026-06-15"
+    },
+    {
       "id": "cgp_24cde44b22",
       "company_name": "SORGEM EVALUATION",
       "company_name_normalized": "sorgem evaluation",
@@ -552674,6 +553639,45 @@
         "effectif_label": "Non renseigné",
         "naf": "68.31Z"
       }
+    },
+    {
+      "id": "cgp_ff8ddf303c",
+      "company_name": "TANGUY BEGUE (BEGUE)",
+      "company_name_normalized": "tanguy begue begue",
+      "siren": "105731806",
+      "orias_number": "",
+      "address": {
+        "street": "292 AVENUE NAPOLEON BONAPARTE 92500 RUEIL MALMAISON",
+        "postal_code": "92500",
+        "city": "RUEIL MALMAISON",
+        "department": "92",
+        "department_name": "Hauts-de-Seine",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "registre": {
+          "member": true
+        },
+        "manuel": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "is_new": true,
+      "source_urls": {
+        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105731806"
+      },
+      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_6e370fe589",
