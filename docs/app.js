@@ -507,7 +507,7 @@ function renderDashboard() {
         .slice(0, 20);
 
     if (!recent.length) {
-        grid.innerHTML = '<div class="empty-state"><p>Aucun nouveau membre detecte</p><p>Les alertes apparaitront ici apres le premier scrape.</p></div>';
+        grid.innerHTML = '<div class="empty-state"><p>Aucun nouveau membre detecte</p><p>Les nouveaux cabinets apparaitront ici apres le prochain scrape.</p></div>';
         return;
     }
     grid.innerHTML = recent.map(m => renderMemberCard(m)).join('');
@@ -727,28 +727,6 @@ function exportDirectoryCsv() {
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
-}
-
-// ============================================================
-// RENDERING - Alerts
-// ============================================================
-function renderAlerts() {
-    const grid = document.getElementById('alertsGrid');
-    const hideProcessed = document.getElementById('alertsHideProcessed')?.checked || false;
-
-    let alerts = allMembers
-        .filter(m => m.is_new)
-        .sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
-
-    if (hideProcessed) {
-        alerts = alerts.filter(m => !getStatus(m.id));
-    }
-
-    if (!alerts.length) {
-        grid.innerHTML = '<div class="empty-state"><p>Aucune alerte</p></div>';
-        return;
-    }
-    grid.innerHTML = alerts.map(m => renderMemberCard(m)).join('');
 }
 
 // ============================================================
