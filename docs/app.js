@@ -380,7 +380,12 @@ async function loadData() {
             renderActors();
         }
 
-        document.getElementById('badgeTotal').textContent = allMembers.length || '';
+        // Keep the Annuaire badge identical to the Total CGP tile (browsable count
+        // = members with at least one contact detail), so the numbers never differ.
+        const browsableCount = allMembers.filter(m =>
+            m.email || m.phone || m.website || (m.directors && m.directors.length > 0)
+        ).length;
+        document.getElementById('badgeTotal').textContent = browsableCount || '';
         updateStats();
         renderDashboard();
         renderDirectory();
@@ -1613,9 +1618,8 @@ async function refreshData() {
 }
 window.refreshData = refreshData;
 
-function toggleFilters() {
-    const panel = document.getElementById('advancedFilters');
-    const btn = document.getElementById('toggleFiltersBtn');
+function toggleFilters(panelId, btn) {
+    const panel = document.getElementById(panelId || 'advancedFilters');
     if (!panel) return;
     const isHidden = panel.style.display === 'none';
     panel.style.display = isHidden ? 'flex' : 'none';

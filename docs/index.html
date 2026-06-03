@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=1780495780">
+    <link rel="stylesheet" href="style.css?v=1780496072">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -96,7 +96,7 @@
             <section class="filters">
                 <div class="filter-row">
                     <input type="text" id="searchInput" placeholder="Rechercher par nom, ville, email, dirigeant..." class="search-input">
-                    <button type="button" id="toggleFiltersBtn" class="filter-toggle-btn" onclick="toggleFilters()" title="Afficher les filtres avances">+ Filtres</button>
+                    <button type="button" id="toggleFiltersBtn" class="filter-toggle-btn" onclick="toggleFilters('advancedFilters', this)" title="Afficher les filtres avances">+ Filtres</button>
                 </div>
                 <div class="filter-row filter-advanced" id="advancedFilters" style="display:none">
                     <select id="filterAssociation" class="filter-select">
@@ -199,6 +199,9 @@
             <section class="filters">
                 <div class="filter-row">
                     <input type="text" id="actorsSearch" placeholder="Rechercher acteur, president, statut..." class="search-input">
+                    <button type="button" class="filter-toggle-btn" onclick="toggleFilters('actorsAdvanced', this)" title="Afficher les filtres avances">+ Filtres</button>
+                </div>
+                <div class="filter-row filter-advanced" id="actorsAdvanced" style="display:none">
                     <select id="actorsCategoryFilter" class="filter-select">
                         <option value="">Toutes les categories</option>
                     </select>
@@ -329,7 +332,7 @@
         <p>Donnees: CNCGP, CNCEF, ANACOFI (enrichissement ORIAS)</p>
     </footer>
 
-    <script src="app.js?v=1780495780"></script>
+    <script src="app.js?v=1780496072"></script>
     <script>
         // UNREGISTER all service workers and clear all caches.
         // The SW was causing stale-data problems that are worse than offline support.
