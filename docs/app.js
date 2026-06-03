@@ -1572,6 +1572,29 @@ async function init() {
     migrateLegacyContacted();
     await loadData();
     await cloudLoad();
+
+    // If the user just clicked MAJ, show the click time (not the data file date)
+    // and give a brief green confirmation on the button.
+    try {
+        if (sessionStorage.getItem('cgpMajClicked')) {
+            sessionStorage.removeItem('cgpMajClicked');
+            const now = new Date();
+            const el = document.getElementById('lastUpdate');
+            if (el) el.textContent =
+                `Mis a jour: ${now.toLocaleDateString('fr-FR')} ${now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
+            const btn = document.querySelector('[onclick="refreshData()"]');
+            if (btn) {
+                btn.textContent = '✓ MAJ';
+                btn.style.color = 'var(--accent-green)';
+                btn.style.borderColor = 'var(--accent-green)';
+                setTimeout(() => {
+                    btn.textContent = '↻ MAJ';
+                    btn.style.color = '#4a9eff';
+                    btn.style.borderColor = '#4a9eff';
+                }, 1800);
+            }
+        }
+    } catch (e) {}
 }
 
 async function refreshData() {
@@ -1589,6 +1612,8 @@ async function refreshData() {
             await Promise.all(keys.map(k => caches.delete(k)));
         }
     } catch (e) { console.warn('cache clear failed', e); }
+    // Remember that the user clicked MAJ so we can show the click time after reload
+    try { sessionStorage.setItem('cgpMajClicked', '1'); } catch (e) {}
     // Reload with a fresh URL (?_=timestamp) -> bypasses the browser HTTP cache
     const base = location.origin + location.pathname;
     location.replace(base + '?_=' + Date.now());
