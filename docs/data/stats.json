@@ -1,12 +1,12 @@
 {
-  "total_members": 7464,
+  "total_members": 10690,
   "new_today": 22,
   "new_this_week": 24,
   "new_this_month": 5759,
   "by_association": {
     "anacofi": 3243,
-    "cncgp": 2623,
-    "cncef": 1603
+    "cncef": 4829,
+    "cncgp": 2623
   },
   "by_activity": {
     "CIF": 7486,
@@ -72,5 +72,5 @@
       "timestamp": "2026-06-03T09:24:44.425651+00:00"
     }
   },
-  "last_updated": "2026-06-03T13:39:02.156447+00:00"
+  "last_updated": "2026-06-03T13:51:23.341890+00:00"
 }
