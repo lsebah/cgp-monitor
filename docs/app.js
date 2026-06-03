@@ -408,9 +408,11 @@ function renderAssociationCards(scrapeStatus, byAssociation) {
         { key: 'anacofi', name: 'ANACOFI', full: 'Conseils Financiers' },
     ];
 
-    // Always recount from the actual loaded members (never trust cached stats)
+    // Recount from the SAME browsable population as the Total CGP tile
+    // (members with at least one contact), so the dashboard is fully coherent.
     const liveCounts = {};
     for (const m of allMembers) {
+        if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
         for (const a of Object.keys(m.associations || {})) {
             liveCounts[a] = (liveCounts[a] || 0) + 1;
         }
