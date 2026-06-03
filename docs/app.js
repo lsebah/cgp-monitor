@@ -364,7 +364,8 @@ async function loadData() {
         if (newResp?.ok) {
             const data = await newResp.json();
             newMembers = data.new_members || [];
-            document.getElementById('badgeNew').textContent = newMembers.length || '';
+            const badgeNew = document.getElementById('badgeNew');
+            if (badgeNew) badgeNew.textContent = newMembers.length || '';
         }
 
         if (groupResp?.ok) {
@@ -388,7 +389,6 @@ async function loadData() {
         updateStats();
         renderDashboard();
         renderDirectory();
-        renderAlerts();
 
     } catch (e) {
         console.warn('Error loading data:', e);
@@ -1361,7 +1361,6 @@ function renderCurrentTab() {
     switch (tabName) {
         case 'dashboard': renderDashboard(); break;
         case 'directory': renderDirectory(); break;
-        case 'alerts': renderAlerts(); break;
         case 'actors': renderActors(); break;
         case 'groupements': renderGroupements(); break;
     }
@@ -1383,7 +1382,6 @@ document.querySelectorAll('.tab').forEach(tab => {
     if (el) el.addEventListener(el.type === 'text' ? 'input' : 'change', renderDirectory);
 });
 document.getElementById('filterHideProcessed')?.addEventListener('change', renderDirectory);
-document.getElementById('alertsHideProcessed')?.addEventListener('change', renderAlerts);
 
 // Actors filters
 ['actorsSearch', 'actorsCategoryFilter', 'actorsTierFilter', 'actorsStatusFilter'].forEach(id => {
