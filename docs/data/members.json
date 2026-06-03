@@ -3,11 +3,11 @@
   "scrape_status": {
     "cncgp": {
       "status": "success",
-      "count": 1497
+      "count": 2623
     },
     "cncef": {
       "status": "success",
-      "count": 180
+      "count": 1603
     },
     "anacofi": {
       "status": "success",

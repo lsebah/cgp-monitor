@@ -3,7 +3,7 @@
  * Tracks CGP firms across French professional associations.
  */
 
-const APP_VERSION = '11';
+const APP_VERSION = '12';
 const NTFY_TOPIC = 'cgp-monitor-cmf';
 const STATUS_KEY = 'cgp-status';          // { [id]: { status, date } }
 const FOLK_KEY = 'cgp-folk';              // { [id]: date }
