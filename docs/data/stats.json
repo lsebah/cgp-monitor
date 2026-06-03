@@ -5,12 +5,8 @@
   "new_this_month": 5759,
   "by_association": {
     "anacofi": 3243,
-    "cncef": 4829,
     "cncgp": 2623,
-    "ucgp": 66,
-    "leaders_league": 36,
-    "registre": 24,
-    "manuel": 22
+    "cncef": 1603
   },
   "by_activity": {
     "CIF": 7486,
@@ -76,5 +72,5 @@
       "timestamp": "2026-06-03T09:24:44.425651+00:00"
     }
   },
-  "last_updated": "2026-06-03T13:34:11.113757+00:00"
+  "last_updated": "2026-06-03T13:39:02.156447+00:00"
 }
