@@ -1613,4 +1613,17 @@ async function refreshData() {
 }
 window.refreshData = refreshData;
 
+function toggleFilters() {
+    const panel = document.getElementById('advancedFilters');
+    const btn = document.getElementById('toggleFiltersBtn');
+    if (!panel) return;
+    const isHidden = panel.style.display === 'none';
+    panel.style.display = isHidden ? 'flex' : 'none';
+    if (btn) {
+        btn.classList.toggle('open', isHidden);
+        btn.textContent = isHidden ? '− Filtres' : '+ Filtres';
+    }
+}
+window.toggleFilters = toggleFilters;
+
 init();
