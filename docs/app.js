@@ -269,14 +269,13 @@ async function cloudSave() {
 async function loadData() {
     try {
         const [membersResp, newResp, groupResp, cartoResp] = await Promise.all([
-            // cache:'no-store' ensures we never serve stale data from the
-            // browser HTTP cache — the data files change every day after the
-            // scrape, and Last-Modified-based revalidation has been observed
-            // to keep stale copies around even after the SW reload.
-            fetch('data/members.json', { cache: 'no-store' }).catch(() => null),
-            fetch('data/new_members.json', { cache: 'no-store' }).catch(() => null),
-            fetch('data/groupements.json', { cache: 'no-store' }).catch(() => null),
-            fetch('data/20260413_cartographie_groupements_cgp.json', { cache: 'no-store' }).catch(() => null),
+            // cache:'no-cache' = always revalidate with the server (ETag/304) but
+            // reuse the cached copy when unchanged. Fresh data without re-downloading
+            // the 15 MB file on every visit -> much faster than 'no-store'.
+            fetch('data/members.json', { cache: 'no-cache' }).catch(() => null),
+            fetch('data/new_members.json', { cache: 'no-cache' }).catch(() => null),
+            fetch('data/groupements.json', { cache: 'no-cache' }).catch(() => null),
+            fetch('data/20260413_cartographie_groupements_cgp.json', { cache: 'no-cache' }).catch(() => null),
         ]);
 
         if (membersResp?.ok) {
