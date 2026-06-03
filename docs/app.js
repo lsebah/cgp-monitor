@@ -20,6 +20,22 @@ const STATUS_LABELS = {
     refused:     'Refus',
 };
 
+// Clean labels for the register / association badges on each cabinet card.
+const ASSOC_LABELS = {
+    cncgp: 'CNCGP', cncef: 'CNCEF', anacofi: 'ANACOFI',
+    affo: 'AFFO', ucgp: 'UCGP', orias: 'ORIAS',
+};
+const ASSOC_TITLES = {
+    cncgp: 'Chambre Nationale des Conseillers en Gestion de Patrimoine',
+    cncef: 'Chambre Nationale des Conseils Experts Financiers',
+    anacofi: 'Association Nationale des Conseils Financiers',
+    affo: 'Association Francaise du Family Office',
+    ucgp: 'Union des Conseils en Gestion de Patrimoine',
+    orias: 'Registre officiel ORIAS',
+};
+// Internal bookkeeping tags that are NOT registers — never shown as a badge.
+const ASSOC_HIDDEN = new Set(['registre', 'manuel', 'leaders_league']);
+
 let allMembers = [];
 let newMembers = [];
 let groupementsData = {};
@@ -835,7 +851,8 @@ function renderMemberCard(m) {
     const inFolk = isInFolk(m.id);
 
     const assocBadges = Object.keys(m.associations || {})
-        .map(a => `<span class="badge badge-assoc">${a.toUpperCase()}</span>`)
+        .filter(a => !ASSOC_HIDDEN.has(a))
+        .map(a => `<span class="badge badge-assoc" title="${ASSOC_TITLES[a] || ''}">${ASSOC_LABELS[a] || a.toUpperCase().replace(/_/g, ' ')}</span>`)
         .join('');
     const actBadges = (m.activities || [])
         .map(a => `<span class="badge badge-activity">${a}</span>`)
