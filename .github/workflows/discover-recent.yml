@@ -1,8 +1,6 @@
 name: Discover Recent CGP (created < N days)
 
 on:
-  schedule:
-    - cron: '0 5 * * *'   # Daily 05:00 UTC - catch newly created CGP firms
   workflow_dispatch:
     inputs:
       days:
