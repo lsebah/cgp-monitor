@@ -1,356 +1,304 @@
 {
-  "last_updated": "2026-06-03",
-  "count": 22,
+  "last_updated": "2026-06-17",
+  "count": 20,
   "new_members": [
     {
-      "id": "cgp_b5343428bd",
-      "company_name": "HUGO GALVEZ (GALVEZ) (HUGO GALVEZ)",
-      "city": "LAUNAGUET",
-      "department": "31",
+      "id": "cgp_61441690b7",
+      "company_name": "BERTRAND MICHAUD",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_8a8c8aeb8d",
-      "company_name": "SOREL FINANCIAL & SOLUTIONS",
-      "city": "RENNES",
-      "department": "35",
+      "id": "cgp_5e6fd87ac2",
+      "company_name": "JEROME BARRé",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_10702586c0",
-      "company_name": "RAISSA KIABOUNA MATONDO (RAISSA FINANCE)",
-      "city": "TALENSAC",
-      "department": "35",
+      "id": "cgp_969e7d6939",
+      "company_name": "Matthieu Coisne",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_7f2bb8069f",
-      "company_name": "KILLYAN RICHARD (RICHARD)",
-      "city": "NANTES",
-      "department": "44",
+      "id": "cgp_dd3900d066",
+      "company_name": "Patricia de La Forest Divonne",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_75366602c9",
-      "company_name": "GUILLAUME GUILLAUME PELLERIN (PELLERIN)",
-      "city": "MARQUETTE-LEZ-LILLE",
-      "department": "59",
+      "id": "cgp_c073374cb9",
+      "company_name": "Jérôme JAMBERT",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_7056661c52",
-      "company_name": "SASU LF COURTAGE (LF COURTAGE) (LF COURTAGE)",
-      "city": "SAILLY-SUR-LA-LYS",
-      "department": "62",
+      "id": "cgp_c60201777c",
+      "company_name": "Pierre de PELLEGARS",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_9101042073",
-      "company_name": "MATHIEU GRASSER",
-      "city": "SAND",
-      "department": "67",
+      "id": "cgp_137d9dec71",
+      "company_name": "Lucille Naepels",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_4d60b5a83a",
-      "company_name": "SASU SILENCE CAPITAL (FACILIFINANCES)",
-      "city": "LE MANS",
-      "department": "72",
+      "id": "cgp_01ff29127f",
+      "company_name": "Jean-Marc Aveline",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_e1eed67056",
-      "company_name": "ENJOY STUDY",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_61a6234b46",
+      "company_name": "EMILIE CARBONNAUX",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_8eb37ded9a",
-      "company_name": "LEO SAARBACH (SAARBACH PATRIMOINE)",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_c858b1b528",
+      "company_name": "FLOREALE YAMADA",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_d15a64b338",
-      "company_name": "ALMAX PARTNERS",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_4b272e8c0c",
+      "company_name": "PATRICIA OUAKI",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_a3fcf22506",
-      "company_name": "NUMMI GESTION PRIVEE (NUMMI GESTION PRIVEE)",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_d644763231",
+      "company_name": "Groupe Henner Family Office",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_249878682f",
-      "company_name": "MATHIEU LE MINOUX (MATHIEU GESTION PRIVEE)",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_57fc52d514",
+      "company_name": "JCDecaux Holding",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_3737b745a4",
-      "company_name": "ERIC HUANG (HG FINANCE)",
-      "city": "PARIS",
-      "department": "75",
+      "id": "cgp_dd9a2b782c",
+      "company_name": "Banque Transatlantique",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_58aa80add5",
-      "company_name": "ERWAN QUENEZ",
-      "city": "ROUEN",
-      "department": "76",
+      "id": "cgp_b2bd0b6364",
+      "company_name": "Etablissements Peugeot Freres",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_8ba5ae27fc",
-      "company_name": "RAPHAELLE YVERT",
-      "city": "MONTESSON",
-      "department": "78",
+      "id": "cgp_ccb5041055",
+      "company_name": "Colam Entreprendre",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_7dd49dced0",
-      "company_name": "DAVID RITO",
-      "city": "CLAYES-SOUS-BOIS (LES)",
-      "department": "78",
+      "id": "cgp_c295b2fb58",
+      "company_name": "Groupe Mansartis",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_f57a3e5dac",
-      "company_name": "FRANCOIS LANZARINI",
-      "city": "ALBI",
-      "department": "81",
+      "id": "cgp_a56181ef1d",
+      "company_name": "HEREST Multi Family Office",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_da2dfffb90",
-      "company_name": "GAUTHIER CRESSET (OSEZ CONSEILS)",
-      "city": "MESNARD-LA-BAROTIERE",
-      "department": "85",
+      "id": "cgp_76639b5208",
+      "company_name": "OFILAE",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_ff8ddf303c",
-      "company_name": "TANGUY BEGUE (BEGUE)",
-      "city": "RUEIL MALMAISON",
-      "department": "92",
+      "id": "cgp_75451e69c5",
+      "company_name": "Yards",
+      "city": "",
+      "department": "",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "registre",
-        "manuel"
+        "affo"
       ],
-      "first_seen": "2026-06-03",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_3e1f5b34a4",
-      "company_name": "IMANE ELHIMRI (IE CONSULTING)",
-      "city": "LE PERREUX-SUR-MARNE",
-      "department": "94",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "registre",
-        "manuel"
-      ],
-      "first_seen": "2026-06-03",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_f5c5398a51",
-      "company_name": "LUCAS MANDOFIA (MANDOFIA PATRIMOINE)",
-      "city": "MAFFLIERS",
-      "department": "95",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "registre",
-        "manuel"
-      ],
-      "first_seen": "2026-06-03",
+      "first_seen": "2026-06-17",
       "phone": "",
       "email": ""
     }
