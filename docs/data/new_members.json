@@ -1,5 +1,501 @@
 {
   "last_updated": "2026-06-18",
-  "count": 0,
-  "new_members": []
+  "count": 33,
+  "new_members": [
+    {
+      "id": "cgp_edf4a29db4",
+      "company_name": "Financière de la Londe",
+      "city": "Marseille",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33677508216",
+      "email": ""
+    },
+    {
+      "id": "cgp_1958dd6dcf",
+      "company_name": "FINCA PATRIMOINE",
+      "city": "Martigues",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33610692984",
+      "email": ""
+    },
+    {
+      "id": "cgp_12e3cb1503",
+      "company_name": "JRGP",
+      "city": "Marseille",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33625981710",
+      "email": ""
+    },
+    {
+      "id": "cgp_7151bbf5c0",
+      "company_name": "NUMERIS PATRIMOINE",
+      "city": "Marseille",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fa740cce55",
+      "company_name": "E&P OCEAN INDIEN",
+      "city": "Toulouse",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33534406567",
+      "email": ""
+    },
+    {
+      "id": "cgp_2d43327da9",
+      "company_name": "PATRIMUM EXPERT",
+      "city": "Toulouse",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33534406567",
+      "email": ""
+    },
+    {
+      "id": "cgp_c70c0042d3",
+      "company_name": "PATRIMOINE CONSEIL",
+      "city": "Rennes",
+      "department": "35",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33299270707",
+      "email": ""
+    },
+    {
+      "id": "cgp_6a9c0f0bfc",
+      "company_name": "SIMON CONSEIL",
+      "city": "La Bernerie En Retz",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9e73160378",
+      "company_name": "TORRENTE CONSEILS",
+      "city": "St Genis Laval",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33630817238",
+      "email": ""
+    },
+    {
+      "id": "cgp_baa6a98c61",
+      "company_name": "AURORE INVESTMENT SOLUTIONS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33664397486",
+      "email": ""
+    },
+    {
+      "id": "cgp_8dde9402f2",
+      "company_name": "BETHEL CAPITAL",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33650527322",
+      "email": ""
+    },
+    {
+      "id": "cgp_504e9e6dd6",
+      "company_name": "DP2V",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33661765816",
+      "email": ""
+    },
+    {
+      "id": "cgp_9e4cb704a7",
+      "company_name": "FLEYGEST",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33620777638",
+      "email": ""
+    },
+    {
+      "id": "cgp_2befb0f251",
+      "company_name": "HAICO",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33423500620",
+      "email": ""
+    },
+    {
+      "id": "cgp_af683b5702",
+      "company_name": "HARMONY SOCIAL WEALTH CAPITAL",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33669499518",
+      "email": ""
+    },
+    {
+      "id": "cgp_14b52a59e4",
+      "company_name": "LENDOCOMPANY",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33182839752",
+      "email": ""
+    },
+    {
+      "id": "cgp_1e97739954",
+      "company_name": "MAESTRA PARTNERS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33675000232",
+      "email": ""
+    },
+    {
+      "id": "cgp_5bfb3864ff",
+      "company_name": "MOSAIC PATRIMOINE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33680046076",
+      "email": ""
+    },
+    {
+      "id": "cgp_16d8b7786b",
+      "company_name": "NEWCO AOA",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33798768597",
+      "email": ""
+    },
+    {
+      "id": "cgp_526cc7c217",
+      "company_name": "STRATEGIE MED",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33769050145",
+      "email": ""
+    },
+    {
+      "id": "cgp_4cb63551bd",
+      "company_name": "TVB EXPERTISE PATRIMONIALE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33629352694",
+      "email": ""
+    },
+    {
+      "id": "cgp_583c0bbc91",
+      "company_name": "VIRIDIS PATRIMOINE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_92489e5b81",
+      "company_name": "ARKANA CAPITAL",
+      "city": "Rueil-Malmaison",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33660593678",
+      "email": ""
+    },
+    {
+      "id": "cgp_2d4dc62f65",
+      "company_name": "SYMPHONIE PATRIMOINE",
+      "city": "Saint-Cloud",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33609688532",
+      "email": ""
+    },
+    {
+      "id": "cgp_500c5e74da",
+      "company_name": "DAMIENS DE LYS",
+      "city": "Carcassonne",
+      "department": "11",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33644886784",
+      "email": ""
+    },
+    {
+      "id": "cgp_fe760a416f",
+      "company_name": "EIRL BULUT SERKAN (LEADER PATRIMOINE)",
+      "city": "Sacquenville",
+      "department": "27",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33634123955",
+      "email": ""
+    },
+    {
+      "id": "cgp_5cb87d463a",
+      "company_name": "AVELTIA CONSEIL & PATRIMOINE",
+      "city": "Douarnenez",
+      "department": "29",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33670049946",
+      "email": ""
+    },
+    {
+      "id": "cgp_09585ccd1f",
+      "company_name": "LMC ASSURANCE & PATRIMOINE",
+      "city": "La Croix En Touraine",
+      "department": "37",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33676145462",
+      "email": ""
+    },
+    {
+      "id": "cgp_f539efc3d4",
+      "company_name": "ADRET PATRIMOINE",
+      "city": "Biarritz",
+      "department": "64",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33745616916",
+      "email": ""
+    },
+    {
+      "id": "cgp_a6afe6f0b8",
+      "company_name": "CHRISTIAN SOULAS PATRIMOINE SARL",
+      "city": "Pau",
+      "department": "64",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33247755700",
+      "email": ""
+    },
+    {
+      "id": "cgp_6ab2d24947",
+      "company_name": "FB CONSEILS ET PATRIMOINE",
+      "city": "Annecy",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33679801458",
+      "email": ""
+    },
+    {
+      "id": "cgp_9385bb0c0d",
+      "company_name": "VERKORAM",
+      "city": "Villaz",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33617576674",
+      "email": ""
+    },
+    {
+      "id": "cgp_d09cabd10d",
+      "company_name": "CORALIE CAHUZAC-CONSEIL PATRIMONIAL",
+      "city": "Cestayrols",
+      "department": "81",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-18",
+      "phone": "+33625566713",
+      "email": ""
+    }
+  ]
 }
