@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-19T08:30:17.370278+00:00",
+  "last_updated": "2026-06-19T10:43:42.602893+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
       "count": 2638,
-      "timestamp": "2026-06-18T10:25:42.178721+00:00",
-      "duration_s": 586.4
+      "timestamp": "2026-06-19T10:43:42.602893+00:00",
+      "duration_s": 564.3
     },
     "cncef": {
       "status": "success",
@@ -1243,16 +1243,16 @@
       "email": "christophe.decaix@2bpatrimoine.com",
       "website": "https://www.2bpatrimoine.com/",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -1680,12 +1680,12 @@
       "email": "ld@2lp-conseils.eu",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -3568,8 +3568,8 @@
       "email": "m.coulibaly@5c-patrimoine.fr",
       "website": "http://www.cmpatrimoine.com/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -4219,12 +4219,12 @@
       "email": "cgorce@apg-patrimoine.fr",
       "website": "https://adpatrimoine.fr/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -4381,8 +4381,8 @@
       "email": "alexmaquart@outlook.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -4437,16 +4437,16 @@
       "email": "akapatrimoine@gmail.com",
       "website": "https://www.cauripatrimoine.fr",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Patrimoine",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -5258,16 +5258,16 @@
       "email": "adreux@adgestionprivee.com",
       "website": "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Crédit",
         "Immobilier",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -5670,13 +5670,13 @@
       "email": "msophie.lecluyse@ams-patrimoine.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -6383,8 +6383,8 @@
       "email": "cabinet@a2gplus.fr",
       "website": "https://a2g-patrimoine.fr/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -6914,13 +6914,13 @@
       "email": "contact@groupe-ciec.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -8152,16 +8152,16 @@
       "email": "ab3c.patrimoine@wanadoo.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Patrimoine",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -10153,8 +10153,8 @@
       "email": "contact@kofman-patrimoine.com",
       "website": "http://www.edenpatrimoine.fr/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -14557,16 +14557,16 @@
       "email": "c.lefevre@actiexpert.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine",
+        "Crédit",
         "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -15791,12 +15791,12 @@
       "email": "afoconseil@gmail.com",
       "website": "https://www.altride.fr/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -16373,16 +16373,16 @@
       "email": "vincent.monnet@acvm-patrimoine.fr",
       "website": "https://cgpatrimoine.net/",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -17019,12 +17019,12 @@
         "CIF"
       ],
       "specialties": [
-        "Stratégie patrimoniale",
-        "Conseils investissements financiers",
         "Transmission de patrimoine",
+        "Retraite",
+        "Conseils investissements financiers",
+        "Stratégie patrimoniale",
         "Optimisation fiscale",
-        "Protection de la famille",
-        "Retraite"
+        "Protection de la famille"
       ],
       "directors": [
         {
@@ -18641,14 +18641,14 @@
       "email": "jeanfrancois.degait@adeopatrimoine.com",
       "website": "http://www.ldv-patrimoine.fr",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -19668,16 +19668,16 @@
       "email": "contact@adl-patrimoine.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -22091,14 +22091,14 @@
       "email": "axel@alpexgp.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -22777,14 +22777,14 @@
       "email": "alan@aetos-patrimoine.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
+        "Crédit",
         "Assurance",
-        "Patrimoine",
-        "Crédit"
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -27618,14 +27618,14 @@
       "email": "contact@agm-consulting.fr",
       "website": "http://www.agm-consulting.fr",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -28656,13 +28656,13 @@
       "email": "cabinet@ai-assurances.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -29689,8 +29689,8 @@
       "email": "julie@ajconseil.net",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -30116,8 +30116,8 @@
       "email": "hello@ajf-gp.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -30690,16 +30690,16 @@
       "email": "micha.girard@yahoo.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -32435,8 +32435,8 @@
       "email": "g.chaumeron@ballmont.fr",
       "website": "https://www.louvre-gestionprivee.com/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -32891,8 +32891,8 @@
       "email": "alex.desagazan@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -37402,8 +37402,8 @@
       "email": "contact@alpes-patrimoine.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -40324,13 +40324,13 @@
       "email": "plguiller@altermes.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
+        "Investissements immobiliers",
         "Stratégie patrimoniale",
         "Assurance",
-        "Investissements immobiliers",
         "Investissements financiers"
       ],
       "directors": [
@@ -42111,8 +42111,8 @@
       "email": "james.thoretton@orange.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -42833,13 +42833,13 @@
       "email": "maximeberthet@a-mconseils.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -45888,8 +45888,8 @@
       "email": "contact@ampconseil.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -53437,12 +53437,12 @@
       "email": "jeremy.fasilleau@arc-patrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -56851,17 +56851,17 @@
       "email": "contact@aromes-patrimoine.com",
       "website": "http://www.opes.fr",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
         "Crédit",
-        "Cabinet de conseil en gestion de patrimoine"
+        "Immobilier",
+        "Cabinet de conseil en gestion de patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -58407,8 +58407,8 @@
       "email": "contact@arvorpatrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -67025,8 +67025,8 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -67529,12 +67529,12 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance Vie",
-        "Immobilier",
         "Stratégie Patrimoniale",
-        "Droit de la Famille",
         "ATRIA PATRIMOINE",
-        "Crédit immobilier"
+        "Immobilier",
+        "Crédit immobilier",
+        "Assurance Vie",
+        "Droit de la Famille"
       ],
       "directors": [
         {
@@ -71424,16 +71424,16 @@
       "email": "auroremichaudconseil@gmail.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -78044,16 +78044,16 @@
       "email": "contact@bs-conseils-patrimoine.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Patrimoine",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -78273,16 +78273,16 @@
       "email": "bruno@byconseils.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -78465,16 +78465,16 @@
       "email": "guillaume.bouron@b2patrimoine.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine",
+        "Crédit",
         "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -78712,16 +78712,16 @@
       "email": "contact@b2rpatrimoine.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine",
+        "Crédit",
         "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -84462,14 +84462,14 @@
       "email": "bc@livaoffice.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -84927,14 +84927,14 @@
       "email": "info@bcrfinances.com",
       "website": "",
       "activities": [
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Patrimoine",
         "Immobilier",
-        "Patrimoine"
+        "Assurance"
       ],
       "directors": [
         {
@@ -91969,14 +91969,14 @@
       "email": "garnierbaptiste3@gmail.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -92443,8 +92443,8 @@
       "email": "bmimoun@bhmpatrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -94083,13 +94083,13 @@
       "email": "benoit.jamet@gmail.com",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -95909,13 +95909,13 @@
       "email": "frederic.bex@blue-wealth-management.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -96522,8 +96522,8 @@
       "email": "berrebi.linda@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -124355,8 +124355,8 @@
       ],
       "specialties": [
         "Retraite",
-        "Fiscalité",
         "Placement",
+        "Fiscalité",
         "Successions"
       ],
       "directors": [
@@ -126526,8 +126526,8 @@
       "email": "contact@capvest.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -134355,8 +134355,8 @@
       "email": "contact@clairedumay-conseils.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -134683,16 +134683,16 @@
       "email": "n.perreon@cdlapatrimoine.fr",
       "website": "https://www.lenapatrimoine.fr",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Patrimoine",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -134789,8 +134789,8 @@
       "email": "direction@cdrpatrimoine.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -135064,8 +135064,8 @@
       "email": "cyril.escande@ceconseil.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -135202,8 +135202,8 @@
       "email": "cyrille@clegcourtage.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -135438,8 +135438,8 @@
       "email": "patrimoine@groupecedra.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -136417,8 +136417,8 @@
       "email": "cent-or@live.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -148018,15 +148018,15 @@
       "email": "clementlechipey@gmail.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -153515,12 +153515,12 @@
         "CIF"
       ],
       "specialties": [
-        "Stratégie patrimoniale",
-        "Cession d'entreprise",
         "Transmission de patrimoine",
-        "Optimisation fiscale",
+        "Cession d'entreprise",
+        "Retraite",
         "Placements immobiliers & financiers",
-        "Retraite"
+        "Stratégie patrimoniale",
+        "Optimisation fiscale"
       ],
       "directors": [
         {
@@ -158619,8 +158619,8 @@
       "email": "contact@conseil-prive.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -159707,9 +159707,9 @@
         "CIF"
       ],
       "specialties": [
-        "Placements financiers",
         "Ingénierie Patrimoniale",
-        "Investissement immobilier France et USA"
+        "Investissement immobilier France et USA",
+        "Placements financiers"
       ],
       "directors": [
         {
@@ -167805,13 +167805,13 @@
       "email": "contact@cpfcourtage.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -171306,16 +171306,16 @@
       "email": "thierry.ctlgpatrimoine@outlook.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -172008,16 +172008,16 @@
       "email": "contact@cvpatrimoine.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -178341,8 +178341,8 @@
       "email": "infos@dcb-assurances.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -183351,8 +183351,8 @@
       "email": "alexdelmas@outlook.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -187036,12 +187036,12 @@
       "email": "degiambattistatheo@gmail.com",
       "website": "https://smb-patrimoine.com/",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -201447,10 +201447,10 @@
       ],
       "specialties": [
         "Optimisation de la trésorerie excédentaire des personnes morales",
-        "Gestion des avoirs financiers des particuliers",
-        "Conseil en transmission personnelle et professionnelle",
         "Conseil fiscal",
-        "Optimisation du revenu du dirigeant"
+        "Gestion des avoirs financiers des particuliers",
+        "Optimisation du revenu du dirigeant",
+        "Conseil en transmission personnelle et professionnelle"
       ],
       "directors": [
         {
@@ -202067,8 +202067,8 @@
       "email": "ocazes@edony.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -221167,8 +221167,8 @@
       "email": "epi@episa.net",
       "website": "http://www.episa.net",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -227669,16 +227669,16 @@
       "email": "francois.auvillain@gmail.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -231732,16 +231732,16 @@
       "email": "alexia.gashti@fddpatrimoine.com",
       "website": "http://www.ldv-patrimoine.fr",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Immobilier",
-        "Patrimoine",
-        "Crédit"
+        "Assurance",
+        "Patrimoine"
       ],
       "directors": [
         {
@@ -231837,14 +231837,14 @@
       "email": "dussoulierflorian@gmail.com",
       "website": "http://www.idpatrimoine.com",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -239633,8 +239633,8 @@
       "email": "olivier.georgin@vousfinancer.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -247512,12 +247512,12 @@
       "email": "fleur@fleurbouvier.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -258351,8 +258351,8 @@
       "email": "garami.conseils@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -262039,8 +262039,8 @@
       "email": "contact@geopatrimoine.com",
       "website": "http://www.kgrpatrimoine.fr",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -267186,8 +267186,8 @@
       "email": "contact@gmconseils.eu",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -267439,13 +267439,13 @@
       "email": "frederic.meites@gmo-conseil.fr",
       "website": "",
       "activities": [
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -284978,12 +284978,12 @@
         "CIF"
       ],
       "specialties": [
+        "Placements immobiliers",
+        "Retraite",
+        "Allocation d'actifs",
         "Stratégie patrimoniale",
         "Assurance Vie",
-        "Optimisation fiscale",
-        "Placements immobiliers",
-        "Allocation d'actifs",
-        "Retraite"
+        "Optimisation fiscale"
       ],
       "directors": [
         {
@@ -287568,8 +287568,8 @@
       "email": "m.langevin@hive-patrimoine.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -292062,8 +292062,8 @@
       "email": "hrfinance.holveck@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -309842,8 +309842,8 @@
       "email": "jkamseu@jk-conseil.io",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -315554,16 +315554,16 @@
       "email": "ahumez@groupesarro.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -315659,8 +315659,8 @@
       "email": "jonathan.khayat55@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -316095,8 +316095,8 @@
       "email": "jiemepe@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -316256,16 +316256,16 @@
       "email": "contact@jneconseils.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -317936,8 +317936,8 @@
       "email": "anthony.muselli@jpam-patrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -360178,16 +360178,16 @@
       "email": "loubeau.romain@lrpatrimoine.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -369184,13 +369184,13 @@
       "email": "aurelie.esquivel@maigo-patrimoine.com",
       "website": "",
       "activities": [
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -379205,12 +379205,12 @@
       "email": "contact@mcbfinances.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -380117,8 +380117,8 @@
       "email": "m.queruel@mdofinance.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -386119,8 +386119,8 @@
       "email": "contact@mgsconseils.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -412354,14 +412354,14 @@
       "email": "pouneh.pourzand@nova-wm.fr",
       "website": "",
       "activities": [
+        "COA",
         "IOBSP",
-        "CIF",
-        "COA"
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -453934,8 +453934,8 @@
       "email": "pierre.juin@btcorpconseil.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -474475,12 +474475,12 @@
       "email": "alexis@reinach-gp.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -490864,16 +490864,16 @@
       "email": "contact@santal-patrimoine.fr",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF",
+        "COA",
         "Immobilier",
-        "COA"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -506961,8 +506961,8 @@
       "email": "administration@seven-cm.com",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -547609,9 +547609,9 @@
       ],
       "specialties": [
         "Fiscalité",
-        "Placements financiers",
+        "Ingénierie patrimoniale",
         "Transmission de patrimoine",
-        "Ingénierie patrimoniale"
+        "Placements financiers"
       ],
       "directors": [
         {
