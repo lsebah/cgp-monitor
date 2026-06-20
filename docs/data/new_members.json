@@ -1,5 +1,141 @@
 {
   "last_updated": "2026-06-20",
-  "count": 0,
-  "new_members": []
+  "count": 9,
+  "new_members": [
+    {
+      "id": "cgp_7dba597311",
+      "company_name": "DUCHAMP INVESTISSEMENT",
+      "city": "Vichy",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33624322612",
+      "email": ""
+    },
+    {
+      "id": "cgp_6f57238d1d",
+      "company_name": "WINSTONE GESTION PRIVEE",
+      "city": "Bordeaux",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33629182815",
+      "email": ""
+    },
+    {
+      "id": "cgp_5129b74f37",
+      "company_name": "HEREST & CO",
+      "city": "Limonest",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33613418006",
+      "email": ""
+    },
+    {
+      "id": "cgp_c1f65cc33b",
+      "company_name": "HELLOBERNARD SAS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33616335787",
+      "email": ""
+    },
+    {
+      "id": "cgp_40a1d68bd4",
+      "company_name": "NUMMI GESTION PRIVÉE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33689814702",
+      "email": ""
+    },
+    {
+      "id": "cgp_21670f7a01",
+      "company_name": "LEVARA PATRIMOINE",
+      "city": "Boulogne Billancourt",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33611204839",
+      "email": ""
+    },
+    {
+      "id": "cgp_812fbc9c60",
+      "company_name": "AURALYS CONSEIL",
+      "city": "Figeac",
+      "department": "46",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33665459721",
+      "email": ""
+    },
+    {
+      "id": "cgp_c48f7bfe2d",
+      "company_name": "AIC PATRIMOINE NORD-EST",
+      "city": "Reims",
+      "department": "51",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33628644345",
+      "email": ""
+    },
+    {
+      "id": "cgp_5e63dbcd4b",
+      "company_name": "YSÉOS PATRIMOINE",
+      "city": "Ezanville",
+      "department": "95",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-20",
+      "phone": "+33651879935",
+      "email": ""
+    }
+  ]
 }
