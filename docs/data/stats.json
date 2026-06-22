@@ -44,9 +44,9 @@
   "scrape_status": {
     "cncgp": {
       "status": "success",
-      "count": 2649,
-      "timestamp": "2026-06-21T09:55:47.338203+00:00",
-      "duration_s": 566.8
+      "count": 2650,
+      "timestamp": "2026-06-22T09:51:47.532739+00:00",
+      "duration_s": 569.3
     },
     "cncef": {
       "status": "success",
@@ -78,5 +78,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-22T09:35:59.657206+00:00"
+  "last_updated": "2026-06-22T09:51:47.532739+00:00"
 }
