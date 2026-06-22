@@ -144,99 +144,88 @@ def _parse_detail_page(url):
         return {}
 
 
+def _fetch_page(page_num):
+    """Fetch a single CNCEF page (for parallel use)."""
+    import requests as req
+    HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+               "Accept": "text/html, */*", "Accept-Language": "fr-FR,fr;q=0.9"}
+    url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
+    try:
+        r = req.get(url, headers=HEADERS, timeout=30)
+        return (page_num, r.text) if r.status_code == 200 else (page_num, None)
+    except Exception:
+        return (page_num, None)
+
+
 def scrape_cncef(max_pages=500, enrich_details=False):
-    """
-    Scrape the CNCEF directory by paginating through all pages.
+    """Scrape the CNCEF directory using parallel page fetching (5 workers)."""
+    import concurrent.futures
 
-    Args:
-        max_pages: Maximum pages to scrape (safety limit, total is ~411)
-        enrich_details: If True, follow detail links for phone/email (much slower)
-
-    Returns:
-        List of normalized member dicts
-    """
-    logger.info("Starting CNCEF scrape...")
+    logger.info("Starting CNCEF scrape (parallel, 5 workers)...")
     members = []
     seen_names = set()
-    page_num = 1
 
-    while page_num <= max_pages:
-        url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
-        logger.info(f"CNCEF: page {page_num}...")
+    # Phase 1: fetch all pages in parallel
+    pages = {}
+    empty_seen = False
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+        batch_start = 1
+        while batch_start <= max_pages and not empty_seen:
+            batch_end = min(batch_start + 49, max_pages + 1)
+            futures = {pool.submit(_fetch_page, p): p for p in range(batch_start, batch_end)}
+            for future in concurrent.futures.as_completed(futures):
+                pnum, html = future.result()
+                if html:
+                    soup = BeautifulSoup(html, "lxml")
+                    if soup.select("div.annuaire__item"):
+                        pages[pnum] = html
+                    else:
+                        empty_seen = True
+                else:
+                    empty_seen = True
+            logger.info(f"CNCEF: fetched pages {batch_start}-{batch_end-1}, {len(pages)} with data so far")
+            batch_start = batch_end
 
-        try:
-            resp = fetch(url, delay=0.3)
-            if not resp:
-                logger.warning(f"CNCEF: No response for page {page_num}, stopping")
-                break
+    logger.info(f"CNCEF: {len(pages)} pages fetched, parsing...")
 
-            soup = BeautifulSoup(resp.text, "lxml")
+    # Phase 2: parse sequentially (fast, in-memory)
+    for page_num in sorted(pages.keys()):
+        soup = BeautifulSoup(pages[page_num], "lxml")
+        cards = soup.select("div.annuaire__item")
+        page_count = 0
+        for card in cards:
+            data = _parse_card(card)
+            if not data:
+                continue
+            name = data["name"]
+            if name in seen_names:
+                continue
+            seen_names.add(name)
+            extra = {}
+            if enrich_details and data["detail_url"]:
+                extra = _parse_detail_page(data["detail_url"])
+            postal_code = extra.get("postal_code", "")
+            if not postal_code and data["department"]:
+                postal_code = f"{data['department']}000"
+            directors = []
+            if extra.get("director_name"):
+                directors = [{"name": extra["director_name"], "role": "Dirigeant"}]
+            member = make_member_dict(
+                company_name=name,
+                address_street=extra.get("address_street", ""),
+                postal_code=postal_code,
+                city=extra.get("city") or data["city"],
+                phone=extra.get("phone", ""),
+                email=extra.get("email", ""),
+                website=extra.get("website", ""),
+                activities=data["activities"],
+                specialties=data["specialties"],
+                directors=directors,
+                source="cncef",
+                source_url=data["detail_url"],
+            )
+            members.append(member)
+            page_count += 1
 
-            # Find member cards using the correct CSS selector
-            cards = soup.select("div.annuaire__item")
-            if not cards:
-                logger.info(f"CNCEF: No cards on page {page_num}, stopping")
-                break
-
-            page_count = 0
-            for card in cards:
-                data = _parse_card(card)
-                if not data:
-                    continue
-
-                name = data["name"]
-                if name in seen_names:
-                    continue
-                seen_names.add(name)
-
-                # Enrich from detail page if requested
-                extra = {}
-                if enrich_details and data["detail_url"]:
-                    extra = _parse_detail_page(data["detail_url"])
-
-                postal_code = extra.get("postal_code", "")
-                if not postal_code and data["department"]:
-                    postal_code = f"{data['department']}000"
-
-                directors = []
-                if extra.get("director_name"):
-                    directors = [{"name": extra["director_name"], "role": "Dirigeant"}]
-
-                member = make_member_dict(
-                    company_name=name,
-                    address_street=extra.get("address_street", ""),
-                    postal_code=postal_code,
-                    city=extra.get("city") or data["city"],
-                    phone=extra.get("phone", ""),
-                    email=extra.get("email", ""),
-                    website=extra.get("website", ""),
-                    activities=data["activities"],
-                    specialties=data["specialties"],
-                    directors=directors,
-                    source="cncef",
-                    source_url=data["detail_url"],
-                )
-                members.append(member)
-                page_count += 1
-
-            logger.info(f"CNCEF: page {page_num} -> {page_count} new members")
-
-            # Check pagination: is there a next page?
-            pagination = soup.select_one("ul.pagination")
-            if not pagination:
-                break
-
-            next_btn = pagination.select_one("li.next a")
-            if not next_btn:
-                # No "Suivant" button = last page
-                break
-
-            page_num += 1
-
-        except Exception as e:
-            logger.error(f"CNCEF: Error on page {page_num}: {e}")
-            page_num += 1
-            continue
-
-    logger.info(f"CNCEF: Total = {len(members)} members across {page_num} pages")
+    logger.info(f"CNCEF: Total = {len(members)} members across {len(pages)} pages")
     return members
