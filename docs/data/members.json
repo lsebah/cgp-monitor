@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T08:55:53.968749+00:00",
+  "last_updated": "2026-06-22T09:35:59.657206+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -9,7 +9,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 4829
+      "count": 12,
+      "timestamp": "2026-06-22T09:35:59.657206+00:00",
+      "duration_s": 154.5
     },
     "anacofi": {
       "status": "success",
@@ -196151,9 +196153,9 @@
       "email": "",
       "website": "",
       "activities": [
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "specialties": [
@@ -246868,9 +246870,9 @@
       "email": "",
       "website": "",
       "activities": [
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "specialties": [
@@ -255489,8 +255491,8 @@
       "email": "contact@daliconsulting.fr",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -284230,9 +284232,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -303544,8 +303546,8 @@
       "email": "contact@inovea-group.com",
       "website": "",
       "activities": [
-        "CIF",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Crédit",

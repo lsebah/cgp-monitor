@@ -50,7 +50,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 4829
+      "count": 12,
+      "timestamp": "2026-06-22T09:35:59.657206+00:00",
+      "duration_s": 154.5
     },
     "anacofi": {
       "status": "success",
@@ -76,5 +78,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-22T08:55:53.968749+00:00"
+  "last_updated": "2026-06-22T09:35:59.657206+00:00"
 }
