@@ -55,14 +55,14 @@
     "anacofi": {
       "status": "success",
       "count": 0,
-      "timestamp": "2026-06-21T07:58:17.607250+00:00",
-      "duration_s": 4.1
+      "timestamp": "2026-06-22T08:55:53.968749+00:00",
+      "duration_s": 3.9
     },
     "affo": {
       "status": "success",
       "count": 20,
-      "timestamp": "2026-06-21T07:58:17.607250+00:00",
-      "duration_s": 1.9
+      "timestamp": "2026-06-22T08:55:53.968749+00:00",
+      "duration_s": 2.6
     },
     "registre_manual": {
       "status": "success",
@@ -76,5 +76,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-21T09:55:47.338203+00:00"
+  "last_updated": "2026-06-22T08:55:53.968749+00:00"
 }
