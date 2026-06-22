@@ -1,8 +1,9 @@
 """
 Fast CNCEF-only scrape.
 
-Scrapes CNCEF (AJAX paginated directory), merges additively into existing
-member data. No Playwright needed. Runs in ~45-60 min.
+Scrapes CNCEF (HTML paginated directory), then does a FAST additive merge
+(by SIREN or normalized name+city — no fuzzy matching). Much faster than
+merge_all_sources which does O(N²) SequenceMatcher on 10k+ members.
 """
 import json
 import logging
@@ -16,7 +17,7 @@ logger = logging.getLogger(__name__)
 sys.path.insert(0, os.path.dirname(__file__))
 
 from sources.cncef import scrape_cncef
-from merger import merge_all_sources
+from sources.base import normalize_name, normalize_city
 from detector import detect_changes, build_new_members_data, build_stats
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "data")
@@ -64,14 +65,59 @@ def main():
                                   "timestamp": now_iso, "duration_s": round(elapsed, 1)}
         return
 
-    logger.info(">>> Merging...")
-    all_members = merge_all_sources(existing_members, cncef)
+    # Fast additive merge (no fuzzy matching — O(N) instead of O(N²))
+    logger.info(">>> Fast additive merge...")
+    t1 = datetime.now(timezone.utc)
+    siren_idx = {}
+    name_city_idx = {}
+    for m in existing_members:
+        s = m.get("siren")
+        if s:
+            siren_idx[s] = m
+        nn = m.get("company_name_normalized") or normalize_name(m.get("company_name", ""))
+        city = normalize_city(m.get("address", {}).get("city", ""))
+        if nn:
+            name_city_idx[(nn, city)] = m
 
-    logger.info(">>> Detecting changes...")
-    all_members, new_members = detect_changes(existing_members, all_members, today)
+    new_members = []
+    matched = 0
+    for o in cncef:
+        s = o.get("siren")
+        nn = o.get("company_name_normalized") or normalize_name(o.get("company_name", ""))
+        city = normalize_city(o.get("address", {}).get("city", ""))
 
-    stats = build_stats(all_members, len(new_members), today)
-    active = [m for m in all_members if m.get("status") != "removed"]
+        match = None
+        if s and s in siren_idx:
+            match = siren_idx[s]
+        elif nn and (nn, city) in name_city_idx:
+            match = name_city_idx[(nn, city)]
+
+        if match:
+            match.setdefault("associations", {})["cncef"] = o.get("associations", {}).get("cncef", {"member": True})
+            acts = set(match.get("activities", [])) | set(o.get("activities", []))
+            match["activities"] = list(acts)
+            match["last_seen"] = today
+            matched += 1
+        else:
+            o["first_seen"] = today
+            o["last_seen"] = today
+            o["is_new"] = True
+            existing_members.append(o)
+            new_members.append(o)
+            if s:
+                siren_idx[s] = o
+            if nn:
+                name_city_idx[(nn, city)] = o
+
+    for m in existing_members:
+        m.setdefault("is_new", False)
+        m.setdefault("last_seen", today)
+
+    merge_elapsed = (datetime.now(timezone.utc) - t1).total_seconds()
+    logger.info(f"<<< Merge done in {merge_elapsed:.0f}s: {matched} matched, {len(new_members)} new")
+
+    stats = build_stats(existing_members, len(new_members), today)
+    active = [m for m in existing_members if m.get("status") != "removed"]
     active.sort(key=lambda m: m.get("company_name", "").lower())
 
     save_json({

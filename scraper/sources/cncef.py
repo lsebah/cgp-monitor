@@ -165,7 +165,7 @@ def scrape_cncef(max_pages=500, enrich_details=False):
         logger.info(f"CNCEF: page {page_num}...")
 
         try:
-            resp = fetch(url, delay=1.0)
+            resp = fetch(url, delay=0.3)
             if not resp:
                 logger.warning(f"CNCEF: No response for page {page_num}, stopping")
                 break
