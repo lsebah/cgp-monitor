@@ -1,37 +1,65 @@
 {
   "last_updated": "2026-06-23",
-  "count": 2,
+  "count": 4,
   "new_members": [
     {
-      "id": "cgp_8c1484e487",
-      "company_name": "INVEST MH",
-      "city": "Hérault",
-      "department": "34",
+      "id": "cgp_f4dc95573e",
+      "company_name": "ALYTIS & CAPYG ASSOCIES",
+      "city": "Toulouse",
+      "department": "31",
       "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-23",
-      "phone": "",
+      "phone": "+33684626238",
       "email": ""
     },
     {
-      "id": "cgp_7deed99661",
-      "company_name": "AGP COURTAGE",
-      "city": "Loiret",
-      "department": "45",
+      "id": "cgp_64806fc2c0",
+      "company_name": "SKALIO COURTAGE",
+      "city": "Paris",
+      "department": "75",
       "activities": [
-        "COA"
+        "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-23",
-      "phone": "",
+      "phone": "+33781097197",
+      "email": ""
+    },
+    {
+      "id": "cgp_ecc54b7fca",
+      "company_name": "VALORIS",
+      "city": "Champs Sur Marne",
+      "department": "77",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-23",
+      "phone": "+33612596698",
+      "email": ""
+    },
+    {
+      "id": "cgp_b9c140ceda",
+      "company_name": "CAP 7",
+      "city": "Brive La Gaillarde",
+      "department": "19",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-23",
+      "phone": "+33471643182",
       "email": ""
     }
   ]
