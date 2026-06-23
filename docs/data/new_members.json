@@ -1,5 +1,38 @@
 {
   "last_updated": "2026-06-23",
-  "count": 0,
-  "new_members": []
+  "count": 2,
+  "new_members": [
+    {
+      "id": "cgp_8c1484e487",
+      "company_name": "INVEST MH",
+      "city": "Hérault",
+      "department": "34",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "Immobilier"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-23",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7deed99661",
+      "company_name": "AGP COURTAGE",
+      "city": "Loiret",
+      "department": "45",
+      "activities": [
+        "COA"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-23",
+      "phone": "",
+      "email": ""
+    }
+  ]
 }

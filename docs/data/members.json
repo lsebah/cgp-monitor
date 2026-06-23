@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T06:49:15.035110+00:00",
+  "last_updated": "2026-06-23T07:36:11.136085+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -10,8 +10,8 @@
     "cncef": {
       "status": "success",
       "count": 12,
-      "timestamp": "2026-06-22T09:35:59.657206+00:00",
-      "duration_s": 154.5
+      "timestamp": "2026-06-23T07:36:11.136085+00:00",
+      "duration_s": 304.1
     },
     "anacofi": {
       "status": "success",
@@ -38,13 +38,13 @@
     }
   },
   "stats": {
-    "total_members": 10110,
-    "new_today": 0,
-    "new_this_week": 62,
-    "new_this_month": 64,
+    "total_members": 10112,
+    "new_today": 2,
+    "new_this_week": 64,
+    "new_this_month": 66,
     "by_association": {
       "anacofi": 3142,
-      "cncef": 4739,
+      "cncef": 4741,
       "cncgp": 2519,
       "ucgp": 65,
       "leaders_league": 36,
@@ -53,9 +53,9 @@
     },
     "by_activity": {
       "CIF": 7039,
-      "COA": 4048,
-      "IOBSP": 1859,
-      "Immobilier": 937
+      "COA": 4050,
+      "IOBSP": 1860,
+      "Immobilier": 938
     },
     "by_department": {
       "75": 1650,
@@ -67,7 +67,7 @@
       "44": 317,
       "06": 297,
       "78": 276,
-      "34": 255,
+      "34": 256,
       "38": 230,
       "59": 229,
       "67": 197,
@@ -28165,6 +28165,43 @@
       }
     },
     {
+      "id": "cgp_7deed99661",
+      "company_name": "AGP COURTAGE",
+      "company_name_normalized": "agp courtage",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "45000",
+        "city": "Loiret",
+        "department": "45",
+        "department_name": "Loiret",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-23",
+      "last_seen": "2026-06-23",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/agp-courtage/"
+      }
+    },
+    {
       "id": "cgp_269a53be69",
       "company_name": "AGRI’ASSUR N.A",
       "company_name_normalized": "agriassur na",
@@ -29733,8 +29770,8 @@
       "email": "julie@ajconseil.net",
       "website": "",
       "activities": [
-        "CIF",
-        "COA"
+        "COA",
+        "CIF"
       ],
       "specialties": [
         "Assurance"
@@ -110568,9 +110605,9 @@
       "email": "c2a@cga2apl.fr",
       "website": "",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -284232,9 +284269,9 @@
       "email": "",
       "website": "",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -306109,6 +306146,47 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      }
+    },
+    {
+      "id": "cgp_8c1484e487",
+      "company_name": "INVEST MH",
+      "company_name_normalized": "invest mh",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "34000",
+        "city": "Hérault",
+        "department": "34",
+        "department_name": "Herault",
+        "region": "Occitanie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "Immobilier"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit",
+        "Immobilier"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-23",
+      "last_seen": "2026-06-23",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/dc-conseil/"
       }
     },
     {
@@ -370875,8 +370953,8 @@
       "website": "",
       "activities": [
         "CIF",
-        "COA",
-        "Immobilier"
+        "Immobilier",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -375274,10 +375352,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -435401,9 +435479,9 @@
       "website": "",
       "activities": [
         "CIF",
+        "Immobilier",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
