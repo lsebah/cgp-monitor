@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-24T07:29:58.926331+00:00",
+  "last_updated": "2026-06-24T09:37:36.654372+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
       "count": 2656,
-      "timestamp": "2026-06-23T09:48:34.751144+00:00",
-      "duration_s": 564.1
+      "timestamp": "2026-06-24T09:37:36.654372+00:00",
+      "duration_s": 554.0
     },
     "cncef": {
       "status": "success",
@@ -1246,15 +1246,15 @@
       "website": "https://www.2bpatrimoine.com/",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -1686,8 +1686,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -4225,8 +4225,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -4440,15 +4440,15 @@
       "website": "https://www.cauripatrimoine.fr",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -5261,15 +5261,15 @@
       "website": "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -5673,8 +5673,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -6917,8 +6917,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -8155,15 +8155,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -14560,15 +14560,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -15797,8 +15797,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -16376,15 +16376,15 @@
       "website": "https://cgpatrimoine.net/",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -17021,12 +17021,12 @@
         "CIF"
       ],
       "specialties": [
-        "Protection de la famille",
-        "Optimisation fiscale",
-        "Stratégie patrimoniale",
-        "Transmission de patrimoine",
         "Retraite",
-        "Conseils investissements financiers"
+        "Optimisation fiscale",
+        "Conseils investissements financiers",
+        "Transmission de patrimoine",
+        "Stratégie patrimoniale",
+        "Protection de la famille"
       ],
       "directors": [
         {
@@ -18644,12 +18644,12 @@
       "website": "http://www.ldv-patrimoine.fr",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -19675,15 +19675,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -22102,12 +22102,12 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -22788,12 +22788,12 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -27629,12 +27629,12 @@
       "website": "http://www.agm-consulting.fr",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -28667,8 +28667,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -30739,15 +30739,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -37074,9 +37074,9 @@
       ],
       "specialties": [
         "Epargne salariale",
-        "Retraite",
         "Protection sociale",
-        "Optimisation rémunération du dirigeant"
+        "Optimisation rémunération du dirigeant",
+        "Retraite"
       ],
       "directors": [
         {
@@ -40376,10 +40376,10 @@
         "CIF"
       ],
       "specialties": [
+        "Stratégie patrimoniale",
         "Assurance",
-        "Investissements immobiliers",
         "Investissements financiers",
-        "Stratégie patrimoniale"
+        "Investissements immobiliers"
       ],
       "directors": [
         {
@@ -42163,8 +42163,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -42920,8 +42920,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -53527,8 +53527,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -56938,16 +56938,16 @@
       "website": "http://www.opes.fr",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Immobilier",
-        "Crédit",
-        "Assurance",
         "Patrimoine",
-        "Cabinet de conseil en gestion de patrimoine"
+        "Assurance",
+        "Cabinet de conseil en gestion de patrimoine",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -64376,8 +64376,8 @@
         "CIF"
       ],
       "specialties": [
-        "France M&A",
-        "Patrimoine"
+        "Patrimoine",
+        "France M&A"
       ],
       "directors": [
         {
@@ -67615,11 +67615,11 @@
         "CIF"
       ],
       "specialties": [
-        "ATRIA PATRIMOINE",
-        "Immobilier",
+        "Crédit immobilier",
         "Assurance Vie",
         "Stratégie Patrimoniale",
-        "Crédit immobilier",
+        "ATRIA PATRIMOINE",
+        "Immobilier",
         "Droit de la Famille"
       ],
       "directors": [
@@ -71549,15 +71549,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -78169,15 +78169,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -78398,15 +78398,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -78590,15 +78590,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -78837,15 +78837,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -84587,12 +84587,12 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -85056,8 +85056,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Immobilier"
       ],
       "directors": [
@@ -92094,12 +92094,12 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -94208,8 +94208,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -96034,8 +96034,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -124516,10 +124516,10 @@
         "CIF"
       ],
       "specialties": [
-        "Retraite",
-        "Placement",
         "Successions",
-        "Fiscalité"
+        "Retraite",
+        "Fiscalité",
+        "Placement"
       ],
       "directors": [
         {
@@ -134850,15 +134850,15 @@
       "website": "https://www.lenapatrimoine.fr",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -138862,8 +138862,8 @@
       "email": "eric.vallet@cfb-associes.fr",
       "website": "http://www.fbp-associes.fr",
       "activities": [
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Crédit"
@@ -148185,13 +148185,13 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -153681,12 +153681,12 @@
         "CIF"
       ],
       "specialties": [
+        "Retraite",
         "Optimisation fiscale",
-        "Placements immobiliers & financiers",
-        "Stratégie patrimoniale",
         "Cession d'entreprise",
         "Transmission de patrimoine",
-        "Retraite"
+        "Placements immobiliers & financiers",
+        "Stratégie patrimoniale"
       ],
       "directors": [
         {
@@ -159873,9 +159873,9 @@
         "CIF"
       ],
       "specialties": [
-        "Ingénierie Patrimoniale",
+        "Placements financiers",
         "Investissement immobilier France et USA",
-        "Placements financiers"
+        "Ingénierie Patrimoniale"
       ],
       "directors": [
         {
@@ -167976,8 +167976,8 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -171477,15 +171477,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -172179,15 +172179,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -187210,8 +187210,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -201654,11 +201654,11 @@
         "CIF"
       ],
       "specialties": [
-        "Gestion des avoirs financiers des particuliers",
-        "Optimisation du revenu du dirigeant",
         "Conseil fiscal",
         "Optimisation de la trésorerie excédentaire des personnes morales",
-        "Conseil en transmission personnelle et professionnelle"
+        "Conseil en transmission personnelle et professionnelle",
+        "Optimisation du revenu du dirigeant",
+        "Gestion des avoirs financiers des particuliers"
       ],
       "directors": [
         {
@@ -202279,8 +202279,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -227878,15 +227878,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -231941,15 +231941,15 @@
       "website": "http://www.ldv-patrimoine.fr",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -232046,12 +232046,12 @@
       "website": "http://www.idpatrimoine.com",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -247728,8 +247728,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -267656,8 +267656,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -275531,8 +275531,8 @@
       "email": "contact@groupesarro.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Crédit"
@@ -285266,12 +285266,12 @@
         "CIF"
       ],
       "specialties": [
-        "Placements immobiliers",
         "Allocation d'actifs",
+        "Retraite",
         "Optimisation fiscale",
-        "Stratégie patrimoniale",
         "Assurance Vie",
-        "Retraite"
+        "Placements immobiliers",
+        "Stratégie patrimoniale"
       ],
       "directors": [
         {
@@ -308699,9 +308699,9 @@
       "email": "vincent@irys-office.com",
       "website": "",
       "activities": [
-        "IOBSP",
         "COA",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -315850,15 +315850,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -316552,15 +316552,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -318235,8 +318235,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -360519,15 +360519,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -369529,8 +369529,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -379549,8 +379549,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -412695,12 +412695,12 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -425084,6 +425084,10 @@
         },
         {
           "name": "Stéphanie Failloux",
+          "role": "Adherent"
+        },
+        {
+          "name": "Sébastien Guyot De La Pommeraye",
           "role": "Adherent"
         }
       ],
@@ -474861,8 +474865,8 @@
         "CIF"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -491247,15 +491251,15 @@
       "website": "",
       "activities": [
         "COA",
-        "IOBSP",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier",
-        "Crédit"
+        "Assurance",
+        "Crédit",
+        "Immobilier"
       ],
       "directors": [
         {
@@ -548032,10 +548036,10 @@
         "CIF"
       ],
       "specialties": [
-        "Transmission de patrimoine",
-        "Ingénierie patrimoniale",
+        "Placements financiers",
         "Fiscalité",
-        "Placements financiers"
+        "Transmission de patrimoine",
+        "Ingénierie patrimoniale"
       ],
       "directors": [
         {
