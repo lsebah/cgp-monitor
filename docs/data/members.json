@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T06:45:47.720118+00:00",
+  "last_updated": "2026-06-25T07:31:00.568917+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -9,9 +9,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 0,
-      "timestamp": "2026-06-24T07:29:58.926331+00:00",
-      "duration_s": 304.1
+      "count": 72,
+      "timestamp": "2026-06-25T07:31:00.568917+00:00",
+      "duration_s": 302.6
     },
     "anacofi": {
       "status": "success",
@@ -38,13 +38,13 @@
     }
   },
   "stats": {
-    "total_members": 10114,
-    "new_today": 0,
-    "new_this_week": 48,
-    "new_this_month": 70,
+    "total_members": 10127,
+    "new_today": 13,
+    "new_this_week": 61,
+    "new_this_month": 83,
     "by_association": {
       "anacofi": 3142,
-      "cncef": 4739,
+      "cncef": 4752,
       "cncgp": 2524,
       "ucgp": 65,
       "leaders_league": 36,
@@ -52,26 +52,26 @@
       "affo": 20
     },
     "by_activity": {
-      "CIF": 7043,
-      "COA": 4048,
-      "IOBSP": 1859,
-      "Immobilier": 937
+      "CIF": 7051,
+      "COA": 4057,
+      "IOBSP": 1864,
+      "Immobilier": 938
     },
     "by_department": {
-      "75": 1651,
+      "75": 1652,
       "69": 530,
       "92": 458,
-      "33": 399,
+      "33": 401,
       "31": 394,
       "13": 364,
       "44": 317,
       "06": 297,
-      "78": 276,
-      "34": 255,
+      "78": 277,
+      "34": 256,
       "38": 230,
       "59": 229,
       "67": 197,
-      "37": 184,
+      "37": 185,
       "94": 178,
       "83": 177,
       "35": 167,
@@ -9409,6 +9409,45 @@
       }
     },
     {
+      "id": "cgp_5a653e2786",
+      "company_name": "ABM FINANCE (ABM FINANCE)",
+      "company_name_normalized": "abm finance abm finance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "14000",
+        "city": "Calvados",
+        "department": "14",
+        "department_name": "Calvados",
+        "region": "Normandie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/abm-finance/"
+      }
+    },
+    {
       "id": "cgp_d26e85fdd1",
       "company_name": "ABMA",
       "company_name_normalized": "abma",
@@ -15793,8 +15832,8 @@
       "email": "afoconseil@gmail.com",
       "website": "https://www.altride.fr/",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
         "Patrimoine",
@@ -27333,8 +27372,8 @@
       "email": "etendero@agirfinancement.fr",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -29737,8 +29776,8 @@
       "email": "julie@ajconseil.net",
       "website": "",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
         "Assurance"
@@ -38892,9 +38931,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -45398,10 +45437,10 @@
       "email": "aurelie@amilamia-conseil.fr",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -50223,9 +50262,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -100393,10 +100432,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -105454,10 +105493,10 @@
       "email": "mbruand.dupas@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -115843,9 +115882,9 @@
       "email": "cabinet@guichen.finance",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -120759,6 +120798,43 @@
       }
     },
     {
+      "id": "cgp_35ea995825",
+      "company_name": "CABINET VIBERT",
+      "company_name_normalized": "cabinet vibert",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "33000",
+        "city": "Gironde",
+        "department": "33",
+        "department_name": "Gironde",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/cabinet-vibert/"
+      }
+    },
+    {
       "id": "cgp_9471c8f95a",
       "company_name": "CABINET XV",
       "company_name_normalized": "cabinet xv",
@@ -124252,6 +124328,47 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      }
+    },
+    {
+      "id": "cgp_32dfa14d7c",
+      "company_name": "CAP CONSEILS",
+      "company_name_normalized": "cap conseils",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "75000",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "CIF"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit",
+        "Patrimoine"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/cap-conseils/"
       }
     },
     {
@@ -138709,10 +138826,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -140420,6 +140537,47 @@
       "last_seen": "2026-06-25",
       "is_new": false,
       "source_urls": {}
+    },
+    {
+      "id": "cgp_e6325eadbf",
+      "company_name": "CGR CONSEIL&PATRIMOINE",
+      "company_name_normalized": "cgr conseilpatrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "78000",
+        "city": "Yvelines",
+        "department": "78",
+        "department_name": "Yvelines",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "CIF"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit",
+        "Patrimoine"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/cgr-conseilpatrimoine/"
+      }
     },
     {
       "id": "cgp_9c3553ea7e",
@@ -158238,6 +158396,43 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
+      }
+    },
+    {
+      "id": "cgp_9a04c9b093",
+      "company_name": "CONSEIL FINANCE ET TRANSMISSION",
+      "company_name_normalized": "conseil finance et transmission",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "33000",
+        "city": "Gironde",
+        "department": "33",
+        "department_name": "Gironde",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/conseil-finance-et-transmission/"
       }
     },
     {
@@ -197465,10 +197660,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -223565,6 +223760,43 @@
       }
     },
     {
+      "id": "cgp_ab918bc918",
+      "company_name": "EXAKT",
+      "company_name_normalized": "exakt",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "85000",
+        "city": "Vendée",
+        "department": "85",
+        "department_name": "Vendee",
+        "region": "Pays de la Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/exakt/"
+      }
+    },
+    {
       "id": "cgp_b00e4f260b",
       "company_name": "EXAUDIS PATRIMOINE",
       "company_name_normalized": "exaudis patrimoine",
@@ -237295,6 +237527,45 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.19B"
+      }
+    },
+    {
+      "id": "cgp_432ca73b3e",
+      "company_name": "FIDUCIA PATRIMOINE",
+      "company_name_normalized": "fiducia patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "90000",
+        "city": "Territoire de Belfort",
+        "department": "90",
+        "department_name": "Territoire de Belfort",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "CIF"
+      ],
+      "specialties": [
+        "Assurance",
+        "Patrimoine"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/fiducia-patrimoine/"
       }
     },
     {
@@ -255039,6 +255310,43 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      }
+    },
+    {
+      "id": "cgp_5d6e0da8f7",
+      "company_name": "FUSAX PARTNERS",
+      "company_name_normalized": "fusax partners",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "63000",
+        "city": "Puy de Dôme",
+        "department": "63",
+        "department_name": "Puy-de-Dome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/fusax-partners/"
       }
     },
     {
@@ -287160,9 +287468,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -293761,9 +294069,9 @@
       "email": "karl.loupec@ifmanagement.fr",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -295561,6 +295869,43 @@
       }
     },
     {
+      "id": "cgp_87766b0259",
+      "company_name": "IDEA PARTNERS",
+      "company_name_normalized": "idea partners",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "08000",
+        "city": "Ardennes",
+        "department": "08",
+        "department_name": "Ardennes",
+        "region": "Grand Est"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/idea-partners/"
+      }
+    },
+    {
       "id": "cgp_fd3e1fe255",
       "company_name": "IDEAL CAPITAL",
       "company_name_normalized": "ideal capital",
@@ -295953,8 +296298,8 @@
       "email": "idn.immo@gmail.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -303626,8 +303971,8 @@
       "email": "contact@inovea-group.com",
       "website": "",
       "activities": [
-        "IOBSP",
-        "CIF"
+        "CIF",
+        "IOBSP"
       ],
       "specialties": [
         "Crédit",
@@ -316945,10 +317290,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -318289,6 +318634,45 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
+      }
+    },
+    {
+      "id": "cgp_8862eb1997",
+      "company_name": "JPB PATRIMOINE",
+      "company_name_normalized": "jpb patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "25000",
+        "city": "Doubs",
+        "department": "25",
+        "department_name": "Doubs",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "CIF"
+      ],
+      "specialties": [
+        "Assurance",
+        "Patrimoine"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/jpb-patrimoine/"
       }
     },
     {
@@ -340445,10 +340829,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -374011,6 +374395,43 @@
       }
     },
     {
+      "id": "cgp_a78746aed9",
+      "company_name": "MARIANNE IMMOBILIER",
+      "company_name_normalized": "marianne immobilier",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "34000",
+        "city": "Hérault",
+        "department": "34",
+        "department_name": "Herault",
+        "region": "Occitanie"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/marianne-immobilier/"
+      }
+    },
+    {
       "id": "cgp_f47dc1654f",
       "company_name": "MARIANNE JACQUEL",
       "company_name_normalized": "marianne jacquel",
@@ -374209,8 +374630,8 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -401061,10 +401482,10 @@
       "email": "mwachowski.finances@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -419075,9 +419496,9 @@
       "email": "",
       "website": "",
       "activities": [
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "specialties": [
@@ -462756,10 +463177,10 @@
       "email": "prigentpatrimoineconseil@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -468534,10 +468955,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -471918,9 +472339,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP"
+        "IOBSP",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -475592,9 +476013,9 @@
       "email": "",
       "website": "",
       "activities": [
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "specialties": [
@@ -483384,10 +483805,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -499048,10 +499469,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -499780,6 +500201,45 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
+      }
+    },
+    {
+      "id": "cgp_609c98d583",
+      "company_name": "SB PROTECTION & PATRIMOINE",
+      "company_name_normalized": "sb protection  patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "87000",
+        "city": "Haute Vienne",
+        "department": "87",
+        "department_name": "Haute-Vienne",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/sb-protection-patrimoine/"
       }
     },
     {
@@ -506920,8 +507380,8 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -553596,6 +554056,47 @@
       }
     },
     {
+      "id": "cgp_42e4f1dfd2",
+      "company_name": "VF FINANCEMENT",
+      "company_name_normalized": "vf financement",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "37000",
+        "city": "Indre et Loire",
+        "department": "37",
+        "department_name": "Indre-et-Loire",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "Immobilier"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit",
+        "Immobilier"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/vf-financement/"
+      }
+    },
+    {
       "id": "cgp_293793fb19",
       "company_name": "VGA PATRIMOINE",
       "company_name_normalized": "vga patrimoine",
@@ -556188,10 +556689,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
+        "Immobilier",
         "COA",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",

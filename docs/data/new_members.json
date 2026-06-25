@@ -1,5 +1,211 @@
 {
   "last_updated": "2026-06-25",
-  "count": 0,
-  "new_members": []
+  "count": 13,
+  "new_members": [
+    {
+      "id": "cgp_5d6e0da8f7",
+      "company_name": "FUSAX PARTNERS",
+      "city": "Puy de Dôme",
+      "department": "63",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_35ea995825",
+      "company_name": "CABINET VIBERT",
+      "city": "Gironde",
+      "department": "33",
+      "activities": [
+        "COA"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_432ca73b3e",
+      "company_name": "FIDUCIA PATRIMOINE",
+      "city": "Territoire de Belfort",
+      "department": "90",
+      "activities": [
+        "COA",
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8862eb1997",
+      "company_name": "JPB PATRIMOINE",
+      "city": "Doubs",
+      "department": "25",
+      "activities": [
+        "COA",
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_32dfa14d7c",
+      "company_name": "CAP CONSEILS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_42e4f1dfd2",
+      "company_name": "VF FINANCEMENT",
+      "city": "Indre et Loire",
+      "department": "37",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "Immobilier"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5a653e2786",
+      "company_name": "ABM FINANCE (ABM FINANCE)",
+      "city": "Calvados",
+      "department": "14",
+      "activities": [
+        "COA",
+        "IOBSP"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e6325eadbf",
+      "company_name": "CGR CONSEIL&PATRIMOINE",
+      "city": "Yvelines",
+      "department": "78",
+      "activities": [
+        "COA",
+        "IOBSP",
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a78746aed9",
+      "company_name": "MARIANNE IMMOBILIER",
+      "city": "Hérault",
+      "department": "34",
+      "activities": [
+        "COA"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_609c98d583",
+      "company_name": "SB PROTECTION & PATRIMOINE",
+      "city": "Haute Vienne",
+      "department": "87",
+      "activities": [
+        "COA",
+        "IOBSP"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ab918bc918",
+      "company_name": "EXAKT",
+      "city": "Vendée",
+      "department": "85",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9a04c9b093",
+      "company_name": "CONSEIL FINANCE ET TRANSMISSION",
+      "city": "Gironde",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_87766b0259",
+      "company_name": "IDEA PARTNERS",
+      "city": "Ardennes",
+      "department": "08",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-25",
+      "phone": "",
+      "email": ""
+    }
+  ]
 }
