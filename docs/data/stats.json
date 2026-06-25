@@ -1,7 +1,7 @@
 {
   "total_members": 10114,
   "new_today": 0,
-  "new_this_week": 68,
+  "new_this_week": 48,
   "new_this_month": 70,
   "by_association": {
     "anacofi": 3142,
@@ -57,14 +57,14 @@
     "anacofi": {
       "status": "success",
       "count": 0,
-      "timestamp": "2026-06-24T06:47:09.370132+00:00",
-      "duration_s": 4.6
+      "timestamp": "2026-06-25T06:45:47.720118+00:00",
+      "duration_s": 4.3
     },
     "affo": {
       "status": "success",
       "count": 20,
-      "timestamp": "2026-06-24T06:47:09.370132+00:00",
-      "duration_s": 2.5
+      "timestamp": "2026-06-25T06:45:47.720118+00:00",
+      "duration_s": 1.6
     },
     "registre_manual": {
       "status": "success",
@@ -78,5 +78,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-24T09:37:36.654372+00:00"
+  "last_updated": "2026-06-25T06:45:47.720118+00:00"
 }
