@@ -1,21 +1,5 @@
 {
-  "last_updated": "2026-06-25",
-  "count": 1,
-  "new_members": [
-    {
-      "id": "cgp_28d397f4e6",
-      "company_name": "CECILIA FINANCE",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-06-25",
-      "phone": "+33638721589",
-      "email": ""
-    }
-  ]
+  "last_updated": "2026-06-26",
+  "count": 0,
+  "new_members": []
 }
