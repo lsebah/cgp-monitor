@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T06:53:51.151727+00:00",
+  "last_updated": "2026-06-26T07:40:00.873995+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -9,9 +9,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 72,
-      "timestamp": "2026-06-25T07:31:00.568917+00:00",
-      "duration_s": 302.6
+      "count": 0,
+      "timestamp": "2026-06-26T07:40:00.873995+00:00",
+      "duration_s": 303.1
     },
     "anacofi": {
       "status": "success",
