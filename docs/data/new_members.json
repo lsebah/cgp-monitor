@@ -1,5 +1,36 @@
 {
   "last_updated": "2026-06-26",
-  "count": 0,
-  "new_members": []
+  "count": 2,
+  "new_members": [
+    {
+      "id": "cgp_ba068ea663",
+      "company_name": "CABINET ATHOS",
+      "city": "Bonnieux",
+      "department": "84",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-26",
+      "phone": "+33684573986",
+      "email": ""
+    },
+    {
+      "id": "cgp_64d72d24d1",
+      "company_name": "CABINET SAVIAL",
+      "city": "Margency",
+      "department": "95",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-26",
+      "phone": "+33785651692",
+      "email": ""
+    }
+  ]
 }
