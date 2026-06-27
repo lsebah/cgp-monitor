@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T06:27:53.586133+00:00",
+  "last_updated": "2026-06-27T06:44:45.022079+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -9,9 +9,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 0,
-      "timestamp": "2026-06-26T07:40:00.873995+00:00",
-      "duration_s": 303.1
+      "count": 12,
+      "timestamp": "2026-06-27T06:44:45.022079+00:00",
+      "duration_s": 302.8
     },
     "anacofi": {
       "status": "success",
@@ -38,13 +38,13 @@
     }
   },
   "stats": {
-    "total_members": 10120,
-    "new_today": 0,
-    "new_this_week": 31,
-    "new_this_month": 86,
+    "total_members": 10121,
+    "new_today": 1,
+    "new_this_week": 32,
+    "new_this_month": 87,
     "by_association": {
       "anacofi": 3142,
-      "cncef": 4742,
+      "cncef": 4743,
       "cncgp": 2527,
       "ucgp": 65,
       "leaders_league": 36,
@@ -54,14 +54,14 @@
     "by_activity": {
       "CIF": 7049,
       "COA": 4051,
-      "IOBSP": 1861,
+      "IOBSP": 1862,
       "Immobilier": 937
     },
     "by_department": {
       "75": 1653,
       "69": 530,
       "92": 458,
-      "33": 399,
+      "33": 400,
       "31": 394,
       "13": 364,
       "44": 317,
@@ -152201,10 +152201,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
+        "Immobilier",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -162525,8 +162525,8 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -192082,10 +192082,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
+        "Immobilier",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -275599,10 +275599,10 @@
       "email": "cabinet@gregory-champenois.fr",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
+        "Immobilier",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -322377,6 +322377,43 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "64.20Z"
+      }
+    },
+    {
+      "id": "cgp_cfc58a14ab",
+      "company_name": "KAMAX",
+      "company_name_normalized": "kamax",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "33000",
+        "city": "Gironde",
+        "department": "33",
+        "department_name": "Gironde",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "IOBSP"
+      ],
+      "specialties": [
+        "Crédit"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-27",
+      "last_seen": "2026-06-27",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/kamax/"
       }
     },
     {
@@ -406428,8 +406465,8 @@
       "email": "info@neoprets.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -450631,10 +450668,10 @@
       "email": "philys.conseils@orange.fr",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
+        "Immobilier",
         "IOBSP",
-        "Immobilier"
+        "CIF"
       ],
       "specialties": [
         "Assurance",
