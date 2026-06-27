@@ -1,21 +1,5 @@
 {
   "last_updated": "2026-06-27",
-  "count": 1,
-  "new_members": [
-    {
-      "id": "cgp_cfc58a14ab",
-      "company_name": "KAMAX",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-27",
-      "phone": "",
-      "email": ""
-    }
-  ]
+  "count": 0,
+  "new_members": []
 }
