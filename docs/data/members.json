@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T07:01:40.902430+00:00",
+  "last_updated": "2026-06-28T07:41:35.506186+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -10,8 +10,8 @@
     "cncef": {
       "status": "success",
       "count": 12,
-      "timestamp": "2026-06-27T06:44:45.022079+00:00",
-      "duration_s": 302.8
+      "timestamp": "2026-06-28T07:41:35.506186+00:00",
+      "duration_s": 303.8
     },
     "anacofi": {
       "status": "success",
@@ -38,13 +38,13 @@
     }
   },
   "stats": {
-    "total_members": 10120,
-    "new_today": 0,
-    "new_this_week": 23,
-    "new_this_month": 87,
+    "total_members": 10123,
+    "new_today": 3,
+    "new_this_week": 26,
+    "new_this_month": 90,
     "by_association": {
       "anacofi": 3142,
-      "cncef": 4742,
+      "cncef": 4745,
       "cncgp": 2527,
       "ucgp": 65,
       "leaders_league": 36,
@@ -52,13 +52,13 @@
       "affo": 20
     },
     "by_activity": {
-      "CIF": 7049,
-      "COA": 4051,
-      "IOBSP": 1861,
+      "CIF": 7051,
+      "COA": 4052,
+      "IOBSP": 1862,
       "Immobilier": 937
     },
     "by_department": {
-      "75": 1653,
+      "75": 1654,
       "69": 530,
       "92": 458,
       "33": 399,
@@ -20956,6 +20956,43 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      }
+    },
+    {
+      "id": "cgp_30220646c8",
+      "company_name": "ADUMBRA FINANCE",
+      "company_name_normalized": "adumbra finance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "25000",
+        "city": "Doubs",
+        "department": "25",
+        "department_name": "Doubs",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/adumbra-finance/"
       }
     },
     {
@@ -139870,9 +139907,9 @@
       "email": "caroline.cottet.giraudet@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "Immobilier"
+        "Immobilier",
+        "CIF"
       ],
       "specialties": [
         "Assurance",
@@ -196822,8 +196859,8 @@
       "activities": [
         "COA",
         "IOBSP",
-        "Immobilier",
-        "CIF"
+        "CIF",
+        "Immobilier"
       ],
       "specialties": [
         "Assurance",
@@ -255238,6 +255275,43 @@
       }
     },
     {
+      "id": "cgp_5d6e0da8f7",
+      "company_name": "FUSAX PARTNERS",
+      "company_name_normalized": "fusax partners",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "63000",
+        "city": "Puy de Dôme",
+        "department": "63",
+        "department_name": "Puy-de-Dome",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [
+        "France M&A"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/fusax-partners/"
+      }
+    },
+    {
       "id": "cgp_b454757dfb",
       "company_name": "FUSEAU MAXIME",
       "company_name_normalized": "fuseau maxime",
@@ -266107,9 +266181,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
         "IOBSP",
+        "CIF",
         "Immobilier"
       ],
       "specialties": [
@@ -340680,10 +340754,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "Immobilier",
         "COA",
         "IOBSP",
-        "CIF"
+        "CIF",
+        "Immobilier"
       ],
       "specialties": [
         "Assurance",
@@ -399188,6 +399262,45 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
+      }
+    },
+    {
+      "id": "cgp_68c35d52b0",
+      "company_name": "MS FINANCEMENT",
+      "company_name_normalized": "ms financement",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "75000",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA",
+        "IOBSP"
+      ],
+      "specialties": [
+        "Assurance",
+        "Crédit"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/ms-financement/"
       }
     },
     {
@@ -537562,9 +537675,9 @@
       "email": "",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
         "IOBSP",
+        "CIF",
         "Immobilier"
       ],
       "specialties": [
