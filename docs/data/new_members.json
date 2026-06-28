@@ -1,52 +1,5 @@
 {
   "last_updated": "2026-06-28",
-  "count": 3,
-  "new_members": [
-    {
-      "id": "cgp_5d6e0da8f7",
-      "company_name": "FUSAX PARTNERS",
-      "city": "Puy de Dôme",
-      "department": "63",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-28",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_68c35d52b0",
-      "company_name": "MS FINANCEMENT",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-28",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_30220646c8",
-      "company_name": "ADUMBRA FINANCE",
-      "city": "Doubs",
-      "department": "25",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-28",
-      "phone": "",
-      "email": ""
-    }
-  ]
+  "count": 0,
+  "new_members": []
 }
