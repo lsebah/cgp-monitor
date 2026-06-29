@@ -168,7 +168,7 @@ def _get_session():
     sess = getattr(_thread_local, "session", None)
     if sess is None:
         sess = req.Session()
-        retry = Retry(total=1, connect=1, read=1, backoff_factor=0.3,
+        retry = Retry(total=2, connect=2, read=2, backoff_factor=0.3,
                       status_forcelist=[429, 500, 502, 503, 504],
                       allowed_methods=["GET"])
         adapter = HTTPAdapter(max_retries=retry, pool_connections=8, pool_maxsize=8)
@@ -194,7 +194,7 @@ def _fetch_page(page_num):
     """
     url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
     try:
-        r = _get_session().get(url, timeout=12)
+        r = _get_session().get(url, timeout=20)
         if r.status_code == 200:
             if "annuaire__item" in r.text:
                 return (page_num, "ok", r.text)
@@ -207,62 +207,47 @@ def _fetch_page(page_num):
 
 
 def scrape_cncef(max_pages=450, enrich_details=False):
-    """Scrape the CNCEF directory using keep-alive sessions + bounded parallel fetching.
+    """Scrape the CNCEF directory SEQUENTIALLY over one keep-alive connection.
 
-    Bounded design (no runaway on pages past the directory end):
-      - short 12s timeout, only 1 urllib3 retry -> a dead page costs ~12-24s, not 90s
-      - 5 workers, batches of 20
-      - STOP as soon as a whole batch yields zero data pages (we've passed the end)
-      - failed data pages get one sequential retry pass
+    The CNCEF server drops concurrent connections, which made every parallel
+    version unreliable (it would stop after a handful of pages). Sequential
+    fetching over a single keep-alive session is the only reliable approach:
+    slower (~30-45 min for ~410 pages) but it actually gets all ~4800 members.
+
+    Robustness:
+      - each page is tried a few times; a network 'fail' is retried, never
+        mistaken for the end of the directory
+      - the scrape stops ONLY on a genuine empty page (HTTP 404 / 200-no-cards)
+      - a long run of consecutive hard failures (server down) aborts safely
     """
-    import concurrent.futures
-
-    logger.info("Starting CNCEF scrape (keep-alive, bounded, 5 workers)...")
+    logger.info("Starting CNCEF scrape (sequential, keep-alive)...")
     members = []
     seen_names = set()
 
-    pages = {}          # page_num -> html
-    failed = set()      # pages that failed (network) and may need a retry
+    pages = {}              # page_num -> html
+    consecutive_fail = 0    # safety brake if the server goes down mid-scrape
 
-    # Phase 1: fetch in batches of 20; stop when a whole batch returns no data.
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        batch_start = 1
-        while batch_start <= max_pages:
-            batch_end = min(batch_start + 19, max_pages + 1)
-            futures = [pool.submit(_fetch_page, p) for p in range(batch_start, batch_end)]
-            batch_ok = 0
-            batch_failed = []
-            for future in concurrent.futures.as_completed(futures):
-                pnum, status, html = future.result()
-                if status == "ok":
-                    pages[pnum] = html
-                    batch_ok += 1
-                elif status == "fail":
-                    batch_failed.append(pnum)
-                # 'end' -> just ignore (page past directory)
-            logger.info(f"CNCEF: pages {batch_start}-{batch_end-1} | "
-                        f"{batch_ok} ok this batch, {len(pages)} total")
-            # Stop when this batch produced NO data at all (past the directory end),
-            # but only once we already have data (avoid stopping on a transient
-            # first-batch glitch). Keep failed pages from data region for retry.
-            if batch_ok == 0 and pages:
+    for page_num in range(1, max_pages + 1):
+        # Try this page up to 4 times before giving up on it.
+        status, html = "fail", ""
+        for attempt in range(4):
+            _, status, html = _fetch_page(page_num)
+            if status in ("ok", "end"):
                 break
-            failed.update(batch_failed)
-            batch_start = batch_end
-
-    # Only retry failed pages that fall within the data region we actually reached.
-    max_data_page = max(pages.keys()) if pages else 0
-    failed = {p for p in failed if p <= max_data_page}
-
-    # Phase 2: retry failed data pages sequentially (single connection).
-    if failed:
-        logger.info(f"CNCEF: retrying {len(failed)} failed pages sequentially...")
-        for p in sorted(failed):
-            pnum, status, html = _fetch_page(p)
-            if status == "ok":
-                pages[pnum] = html
-            else:
-                logger.warning(f"CNCEF: page {p} still failing ({status}) - skipped")
+        if status == "ok":
+            pages[page_num] = html
+            consecutive_fail = 0
+        elif status == "end":
+            logger.info(f"CNCEF: reached end of directory at page {page_num}")
+            break
+        else:  # fail after all attempts -> skip page, keep going (additive merge)
+            consecutive_fail += 1
+            logger.warning(f"CNCEF: page {page_num} failed after retries - skipped")
+            if consecutive_fail >= 10:
+                logger.error("CNCEF: 10 consecutive failures - aborting (server down?)")
+                break
+        if page_num % 25 == 0:
+            logger.info(f"CNCEF: {page_num} pages done, {len(pages)} fetched")
 
     logger.info(f"CNCEF: {len(pages)} pages fetched, parsing...")
 
