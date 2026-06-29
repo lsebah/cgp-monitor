@@ -88,7 +88,13 @@
       "added": 96,
       "days": 30,
       "timestamp": "2026-06-29T14:39:46.562505+00:00"
+    },
+    "contacts_enrich": {
+      "status": "success",
+      "timestamp": "2026-06-29T16:07:56.359972+00:00",
+      "websites": 451,
+      "emails": 7468
     }
   },
-  "last_updated": "2026-06-29T15:16:36.698612+00:00"
+  "last_updated": "2026-06-29T16:07:56.359972+00:00"
 }

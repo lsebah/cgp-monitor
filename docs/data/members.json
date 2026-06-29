@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T15:16:36.698612+00:00",
+  "last_updated": "2026-06-29T16:07:56.359972+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -46,6 +46,12 @@
       "added": 96,
       "days": 30,
       "timestamp": "2026-06-29T14:39:46.562505+00:00"
+    },
+    "contacts_enrich": {
+      "status": "success",
+      "timestamp": "2026-06-29T16:07:56.359972+00:00",
+      "websites": 451,
+      "emails": 7468
     }
   },
   "stats": {
@@ -138,9 +144,15 @@
         "added": 96,
         "days": 30,
         "timestamp": "2026-06-29T14:39:46.562505+00:00"
+      },
+      "contacts_enrich": {
+        "status": "success",
+        "timestamp": "2026-06-29T16:07:56.359972+00:00",
+        "websites": 451,
+        "emails": 7468
       }
     },
-    "last_updated": "2026-06-29T15:16:36.698612+00:00"
+    "last_updated": "2026-06-29T16:07:56.359972+00:00"
   },
   "members": [
     {
@@ -6405,7 +6417,7 @@
         "region": "Bourgogne-Franche-Comte"
       },
       "phone": "+33297283333",
-      "email": "",
+      "email": "accueil@a2gpatrimoine.fr",
       "website": "https://a2g-patrimoine.fr/",
       "activities": [
         "CIF"
@@ -22267,7 +22279,7 @@
         "region": "Bretagne"
       },
       "phone": "+33299231858",
-      "email": "",
+      "email": "contact@mysite.com",
       "website": "https://www.aelis.bzh/",
       "activities": [
         "CIF"
@@ -49939,63 +49951,6 @@
       }
     },
     {
-      "id": "cgp_96f51e2c14",
-      "company_name": "AP CONSEIL PATRIMOINE",
-      "company_name_normalized": "ap conseil patrimoine",
-      "siren": "504562299",
-      "orias_number": "",
-      "address": {
-        "street": "23 RUE DE SARRE",
-        "postal_code": "57070",
-        "city": "METZ",
-        "department": "57",
-        "department_name": "Moselle",
-        "region": "Grand Est"
-      },
-      "phone": "+33387690404",
-      "email": "alainpolo@apconseil.fr",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ALAIN POLO",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2008-05-22",
-      "orias_inscription_date": "2008-11-21",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 692705,
-        "resultat_net_eur": 194633,
-        "effectif_tranche": "02",
-        "effectif_label": "3-5 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "66.22Z"
-      }
-    },
-    {
       "id": "cgp_d8285b56ba",
       "company_name": "AP CONSEIL PATRIMOINE",
       "company_name_normalized": "ap conseil patrimoine",
@@ -50069,6 +50024,63 @@
           "esg"
         ],
         "has_structured_products": false
+      }
+    },
+    {
+      "id": "cgp_96f51e2c14",
+      "company_name": "AP CONSEIL PATRIMOINE",
+      "company_name_normalized": "ap conseil patrimoine",
+      "siren": "504562299",
+      "orias_number": "",
+      "address": {
+        "street": "23 RUE DE SARRE",
+        "postal_code": "57070",
+        "city": "METZ",
+        "department": "57",
+        "department_name": "Moselle",
+        "region": "Grand Est"
+      },
+      "phone": "+33387690404",
+      "email": "alainpolo@apconseil.fr",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ALAIN POLO",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "anacofi": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-12",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "creation_date": "2008-05-22",
+      "orias_inscription_date": "2008-11-21",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "year": 2024,
+        "ca_eur": 692705,
+        "resultat_net_eur": 194633,
+        "effectif_tranche": "02",
+        "effectif_label": "3-5 salariés",
+        "effectif_year": "2023",
+        "categorie_entreprise": "PME",
+        "naf": "66.22Z"
       }
     },
     {
@@ -54123,59 +54135,6 @@
       }
     },
     {
-      "id": "cgp_96488de35f",
-      "company_name": "ARCIF",
-      "company_name_normalized": "arcif",
-      "siren": "831937297",
-      "orias_number": "",
-      "address": {
-        "street": "105 Avenue du Clos",
-        "postal_code": "59230",
-        "city": "Saint Amand les Eaux",
-        "department": "59",
-        "department_name": "Nord",
-        "region": "Hauts-de-France"
-      },
-      "phone": "+33633536415",
-      "email": "rudy.hertel@arcif.com",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "RUDY HERTEL",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2017-09-09",
-      "orias_inscription_date": "2017-09-29",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "66.22Z"
-      }
-    },
-    {
       "id": "cgp_0f64fe7d02",
       "company_name": "ARCIF",
       "company_name_normalized": "arcif",
@@ -54238,6 +54197,59 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      }
+    },
+    {
+      "id": "cgp_96488de35f",
+      "company_name": "ARCIF",
+      "company_name_normalized": "arcif",
+      "siren": "831937297",
+      "orias_number": "",
+      "address": {
+        "street": "105 Avenue du Clos",
+        "postal_code": "59230",
+        "city": "Saint Amand les Eaux",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33633536415",
+      "email": "rudy.hertel@arcif.com",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "RUDY HERTEL",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "anacofi": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-12",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "creation_date": "2017-09-09",
+      "orias_inscription_date": "2017-09-29",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "effectif_tranche": "NN",
+        "effectif_label": "Non renseigné",
+        "categorie_entreprise": "PME",
+        "naf": "66.22Z"
       }
     },
     {
@@ -118259,7 +118271,7 @@
         "region": "Grand Est"
       },
       "phone": "+33663876785",
-      "email": "",
+      "email": "contact@michaellosser.com",
       "website": "http://www.michaellosser.com",
       "activities": [
         "CIF"
@@ -118803,7 +118815,7 @@
         "region": "Provence-Alpes-Cote d'Azur"
       },
       "phone": "+33493720505",
-      "email": "",
+      "email": "contact@pascalduquesne.fr",
       "website": "http://www.pascalduquesne.eu",
       "activities": [
         "CIF"
@@ -129538,59 +129550,6 @@
       }
     },
     {
-      "id": "cgp_f3826b9064",
-      "company_name": "CARA",
-      "company_name_normalized": "cara",
-      "siren": "491473633",
-      "orias_number": "",
-      "address": {
-        "street": "88 RUE COLBERT",
-        "postal_code": "84120",
-        "city": "PERTUIS",
-        "department": "84",
-        "department_name": "Vaucluse",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "+33619102252",
-      "email": "py@caragestion.com",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "YAN RAGUIN",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2006-08-15",
-      "orias_inscription_date": "2007-10-10",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "68.32B"
-      }
-    },
-    {
       "id": "cgp_414f66c3ed",
       "company_name": "CARA",
       "company_name_normalized": "cara",
@@ -129649,6 +129608,59 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "68.20A"
+      }
+    },
+    {
+      "id": "cgp_f3826b9064",
+      "company_name": "CARA",
+      "company_name_normalized": "cara",
+      "siren": "491473633",
+      "orias_number": "",
+      "address": {
+        "street": "88 RUE COLBERT",
+        "postal_code": "84120",
+        "city": "PERTUIS",
+        "department": "84",
+        "department_name": "Vaucluse",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33619102252",
+      "email": "py@caragestion.com",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "YAN RAGUIN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "anacofi": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-12",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "creation_date": "2006-08-15",
+      "orias_inscription_date": "2007-10-10",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "effectif_tranche": "NN",
+        "effectif_label": "Non renseigné",
+        "categorie_entreprise": "PME",
+        "naf": "68.32B"
       }
     },
     {
@@ -149292,7 +149304,7 @@
         "region": "Nouvelle-Aquitaine"
       },
       "phone": "+33556517524",
-      "email": "",
+      "email": "contact@claudeboquienconseil.fr",
       "website": "http://www.claudeboquienconseil.fr/",
       "activities": [
         "CIF"
@@ -172686,7 +172698,7 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33476670793",
-      "email": "",
+      "email": "gaelle.cargnino@cvfinance.fr",
       "website": "http://www.cvfinance.fr",
       "activities": [
         "CIF"
@@ -174867,7 +174879,7 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33478425050",
-      "email": "",
+      "email": "accueil@verum.fr",
       "website": "https://verum.fr/",
       "activities": [
         "CIF"
@@ -204087,7 +204099,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://atlasgp.fr/",
       "activities": [
         "CIF"
       ],
@@ -204115,7 +204127,10 @@
       "source_urls": {
         "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106268279"
       },
-      "creation_date": "2026-06-10"
+      "creation_date": "2026-06-10",
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_33a287fd41",
@@ -209474,64 +209489,6 @@
       }
     },
     {
-      "id": "cgp_ae6a04651f",
-      "company_name": "EMD CONSEILS",
-      "company_name_normalized": "emd conseils",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "2 BOULEVARD GAMBETTA",
-        "postal_code": "38000",
-        "city": "Grenoble",
-        "department": "38",
-        "department_name": "Isere",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "+33614466613",
-      "email": "",
-      "website": "http://www.emdpatrimoine.com",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Eve-Marie Dyon",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "website_data": {
-        "fetched_at": "2026-05-07",
-        "pages_scanned": [
-          "http://www.emdpatrimoine.com",
-          "https://www.emdpatrimoine.com/nos-services/"
-        ],
-        "homepage_status": 200,
-        "homepage_url": "http://www.emdpatrimoine.com",
-        "expertises": [
-          "gestion-privee",
-          "immobilier",
-          "retraite",
-          "fiscalite",
-          "succession",
-          "credit",
-          "entreprise",
-          "international"
-        ],
-        "has_structured_products": false
-      }
-    },
-    {
       "id": "cgp_2812b6e33f",
       "company_name": "EMD CONSEILS",
       "company_name_normalized": "emd conseils",
@@ -209605,6 +209562,64 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      }
+    },
+    {
+      "id": "cgp_ae6a04651f",
+      "company_name": "EMD CONSEILS",
+      "company_name_normalized": "emd conseils",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "2 BOULEVARD GAMBETTA",
+        "postal_code": "38000",
+        "city": "Grenoble",
+        "department": "38",
+        "department_name": "Isere",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33614466613",
+      "email": "bienvenue@emdpatrimoine.com",
+      "website": "http://www.emdpatrimoine.com",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Eve-Marie Dyon",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "http://www.emdpatrimoine.com",
+          "https://www.emdpatrimoine.com/nos-services/"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "http://www.emdpatrimoine.com",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise",
+          "international"
+        ],
+        "has_structured_products": false
       }
     },
     {
@@ -221401,7 +221416,7 @@
         "region": "Nouvelle-Aquitaine"
       },
       "phone": "+33683486474",
-      "email": "",
+      "email": "conseil@cabinet-labarrere.fr",
       "website": "https://cabinetericlabarrere.com/",
       "activities": [
         "CIF"
@@ -230529,7 +230544,7 @@
         "region": "Ile-de-France"
       },
       "phone": "+33143129241",
-      "email": "",
+      "email": "contact@tc-fobs.com",
       "website": "https://www.fobs-family-office.fr/",
       "activities": [
         "CIF"
@@ -299683,66 +299698,6 @@
       }
     },
     {
-      "id": "cgp_258a9431f6",
-      "company_name": "IMMO-YACHTING",
-      "company_name_normalized": "immoyachting",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "92 ROUTE DE LA REINE",
-        "postal_code": "92100",
-        "city": "Boulogne-Billancourt",
-        "department": "92",
-        "department_name": "Hauts-de-Seine",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33607224966",
-      "email": "",
-      "website": "https://2b-investissements.fr/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Karine Tournois",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-13",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "website_data": {
-        "fetched_at": "2026-05-07",
-        "pages_scanned": [
-          "https://2b-investissements.fr/",
-          "https://2b-investissements.fr/expertises-patrimoniales-pour-les-profesionnels",
-          "https://2b-investissements.fr/le-cabinet"
-        ],
-        "homepage_status": 200,
-        "homepage_url": "https://2b-investissements.fr/",
-        "team_url": "https://2b-investissements.fr/le-cabinet",
-        "linkedin_company_url": "https://fr.linkedin.com/company/2b-investissements",
-        "expertises": [
-          "gestion-privee",
-          "immobilier",
-          "retraite",
-          "fiscalite",
-          "succession",
-          "credit",
-          "entreprise"
-        ],
-        "has_structured_products": false
-      }
-    },
-    {
       "id": "cgp_c8d048385e",
       "company_name": "IMMO-YACHTING",
       "company_name_normalized": "immoyachting",
@@ -299798,6 +299753,66 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       },
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [
+          "https://2b-investissements.fr/",
+          "https://2b-investissements.fr/expertises-patrimoniales-pour-les-profesionnels",
+          "https://2b-investissements.fr/le-cabinet"
+        ],
+        "homepage_status": 200,
+        "homepage_url": "https://2b-investissements.fr/",
+        "team_url": "https://2b-investissements.fr/le-cabinet",
+        "linkedin_company_url": "https://fr.linkedin.com/company/2b-investissements",
+        "expertises": [
+          "gestion-privee",
+          "immobilier",
+          "retraite",
+          "fiscalite",
+          "succession",
+          "credit",
+          "entreprise"
+        ],
+        "has_structured_products": false
+      }
+    },
+    {
+      "id": "cgp_258a9431f6",
+      "company_name": "IMMO-YACHTING",
+      "company_name_normalized": "immoyachting",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "92 ROUTE DE LA REINE",
+        "postal_code": "92100",
+        "city": "Boulogne-Billancourt",
+        "department": "92",
+        "department_name": "Hauts-de-Seine",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33607224966",
+      "email": "contact@2b-investissements.fr",
+      "website": "https://2b-investissements.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Karine Tournois",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
       "website_data": {
         "fetched_at": "2026-05-07",
         "pages_scanned": [
@@ -308228,7 +308243,7 @@
         "region": "Provence-Alpes-Cote d'Azur"
       },
       "phone": "+33493729300",
-      "email": "",
+      "email": "info@ici-patrimoine.com",
       "website": "http://ici-patrimoine.com",
       "activities": [
         "CIF"
@@ -309189,7 +309204,7 @@
         "region": "Ile-de-France"
       },
       "phone": "+33611827428",
-      "email": "",
+      "email": "irbis@irbis-finance.com",
       "website": "http://www.IRBIS-FINANCE.com",
       "activities": [
         "CIF"
@@ -334727,7 +334742,7 @@
         "region": "Grand Est"
       },
       "phone": "+33387621444",
-      "email": "",
+      "email": "contact@financiere-europeenne-investissement.fr",
       "website": "http://www.financiere-europeenne-investissement.fr/",
       "activities": [
         "CIF"
@@ -335754,7 +335769,7 @@
         "region": "Nouvelle-Aquitaine"
       },
       "phone": "",
-      "email": "",
+      "email": "christophe@lapeyrousefinance.fr",
       "website": "https://lapeyrousefinance.fr/",
       "activities": [
         "CIF"
@@ -367525,7 +367540,7 @@
         "region": "Pays de la Loire"
       },
       "phone": "+33258473030",
-      "email": "",
+      "email": "contact@m-conseils.fr",
       "website": "http://www.m-conseils.fr",
       "activities": [
         "CIF"
@@ -374680,7 +374695,7 @@
         "region": "Provence-Alpes-Cote d'Azur"
       },
       "phone": "+33488782134",
-      "email": "",
+      "email": "contact@recton.com",
       "website": "http://www.recton.com",
       "activities": [
         "CIF"
@@ -410228,7 +410243,7 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33479966687",
-      "email": "",
+      "email": "logo-cncgp-quadri1@2x.png.webp",
       "website": "http://www.nd-conseil.com",
       "activities": [
         "CIF"
@@ -438491,50 +438506,6 @@
       }
     },
     {
-      "id": "cgp_74f4e4139d",
-      "company_name": "PATRIMOINE CONSEIL",
-      "company_name_normalized": "patrimoine conseil",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "1 PLACE HOCHEBP 10313",
-        "postal_code": "10313",
-        "city": "35103\n\t\t\t\t\t\t\t\t\t\t\t\t\tRennes Cedex",
-        "department": "10",
-        "department_name": "Aube",
-        "region": "Grand Est"
-      },
-      "phone": "+33299270707",
-      "email": "",
-      "website": "http://pat-conseil.anthea-france.com/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Thibault Fischer",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "website_data": {
-        "fetched_at": "2026-05-07",
-        "pages_scanned": [],
-        "homepage_status": null,
-        "homepage_url": "http://pat-conseil.anthea-france.com/"
-      }
-    },
-    {
       "id": "cgp_c70c0042d3",
       "company_name": "PATRIMOINE CONSEIL",
       "company_name_normalized": "patrimoine conseil",
@@ -438583,6 +438554,50 @@
       "data_gouv": {
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
+      }
+    },
+    {
+      "id": "cgp_74f4e4139d",
+      "company_name": "PATRIMOINE CONSEIL",
+      "company_name_normalized": "patrimoine conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 PLACE HOCHEBP 10313",
+        "postal_code": "10313",
+        "city": "35103\n\t\t\t\t\t\t\t\t\t\t\t\t\tRennes Cedex",
+        "department": "10",
+        "department_name": "Aube",
+        "region": "Grand Est"
+      },
+      "phone": "+33299270707",
+      "email": "",
+      "website": "http://pat-conseil.anthea-france.com/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Thibault Fischer",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "website_data": {
+        "fetched_at": "2026-05-07",
+        "pages_scanned": [],
+        "homepage_status": null,
+        "homepage_url": "http://pat-conseil.anthea-france.com/"
       }
     },
     {
@@ -444324,7 +444339,7 @@
         "region": "Occitanie"
       },
       "phone": "+33561260079",
-      "email": "",
+      "email": "pvm.htp@gmail.com",
       "website": "http://htpatrimoine.fr/",
       "activities": [
         "CIF"
@@ -449572,6 +449587,69 @@
       }
     },
     {
+      "id": "cgp_99eebfbe49",
+      "company_name": "PERSPECTIVES",
+      "company_name_normalized": "perspectives",
+      "siren": "949627020",
+      "orias_number": "",
+      "address": {
+        "street": "24 RUE PETINIAUD-BEAUPEYRAT",
+        "postal_code": "87000",
+        "city": "LIMOGES",
+        "department": "87",
+        "department_name": "Haute-Vienne",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "+33612989513",
+      "email": "bienvenue@perspectives-limoges.fr",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [
+        {
+          "name": "MARIE DEMAISON",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "PIERRE-FRANÇOIS DOBBELS",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/perspectives/"
+      },
+      "creation_date": "2023-02-27",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "orias_inscription_date": "2023-05-26",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "effectif_tranche": "NN",
+        "effectif_label": "Non renseigné",
+        "categorie_entreprise": "PME",
+        "naf": "66.22Z"
+      }
+    },
+    {
       "id": "cgp_6f5fa3eab9",
       "company_name": "PERSPECTIVES",
       "company_name_normalized": "perspectives",
@@ -449646,69 +449724,6 @@
           "fonds a formule",
           "fonds a formules"
         ]
-      }
-    },
-    {
-      "id": "cgp_99eebfbe49",
-      "company_name": "PERSPECTIVES",
-      "company_name_normalized": "perspectives",
-      "siren": "949627020",
-      "orias_number": "",
-      "address": {
-        "street": "24 RUE PETINIAUD-BEAUPEYRAT",
-        "postal_code": "87000",
-        "city": "LIMOGES",
-        "department": "87",
-        "department_name": "Haute-Vienne",
-        "region": "Nouvelle-Aquitaine"
-      },
-      "phone": "+33612989513",
-      "email": "bienvenue@perspectives-limoges.fr",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "MARIE DEMAISON",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "PIERRE-FRANÇOIS DOBBELS",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/perspectives/"
-      },
-      "creation_date": "2023-02-27",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2023-05-26",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "66.22Z"
       }
     },
     {
@@ -450920,7 +450935,7 @@
         "region": "Hauts-de-France"
       },
       "phone": "+33322874752",
-      "email": "",
+      "email": "ph.haguet@gmail.com",
       "website": "http://www.phpatrimoine.fr/",
       "activities": [
         "CIF"
@@ -479001,59 +479016,6 @@
       }
     },
     {
-      "id": "cgp_1742a0330d",
-      "company_name": "RG PATRIMOINE",
-      "company_name_normalized": "rg patrimoine",
-      "siren": "819009317",
-      "orias_number": "",
-      "address": {
-        "street": "10 Place Sévigné",
-        "postal_code": "03200",
-        "city": "Vichy",
-        "department": "03",
-        "department_name": "Allier",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "+33470328639",
-      "email": "r.grosjean@lp-associes.com",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ROMAIN GROSJEAN",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2016-03-11",
-      "orias_inscription_date": "2016-07-08",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "70.22Z"
-      }
-    },
-    {
       "id": "cgp_b87060bea9",
       "company_name": "RG Patrimoine",
       "company_name_normalized": "rg patrimoine",
@@ -479110,6 +479072,59 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
+      }
+    },
+    {
+      "id": "cgp_1742a0330d",
+      "company_name": "RG PATRIMOINE",
+      "company_name_normalized": "rg patrimoine",
+      "siren": "819009317",
+      "orias_number": "",
+      "address": {
+        "street": "10 Place Sévigné",
+        "postal_code": "03200",
+        "city": "Vichy",
+        "department": "03",
+        "department_name": "Allier",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33470328639",
+      "email": "r.grosjean@lp-associes.com",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "ROMAIN GROSJEAN",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "anacofi": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-12",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "creation_date": "2016-03-11",
+      "orias_inscription_date": "2016-07-08",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "effectif_tranche": "NN",
+        "effectif_label": "Non renseigné",
+        "categorie_entreprise": "PME",
+        "naf": "70.22Z"
       }
     },
     {
@@ -483056,60 +483071,6 @@
       }
     },
     {
-      "id": "cgp_5769bfa303",
-      "company_name": "RM CONSEIL",
-      "company_name_normalized": "rm conseil",
-      "siren": "414013656",
-      "orias_number": "",
-      "address": {
-        "street": "221 RUE DU CONILLOT",
-        "postal_code": "50400",
-        "city": "Granville",
-        "department": "50",
-        "department_name": "Manche",
-        "region": "Normandie"
-      },
-      "phone": "+33233501011",
-      "email": "info@rm-conseil.fr",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "PATRICK PEREZ",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "creation_date": "1997-10-06",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2006-09-13",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "01",
-        "effectif_label": "1-2 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "70.22Z"
-      }
-    },
-    {
       "id": "cgp_0dc38882b7",
       "company_name": "RM CONSEIL",
       "company_name_normalized": "rm conseil",
@@ -483168,6 +483129,60 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "82.99Z"
+      }
+    },
+    {
+      "id": "cgp_5769bfa303",
+      "company_name": "RM CONSEIL",
+      "company_name_normalized": "rm conseil",
+      "siren": "414013656",
+      "orias_number": "",
+      "address": {
+        "street": "221 RUE DU CONILLOT",
+        "postal_code": "50400",
+        "city": "Granville",
+        "department": "50",
+        "department_name": "Manche",
+        "region": "Normandie"
+      },
+      "phone": "+33233501011",
+      "email": "info@rm-conseil.fr",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "PATRICK PEREZ",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "creation_date": "1997-10-06",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      },
+      "orias_inscription_date": "2006-09-13",
+      "finances_data_gouv": {
+        "last_enriched": "2026-05-07",
+        "effectif_tranche": "01",
+        "effectif_label": "1-2 salariés",
+        "effectif_year": "2023",
+        "categorie_entreprise": "PME",
+        "naf": "70.22Z"
       }
     },
     {
@@ -493684,7 +493699,7 @@
         "region": "Provence-Alpes-Cote d'Azur"
       },
       "phone": "+33442943794",
-      "email": "",
+      "email": "contact@sapiensinvest.fr",
       "website": "https://sapiensinvest.fr/",
       "activities": [
         "CIF"
@@ -496232,7 +496247,7 @@
         "region": "Provence-Alpes-Cote d'Azur"
       },
       "phone": "+33497031520",
-      "email": "",
+      "email": "contact@heraclesfinance.com",
       "website": "http://www.heraclesfinance.com",
       "activities": [
         "CIF"
@@ -498036,7 +498051,7 @@
         "region": "Occitanie"
       },
       "phone": "+33499581904",
-      "email": "",
+      "email": "contact@groupesarro.com",
       "website": "http://www.groupesarro.com",
       "activities": [
         "CIF"
@@ -514817,7 +514832,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://www.solinkconseil.com/",
       "activities": [
         "CIF"
       ],
@@ -514845,7 +514860,10 @@
       "source_urls": {
         "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106040363"
       },
-      "creation_date": "2026-06-03"
+      "creation_date": "2026-06-03",
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_62ad3dc734",
@@ -515200,7 +515218,7 @@
         "region": "Nouvelle-Aquitaine"
       },
       "phone": "+33556800794",
-      "email": "",
+      "email": "contact@guyennepatrimoine.fr",
       "website": "http://www.guyennepatrimoine.fr",
       "activities": [
         "CIF"
@@ -521604,7 +521622,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://squarecapitalgroup.com/",
       "activities": [
         "CIF"
       ],
@@ -521632,7 +521650,10 @@
       "source_urls": {
         "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106767486"
       },
-      "creation_date": "2026-06-23"
+      "creation_date": "2026-06-23",
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_b76f3d41fe",
@@ -524554,7 +524575,7 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33474426322",
-      "email": "",
+      "email": "contact@strategie-finance.fr",
       "website": "http://www.strategie-finance.fr",
       "activities": [
         "CIF"
@@ -525318,7 +525339,7 @@
         "region": "Ile-de-France"
       },
       "phone": "+33145491790",
-      "email": "",
+      "email": "contact@strategies-patrimoniales.fr",
       "website": "https://www.strategies-patrimoniales.fr/",
       "activities": [
         "CIF"
@@ -531034,7 +531055,7 @@
         "region": "Hauts-de-France"
       },
       "phone": "+33299781916",
-      "email": "",
+      "email": "contact-site@tanguyfinances.fr",
       "website": "http://www.tanguyfinances.fr",
       "activities": [
         "CIF"
@@ -534353,7 +534374,7 @@
         "region": "Nouvelle-Aquitaine"
       },
       "phone": "",
-      "email": "",
+      "email": "contact@terrae-patrimoine.fr",
       "website": "https://www.terrae-patrimoine.fr/",
       "activities": [
         "CIF"
@@ -545542,7 +545563,7 @@
         "region": "Occitanie"
       },
       "phone": "+33628401311",
-      "email": "",
+      "email": "r.brami@twentysixpatrimoine.com",
       "website": "http://www.twentysixpatrimoine.com",
       "activities": [
         "CIF"
@@ -550564,6 +550585,50 @@
       }
     },
     {
+      "id": "cgp_ecc54b7fca",
+      "company_name": "VALORIS",
+      "company_name_normalized": "valoris",
+      "siren": "105590277",
+      "orias_number": "",
+      "address": {
+        "street": "14 IMPASSE MANUEL MONTEIRO",
+        "postal_code": "77420",
+        "city": "Champs Sur Marne",
+        "department": "77",
+        "department_name": "Seine-et-Marne",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33612596698",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "SERGE FERNANDES",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-23",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {},
+      "creation_date": "2026-05-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
+    },
+    {
       "id": "cgp_4730f631b8",
       "company_name": "VALORIS",
       "company_name_normalized": "valoris",
@@ -550612,50 +550677,6 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
-      }
-    },
-    {
-      "id": "cgp_ecc54b7fca",
-      "company_name": "VALORIS",
-      "company_name_normalized": "valoris",
-      "siren": "105590277",
-      "orias_number": "",
-      "address": {
-        "street": "14 IMPASSE MANUEL MONTEIRO",
-        "postal_code": "77420",
-        "city": "Champs Sur Marne",
-        "department": "77",
-        "department_name": "Seine-et-Marne",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33612596698",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "SERGE FERNANDES",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-23",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "creation_date": "2026-05-20",
-      "data_gouv": {
-        "etat_administratif": "A"
       }
     },
     {
@@ -554635,44 +554656,6 @@
       }
     },
     {
-      "id": "cgp_66ca266acc",
-      "company_name": "VERKORAM",
-      "company_name_normalized": "verkoram",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "1 RUE TARBÉ",
-        "postal_code": "75017",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33617576674",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Mathieu Barbara",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-13",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
       "id": "cgp_9385bb0c0d",
       "company_name": "VERKORAM",
       "company_name_normalized": "verkoram",
@@ -554722,6 +554705,44 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       }
+    },
+    {
+      "id": "cgp_66ca266acc",
+      "company_name": "VERKORAM",
+      "company_name_normalized": "verkoram",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 RUE TARBÉ",
+        "postal_code": "75017",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33617576674",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Mathieu Barbara",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-06-29",
+      "is_new": false,
+      "source_urls": {}
     },
     {
       "id": "cgp_6319f84bc3",
