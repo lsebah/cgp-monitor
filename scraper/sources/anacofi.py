@@ -25,22 +25,34 @@ def scrape_anacofi():
     members = []
 
     try:
-        # Diagnostic fetch with full visibility into what the server returns.
+        # Probe a batch of candidate endpoints to find the new export/annuaire URL
+        # (the old /action/export-societes-cif now returns 404).
         import requests as _req
-        try:
-            _diag = _req.get(
-                EXPORT_URL,
-                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                                       "AppleWebKit/537.36 Chrome/125.0 Safari/537.36",
-                         "Accept": "text/csv,text/html,application/json,*/*",
-                         "Accept-Language": "fr-FR,fr;q=0.9"},
-                timeout=30, allow_redirects=True)
-            logger.info(f"ANACOFI DIAG: status={_diag.status_code} "
-                        f"type={_diag.headers.get('Content-Type','')} "
-                        f"len={len(_diag.content)} final_url={_diag.url}")
-            logger.info(f"ANACOFI DIAG first 400 chars: {_diag.text[:400]!r}")
-        except Exception as de:
-            logger.error(f"ANACOFI DIAG fetch failed: {de}")
+        _HDRS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                               "AppleWebKit/537.36 Chrome/125.0 Safari/537.36",
+                 "Accept": "text/csv,text/html,application/json,*/*",
+                 "Accept-Language": "fr-FR,fr;q=0.9"}
+        _candidates = [
+            "https://adherent.anacofi.asso.fr/action/export-societes-cif",
+            "https://adherent.anacofi.asso.fr/action/export-societes",
+            "https://adherent.anacofi.asso.fr/action/societes-cif",
+            "https://adherent.anacofi.asso.fr/societes-cif",
+            "https://adherent.anacofi.asso.fr/annuaire",
+            "https://adherent.anacofi.asso.fr/",
+            "https://www.anacofi.asso.fr/annuaire/",
+            "https://www.anacofi.asso.fr/annuaire-des-adherents/",
+            "https://www.anacofi-cif.fr/annuaire/",
+            "https://www.anacofi.asso.fr/wp-admin/admin-ajax.php?action=export-societes-cif",
+        ]
+        for _u in _candidates:
+            try:
+                _d = _req.get(_u, headers=_HDRS, timeout=20, allow_redirects=True)
+                snippet = _d.text[:120].replace("\n", " ")
+                logger.info(f"ANACOFI PROBE {_d.status_code} len={len(_d.content)} "
+                            f"type={_d.headers.get('Content-Type','')[:30]} "
+                            f"final={_d.url} :: {snippet!r}")
+            except Exception as pe:
+                logger.info(f"ANACOFI PROBE ERR {_u} :: {pe}")
 
         resp = fetch(EXPORT_URL, delay=1.0)
         if not resp:
