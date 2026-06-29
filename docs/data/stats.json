@@ -1,39 +1,39 @@
 {
-  "total_members": 10164,
-  "new_today": 42,
-  "new_this_week": 69,
-  "new_this_month": 133,
+  "total_members": 10134,
+  "new_today": 0,
+  "new_this_week": 63,
+  "new_this_month": 127,
   "by_association": {
     "anacofi": 3142,
-    "cncef": 4786,
+    "cncef": 4756,
     "cncgp": 2527,
-    "ucgp": 65,
+    "ucgp": 64,
     "leaders_league": 36,
     "registre": 3,
     "affo": 20
   },
   "by_activity": {
-    "CIF": 7067,
-    "COA": 4087,
-    "IOBSP": 1880,
-    "Immobilier": 951
+    "CIF": 7058,
+    "COA": 4065,
+    "IOBSP": 1867,
+    "Immobilier": 946
   },
   "by_department": {
-    "75": 1657,
+    "75": 1656,
     "69": 532,
     "92": 459,
-    "33": 402,
+    "33": 400,
     "31": 395,
     "13": 365,
     "44": 319,
-    "06": 298,
-    "78": 279,
-    "34": 258,
-    "38": 231,
-    "59": 230,
+    "06": 297,
+    "78": 277,
+    "34": 255,
+    "38": 230,
+    "59": 229,
     "67": 197,
-    "37": 185,
-    "94": 179,
+    "37": 184,
+    "94": 178,
     "83": 177,
     "35": 168,
     "64": 140,
@@ -57,14 +57,14 @@
     "anacofi": {
       "status": "success",
       "count": 0,
-      "timestamp": "2026-06-29T07:28:07.059732+00:00",
-      "duration_s": 4.0
+      "timestamp": "2026-06-29T13:51:35.153061+00:00",
+      "duration_s": 5.1
     },
     "affo": {
       "status": "success",
       "count": 20,
-      "timestamp": "2026-06-29T07:28:07.059732+00:00",
-      "duration_s": 1.6
+      "timestamp": "2026-06-29T13:51:35.153061+00:00",
+      "duration_s": 2.0
     },
     "registre_manual": {
       "status": "success",
@@ -78,5 +78,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-29T12:01:27.213920+00:00"
+  "last_updated": "2026-06-29T13:51:35.153061+00:00"
 }
