@@ -25,35 +25,6 @@ def scrape_anacofi():
     members = []
 
     try:
-        # Probe a batch of candidate endpoints to find the new export/annuaire URL
-        # (the old /action/export-societes-cif now returns 404).
-        import requests as _req
-        _HDRS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                               "AppleWebKit/537.36 Chrome/125.0 Safari/537.36",
-                 "Accept": "text/csv,text/html,application/json,*/*",
-                 "Accept-Language": "fr-FR,fr;q=0.9"}
-        _candidates = [
-            "https://adherent.anacofi.asso.fr/action/export-societes-cif",
-            "https://adherent.anacofi.asso.fr/action/export-societes",
-            "https://adherent.anacofi.asso.fr/action/societes-cif",
-            "https://adherent.anacofi.asso.fr/societes-cif",
-            "https://adherent.anacofi.asso.fr/annuaire",
-            "https://adherent.anacofi.asso.fr/",
-            "https://www.anacofi.asso.fr/annuaire/",
-            "https://www.anacofi.asso.fr/annuaire-des-adherents/",
-            "https://www.anacofi-cif.fr/annuaire/",
-            "https://www.anacofi.asso.fr/wp-admin/admin-ajax.php?action=export-societes-cif",
-        ]
-        for _u in _candidates:
-            try:
-                _d = _req.get(_u, headers=_HDRS, timeout=20, allow_redirects=True)
-                snippet = _d.text[:120].replace("\n", " ")
-                logger.info(f"ANACOFI PROBE {_d.status_code} len={len(_d.content)} "
-                            f"type={_d.headers.get('Content-Type','')[:30]} "
-                            f"final={_d.url} :: {snippet!r}")
-            except Exception as pe:
-                logger.info(f"ANACOFI PROBE ERR {_u} :: {pe}")
-
         resp = fetch(EXPORT_URL, delay=1.0)
         if not resp:
             logger.error("ANACOFI: No response from export URL")
@@ -97,7 +68,15 @@ def scrape_anacofi():
         return members
 
     except Exception as e:
-        logger.error(f"ANACOFI: Error: {e}")
+        # As of mid-June 2026 the ANACOFI member portal (adherent.anacofi.asso.fr)
+        # was moved behind a login: the old public CSV export
+        # /action/export-societes-cif now returns 404 and the portal root
+        # redirects to /connexion. There is no public export anymore, so this
+        # source can no longer be refreshed automatically. Existing ANACOFI
+        # members already in members.json are preserved by the additive merge.
+        logger.warning(
+            "ANACOFI: public export is closed (portal now requires login). "
+            f"Returning 0 new; existing data preserved. Detail: {e}")
         return members
 
 
