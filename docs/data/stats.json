@@ -1,11 +1,11 @@
 {
-  "total_members": 10123,
-  "new_today": 2,
+  "total_members": 10122,
+  "new_today": 0,
   "new_this_week": 27,
   "new_this_month": 91,
   "by_association": {
     "anacofi": 3142,
-    "cncef": 4745,
+    "cncef": 4744,
     "cncgp": 2527,
     "ucgp": 65,
     "leaders_league": 36,
@@ -14,7 +14,7 @@
   },
   "by_activity": {
     "CIF": 7049,
-    "COA": 4054,
+    "COA": 4053,
     "IOBSP": 1862,
     "Immobilier": 937
   },
@@ -45,8 +45,8 @@
     "cncgp": {
       "status": "success",
       "count": 2657,
-      "timestamp": "2026-06-28T08:57:43.352948+00:00",
-      "duration_s": 556.7
+      "timestamp": "2026-06-29T11:07:28.426434+00:00",
+      "duration_s": 559.5
     },
     "cncef": {
       "status": "success",
@@ -78,5 +78,5 @@
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
     }
   },
-  "last_updated": "2026-06-29T10:05:35.980014+00:00"
+  "last_updated": "2026-06-29T11:07:28.426434+00:00"
 }
