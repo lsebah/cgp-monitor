@@ -168,7 +168,7 @@ def _get_session():
     sess = getattr(_thread_local, "session", None)
     if sess is None:
         sess = req.Session()
-        retry = Retry(total=3, connect=3, read=3, backoff_factor=0.5,
+        retry = Retry(total=1, connect=1, read=1, backoff_factor=0.3,
                       status_forcelist=[429, 500, 502, 503, 504],
                       allowed_methods=["GET"])
         adapter = HTTPAdapter(max_retries=retry, pool_connections=8, pool_maxsize=8)
@@ -194,7 +194,7 @@ def _fetch_page(page_num):
     """
     url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
     try:
-        r = _get_session().get(url, timeout=30)
+        r = _get_session().get(url, timeout=12)
         if r.status_code == 200:
             if "annuaire__item" in r.text:
                 return (page_num, "ok", r.text)
@@ -206,51 +206,55 @@ def _fetch_page(page_num):
     return (page_num, "fail", "")
 
 
-def scrape_cncef(max_pages=500, enrich_details=False):
-    """Scrape the CNCEF directory using keep-alive sessions + parallel fetching.
+def scrape_cncef(max_pages=450, enrich_details=False):
+    """Scrape the CNCEF directory using keep-alive sessions + bounded parallel fetching.
 
-    - each worker reuses one HTTP connection (keep-alive) with urllib3 retries
-    - 5 workers, batches of 40
-    - stops only at a GENUINE empty page (HTTP 404 / 200-no-cards)
-    - failed pages get a final sequential retry pass (additive merge means a
-      missed page never deletes data, only skips a refresh)
+    Bounded design (no runaway on pages past the directory end):
+      - short 12s timeout, only 1 urllib3 retry -> a dead page costs ~12-24s, not 90s
+      - 5 workers, batches of 20
+      - STOP as soon as a whole batch yields zero data pages (we've passed the end)
+      - failed data pages get one sequential retry pass
     """
     import concurrent.futures
 
-    logger.info("Starting CNCEF scrape (keep-alive sessions, 5 workers)...")
+    logger.info("Starting CNCEF scrape (keep-alive, bounded, 5 workers)...")
     members = []
     seen_names = set()
 
     pages = {}          # page_num -> html
-    failed = set()      # pages that failed and need a retry
-    end_page = None     # first page index that returned 'end'
+    failed = set()      # pages that failed (network) and may need a retry
 
-    # Phase 1: fetch in batches of 40 with 5 workers; stop once we pass the end.
+    # Phase 1: fetch in batches of 20; stop when a whole batch returns no data.
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         batch_start = 1
         while batch_start <= max_pages:
-            batch_end = min(batch_start + 39, max_pages + 1)
+            batch_end = min(batch_start + 19, max_pages + 1)
             futures = [pool.submit(_fetch_page, p) for p in range(batch_start, batch_end)]
+            batch_ok = 0
+            batch_failed = []
             for future in concurrent.futures.as_completed(futures):
                 pnum, status, html = future.result()
                 if status == "ok":
                     pages[pnum] = html
-                elif status == "end":
-                    if end_page is None or pnum < end_page:
-                        end_page = pnum
-                else:  # fail
-                    failed.add(pnum)
-            logger.info(f"CNCEF: pages {batch_start}-{batch_end-1} done | "
-                        f"{len(pages)} ok, {len(failed)} failed, end={end_page}")
-            if end_page is not None and batch_end > end_page:
+                    batch_ok += 1
+                elif status == "fail":
+                    batch_failed.append(pnum)
+                # 'end' -> just ignore (page past directory)
+            logger.info(f"CNCEF: pages {batch_start}-{batch_end-1} | "
+                        f"{batch_ok} ok this batch, {len(pages)} total")
+            # Stop when this batch produced NO data at all (past the directory end),
+            # but only once we already have data (avoid stopping on a transient
+            # first-batch glitch). Keep failed pages from data region for retry.
+            if batch_ok == 0 and pages:
                 break
+            failed.update(batch_failed)
             batch_start = batch_end
 
-    # Drop any 'failed' pages that are actually beyond the directory end.
-    if end_page is not None:
-        failed = {p for p in failed if p < end_page}
+    # Only retry failed pages that fall within the data region we actually reached.
+    max_data_page = max(pages.keys()) if pages else 0
+    failed = {p for p in failed if p <= max_data_page}
 
-    # Phase 2: retry failed pages sequentially (gentler, single connection).
+    # Phase 2: retry failed data pages sequentially (single connection).
     if failed:
         logger.info(f"CNCEF: retrying {len(failed)} failed pages sequentially...")
         for p in sorted(failed):
