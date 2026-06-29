@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T15:14:25.173211+00:00",
+  "last_updated": "2026-06-29T15:16:36.698612+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,14 +49,14 @@
     }
   },
   "stats": {
-    "total_members": 10162,
+    "total_members": 10159,
     "new_today": 0,
     "new_this_week": 106,
     "new_this_month": 169,
     "by_association": {
       "anacofi": 3139,
-      "cncef": 4745,
-      "cncgp": 2527,
+      "cncef": 4743,
+      "cncgp": 2526,
       "ucgp": 64,
       "leaders_league": 36,
       "registre": 46,
@@ -64,13 +64,13 @@
       "affo": 19
     },
     "by_activity": {
-      "CIF": 7096,
-      "COA": 4055,
+      "CIF": 7094,
+      "COA": 4054,
       "IOBSP": 1866,
       "Immobilier": 946
     },
     "by_department": {
-      "75": 1658,
+      "75": 1656,
       "69": 533,
       "92": 461,
       "33": 402,
@@ -81,7 +81,7 @@
       "78": 278,
       "34": 256,
       "38": 229,
-      "59": 229,
+      "59": 228,
       "67": 197,
       "37": 184,
       "94": 179,
@@ -140,7 +140,7 @@
         "timestamp": "2026-06-29T14:39:46.562505+00:00"
       }
     },
-    "last_updated": "2026-06-29T15:14:25.173211+00:00"
+    "last_updated": "2026-06-29T15:16:36.698612+00:00"
   },
   "members": [
     {
@@ -80084,60 +80084,6 @@
       "last_seen": "2026-06-29",
       "is_new": false,
       "source_urls": {}
-    },
-    {
-      "id": "cgp_4359a7cc22",
-      "company_name": "BALMAT HOLDING",
-      "company_name_normalized": "balmat holding",
-      "siren": "818704678",
-      "orias_number": "",
-      "address": {
-        "street": "15 RUE LAURISTON",
-        "postal_code": "75016",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33681388223",
-      "email": "thibaut.mortelecq@balmat-gestionprivee.fr",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "THIBAUT MORTELECQ",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-13",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "creation_date": "2016-02-08",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2021-03-12",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "01",
-        "effectif_label": "1-2 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "68.32B"
-      }
     },
     {
       "id": "cgp_fcb177de51",
@@ -367269,71 +367215,6 @@
       }
     },
     {
-      "id": "cgp_0207c3a3d5",
-      "company_name": "L’IMMOBILIERE INVEST",
-      "company_name_normalized": "limmobiliere invest",
-      "siren": "508928306",
-      "orias_number": "",
-      "address": {
-        "street": "40 RUE DE LILLE",
-        "postal_code": "59280",
-        "city": "Nord",
-        "department": "59",
-        "department_name": "Nord",
-        "region": "Hauts-de-France"
-      },
-      "phone": "+33320631364",
-      "email": "gestionlocative@orpi.com",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "REGIS FOURNIER",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "FOURNIER Régis",
-          "role": "Gerant"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/limmobiliere-invest/"
-      },
-      "creation_date": "2008-10-20",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2026-02-20",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 1914154,
-        "resultat_net_eur": 129063,
-        "effectif_tranche": "12",
-        "effectif_label": "20-49 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "68.31Z"
-      }
-    },
-    {
       "id": "cgp_c8f4d461e2",
       "company_name": "L’OBSERVATOIRE FINANCIER",
       "company_name_normalized": "lobservatoire financier",
@@ -465674,69 +465555,6 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/prioul-jean-sebastien/"
-      }
-    },
-    {
-      "id": "cgp_66ffc9fd16",
-      "company_name": "PRISCUS PARTICIPATIONS",
-      "company_name_normalized": "priscus participations",
-      "siren": "450219563",
-      "orias_number": "",
-      "address": {
-        "street": "17 RUE VERNET",
-        "postal_code": "75008",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [
-        "France M&A"
-      ],
-      "directors": [
-        {
-          "name": "PHILIPPE ANDRE",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "ANDRE Philippe",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/priscus-partiicipations/"
-      },
-      "creation_date": "2003-09-27",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2023,
-        "ca_eur": 0,
-        "resultat_net_eur": 78269,
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "64.20Z"
       }
     },
     {
