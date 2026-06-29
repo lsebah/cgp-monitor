@@ -1,5 +1,1542 @@
 {
   "last_updated": "2026-06-29",
-  "count": 0,
-  "new_members": []
+  "count": 96,
+  "new_members": [
+    {
+      "id": "cgp_0adf18c64d",
+      "company_name": "MGN FINANCE",
+      "city": "COURCELLES-SUR-VESLE",
+      "department": "02",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4b59418147",
+      "company_name": "HELION FINANCE",
+      "city": "LE CHAFFAUT-SAINT-JURSON",
+      "department": "04",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c9a3ab81ae",
+      "company_name": "DIEGO RICHARD",
+      "city": "CHATEAUNEUF-VILLEVIEILLE",
+      "department": "06",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b68d82476d",
+      "company_name": "SOAN HOLDING (SOAN HOLDING)",
+      "city": "LE BROC",
+      "department": "06",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c8c35cf37d",
+      "company_name": "LEO PAQUAY",
+      "city": "VENCE",
+      "department": "06",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7e745a863b",
+      "company_name": "CEDRIC BAUME",
+      "city": "VENELLES",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a59420e478",
+      "company_name": "SYNKYNDINEO",
+      "city": "NOVES",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b569a9b8ee",
+      "company_name": "CAREX (CAREX CONSEIL ET PATRIMOINE ; CAREX FORMATION)",
+      "city": "CORNILLON-CONFOUX",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b6650d9ee2",
+      "company_name": "FIRMA GESTION PRIVEE",
+      "city": "MARSEILLE",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fa997d44a1",
+      "company_name": "NICOLAS RISPOLI",
+      "city": "MARSEILLE",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d5197867c1",
+      "company_name": "VICTOR BONACCHI COURTAGE",
+      "city": "MARSEILLE",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ee6e7ad101",
+      "company_name": "VINCENT BUJARD",
+      "city": "VAUX-SUR-MER",
+      "department": "17",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e34529b19b",
+      "company_name": "MDJX FINANCE",
+      "city": "VALENCE",
+      "department": "26",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1c57d9e183",
+      "company_name": "WAFA CAPITAL",
+      "city": "LOCMARIA-PLOUZANE",
+      "department": "29",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ee081954d6",
+      "company_name": "MT CORSE (MEILLEUR TAUX)",
+      "city": "BASTIA",
+      "department": "2B",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ea45b16528",
+      "company_name": "HUGO RELIQUET",
+      "city": "TOULOUSE",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dde8509fa5",
+      "company_name": "RENOV' FINANCES",
+      "city": "TOULOUSE",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ac04ea7920",
+      "company_name": "GUILLAUME TEULE",
+      "city": "FONSORBES",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b5343428bd",
+      "company_name": "HUGO GALVEZ (GALVEZ) (HUGO GALVEZ)",
+      "city": "LAUNAGUET",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e536e11956",
+      "company_name": "SOLVA CONSEIL",
+      "city": "TALENCE",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_cc183876e9",
+      "company_name": "AURA PATRIMOINE",
+      "city": "BORDEAUX",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_79274fa14e",
+      "company_name": "UPNEXTIA CONSEIL EN GESTION DE PATRIMOINE (UPNEXTIA CONSEIL)",
+      "city": "CLAPIERS",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e7df36e3f3",
+      "company_name": "ENERFIP ADMINISTRATION ET REPRESENTATION (EAR)",
+      "city": "MONTPELLIER",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_59bdf42465",
+      "company_name": "THE JAS PATRIMOINE",
+      "city": "SAINT-CLEMENT-DE-RIVIERE",
+      "department": "[N",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e450321783",
+      "company_name": "MZ MODELING (MZMO)",
+      "city": "CASTELNAU-LE-LEZ",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_10702586c0",
+      "company_name": "RAISSA KIABOUNA MATONDO (RAISSA FINANCE)",
+      "city": "TALENSAC",
+      "department": "35",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d851366d03",
+      "company_name": "LOUISE LOREAU",
+      "city": "PLESDER",
+      "department": "[N",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e02520ea40",
+      "company_name": "JULIEN COTTENCEAU",
+      "city": "JOUE-LES-TOURS",
+      "department": "37",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3c4c4f3387",
+      "company_name": "LILY-ROSE HENRY",
+      "city": "SUCE-SUR-ERDRE",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_18e89b746a",
+      "company_name": "CD INVESTISSEMENT ET PATRIMOINE",
+      "city": "SAINT-NAZAIRE",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7f2bb8069f",
+      "company_name": "KILLYAN RICHARD (RICHARD)",
+      "city": "NANTES",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0ee02eaada",
+      "company_name": "YANN DE GOUVILLE",
+      "city": "SAINT-GERMAIN-DES-PRES",
+      "department": "45",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7da050d0c3",
+      "company_name": "SO'LINK PATRIMOINE",
+      "city": "ORLEANS",
+      "department": "45",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b98c17c9ca",
+      "company_name": "DALI COURTAGE",
+      "city": "CAHORS",
+      "department": "46",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3c1cfa6d2e",
+      "company_name": "CM FINANCE",
+      "city": "AGEN",
+      "department": "47",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5d6feca232",
+      "company_name": "INVESTYS",
+      "city": "LONGUENEE-EN-ANJOU",
+      "department": "49",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fe13f1ff40",
+      "company_name": "YOAN VAILLANT",
+      "city": "ANGERS",
+      "department": "49",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c2b16d387c",
+      "company_name": "VINCENT BLANCHARD",
+      "city": "SEVREMOINE",
+      "department": "49",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a9cf1cc456",
+      "company_name": "DAMIEN ROBERT (DR PATRIMOINE)",
+      "city": "CORMONTREUIL",
+      "department": "51",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_44818dcaf3",
+      "company_name": "ALEXANDRE DOLL",
+      "city": "AZERAILLES",
+      "department": "54",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0ea63eac28",
+      "company_name": "ATB FINANCES",
+      "city": "NANCY",
+      "department": "54",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_75366602c9",
+      "company_name": "GUILLAUME GUILLAUME PELLERIN (PELLERIN)",
+      "city": "MARQUETTE-LEZ-LILLE",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7056661c52",
+      "company_name": "SASU LF COURTAGE (LF COURTAGE) (LF COURTAGE)",
+      "city": "SAILLY-SUR-LA-LYS",
+      "department": "62",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_83f20412e2",
+      "company_name": "HELENE CONSEIL COURTAGE",
+      "city": "BUROS",
+      "department": "64",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_50a4934bc6",
+      "company_name": "ROBIN MICHAUD COURTAGE",
+      "city": "CALUIRE-ET-CUIRE",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b5bf69dd8c",
+      "company_name": "PERSPECTIVES & PATRIMOINE CABINET COUBARD",
+      "city": "MARCY-L'ETOILE",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7c3b5a4fb5",
+      "company_name": "APERTIO PARTNERS II",
+      "city": "ECULLY",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_4d60b5a83a",
+      "company_name": "SASU SILENCE CAPITAL (FACILIFINANCES)",
+      "city": "LE MANS",
+      "department": "72",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d77a4a711d",
+      "company_name": "MAXIME CANDELIER",
+      "city": "COLLONGES-SOUS-SALEVE",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b43b5f714c",
+      "company_name": "GIRCONSEILS",
+      "city": "FILLIERE",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fd523750c5",
+      "company_name": "EFLA M (ATLAS INVEST COURTAGE)",
+      "city": "GAILLARD",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e1eed67056",
+      "company_name": "ENJOY STUDY",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8eb37ded9a",
+      "company_name": "LEO SAARBACH (SAARBACH PATRIMOINE)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6cdb54542d",
+      "company_name": "CASTELVAL",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c26fadb302",
+      "company_name": "MATTHEO LIBELLE",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5c6fb1069d",
+      "company_name": "SQUARE PARTNERS WEALTH MANAGEMENT (SPWM)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8aa1d479ba",
+      "company_name": "LLA CAPITAL (LLA CAPITAL)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_249878682f",
+      "company_name": "MATHIEU LE MINOUX (MATHIEU GESTION PRIVEE)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3737b745a4",
+      "company_name": "ERIC HUANG (HG FINANCE)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d15a64b338",
+      "company_name": "ALMAX PARTNERS",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a8cc946232",
+      "company_name": "GROUPE ODC (LEASERIS)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e92d38414f",
+      "company_name": "SCALE INVESTISSEMENTS",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_22865da1d2",
+      "company_name": "KLR",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9b0e2266f3",
+      "company_name": "MIH EUROPE",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_16cad80709",
+      "company_name": "W.K COURTAGE (W.K COURTAGE)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_63d9d34c8b",
+      "company_name": "JRL COURTAGE",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7d6d175b62",
+      "company_name": "MATHEO CLAIN (MCT)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d55cd158eb",
+      "company_name": "GUILLEMINE SOLEILLE (CABINET GUILLEMINE SOLEILLE)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e6b569a2d9",
+      "company_name": "KILLIAN BRION",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_288c3f0232",
+      "company_name": "LAVIEDEVANTSOI (SENIORFLEX)",
+      "city": "PARIS",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_58aa80add5",
+      "company_name": "ERWAN QUENEZ",
+      "city": "ROUEN",
+      "department": "76",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3c1382fa76",
+      "company_name": "SACHA SIEBATCHEU (JARD'ILEDEFRANCE)",
+      "city": "SOTTEVILLE-LES-ROUEN",
+      "department": "76",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_fc3381f963",
+      "company_name": "SEINE SOLUTIONS CREDIT (SEINE SOLUTIONS CREDIT)",
+      "city": "LE HAVRE",
+      "department": "76",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_6f1d6382ac",
+      "company_name": "AURELIE CHEVALEYRE",
+      "city": "CHEVRY-COSSIGNY",
+      "department": "77",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e045f38712",
+      "company_name": "THOMAS LEMANT",
+      "city": "LIEUSAINT",
+      "department": "77",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ee588d59af",
+      "company_name": "NILS MARCILLY (NM FINANCE)",
+      "city": "BOUGIVAL",
+      "department": "78",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8ba5ae27fc",
+      "company_name": "RAPHAELLE YVERT",
+      "city": "MONTESSON",
+      "department": "78",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f57a3e5dac",
+      "company_name": "FRANCOIS LANZARINI",
+      "city": "ALBI",
+      "department": "81",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7821d73198",
+      "company_name": "VB SOLUTIONS ET EXPERTISE",
+      "city": "ALBI",
+      "department": "81",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9e03548fc7",
+      "company_name": "LECHAT PATRIMOINE SASU (LL)",
+      "city": "MALAUSE",
+      "department": "82",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_eecb16a69b",
+      "company_name": "KLEOS CONSULTING (RHPAYE)",
+      "city": "GRIMAUD",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_a892c4472c",
+      "company_name": "STA CONSEIL (OPTIMIS COURTAGE)",
+      "city": "TOULON",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_132191dc57",
+      "company_name": "NOVARIS CONSEIL & PATRIMOINE (NOVARIS CONSEIL & PATRIMOINE) (NCP)",
+      "city": "TOULON",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_da2dfffb90",
+      "company_name": "GAUTHIER CRESSET (OSEZ CONSEILS)",
+      "city": "MESNARD-LA-BAROTIERE",
+      "department": "85",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_d541471c53",
+      "company_name": "MARIO BILLON (BILLON CAPITAL)",
+      "city": "LE PERRIER",
+      "department": "85",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_dce72f18ec",
+      "company_name": "CHARLOTTE M. COURTAGE",
+      "city": "PUTEAUX",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f9529642e9",
+      "company_name": "ASSOCIATION STELLIANT S'ENGAGE",
+      "city": "PUTEAUX",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_74a3ebe54f",
+      "company_name": "NOVANATI WEALTH MANAGEMENT (NOVANATI WEALTH MANAGEMENT)",
+      "city": "CHATENAY-MALABRY",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_ff8ddf303c",
+      "company_name": "TANGUY BEGUE (BEGUE)",
+      "city": "RUEIL MALMAISON",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_efa5b456ad",
+      "company_name": "MATISSE REGUIMI (REGUIMI CONSEIL)",
+      "city": "LES LILAS",
+      "department": "93",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3e1f5b34a4",
+      "company_name": "IMANE ELHIMRI (IE CONSULTING)",
+      "city": "LE PERREUX-SUR-MARNE",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_1037c02981",
+      "company_name": "LINE COURTAGE",
+      "city": "VILLEJUIF",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_f5c5398a51",
+      "company_name": "LUCAS MANDOFIA (MANDOFIA PATRIMOINE)",
+      "city": "MAFFLIERS",
+      "department": "95",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_5c1cb9a633",
+      "company_name": "KB CONSULTING",
+      "city": "CAYENNE",
+      "department": "973",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_721c32ca06",
+      "company_name": "DAMIEN LAURET",
+      "city": "SAINT-PIERRE",
+      "department": "974",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_bc81a3dc67",
+      "company_name": "HB PARTNERS CONSEIL",
+      "city": "SAINT-DENIS",
+      "department": "974",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "registre",
+        "manuel"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    }
+  ]
 }
