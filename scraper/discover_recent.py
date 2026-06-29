@@ -53,6 +53,32 @@ def api_get(params):
     return None
 
 
+# Activity terms that signal a genuine CGP / courtage / financial-advisory firm.
+# A brand-new NAF 66.19B registration is only kept if its name (denomination or
+# enseigne) contains one of these — this drops the noise the registry is full of:
+# bare individual auto-entrepreneurs, personal holdings (X CAPITAL / X PARTNERS),
+# SCI, associations and unrelated companies that merely picked the 66.19B code.
+CGP_KEYWORDS = (
+    "PATRIMO", "CONSEIL", "GESTION", "FINANCE", "FINANCI", "INVESTISSEMENT",
+    "COURTAGE", "COURTIER", "ASSURANCE", "EPARGNE", "PLACEMENT", "ALLOCATION",
+    "FORTUNE", "WEALTH", "ASSET", "FAMILY OFFICE", "PRIVE", "PRIVEE",
+    "EXPERTISE", "CABINET", "STRATEG", "FINANCIAL",
+)
+# Hard excludes even if a keyword sneaks in.
+EXCLUDE_PATTERNS = ("ASSOCIATION ", "SCI ", "SYNDIC", " SCPI", "FONDS ",
+                    "FONCIERE", "IMMOBILIERE", "HOLDING", "PARTICIPATION")
+
+
+def looks_like_cgp(name):
+    """True if the firm name looks like a real CGP/courtage/advisory cabinet."""
+    n = (name or "").upper()
+    if not n:
+        return False
+    if any(p in n for p in EXCLUDE_PATTERNS):
+        return False
+    return any(k in n for k in CGP_KEYWORDS)
+
+
 def build_member(e, today):
     siege = e.get("siege") or {}
     directors = [d for d in (_format_director(x) for x in (e.get("dirigeants") or [])) if d]
@@ -101,6 +127,10 @@ def main():
         siren = e.get("siren") or ""
         name = e.get("nom_complet") or e.get("nom_raison_sociale") or ""
         if not name:
+            return
+        # Quality gate: keep only names that look like a real CGP cabinet,
+        # not bare individuals / holdings / SCI / associations.
+        if not looks_like_cgp(name):
             return
         nn = normalize_name(name)
         city = normalize_city((e.get("siege") or {}).get("libelle_commune") or "")
