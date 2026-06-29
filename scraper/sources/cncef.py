@@ -144,55 +144,95 @@ def _parse_detail_page(url):
         return {}
 
 
-def _fetch_page(page_num):
-    """Fetch a single CNCEF page (for parallel use)."""
+def _fetch_page(page_num, retries=4):
+    """Fetch a single CNCEF page (for parallel use).
+
+    Returns (page_num, status, html) where status is:
+      - 'ok'   : HTTP 200 with member cards -> html is the page text
+      - 'end'  : HTTP 404, or 200 with no cards -> genuine end of directory
+      - 'fail' : network error / non-200 after all retries -> must retry later
+    """
+    import time
     import requests as req
     HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
                "Accept": "text/html, */*", "Accept-Language": "fr-FR,fr;q=0.9"}
     url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
-    try:
-        r = req.get(url, headers=HEADERS, timeout=30)
-        return (page_num, r.text) if r.status_code == 200 else (page_num, None)
-    except Exception:
-        return (page_num, None)
+    for attempt in range(retries):
+        try:
+            r = req.get(url, headers=HEADERS, timeout=30)
+            if r.status_code == 200:
+                if "annuaire__item" in r.text:
+                    return (page_num, "ok", r.text)
+                return (page_num, "end", "")  # 200 but no cards = past last page
+            if r.status_code == 404:
+                return (page_num, "end", "")  # page doesn't exist = end
+        except Exception:
+            pass
+        time.sleep(1.0 * (attempt + 1))  # backoff: 1s, 2s, 3s
+    return (page_num, "fail", "")  # still failing after retries
 
 
 def scrape_cncef(max_pages=500, enrich_details=False):
-    """Scrape the CNCEF directory using parallel page fetching (5 workers)."""
+    """Scrape the CNCEF directory using resilient parallel fetching (3 workers).
+
+    Robust against the CNCEF server dropping concurrent connections:
+      - each page retries up to 4 times with backoff
+      - the scrape only stops at a GENUINE empty page (HTTP 404 / 200-no-cards),
+        never on a transient network failure
+      - failed pages are retried once more sequentially at the end
+    """
     import concurrent.futures
 
-    logger.info("Starting CNCEF scrape (parallel, 5 workers)...")
+    logger.info("Starting CNCEF scrape (resilient parallel, 3 workers)...")
     members = []
     seen_names = set()
 
-    # Phase 1: fetch all pages in parallel
-    pages = {}
-    empty_seen = False
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+    pages = {}          # page_num -> html
+    failed = set()      # pages that failed (network) and need a retry
+    end_page = None     # first page index that returned 'end'
+
+    # Phase 1: fetch in batches of 30 with 3 workers; stop once we pass the end.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         batch_start = 1
-        while batch_start <= max_pages and not empty_seen:
-            batch_end = min(batch_start + 49, max_pages + 1)
-            futures = {pool.submit(_fetch_page, p): p for p in range(batch_start, batch_end)}
+        while batch_start <= max_pages:
+            batch_end = min(batch_start + 29, max_pages + 1)
+            futures = [pool.submit(_fetch_page, p) for p in range(batch_start, batch_end)]
             for future in concurrent.futures.as_completed(futures):
-                pnum, html = future.result()
-                if html:
-                    soup = BeautifulSoup(html, "lxml")
-                    if soup.select("div.annuaire__item"):
-                        pages[pnum] = html
-                    else:
-                        empty_seen = True
-                else:
-                    empty_seen = True
-            logger.info(f"CNCEF: fetched pages {batch_start}-{batch_end-1}, {len(pages)} with data so far")
+                pnum, status, html = future.result()
+                if status == "ok":
+                    pages[pnum] = html
+                elif status == "end":
+                    if end_page is None or pnum < end_page:
+                        end_page = pnum
+                else:  # fail
+                    failed.add(pnum)
+            logger.info(f"CNCEF: pages {batch_start}-{batch_end-1} done | "
+                        f"{len(pages)} ok, {len(failed)} failed, end={end_page}")
+            # Stop scheduling new batches once we've found the real end of directory.
+            if end_page is not None and batch_end > end_page:
+                break
             batch_start = batch_end
+
+    # Drop any 'failed' pages that are actually beyond the directory end.
+    if end_page is not None:
+        failed = {p for p in failed if p < end_page}
+
+    # Phase 2: retry failed pages sequentially (gentler, single connection).
+    if failed:
+        logger.info(f"CNCEF: retrying {len(failed)} failed pages sequentially...")
+        for p in sorted(failed):
+            pnum, status, html = _fetch_page(p, retries=5)
+            if status == "ok":
+                pages[pnum] = html
+            else:
+                logger.warning(f"CNCEF: page {p} still failing ({status}) - skipped")
 
     logger.info(f"CNCEF: {len(pages)} pages fetched, parsing...")
 
-    # Phase 2: parse sequentially (fast, in-memory)
+    # Phase 3: parse sequentially (fast, in-memory)
     for page_num in sorted(pages.keys()):
         soup = BeautifulSoup(pages[page_num], "lxml")
         cards = soup.select("div.annuaire__item")
-        page_count = 0
         for card in cards:
             data = _parse_card(card)
             if not data:
@@ -225,7 +265,6 @@ def scrape_cncef(max_pages=500, enrich_details=False):
                 source_url=data["detail_url"],
             )
             members.append(member)
-            page_count += 1
 
     logger.info(f"CNCEF: Total = {len(members)} members across {len(pages)} pages")
     return members
