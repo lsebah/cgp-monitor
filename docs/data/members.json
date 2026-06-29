@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T15:11:23.047338+00:00",
+  "last_updated": "2026-06-29T15:14:25.173211+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,43 +49,43 @@
     }
   },
   "stats": {
-    "total_members": 10177,
+    "total_members": 10162,
     "new_today": 0,
     "new_this_week": 106,
-    "new_this_month": 170,
+    "new_this_month": 169,
     "by_association": {
-      "anacofi": 3142,
-      "cncef": 4756,
+      "anacofi": 3139,
+      "cncef": 4745,
       "cncgp": 2527,
       "ucgp": 64,
       "leaders_league": 36,
       "registre": 46,
       "manuel": 43,
-      "affo": 20
+      "affo": 19
     },
     "by_activity": {
-      "CIF": 7101,
-      "COA": 4065,
-      "IOBSP": 1867,
+      "CIF": 7096,
+      "COA": 4055,
+      "IOBSP": 1866,
       "Immobilier": 946
     },
     "by_department": {
-      "75": 1664,
-      "69": 534,
+      "75": 1658,
+      "69": 533,
       "92": 461,
       "33": 402,
       "31": 396,
       "13": 368,
       "44": 320,
-      "06": 297,
+      "06": 296,
       "78": 278,
       "34": 256,
-      "38": 230,
+      "38": 229,
       "59": 229,
       "67": 197,
       "37": 184,
-      "83": 179,
       "94": 179,
+      "83": 178,
       "35": 169,
       "64": 141,
       "77": 128,
@@ -140,7 +140,7 @@
         "timestamp": "2026-06-29T14:39:46.562505+00:00"
       }
     },
-    "last_updated": "2026-06-29T15:11:23.047338+00:00"
+    "last_updated": "2026-06-29T15:14:25.173211+00:00"
   },
   "members": [
     {
@@ -25640,48 +25640,6 @@
       }
     },
     {
-      "id": "cgp_0d04c114b0",
-      "company_name": "AGENCE GENERALE IMMOBILIERE DE SAINT AYGULF",
-      "company_name_normalized": "agence generale immobiliere de saint aygulf",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "1155 AV. DE LA CORNICHE D AZUR",
-        "postal_code": "83370",
-        "city": "Var",
-        "department": "83",
-        "department_name": "Var",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "BOUCHET Frederic",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/agence-generale-immobiliere-de-saint-aygulf/"
-      }
-    },
-    {
       "id": "cgp_c84e79c978",
       "company_name": "AGENCE GREUB",
       "company_name_normalized": "agence greub",
@@ -25802,134 +25760,6 @@
         "last_enriched": "2026-05-07",
         "effectif_tranche": "02",
         "effectif_label": "3-5 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "68.31Z"
-      }
-    },
-    {
-      "id": "cgp_dc6c9a0cbe",
-      "company_name": "AGENCE IMMOBILIERE BARISIENNE",
-      "company_name_normalized": "agence immobiliere barisienne",
-      "siren": "443371554",
-      "orias_number": "",
-      "address": {
-        "street": "17 GRANDE RUE",
-        "postal_code": "55800",
-        "city": "Meuse",
-        "department": "55",
-        "department_name": "Meuse",
-        "region": "Grand Est"
-      },
-      "phone": "+33681114055",
-      "email": "morgan.zappula@gmail.com",
-      "website": "",
-      "activities": [
-        "CIF",
-        "COA"
-      ],
-      "specialties": [
-        "Assurance",
-        "Patrimoine"
-      ],
-      "directors": [
-        {
-          "name": "MORGAN ZAPPULA",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "ZAPPULA Morgan",
-          "role": "P"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-13",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/agence-immobiliere-barisienne/"
-      },
-      "creation_date": "2002-09-27",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2011-12-05",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "66.19B"
-      }
-    },
-    {
-      "id": "cgp_32df38b795",
-      "company_name": "AGENCE IMMOBILIERE PARIS GAMBETTA",
-      "company_name_normalized": "agence immobiliere paris gambetta",
-      "siren": "753414531",
-      "orias_number": "",
-      "address": {
-        "street": "65/67 AVENUE GAMBETTA",
-        "postal_code": "75020",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33140338464",
-      "email": "dm@orpi.com",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "DANIEL MILOSAVLJEVIC",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "MILOSAVLJEVIC Daniel",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/agence-immobiliere-paris-gambetta/"
-      },
-      "creation_date": "2012-09-01",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2026-02-06",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 0,
-        "resultat_net_eur": 7315,
-        "effectif_tranche": "01",
-        "effectif_label": "1-2 salariés",
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
@@ -26912,48 +26742,6 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
-      }
-    },
-    {
-      "id": "cgp_fae39b10ab",
-      "company_name": "AGIL AGENCE GENERAL IMMOBILIERE ET LOCATION",
-      "company_name_normalized": "agil agence general immobiliere et location",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "16 RUE LESDIGUIÈRES",
-        "postal_code": "38000",
-        "city": "Isère",
-        "department": "38",
-        "department_name": "Isere",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "KRIEF Romain",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/agil-agence-general-immobiliere-et-location/"
       }
     },
     {
@@ -103488,111 +103276,6 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
-      }
-    },
-    {
-      "id": "cgp_37f6a69f05",
-      "company_name": "BPCE SOLUTIONS IMMOBILIERES",
-      "company_name_normalized": "bpce solutions immobilieres",
-      "siren": "405244492",
-      "orias_number": "",
-      "address": {
-        "street": "7 PROMENADE GERMAINE SABLON",
-        "postal_code": "75013",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33158400700",
-      "email": "contact.bpce-immo@bpce.fr",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "SÉBASTIEN DE VANSSAY (DE VANSSAY DE BLAVOUS)",
-          "role": "Directeur Général",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "FABRICE GOURGEONNET",
-          "role": "Président du conseil d'administration",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "CREDIT COOPERATIF",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "CAISSE D'EPARGNE ET DE PREVOYANCE AQUITAINE POITOU CHARENTES",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "CAISSE D'EPARGNE ET DE PREVOYANCE LOIRE-CENTRE",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "BANQUE POPULAIRE DU SUD",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "BANQUE POPULAIRE OCCITANE",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "PRICEWATERHOUSECOOPERS AUDIT",
-          "role": "Commissaire aux comptes titulaire",
-          "source": "data.gouv",
-          "type": "personne morale"
-        },
-        {
-          "name": "CAISSE D'EPARGNE ET DE PREVOYANCE GRAND EST EUROPE",
-          "role": "Administrateur",
-          "source": "data.gouv",
-          "type": "personne morale"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "GE"
-      },
-      "creation_date": "1996-05-02",
-      "orias_inscription_date": "2012-04-04",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 19152484,
-        "resultat_net_eur": -5033489,
-        "effectif_tranche": "22",
-        "effectif_label": "100-199 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "GE",
-        "naf": "68.31Z"
       }
     },
     {
@@ -253963,69 +253646,6 @@
       }
     },
     {
-      "id": "cgp_471d283740",
-      "company_name": "FRANCE SCPI",
-      "company_name_normalized": "france scpi",
-      "siren": "818424210",
-      "orias_number": "",
-      "address": {
-        "street": "10 Rue de Penthievre",
-        "postal_code": "75008",
-        "city": "Paris 8e  Arrondissement",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33189313100",
-      "email": "contact@francescpi.com",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "OLIVIER AME",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "PAUL BOURDOIS",
-          "role": "Directeur Général",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2016-02-10",
-      "orias_inscription_date": "2016-04-15",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2023,
-        "ca_eur": 0,
-        "resultat_net_eur": 154692,
-        "effectif_tranche": "03",
-        "effectif_label": "6-9 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "66.19B"
-      }
-    },
-    {
       "id": "cgp_b75185f1a9",
       "company_name": "FRANCESCHETTI CARLA-MARIA",
       "company_name_normalized": "franceschetti carlamaria",
@@ -263827,63 +263447,6 @@
         "effectif_label": "Non renseigné",
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
-      }
-    },
-    {
-      "id": "cgp_553293d3bd",
-      "company_name": "GERANCE IMMOBILIERE MEDITERRANEE",
-      "company_name_normalized": "gerance immobiliere mediterranee",
-      "siren": "477585376",
-      "orias_number": "",
-      "address": {
-        "street": "31 AVENUE MALAUSSENA",
-        "postal_code": "06000",
-        "city": "NICE",
-        "department": "06",
-        "department_name": "Alpes-Maritimes",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "+33493879869",
-      "email": "draperi@wanadoo.fr",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "JEAN DRAPERI",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/gerance-immobiliere-mediterranee/"
-      },
-      "creation_date": "2004-06-21",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2018-11-23",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "68.31Z"
       }
     },
     {
@@ -314158,46 +313721,6 @@
       }
     },
     {
-      "id": "cgp_57fc52d514",
-      "company_name": "JCDecaux Holding",
-      "company_name_normalized": "jcdecaux holding",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
-        "department": "",
-        "department_name": "",
-        "region": ""
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Gwénaëlle Peyraud",
-          "role": "Tresorier AFFO"
-        }
-      ],
-      "associations": {
-        "affo": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-17",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "affo": "https://www.affo.fr/fr/nous-connaitre/l-organisation"
-      }
-    },
-    {
       "id": "cgp_a2da2f7823",
       "company_name": "JCF COURTAGE",
       "company_name_normalized": "jcf courtage",
@@ -335934,67 +335457,6 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
-      }
-    },
-    {
-      "id": "cgp_3e4b5f8d9d",
-      "company_name": "LA MAISON DU SYNDIC",
-      "company_name_normalized": "la maison du syndic",
-      "siren": "812698611",
-      "orias_number": "",
-      "address": {
-        "street": "70, ROUTE DE JOUY",
-        "postal_code": "57160",
-        "city": "Moselle",
-        "department": "57",
-        "department_name": "Moselle",
-        "region": "Grand Est"
-      },
-      "phone": "+33387395911",
-      "email": "contact@lamaisondusyndic.fr",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "EVEL PARTICIPATIONS IMMOBILIERES",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne morale"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/la-maison-du-syndic/"
-      },
-      "creation_date": "2015-07-16",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "ETI"
-      },
-      "orias_inscription_date": "2018-11-23",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 1014838,
-        "resultat_net_eur": -12477,
-        "effectif_tranche": "11",
-        "effectif_label": "10-19 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "ETI",
-        "naf": "68.32A"
       }
     },
     {
@@ -367804,68 +367266,6 @@
         "effectif_year": "2023",
         "categorie_entreprise": "GE",
         "naf": "82.30Z"
-      }
-    },
-    {
-      "id": "cgp_13c709044f",
-      "company_name": "L’IMMOBILIERE DU MARCHE",
-      "company_name_normalized": "limmobiliere du marche",
-      "siren": "487713893",
-      "orias_number": "",
-      "address": {
-        "street": "293 RUE DE THIZY",
-        "postal_code": "69400",
-        "city": "Rhône-Alpes",
-        "department": "69",
-        "department_name": "Rhone",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "+33630994263",
-      "email": "christianlemble@gmail.com",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "CHRISTIAN LEMBLE",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "LEMBLE Christian",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/limmobiliere-du-marche/"
-      },
-      "creation_date": "2006-01-02",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2023-07-13",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "03",
-        "effectif_label": "6-9 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "68.31Z"
       }
     },
     {
@@ -404011,60 +403411,6 @@
         "last_enriched": "2026-05-07",
         "effectif_tranche": "02",
         "effectif_label": "3-5 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "70.22Z"
-      }
-    },
-    {
-      "id": "cgp_a31f05a6b8",
-      "company_name": "MY SCPI.COM",
-      "company_name_normalized": "my scpicom",
-      "siren": "533868212",
-      "orias_number": "",
-      "address": {
-        "street": "25 rue de ponthieu",
-        "postal_code": "75008",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33164271868",
-      "email": "jribes@myscpi.com",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "JULIEN RIBES",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "anacofi": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {},
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "creation_date": "2011-08-01",
-      "orias_inscription_date": "2011-08-19",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "effectif_tranche": "00",
-        "effectif_label": "0 salarié",
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
@@ -499998,71 +499344,6 @@
       "source_urls": {}
     },
     {
-      "id": "cgp_5dc3d38cf3",
-      "company_name": "SAS IMMOBILIERE RS",
-      "company_name_normalized": "immobiliere rs",
-      "siren": "830605655",
-      "orias_number": "",
-      "address": {
-        "street": "4 RUE DU DAHOMEY",
-        "postal_code": "75011",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33685995712",
-      "email": "raphaelsfez@hotmail.fr",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "JEAN SFEZ",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "SFEZ Jean, Raphaël",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/sas-immobiliere-rs/"
-      },
-      "creation_date": "2017-06-22",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2023-04-21",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 303755,
-        "resultat_net_eur": 185590,
-        "effectif_tranche": "01",
-        "effectif_label": "1-2 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "66.22Z"
-      }
-    },
-    {
       "id": "cgp_2c9d3764dc",
       "company_name": "SAS KAIROS GESTION PRIVEE",
       "company_name_normalized": "kairos gestion privee",
@@ -529984,135 +529265,6 @@
       }
     },
     {
-      "id": "cgp_08a8b2bdc8",
-      "company_name": "SYNDIC 26",
-      "company_name_normalized": "syndic 26",
-      "siren": "904864493",
-      "orias_number": "",
-      "address": {
-        "street": "42 CHEMIN DE LA NITRIERE",
-        "postal_code": "26200",
-        "city": "Drôme",
-        "department": "26",
-        "department_name": "Drome",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "+33475947710",
-      "email": "clement@syndic26.fr",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "CLEMENT POTIER",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "POTIER Clément",
-          "role": "Gerant"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/syndic-26/"
-      },
-      "creation_date": "2021-11-01",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2024-01-26",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 151271,
-        "resultat_net_eur": 19022,
-        "effectif_tranche": "NN",
-        "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "68.32A"
-      }
-    },
-    {
-      "id": "cgp_c2af08c9ce",
-      "company_name": "SYNDIC HORIZON",
-      "company_name_normalized": "syndic horizon",
-      "siren": "411787690",
-      "orias_number": "",
-      "address": {
-        "street": "64 RUE CHANZY",
-        "postal_code": "51100",
-        "city": "Marne",
-        "department": "51",
-        "department_name": "Marne",
-        "region": "Grand Est"
-      },
-      "phone": "+33326501133",
-      "email": "contact@syndichorizon.com",
-      "website": "",
-      "activities": [
-        "COA"
-      ],
-      "specialties": [
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "GILLES MHAYA",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "MHAYA Gilles",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/syndic-horizon/"
-      },
-      "creation_date": "1997-04-14",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2023-05-12",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 1266474,
-        "resultat_net_eur": 31133,
-        "effectif_tranche": "11",
-        "effectif_label": "10-19 salariés",
-        "effectif_year": "2023",
-        "categorie_entreprise": "PME",
-        "naf": "68.32A"
-      }
-    },
-    {
       "id": "cgp_407db527c3",
       "company_name": "SYNEFI",
       "company_name_normalized": "synefi",
@@ -542968,77 +542120,6 @@
         "last_enriched": "2026-05-07",
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
-        "categorie_entreprise": "PME",
-        "naf": "68.31Z"
-      }
-    },
-    {
-      "id": "cgp_836c969697",
-      "company_name": "TRANSACTIONS IMMOBILIERES ET COMMERCIALES",
-      "company_name_normalized": "transactions immobilieres et commerciales",
-      "siren": "520833948",
-      "orias_number": "",
-      "address": {
-        "street": "5 AVENUE PHILIPPE AUGUSTE",
-        "postal_code": "75011",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33689230397",
-      "email": "foucault.ofl@orange.fr",
-      "website": "",
-      "activities": [
-        "IOBSP"
-      ],
-      "specialties": [
-        "Crédit"
-      ],
-      "directors": [
-        {
-          "name": "MARIA FOUCAULT (AFONSO)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "CLAUDE HINH",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "FOUCAULT Maria",
-          "role": "Représentant légal"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-05-06",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/transactions-immobilieres-et-commerciales/"
-      },
-      "creation_date": "2010-03-01",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      },
-      "orias_inscription_date": "2014-06-20",
-      "finances_data_gouv": {
-        "last_enriched": "2026-05-07",
-        "year": 2024,
-        "ca_eur": 0,
-        "resultat_net_eur": 67056,
-        "effectif_tranche": "03",
-        "effectif_label": "6-9 salariés",
-        "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
       }
