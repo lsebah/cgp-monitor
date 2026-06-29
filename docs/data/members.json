@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T13:51:35.153061+00:00",
+  "last_updated": "2026-06-29T13:55:36.109973+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -16,14 +16,14 @@
     "anacofi": {
       "status": "success",
       "count": 0,
-      "timestamp": "2026-06-29T13:51:35.153061+00:00",
-      "duration_s": 5.1
+      "timestamp": "2026-06-29T13:55:36.109973+00:00",
+      "duration_s": 10.8
     },
     "affo": {
       "status": "success",
       "count": 20,
-      "timestamp": "2026-06-29T13:51:35.153061+00:00",
-      "duration_s": 2.0
+      "timestamp": "2026-06-29T13:55:36.109973+00:00",
+      "duration_s": 1.4
     },
     "registre_manual": {
       "status": "success",
@@ -1245,15 +1245,15 @@
       "email": "christophe.decaix@2bpatrimoine.com",
       "website": "https://www.2bpatrimoine.com/",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -14559,15 +14559,15 @@
       "email": "c.lefevre@actiexpert.fr",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -19674,15 +19674,15 @@
       "email": "contact@adl-patrimoine.fr",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -78675,15 +78675,15 @@
       "email": "guillaume.bouron@b2patrimoine.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -78922,15 +78922,15 @@
       "email": "contact@b2rpatrimoine.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -84672,13 +84672,13 @@
       "email": "bc@livaoffice.com",
       "website": "",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -85137,14 +85137,14 @@
       "email": "info@bcrfinances.com",
       "website": "",
       "activities": [
-        "COA",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -94730,13 +94730,13 @@
       "email": "invest@blaquieres.com",
       "website": "",
       "activities": [
-        "COA",
         "Immobilier",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -140170,13 +140170,13 @@
       "email": "christelle.gebelin1@gmail.com",
       "website": "",
       "activities": [
+        "CIF",
         "COA",
-        "IOBSP",
-        "CIF"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -211754,12 +211754,12 @@
       "email": "contact@entropi.fr",
       "website": "",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -279571,15 +279571,15 @@
       "email": "contact@h3patrimoine.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "Immobilier",
         "CIF",
-        "Immobilier"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Patrimoine",
         "Immobilier",
+        "Assurance",
         "Crédit"
       ],
       "directors": [
@@ -318688,12 +318688,12 @@
       "email": "anthony.muselli@jpam-patrimoine.fr",
       "website": "",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -520180,12 +520180,12 @@
       "email": "sebastien.riedinger.cgp@gmail.com",
       "website": "",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
