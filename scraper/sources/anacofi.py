@@ -25,6 +25,23 @@ def scrape_anacofi():
     members = []
 
     try:
+        # Diagnostic fetch with full visibility into what the server returns.
+        import requests as _req
+        try:
+            _diag = _req.get(
+                EXPORT_URL,
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                       "AppleWebKit/537.36 Chrome/125.0 Safari/537.36",
+                         "Accept": "text/csv,text/html,application/json,*/*",
+                         "Accept-Language": "fr-FR,fr;q=0.9"},
+                timeout=30, allow_redirects=True)
+            logger.info(f"ANACOFI DIAG: status={_diag.status_code} "
+                        f"type={_diag.headers.get('Content-Type','')} "
+                        f"len={len(_diag.content)} final_url={_diag.url}")
+            logger.info(f"ANACOFI DIAG first 400 chars: {_diag.text[:400]!r}")
+        except Exception as de:
+            logger.error(f"ANACOFI DIAG fetch failed: {de}")
+
         resp = fetch(EXPORT_URL, delay=1.0)
         if not resp:
             logger.error("ANACOFI: No response from export URL")
