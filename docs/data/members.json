@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T07:28:07.059732+00:00",
+  "last_updated": "2026-06-29T10:05:35.980014+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -9,9 +9,9 @@
     },
     "cncef": {
       "status": "success",
-      "count": 12,
-      "timestamp": "2026-06-28T07:41:35.506186+00:00",
-      "duration_s": 303.8
+      "count": 36,
+      "timestamp": "2026-06-29T10:05:35.980014+00:00",
+      "duration_s": 66.2
     },
     "anacofi": {
       "status": "success",
@@ -38,13 +38,13 @@
     }
   },
   "stats": {
-    "total_members": 10121,
-    "new_today": 0,
-    "new_this_week": 25,
-    "new_this_month": 89,
+    "total_members": 10123,
+    "new_today": 2,
+    "new_this_week": 27,
+    "new_this_month": 91,
     "by_association": {
       "anacofi": 3142,
-      "cncef": 4743,
+      "cncef": 4745,
       "cncgp": 2527,
       "ucgp": 65,
       "leaders_league": 36,
@@ -53,7 +53,7 @@
     },
     "by_activity": {
       "CIF": 7049,
-      "COA": 4052,
+      "COA": 4054,
       "IOBSP": 1862,
       "Immobilier": 937
     },
@@ -75,7 +75,7 @@
       "94": 178,
       "83": 177,
       "35": 167,
-      "64": 139,
+      "64": 140,
       "77": 128,
       "74": 114
     },
@@ -82443,10 +82443,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -100880,10 +100880,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -202471,8 +202471,8 @@
       "email": "ocazes@edony.fr",
       "website": "",
       "activities": [
-        "COA",
-        "CIF"
+        "CIF",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -292150,10 +292150,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -337725,10 +337725,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -353871,10 +353871,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -359059,10 +359059,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -414760,8 +414760,8 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -424053,8 +424053,8 @@
       "email": "anthony06l@icloud.com",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
         "Assurance",
@@ -494469,6 +494469,43 @@
       "source_urls": {}
     },
     {
+      "id": "cgp_7df5fa90c7",
+      "company_name": "SARL HC COURTAGE",
+      "company_name_normalized": "hc courtage",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "64000",
+        "city": "Pyrénées Atlantiques",
+        "department": "64",
+        "department_name": "Pyrenees-Atlantiques",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/sarl-hc-courtage/"
+      }
+    },
+    {
       "id": "cgp_abe1f088fc",
       "company_name": "SARL HERACLES FINANCE",
       "company_name_normalized": "heracles finance",
@@ -501643,10 +501680,10 @@
       "email": "",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP",
+        "CIF",
         "Immobilier",
-        "CIF"
+        "COA",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -548067,6 +548104,43 @@
         "effectif_year": "2023",
         "categorie_entreprise": "PME",
         "naf": "66.19B"
+      }
+    },
+    {
+      "id": "cgp_a89e512f12",
+      "company_name": "VALOIS PATRIMOINE CONSEIL",
+      "company_name_normalized": "valois patrimoine conseil",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "",
+        "postal_code": "16000",
+        "city": "Charente",
+        "department": "16",
+        "department_name": "Charente",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "COA"
+      ],
+      "specialties": [
+        "Assurance"
+      ],
+      "directors": [],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "is_new": true,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/valois-patrimoine-conseil/"
       }
     },
     {

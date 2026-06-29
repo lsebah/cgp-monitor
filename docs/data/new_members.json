@@ -1,5 +1,36 @@
 {
   "last_updated": "2026-06-29",
-  "count": 0,
-  "new_members": []
+  "count": 2,
+  "new_members": [
+    {
+      "id": "cgp_a89e512f12",
+      "company_name": "VALOIS PATRIMOINE CONSEIL",
+      "city": "Charente",
+      "department": "16",
+      "activities": [
+        "COA"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_7df5fa90c7",
+      "company_name": "SARL HC COURTAGE",
+      "city": "Pyrénées Atlantiques",
+      "department": "64",
+      "activities": [
+        "COA"
+      ],
+      "associations": [
+        "cncef"
+      ],
+      "first_seen": "2026-06-29",
+      "phone": "",
+      "email": ""
+    }
+  ]
 }
