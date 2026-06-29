@@ -94,7 +94,9 @@ def main():
 
     def consider(e):
         cd = e.get("date_creation") or ""
-        if cd < cutoff:                      # enforce window client-side
+        if cd < cutoff:                      # too old: outside the window
+            return
+        if cd > today:                       # post-dated (future): data.gouv anomaly
             return
         siren = e.get("siren") or ""
         name = e.get("nom_complet") or e.get("nom_raison_sociale") or ""

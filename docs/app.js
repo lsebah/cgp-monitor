@@ -325,11 +325,16 @@ async function loadData() {
                 .toISOString().slice(0, 10);
             const cutoff4m = new Date(today.getTime() - 122 * 86400000)
                 .toISOString().slice(0, 10);
+            // Upper bound = today: some data.gouv records carry a FUTURE
+            // creation date (post-dated registrations). A firm "created in
+            // Oct 2026" must not count as "created in the last 7 days".
+            const todayIso = today.toISOString().slice(0, 10);
             let recent7d = 0, recent4m = 0;
             for (const m of allMembers) {
                 if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
-                if (m.creation_date && m.creation_date >= cutoff7d) recent7d++;
-                if (m.creation_date && m.creation_date >= cutoff4m) recent4m++;
+                if (!m.creation_date || m.creation_date > todayIso) continue;
+                if (m.creation_date >= cutoff7d) recent7d++;
+                if (m.creation_date >= cutoff4m) recent4m++;
             }
             const elRecent7d = document.getElementById('statRecent7d');
             if (elRecent7d) elRecent7d.textContent = recent7d;
@@ -627,8 +632,12 @@ function getFilteredMembers() {
             }
         }
         if (creationCutoff) {
-            // Reject if no creation_date or older than cutoff
-            if (!m.creation_date || m.creation_date < creationCutoff) return false;
+            // Reject if no creation_date, older than cutoff, or FUTURE-dated
+            // (some data.gouv records are post-dated and must not show up as
+            // "recently created").
+            const todayIso = new Date().toISOString().slice(0, 10);
+            if (!m.creation_date || m.creation_date < creationCutoff
+                || m.creation_date > todayIso) return false;
         }
         if (caFilter) {
             const ca = m.finances_data_gouv?.ca_eur;
