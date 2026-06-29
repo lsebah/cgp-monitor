@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T13:55:36.109973+00:00",
+  "last_updated": "2026-06-29T14:23:18.353513+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -35,6 +35,11 @@
       "added": 17615,
       "naf": "66.19B",
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
+    },
+    "datagouv_enrich": {
+      "status": "success",
+      "timestamp": "2026-06-29T14:23:18.353513+00:00",
+      "missing_creation_date": 2278
     }
   },
   "stats": {
@@ -79,7 +84,50 @@
       "77": 128,
       "74": 114
     },
-    "total_departments": 100
+    "total_departments": 100,
+    "scrape_status": {
+      "cncgp": {
+        "status": "success",
+        "count": 2657,
+        "timestamp": "2026-06-29T11:07:28.426434+00:00",
+        "duration_s": 559.5
+      },
+      "cncef": {
+        "status": "success",
+        "count": 252,
+        "timestamp": "2026-06-29T12:01:27.213920+00:00",
+        "duration_s": 1321.6
+      },
+      "anacofi": {
+        "status": "success",
+        "count": 0,
+        "timestamp": "2026-06-29T13:55:36.109973+00:00",
+        "duration_s": 10.8
+      },
+      "affo": {
+        "status": "success",
+        "count": 20,
+        "timestamp": "2026-06-29T13:55:36.109973+00:00",
+        "duration_s": 1.4
+      },
+      "registre_manual": {
+        "status": "success",
+        "added": 2,
+        "timestamp": "2026-06-02T12:25:43.078982+00:00"
+      },
+      "registre_naf_discovery": {
+        "status": "success",
+        "added": 17615,
+        "naf": "66.19B",
+        "timestamp": "2026-06-02T09:52:26.643314+00:00"
+      },
+      "datagouv_enrich": {
+        "status": "success",
+        "timestamp": "2026-06-29T14:23:18.353513+00:00",
+        "missing_creation_date": 2278
+      }
+    },
+    "last_updated": "2026-06-29T14:23:18.353513+00:00"
   },
   "members": [
     {
@@ -2409,14 +2457,14 @@
       ],
       "directors": [
         {
-          "name": "LAJEANNE Alexandre",
-          "role": "Représentant légal"
-        },
-        {
           "name": "AOUATEF EZ-ZOUBI (BEN ALI)",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "LAJEANNE Alexandre",
+          "role": "Représentant légal"
         },
         {
           "name": "EZ-ZOUBI Aouatef",
@@ -2434,6 +2482,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/3a-assurances/"
+      },
+      "creation_date": "2023-05-15",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -4230,10 +4283,6 @@
       ],
       "directors": [
         {
-          "name": "Clément Latour",
-          "role": "Adherent"
-        },
-        {
           "name": "GUILLAUME CORRE",
           "role": "Directeur Général",
           "source": "data.gouv",
@@ -4250,6 +4299,10 @@
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Clément Latour",
+          "role": "Adherent"
         },
         {
           "name": "GAILLARD Victor",
@@ -4325,6 +4378,11 @@
           "credit"
         ],
         "has_structured_products": false
+      },
+      "creation_date": "2009-02-02",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -4391,14 +4449,14 @@
       ],
       "directors": [
         {
-          "name": "Grégory Assoun",
-          "role": "Adherent"
-        },
-        {
           "name": "ALEXANDRE MAQUART",
           "role": "Gérant et associé indéfiniment responsable",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Grégory Assoun",
+          "role": "Adherent"
         },
         {
           "name": "MAQUART Alexandre",
@@ -4419,6 +4477,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/amg-conseil/"
+      },
+      "creation_date": "2024-06-01",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -4452,18 +4514,18 @@
       ],
       "directors": [
         {
+          "name": "ALAIN CAFIERI",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Bruno Marcos",
           "role": "Adherent"
         },
         {
           "name": "Charles Francois",
           "role": "Adherent"
-        },
-        {
-          "name": "ALAIN CAFIERI",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
         },
         {
           "name": "CAFIERI Alain",
@@ -4527,6 +4589,11 @@
           "esg"
         ],
         "has_structured_products": false
+      },
+      "creation_date": "2013-01-09",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -5682,10 +5749,6 @@
       ],
       "directors": [
         {
-          "name": "DAVID Alain",
-          "role": "Représentant légal"
-        },
-        {
           "name": "MARIE-SOPHIE LECLUYSE (AUBERT)",
           "role": "Président de SAS",
           "source": "data.gouv",
@@ -5693,9 +5756,13 @@
         },
         {
           "name": "NOMADA",
-          "role": "",
+          "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne morale"
+        },
+        {
+          "name": "DAVID Alain",
+          "role": "Représentant légal"
         },
         {
           "name": "Marie-Sophie Lecluyse",
@@ -5716,6 +5783,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/aj-patrimoine/"
+      },
+      "creation_date": "2024-03-07",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -14968,14 +15039,14 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Paulo Fernandes",
-          "role": "Adherent"
-        },
-        {
           "name": "GEORGES SAUREL",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Paulo Fernandes",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -14987,7 +15058,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "1994-09-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI"
+      }
     },
     {
       "id": "cgp_d7b35e6088",
@@ -20465,7 +20541,7 @@
       "id": "cgp_f539efc3d4",
       "company_name": "ADRET PATRIMOINE",
       "company_name_normalized": "adret patrimoine",
-      "siren": "",
+      "siren": "104361324",
       "orias_number": "",
       "address": {
         "street": "45 Avenue du Président J.F. Kennedy",
@@ -20484,6 +20560,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "ORELLE B.V.",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne morale"
+        },
+        {
           "name": "Aurélien Drevon",
           "role": "Adherent"
         }
@@ -20497,7 +20579,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-14",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_e6dbc41c96",
@@ -22112,10 +22198,6 @@
       ],
       "directors": [
         {
-          "name": "Ronan Le Calvez",
-          "role": "Adherent"
-        },
-        {
           "name": "VINCENT JOUTY",
           "role": "Président de SAS",
           "source": "data.gouv",
@@ -22126,6 +22208,10 @@
           "role": "Directeur Général",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Ronan Le Calvez",
+          "role": "Adherent"
         },
         {
           "name": "JOUTY Vincent",
@@ -22146,6 +22232,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/alpex-gestion-privee/"
+      },
+      "creation_date": "2021-08-04",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -28938,7 +29029,7 @@
       "id": "cgp_c48f7bfe2d",
       "company_name": "AIC PATRIMOINE NORD-EST",
       "company_name_normalized": "aic patrimoine nordest",
-      "siren": "",
+      "siren": "105642391",
       "orias_number": "",
       "address": {
         "street": "6 RUE EDOUARD MIGNOT",
@@ -28957,8 +29048,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Maxence Macherez",
-          "role": "Adherent"
+          "name": "MAXENCE MACHEREZ",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -28970,7 +29063,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-22",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_0d9e8f8c4c",
@@ -32491,14 +32588,14 @@
       ],
       "directors": [
         {
-          "name": "AUVRAY Océane",
-          "role": "Représentant légal"
-        },
-        {
           "name": "GEOFFREY CHAUMERON",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "AUVRAY Océane",
+          "role": "Représentant légal"
         },
         {
           "name": "CHARLES BRUNSWICK",
@@ -32537,6 +32634,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/alcyon-gestion-privee/"
+      },
+      "creation_date": "2022-02-23",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -42697,7 +42799,7 @@
       "id": "cgp_f4dc95573e",
       "company_name": "ALYTIS & CAPYG ASSOCIES",
       "company_name_normalized": "alytis  capyg associes",
-      "siren": "",
+      "siren": "105410641",
       "orias_number": "",
       "address": {
         "street": "6 ALLÉES FORAIN FRANCOIS VERDIER",
@@ -42716,6 +42818,18 @@
       "specialties": [],
       "directors": [
         {
+          "name": "EMILIE CHARBONNEL (BASSIBE)",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "PIERRE-YVES COHENDET",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Emilie Charbonnel",
           "role": "Adherent"
         }
@@ -42729,7 +42843,11 @@
       "first_seen": "2026-06-23",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_8da8091596",
@@ -55770,7 +55888,7 @@
       "id": "cgp_92489e5b81",
       "company_name": "ARKANA CAPITAL",
       "company_name_normalized": "arkana capital",
-      "siren": "",
+      "siren": "103962007",
       "orias_number": "",
       "address": {
         "street": "51 RUE DES BONS RAISINS",
@@ -55789,8 +55907,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Delphine Laloum",
-          "role": "Adherent"
+          "name": "DELPHINE LALOUM",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -55802,7 +55922,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-14",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_b242db16b3",
@@ -70819,7 +70943,7 @@
       "id": "cgp_812fbc9c60",
       "company_name": "AURALYS CONSEIL",
       "company_name_normalized": "auralys conseil",
-      "siren": "",
+      "siren": "994854990",
       "orias_number": "",
       "address": {
         "street": "32 RUE GEORGES FONTANGES",
@@ -70838,6 +70962,18 @@
       "specialties": [],
       "directors": [
         {
+          "name": "KILIAN BEYAERT (BEYAERT-LABBÉ)",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "SAMUEL LAGARDE (LAGARDE)",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Kilian Beyaert",
           "role": "Adherent"
         }
@@ -70851,7 +70987,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2025-12-04",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_30a96045b6",
@@ -71698,7 +71838,7 @@
       "id": "cgp_baa6a98c61",
       "company_name": "AURORE INVESTMENT SOLUTIONS",
       "company_name_normalized": "aurore investment solutions",
-      "siren": "",
+      "siren": "104948153",
       "orias_number": "",
       "address": {
         "street": "11 RUE ROQUÉPINE",
@@ -71717,8 +71857,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Gary Gahnassia",
-          "role": "Adherent"
+          "name": "GARY GAHNASSIA",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -71730,7 +71872,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-07",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_2d9cc6b88c",
@@ -71979,7 +72125,7 @@
       "id": "cgp_e23ca19543",
       "company_name": "AUTO LEASE PARTNER",
       "company_name_normalized": "auto lease partner",
-      "siren": "",
+      "siren": "910939834",
       "orias_number": "",
       "address": {
         "street": "485 ROUTE DE CAGNES",
@@ -72000,6 +72146,12 @@
       ],
       "directors": [
         {
+          "name": "MICHAEL ALMIRALL",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "ALMIRALL Michaël",
           "role": "Gerant"
         }
@@ -72015,6 +72167,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/auto-lease-partner/"
+      },
+      "creation_date": "2022-02-22",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -73564,7 +73721,7 @@
       "id": "cgp_5cb87d463a",
       "company_name": "AVELTIA CONSEIL & PATRIMOINE",
       "company_name_normalized": "aveltia conseil  patrimoine",
-      "siren": "",
+      "siren": "104103205",
       "orias_number": "",
       "address": {
         "street": "13 BIS QUAI DE L'YSER",
@@ -73583,8 +73740,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Pierre Blasco",
-          "role": "Adherent"
+          "name": "PIERRE BLASCO",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -73596,7 +73755,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_c4668f6671",
@@ -78496,14 +78659,14 @@
       ],
       "directors": [
         {
-          "name": "Régis Herve",
-          "role": "Adherent"
-        },
-        {
           "name": "BRUNO YVINEC",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Régis Herve",
+          "role": "Adherent"
         },
         {
           "name": "YVINEC Bruno",
@@ -78534,6 +78697,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/by-conseils/"
+      },
+      "creation_date": "2022-11-10",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -96824,14 +96992,14 @@
       ],
       "directors": [
         {
-          "name": "NICOLAS Bertrand",
-          "role": "Représentant légal"
-        },
-        {
           "name": "LINDA BERREBI (BENILLOUCHE)",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "NICOLAS Bertrand",
+          "role": "Représentant légal"
         },
         {
           "name": "BERREBI Linda",
@@ -96873,6 +97041,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/bertrand-nicolas/"
+      },
+      "creation_date": "2018-07-02",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -109645,14 +109818,14 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Patrick Sarro",
-          "role": "Adherent"
-        },
-        {
           "name": "CHRISTOPHE FERRAND",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Patrick Sarro",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -109682,6 +109855,11 @@
           "esg"
         ],
         "has_structured_products": false
+      },
+      "creation_date": "2014-01-17",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -126987,14 +127165,14 @@
       ],
       "directors": [
         {
-          "name": "Laurent Vivaux",
-          "role": "Adherent"
-        },
-        {
           "name": "THOMAS DELMAS",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Laurent Vivaux",
+          "role": "Adherent"
         },
         {
           "name": "DELMAS Thomas",
@@ -127015,6 +127193,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/capvest/"
+      },
+      "creation_date": "2023-10-16",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -135336,14 +135519,14 @@
       ],
       "directors": [
         {
-          "name": "SENDRES Didier",
-          "role": "Représentant légal"
-        },
-        {
           "name": "TANGUY DEFOND",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "SENDRES Didier",
+          "role": "Représentant légal"
         },
         {
           "name": "DEFOND Tanguy",
@@ -135361,6 +135544,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cds-assurances/"
+      },
+      "creation_date": "2011-11-15",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -135663,14 +135851,14 @@
       ],
       "directors": [
         {
-          "name": "Eric Benoist",
-          "role": "Adherent"
-        },
-        {
           "name": "CYRILLE LE GUENNEC",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Eric Benoist",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -135687,6 +135875,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cleg-courtage/"
+      },
+      "creation_date": "2022-07-21",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -135809,7 +136002,7 @@
       "id": "cgp_28d397f4e6",
       "company_name": "CECILIA FINANCE",
       "company_name_normalized": "cecilia finance",
-      "siren": "",
+      "siren": "508446168",
       "orias_number": "",
       "address": {
         "street": "49 BLD DE CLICHY",
@@ -135828,8 +136021,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Massimo Di Cicilia",
-          "role": "Adherent"
+          "name": "MASSIMO DI CICILIA",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -135841,7 +136036,12 @@
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2008-10-10",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_25450a1e54",
@@ -140503,12 +140703,12 @@
       "id": "cgp_e671501579",
       "company_name": "CGP EXPERT",
       "company_name_normalized": "cgp expert",
-      "siren": "",
+      "siren": "437985252",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "12 RUE DES FRANCS-BOURGEOIS",
         "postal_code": "35000",
-        "city": "Ille et Vilaine",
+        "city": "RENNES",
         "department": "35",
         "department_name": "Ille-et-Vilaine",
         "region": "Bretagne"
@@ -140528,7 +140728,26 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GWENDOLINE BAREL",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "CHRISTOPHE BOULANGER",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "KILIAN VIVIER",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -140540,6 +140759,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cgp-expert/"
+      },
+      "creation_date": "2001-06-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -147275,7 +147499,7 @@
       "id": "cgp_7f2c7dd5b4",
       "company_name": "Cindy CAPALITA-ANNETTE",
       "company_name_normalized": "cindy capalitaannette",
-      "siren": "",
+      "siren": "534354063",
       "orias_number": "",
       "address": {
         "street": "16B LES JARDINS DE HOUELBOURG",
@@ -147302,6 +147526,12 @@
       ],
       "directors": [
         {
+          "name": "CINDY CAPALITA ANNETTE (CAPALITA)",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "CAPALITA-ANNETTE Cindy",
           "role": "C"
         }
@@ -147317,6 +147547,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/capalita-cindy/"
+      },
+      "creation_date": "2010-04-26",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -155185,7 +155420,7 @@
       "id": "cgp_9856d2ed86",
       "company_name": "COMES CAPITAL PARTNERS",
       "company_name_normalized": "comes capital partners",
-      "siren": "",
+      "siren": "948366257",
       "orias_number": "",
       "address": {
         "street": "141 AVENUE DE WAGRAM",
@@ -155204,8 +155439,64 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Bruno Stern-Papaspyrou",
-          "role": "Adherent"
+          "name": "JEAN-BERTRAND CAUSSIN",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "HERVE DESCAZEAUX",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "OLIVIER DOUSSET",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "PATRICK MAUREL",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "OLIVIER MILLET",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "VALERIE IZAMBARD (PELLEREAU)",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "BORIS PICCHIOTTINO",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "JULIEN PLANTIVE",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "BRUNO STERN-PAPASPYROU",
+          "role": "Directeur général délégué",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "DELOITTE & ASSOCIES",
+          "role": "Commissaire aux comptes titulaire",
+          "source": "data.gouv",
+          "type": "personne morale"
         }
       ],
       "associations": {
@@ -155217,7 +155508,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2023-01-13",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_f78210b018",
@@ -163228,7 +163524,7 @@
       "id": "cgp_d09cabd10d",
       "company_name": "CORALIE CAHUZAC-CONSEIL PATRIMONIAL",
       "company_name_normalized": "coralie cahuzacconseil patrimonial",
-      "siren": "",
+      "siren": "103608865",
       "orias_number": "",
       "address": {
         "street": "279 CHEMIN DE PUECH ORE",
@@ -163247,6 +163543,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "CORALIE CAHUZAC-CHAMBERT (CAHUZAC)",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Coralie Cahuzac-Chambert",
           "role": "Adherent"
         }
@@ -163260,7 +163562,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_ccdf6c0d52",
@@ -176415,14 +176721,14 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Dorothée Marty",
-          "role": "Adherent"
-        },
-        {
           "name": "DOMINIQUE ANDRAUD",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Dorothée Marty",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -176437,7 +176743,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2005-03-21",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_31781701ca",
@@ -176485,7 +176796,7 @@
       "id": "cgp_500c5e74da",
       "company_name": "DAMIENS DE LYS",
       "company_name_normalized": "damiens de lys",
-      "siren": "",
+      "siren": "939996187",
       "orias_number": "",
       "address": {
         "street": "52 CHEMIN DE MATELAIT",
@@ -176504,8 +176815,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Amélie Damiens",
-          "role": "Adherent"
+          "name": "AMÉLIE DAMIENS",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -176517,7 +176830,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2024-12-14",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_36f0f2e520",
@@ -178986,14 +179303,14 @@
       ],
       "directors": [
         {
-          "name": "DEROUET Mathieu",
-          "role": "Gerant"
-        },
-        {
           "name": "MAEL PROVOST",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "DEROUET Mathieu",
+          "role": "Gerant"
         }
       ],
       "associations": {
@@ -179010,6 +179327,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/derouet-mathieu/"
+      },
+      "creation_date": "2019-01-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -185291,7 +185613,7 @@
       "id": "cgp_1023a58d37",
       "company_name": "DENEAU YOANN",
       "company_name_normalized": "deneau yoann",
-      "siren": "",
+      "siren": "818643850",
       "orias_number": "",
       "address": {
         "street": "6 RUE DE LA FERME",
@@ -185312,6 +185634,12 @@
       ],
       "directors": [
         {
+          "name": "YOANN DENEAU",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "DENEAU Yoann",
           "role": "C"
         }
@@ -185327,6 +185655,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/deneau-yoan/"
+      },
+      "creation_date": "2016-02-22",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -193572,14 +193905,14 @@
       ],
       "directors": [
         {
-          "name": "DARDILLAC Pascal",
-          "role": "Représentant légal"
-        },
-        {
           "name": "YANNIS HOFFMANN",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "DARDILLAC Pascal",
+          "role": "Représentant légal"
         }
       ],
       "associations": {
@@ -193593,13 +193926,18 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dp-conseils-patrimoine/"
+      },
+      "creation_date": "2007-01-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
       "id": "cgp_504e9e6dd6",
       "company_name": "DP2V",
       "company_name_normalized": "dp2v",
-      "siren": "",
+      "siren": "993447747",
       "orias_number": "",
       "address": {
         "street": "33 AVENUE DU GÉNÉRAL SARRAIL",
@@ -193618,6 +193956,18 @@
       "specialties": [],
       "directors": [
         {
+          "name": "AUDE PLUS",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "EDWARD VITREY",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Aude Plus Valard",
           "role": "Adherent"
         }
@@ -193631,7 +193981,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2025-05-06",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_09209fa5ab",
@@ -199353,7 +199707,7 @@
       "id": "cgp_fa740cce55",
       "company_name": "E&P OCEAN INDIEN",
       "company_name_normalized": "ep ocean indien",
-      "siren": "",
+      "siren": "103516324",
       "orias_number": "",
       "address": {
         "street": "25 ALLÉES JEAN JAURÈS",
@@ -199372,8 +199726,22 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Thibaut Marty",
-          "role": "Adherent"
+          "name": "GREGGORY BROBST",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "THIBAUT MARTY",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "NICOLAS SOUBIRAN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -199385,7 +199753,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-07",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_5832f53ff4",
@@ -203049,10 +203421,6 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Christophe Veran",
-          "role": "Adherent"
-        },
-        {
           "name": "RENAUD SCHMIT",
           "role": "Directeur Général",
           "source": "data.gouv",
@@ -203063,6 +203431,10 @@
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Christophe Veran",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -203077,7 +203449,11 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2024-07-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a8f4ae1584",
@@ -204665,7 +205041,7 @@
       "id": "cgp_fe760a416f",
       "company_name": "EIRL BULUT SERKAN (LEADER PATRIMOINE)",
       "company_name_normalized": "eirl bulut serkan leader patrimoine",
-      "siren": "",
+      "siren": "902365329",
       "orias_number": "",
       "address": {
         "street": "2 RUE PIERRE CORNEILLE",
@@ -204684,8 +205060,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Serkan Bulut",
-          "role": "Adherent"
+          "name": "SERKAN BULUT",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -204697,7 +205075,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2021-07-16",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_b1b6c0aca3",
@@ -231565,7 +231948,7 @@
       "id": "cgp_6ab2d24947",
       "company_name": "FB CONSEILS ET PATRIMOINE",
       "company_name_normalized": "fb conseils et patrimoine",
-      "siren": "",
+      "siren": "983842741",
       "orias_number": "",
       "address": {
         "street": "9 AVENUE DES ROMAINS",
@@ -231584,8 +231967,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "François Boyon",
-          "role": "Adherent"
+          "name": "FRANÇOIS BOYON",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -231597,7 +231982,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2024-01-24",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_1e55ed063b",
@@ -240306,14 +240695,14 @@
       ],
       "directors": [
         {
-          "name": "Laurent Roussel",
-          "role": "Adherent"
-        },
-        {
           "name": "OLIVIER GEORGIN",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Laurent Roussel",
+          "role": "Adherent"
         },
         {
           "name": "GEORGIN Olivier",
@@ -240334,6 +240723,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/og-finance-et-patrimoine/"
+      },
+      "creation_date": "2021-06-24",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -241768,10 +242162,6 @@
       ],
       "directors": [
         {
-          "name": "ADAM christian",
-          "role": "Représentant légal"
-        },
-        {
           "name": "XAVIER FLOURY",
           "role": "Président de SAS",
           "source": "data.gouv",
@@ -241782,6 +242172,10 @@
           "role": "Directeur Général",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "ADAM christian",
+          "role": "Représentant légal"
         }
       ],
       "associations": {
@@ -241798,6 +242192,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/financiere-de-ladour/"
+      },
+      "creation_date": "2020-10-16",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -243871,7 +244270,7 @@
       "id": "cgp_edf4a29db4",
       "company_name": "Financière de la Londe",
       "company_name_normalized": "financiere de la londe",
-      "siren": "",
+      "siren": "104325030",
       "orias_number": "",
       "address": {
         "street": "55 rue Grignan",
@@ -243890,8 +244289,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Paul-Arnaud Belliard",
-          "role": "Adherent"
+          "name": "PAUL-ARNAUD BELLIARD",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -243903,7 +244304,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-27",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_b08b72b7b2",
@@ -244980,7 +245385,7 @@
       "id": "cgp_1958dd6dcf",
       "company_name": "FINCA PATRIMOINE",
       "company_name_normalized": "finca patrimoine",
-      "siren": "",
+      "siren": "103778684",
       "orias_number": "",
       "address": {
         "street": "3 ALLÉE LÉO DELIBES",
@@ -244999,6 +245404,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "ORNELLA RUOCCO",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Ornella Franceschi",
           "role": "Adherent"
         }
@@ -245012,7 +245423,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-14",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_df412ef0e7",
@@ -248288,7 +248703,7 @@
       "id": "cgp_9e4cb704a7",
       "company_name": "FLEYGEST",
       "company_name_normalized": "fleygest",
-      "siren": "",
+      "siren": "379441835",
       "orias_number": "",
       "address": {
         "street": "2 RUE MARIETTA MARTIN",
@@ -248307,8 +248722,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Patrick Fleytoux",
-          "role": "Adherent"
+          "name": "PATRICK FLEYTOUX",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -248320,7 +248737,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "1990-09-24",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_6a1702b34d",
@@ -251954,7 +252376,7 @@
       "id": "cgp_f2d6ef4fb8",
       "company_name": "FOVEZ MARIE",
       "company_name_normalized": "fovez marie",
-      "siren": "",
+      "siren": "942308156",
       "orias_number": "",
       "address": {
         "street": "13 D RUE DE FALEMPRISE",
@@ -251979,6 +252401,12 @@
       ],
       "directors": [
         {
+          "name": "MARIE FOVEZ",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "FOVEZ Marie",
           "role": "T"
         }
@@ -251994,6 +252422,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/fovez-marie/"
+      },
+      "creation_date": "2025-05-26",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -261283,10 +261715,6 @@
       ],
       "directors": [
         {
-          "name": "JOUBERT Gaetan",
-          "role": "Gerant"
-        },
-        {
           "name": "EMELINE MERCIER",
           "role": "Gérant",
           "source": "data.gouv",
@@ -261297,6 +261725,10 @@
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "JOUBERT Gaetan",
+          "role": "Gerant"
         },
         {
           "name": "NATHALIE ROY",
@@ -261323,6 +261755,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/gcj-consulting/"
+      },
+      "creation_date": "2014-04-03",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -280000,7 +280437,7 @@
       "id": "cgp_2befb0f251",
       "company_name": "HAICO",
       "company_name_normalized": "haico",
-      "siren": "",
+      "siren": "104221825",
       "orias_number": "",
       "address": {
         "street": "138 AVENUE VICTOR HUGO",
@@ -280019,8 +280456,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Edouard Binet",
-          "role": "Adherent"
+          "name": "EDOUARD BINET",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -280032,7 +280471,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-24",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_6e0c44e88f",
@@ -281342,7 +281785,7 @@
       "id": "cgp_af683b5702",
       "company_name": "HARMONY SOCIAL WEALTH CAPITAL",
       "company_name_normalized": "harmony social wealth capital",
-      "siren": "",
+      "siren": "104670955",
       "orias_number": "",
       "address": {
         "street": "47 RUE VIVIENNE",
@@ -281361,6 +281804,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "ABDOUL DAOUA MOULAYE YOUSSOUF",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Abdoul Aziz Daoua Moulaye Youssouf",
           "role": "Adherent"
         }
@@ -281374,7 +281823,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-06",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a54035a3d0",
@@ -285507,7 +285960,7 @@
       "id": "cgp_5129b74f37",
       "company_name": "HEREST & CO",
       "company_name_normalized": "herest  co",
-      "siren": "",
+      "siren": "105907620",
       "orias_number": "",
       "address": {
         "street": "100 ALLÉE DES FRÊNES",
@@ -285526,8 +285979,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Jérémy Daly",
-          "role": "Adherent"
+          "name": "ALEXIS BOURBON",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "JÉRÉMY DALY",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -285539,7 +286000,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a56181ef1d",
@@ -310602,14 +311067,14 @@
       ],
       "directors": [
         {
-          "name": "BASKARADEVAN Georges",
-          "role": "Gerant"
-        },
-        {
           "name": "JOAN KAMSEU",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "BASKARADEVAN Georges",
+          "role": "Gerant"
         },
         {
           "name": "GILLES MAGGIO",
@@ -310635,6 +311100,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jg-conseil/"
+      },
+      "creation_date": "2025-10-22",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -310713,10 +311182,6 @@
       ],
       "directors": [
         {
-          "name": "Johan Didouche",
-          "role": "Adherent"
-        },
-        {
           "name": "FREDERIC BIARD",
           "role": "Président de SAS",
           "source": "data.gouv",
@@ -310727,6 +311192,10 @@
           "role": "Commissaire aux comptes titulaire",
           "source": "data.gouv",
           "type": "personne morale"
+        },
+        {
+          "name": "Johan Didouche",
+          "role": "Adherent"
         },
         {
           "name": "LESTRADE Jean-Yves",
@@ -310747,6 +311216,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jam-conseil/"
+      },
+      "creation_date": "1991-01-03",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -312604,14 +313078,14 @@
       ],
       "directors": [
         {
-          "name": "BAUMGARTEN Julien",
-          "role": "C"
-        },
-        {
           "name": "GYSLAIN BOUILLAUD",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "BAUMGARTEN Julien",
+          "role": "C"
         }
       ],
       "associations": {
@@ -312628,6 +313102,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/baumgarten-julien/"
+      },
+      "creation_date": "2017-07-03",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -314282,14 +314761,14 @@
       ],
       "directors": [
         {
-          "name": "JEHAN Marie",
-          "role": "G"
-        },
-        {
           "name": "ALEXIS LEPAGE",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "JEHAN Marie",
+          "role": "G"
         }
       ],
       "associations": {
@@ -314306,6 +314785,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jehan-marie/"
+      },
+      "creation_date": "2017-07-13",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -316319,10 +316803,6 @@
       ],
       "directors": [
         {
-          "name": "MIGUET Julie",
-          "role": "P"
-        },
-        {
           "name": "JEAN-BAPTISTE GALTIER",
           "role": "Directeur Général",
           "source": "data.gouv",
@@ -316333,6 +316813,10 @@
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "MIGUET Julie",
+          "role": "P"
         }
       ],
       "associations": {
@@ -316349,6 +316833,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jm-patrimoine/"
+      },
+      "creation_date": "2023-01-24",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -319046,7 +319535,7 @@
       "id": "cgp_12e3cb1503",
       "company_name": "JRGP",
       "company_name_normalized": "jrgp",
-      "siren": "",
+      "siren": "104402375",
       "orias_number": "",
       "address": {
         "street": "44 CHEMIN DE LA GRAVE, 14 LE COTEAU DU CAVAOU",
@@ -319065,8 +319554,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Jérémy Ramon",
-          "role": "Adherent"
+          "name": "JÉRÉMY RAMON",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -319078,7 +319569,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-01",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_d00501731b",
@@ -335236,14 +335731,14 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Clement Jorez",
-          "role": "Adherent"
-        },
-        {
           "name": "CLÉMENT JOREZ",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Clement Jorez",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -335255,7 +335750,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2023-07-31",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_8d076c823e",
@@ -346237,7 +346737,7 @@
       "id": "cgp_fde9a52147",
       "company_name": "LECLAIR PERSPECTIVES",
       "company_name_normalized": "leclair perspectives",
-      "siren": "",
+      "siren": "537789729",
       "orias_number": "",
       "address": {
         "street": "9 PROMENADE DES NEFS",
@@ -346256,8 +346756,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Olivier Leclair",
-          "role": "Adherent"
+          "name": "OLIVIER LECLAIR",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -346269,7 +346771,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2011-11-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_6772a94411",
@@ -349558,7 +350065,7 @@
       "id": "cgp_14b52a59e4",
       "company_name": "LENDOCOMPANY",
       "company_name_normalized": "lendocompany",
-      "siren": "",
+      "siren": "805178860",
       "orias_number": "",
       "address": {
         "street": "94 rue de la Victoire",
@@ -349577,8 +350084,28 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Laure Verhaeghe",
-          "role": "Adherent"
+          "name": "AMAURY BLAIS",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "MATHIEU ROCHARD",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "LAURE VERHAEGHE",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "PRICEWATERHOUSECOOPERS AUDIT",
+          "role": "Commissaire aux comptes titulaire",
+          "source": "data.gouv",
+          "type": "personne morale"
         }
       ],
       "associations": {
@@ -349590,7 +350117,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2014-10-09",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_4498e5b9bc",
@@ -352239,7 +352771,7 @@
       "id": "cgp_21670f7a01",
       "company_name": "LEVARA PATRIMOINE",
       "company_name_normalized": "levara patrimoine",
-      "siren": "",
+      "siren": "105168629",
       "orias_number": "",
       "address": {
         "street": "75 RUE ESCUDIER",
@@ -352258,6 +352790,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "LÉAH SAYADA (FITOUSSI)",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Leah Sayada",
           "role": "Adherent"
         }
@@ -352271,7 +352809,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-13",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_c7be0b7167",
@@ -353740,10 +354282,6 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Laurence Garcia",
-          "role": "Adherent"
-        },
-        {
           "name": "SYLVAIN CANAUD",
           "role": "Gérant",
           "source": "data.gouv",
@@ -353754,6 +354292,10 @@
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Laurence Garcia",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -353765,7 +354307,12 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2006-01-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_dc617d8a8e",
@@ -357700,7 +358247,7 @@
       "id": "cgp_09585ccd1f",
       "company_name": "LMC ASSURANCE & PATRIMOINE",
       "company_name_normalized": "lmc assurance  patrimoine",
-      "siren": "",
+      "siren": "838344356",
       "orias_number": "",
       "address": {
         "street": "8 RUE CHEVRE",
@@ -357719,8 +358266,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Mathieu Limas",
-          "role": "Adherent"
+          "name": "MATHIEU LIMAS",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -357732,7 +358281,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2018-04-03",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_ade68f996d",
@@ -361451,14 +362005,14 @@
       ],
       "directors": [
         {
-          "name": "MASSIAS JURIEN DE LA GRAVIERE David",
-          "role": "Représentant légal"
-        },
-        {
           "name": "SAMET SAPMAZ",
           "role": "Président de SAS",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "MASSIAS JURIEN DE LA GRAVIERE David",
+          "role": "Représentant légal"
         },
         {
           "name": "SAPMAZ Samet",
@@ -361476,6 +362030,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ls-courtage-2/"
+      },
+      "creation_date": "2024-07-15",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -368497,7 +369055,7 @@
       "id": "cgp_1e97739954",
       "company_name": "MAESTRA PARTNERS",
       "company_name_normalized": "maestra partners",
-      "siren": "",
+      "siren": "104655857",
       "orias_number": "",
       "address": {
         "street": "28 COURS ALBERT 1ER",
@@ -368516,6 +369074,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "JULIEN BARRÉ",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Julien Barre",
           "role": "Adherent"
         }
@@ -368529,7 +369093,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-04",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a368b6df3a",
@@ -383069,14 +383637,14 @@
       ],
       "directors": [
         {
-          "name": "MERAL Damien",
-          "role": "G"
-        },
-        {
           "name": "QUENTIN MERLET",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "MERAL Damien",
+          "role": "G"
         }
       ],
       "associations": {
@@ -383093,6 +383661,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/meral-damien/"
+      },
+      "creation_date": "2020-05-14",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -388906,14 +389479,14 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Amaury Demarta",
-          "role": "Adherent"
-        },
-        {
           "name": "VINCENT SMADJA",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Amaury Demarta",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -388925,7 +389498,11 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2025-08-22",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_388e8e3cda",
@@ -397772,7 +398349,7 @@
       "id": "cgp_5bfb3864ff",
       "company_name": "MOSAIC PATRIMOINE",
       "company_name_normalized": "mosaic patrimoine",
-      "siren": "",
+      "siren": "103360756",
       "orias_number": "",
       "address": {
         "street": "47 RUE VIVIENNE",
@@ -397791,8 +398368,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Tarik Moukite",
-          "role": "Adherent"
+          "name": "TARIK MOUKITE",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -397804,7 +398383,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-06",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_bac60d87e1",
@@ -407947,7 +408530,7 @@
       "id": "cgp_16d8b7786b",
       "company_name": "NEWCO AOA",
       "company_name_normalized": "newco aoa",
-      "siren": "",
+      "siren": "104453782",
       "orias_number": "",
       "address": {
         "street": "7 BOULEVARD HAUSSMANN",
@@ -407966,6 +408549,24 @@
       "specialties": [],
       "directors": [
         {
+          "name": "OMRI BENAYOUN",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "ANDRE FRANCOIS-PONCET",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "ANDREW WHITING",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "André François-Poncet",
           "role": "Adherent"
         }
@@ -407979,7 +408580,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-23",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_18b3d540ae",
@@ -414916,7 +415521,7 @@
       "id": "cgp_7151bbf5c0",
       "company_name": "NUMERIS PATRIMOINE",
       "company_name_normalized": "numeris patrimoine",
-      "siren": "",
+      "siren": "910204858",
       "orias_number": "",
       "address": {
         "street": "36 RUE SAINT JACQUES",
@@ -414935,6 +415540,18 @@
       "specialties": [],
       "directors": [
         {
+          "name": "ANNE PAOLI (DURANDET)",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "TCKL AUDIT",
+          "role": "Commissaire aux comptes titulaire",
+          "source": "data.gouv",
+          "type": "personne morale"
+        },
+        {
           "name": "Anne Paoli",
           "role": "Adherent"
         }
@@ -414948,13 +415565,18 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2022-02-10",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_40a1d68bd4",
       "company_name": "NUMMI GESTION PRIVÉE",
       "company_name_normalized": "nummi gestion privee",
-      "siren": "",
+      "siren": "105503791",
       "orias_number": "",
       "address": {
         "street": "22 rue d’Astorg",
@@ -414973,8 +415595,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Martin Deremble",
-          "role": "Adherent"
+          "name": "MARTIN DEREMBLE",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -414986,7 +415610,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-06-01",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_fa4152a219",
@@ -437422,7 +438050,7 @@
       "id": "cgp_c70c0042d3",
       "company_name": "PATRIMOINE CONSEIL",
       "company_name_normalized": "patrimoine conseil",
-      "siren": "",
+      "siren": "383707213",
       "orias_number": "",
       "address": {
         "street": "5 PLACE HOCHE",
@@ -437441,8 +438069,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Thibault Fischer",
-          "role": "Adherent"
+          "name": "ALEXANDRA FISCHER",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "THIBAULT FISCHER",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -437454,7 +438090,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "1991-11-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_858f90b94b",
@@ -442121,7 +442762,7 @@
       "id": "cgp_2d43327da9",
       "company_name": "PATRIMUM EXPERT",
       "company_name_normalized": "patrimum expert",
-      "siren": "",
+      "siren": "103478681",
       "orias_number": "",
       "address": {
         "street": "25 ALLÉES JEAN JAURÈS",
@@ -442140,8 +442781,22 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Thibaut Marty",
-          "role": "Adherent"
+          "name": "GREGGORY BROBST",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "THIBAUT MARTY",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "NICOLAS SOUBIRAN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -442153,7 +442808,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-03",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_8f6f4a2988",
@@ -463715,10 +464374,6 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Thibault Vauclare",
-          "role": "Adherent"
-        },
-        {
           "name": "HENRI-LAURENT MADELRIEU",
           "role": "Président de SAS",
           "source": "data.gouv",
@@ -463729,6 +464384,10 @@
           "role": "Directeur Général",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "Thibault Vauclare",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -463740,7 +464399,12 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2021-11-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_d08d7275e6",
@@ -475783,7 +476447,7 @@
       "id": "cgp_debf2c7198",
       "company_name": "REMILI MYRIAM",
       "company_name_normalized": "remili myriam",
-      "siren": "",
+      "siren": "884070939",
       "orias_number": "",
       "address": {
         "street": "98B RUE DE LA BORDE, LE CLOS SAINT JEAN",
@@ -475806,6 +476470,12 @@
       ],
       "directors": [
         {
+          "name": "MYRIAM REMILI",
+          "role": "",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "REMILI Myriam",
           "role": "G"
         }
@@ -475821,6 +476491,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/remili-myriam/"
+      },
+      "creation_date": "2020-07-07",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -494889,12 +495564,12 @@
       "id": "cgp_7df5fa90c7",
       "company_name": "SARL HC COURTAGE",
       "company_name_normalized": "hc courtage",
-      "siren": "",
+      "siren": "990038366",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "20 B RUE D'ETIGNY",
         "postal_code": "64000",
-        "city": "Pyrénées Atlantiques",
+        "city": "PAU",
         "department": "64",
         "department_name": "Pyrenees-Atlantiques",
         "region": "Nouvelle-Aquitaine"
@@ -494908,7 +495583,14 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MARIE MOURLAN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -494920,6 +495602,10 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sarl-hc-courtage/"
+      },
+      "creation_date": "2025-08-05",
+      "data_gouv": {
+        "etat_administratif": "A"
       }
     },
     {
@@ -510491,7 +511177,7 @@
       "id": "cgp_6a9c0f0bfc",
       "company_name": "SIMON CONSEIL",
       "company_name_normalized": "simon conseil",
-      "siren": "",
+      "siren": "103291878",
       "orias_number": "",
       "address": {
         "street": "8 RUE ALSACE-LORRAINE",
@@ -510510,6 +511196,12 @@
       "specialties": [],
       "directors": [
         {
+          "name": "SIMON PAQUEREAU",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Emmanuel Bouillon",
           "role": "Adherent"
         }
@@ -510523,7 +511215,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-03-30",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_bb52d93259",
@@ -511706,7 +512402,7 @@
       "id": "cgp_64806fc2c0",
       "company_name": "SKALIO COURTAGE",
       "company_name_normalized": "skalio courtage",
-      "siren": "",
+      "siren": "105560791",
       "orias_number": "",
       "address": {
         "street": "18, RUE DE COURCELLES",
@@ -511725,8 +512421,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Ruben Abecassis",
-          "role": "Adherent"
+          "name": "RUBEN ABECASSIS",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -511738,7 +512436,11 @@
       "first_seen": "2026-06-23",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-07",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_89d0209755",
@@ -511911,14 +512613,14 @@
       ],
       "directors": [
         {
-          "name": "BERLIOZ Nicolas",
-          "role": "Représentant légal"
-        },
-        {
           "name": "SANDRINE LAMBERT",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "BERLIOZ Nicolas",
+          "role": "Représentant légal"
         }
       ],
       "associations": {
@@ -511935,6 +512637,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/slcap/"
+      },
+      "creation_date": "2012-07-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -523300,7 +524007,7 @@
       "id": "cgp_526cc7c217",
       "company_name": "STRATEGIE MED",
       "company_name_normalized": "strategie med",
-      "siren": "",
+      "siren": "104186234",
       "orias_number": "",
       "address": {
         "street": "3 Rue Saint Christophe",
@@ -523319,8 +524026,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Corinne Sauze",
-          "role": "Adherent"
+          "name": "CORINNE SAUZE",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -523332,7 +524041,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a16e20153b",
@@ -527093,7 +527806,7 @@
       "id": "cgp_2d4dc62f65",
       "company_name": "SYMPHONIE PATRIMOINE",
       "company_name_normalized": "symphonie patrimoine",
-      "siren": "",
+      "siren": "104069240",
       "orias_number": "",
       "address": {
         "street": "64 BOULEVARD DE LA RÉPUBLIQUE",
@@ -527112,8 +527825,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Matthieu Mesieres",
-          "role": "Adherent"
+          "name": "MATTHIEU MESIERES",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -527125,7 +527840,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-22",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_dd38e3869d",
@@ -538871,7 +539590,7 @@
       "id": "cgp_9e73160378",
       "company_name": "TORRENTE CONSEILS",
       "company_name_normalized": "torrente conseils",
-      "siren": "",
+      "siren": "103772638",
       "orias_number": "",
       "address": {
         "street": "8 RUE DE LA VICTOIRE",
@@ -538890,8 +539609,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Olivier Torrente",
-          "role": "Adherent"
+          "name": "OLIVIER TORRENTE",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -538903,7 +539624,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-14",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_cefac1f212",
@@ -544000,7 +544725,7 @@
       "id": "cgp_4cb63551bd",
       "company_name": "TVB EXPERTISE PATRIMONIALE",
       "company_name_normalized": "tvb expertise patrimoniale",
-      "siren": "",
+      "siren": "103673471",
       "orias_number": "",
       "address": {
         "street": "1 RUE GAZAN",
@@ -544019,8 +544744,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Viviane Ting",
-          "role": "Adherent"
+          "name": "BENOIT TESTARD",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "VIVIANE TING",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -544032,7 +544765,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-03-21",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_5afa877d3e",
@@ -546453,14 +547190,14 @@
       ],
       "directors": [
         {
-          "name": "NOCAUDIE Vivien",
-          "role": "President"
-        },
-        {
           "name": "VIVIEN NOCAUDIE",
           "role": "Gérant",
           "source": "data.gouv",
           "type": "personne physique"
+        },
+        {
+          "name": "NOCAUDIE Vivien",
+          "role": "President"
         }
       ],
       "associations": {
@@ -546474,6 +547211,11 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/v2cm-conseilpatrimoine/"
+      },
+      "creation_date": "2021-01-25",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
       }
     },
     {
@@ -549118,7 +549860,7 @@
       "id": "cgp_ecc54b7fca",
       "company_name": "VALORIS",
       "company_name_normalized": "valoris",
-      "siren": "",
+      "siren": "105590277",
       "orias_number": "",
       "address": {
         "street": "14 IMPASSE MANUEL MONTEIRO",
@@ -549137,8 +549879,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Serge Fernandes",
-          "role": "Adherent"
+          "name": "SERGE FERNANDES",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -549150,7 +549894,11 @@
       "first_seen": "2026-06-23",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-20",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_a07ef4ba53",
@@ -553124,7 +553872,7 @@
       "id": "cgp_9385bb0c0d",
       "company_name": "VERKORAM",
       "company_name_normalized": "verkoram",
-      "siren": "",
+      "siren": "918089392",
       "orias_number": "",
       "address": {
         "street": "530 ROUTE DES VIGNES",
@@ -553143,8 +553891,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Mathieu Barbara",
-          "role": "Adherent"
+          "name": "MATHIEU BARBARA",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "GUILLAUME PUECH",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -553156,7 +553912,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2022-08-01",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_6319f84bc3",
@@ -558000,7 +558761,7 @@
       "id": "cgp_583c0bbc91",
       "company_name": "VIRIDIS PATRIMOINE",
       "company_name_normalized": "viridis patrimoine",
-      "siren": "",
+      "siren": "920996444",
       "orias_number": "",
       "address": {
         "street": "20 RUE BLANCHE",
@@ -558019,8 +558780,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Jonathan Pierre-Jean",
-          "role": "Adherent"
+          "name": "JONATHAN PIERRE-JEAN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "THIBAUT VIEIRA",
+          "role": "Personne ayant le pouvoir d'engager à titre habituel la société",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -558032,7 +558801,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2022-10-25",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_2be6699bb5",
@@ -565455,7 +566229,7 @@
       "id": "cgp_6f57238d1d",
       "company_name": "WINSTONE GESTION PRIVEE",
       "company_name_normalized": "winstone gestion privee",
-      "siren": "",
+      "siren": "104460027",
       "orias_number": "",
       "address": {
         "street": "9 ALLÉE DE CHARTRES",
@@ -565474,8 +566248,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Mathieu Taillefer",
-          "role": "Adherent"
+          "name": "MATHIEU TAILLEFER",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "BENJAMIN VAREILLE",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -565487,7 +566269,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-04-28",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_d8da7bbe66",
@@ -568733,7 +569519,7 @@
       "id": "cgp_5e63dbcd4b",
       "company_name": "YSÉOS PATRIMOINE",
       "company_name_normalized": "yseos patrimoine",
-      "siren": "",
+      "siren": "105355382",
       "orias_number": "",
       "address": {
         "street": "3 RUE DE LA FERME",
@@ -568752,8 +569538,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Cyprien Edon",
-          "role": "Adherent"
+          "name": "CYPRIEN EDON",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -568765,7 +569553,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-06-29",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2026-05-21",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_67b40d52c3",

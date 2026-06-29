@@ -76,7 +76,12 @@
       "added": 17615,
       "naf": "66.19B",
       "timestamp": "2026-06-02T09:52:26.643314+00:00"
+    },
+    "datagouv_enrich": {
+      "status": "success",
+      "timestamp": "2026-06-29T14:23:18.353513+00:00",
+      "missing_creation_date": 2278
     }
   },
-  "last_updated": "2026-06-29T13:55:36.109973+00:00"
+  "last_updated": "2026-06-29T14:23:18.353513+00:00"
 }
