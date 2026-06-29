@@ -194,7 +194,7 @@ def _fetch_page(page_num):
     """
     url = ANNUAIRE_URL if page_num == 1 else f"{ANNUAIRE_URL}page/{page_num}/"
     try:
-        r = _get_session().get(url, timeout=20)
+        r = _get_session().get(url, timeout=15)
         if r.status_code == 200:
             if "annuaire__item" in r.text:
                 return (page_num, "ok", r.text)
@@ -227,16 +227,19 @@ def scrape_cncef(max_pages=450, enrich_details=False):
     pages = {}              # page_num -> html
     consecutive_fail = 0    # safety brake if the server goes down mid-scrape
 
+    import time
     for page_num in range(1, max_pages + 1):
-        # Try this page up to 4 times before giving up on it.
+        # Try this page up to 2 times (the session adapter already retries x2
+        # internally, so that's ~4 real attempts) before giving up on it.
         status, html = "fail", ""
-        for attempt in range(4):
+        for attempt in range(2):
             _, status, html = _fetch_page(page_num)
             if status in ("ok", "end"):
                 break
         if status == "ok":
             pages[page_num] = html
             consecutive_fail = 0
+            time.sleep(0.2)  # politeness delay - a steady cadence drops fewer connections
         elif status == "end":
             logger.info(f"CNCEF: reached end of directory at page {page_num}")
             break
