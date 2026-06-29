@@ -27,7 +27,7 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "data")
 MEMBERS_PATH = os.path.join(DATA_DIR, "members.json")
 STATS_PATH = os.path.join(DATA_DIR, "stats.json")
 
-MAX_SITE_LOOKUPS = 120   # websites discovered per run (search engines are slow)
+MAX_SITE_LOOKUPS = 60    # websites per run (real-browser search is slow)
 MAX_EMAIL_LOOKUPS = 400  # email extractions per run (parallel, faster)
 
 
