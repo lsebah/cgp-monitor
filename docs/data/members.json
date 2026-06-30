@@ -8,10 +8,11 @@
       "duration_s": 569.4
     },
     "cncef": {
-      "status": "success",
-      "count": 384,
-      "timestamp": "2026-06-30T07:40:06.044707+00:00",
-      "duration_s": 1658.9
+      "status": "partial",
+      "count": 24,
+      "kept": 4647,
+      "timestamp": "2026-06-30T12:53:20.655428+00:00",
+      "duration_s": 634.8
     },
     "anacofi": {
       "status": "success",
