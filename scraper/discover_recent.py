@@ -79,6 +79,19 @@ def looks_like_cgp(name):
     return any(k in n for k in CGP_KEYWORDS)
 
 
+# INSEE legal-form (categorie juridique) prefixes that are NOT operating CGP
+# cabinets — objective exclusion on top of the name heuristic:
+#   65xx = societes civiles (SCI, SCP civile, etc.)
+#   69xx = groupements / GIE
+# (Holdings have no dedicated legal form, so the NAF check elsewhere covers those.)
+EXCLUDE_NJ_PREFIX = ("65", "69")
+
+
+def excluded_legal_form(nature_juridique):
+    nj = str(nature_juridique or "")
+    return nj[:2] in EXCLUDE_NJ_PREFIX
+
+
 def build_member(e, today):
     siege = e.get("siege") or {}
     directors = [d for d in (_format_director(x) for x in (e.get("dirigeants") or [])) if d]
@@ -95,6 +108,8 @@ def build_member(e, today):
     )
     if e.get("date_creation"):
         m["creation_date"] = e["date_creation"]
+    if e.get("nature_juridique"):
+        m.setdefault("data_gouv", {})["nature_juridique"] = e["nature_juridique"]
     m.setdefault("associations", {})["manuel"] = {"member": True}  # protected from affiliation filter
     m["first_seen"] = today
     m["last_seen"] = today
@@ -128,8 +143,11 @@ def main():
         name = e.get("nom_complet") or e.get("nom_raison_sociale") or ""
         if not name:
             return
-        # Quality gate: keep only names that look like a real CGP cabinet,
-        # not bare individuals / holdings / SCI / associations.
+        # Quality gate 1 (objective): drop civil-society / GIE legal forms.
+        if excluded_legal_form(e.get("nature_juridique")):
+            return
+        # Quality gate 2 (name): keep only names that look like a real CGP
+        # cabinet, not bare individuals / holdings / SCI / associations.
         if not looks_like_cgp(name):
             return
         nn = normalize_name(name)
