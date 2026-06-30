@@ -50,20 +50,41 @@ def main():
 
     scrape_status = existing_data.get("scrape_status", {})
 
+    # Anti-regression guard: how many CNCEF members are already in base?
+    existing_cncef = sum(1 for m in existing_members
+                         if "cncef" in (m.get("associations") or {}))
+    logger.info(f"Existing CNCEF members in base: {existing_cncef}")
+
     logger.info(">>> Scraping CNCEF...")
     t0 = datetime.now(timezone.utc)
     try:
         cncef = scrape_cncef(max_pages=500, enrich_details=False)
         elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
         logger.info(f"<<< CNCEF done in {elapsed:.0f}s ({len(cncef)} members)")
-        scrape_status["cncef"] = {"status": "success", "count": len(cncef),
-                                  "timestamp": now_iso, "duration_s": round(elapsed, 1)}
     except Exception as e:
         elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
         logger.error(f"<<< CNCEF FAILED after {elapsed:.0f}s: {e}")
         scrape_status["cncef"] = {"status": "error", "error": str(e),
                                   "timestamp": now_iso, "duration_s": round(elapsed, 1)}
         return
+
+    # ANTI-REGRESSION: if the scrape returned far fewer than what we already
+    # have (e.g. server throttled our IP, like the 252/4800 incident), DO NOT
+    # touch the data — keep the previous good scrape intact and flag 'partial'.
+    if existing_cncef >= 100 and len(cncef) < existing_cncef * 0.6:
+        logger.error(f"GUARD: CNCEF scrape returned only {len(cncef)} vs "
+                     f"{existing_cncef} in base (<60%). Likely throttled/blocked. "
+                     f"Aborting WITHOUT overwriting data.")
+        scrape_status["cncef"] = {"status": "partial", "count": len(cncef),
+                                  "kept": existing_cncef, "timestamp": now_iso,
+                                  "duration_s": round(elapsed, 1)}
+        # persist only the status note, not the (incomplete) member changes
+        existing_data["scrape_status"] = scrape_status
+        save_json(existing_data, MEMBERS_PATH)
+        return
+
+    scrape_status["cncef"] = {"status": "success", "count": len(cncef),
+                              "timestamp": now_iso, "duration_s": round(elapsed, 1)}
 
     # Fast additive merge (no fuzzy matching — O(N) instead of O(N²))
     logger.info(">>> Fast additive merge...")
