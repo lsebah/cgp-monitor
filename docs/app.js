@@ -316,25 +316,13 @@ async function loadData() {
             document.getElementById('statTotal').textContent = withContact;
             // Stay aligned with Total CGP: only count members that have at least
             // one piece of contact info, so these tiles can never exceed Total.
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            // Both "7 jours" and "4 mois" tiles use creation_date (data.gouv)
-            // — first_seen would just count "rows our scraper picked up
-            // recently", which spikes whenever we widen the scrape coverage.
-            const cutoff7d = new Date(today.getTime() - 7 * 86400000)
-                .toISOString().slice(0, 10);
-            const cutoff4m = new Date(today.getTime() - 122 * 86400000)
-                .toISOString().slice(0, 10);
-            // Upper bound = today: some data.gouv records carry a FUTURE
-            // creation date (post-dated registrations). A firm "created in
-            // Oct 2026" must not count as "created in the last 7 days".
-            const todayIso = today.toISOString().slice(0, 10);
+            // Use the SHARED helpers (UTC) so the tiles and the Annuaire filter
+            // can never diverge (they used to: local-midnight vs UTC gave 5 vs 2).
             let recent7d = 0, recent4m = 0;
             for (const m of allMembers) {
                 if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
-                if (!m.creation_date || m.creation_date > todayIso) continue;
-                if (m.creation_date >= cutoff7d) recent7d++;
-                if (m.creation_date >= cutoff4m) recent4m++;
+                if (isCreatedWithin(m, '7d')) recent7d++;
+                if (isCreatedWithin(m, '4m')) recent4m++;
             }
             const elRecent7d = document.getElementById('statRecent7d');
             if (elRecent7d) elRecent7d.textContent = recent7d;
@@ -473,6 +461,31 @@ function filterByAssociation(key) {
     _switchToDirectory();
 }
 
+// --- Creation-date window helpers (UTC, SHARED by the stat tiles AND the
+// Annuaire creation filter) so the two can never disagree. A `key` is like
+// '7d' / '30d' (days), '4m' (months) or '1'..'5' (years).
+function _todayIsoUTC() {
+    const d = new Date();
+    d.setUTCHours(0, 0, 0, 0);
+    return d.toISOString().slice(0, 10);
+}
+function creationCutoffIso(key) {
+    const d = new Date();
+    d.setUTCHours(0, 0, 0, 0);
+    if (key.endsWith('d')) d.setUTCDate(d.getUTCDate() - parseInt(key, 10));
+    else if (key.endsWith('m')) d.setUTCMonth(d.getUTCMonth() - parseInt(key, 10));
+    else d.setUTCFullYear(d.getUTCFullYear() - parseInt(key, 10));
+    return d.toISOString().slice(0, 10);
+}
+// True if member was created within the window [cutoff(key), today], excluding
+// future-dated (post-dated) registrations.
+function isCreatedWithin(m, key) {
+    const cd = m.creation_date;
+    if (!cd) return false;
+    if (cd > _todayIsoUTC()) return false;
+    return cd >= creationCutoffIso(key);
+}
+
 // Click on a top dashboard stat tile → switch to Annuaire and apply the matching filter.
 // `kind` is one of: all | new7d | recent4m | pending | contacted | refused | folk
 function applyDashboardFilter(kind) {
@@ -567,23 +580,10 @@ function getFilteredMembers() {
     const AUM_THRESHOLDS = { any: 0, '100M': 100_000_000,
                              '500M': 500_000_000, '1B': 1_000_000_000 };
 
-    // creation_date is "YYYY-MM-DD" — compute the cutoff once.
-    // Filter values: "7d"/"30d" (days), "4m" (months), or "1"|"2"|"3"|"5" (years).
-    let creationCutoff = null;
-    if (creationFilter) {
-        const d = new Date();
-        if (creationFilter.endsWith('d')) {
-            const days = parseInt(creationFilter, 10);
-            d.setDate(d.getDate() - days);
-        } else if (creationFilter.endsWith('m')) {
-            const months = parseInt(creationFilter, 10);
-            d.setMonth(d.getMonth() - months);
-        } else {
-            const years = parseInt(creationFilter, 10);
-            d.setFullYear(d.getFullYear() - years);
-        }
-        creationCutoff = d.toISOString().slice(0, 10);
-    }
+    // creation_date window — uses the SAME shared helper as the stat tiles so
+    // the "Créés < 7j" count and this filter always return the same set.
+    // Filter values: "7d"/"30d" (days), "4m" (months), or "1".."5" (years).
+    const creationCutoff = creationFilter ? creationCutoffIso(creationFilter) : null;
 
     // synthFilters is set by applyDashboardFilter (clicks on top stat tiles)
     // for filters that have no UI widget (first_seen, Folk membership).
@@ -632,12 +632,9 @@ function getFilteredMembers() {
             }
         }
         if (creationCutoff) {
-            // Reject if no creation_date, older than cutoff, or FUTURE-dated
-            // (some data.gouv records are post-dated and must not show up as
-            // "recently created").
-            const todayIso = new Date().toISOString().slice(0, 10);
+            // Reject if no creation_date, older than cutoff, or FUTURE-dated.
             if (!m.creation_date || m.creation_date < creationCutoff
-                || m.creation_date > todayIso) return false;
+                || m.creation_date > _todayIsoUTC()) return false;
         }
         if (caFilter) {
             const ca = m.finances_data_gouv?.ca_eur;
