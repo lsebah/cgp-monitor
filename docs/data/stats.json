@@ -1,6 +1,6 @@
 {
   "total_members": 10199,
-  "new_today": 39,
+  "new_today": 0,
   "new_this_week": 146,
   "new_this_month": 209,
   "by_association": {
@@ -80,8 +80,8 @@
     },
     "datagouv_enrich": {
       "status": "success",
-      "timestamp": "2026-06-29T14:23:18.353513+00:00",
-      "missing_creation_date": 2278
+      "timestamp": "2026-06-30T08:24:18.893286+00:00",
+      "missing_creation_date": 2282
     },
     "registre_recent": {
       "status": "success",
@@ -96,5 +96,5 @@
       "emails": 7468
     }
   },
-  "last_updated": "2026-06-30T07:40:06.044707+00:00"
+  "last_updated": "2026-06-30T08:24:18.893286+00:00"
 }
