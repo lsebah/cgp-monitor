@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T09:44:28.156957+00:00",
+  "last_updated": "2026-06-30T10:30:30.097050+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,9 +49,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-06-29T16:07:56.359972+00:00",
-      "websites": 451,
-      "emails": 7468
+      "timestamp": "2026-06-30T10:30:30.097050+00:00",
+      "websites": 455,
+      "emails": 7437
     },
     "closed_cleanup": {
       "status": "success",
@@ -61,7 +61,7 @@
   },
   "stats": {
     "total_members": 10061,
-    "new_today": 15,
+    "new_today": 0,
     "new_this_week": 138,
     "new_this_month": 201,
     "by_association": {
@@ -102,7 +102,67 @@
       "77": 126,
       "74": 115
     },
-    "total_departments": 101
+    "total_departments": 101,
+    "scrape_status": {
+      "cncgp": {
+        "status": "success",
+        "count": 2657,
+        "timestamp": "2026-06-30T09:44:28.156957+00:00",
+        "duration_s": 569.4
+      },
+      "cncef": {
+        "status": "success",
+        "count": 384,
+        "timestamp": "2026-06-30T07:40:06.044707+00:00",
+        "duration_s": 1658.9
+      },
+      "anacofi": {
+        "status": "success",
+        "count": 0,
+        "timestamp": "2026-06-30T06:54:31.486565+00:00",
+        "duration_s": 4.3
+      },
+      "affo": {
+        "status": "success",
+        "count": 20,
+        "timestamp": "2026-06-30T06:54:31.486565+00:00",
+        "duration_s": 1.8
+      },
+      "registre_manual": {
+        "status": "success",
+        "added": 2,
+        "timestamp": "2026-06-02T12:25:43.078982+00:00"
+      },
+      "registre_naf_discovery": {
+        "status": "success",
+        "added": 17615,
+        "naf": "66.19B",
+        "timestamp": "2026-06-02T09:52:26.643314+00:00"
+      },
+      "datagouv_enrich": {
+        "status": "success",
+        "timestamp": "2026-06-30T08:24:18.893286+00:00",
+        "missing_creation_date": 2282
+      },
+      "registre_recent": {
+        "status": "success",
+        "added": 96,
+        "days": 30,
+        "timestamp": "2026-06-29T14:39:46.562505+00:00"
+      },
+      "contacts_enrich": {
+        "status": "success",
+        "timestamp": "2026-06-30T10:30:30.097050+00:00",
+        "websites": 455,
+        "emails": 7437
+      },
+      "closed_cleanup": {
+        "status": "success",
+        "removed": 122,
+        "timestamp": "2026-06-30T08:47:47.614795+00:00"
+      }
+    },
+    "last_updated": "2026-06-30T10:30:30.097050+00:00"
   },
   "members": [
     {
@@ -94744,7 +94804,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://www.familyoffice-france.fr/",
       "activities": [
         "CIF"
       ],
@@ -94775,7 +94835,10 @@
       "source_urls": {
         "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104453550"
       },
-      "creation_date": "2026-06-01"
+      "creation_date": "2026-06-01",
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_080152a16b",
@@ -118650,7 +118713,7 @@
         "region": "Ile-de-France"
       },
       "phone": "+33139517220",
-      "email": "",
+      "email": "contact@odavie.fr",
       "website": "http://www.odavie.fr",
       "activities": [
         "CIF"
@@ -134878,7 +134941,7 @@
         "region": "Grand Est"
       },
       "phone": "+33388242242",
-      "email": "",
+      "email": "info@galilee-patrimoine.com",
       "website": "http://www.galilee-patrimoine.com/",
       "activities": [
         "CIF"
@@ -359752,8 +359815,8 @@
         "region": "Ile-de-France"
       },
       "phone": "",
-      "email": "",
-      "website": "",
+      "email": "ex@abc.xyz",
+      "website": "https://lucas-maillard.cgp.site/",
       "activities": [
         "CIF"
       ],
@@ -359781,7 +359844,10 @@
       "source_urls": {
         "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552475"
       },
-      "creation_date": "2026-06-22"
+      "creation_date": "2026-06-22",
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_74fd2663a0",
@@ -416867,7 +416933,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://olifangroup.com/",
       "activities": [
         "CIF"
       ],
@@ -416882,7 +416948,10 @@
       "first_seen": "2026-06-30",
       "last_seen": "2026-06-30",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "ddg"
+      }
     },
     {
       "id": "cgp_2582e2b2eb",
