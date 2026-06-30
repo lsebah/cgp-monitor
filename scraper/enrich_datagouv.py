@@ -78,11 +78,20 @@ def main():
                 f"+{missing_dir - after_dir} dirigeants, "
                 f"+{missing_siren - after_siren} sirens")
 
+    # Auto-purge firms the registry now reports as CEASED (etat_administratif=C).
+    before_purge = len(members)
+    members = [m for m in members
+               if (m.get("data_gouv") or {}).get("etat_administratif") != "C"]
+    purged = before_purge - len(members)
+    if purged:
+        logger.info(f"Purged {purged} ceased firms (etat_administratif=C)")
+
     scrape_status = data.get("scrape_status", {})
     scrape_status["datagouv_enrich"] = {
         "status": "success",
         "timestamp": now_iso,
         "missing_creation_date": after_cd,
+        "purged_closed": purged,
     }
     data["scrape_status"] = scrape_status
 
