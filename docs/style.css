@@ -1028,6 +1028,9 @@ body {
     color: var(--text-muted);
 }
 .footer p { margin-bottom: 4px; }
+.footer-legal { margin-top: 8px; }
+.footer-legal a { color: var(--blue, #1a73e8); text-decoration: none; }
+.footer-legal a:hover { text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 768px) {
