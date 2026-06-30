@@ -318,16 +318,16 @@ async function loadData() {
             // one piece of contact info, so these tiles can never exceed Total.
             // Use the SHARED helpers (UTC) so the tiles and the Annuaire filter
             // can never diverge (they used to: local-midnight vs UTC gave 5 vs 2).
-            let recent7d = 0, recent4m = 0;
+            let recent30d = 0, recent6m = 0;
             for (const m of allMembers) {
                 if (!(m.email || m.phone || m.website || (m.directors && m.directors.length))) continue;
-                if (isCreatedWithin(m, '7d')) recent7d++;
-                if (isCreatedWithin(m, '4m')) recent4m++;
+                if (isCreatedWithin(m, '30d')) recent30d++;
+                if (isCreatedWithin(m, '6m')) recent6m++;
             }
-            const elRecent7d = document.getElementById('statRecent7d');
-            if (elRecent7d) elRecent7d.textContent = recent7d;
-            const elRecent4m = document.getElementById('statRecent4m');
-            if (elRecent4m) elRecent4m.textContent = recent4m;
+            const elRecent30d = document.getElementById('statRecent30d');
+            if (elRecent30d) elRecent30d.textContent = recent30d;
+            const elRecent6m = document.getElementById('statRecent6m');
+            if (elRecent6m) elRecent6m.textContent = recent6m;
 
             if (data.last_updated) {
                 const d = new Date(data.last_updated);
@@ -463,7 +463,7 @@ function filterByAssociation(key) {
 
 // --- Creation-date window helpers (UTC, SHARED by the stat tiles AND the
 // Annuaire creation filter) so the two can never disagree. A `key` is like
-// '7d' / '30d' (days), '4m' (months) or '1'..'5' (years).
+// '30d' (days), '6m' (months) or '1'..'5' (years).
 function _todayIsoUTC() {
     const d = new Date();
     d.setUTCHours(0, 0, 0, 0);
@@ -487,11 +487,11 @@ function isCreatedWithin(m, key) {
 }
 
 // Click on a top dashboard stat tile → switch to Annuaire and apply the matching filter.
-// `kind` is one of: all | new7d | recent4m | pending | contacted | refused | folk
+// `kind` is one of: all | recent30d | recent6m | pending | contacted | refused | folk
 function applyDashboardFilter(kind) {
     // Highlight the clicked tile (active state). Tiles are in DOM order:
-    // all, recent7d, recent4m, pending, contacted, refused, folk
-    const order = ['all', 'recent7d', 'recent4m', 'pending', 'contacted', 'refused', 'folk'];
+    // all, recent30d, recent6m, pending, contacted, refused, folk
+    const order = ['all', 'recent30d', 'recent6m', 'pending', 'contacted', 'refused', 'folk'];
     const cards = document.querySelectorAll('.stats-bar .stat-card');
     cards.forEach(c => c.classList.remove('active'));
     const idx = order.indexOf(kind);
@@ -511,11 +511,11 @@ function applyDashboardFilter(kind) {
         case 'all':
             // No extra filter — default actionable view (hides no-contact cabinets).
             break;
-        case 'recent7d':
-            document.getElementById('filterCreation').value = '7d';
+        case 'recent30d':
+            document.getElementById('filterCreation').value = '30d';
             break;
-        case 'recent4m':
-            document.getElementById('filterCreation').value = '4m';
+        case 'recent6m':
+            document.getElementById('filterCreation').value = '6m';
             break;
         case 'pending':
             document.getElementById('filterStatus').value = 'pending';

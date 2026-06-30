@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>CGP Monitor - Veille CGP France</title>
-    <link rel="stylesheet" href="style.css?v=1782830599">
+    <link rel="stylesheet" href="style.css?v=1782831438">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -48,13 +48,13 @@
             <div class="stat-number" id="statTotal">-</div>
             <div class="stat-label">Total CGP</div>
         </div>
-        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent7d')" title="Cabinets crees ces 7 derniers jours (data.gouv)">
-            <div class="stat-number" id="statRecent7d">-</div>
-            <div class="stat-label">Crees < 7 jours</div>
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent30d')" title="Cabinets crees ces 30 derniers jours (data.gouv)">
+            <div class="stat-number" id="statRecent30d">-</div>
+            <div class="stat-label">Crees < 30 jours</div>
         </div>
-        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent4m')" title="Cabinets crees au sens data.gouv il y a moins de 4 mois">
-            <div class="stat-number" id="statRecent4m">-</div>
-            <div class="stat-label">Crees < 4 mois</div>
+        <div class="stat-card highlight clickable" onclick="applyDashboardFilter('recent6m')" title="Cabinets crees ces 6 derniers mois (data.gouv)">
+            <div class="stat-number" id="statRecent6m">-</div>
+            <div class="stat-label">Crees < 6 mois</div>
         </div>
         <div class="stat-card stat-pending clickable" onclick="applyDashboardFilter('pending')" title="Cabinets dont vous avez marque le statut = En cours">
             <div class="stat-number" id="statPending">0</div>
@@ -131,9 +131,8 @@
                     </select>
                     <select id="filterCreation" class="filter-select" title="Date de creation du cabinet (source: data.gouv)">
                         <option value="">Toute anciennete</option>
-                        <option value="7d">Crees < 7 jours</option>
                         <option value="30d">Crees < 30 jours</option>
-                        <option value="4m">Crees < 4 mois</option>
+                        <option value="6m">Crees < 6 mois</option>
                         <option value="1">Crees < 1 an</option>
                         <option value="2">Crees < 2 ans</option>
                         <option value="3">Crees < 3 ans</option>
@@ -334,7 +333,7 @@
         </p>
     </footer>
 
-    <script src="app.js?v=1782830599"></script>
+    <script src="app.js?v=1782831438"></script>
     <script>
         // UNREGISTER all service workers and clear all caches.
         // The SW was causing stale-data problems that are worse than offline support.
