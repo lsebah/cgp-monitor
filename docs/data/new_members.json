@@ -1,633 +1,230 @@
 {
   "last_updated": "2026-06-30",
-  "count": 39,
+  "count": 15,
   "new_members": [
     {
-      "id": "cgp_2e68e01982",
-      "company_name": "ML Conseil",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_5a653e2786",
-      "company_name": "ABM FINANCE (ABM FINANCE)",
-      "city": "Calvados",
-      "department": "14",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_99f3962249",
-      "company_name": "GC CONSEIL & PATRIMOINE",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_9a04c9b093",
-      "company_name": "CONSEIL FINANCE ET TRANSMISSION",
-      "city": "Gironde",
-      "department": "33",
+      "id": "cgp_a5802d7119",
+      "company_name": "CYRUS CONSEIL NANTES",
+      "city": "Nantes",
+      "department": "44",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
-      "phone": "",
+      "phone": "+33679012230",
       "email": ""
     },
     {
-      "id": "cgp_87766b0259",
-      "company_name": "IDEA PARTNERS",
-      "city": "Ardennes",
-      "department": "08",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_040a10897b",
-      "company_name": "BEST IMPACT",
-      "city": "Vienne",
-      "department": "86",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_e27da00ef8",
-      "company_name": "LOGIFINANCES",
-      "city": "Nord",
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "city": "Saint Amand Les Eaux",
       "department": "59",
       "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_3f77311797",
-      "company_name": "CABINET UNITEAM",
-      "city": "Hérault",
-      "department": "34",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
-      "phone": "",
+      "phone": "+33680598611",
       "email": ""
     },
     {
-      "id": "cgp_d9b61f28b1",
-      "company_name": "ASCD",
-      "city": "Yvelines",
-      "department": "78",
+      "id": "cgp_5b473b6880",
+      "company_name": "CYRUS CONSEIL LYON",
+      "city": "Lyon",
+      "department": "69",
       "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
-      "phone": "",
+      "phone": "+33472983838",
       "email": ""
     },
     {
-      "id": "cgp_432ca73b3e",
-      "company_name": "FIDUCIA PATRIMOINE",
-      "city": "Territoire de Belfort",
-      "department": "90",
-      "activities": [
-        "COA",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_dc6c9a0cbe",
-      "company_name": "AGENCE IMMOBILIERE BARISIENNE",
-      "city": "Meuse",
-      "department": "55",
-      "activities": [
-        "COA",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_35ea995825",
-      "company_name": "CABINET VIBERT",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_28716a334d",
-      "company_name": "MY CONSEILS",
-      "city": "Calvados",
-      "department": "14",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_6ececb6655",
-      "company_name": "PRELYS COURTAGE",
-      "city": "Indre et Loire",
-      "department": "37",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_95463170a4",
-      "company_name": "SDM SANTE ET PREVOYANCE",
-      "city": "Val de Marne",
-      "department": "94",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_1f51e5b562",
-      "company_name": "SFL PATRIMOINE",
+      "id": "cgp_4359a7cc22",
+      "company_name": "BALMAT HOLDING",
       "city": "Paris",
       "department": "75",
       "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
-      "phone": "",
+      "phone": "+33681388223",
       "email": ""
     },
     {
-      "id": "cgp_5b1c346938",
-      "company_name": "LAMBERT IMMOBILIER",
-      "city": "Yvelines",
-      "department": "78",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_43a151e7c7",
-      "company_name": "COURTAGE 24",
-      "city": "Dordogne",
-      "department": "24",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_23562b7f97",
-      "company_name": "AFR Financement",
-      "city": "Nord",
-      "department": "59",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_8c1484e487",
-      "company_name": "INVEST MH",
-      "city": "Hérault",
-      "department": "34",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_ab918bc918",
-      "company_name": "EXAKT",
-      "city": "Vendée",
-      "department": "85",
+      "id": "cgp_627ae38ea9",
+      "company_name": "EQUANCE*",
+      "city": "Paris",
+      "department": "75",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_45d727e802",
-      "company_name": "OBJECTIF ENTREPRISES ET COMMERCES",
-      "city": "Charente Maritime",
-      "department": "17",
-      "activities": [
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_2f23d536b1",
-      "company_name": "Conort Immobilier",
-      "city": "Nièvre",
-      "department": "58",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_16b2fc1631",
-      "company_name": "BREIZH CONSEILS PATRIMOINE",
-      "city": "Ille et Vilaine",
-      "department": "35",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_a78746aed9",
-      "company_name": "MARIANNE IMMOBILIER",
-      "city": "Hérault",
-      "department": "34",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_d7860b8548",
-      "company_name": "DM PATRIMOINE",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "COA",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_7deed99661",
-      "company_name": "AGP COURTAGE",
-      "city": "Loiret",
-      "department": "45",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_4fb0b180eb",
-      "company_name": "ROCA PATRIMOINE",
-      "city": "Rhône-Alpes",
-      "department": "69",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_3d1cfc49c5",
-      "company_name": "POLARIS CORPORATE FINANCE",
-      "city": "Haute Garonne",
-      "department": "31",
+      "id": "cgp_0aa74362ed",
+      "company_name": "FINANCIERE SAINT LAMBERT",
+      "city": "Paris",
+      "department": "75",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_ede09ea00d",
-      "company_name": "M C A CONSEIL",
-      "city": "Deux Sèvres",
-      "department": "79",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_d45364a51f",
-      "company_name": "MAIOR PARTNERS",
-      "city": "Alpes Maritimes",
-      "department": "06",
-      "activities": [
-        "COA",
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_9a0813994e",
-      "company_name": "GROUPE LE CENTENAIRE",
-      "city": "Indre et Loire",
-      "department": "37",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_89ae2ace44",
-      "company_name": "SOCOFI",
-      "city": "Hérault",
-      "department": "34",
-      "activities": [
-        "IOBSP"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_b9486ab582",
-      "company_name": "TUTASSUR GRENOBLE",
-      "city": "Isère",
-      "department": "38",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_b8551cd85f",
-      "company_name": "INTERSELECTION ACTUARIAT ADVISER",
-      "city": "Gironde",
-      "department": "33",
-      "activities": [
-        "COA",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_8998002acc",
-      "company_name": "3.CO",
-      "city": "Meurthe et Moselle",
-      "department": "54",
-      "activities": [
-        "COA"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_9e5842d6a9",
-      "company_name": "DN PATRIMOINE",
-      "city": "Rhône-Alpes",
-      "department": "69",
-      "activities": [
-        "COA",
-        "IOBSP",
-        "Immobilier",
-        "CIF"
-      ],
-      "associations": [
-        "cncef"
-      ],
-      "first_seen": "2026-06-30",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_5d6e0da8f7",
-      "company_name": "FUSAX PARTNERS",
-      "city": "Puy de Dôme",
-      "department": "63",
+      "id": "cgp_60b90f8856",
+      "company_name": "MEYON ULTIM PARIS",
+      "city": "Paris",
+      "department": "75",
       "activities": [
         "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33172389934",
+      "email": ""
+    },
+    {
+      "id": "cgp_3b9f5ae52e",
+      "company_name": "OLIFAN GROUP",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_d8daa6cf11",
-      "company_name": "LV PATRIMOINE",
-      "city": "Loire Atlantique",
-      "department": "44",
+      "id": "cgp_8e54d75dd1",
+      "company_name": "COURTEYS COURTAGE",
+      "city": "Saint-Cloud",
+      "department": "92",
       "activities": [
-        "COA",
-        "IOBSP"
+        "CIF"
       ],
       "associations": [
-        "cncef"
+        "cncgp"
       ],
       "first_seen": "2026-06-30",
-      "phone": "",
+      "phone": "+33171177731",
+      "email": ""
+    },
+    {
+      "id": "cgp_24852181ba",
+      "company_name": "S O P",
+      "city": "Saint-Maur-Des-Fosses",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_33e991920a",
+      "company_name": "CYRUS CONSEIL CAEN",
+      "city": "Saint Contest",
+      "department": "14",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33231869515",
+      "email": ""
+    },
+    {
+      "id": "cgp_d8c5c88765",
+      "company_name": "BWR GESTION PRIVÉE",
+      "city": "Dijon",
+      "department": "21",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33652231864",
+      "email": ""
+    },
+    {
+      "id": "cgp_855e90d152",
+      "company_name": "CYRUS CONSEIL DIJON",
+      "city": "Dijon",
+      "department": "21",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33380780672",
+      "email": ""
+    },
+    {
+      "id": "cgp_35a065608d",
+      "company_name": "SARL LITTORAL PATRIMOINE",
+      "city": "Saint Brieuc",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_3435a8750b",
+      "company_name": "OPTIMISATION PATRIMONIALE",
+      "city": "Sanary Sur Mer",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-06-30",
+      "phone": "+33663043294",
       "email": ""
     }
   ]
