@@ -1,8 +1,12 @@
 name: Discover Recent CGP (created < N days)
 
 on:
-  schedule:
-    - cron: '30 5 * * *'   # Daily 05:30 UTC (after data.gouv enrichment at 05:00)
+  # DISABLED 2026-06-30: the recherche-entreprises discovery produced records
+  # with SIREN inconsistent with their creation date (all 1xx for 2026 firms),
+  # i.e. unreliable / non-existent cabinets. Re-enable only after the source is
+  # verified. Manual trigger kept for diagnostics.
+  # schedule:
+  #   - cron: '30 5 * * *'
   workflow_dispatch:
     inputs:
       days:

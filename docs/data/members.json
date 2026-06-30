@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T10:30:30.097050+00:00",
+  "last_updated": "2026-06-30T14:42:55.805391+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -43,10 +43,9 @@
       "missing_creation_date": 2282
     },
     "registre_recent": {
-      "status": "success",
-      "added": 96,
-      "days": 30,
-      "timestamp": "2026-06-29T14:39:46.562505+00:00"
+      "status": "disabled",
+      "reason": "SIREN incoherents avec date creation - source non fiable",
+      "timestamp": "2026-06-30T14:42:55.805391+00:00"
     },
     "contacts_enrich": {
       "status": "success",
@@ -61,49 +60,49 @@
     }
   },
   "stats": {
-    "total_members": 10061,
+    "total_members": 10018,
     "new_today": 0,
-    "new_this_week": 138,
-    "new_this_month": 201,
+    "new_this_week": 96,
+    "new_this_month": 158,
     "by_association": {
       "anacofi": 3137,
       "cncef": 4647,
       "cncgp": 2527,
       "ucgp": 63,
       "leaders_league": 34,
-      "registre": 48,
-      "manuel": 45,
+      "registre": 5,
+      "manuel": 3,
       "affo": 20
     },
     "by_activity": {
-      "CIF": 7087,
+      "CIF": 7044,
       "COA": 3984,
       "IOBSP": 1835,
       "Immobilier": 946
     },
     "by_department": {
-      "75": 1648,
-      "69": 530,
-      "92": 458,
-      "33": 402,
-      "31": 392,
-      "13": 366,
-      "44": 317,
+      "75": 1639,
+      "69": 528,
+      "92": 456,
+      "33": 401,
+      "31": 391,
+      "13": 363,
+      "44": 316,
       "06": 292,
-      "78": 274,
-      "34": 254,
+      "78": 273,
+      "34": 253,
       "59": 223,
       "38": 222,
       "67": 196,
       "37": 183,
-      "83": 177,
-      "94": 177,
-      "35": 168,
-      "64": 141,
+      "94": 176,
+      "83": 175,
+      "35": 167,
+      "64": 140,
       "77": 126,
-      "74": 115
+      "74": 113
     },
-    "total_departments": 101,
+    "total_departments": 100,
     "scrape_status": {
       "cncgp": {
         "status": "success",
@@ -112,10 +111,11 @@
         "duration_s": 569.4
       },
       "cncef": {
-        "status": "success",
-        "count": 384,
-        "timestamp": "2026-06-30T07:40:06.044707+00:00",
-        "duration_s": 1658.9
+        "status": "partial",
+        "count": 24,
+        "kept": 4647,
+        "timestamp": "2026-06-30T12:53:20.655428+00:00",
+        "duration_s": 634.8
       },
       "anacofi": {
         "status": "success",
@@ -146,10 +146,9 @@
         "missing_creation_date": 2282
       },
       "registre_recent": {
-        "status": "success",
-        "added": 96,
-        "days": 30,
-        "timestamp": "2026-06-29T14:39:46.562505+00:00"
+        "status": "disabled",
+        "reason": "SIREN incoherents avec date creation - source non fiable",
+        "timestamp": "2026-06-30T14:42:55.805391+00:00"
       },
       "contacts_enrich": {
         "status": "success",
@@ -163,7 +162,7 @@
         "timestamp": "2026-06-30T08:47:47.614795+00:00"
       }
     },
-    "last_updated": "2026-06-30T10:30:30.097050+00:00"
+    "last_updated": "2026-06-30T14:42:55.805391+00:00"
   },
   "members": [
     {
@@ -65192,52 +65191,6 @@
       }
     },
     {
-      "id": "cgp_0ea63eac28",
-      "company_name": "ATB FINANCES",
-      "company_name_normalized": "atb finances",
-      "siren": "106484041",
-      "orias_number": "",
-      "address": {
-        "street": "10 RUE ISABEY 54000 NANCY",
-        "postal_code": "54000",
-        "city": "NANCY",
-        "department": "54",
-        "department_name": "Meurthe-et-Moselle",
-        "region": "Grand Est"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "HMS CAPITAL",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne morale"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106484041"
-      },
-      "creation_date": "2026-06-15"
-    },
-    {
       "id": "cgp_34650cb815",
       "company_name": "ATELIA",
       "company_name_normalized": "atelia",
@@ -94787,58 +94740,6 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
-      }
-    },
-    {
-      "id": "cgp_67f5496d00",
-      "company_name": "BLACKWELL FAMILY OFFICE",
-      "company_name_normalized": "blackwell family office",
-      "siren": "104453550",
-      "orias_number": "",
-      "address": {
-        "street": "49 RUE DE PONTHIEU 75008 PARIS",
-        "postal_code": "75008",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "https://www.familyoffice-france.fr/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "JÉRÉMY BLACKWELL",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "FRANCK MOUCHEL",
-          "role": "Directeur Général",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-02",
-      "last_seen": "2026-06-02",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104453550"
-      },
-      "creation_date": "2026-06-01",
-      "website_meta": {
-        "discovered_via": "brave"
       }
     },
     {
@@ -129499,52 +129400,6 @@
       }
     },
     {
-      "id": "cgp_b569a9b8ee",
-      "company_name": "CAREX (CAREX CONSEIL ET PATRIMOINE ; CAREX FORMATION)",
-      "company_name_normalized": "carex carex conseil et patrimoine  carex formation",
-      "siren": "106103799",
-      "orias_number": "",
-      "address": {
-        "street": "546 CHEMIN D'ADRY 13250 CORNILLON-CONFOUX",
-        "postal_code": "13250",
-        "city": "CORNILLON-CONFOUX",
-        "department": "13",
-        "department_name": "Bouches-du-Rhone",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "CAROLE REYNAUD (LEPAGNEY)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106103799"
-      },
-      "creation_date": "2026-06-07"
-    },
-    {
       "id": "cgp_bc716e5531",
       "company_name": "CARIMALO KEVIN",
       "company_name_normalized": "carimalo kevin",
@@ -134183,52 +134038,6 @@
         "categorie_entreprise": "PME",
         "naf": "46.19B"
       }
-    },
-    {
-      "id": "cgp_18e89b746a",
-      "company_name": "CD INVESTISSEMENT ET PATRIMOINE",
-      "company_name_normalized": "cd investissement et patrimoine",
-      "siren": "105780977",
-      "orias_number": "",
-      "address": {
-        "street": "23 AVENUE DU GENERAL DE GAULLE 44600 SAINT-NAZAIRE",
-        "postal_code": "44600",
-        "city": "SAINT-NAZAIRE",
-        "department": "44",
-        "department_name": "Loire-Atlantique",
-        "region": "Pays de la Loire"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "CÉDRIC DADIER",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105780977"
-      },
-      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_7069e266b2",
@@ -142347,52 +142156,6 @@
         "effectif_label": "Non renseigné",
         "naf": "68.31Z"
       }
-    },
-    {
-      "id": "cgp_dce72f18ec",
-      "company_name": "CHARLOTTE M. COURTAGE",
-      "company_name_normalized": "charlotte m courtage",
-      "siren": "106493513",
-      "orias_number": "",
-      "address": {
-        "street": "5 RUE FRANCIS DE PRESSENSE 92800 PUTEAUX",
-        "postal_code": "92800",
-        "city": "PUTEAUX",
-        "department": "92",
-        "department_name": "Hauts-de-Seine",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "CHARLOTTE MARRIS",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106493513"
-      },
-      "creation_date": "2026-06-16"
     },
     {
       "id": "cgp_4ac4327e6f",
@@ -150705,52 +150468,6 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       }
-    },
-    {
-      "id": "cgp_3c1cfa6d2e",
-      "company_name": "CM FINANCE",
-      "company_name_normalized": "cm finance",
-      "siren": "106476625",
-      "orias_number": "",
-      "address": {
-        "street": "25 RUE DES AUGUSTINS 47000 AGEN",
-        "postal_code": "47000",
-        "city": "AGEN",
-        "department": "47",
-        "department_name": "Lot-et-Garonne",
-        "region": "Nouvelle-Aquitaine"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "CHARLY MORLAY",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106476625"
-      },
-      "creation_date": "2026-06-17"
     },
     {
       "id": "cgp_c19e212179",
@@ -175339,52 +175056,6 @@
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/damien-cayla/"
       }
-    },
-    {
-      "id": "cgp_a9cf1cc456",
-      "company_name": "DAMIEN ROBERT (DR PATRIMOINE)",
-      "company_name_normalized": "damien robert dr patrimoine",
-      "siren": "106431216",
-      "orias_number": "",
-      "address": {
-        "street": "2 RUE GABRIEL PERI 51350 CORMONTREUIL",
-        "postal_code": "51350",
-        "city": "CORMONTREUIL",
-        "department": "51",
-        "department_name": "Marne",
-        "region": "Grand Est"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "DAMIEN ROBERT",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106431216"
-      },
-      "creation_date": "2026-06-16"
     },
     {
       "id": "cgp_500c5e74da",
@@ -202615,55 +202286,6 @@
       }
     },
     {
-      "id": "cgp_fd523750c5",
-      "company_name": "EFLA M (ATLAS INVEST COURTAGE)",
-      "company_name_normalized": "efla m atlas invest courtage",
-      "siren": "106268279",
-      "orias_number": "",
-      "address": {
-        "street": "10 RUE DE VALLARD 74240 GAILLARD",
-        "postal_code": "74240",
-        "city": "GAILLARD",
-        "department": "74",
-        "department_name": "Haute-Savoie",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "",
-      "email": "",
-      "website": "https://atlasgp.fr/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "NUMAN DALKIRAN",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106268279"
-      },
-      "creation_date": "2026-06-10",
-      "website_meta": {
-        "discovered_via": "brave"
-      }
-    },
-    {
       "id": "cgp_33a287fd41",
       "company_name": "EFO CONSEIL",
       "company_name_normalized": "efo conseil",
@@ -214399,52 +214021,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_3737b745a4",
-      "company_name": "ERIC HUANG (HG FINANCE)",
-      "company_name_normalized": "eric huang hg finance",
-      "siren": "105565881",
-      "orias_number": "",
-      "address": {
-        "street": "25 RUE DU CHEMIN VERT 75011 PARIS",
-        "postal_code": "75011",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ERIC HUANG",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105565881"
-      },
-      "creation_date": "2026-06-15"
     },
     {
       "id": "cgp_e1880909ee",
@@ -245772,52 +245348,6 @@
       }
     },
     {
-      "id": "cgp_b6650d9ee2",
-      "company_name": "FIRMA GESTION PRIVEE",
-      "company_name_normalized": "firma gestion privee",
-      "siren": "106341498",
-      "orias_number": "",
-      "address": {
-        "street": "19 RUE DU VALLON DE MONTEBELLO 13006 MARSEILLE",
-        "postal_code": "13006",
-        "city": "MARSEILLE",
-        "department": "13",
-        "department_name": "Bouches-du-Rhone",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "CÉDRIC PAQUET",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106341498"
-      },
-      "creation_date": "2026-06-12"
-    },
-    {
       "id": "cgp_af8ddf9616",
       "company_name": "FIRST CONSEIL",
       "company_name_normalized": "first conseil",
@@ -258992,52 +258522,6 @@
       }
     },
     {
-      "id": "cgp_da2dfffb90",
-      "company_name": "GAUTHIER CRESSET (OSEZ CONSEILS)",
-      "company_name_normalized": "gauthier cresset osez conseils",
-      "siren": "104919162",
-      "orias_number": "",
-      "address": {
-        "street": "8 PLACE DE L'EGLISE 85500 MESNARD-LA-BAROTIERE",
-        "postal_code": "85500",
-        "city": "MESNARD-LA-BAROTIERE",
-        "department": "85",
-        "department_name": "Vendee",
-        "region": "Pays de la Loire"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "GAUTHIER CRESSET",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/104919162"
-      },
-      "creation_date": "2026-06-01"
-    },
-    {
       "id": "cgp_3be45d2390",
       "company_name": "GAUTHIER OLIVIER",
       "company_name_normalized": "gauthier olivier",
@@ -264937,52 +264421,6 @@
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/girault-david/"
       }
-    },
-    {
-      "id": "cgp_b43b5f714c",
-      "company_name": "GIRCONSEILS",
-      "company_name_normalized": "girconseils",
-      "siren": "106234636",
-      "orias_number": "",
-      "address": {
-        "street": "123 ROUTE DU GROS CHENE 74570 FILLIERE",
-        "postal_code": "74570",
-        "city": "FILLIERE",
-        "department": "74",
-        "department_name": "Haute-Savoie",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ALEXIS GIRY",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106234636"
-      },
-      "creation_date": "2026-06-05"
     },
     {
       "id": "cgp_0e1ae8232f",
@@ -275961,52 +275399,6 @@
       }
     },
     {
-      "id": "cgp_d55cd158eb",
-      "company_name": "GUILLEMINE SOLEILLE (CABINET GUILLEMINE SOLEILLE)",
-      "company_name_normalized": "guillemine soleille cabinet guillemine soleille",
-      "siren": "105878243",
-      "orias_number": "",
-      "address": {
-        "street": "162 BOULEVARD VINCENT AURIOL 75013 PARIS",
-        "postal_code": "75013",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "GUILLEMINE SOLEILLE",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105878243"
-      },
-      "creation_date": "2026-06-03"
-    },
-    {
       "id": "cgp_8228338eef",
       "company_name": "GUILLERME ROMAIN",
       "company_name_normalized": "guillerme romain",
@@ -281049,52 +280441,6 @@
       }
     },
     {
-      "id": "cgp_bc81a3dc67",
-      "company_name": "HB PARTNERS CONSEIL",
-      "company_name_normalized": "hb partners conseil",
-      "siren": "106647944",
-      "orias_number": "",
-      "address": {
-        "street": "43 A RUE DE LA COLLINE 97400 SAINT-DENIS",
-        "postal_code": "97400",
-        "city": "SAINT-DENIS",
-        "department": "974",
-        "department_name": "La Reunion",
-        "region": "La Reunion"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "HÉLÉNA BRUJAILLE-LATOUR (ABRAND)",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106647944"
-      },
-      "creation_date": "2026-06-10"
-    },
-    {
       "id": "cgp_d1e7d659bd",
       "company_name": "HBJO ASSURANCES CONSEILS",
       "company_name_normalized": "hbjo assurances conseils",
@@ -282380,98 +281726,6 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       }
-    },
-    {
-      "id": "cgp_83f20412e2",
-      "company_name": "HELENE CONSEIL COURTAGE",
-      "company_name_normalized": "helene conseil courtage",
-      "siren": "106493711",
-      "orias_number": "",
-      "address": {
-        "street": "1036 ALLEE LARRICQ 64160 BUROS",
-        "postal_code": "64160",
-        "city": "BUROS",
-        "department": "64",
-        "department_name": "Pyrenees-Atlantiques",
-        "region": "Nouvelle-Aquitaine"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "HÉLÈNE SENAUX (MARTINEZ)",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106493711"
-      },
-      "creation_date": "2026-06-17"
-    },
-    {
-      "id": "cgp_4b59418147",
-      "company_name": "HELION FINANCE",
-      "company_name_normalized": "helion finance",
-      "siren": "105700504",
-      "orias_number": "",
-      "address": {
-        "street": "PARADIS HAUT 04510 LE CHAFFAUT-SAINT-JURSON",
-        "postal_code": "04510",
-        "city": "LE CHAFFAUT-SAINT-JURSON",
-        "department": "04",
-        "department_name": "Alpes-de-Haute-Provence",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "UGO TARDIOLI",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105700504"
-      },
-      "creation_date": "2026-06-01"
     },
     {
       "id": "cgp_88bc386c06",
@@ -317292,52 +316546,6 @@
       }
     },
     {
-      "id": "cgp_63d9d34c8b",
-      "company_name": "JRL COURTAGE",
-      "company_name_normalized": "jrl courtage",
-      "siren": "106248016",
-      "orias_number": "",
-      "address": {
-        "street": "BOULEVARD DE SEBASTOPOL 75001 PARIS",
-        "postal_code": "75001",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "JEAN LALLIER",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-29",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106248016"
-      },
-      "creation_date": "2026-06-11"
-    },
-    {
       "id": "cgp_d00501731b",
       "company_name": "JS ASSURANCES",
       "company_name_normalized": "js assurances",
@@ -344032,52 +343240,6 @@
       }
     },
     {
-      "id": "cgp_9e03548fc7",
-      "company_name": "LECHAT PATRIMOINE SASU (LL)",
-      "company_name_normalized": "lechat patrimoine ll",
-      "siren": "106143399",
-      "orias_number": "",
-      "address": {
-        "street": "261 ROUTE DE SAINTE ROSE 82200 MALAUSE",
-        "postal_code": "82200",
-        "city": "MALAUSE",
-        "department": "82",
-        "department_name": "Tarn-et-Garonne",
-        "region": "Occitanie"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "JEAN LECHAT",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106143399"
-      },
-      "creation_date": "2026-06-22"
-    },
-    {
       "id": "cgp_fde9a52147",
       "company_name": "LECLAIR PERSPECTIVES",
       "company_name_normalized": "leclair perspectives",
@@ -347607,52 +346769,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.19A"
       }
-    },
-    {
-      "id": "cgp_8eb37ded9a",
-      "company_name": "LEO SAARBACH (SAARBACH PATRIMOINE)",
-      "company_name_normalized": "leo saarbach saarbach patrimoine",
-      "siren": "105552517",
-      "orias_number": "",
-      "address": {
-        "street": "14 RUE DESAIX 75015 PARIS",
-        "postal_code": "75015",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "LÉO SAARBACH",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552517"
-      },
-      "creation_date": "2026-06-12"
     },
     {
       "id": "cgp_9e4aa6359a",
@@ -353663,52 +352779,6 @@
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lince-carole/"
       }
-    },
-    {
-      "id": "cgp_1037c02981",
-      "company_name": "LINE COURTAGE",
-      "company_name_normalized": "line courtage",
-      "siren": "106656333",
-      "orias_number": "",
-      "address": {
-        "street": "2 RUE DU 11 NOVEMBRE 94800 VILLEJUIF",
-        "postal_code": "94800",
-        "city": "VILLEJUIF",
-        "department": "94",
-        "department_name": "Val-de-Marne",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "LINE LIM (UN)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106656333"
-      },
-      "creation_date": "2026-06-22"
     },
     {
       "id": "cgp_21a067b7e1",
@@ -359799,55 +358869,6 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
-      }
-    },
-    {
-      "id": "cgp_f5c5398a51",
-      "company_name": "LUCAS MANDOFIA (MANDOFIA PATRIMOINE)",
-      "company_name_normalized": "lucas mandofia mandofia patrimoine",
-      "siren": "105552475",
-      "orias_number": "",
-      "address": {
-        "street": "18 ALLEE DES COUTURELLES 95560 MAFFLIERS",
-        "postal_code": "95560",
-        "city": "MAFFLIERS",
-        "department": "95",
-        "department_name": "Val-d'Oise",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "ex@abc.xyz",
-      "website": "https://lucas-maillard.cgp.site/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "LUCAS MANDOFIA",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552475"
-      },
-      "creation_date": "2026-06-22",
-      "website_meta": {
-        "discovered_via": "brave"
       }
     },
     {
@@ -374850,52 +373871,6 @@
       }
     },
     {
-      "id": "cgp_249878682f",
-      "company_name": "MATHIEU LE MINOUX (MATHIEU GESTION PRIVEE)",
-      "company_name_normalized": "mathieu le minoux mathieu gestion privee",
-      "siren": "105552491",
-      "orias_number": "",
-      "address": {
-        "street": "125 BOULEVARD BRUNE 75014 PARIS",
-        "postal_code": "75014",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "MATHIEU LE MINOUX",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105552491"
-      },
-      "creation_date": "2026-06-14"
-    },
-    {
       "id": "cgp_663762c884",
       "company_name": "MATHIEU PULIDO CONSEIL FINANCE PATRIMOINE",
       "company_name_normalized": "mathieu pulido conseil finance patrimoine",
@@ -375059,52 +374034,6 @@
         "categorie_entreprise": "PME",
         "naf": "64.30Z"
       }
-    },
-    {
-      "id": "cgp_efa5b456ad",
-      "company_name": "MATISSE REGUIMI (REGUIMI CONSEIL)",
-      "company_name_normalized": "matisse reguimi reguimi conseil",
-      "siren": "106414600",
-      "orias_number": "",
-      "address": {
-        "street": "59 RUE HENRI BARBUSSE 93260 LES LILAS",
-        "postal_code": "93260",
-        "city": "LES LILAS",
-        "department": "93",
-        "department_name": "Seine-Saint-Denis",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "MATISSE REGUIMI",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106414600"
-      },
-      "creation_date": "2026-06-16"
     },
     {
       "id": "cgp_e5fa358038",
@@ -384356,52 +383285,6 @@
         "effectif_label": "Non renseigné",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_0adf18c64d",
-      "company_name": "MGN FINANCE",
-      "company_name_normalized": "mgn finance",
-      "siren": "105857114",
-      "orias_number": "",
-      "address": {
-        "street": "8 CHEMIN DE L'ORPHIGNY 02220 COURCELLES-SUR-VESLE",
-        "postal_code": "02220",
-        "city": "COURCELLES-SUR-VESLE",
-        "department": "02",
-        "department_name": "Aisne",
-        "region": "Hauts-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "MEGGAN PEUDPIECE",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105857114"
-      },
-      "creation_date": "2026-06-03"
     },
     {
       "id": "cgp_359a3c4d82",
@@ -407024,52 +405907,6 @@
       }
     },
     {
-      "id": "cgp_ee588d59af",
-      "company_name": "NILS MARCILLY (NM FINANCE)",
-      "company_name_normalized": "nils marcilly nm finance",
-      "siren": "106065725",
-      "orias_number": "",
-      "address": {
-        "street": "4 CHEMIN DE LA COUR DU MOULIN 78380 BOUGIVAL",
-        "postal_code": "78380",
-        "city": "BOUGIVAL",
-        "department": "78",
-        "department_name": "Yvelines",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "NILS MARCILLY",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106065725"
-      },
-      "creation_date": "2026-06-08"
-    },
-    {
       "id": "cgp_da93af3110",
       "company_name": "NIMALI",
       "company_name_normalized": "nimali",
@@ -410799,104 +409636,6 @@
       "last_seen": "2026-06-30",
       "is_new": false,
       "source_urls": {}
-    },
-    {
-      "id": "cgp_74a3ebe54f",
-      "company_name": "NOVANATI WEALTH MANAGEMENT (NOVANATI WEALTH MANAGEMENT)",
-      "company_name_normalized": "novanati wealth management novanati wealth management",
-      "siren": "105189971",
-      "orias_number": "",
-      "address": {
-        "street": "6 COURS DU COMMERCE 92290 CHATENAY-MALABRY",
-        "postal_code": "92290",
-        "city": "CHATENAY-MALABRY",
-        "department": "92",
-        "department_name": "Hauts-de-Seine",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "VERONIQUE YANG",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105189971"
-      },
-      "creation_date": "2026-06-01"
-    },
-    {
-      "id": "cgp_132191dc57",
-      "company_name": "NOVARIS CONSEIL & PATRIMOINE (NOVARIS CONSEIL & PATRIMOINE) (NCP)",
-      "company_name_normalized": "novaris conseil  patrimoine novaris conseil  patrimoine ncp",
-      "siren": "106303597",
-      "orias_number": "",
-      "address": {
-        "street": "396 CHEMIN DE LA RESSENCE 83100 TOULON",
-        "postal_code": "83100",
-        "city": "TOULON",
-        "department": "83",
-        "department_name": "Var",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "DENIS CARTA",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "ASTELLE DIOP",
-          "role": "Directeur Général",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106303597"
-      },
-      "creation_date": "2026-06-15"
     },
     {
       "id": "cgp_41ac34ce95",
@@ -445345,52 +444084,6 @@
       }
     },
     {
-      "id": "cgp_b5bf69dd8c",
-      "company_name": "PERSPECTIVES & PATRIMOINE CABINET COUBARD",
-      "company_name_normalized": "perspectives  patrimoine cabinet coubard",
-      "siren": "106294861",
-      "orias_number": "",
-      "address": {
-        "street": "1191 AVENUE MARCEL MERIEUX 69280 MARCY-L'ETOILE",
-        "postal_code": "69280",
-        "city": "MARCY-L'ETOILE",
-        "department": "69",
-        "department_name": "Rhone",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ADRIEN COUBARD",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106294861"
-      },
-      "creation_date": "2026-06-11"
-    },
-    {
       "id": "cgp_d21bd37021",
       "company_name": "PERSPECTIVES PATRIMOINE",
       "company_name_normalized": "perspectives patrimoine",
@@ -468687,52 +467380,6 @@
       }
     },
     {
-      "id": "cgp_10702586c0",
-      "company_name": "RAISSA KIABOUNA MATONDO (RAISSA FINANCE)",
-      "company_name_normalized": "raissa kiabouna matondo raissa finance",
-      "siren": "103106175",
-      "orias_number": "",
-      "address": {
-        "street": "1 RUE DES ALOUETTES 35160 TALENSAC",
-        "postal_code": "35160",
-        "city": "TALENSAC",
-        "department": "35",
-        "department_name": "Ille-et-Vilaine",
-        "region": "Bretagne"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "RAISSA KIABOUNA MATONDO",
-          "role": "",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103106175"
-      },
-      "creation_date": "2026-06-01"
-    },
-    {
       "id": "cgp_aa8b34c3cd",
       "company_name": "RAJCH KEVIN",
       "company_name_normalized": "rajch kevin",
@@ -473069,52 +471716,6 @@
         "categorie_entreprise": "PME",
         "naf": "68.31Z"
       }
-    },
-    {
-      "id": "cgp_dde8509fa5",
-      "company_name": "RENOV' FINANCES",
-      "company_name_normalized": "renov finances",
-      "siren": "106181050",
-      "orias_number": "",
-      "address": {
-        "street": "10 IMPASSE LEONCE COUTURE 31200 TOULOUSE",
-        "postal_code": "31200",
-        "city": "TOULOUSE",
-        "department": "31",
-        "department_name": "Haute-Garonne",
-        "region": "Occitanie"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "STÉPHANIE HARROCH (EGO)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106181050"
-      },
-      "creation_date": "2026-06-09"
     },
     {
       "id": "cgp_4d95b27ad9",
@@ -478364,52 +476965,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.19B"
       }
-    },
-    {
-      "id": "cgp_50a4934bc6",
-      "company_name": "ROBIN MICHAUD COURTAGE",
-      "company_name_normalized": "robin michaud courtage",
-      "siren": "105771737",
-      "orias_number": "",
-      "address": {
-        "street": "124 AVENUE GENERAL DE GAULLE 69300 CALUIRE-ET-CUIRE",
-        "postal_code": "69300",
-        "city": "CALUIRE-ET-CUIRE",
-        "department": "69",
-        "department_name": "Rhone",
-        "region": "Auvergne-Rhone-Alpes"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ROBIN MICHAUD",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105771737"
-      },
-      "creation_date": "2026-06-02"
     },
     {
       "id": "cgp_4fb0b180eb",
@@ -495638,52 +494193,6 @@
       }
     },
     {
-      "id": "cgp_7056661c52",
-      "company_name": "SASU LF COURTAGE (LF COURTAGE) (LF COURTAGE)",
-      "company_name_normalized": "lf courtage lf courtage lf courtage",
-      "siren": "103774568",
-      "orias_number": "",
-      "address": {
-        "street": "30 RUE ERIC TABARLY 62840 SAILLY-SUR-LA-LYS",
-        "postal_code": "62840",
-        "city": "SAILLY-SUR-LA-LYS",
-        "department": "62",
-        "department_name": "Pas-de-Calais",
-        "region": "Hauts-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "LUDIVINE FARDOUX (PETITPRE)",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103774568"
-      },
-      "creation_date": "2026-06-01"
-    },
-    {
       "id": "cgp_24d8953a93",
       "company_name": "SASU MYRIAM MITOIRE",
       "company_name_normalized": "myriam mitoire",
@@ -495744,52 +494253,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.19B"
       }
-    },
-    {
-      "id": "cgp_4d60b5a83a",
-      "company_name": "SASU SILENCE CAPITAL (FACILIFINANCES)",
-      "company_name_normalized": "silence capital facilifinances",
-      "siren": "103722179",
-      "orias_number": "",
-      "address": {
-        "street": "5 RUE DE CONSTANTINE 72000 LE MANS",
-        "postal_code": "72000",
-        "city": "LE MANS",
-        "department": "72",
-        "department_name": "Sarthe",
-        "region": "Pays de la Loire"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "KOLÉ N'DRI",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/103722179"
-      },
-      "creation_date": "2026-06-15"
     },
     {
       "id": "cgp_721ae3d6a1",
@@ -496984,52 +495447,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_e92d38414f",
-      "company_name": "SCALE INVESTISSEMENTS",
-      "company_name_normalized": "scale investissements",
-      "siren": "106691868",
-      "orias_number": "",
-      "address": {
-        "street": "229 RUE SAINT-HONORE 75001 PARIS",
-        "postal_code": "75001",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "ROMAIN ARSAC",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106691868"
-      },
-      "creation_date": "2026-06-16"
     },
     {
       "id": "cgp_c58c52ce0a",
@@ -509556,55 +507973,6 @@
       }
     },
     {
-      "id": "cgp_7da050d0c3",
-      "company_name": "SO'LINK PATRIMOINE",
-      "company_name_normalized": "solink patrimoine",
-      "siren": "106040363",
-      "orias_number": "",
-      "address": {
-        "street": "82 RUE BANNIER 45000 ORLEANS",
-        "postal_code": "45000",
-        "city": "ORLEANS",
-        "department": "45",
-        "department_name": "Loiret",
-        "region": "Centre-Val de Loire"
-      },
-      "phone": "",
-      "email": "",
-      "website": "https://www.solinkconseil.com/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "BERNARD BOISJOT",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106040363"
-      },
-      "creation_date": "2026-06-03",
-      "website_meta": {
-        "discovered_via": "brave"
-      }
-    },
-    {
       "id": "cgp_62ad3dc734",
       "company_name": "SOAB FINANCE",
       "company_name_normalized": "soab finance",
@@ -512511,52 +510879,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_e536e11956",
-      "company_name": "SOLVA CONSEIL",
-      "company_name_normalized": "solva conseil",
-      "siren": "106815780",
-      "orias_number": "",
-      "address": {
-        "street": "10 IMPASSE JEAN MARZAT 33400 TALENCE",
-        "postal_code": "33400",
-        "city": "TALENCE",
-        "department": "33",
-        "department_name": "Gironde",
-        "region": "Nouvelle-Aquitaine"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "HAKIM HAMMADA",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106815780"
-      },
-      "creation_date": "2026-06-25"
     },
     {
       "id": "cgp_409ab3460d",
@@ -516025,55 +514347,6 @@
       }
     },
     {
-      "id": "cgp_5c6fb1069d",
-      "company_name": "SQUARE PARTNERS WEALTH MANAGEMENT (SPWM)",
-      "company_name_normalized": "square partners wealth management spwm",
-      "siren": "106767486",
-      "orias_number": "",
-      "address": {
-        "street": "142 RUE DE RIVOLI 75001 PARIS",
-        "postal_code": "75001",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "https://squarecapitalgroup.com/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "SOPHIE JOURNEL",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106767486"
-      },
-      "creation_date": "2026-06-23",
-      "website_meta": {
-        "discovered_via": "brave"
-      }
-    },
-    {
       "id": "cgp_b76f3d41fe",
       "company_name": "SR BY CONSEIL & CONFIANCE",
       "company_name_normalized": "sr by conseil  confiance",
@@ -516675,52 +514948,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_a892c4472c",
-      "company_name": "STA CONSEIL (OPTIMIS COURTAGE)",
-      "company_name_normalized": "sta conseil optimis courtage",
-      "siren": "106555964",
-      "orias_number": "",
-      "address": {
-        "street": "TRAVERSE DU 2EME MOULIN 347 CHEMIN BARTHELEMY FLORENT 83200 TOULON",
-        "postal_code": "83200",
-        "city": "TOULON",
-        "department": "83",
-        "department_name": "Var",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "STÉPHANE ALBOUY",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106555964"
-      },
-      "creation_date": "2026-06-18"
     },
     {
       "id": "cgp_4b774ac3f4",
@@ -530321,52 +528548,6 @@
       }
     },
     {
-      "id": "cgp_59bdf42465",
-      "company_name": "THE JAS PATRIMOINE",
-      "company_name_normalized": "the jas patrimoine",
-      "siren": "106430044",
-      "orias_number": "",
-      "address": {
-        "street": "[NON-DIFFUSIBLE]",
-        "postal_code": "[NON-DIFFUSIBLE]",
-        "city": "SAINT-CLEMENT-DE-RIVIERE",
-        "department": "[N",
-        "department_name": "",
-        "region": ""
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "[NON-DIFFUSIBLE] [NON-DIFFUSIBLE]",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106430044"
-      },
-      "creation_date": "2026-06-15"
-    },
-    {
       "id": "cgp_9736f96fbb",
       "company_name": "THE LODGE FAMILY",
       "company_name_normalized": "the lodge family",
@@ -541451,52 +539632,6 @@
       }
     },
     {
-      "id": "cgp_79274fa14e",
-      "company_name": "UPNEXTIA CONSEIL EN GESTION DE PATRIMOINE (UPNEXTIA CONSEIL)",
-      "company_name_normalized": "upnextia conseil en gestion de patrimoine upnextia conseil",
-      "siren": "106737661",
-      "orias_number": "",
-      "address": {
-        "street": "BATIMENT B 1 RUE DU GRENACHE 34830 CLAPIERS",
-        "postal_code": "34830",
-        "city": "CLAPIERS",
-        "department": "34",
-        "department_name": "Herault",
-        "region": "Occitanie"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "JEAN-PHILIPPE DURNEY",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106737661"
-      },
-      "creation_date": "2026-06-12"
-    },
-    {
       "id": "cgp_e03b4eb8d4",
       "company_name": "UPSIDE FINANCE",
       "company_name_normalized": "upside finance",
@@ -546794,52 +544929,6 @@
       }
     },
     {
-      "id": "cgp_7821d73198",
-      "company_name": "VB SOLUTIONS ET EXPERTISE",
-      "company_name_normalized": "vb solutions et expertise",
-      "siren": "106379936",
-      "orias_number": "",
-      "address": {
-        "street": "37 PLACE FERNAND PELLOUTIER 81000 ALBI",
-        "postal_code": "81000",
-        "city": "ALBI",
-        "department": "81",
-        "department_name": "Tarn",
-        "region": "Occitanie"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "BASTIEN MASSOL",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106379936"
-      },
-      "creation_date": "2026-06-12"
-    },
-    {
       "id": "cgp_791481d4f9",
       "company_name": "VD EQUITY",
       "company_name_normalized": "vd equity",
@@ -551742,52 +549831,6 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       }
-    },
-    {
-      "id": "cgp_d5197867c1",
-      "company_name": "VICTOR BONACCHI COURTAGE",
-      "company_name_normalized": "victor bonacchi courtage",
-      "siren": "105886469",
-      "orias_number": "",
-      "address": {
-        "street": "71 BOULEVARD NOTRE DAME 13006 MARSEILLE",
-        "postal_code": "13006",
-        "city": "MARSEILLE",
-        "department": "13",
-        "department_name": "Bouches-du-Rhone",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "VICTOR BONACCHI",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/105886469"
-      },
-      "creation_date": "2026-06-04"
     },
     {
       "id": "cgp_c003c9344e",
@@ -557037,52 +555080,6 @@
         "categorie_entreprise": "PME",
         "naf": "66.22Z"
       }
-    },
-    {
-      "id": "cgp_16cad80709",
-      "company_name": "W.K COURTAGE (W.K COURTAGE)",
-      "company_name_normalized": "wk courtage wk courtage",
-      "siren": "106296445",
-      "orias_number": "",
-      "address": {
-        "street": "58 RUE DE MONCEAU 75008 PARIS",
-        "postal_code": "75008",
-        "city": "PARIS",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "WILLIAM KREB",
-          "role": "Président de SAS",
-          "source": "data.gouv",
-          "type": "personne physique"
-        }
-      ],
-      "associations": {
-        "registre": {
-          "member": true
-        },
-        "manuel": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "is_new": false,
-      "source_urls": {
-        "registre": "https://annuaire-entreprises.data.gouv.fr/entreprise/106296445"
-      },
-      "creation_date": "2026-06-08"
     },
     {
       "id": "cgp_3667417050",

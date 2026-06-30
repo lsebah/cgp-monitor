@@ -1,47 +1,47 @@
 {
-  "total_members": 10061,
+  "total_members": 10018,
   "new_today": 0,
-  "new_this_week": 138,
-  "new_this_month": 201,
+  "new_this_week": 96,
+  "new_this_month": 158,
   "by_association": {
     "anacofi": 3137,
     "cncef": 4647,
     "cncgp": 2527,
     "ucgp": 63,
     "leaders_league": 34,
-    "registre": 48,
-    "manuel": 45,
+    "registre": 5,
+    "manuel": 3,
     "affo": 20
   },
   "by_activity": {
-    "CIF": 7087,
+    "CIF": 7044,
     "COA": 3984,
     "IOBSP": 1835,
     "Immobilier": 946
   },
   "by_department": {
-    "75": 1648,
-    "69": 530,
-    "92": 458,
-    "33": 402,
-    "31": 392,
-    "13": 366,
-    "44": 317,
+    "75": 1639,
+    "69": 528,
+    "92": 456,
+    "33": 401,
+    "31": 391,
+    "13": 363,
+    "44": 316,
     "06": 292,
-    "78": 274,
-    "34": 254,
+    "78": 273,
+    "34": 253,
     "59": 223,
     "38": 222,
     "67": 196,
     "37": 183,
-    "83": 177,
-    "94": 177,
-    "35": 168,
-    "64": 141,
+    "94": 176,
+    "83": 175,
+    "35": 167,
+    "64": 140,
     "77": 126,
-    "74": 115
+    "74": 113
   },
-  "total_departments": 101,
+  "total_departments": 100,
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -50,10 +50,11 @@
       "duration_s": 569.4
     },
     "cncef": {
-      "status": "success",
-      "count": 384,
-      "timestamp": "2026-06-30T07:40:06.044707+00:00",
-      "duration_s": 1658.9
+      "status": "partial",
+      "count": 24,
+      "kept": 4647,
+      "timestamp": "2026-06-30T12:53:20.655428+00:00",
+      "duration_s": 634.8
     },
     "anacofi": {
       "status": "success",
@@ -84,10 +85,9 @@
       "missing_creation_date": 2282
     },
     "registre_recent": {
-      "status": "success",
-      "added": 96,
-      "days": 30,
-      "timestamp": "2026-06-29T14:39:46.562505+00:00"
+      "status": "disabled",
+      "reason": "SIREN incoherents avec date creation - source non fiable",
+      "timestamp": "2026-06-30T14:42:55.805391+00:00"
     },
     "contacts_enrich": {
       "status": "success",
@@ -101,5 +101,5 @@
       "timestamp": "2026-06-30T08:47:47.614795+00:00"
     }
   },
-  "last_updated": "2026-06-30T10:30:30.097050+00:00"
+  "last_updated": "2026-06-30T14:42:55.805391+00:00"
 }
