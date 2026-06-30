@@ -1529,7 +1529,9 @@ function saveFolkSettings() {
     const indicator = document.getElementById('folkSyncStatus');
     if (indicator) indicator.textContent = key ? 'Folk OK' : 'Folk Off';
     if (indicator) indicator.style.color = key ? 'var(--accent-green)' : 'var(--text-muted)';
-    if (key) testFolkConnection(key);
+    // NB: do NOT live-test against api.folk.app from the browser — it is
+    // CORS-blocked and would falsely show "Folk Err". The key is used for the
+    // server-side push (folk-push workflow); in-app, Folk works via CSV export.
 }
 
 function clearFolkSettings() {
@@ -1598,11 +1600,30 @@ async function folkPushContact(member) {
     }
 }
 
-async function folkPushAll() {
+// Folk's API blocks browser calls (CORS), so the reliable, self-service path is
+// a CSV export of the Folk-marked cabinets, ready to import into Folk.
+function folkPushAll() {
     const folkMap = getFolkMap();
-    const ids = Object.keys(folkMap);
-    if (!ids.length) { alert('Aucun cabinet marque Folk. Cochez le toggle Folk sur les fiches a synchroniser.'); return; }
-    alert(`${ids.length} cabinet(s) marque(s) Folk.\n\nL'envoi vers Folk CRM se fait cote serveur (le navigateur ne peut pas appeler l'API Folk directement).\n\nDemandez-moi "push folk" et je lance l'envoi immediatement.`);
+    const ids = new Set(Object.keys(folkMap));
+    if (!ids.size) {
+        alert('Aucun cabinet marque Folk.\n\nCochez le toggle "Folk" sur les fiches a exporter, puis recliquez ici.');
+        return;
+    }
+    const marked = allMembers.filter(m => ids.has(m.id));
+    if (!marked.length) {
+        alert('Les cabinets marques Folk ne sont plus dans la base.');
+        return;
+    }
+    const blob = new Blob(['﻿' + buildFolkCsv(marked)], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `folk_import_${todayISO()}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+    alert(`${marked.length} cabinet(s) Folk exporte(s) en CSV.\n\nImportez ce fichier dans Folk : Folk > Import > CSV.`);
 }
 
 window.openFolkSettings = openFolkSettings;
