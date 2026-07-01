@@ -1,5 +1,141 @@
 {
   "last_updated": "2026-07-01",
-  "count": 0,
-  "new_members": []
+  "count": 9,
+  "new_members": [
+    {
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "city": "Saint Amand Les Eaux",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33680598611",
+      "email": ""
+    },
+    {
+      "id": "cgp_627ae38ea9",
+      "company_name": "EQUANCE*",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0aa74362ed",
+      "company_name": "FINANCIERE SAINT LAMBERT",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3b9f5ae52e",
+      "company_name": "OLIFAN GROUP",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_8e54d75dd1",
+      "company_name": "COURTEYS COURTAGE",
+      "city": "Saint-Cloud",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33171177731",
+      "email": ""
+    },
+    {
+      "id": "cgp_24852181ba",
+      "company_name": "S O P",
+      "city": "Saint-Maur-Des-Fosses",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_35a065608d",
+      "company_name": "SARL LITTORAL PATRIMOINE",
+      "city": "Saint Brieuc",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_8fc6633b39",
+      "company_name": "RELIANCE PATRIMOINE",
+      "city": "Le Mans",
+      "department": "72",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33609643128",
+      "email": ""
+    },
+    {
+      "id": "cgp_3435a8750b",
+      "company_name": "OPTIMISATION PATRIMONIALE",
+      "city": "Sanary Sur Mer",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-01",
+      "phone": "+33663043294",
+      "email": ""
+    }
+  ]
 }
