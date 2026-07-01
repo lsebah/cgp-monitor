@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T10:27:43.287079+00:00",
+  "last_updated": "2026-07-01T10:39:55.889121+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -50,9 +50,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-06-30T10:30:30.097050+00:00",
-      "websites": 455,
-      "emails": 7437
+      "timestamp": "2026-07-01T10:39:55.889121+00:00",
+      "websites": 454,
+      "emails": 7438
     },
     "closed_cleanup": {
       "status": "success",
@@ -159,9 +159,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-06-30T10:30:30.097050+00:00",
-        "websites": 455,
-        "emails": 7437
+        "timestamp": "2026-07-01T10:39:55.889121+00:00",
+        "websites": 454,
+        "emails": 7438
       },
       "closed_cleanup": {
         "status": "success",
@@ -174,7 +174,7 @@
         "fixed": 373
       }
     },
-    "last_updated": "2026-07-01T10:27:43.287079+00:00"
+    "last_updated": "2026-07-01T10:39:55.889121+00:00"
   },
   "members": [
     {
@@ -28688,8 +28688,8 @@
         "region": "Grand Est"
       },
       "phone": "+33628644345",
-      "email": "",
-      "website": "",
+      "email": "contact.aic@aicpatrimoine.fr",
+      "website": "https://aicpatrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -28715,6 +28715,9 @@
       "creation_date": "2026-05-22",
       "data_gouv": {
         "etat_administratif": "A"
+      },
+      "website_meta": {
+        "discovered_via": "brave"
       }
     },
     {
@@ -48526,7 +48529,7 @@
       },
       "phone": "+33962156275",
       "email": "antezar.gestionprivee@gmail.com",
-      "website": "",
+      "website": "https://antezar-gestionprivee.com/",
       "activities": [
         "CIF"
       ],
@@ -48574,6 +48577,9 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "66.19B"
+      },
+      "website_meta": {
+        "discovered_via": "ddg"
       }
     },
     {
@@ -283993,8 +283999,8 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33613418006",
-      "email": "",
-      "website": "",
+      "email": "contact@herest.fr",
+      "website": "https://www.herest.fr/",
       "activities": [
         "CIF"
       ],
@@ -284026,6 +284032,9 @@
       "creation_date": "2026-05-20",
       "data_gouv": {
         "etat_administratif": "A"
+      },
+      "website_meta": {
+        "discovered_via": "brave"
       }
     },
     {
@@ -413868,7 +413877,7 @@
       },
       "phone": "+33695986469",
       "email": "paul@octant-patrimoine.fr",
-      "website": "",
+      "website": "https://www.octant-patrimoine.fr/",
       "activities": [
         "COA",
         "IOBSP",
@@ -413913,6 +413922,9 @@
         "effectif_tranche": "NN",
         "effectif_label": "Non renseigné",
         "naf": "70.22Z"
+      },
+      "website_meta": {
+        "discovered_via": "ddg"
       }
     },
     {
@@ -416172,7 +416184,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://olifangroup.com/",
       "activities": [
         "CIF"
       ],
@@ -416187,7 +416199,10 @@
       "first_seen": "2026-07-01",
       "last_seen": "2026-07-01",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "ddg"
+      }
     },
     {
       "id": "cgp_2582e2b2eb",
