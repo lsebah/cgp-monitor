@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T07:09:14.506393+00:00",
+  "last_updated": "2026-07-01T08:44:30.129110+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -39,8 +39,9 @@
     },
     "datagouv_enrich": {
       "status": "success",
-      "timestamp": "2026-06-30T08:24:18.893286+00:00",
-      "missing_creation_date": 2282
+      "timestamp": "2026-07-01T08:44:30.129110+00:00",
+      "missing_creation_date": 2285,
+      "purged_closed": 8
     },
     "registre_recent": {
       "status": "disabled",
@@ -60,14 +61,14 @@
     }
   },
   "stats": {
-    "total_members": 10018,
+    "total_members": 10010,
     "new_today": 0,
-    "new_this_week": 92,
-    "new_this_month": 158,
+    "new_this_week": 84,
+    "new_this_month": 150,
     "by_association": {
       "anacofi": 3137,
       "cncef": 4647,
-      "cncgp": 2527,
+      "cncgp": 2519,
       "ucgp": 63,
       "leaders_league": 34,
       "registre": 5,
@@ -75,15 +76,15 @@
       "affo": 20
     },
     "by_activity": {
-      "CIF": 7044,
+      "CIF": 7036,
       "COA": 3984,
       "IOBSP": 1835,
       "Immobilier": 946
     },
     "by_department": {
-      "75": 1639,
+      "75": 1636,
       "69": 528,
-      "92": 456,
+      "92": 455,
       "33": 401,
       "31": 391,
       "13": 363,
@@ -91,18 +92,79 @@
       "06": 292,
       "78": 273,
       "34": 253,
-      "59": 223,
       "38": 222,
+      "59": 222,
       "67": 196,
       "37": 183,
-      "94": 176,
-      "83": 175,
+      "94": 175,
+      "83": 174,
       "35": 167,
       "64": 140,
       "77": 126,
       "74": 113
     },
-    "total_departments": 100
+    "total_departments": 100,
+    "scrape_status": {
+      "cncgp": {
+        "status": "success",
+        "count": 2657,
+        "timestamp": "2026-06-30T09:44:28.156957+00:00",
+        "duration_s": 569.4
+      },
+      "cncef": {
+        "status": "partial",
+        "count": 96,
+        "kept": 4647,
+        "timestamp": "2026-07-01T08:00:13.599047+00:00",
+        "duration_s": 1186.7
+      },
+      "anacofi": {
+        "status": "success",
+        "count": 0,
+        "timestamp": "2026-07-01T07:09:14.506393+00:00",
+        "duration_s": 4.0
+      },
+      "affo": {
+        "status": "success",
+        "count": 20,
+        "timestamp": "2026-07-01T07:09:14.506393+00:00",
+        "duration_s": 1.5
+      },
+      "registre_manual": {
+        "status": "success",
+        "added": 2,
+        "timestamp": "2026-06-02T12:25:43.078982+00:00"
+      },
+      "registre_naf_discovery": {
+        "status": "success",
+        "added": 17615,
+        "naf": "66.19B",
+        "timestamp": "2026-06-02T09:52:26.643314+00:00"
+      },
+      "datagouv_enrich": {
+        "status": "success",
+        "timestamp": "2026-07-01T08:44:30.129110+00:00",
+        "missing_creation_date": 2285,
+        "purged_closed": 8
+      },
+      "registre_recent": {
+        "status": "disabled",
+        "reason": "SIREN incoherents avec date creation - source non fiable",
+        "timestamp": "2026-06-30T14:42:55.805391+00:00"
+      },
+      "contacts_enrich": {
+        "status": "success",
+        "timestamp": "2026-06-30T10:30:30.097050+00:00",
+        "websites": 455,
+        "emails": 7437
+      },
+      "closed_cleanup": {
+        "status": "success",
+        "removed": 122,
+        "timestamp": "2026-06-30T08:47:47.614795+00:00"
+      }
+    },
+    "last_updated": "2026-07-01T08:44:30.129110+00:00"
   },
   "members": [
     {
@@ -70401,7 +70463,7 @@
       "id": "cgp_812fbc9c60",
       "company_name": "AURALYS CONSEIL",
       "company_name_normalized": "auralys conseil",
-      "siren": "",
+      "siren": "994854990",
       "orias_number": "",
       "address": {
         "street": "32 RUE GEORGES FONTANGES",
@@ -70420,6 +70482,18 @@
       "specialties": [],
       "directors": [
         {
+          "name": "KILIAN BEYAERT (BEYAERT-LABBÉ)",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "SAMUEL LAGARDE (LAGARDE)",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
           "name": "Kilian Beyaert",
           "role": "Adherent"
         }
@@ -70433,7 +70507,11 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2025-12-04",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_30a96045b6",
@@ -79652,7 +79730,7 @@
       "id": "cgp_4359a7cc22",
       "company_name": "BALMAT HOLDING",
       "company_name_normalized": "balmat holding",
-      "siren": "",
+      "siren": "818704678",
       "orias_number": "",
       "address": {
         "street": "15 RUE LAURISTON",
@@ -79671,8 +79749,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Thibaut Mortelecq",
-          "role": "Adherent"
+          "name": "THIBAUT MORTELECQ",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -79684,7 +79764,12 @@
       "first_seen": "2026-06-30",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2016-02-08",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_fcb177de51",
@@ -107708,7 +107793,7 @@
       "id": "cgp_d8c5c88765",
       "company_name": "BWR GESTION PRIVÉE",
       "company_name_normalized": "bwr gestion privee",
-      "siren": "",
+      "siren": "952530905",
       "orias_number": "",
       "address": {
         "street": "1 AVENUE JEAN BERTIN",
@@ -107727,8 +107812,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Yoann Bizot",
-          "role": "Adherent"
+          "name": "YOANN BIZOT",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -107740,7 +107827,12 @@
       "first_seen": "2026-06-30",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2023-05-12",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_cec7503d67",
@@ -165958,44 +166050,6 @@
       }
     },
     {
-      "id": "cgp_8e54d75dd1",
-      "company_name": "COURTEYS COURTAGE",
-      "company_name_normalized": "courteys courtage",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "11 RUE DE LA LIBERATION",
-        "postal_code": "92210",
-        "city": "Saint-Cloud",
-        "department": "92",
-        "department_name": "Hauts-de-Seine",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33171177731",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Alain Meyer",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
       "id": "cgp_c0b01fbad7",
       "company_name": "COURTI&D",
       "company_name_normalized": "courtid",
@@ -210310,44 +210364,6 @@
       }
     },
     {
-      "id": "cgp_15f62f3a66",
-      "company_name": "ENVAIN PATRIMOINE",
-      "company_name_normalized": "envain patrimoine",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "34 RUE THIERS",
-        "postal_code": "59230",
-        "city": "Saint Amand Les Eaux",
-        "department": "59",
-        "department_name": "Nord",
-        "region": "Hauts-de-France"
-      },
-      "phone": "+33680598611",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Emeline Envain",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
       "id": "cgp_a1d035136a",
       "company_name": "ENVERGUR CONSEIL",
       "company_name_normalized": "envergur conseil",
@@ -212895,39 +212911,6 @@
           "produits structures"
         ]
       }
-    },
-    {
-      "id": "cgp_627ae38ea9",
-      "company_name": "EQUANCE*",
-      "company_name_normalized": "equance",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "43 RUE SAINT-AUGUSTIN",
-        "postal_code": "75002",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
     },
     {
       "id": "cgp_f8dc4e81ae",
@@ -229731,7 +229714,7 @@
       "id": "cgp_6ab2d24947",
       "company_name": "FB CONSEILS ET PATRIMOINE",
       "company_name_normalized": "fb conseils et patrimoine",
-      "siren": "",
+      "siren": "983842741",
       "orias_number": "",
       "address": {
         "street": "9 AVENUE DES ROMAINS",
@@ -229750,8 +229733,10 @@
       "specialties": [],
       "directors": [
         {
-          "name": "François Boyon",
-          "role": "Adherent"
+          "name": "FRANÇOIS BOYON",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -229763,7 +229748,11 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2024-01-24",
+      "data_gouv": {
+        "etat_administratif": "A"
+      }
     },
     {
       "id": "cgp_1e55ed063b",
@@ -241661,44 +241650,6 @@
         "categorie_entreprise": "PME",
         "naf": "70.22Z"
       }
-    },
-    {
-      "id": "cgp_0aa74362ed",
-      "company_name": "FINANCIERE SAINT LAMBERT",
-      "company_name_normalized": "financiere saint lambert",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "14 RUE DE MARIGNAN",
-        "postal_code": "75008",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Alexandre Mazzuca",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
     },
     {
       "id": "cgp_3e10d1d430",
@@ -381872,7 +381823,7 @@
       "id": "cgp_60b90f8856",
       "company_name": "MEYON ULTIM PARIS",
       "company_name_normalized": "meyon ultim paris",
-      "siren": "",
+      "siren": "510225469",
       "orias_number": "",
       "address": {
         "street": "62 RUE LA BOÉTIE",
@@ -381891,8 +381842,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Vincent Mallet",
-          "role": "Adherent"
+          "name": "CAROLE MALLET (GAUDICHEAU)",
+          "role": "Directeur Général",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "VINCENT MALLET",
+          "role": "Président de SAS",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -381904,7 +381863,12 @@
       "first_seen": "2026-06-30",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2009-02-21",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_53083404be",
@@ -415598,42 +415562,6 @@
       "groupement_tier": "Forte notoriété"
     },
     {
-      "id": "cgp_3b9f5ae52e",
-      "company_name": "OLIFAN GROUP",
-      "company_name_normalized": "olifan group",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "40 RUE DE LA BOÚTIE",
-        "postal_code": "75008",
-        "city": "Paris",
-        "department": "75",
-        "department_name": "Paris",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "https://olifangroup.com/",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {},
-      "website_meta": {
-        "discovered_via": "ddg"
-      }
-    },
-    {
       "id": "cgp_2582e2b2eb",
       "company_name": "OLIVAL PATRIMOINE CONSEIL",
       "company_name_normalized": "olival patrimoine conseil",
@@ -420703,44 +420631,6 @@
       },
       "groupement": null,
       "first_seen": "2026-04-13",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
-      "id": "cgp_3435a8750b",
-      "company_name": "OPTIMISATION PATRIMONIALE",
-      "company_name_normalized": "optimisation patrimoniale",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "11 rue gabriel Peri",
-        "postal_code": "83110",
-        "city": "Sanary Sur Mer",
-        "department": "83",
-        "department_name": "Var",
-        "region": "Provence-Alpes-Cote d'Azur"
-      },
-      "phone": "+33663043294",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Thierry Hortigue",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
       "last_seen": "2026-07-01",
       "is_new": false,
       "source_urls": {}
@@ -482261,44 +482151,6 @@
       }
     },
     {
-      "id": "cgp_24852181ba",
-      "company_name": "S O P",
-      "company_name_normalized": "s o p",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "85 BOULEVARD RABELAIS",
-        "postal_code": "94100",
-        "city": "Saint-Maur-Des-Fosses",
-        "department": "94",
-        "department_name": "Val-de-Marne",
-        "region": "Ile-de-France"
-      },
-      "phone": "+33143971155",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Adrien Fiat",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
       "id": "cgp_fde4d838bc",
       "company_name": "S W I",
       "company_name_normalized": "s w i",
@@ -490036,44 +489888,6 @@
       },
       "groupement": null,
       "first_seen": "2026-04-13",
-      "last_seen": "2026-07-01",
-      "is_new": false,
-      "source_urls": {}
-    },
-    {
-      "id": "cgp_35a065608d",
-      "company_name": "SARL LITTORAL PATRIMOINE",
-      "company_name_normalized": "littoral patrimoine",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "71RUE JULES FERRY",
-        "postal_code": "22000",
-        "city": "Saint Brieuc",
-        "department": "22",
-        "department_name": "Cotes-d'Armor",
-        "region": "Bretagne"
-      },
-      "phone": "+33678821214",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Stéphanie Gaucher",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-06-30",
       "last_seen": "2026-07-01",
       "is_new": false,
       "source_urls": {}
@@ -551620,7 +551434,7 @@
       "id": "cgp_583c0bbc91",
       "company_name": "VIRIDIS PATRIMOINE",
       "company_name_normalized": "viridis patrimoine",
-      "siren": "",
+      "siren": "920996444",
       "orias_number": "",
       "address": {
         "street": "20 RUE BLANCHE",
@@ -551639,8 +551453,16 @@
       "specialties": [],
       "directors": [
         {
-          "name": "Jonathan Pierre-Jean",
-          "role": "Adherent"
+          "name": "JONATHAN PIERRE-JEAN",
+          "role": "Gérant",
+          "source": "data.gouv",
+          "type": "personne physique"
+        },
+        {
+          "name": "THIBAUT VIEIRA",
+          "role": "Personne ayant le pouvoir d'engager à titre habituel la société",
+          "source": "data.gouv",
+          "type": "personne physique"
         }
       ],
       "associations": {
@@ -551652,7 +551474,12 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-07-01",
       "is_new": false,
-      "source_urls": {}
+      "source_urls": {},
+      "creation_date": "2022-10-25",
+      "data_gouv": {
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME"
+      }
     },
     {
       "id": "cgp_2be6699bb5",
