@@ -1,6 +1,6 @@
 {
   "total_members": 10020,
-  "new_today": 13,
+  "new_today": 0,
   "new_this_week": 94,
   "new_this_month": 160,
   "by_association": {
@@ -103,9 +103,9 @@
     },
     "cncef_detail_enrich": {
       "status": "success",
-      "timestamp": "2026-07-01T10:27:43.287079+00:00",
-      "fixed": 373
+      "timestamp": "2026-07-02T09:41:16.604391+00:00",
+      "fixed": 386
     }
   },
-  "last_updated": "2026-07-02T09:18:16.543779+00:00"
+  "last_updated": "2026-07-02T09:41:16.604391+00:00"
 }
