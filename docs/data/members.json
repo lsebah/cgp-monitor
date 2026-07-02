@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T09:41:16.604391+00:00",
+  "last_updated": "2026-07-02T09:59:25.501526+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -50,9 +50,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-01T10:39:55.889121+00:00",
+      "timestamp": "2026-07-02T09:59:25.501526+00:00",
       "websites": 454,
-      "emails": 7438
+      "emails": 7439
     },
     "closed_cleanup": {
       "status": "success",
@@ -159,9 +159,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-01T10:39:55.889121+00:00",
+        "timestamp": "2026-07-02T09:59:25.501526+00:00",
         "websites": 454,
-        "emails": 7438
+        "emails": 7439
       },
       "closed_cleanup": {
         "status": "success",
@@ -174,7 +174,7 @@
         "fixed": 386
       }
     },
-    "last_updated": "2026-07-02T09:41:16.604391+00:00"
+    "last_updated": "2026-07-02T09:59:25.501526+00:00"
   },
   "members": [
     {
@@ -26334,7 +26334,7 @@
         "region": "Auvergne-Rhone-Alpes"
       },
       "phone": "+33749766160",
-      "email": "",
+      "email": "contact@agencepatrimoine.fr",
       "website": "http://www.agencepatrimoine.fr",
       "activities": [
         "CIF"
@@ -416692,7 +416692,7 @@
       },
       "phone": "",
       "email": "",
-      "website": "",
+      "website": "https://olifangroup.com/",
       "activities": [
         "CIF"
       ],
@@ -416707,7 +416707,10 @@
       "first_seen": "2026-07-02",
       "last_seen": "2026-07-02",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "ddg"
+      }
     },
     {
       "id": "cgp_2582e2b2eb",
