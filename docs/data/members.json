@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-02T08:00:13.400622+00:00",
+  "last_updated": "2026-07-02T09:18:16.543779+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
       "count": 2653,
-      "timestamp": "2026-07-01T09:55:17.020133+00:00",
-      "duration_s": 561.8
+      "timestamp": "2026-07-02T09:18:16.543779+00:00",
+      "duration_s": 559.8
     },
     "cncef": {
       "status": "partial",
@@ -66,14 +66,14 @@
     }
   },
   "stats": {
-    "total_members": 10007,
-    "new_today": 0,
-    "new_this_week": 81,
-    "new_this_month": 147,
+    "total_members": 10020,
+    "new_today": 13,
+    "new_this_week": 94,
+    "new_this_month": 160,
     "by_association": {
       "anacofi": 3137,
       "cncef": 4647,
-      "cncgp": 2517,
+      "cncgp": 2530,
       "ucgp": 63,
       "leaders_league": 34,
       "registre": 5,
@@ -81,100 +81,34 @@
       "affo": 20
     },
     "by_activity": {
-      "CIF": 7033,
+      "CIF": 7046,
       "COA": 3984,
       "IOBSP": 1835,
       "Immobilier": 946
     },
     "by_department": {
-      "75": 1636,
-      "69": 527,
-      "92": 455,
+      "75": 1639,
+      "69": 529,
+      "92": 456,
       "33": 401,
       "31": 391,
       "13": 363,
-      "44": 315,
+      "44": 316,
       "06": 292,
       "78": 273,
       "34": 253,
+      "59": 223,
       "38": 222,
-      "59": 222,
       "67": 196,
       "37": 183,
-      "94": 175,
-      "83": 174,
+      "94": 176,
+      "83": 175,
       "35": 167,
       "64": 140,
       "77": 126,
       "74": 113
     },
-    "total_departments": 100,
-    "scrape_status": {
-      "cncgp": {
-        "status": "success",
-        "count": 2653,
-        "timestamp": "2026-07-01T09:55:17.020133+00:00",
-        "duration_s": 561.8
-      },
-      "cncef": {
-        "status": "partial",
-        "count": 12,
-        "kept": 4647,
-        "timestamp": "2026-07-02T06:57:33.170963+00:00",
-        "duration_s": 940.0
-      },
-      "anacofi": {
-        "status": "success",
-        "count": 0,
-        "timestamp": "2026-07-02T06:39:30.511030+00:00",
-        "duration_s": 4.4
-      },
-      "affo": {
-        "status": "success",
-        "count": 20,
-        "timestamp": "2026-07-02T06:39:30.511030+00:00",
-        "duration_s": 2.1
-      },
-      "registre_manual": {
-        "status": "success",
-        "added": 2,
-        "timestamp": "2026-06-02T12:25:43.078982+00:00"
-      },
-      "registre_naf_discovery": {
-        "status": "success",
-        "added": 17615,
-        "naf": "66.19B",
-        "timestamp": "2026-06-02T09:52:26.643314+00:00"
-      },
-      "datagouv_enrich": {
-        "status": "success",
-        "timestamp": "2026-07-02T08:00:13.400622+00:00",
-        "missing_creation_date": 2275,
-        "purged_closed": 12
-      },
-      "registre_recent": {
-        "status": "disabled",
-        "reason": "SIREN incoherents avec date creation - source non fiable",
-        "timestamp": "2026-06-30T14:42:55.805391+00:00"
-      },
-      "contacts_enrich": {
-        "status": "success",
-        "timestamp": "2026-07-01T10:39:55.889121+00:00",
-        "websites": 454,
-        "emails": 7438
-      },
-      "closed_cleanup": {
-        "status": "success",
-        "removed": 122,
-        "timestamp": "2026-06-30T08:47:47.614795+00:00"
-      },
-      "cncef_detail_enrich": {
-        "status": "success",
-        "timestamp": "2026-07-01T10:27:43.287079+00:00",
-        "fixed": 373
-      }
-    },
-    "last_updated": "2026-07-02T08:00:13.400622+00:00"
+    "total_departments": 100
   },
   "members": [
     {
@@ -1341,10 +1275,10 @@
       "email": "christophe.decaix@2bpatrimoine.com",
       "website": "https://www.2bpatrimoine.com/",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "CIF",
+        "Immobilier",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -1782,8 +1716,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -4329,8 +4263,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -4559,9 +4493,9 @@
       ],
       "specialties": [
         "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier"
       ],
       "directors": [
         {
@@ -5380,16 +5314,16 @@
       "email": "adreux@adgestionprivee.com",
       "website": "https://www.ma-gestionprivee.com/page/11803/le-cabinet/",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -5797,8 +5731,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -6989,8 +6923,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -8231,9 +8165,9 @@
       ],
       "specialties": [
         "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier"
       ],
       "directors": [
         {
@@ -14643,16 +14577,16 @@
       "email": "c.lefevre@actiexpert.fr",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -15893,8 +15827,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -16472,16 +16406,16 @@
       "email": "vincent.monnet@acvm-patrimoine.fr",
       "website": "https://cgpatrimoine.net/",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -17120,12 +17054,12 @@
         "CIF"
       ],
       "specialties": [
-        "Transmission de patrimoine",
-        "Protection de la famille",
-        "Retraite",
-        "Stratégie patrimoniale",
         "Conseils investissements financiers",
-        "Optimisation fiscale"
+        "Stratégie patrimoniale",
+        "Optimisation fiscale",
+        "Transmission de patrimoine",
+        "Retraite",
+        "Protection de la famille"
       ],
       "directors": [
         {
@@ -18750,9 +18684,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -19721,10 +19655,10 @@
       "email": "contact@adl-patrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "CIF",
+        "Immobilier",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -22165,9 +22099,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -22797,9 +22731,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -27379,9 +27313,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -28420,8 +28354,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -30447,16 +30381,16 @@
       "email": "micha.girard@yahoo.fr",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -36745,8 +36679,8 @@
       "specialties": [
         "Protection sociale",
         "Optimisation rémunération du dirigeant",
-        "Epargne salariale",
-        "Retraite"
+        "Retraite",
+        "Epargne salariale"
       ],
       "directors": [
         {
@@ -40050,10 +39984,10 @@
         "COA"
       ],
       "specialties": [
-        "Investissements financiers",
+        "Investissements immobiliers",
         "Stratégie patrimoniale",
-        "Assurance",
-        "Investissements immobiliers"
+        "Investissements financiers",
+        "Assurance"
       ],
       "directors": [
         {
@@ -41838,8 +41772,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -42616,8 +42550,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -53243,8 +53177,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -67359,12 +67293,12 @@
         "CIF"
       ],
       "specialties": [
-        "Crédit immobilier",
         "ATRIA PATRIMOINE",
-        "Droit de la Famille",
         "Assurance Vie",
+        "Crédit immobilier",
+        "Stratégie Patrimoniale",
         "Immobilier",
-        "Stratégie Patrimoniale"
+        "Droit de la Famille"
       ],
       "directors": [
         {
@@ -70650,7 +70584,7 @@
       "id": "cgp_812fbc9c60",
       "company_name": "AURALYS CONSEIL",
       "company_name_normalized": "auralys conseil",
-      "siren": "994854990",
+      "siren": "",
       "orias_number": "",
       "address": {
         "street": "32 RUE GEORGES FONTANGES",
@@ -70669,18 +70603,6 @@
       "specialties": [],
       "directors": [
         {
-          "name": "KILIAN BEYAERT (BEYAERT-LABBÉ)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "SAMUEL LAGARDE (LAGARDE)",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
           "name": "Kilian Beyaert",
           "role": "Adherent"
         }
@@ -70694,11 +70616,7 @@
       "first_seen": "2026-06-20",
       "last_seen": "2026-07-02",
       "is_new": false,
-      "source_urls": {},
-      "creation_date": "2025-12-04",
-      "data_gouv": {
-        "etat_administratif": "A"
-      }
+      "source_urls": {}
     },
     {
       "id": "cgp_30a96045b6",
@@ -71482,16 +71400,16 @@
       "email": "auroremichaudconseil@gmail.com",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -78158,9 +78076,9 @@
       ],
       "specialties": [
         "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier"
       ],
       "directors": [
         {
@@ -78380,16 +78298,16 @@
       "email": "bruno@byconseils.fr",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -78577,16 +78495,16 @@
       "email": "guillaume.bouron@b2patrimoine.com",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -78824,16 +78742,16 @@
       "email": "contact@b2rpatrimoine.com",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -84606,9 +84524,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -85066,8 +84984,8 @@
       "email": "info@bcrfinances.com",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
+        "CIF",
         "Immobilier"
       ],
       "specialties": [
@@ -92156,9 +92074,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -94275,8 +94193,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -94623,13 +94541,13 @@
       "email": "invest@blaquieres.com",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
-        "COA",
-        "Immobilier"
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -96058,8 +95976,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -103047,12 +102965,12 @@
       "email": "contact@bpfinancement.fr",
       "website": "",
       "activities": [
-        "COA",
-        "IOBSP"
+        "IOBSP",
+        "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -124517,10 +124435,10 @@
         "CIF"
       ],
       "specialties": [
+        "Fiscalité",
         "Placement",
-        "Retraite",
         "Successions",
-        "Fiscalité"
+        "Retraite"
       ],
       "directors": [
         {
@@ -134664,16 +134582,16 @@
       "email": "n.perreon@cdlapatrimoine.fr",
       "website": "https://www.lenapatrimoine.fr",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -139666,9 +139584,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -148022,10 +147940,10 @@
       "email": "clementlechipey@gmail.com",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "CIF",
+        "Immobilier",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -153466,11 +153384,11 @@
         "CIF"
       ],
       "specialties": [
-        "Transmission de patrimoine",
-        "Retraite",
         "Stratégie patrimoniale",
-        "Placements immobiliers & financiers",
         "Optimisation fiscale",
+        "Transmission de patrimoine",
+        "Placements immobiliers & financiers",
+        "Retraite",
         "Cession d'entreprise"
       ],
       "directors": [
@@ -159656,9 +159574,9 @@
         "CIF"
       ],
       "specialties": [
-        "Placements financiers",
+        "Ingénierie Patrimoniale",
         "Investissement immobilier France et USA",
-        "Ingénierie Patrimoniale"
+        "Placements financiers"
       ],
       "directors": [
         {
@@ -166598,6 +166516,44 @@
       }
     },
     {
+      "id": "cgp_8e54d75dd1",
+      "company_name": "COURTEYS COURTAGE",
+      "company_name_normalized": "courteys courtage",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11 RUE DE LA LIBERATION",
+        "postal_code": "92210",
+        "city": "Saint-Cloud",
+        "department": "92",
+        "department_name": "Hauts-de-Seine",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33171177731",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Alain Meyer",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_c0b01fbad7",
       "company_name": "COURTI&D",
       "company_name_normalized": "courtid",
@@ -167656,8 +167612,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -171030,16 +170986,16 @@
       "email": "thierry.ctlgpatrimoine@outlook.fr",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -171732,10 +171688,10 @@
       "email": "contact@cvpatrimoine.fr",
       "website": "",
       "activities": [
-        "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "CIF",
+        "Immobilier",
+        "IOBSP"
       ],
       "specialties": [
         "Assurance",
@@ -172586,6 +172542,72 @@
       "source_urls": {}
     },
     {
+      "id": "cgp_33e991920a",
+      "company_name": "CYRUS CONSEIL CAEN",
+      "company_name_normalized": "cyrus conseil caen",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "8, RUE MARTIN LUTHER KING",
+        "postal_code": "14280",
+        "city": "Saint Contest",
+        "department": "14",
+        "department_name": "Calvados",
+        "region": "Normandie"
+      },
+      "phone": "+33231869515",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
+      "id": "cgp_855e90d152",
+      "company_name": "CYRUS CONSEIL DIJON",
+      "company_name_normalized": "cyrus conseil dijon",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "10 C, RUE PAUL VERLAINE",
+        "postal_code": "21000",
+        "city": "Dijon",
+        "department": "21",
+        "department_name": "Cote-d'Or",
+        "region": "Bourgogne-Franche-Comte"
+      },
+      "phone": "+33380780672",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_afc3a8ab62",
       "company_name": "CYRUS CONSEIL FRÉJUS - ST RAPHAËL",
       "company_name_normalized": "cyrus conseil frejus  st raphael",
@@ -172649,6 +172671,72 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-07-02",
       "is_new": false,
+      "source_urls": {}
+    },
+    {
+      "id": "cgp_5b473b6880",
+      "company_name": "CYRUS CONSEIL LYON",
+      "company_name_normalized": "cyrus conseil lyon",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "47, RUE DE LA RÉPUBLIQUE",
+        "postal_code": "69002",
+        "city": "Lyon",
+        "department": "69",
+        "department_name": "Rhone",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "+33472983838",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
+      "id": "cgp_a5802d7119",
+      "company_name": "CYRUS CONSEIL NANTES",
+      "company_name_normalized": "cyrus conseil nantes",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1, RUE ALPHONSE GAUTTE",
+        "postal_code": "44000",
+        "city": "Nantes",
+        "department": "44",
+        "department_name": "Loire-Atlantique",
+        "region": "Pays de la Loire"
+      },
+      "phone": "+33679012230",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
       "source_urls": {}
     },
     {
@@ -182410,16 +182498,16 @@
       "email": "philippe.delcamp@feodus-patrimoine.fr",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -186544,8 +186632,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -201037,10 +201125,10 @@
         "CIF"
       ],
       "specialties": [
-        "Optimisation du revenu du dirigeant",
+        "Optimisation de la trésorerie excédentaire des personnes morales",
         "Gestion des avoirs financiers des particuliers",
         "Conseil en transmission personnelle et professionnelle",
-        "Optimisation de la trésorerie excédentaire des personnes morales",
+        "Optimisation du revenu du dirigeant",
         "Conseil fiscal"
       ],
       "directors": [
@@ -201662,8 +201750,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -210729,8 +210817,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -210778,6 +210866,44 @@
         "categorie_entreprise": "PME",
         "naf": "66.19B"
       }
+    },
+    {
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "company_name_normalized": "envain patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "34 RUE THIERS",
+        "postal_code": "59230",
+        "city": "Saint Amand Les Eaux",
+        "department": "59",
+        "department_name": "Nord",
+        "region": "Hauts-de-France"
+      },
+      "phone": "+33680598611",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Emeline Envain",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
     },
     {
       "id": "cgp_a1d035136a",
@@ -213327,6 +213453,39 @@
           "produits structures"
         ]
       }
+    },
+    {
+      "id": "cgp_627ae38ea9",
+      "company_name": "EQUANCE*",
+      "company_name_normalized": "equance",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "43 RUE SAINT-AUGUSTIN",
+        "postal_code": "75002",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
     },
     {
       "id": "cgp_f8dc4e81ae",
@@ -226958,16 +227117,16 @@
       "email": "francois.auvillain@gmail.com",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -230088,8 +230247,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -230130,7 +230289,7 @@
       "id": "cgp_6ab2d24947",
       "company_name": "FB CONSEILS ET PATRIMOINE",
       "company_name_normalized": "fb conseils et patrimoine",
-      "siren": "983842741",
+      "siren": "",
       "orias_number": "",
       "address": {
         "street": "9 AVENUE DES ROMAINS",
@@ -230149,10 +230308,8 @@
       "specialties": [],
       "directors": [
         {
-          "name": "FRANÇOIS BOYON",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
+          "name": "François Boyon",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -230164,11 +230321,7 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-07-02",
       "is_new": false,
-      "source_urls": {},
-      "creation_date": "2024-01-24",
-      "data_gouv": {
-        "etat_administratif": "A"
-      }
+      "source_urls": {}
     },
     {
       "id": "cgp_1e55ed063b",
@@ -230916,16 +231069,16 @@
       "email": "alexia.gashti@fddpatrimoine.com",
       "website": "http://www.ldv-patrimoine.fr",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -231026,9 +231179,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -242068,6 +242221,44 @@
       }
     },
     {
+      "id": "cgp_0aa74362ed",
+      "company_name": "FINANCIERE SAINT LAMBERT",
+      "company_name_normalized": "financiere saint lambert",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "14 RUE DE MARIGNAN",
+        "postal_code": "75008",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Alexandre Mazzuca",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_3e10d1d430",
       "company_name": "FINANCIERE TANGUY ROUAULT",
       "company_name_normalized": "financiere tanguy rouault",
@@ -246677,8 +246868,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -266439,13 +266630,13 @@
       "email": "frederic.meites@gmo-conseil.fr",
       "website": "",
       "activities": [
-        "Immobilier",
+        "COA",
         "CIF",
-        "COA"
+        "Immobilier"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -277851,16 +278042,16 @@
       "email": "contact@h3patrimoine.com",
       "website": "",
       "activities": [
+        "Immobilier",
         "CIF",
         "COA",
-        "IOBSP",
-        "Immobilier"
+        "IOBSP"
       ],
       "specialties": [
-        "Assurance",
         "Crédit",
         "Patrimoine",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -284034,12 +284225,12 @@
         "CIF"
       ],
       "specialties": [
-        "Retraite",
-        "Placements immobiliers",
-        "Stratégie patrimoniale",
-        "Allocation d'actifs",
         "Assurance Vie",
-        "Optimisation fiscale"
+        "Stratégie patrimoniale",
+        "Optimisation fiscale",
+        "Allocation d'actifs",
+        "Placements immobiliers",
+        "Retraite"
       ],
       "directors": [
         {
@@ -307069,8 +307260,8 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Crédit"
+        "Crédit",
+        "Assurance"
       ],
       "directors": [
         {
@@ -314123,16 +314314,16 @@
       "email": "ahumez@groupesarro.com",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -314830,16 +315021,16 @@
       "email": "contact@jneconseils.com",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -316461,8 +316652,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -358146,16 +358337,16 @@
       "email": "loubeau.romain@lrpatrimoine.com",
       "website": "",
       "activities": [
-        "Immobilier",
-        "CIF",
         "COA",
+        "CIF",
+        "Immobilier",
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -366843,13 +367034,13 @@
       "email": "aurelie.esquivel@maigo-patrimoine.com",
       "website": "",
       "activities": [
-        "Immobilier",
+        "COA",
         "CIF",
-        "COA"
+        "Immobilier"
       ],
       "specialties": [
-        "Assurance",
-        "Immobilier"
+        "Immobilier",
+        "Assurance"
       ],
       "directors": [
         {
@@ -376888,8 +377079,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -409784,9 +409975,9 @@
         "IOBSP"
       ],
       "specialties": [
-        "Assurance",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Assurance"
       ],
       "directors": [
         {
@@ -415984,6 +416175,39 @@
       "groupement_tier": "Forte notoriété"
     },
     {
+      "id": "cgp_3b9f5ae52e",
+      "company_name": "OLIFAN GROUP",
+      "company_name_normalized": "olifan group",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "40 RUE DE LA BOÚTIE",
+        "postal_code": "75008",
+        "city": "Paris",
+        "department": "75",
+        "department_name": "Paris",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_2582e2b2eb",
       "company_name": "OLIVAL PATRIMOINE CONSEIL",
       "company_name_normalized": "olival patrimoine conseil",
@@ -421055,6 +421279,44 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-07-02",
       "is_new": false,
+      "source_urls": {}
+    },
+    {
+      "id": "cgp_3435a8750b",
+      "company_name": "OPTIMISATION PATRIMONIALE",
+      "company_name_normalized": "optimisation patrimoniale",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "11 rue gabriel Peri",
+        "postal_code": "83110",
+        "city": "Sanary Sur Mer",
+        "department": "83",
+        "department_name": "Var",
+        "region": "Provence-Alpes-Cote d'Azur"
+      },
+      "phone": "+33663043294",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Thierry Hortigue",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
       "source_urls": {}
     },
     {
@@ -470859,8 +471121,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -482621,6 +482883,44 @@
       }
     },
     {
+      "id": "cgp_24852181ba",
+      "company_name": "S O P",
+      "company_name_normalized": "s o p",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "85 BOULEVARD RABELAIS",
+        "postal_code": "94100",
+        "city": "Saint-Maur-Des-Fosses",
+        "department": "94",
+        "department_name": "Val-de-Marne",
+        "region": "Ile-de-France"
+      },
+      "phone": "+33143971155",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Adrien Fiat",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_fde4d838bc",
       "company_name": "S W I",
       "company_name_normalized": "s w i",
@@ -486943,9 +487243,9 @@
       ],
       "specialties": [
         "Assurance",
-        "Immobilier",
+        "Crédit",
         "Patrimoine",
-        "Crédit"
+        "Immobilier"
       ],
       "directors": [
         {
@@ -490360,6 +490660,44 @@
       "first_seen": "2026-04-13",
       "last_seen": "2026-07-02",
       "is_new": false,
+      "source_urls": {}
+    },
+    {
+      "id": "cgp_35a065608d",
+      "company_name": "SARL LITTORAL PATRIMOINE",
+      "company_name_normalized": "littoral patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "71RUE JULES FERRY",
+        "postal_code": "22000",
+        "city": "Saint Brieuc",
+        "department": "22",
+        "department_name": "Cotes-d'Armor",
+        "region": "Bretagne"
+      },
+      "phone": "+33678821214",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Stéphanie Gaucher",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
       "source_urls": {}
     },
     {
@@ -514647,8 +514985,8 @@
         "COA"
       ],
       "specialties": [
-        "Assurance",
-        "Patrimoine"
+        "Patrimoine",
+        "Assurance"
       ],
       "directors": [
         {
@@ -531413,6 +531751,44 @@
       }
     },
     {
+      "id": "cgp_ae5ae73fd9",
+      "company_name": "TISSENDO PATRIMOINE",
+      "company_name_normalized": "tissendo patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "2 RUE DE LA CLAIRE",
+        "postal_code": "69009",
+        "city": "Lyon",
+        "department": "69",
+        "department_name": "Rhone",
+        "region": "Auvergne-Rhone-Alpes"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Delphine Floury",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "is_new": true,
+      "source_urls": {}
+    },
+    {
       "id": "cgp_81d096bfdb",
       "company_name": "TISSOPIN GUILLAUME",
       "company_name_normalized": "tissopin guillaume",
@@ -542745,10 +543121,10 @@
         "CIF"
       ],
       "specialties": [
-        "Transmission de patrimoine",
-        "Placements financiers",
+        "Fiscalité",
         "Ingénierie patrimoniale",
-        "Fiscalité"
+        "Placements financiers",
+        "Transmission de patrimoine"
       ],
       "directors": [
         {
@@ -551904,7 +552280,7 @@
       "id": "cgp_583c0bbc91",
       "company_name": "VIRIDIS PATRIMOINE",
       "company_name_normalized": "viridis patrimoine",
-      "siren": "920996444",
+      "siren": "",
       "orias_number": "",
       "address": {
         "street": "20 RUE BLANCHE",
@@ -551923,16 +552299,8 @@
       "specialties": [],
       "directors": [
         {
-          "name": "JONATHAN PIERRE-JEAN",
-          "role": "Gérant",
-          "source": "data.gouv",
-          "type": "personne physique"
-        },
-        {
-          "name": "THIBAUT VIEIRA",
-          "role": "Personne ayant le pouvoir d'engager à titre habituel la société",
-          "source": "data.gouv",
-          "type": "personne physique"
+          "name": "Jonathan Pierre-Jean",
+          "role": "Adherent"
         }
       ],
       "associations": {
@@ -551944,12 +552312,7 @@
       "first_seen": "2026-06-18",
       "last_seen": "2026-07-02",
       "is_new": false,
-      "source_urls": {},
-      "creation_date": "2022-10-25",
-      "data_gouv": {
-        "etat_administratif": "A",
-        "categorie_entreprise": "PME"
-      }
+      "source_urls": {}
     },
     {
       "id": "cgp_2be6699bb5",
