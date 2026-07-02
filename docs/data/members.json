@@ -9,10 +9,10 @@
     },
     "cncef": {
       "status": "partial",
-      "count": 96,
+      "count": 12,
       "kept": 4647,
-      "timestamp": "2026-07-01T08:00:13.599047+00:00",
-      "duration_s": 1186.7
+      "timestamp": "2026-07-02T06:57:33.170963+00:00",
+      "duration_s": 940.0
     },
     "anacofi": {
       "status": "success",
