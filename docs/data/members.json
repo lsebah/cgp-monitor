@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04T09:03:59.464347+00:00",
+  "last_updated": "2026-07-04T09:20:18.803167+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,9 +49,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-03T09:54:27.575418+00:00",
-      "websites": 455,
-      "emails": 7434
+      "timestamp": "2026-07-04T09:20:18.803167+00:00",
+      "websites": 457,
+      "emails": 7435
     },
     "closed_cleanup": {
       "status": "success",
@@ -157,9 +157,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-03T09:54:27.575418+00:00",
-        "websites": 455,
-        "emails": 7434
+        "timestamp": "2026-07-04T09:20:18.803167+00:00",
+        "websites": 457,
+        "emails": 7435
       },
       "closed_cleanup": {
         "status": "success",
@@ -172,7 +172,7 @@
         "fixed": 386
       }
     },
-    "last_updated": "2026-07-04T09:03:59.464347+00:00"
+    "last_updated": "2026-07-04T09:20:18.803167+00:00"
   },
   "members": [
     {
@@ -176272,7 +176272,7 @@
       },
       "phone": "+33679012230",
       "email": "",
-      "website": "",
+      "website": "https://www.cyrusconseil.fr/",
       "activities": [
         "CIF"
       ],
@@ -176287,7 +176287,10 @@
       "first_seen": "2026-07-04",
       "last_seen": "2026-07-04",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_1ac08d539d",
@@ -421689,7 +421692,7 @@
       },
       "phone": "+33689814702",
       "email": "",
-      "website": "",
+      "website": "https://www.ma-gestionprivee.com/",
       "activities": [
         "CIF"
       ],
@@ -421715,6 +421718,9 @@
       "creation_date": "2026-06-01",
       "data_gouv": {
         "etat_administratif": "A"
+      },
+      "website_meta": {
+        "discovered_via": "brave"
       }
     },
     {
