@@ -1,12 +1,12 @@
 {
-  "total_members": 12056,
-  "new_today": 1734,
-  "new_this_week": 3409,
-  "new_this_month": 3478,
+  "total_members": 11989,
+  "new_today": 0,
+  "new_this_week": 3342,
+  "new_this_month": 3411,
   "by_association": {
     "anacofi": 3138,
-    "cncef": 6684,
-    "cncgp": 2531,
+    "cncef": 6625,
+    "cncgp": 2523,
     "ucgp": 63,
     "leaders_league": 34,
     "registre": 5,
@@ -14,32 +14,32 @@
     "affo": 20
   },
   "by_activity": {
-    "CIF": 7787,
-    "COA": 5754,
-    "IOBSP": 2771,
-    "Immobilier": 1492
+    "CIF": 7773,
+    "COA": 5709,
+    "IOBSP": 2759,
+    "Immobilier": 1487
   },
   "by_department": {
-    "75": 1708,
-    "69": 647,
-    "92": 521,
-    "33": 506,
-    "31": 460,
-    "13": 429,
-    "44": 404,
-    "06": 354,
-    "78": 340,
-    "34": 308,
-    "38": 271,
-    "59": 271,
-    "37": 262,
+    "75": 1706,
+    "69": 644,
+    "92": 518,
+    "33": 504,
+    "31": 458,
+    "13": 428,
+    "44": 401,
+    "06": 353,
+    "78": 338,
+    "34": 306,
+    "59": 269,
+    "38": 266,
+    "37": 260,
     "83": 227,
-    "67": 224,
-    "94": 202,
+    "67": 223,
+    "94": 201,
     "35": 199,
-    "77": 165,
+    "77": 163,
     "64": 160,
-    "21": 153
+    "21": 150
   },
   "total_departments": 100,
   "scrape_status": {
@@ -80,9 +80,9 @@
     },
     "datagouv_enrich": {
       "status": "success",
-      "timestamp": "2026-07-04T07:38:16.979101+00:00",
-      "missing_creation_date": 3605,
-      "purged_closed": 65
+      "timestamp": "2026-07-05T07:52:02.629705+00:00",
+      "missing_creation_date": 3875,
+      "purged_closed": 67
     },
     "registre_recent": {
       "status": "disabled",
@@ -106,5 +106,5 @@
       "fixed": 386
     }
   },
-  "last_updated": "2026-07-05T06:57:38.887886+00:00"
+  "last_updated": "2026-07-05T07:52:02.629705+00:00"
 }
