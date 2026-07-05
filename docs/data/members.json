@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T09:25:53.342869+00:00",
+  "last_updated": "2026-07-05T09:40:23.314028+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,9 +49,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-04T09:20:18.803167+00:00",
+      "timestamp": "2026-07-05T09:40:23.314028+00:00",
       "websites": 457,
-      "emails": 7435
+      "emails": 7436
     },
     "closed_cleanup": {
       "status": "success",
@@ -157,9 +157,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-04T09:20:18.803167+00:00",
+        "timestamp": "2026-07-05T09:40:23.314028+00:00",
         "websites": 457,
-        "emails": 7435
+        "emails": 7436
       },
       "closed_cleanup": {
         "status": "success",
@@ -172,7 +172,7 @@
         "fixed": 388
       }
     },
-    "last_updated": "2026-07-05T09:25:53.342869+00:00"
+    "last_updated": "2026-07-05T09:40:23.314028+00:00"
   },
   "members": [
     {
@@ -47661,53 +47661,6 @@
       }
     },
     {
-      "id": "cgp_dd9e57f8ca",
-      "company_name": "ANDANTE",
-      "company_name_normalized": "andante",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "42-44 BOULEVARD DE LA LIBERTE",
-        "postal_code": "47200",
-        "city": "MARMANDE",
-        "department": "47",
-        "department_name": "Lot-et-Garonne",
-        "region": "Nouvelle-Aquitaine"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "IOBSP",
-        "CIF",
-        "COA"
-      ],
-      "specialties": [
-        "Crédit",
-        "Patrimoine",
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "ROUGIER Thibaud",
-          "role": "P"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-07-05",
-      "last_seen": "2026-07-05",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/andante/"
-      },
-      "address_detail_done": true
-    },
-    {
       "id": "cgp_3f8b26e940",
       "company_name": "ANDANTE",
       "company_name_normalized": "andante",
@@ -47767,6 +47720,53 @@
         "etat_administratif": "A",
         "categorie_entreprise": "PME"
       }
+    },
+    {
+      "id": "cgp_dd9e57f8ca",
+      "company_name": "ANDANTE",
+      "company_name_normalized": "andante",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "42-44 BOULEVARD DE LA LIBERTE",
+        "postal_code": "47200",
+        "city": "MARMANDE",
+        "department": "47",
+        "department_name": "Lot-et-Garonne",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "IOBSP",
+        "CIF",
+        "COA"
+      ],
+      "specialties": [
+        "Crédit",
+        "Patrimoine",
+        "Assurance"
+      ],
+      "directors": [
+        {
+          "name": "ROUGIER Thibaud",
+          "role": "P"
+        }
+      ],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-05",
+      "is_new": false,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/andante/"
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_917e5d55ef",
@@ -285937,8 +285937,8 @@
         "region": "Ile-de-France"
       },
       "phone": "+33669499518",
-      "email": "",
-      "website": "",
+      "email": "contact@harmony-patrimoine.fr",
+      "website": "https://harmony-patrimoine.fr/",
       "activities": [
         "CIF"
       ],
@@ -285968,6 +285968,9 @@
       "creation_date": "2026-05-06",
       "data_gouv": {
         "etat_administratif": "A"
+      },
+      "website_meta": {
+        "discovered_via": "brave"
       }
     },
     {
