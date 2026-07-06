@@ -91,9 +91,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-05T09:40:23.314028+00:00",
-      "websites": 457,
-      "emails": 7436
+      "timestamp": "2026-07-06T11:25:26.677851+00:00",
+      "websites": 458,
+      "emails": 7437
     },
     "closed_cleanup": {
       "status": "success",
@@ -106,5 +106,5 @@
       "fixed": 389
     }
   },
-  "last_updated": "2026-07-06T11:11:05.453463+00:00"
+  "last_updated": "2026-07-06T11:25:26.677851+00:00"
 }

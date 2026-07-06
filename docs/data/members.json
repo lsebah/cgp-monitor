@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T11:11:05.453463+00:00",
+  "last_updated": "2026-07-06T11:25:26.677851+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,9 +49,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-05T09:40:23.314028+00:00",
-      "websites": 457,
-      "emails": 7436
+      "timestamp": "2026-07-06T11:25:26.677851+00:00",
+      "websites": 458,
+      "emails": 7437
     },
     "closed_cleanup": {
       "status": "success",
@@ -157,9 +157,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-05T09:40:23.314028+00:00",
-        "websites": 457,
-        "emails": 7436
+        "timestamp": "2026-07-06T11:25:26.677851+00:00",
+        "websites": 458,
+        "emails": 7437
       },
       "closed_cleanup": {
         "status": "success",
@@ -172,7 +172,7 @@
         "fixed": 389
       }
     },
-    "last_updated": "2026-07-06T11:11:05.453463+00:00"
+    "last_updated": "2026-07-06T11:25:26.677851+00:00"
   },
   "members": [
     {
@@ -55552,6 +55552,47 @@
       "address_detail_done": true
     },
     {
+      "id": "cgp_e86561d1e5",
+      "company_name": "ARENAIRE GESTION PRIVEE",
+      "company_name_normalized": "arenaire gestion privee",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "1 RUE DE LA LIOTIÈRELE PALATIN",
+        "postal_code": "36300",
+        "city": "Le Blanc",
+        "department": "36",
+        "department_name": "Indre",
+        "region": "Centre-Val de Loire"
+      },
+      "phone": "",
+      "email": "contact@arenaire-gp.fr",
+      "website": "https://arenaire-gestion-privee.fr/",
+      "activities": [
+        "CIF"
+      ],
+      "specialties": [],
+      "directors": [
+        {
+          "name": "Louis Souchaud",
+          "role": "Adherent"
+        }
+      ],
+      "associations": {
+        "cncgp": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "is_new": true,
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "brave"
+      }
+    },
+    {
       "id": "cgp_7777150183",
       "company_name": "ARENAIRE GESTION PRIVEE",
       "company_name_normalized": "arenaire gestion privee",
@@ -55587,44 +55628,6 @@
       "first_seen": "2026-05-06",
       "last_seen": "2026-07-06",
       "is_new": false,
-      "source_urls": {}
-    },
-    {
-      "id": "cgp_e86561d1e5",
-      "company_name": "ARENAIRE GESTION PRIVEE",
-      "company_name_normalized": "arenaire gestion privee",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "1 RUE DE LA LIOTIÈRELE PALATIN",
-        "postal_code": "36300",
-        "city": "Le Blanc",
-        "department": "36",
-        "department_name": "Indre",
-        "region": "Centre-Val de Loire"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF"
-      ],
-      "specialties": [],
-      "directors": [
-        {
-          "name": "Louis Souchaud",
-          "role": "Adherent"
-        }
-      ],
-      "associations": {
-        "cncgp": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-07-06",
-      "last_seen": "2026-07-06",
-      "is_new": true,
       "source_urls": {}
     },
     {
