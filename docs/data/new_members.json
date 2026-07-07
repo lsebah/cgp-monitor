@@ -1,21 +1,5 @@
 {
-  "last_updated": "2026-07-06",
-  "count": 1,
-  "new_members": [
-    {
-      "id": "cgp_e86561d1e5",
-      "company_name": "ARENAIRE GESTION PRIVEE",
-      "city": "Le Blanc",
-      "department": "36",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-06",
-      "phone": "",
-      "email": ""
-    }
-  ]
+  "last_updated": "2026-07-07",
+  "count": 0,
+  "new_members": []
 }
