@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T10:02:31.293167+00:00",
+  "last_updated": "2026-07-09T10:21:35.506017+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,9 +49,9 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-08T09:23:57.049792+00:00",
-      "websites": 459,
-      "emails": 7437
+      "timestamp": "2026-07-09T10:21:35.506017+00:00",
+      "websites": 460,
+      "emails": 7438
     },
     "closed_cleanup": {
       "status": "success",
@@ -157,9 +157,9 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-08T09:23:57.049792+00:00",
-        "websites": 459,
-        "emails": 7437
+        "timestamp": "2026-07-09T10:21:35.506017+00:00",
+        "websites": 460,
+        "emails": 7438
       },
       "closed_cleanup": {
         "status": "success",
@@ -172,7 +172,7 @@
         "fixed": 161
       }
     },
-    "last_updated": "2026-07-09T10:02:31.293167+00:00"
+    "last_updated": "2026-07-09T10:21:35.506017+00:00"
   },
   "members": [
     {
@@ -574847,8 +574847,8 @@
         "region": "Occitanie"
       },
       "phone": "",
-      "email": "",
-      "website": "",
+      "email": "administration@wealthy-gestionprivee.com",
+      "website": "https://wealthy-gestionprivee.com/",
       "activities": [
         "CIF"
       ],
@@ -574868,7 +574868,10 @@
       "first_seen": "2026-07-09",
       "last_seen": "2026-07-09",
       "is_new": true,
-      "source_urls": {}
+      "source_urls": {},
+      "website_meta": {
+        "discovered_via": "brave"
+      }
     },
     {
       "id": "cgp_47d6c4f3a0",
