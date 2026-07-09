@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T09:51:04.918577+00:00",
+  "last_updated": "2026-07-09T10:02:31.293167+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -60,13 +60,13 @@
     },
     "cncef_detail_enrich": {
       "status": "success",
-      "timestamp": "2026-07-08T09:04:30.221157+00:00",
-      "fixed": 189
+      "timestamp": "2026-07-09T10:02:31.293167+00:00",
+      "fixed": 161
     }
   },
   "stats": {
     "total_members": 10360,
-    "new_today": 1,
+    "new_today": 0,
     "new_this_week": 2392,
     "new_this_month": 2472,
     "by_association": {
@@ -107,7 +107,72 @@
       "77": 131,
       "21": 116
     },
-    "total_departments": 100
+    "total_departments": 100,
+    "scrape_status": {
+      "cncgp": {
+        "status": "success",
+        "count": 2648,
+        "timestamp": "2026-07-09T09:51:04.918577+00:00",
+        "duration_s": 553.0
+      },
+      "cncef": {
+        "status": "success",
+        "count": 4791,
+        "timestamp": "2026-07-09T07:30:53.809968+00:00",
+        "duration_s": 2966.9
+      },
+      "anacofi": {
+        "status": "success",
+        "count": 0,
+        "timestamp": "2026-07-09T06:40:50.336707+00:00",
+        "duration_s": 4.2
+      },
+      "affo": {
+        "status": "success",
+        "count": 20,
+        "timestamp": "2026-07-09T06:40:50.336707+00:00",
+        "duration_s": 1.8
+      },
+      "registre_manual": {
+        "status": "success",
+        "added": 2,
+        "timestamp": "2026-06-02T12:25:43.078982+00:00"
+      },
+      "registre_naf_discovery": {
+        "status": "success",
+        "added": 17615,
+        "naf": "66.19B",
+        "timestamp": "2026-06-02T09:52:26.643314+00:00"
+      },
+      "datagouv_enrich": {
+        "status": "success",
+        "timestamp": "2026-07-08T07:23:26.375979+00:00",
+        "missing_creation_date": 4442,
+        "purged_closed": 67
+      },
+      "registre_recent": {
+        "status": "disabled",
+        "reason": "SIREN incoherents avec date creation - source non fiable",
+        "timestamp": "2026-06-30T14:42:55.805391+00:00"
+      },
+      "contacts_enrich": {
+        "status": "success",
+        "timestamp": "2026-07-08T09:23:57.049792+00:00",
+        "websites": 459,
+        "emails": 7437
+      },
+      "closed_cleanup": {
+        "status": "success",
+        "removed": 122,
+        "timestamp": "2026-06-30T08:47:47.614795+00:00"
+      },
+      "cncef_detail_enrich": {
+        "status": "success",
+        "timestamp": "2026-07-09T10:02:31.293167+00:00",
+        "fixed": 161
+      }
+    },
+    "last_updated": "2026-07-09T10:02:31.293167+00:00"
   },
   "members": [
     {
@@ -10056,9 +10121,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "21000",
-        "city": "Côte d'Or",
+        "street": "5 RUE DES BLES D'OR",
+        "postal_code": "21560",
+        "city": "COUTERNON",
         "department": "21",
         "department_name": "Cote-d'Or",
         "region": "Bourgogne-Franche-Comte"
@@ -10072,7 +10137,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "EZ-ZOUBI Aouatef",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -10084,7 +10155,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/abz-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_2bdbe84ba8",
@@ -12162,9 +12234,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "57000",
-        "city": "Moselle",
+        "street": "36 RUE DE METZ",
+        "postal_code": "57300",
+        "city": "HAGONDANGE",
         "department": "57",
         "department_name": "Moselle",
         "region": "Grand Est"
@@ -12178,7 +12250,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SPEYER Olivier",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -12190,7 +12268,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/acf-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3a82a11a64",
@@ -18774,9 +18853,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "127 RUE DES CIGALES",
+        "postal_code": "26600",
+        "city": "TAIN L'HERMITAGE",
         "department": "",
         "department_name": "",
         "region": ""
@@ -18790,7 +18869,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "NOGUEIRA FERREIRA Patricia",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -18802,7 +18887,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/adelie-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_cadf91269e",
@@ -19366,9 +19452,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "08 PLACE DU PONCEAU",
         "postal_code": "95000",
-        "city": "Val d'Oise",
+        "city": "CERGY",
         "department": "95",
         "department_name": "Val-d'Oise",
         "region": "Ile-de-France"
@@ -19382,7 +19468,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MADEO GIANNI",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -19394,7 +19486,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/adex-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b62368fd77",
@@ -22638,9 +22731,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "52 RUE VICTOR HUGO",
         "postal_code": "27000",
-        "city": "Eure",
+        "city": "EVREUX",
         "department": "27",
         "department_name": "Eure",
         "region": "Normandie"
@@ -22666,7 +22759,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/aem/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_24d69e3862",
@@ -29716,9 +29810,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "42 BOULEVARD DE BRETAGNE",
         "postal_code": "16000",
-        "city": "Charente",
+        "city": "ANGOULEME",
         "department": "16",
         "department_name": "Charente",
         "region": "Nouvelle-Aquitaine"
@@ -29728,7 +29822,13 @@
       "website": "",
       "activities": [],
       "specialties": [],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SANTA-CRUZ Alexandra",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -29740,7 +29840,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ais-patrimoine-immo/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_fbddd260d1",
@@ -30924,9 +31025,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "CENTRE COMMERCIAL LA ROUVIERE, 83 BOULEVARD DU REDON B11",
+        "postal_code": "13009",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -30946,7 +31047,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CAFIERI Alain",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -30958,7 +31065,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/aka-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_2a2b6c2660",
@@ -33360,9 +33468,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "143 RUE CUVIER",
+        "postal_code": "69006",
+        "city": "LYON",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -33376,7 +33484,13 @@
       "specialties": [
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CURTAT Thierry",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -33388,7 +33502,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/aldea-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b670b4d139",
@@ -35645,9 +35760,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "9 BOULEVARD DE LA RÉPUBLIQUE",
         "postal_code": "12000",
-        "city": "Aveyron",
+        "city": "RODEZ",
         "department": "12",
         "department_name": "Aveyron",
         "region": "Occitanie"
@@ -35661,7 +35776,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LAURENT Benjamin",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -35673,7 +35794,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/all-credit/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_80b3be6257",
@@ -38166,9 +38288,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "73000",
-        "city": "Savoie",
+        "street": "162 ROUTE DE CHAMP BORIAZ",
+        "postal_code": "73110",
+        "city": "LA CROIX DE LA ROCHETTE",
         "department": "73",
         "department_name": "Savoie",
         "region": "Auvergne-Rhone-Alpes"
@@ -38186,7 +38308,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JOUTY Vincent",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -38198,7 +38326,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/alpex-gestion-privee/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5c7245446c",
@@ -45687,9 +45816,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "7A LE CLOS DE LA CAILLE 241 CHEMIN DE POISSONNIERS",
+        "postal_code": "13600",
+        "city": "LA CIOTAT",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -45703,7 +45832,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MAQUART Alexandre",
+          "role": "A",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -45715,7 +45850,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/amg-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_26fb3269e5",
@@ -51915,9 +52051,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "19 COURS DE VERDUN BP 20029",
         "postal_code": "33000",
-        "city": "Gironde",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -51933,7 +52069,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JOBLOT-BLAVIGNAT Françoise",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -51945,7 +52087,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/apf-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_09218b615f",
@@ -58997,9 +59140,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "133A RUE DE LA GRANGE",
+        "postal_code": "69440",
+        "city": "TALUYERS",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -59017,7 +59160,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MIOTTO David",
+          "role": "D",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -59029,7 +59178,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/artes-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_61bfd20aa9",
@@ -61206,9 +61356,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "60 AVENUE JEAN MERMOZ",
+        "postal_code": "69008",
+        "city": "LYON",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -61222,7 +61372,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "WESSEL-CESSIEUX Francis",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -61234,7 +61390,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ascow/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_131c854071",
@@ -67979,9 +68136,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "8 CHEMIN DE LA TASSINE",
+        "postal_code": "69230",
+        "city": "ST GENIS LAVAL",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -68001,7 +68158,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "NACCI Virginie",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -68013,7 +68176,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/atis-conseils-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_78ce928dc3",
@@ -69160,9 +69324,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "17 RUE DE LA RUCHE",
+        "postal_code": "69003",
+        "city": "LYON",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -69182,7 +69346,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BERMUDEZ Antoine",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -69194,7 +69364,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/atrium-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_0767a82020",
@@ -72923,9 +73094,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "163-165 AVENUE CHARLES DE GAULLE",
+        "postal_code": "92200",
+        "city": "NEUILLY-SUR-SEINE",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -72939,7 +73110,13 @@
       "specialties": [
         "France M&A"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GROS Damien",
+          "role": "D",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -72951,7 +73128,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/auris-auris-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_20146130de",
@@ -86707,9 +86885,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "2 RUE DUSSAU",
+        "postal_code": "92600",
+        "city": "ASNIÈRES-SUR-SEINE",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -86729,7 +86907,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "COMMELIN Bérénice",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -86741,7 +86925,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/bc-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_38c38248a5",
@@ -86750,9 +86935,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "49000",
-        "city": "Maine et Loire",
+        "street": "40 RUE DES MINIÈRES",
+        "postal_code": "49500",
+        "city": "SEGRÉ EN ANJOU BLEU",
         "department": "49",
         "department_name": "Maine-et-Loire",
         "region": "Pays de la Loire"
@@ -86772,7 +86957,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CROCHETET Benoît",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -86784,7 +86975,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/crochetet-benoit/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ffc011e7ab",
@@ -93110,9 +93302,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "86 RUE CARNOT",
         "postal_code": "86000",
-        "city": "Vienne",
+        "city": "POITIERS",
         "department": "86",
         "department_name": "Vienne",
         "region": "Nouvelle-Aquitaine"
@@ -93126,7 +93318,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JAULIN GREGORY",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -93138,7 +93336,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/best-rate/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8dde9402f2",
@@ -93680,9 +93879,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "76000",
-        "city": "Seine Maritime",
+        "street": "3 RUE DE L'HOSPICE",
+        "postal_code": "76530",
+        "city": "GRAND COURONNE",
         "department": "76",
         "department_name": "Seine-Maritime",
         "region": "Normandie"
@@ -93702,7 +93901,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FAYE Bara",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -93714,7 +93919,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/faye-bara/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_43216928a9",
@@ -98216,9 +98422,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "1 QUAI DU MARECHAL JOFFRE",
+        "postal_code": "69002",
+        "city": "LYON",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -98232,7 +98438,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PERRIN DE BOIS LA VILLE Geoffroy",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -98244,7 +98456,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/blv-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_d84e612ad4",
@@ -106307,9 +106520,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "40 ALLEE DES BOUILLONS",
+        "postal_code": "44250",
+        "city": "SAINT BREVIN LES PINS",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -106323,7 +106536,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "TASTET Thierry",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -106335,7 +106554,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/brevpatrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_6590f63964",
@@ -110537,9 +110757,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "98 RUE JEAN FRAIX",
+        "postal_code": "44400",
+        "city": "REZE",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -110553,7 +110773,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "YVINEC Bruno",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -110565,7 +110791,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/by-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_039d87460e",
@@ -126500,9 +126727,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "48 AV DE COMTE, CAP CONSEIL",
+        "postal_code": "33510",
+        "city": "ANDERNOS LES BAINS",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -126516,7 +126743,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JORIGNE Frank",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -126528,7 +126761,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cap-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_6dc1280d48",
@@ -133587,9 +133821,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "37000",
-        "city": "Indre et Loire",
+        "street": "5 RUE DU 8 MAI",
+        "postal_code": "37330",
+        "city": "COUESMES",
         "department": "37",
         "department_name": "Indre-et-Loire",
         "region": "Centre-Val de Loire"
@@ -133609,7 +133843,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CARRET Adrien",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -133621,7 +133861,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/carret-conseil-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dc721fcf40",
@@ -137255,9 +137496,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "9 PLACE JULES FERRY",
+        "postal_code": "92120",
+        "city": "MONTROUGE",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -137271,7 +137512,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "RUFFENACH LEMONIEZ Catherine",
+          "role": "Gerante",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -137283,7 +137530,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ccr-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_17d4084e42",
@@ -143018,9 +143266,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "6 RUE EMILE ZOLA",
         "postal_code": "31000",
-        "city": "Haute Garonne",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -143034,7 +143282,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FROSSARD Philippe",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -143046,7 +143300,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cgo-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7d8bbf6701",
@@ -143357,9 +143612,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "47 BIS RUE DE GLATIGNY",
+        "postal_code": "78150",
+        "city": "LE CHESNAY",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -143377,7 +143632,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CUIGNET Raphaële",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -143389,7 +143650,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cgr-conseilpatrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_9c3553ea7e",
@@ -152885,9 +153147,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "45 RUE DES3 ORMEAUX",
         "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "city": "NANTES",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -152901,7 +153163,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LE GUENNEC Cyrille",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -152913,7 +153181,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cleg-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5a95725b71",
@@ -154321,9 +154590,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "2 RUE PROSPER MÉRIMÉE",
+        "postal_code": "20000",
+        "city": "AJACCIO",
         "department": "",
         "department_name": "",
         "region": ""
@@ -154337,7 +154606,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "NOBLE LEANDRI Caroline",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -154349,7 +154624,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cm-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_82ad20d8bf",
@@ -161179,9 +161455,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "PLACE DE GAULLE - DIAMANT II",
+        "postal_code": "20000",
+        "city": "AJACCIO",
         "department": "",
         "department_name": "",
         "region": ""
@@ -161195,7 +161471,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GENTILI Christine",
+          "role": "Presidente",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -161207,7 +161489,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/conseil-en-gestion-du-patrimoine-immobilier/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_1bcbc0f67d",
@@ -174848,9 +175131,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "62000",
-        "city": "Pas de Calais",
+        "street": "60B BOULEVARD EMILE BASLY",
+        "postal_code": "62300",
+        "city": "LENS",
         "department": "62",
         "department_name": "Pas-de-Calais",
         "region": "Hauts-de-France"
@@ -174866,7 +175149,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DEPARIS Catherine",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -174878,7 +175167,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cte-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_afbdd69e0b",
@@ -181817,9 +182107,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "37000",
-        "city": "Indre et Loire",
+        "street": "LA TRUIE QUI FILE",
+        "postal_code": "37120",
+        "city": "CHAVEIGNES",
         "department": "37",
         "department_name": "Indre-et-Loire",
         "region": "Centre-Val de Loire"
@@ -181833,7 +182123,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BRIZZI Damienne",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -181845,7 +182141,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/eurl-db-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_bc9032aa39",
@@ -181907,9 +182204,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "27 ALLÉE DES MARTINETS",
+        "postal_code": "44240",
+        "city": "SUCÉ-SUR-ERDRE",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -181929,7 +182226,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BINTZ David",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -181941,7 +182244,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dbi-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_22858a8e63",
@@ -191130,9 +191434,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "62000",
-        "city": "Pas de Calais",
+        "street": "31BIS, RUE JEAN JAURES",
+        "postal_code": "62440",
+        "city": "HARNES",
         "department": "62",
         "department_name": "Pas-de-Calais",
         "region": "Hauts-de-France"
@@ -191148,7 +191452,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "HALLOT Damien",
+          "role": "President",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -191160,7 +191470,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dh-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_92ed96dc79",
@@ -194215,9 +194526,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "29 AVENUE VERCINGETORIX",
         "postal_code": "33000",
-        "city": "Gironde",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -194233,7 +194544,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MARTINS David",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -194245,7 +194562,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/martins-david/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_9911275212",
@@ -194663,9 +194981,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "26 AVENUE JEAN MOULIN",
+        "postal_code": "69960",
+        "city": "CORBAS",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -194685,7 +195003,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DIDIER Nicolas",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -194697,7 +195021,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dn-patrimoine-2021/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_03ac98bdf8",
@@ -197309,9 +197634,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "127 COURS DU GÉNÉRAL DE GAULLE",
+        "postal_code": "33170",
+        "city": "GRADIGNAN",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -197325,7 +197650,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CARON Patrick",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -197337,7 +197668,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dpc-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_44cef8aac9",
@@ -198716,9 +199048,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "65 ROUTE DU PORT DESPOINTES",
+        "postal_code": "98800",
+        "city": "NOUMÉA",
         "department": "",
         "department_name": "",
         "region": ""
@@ -198732,7 +199064,13 @@
       "specialties": [
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "TOURTE Edouard",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -198744,7 +199082,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/dt-invest/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_604742b426",
@@ -203330,9 +203669,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "128 AV MARCELIN BERTHELOT",
+        "postal_code": "33110",
+        "city": "LE BOUSCAT",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -203346,7 +203685,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DEFOND Tanguy",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -203358,7 +203703,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/e-d-r-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_bec0889187",
@@ -208424,9 +208770,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "1 PLACE VICTOR HUGO",
+        "postal_code": "92400",
+        "city": "COURBEVOIE",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -208440,7 +208786,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BENISTI Tom",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -208452,7 +208804,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/benisti-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_fe760a416f",
@@ -220225,9 +220578,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "21000",
-        "city": "Côte d'Or",
+        "street": "29 A RUE LÉON VEIL PICARD",
+        "postal_code": "21120",
+        "city": "DIÉNAY",
         "department": "21",
         "department_name": "Cote-d'Or",
         "region": "Bourgogne-Franche-Comte"
@@ -220241,7 +220594,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SAINT-AUBIN Edouard",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -220253,7 +220612,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/esa-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_571c0bb3c9",
@@ -220443,9 +220803,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "91000",
-        "city": "Essonne",
+        "street": "1 A RUE DE LONGUEVILLE",
+        "postal_code": "91590",
+        "city": "CERNY",
         "department": "91",
         "department_name": "Essonne",
         "region": "Ile-de-France"
@@ -220459,7 +220819,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SANTUCCI Emilie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -220471,7 +220837,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/esg-immobilier/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dc2f6d27db",
@@ -222092,9 +222459,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "18 RUE BALTHAZAR DIEUDÉ",
+        "postal_code": "13006",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -222108,7 +222475,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DITTLOT Pierre-Yves",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -222120,7 +222493,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/eta-gestion-privee/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b58b3dfbe6",
@@ -223448,9 +223822,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "94000",
-        "city": "Val de Marne",
+        "street": "11 RUE PIERRE GUIGNOIS",
+        "postal_code": "94200",
+        "city": "IVRY SUR SEINE",
         "department": "94",
         "department_name": "Val-de-Marne",
         "region": "Ile-de-France"
@@ -223464,7 +223838,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DUTRANOY Jérôme",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -223476,7 +223856,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/etoile-immobilier/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8718c4a715",
@@ -225082,9 +225463,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "20 RUE GAMBETTA",
+        "postal_code": "31330",
+        "city": "GRENADE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -225098,7 +225479,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SOULIE GERALD",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -225110,7 +225497,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/eurl-ags-assurance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_cd7e550187",
@@ -232464,9 +232852,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "72 AVENUE DE GENEVE",
         "postal_code": "74000",
-        "city": "Haute Savoie",
+        "city": "ANNECY",
         "department": "74",
         "department_name": "Haute-Savoie",
         "region": "Auvergne-Rhone-Alpes"
@@ -232480,7 +232868,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AUFFANT Florent",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -232492,7 +232886,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/fa-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_636fbeaf3e",
@@ -235780,9 +236175,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "268 AV D'EYSINES RES LE GOLF BAT A APPART 001",
+        "postal_code": "33200",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -235802,7 +236197,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FERNANDEZ BOLIVAR Darelia",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -235814,7 +236215,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/fb-conseil-2/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b9e777e190",
@@ -243300,9 +243702,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "58 BIS AVENUE DE LA VICTOIRE",
+        "postal_code": "98800",
+        "city": "NOUMEA",
         "department": "",
         "department_name": "",
         "region": ""
@@ -243316,7 +243718,13 @@
       "specialties": [
         "France M&A"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MARMONIER Romain",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -243328,7 +243736,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/finactis/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_91eb5d7899",
@@ -259412,9 +259821,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "44 RUE MARGUERITE",
+        "postal_code": "69100",
+        "city": "VILLEURBANNE",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -259432,7 +259841,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SAGNARD Florent",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -259444,7 +259859,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/fs-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ce57c8c842",
@@ -260927,9 +261343,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "47 Q CHEMIN DES MAILHEAUX",
+        "postal_code": "31270",
+        "city": "VILLENEUVE-TOLOSANE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -260943,7 +261359,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GARNIL Geraldine",
+          "role": "D",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -260955,7 +261377,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/garnil-geraldine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_10e83d0a96",
@@ -265559,9 +265982,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "30 CHEMIN DE LA CARRAIRE",
+        "postal_code": "13710",
+        "city": "FUVEAU",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -265575,7 +265998,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BONNET Gaetan",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -265587,7 +266016,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/gb-conseils-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_6a9f6561f7",
@@ -265647,9 +266077,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "77000",
-        "city": "Seine et Marne",
+        "street": "1 RUE DES MANOUVRIERS",
+        "postal_code": "77176",
+        "city": "SAVIGNY LE TEMPLE",
         "department": "77",
         "department_name": "Seine-et-Marne",
         "region": "Ile-de-France"
@@ -265663,7 +266093,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BOULIOL Fanette",
+          "role": "Gerante",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -265675,7 +266111,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/gb-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c1fa998b46",
@@ -265791,9 +266228,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "63 RUE DE LA BENAUGE",
+        "postal_code": "33100",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -265813,7 +266250,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CLAEYSSEN Guillaume",
+          "role": "Cif",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -265825,7 +266268,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/guillaume-claeyssen/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_f956a5ece7",
@@ -274804,9 +275248,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "14 RUE CESAR CAMPINCHI",
+        "postal_code": "20200",
+        "city": "BASTIA",
         "department": "",
         "department_name": "",
         "region": ""
@@ -274820,7 +275264,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GOUR Thomas",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -274832,7 +275282,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/gour-immobilier-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c9f5218fb9",
@@ -275372,9 +275823,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "01000",
-        "city": "Ain",
+        "street": "68 RUE JULES MICHELET",
+        "postal_code": "01100",
+        "city": "OYONNAX",
         "department": "01",
         "department_name": "Ain",
         "region": "Auvergne-Rhone-Alpes"
@@ -275388,7 +275839,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GAGLIANO Julien",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -275400,7 +275857,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/gp-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_44d35b686d",
@@ -277869,9 +278327,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "39000",
-        "city": "Jura",
+        "street": "67 GRANDE RUE",
+        "postal_code": "39190",
+        "city": "COUSANCE",
         "department": "39",
         "department_name": "Jura",
         "region": "Bourgogne-Franche-Comte"
@@ -277891,7 +278349,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GRILLON Tristan",
+          "role": "T",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -277903,7 +278367,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/grillon-tristan-2/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_51b3d8a098",
@@ -279554,9 +280019,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "59000",
-        "city": "Nord",
+        "street": "57 AVENUE JEAN LEBAS",
+        "postal_code": "59100",
+        "city": "ROUBAIX",
         "department": "59",
         "department_name": "Nord",
         "region": "Hauts-de-France"
@@ -279570,7 +280035,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BOUTRY Alexis",
+          "role": "D",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -279582,7 +280053,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/groupe-gesco-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_669937e608",
@@ -285108,9 +285580,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "7 RUE ERNEST FILLIARD",
         "postal_code": "73000",
-        "city": "Savoie",
+        "city": "CHAMBÉRY",
         "department": "73",
         "department_name": "Savoie",
         "region": "Auvergne-Rhone-Alpes"
@@ -285124,7 +285596,13 @@
       "specialties": [
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "HAGNERE Quentin",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -285136,7 +285614,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/hagnere-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_2befb0f251",
@@ -286196,9 +286675,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "34 AVENUE OLLIVARY",
+        "postal_code": "13008",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -286212,7 +286691,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PETER Fabrice",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -286224,7 +286709,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/harmonia-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7d59da2d38",
@@ -287661,9 +288147,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "76000",
-        "city": "Seine Maritime",
+        "street": "214 RUE JEAN-LOUIS BRETEAU",
+        "postal_code": "76230",
+        "city": "BOIS GUILLAUME",
         "department": "76",
         "department_name": "Seine-Maritime",
         "region": "Normandie"
@@ -287677,7 +288163,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "HUN Steve",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -287689,7 +288181,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/hb-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_d1e7d659bd",
@@ -299710,9 +300203,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "350 CHEMIN DES VENTARELLES CELONY",
+        "postal_code": "13090",
+        "city": "AIX EN PROVENCE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -299730,7 +300223,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GRANGIS Philippe",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -299742,7 +300241,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/i-g-p-consulting/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_80ffbf56bd",
@@ -302014,9 +302514,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "67000",
-        "city": "Bas Rhin",
+        "street": "1A RUE DU MAIRE",
+        "postal_code": "67170",
+        "city": "WINGERSHEIM LES QUATRE BANS",
         "department": "67",
         "department_name": "Bas-Rhin",
         "region": "Grand Est"
@@ -302032,7 +302532,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "RINGEISEN Xavier",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -302044,7 +302550,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/iepal-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3e6bb8d296",
@@ -302931,9 +303438,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "12 RUE RIVAY",
+        "postal_code": "92300",
+        "city": "LEVALLOIS PERRET",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -302943,7 +303450,13 @@
       "website": "",
       "activities": [],
       "specialties": [],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MALTEZEANU ION",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -302955,7 +303468,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/im-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c9b8c959a5",
@@ -317217,9 +317731,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "6 BOULEVARD BINEAU",
+        "postal_code": "92300",
+        "city": "LEVALLOIS PERRET",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -317233,7 +317747,13 @@
       "specialties": [
         "France M&A"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LESTRADE Jean-Yves",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -317245,7 +317765,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jam-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_373f85b4d0",
@@ -320645,9 +321166,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "45 AVENUE DES AMÉRIQUES",
         "postal_code": "17000",
-        "city": "Charente Maritime",
+        "city": "LA ROCHELLE",
         "department": "17",
         "department_name": "Charente-Maritime",
         "region": "Nouvelle-Aquitaine"
@@ -320661,7 +321182,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "NEZ Jeremy",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -320673,7 +321200,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jfb-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b72583539a",
@@ -321295,9 +321823,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "59000",
-        "city": "Nord",
+        "street": "23 RUE DU SILO",
+        "postal_code": "59185",
+        "city": "PROVIN",
         "department": "59",
         "department_name": "Nord",
         "region": "Hauts-de-France"
@@ -321311,7 +321839,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ANSEL Patrice",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -321323,7 +321857,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jipl-financial-consulting/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_a3271440d6",
@@ -321445,9 +321980,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "06000",
-        "city": "Alpes Maritimes",
+        "street": "222 CHEMIN DE PROVENCE LES BASTIDES D'AZUR LOT 1",
+        "postal_code": "06250",
+        "city": "MOUGINS",
         "department": "06",
         "department_name": "Alpes-Maritimes",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -321463,7 +321998,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "HANRAS Philippe",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -321475,7 +322016,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jl-finances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_36f7316eef",
@@ -322114,9 +322656,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "2 RUE DE LA MALADRERIE",
+        "postal_code": "78650",
+        "city": "BEYNES",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -322136,7 +322678,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AUFFRAY Jean-Marc",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -322148,7 +322696,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jm-patrimoine-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_88a5d15744",
@@ -324656,9 +325205,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "25000",
-        "city": "Doubs",
+        "street": "30 ROUTE DE LA BELLE ETOILE",
+        "postal_code": "25770",
+        "city": "FRANOIS",
         "department": "25",
         "department_name": "Doubs",
         "region": "Bourgogne-Franche-Comte"
@@ -324674,7 +325223,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BAILLY Jean-Pierre",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -324686,7 +325241,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/jpb-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_a9f1122ca9",
@@ -330761,9 +331317,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "7 RUE DU GRAND PRE",
+        "postal_code": "44680",
+        "city": "SAINT-HILAIRE-DE-CHALEONS",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -330783,7 +331339,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BRIAND Kylian",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -330795,7 +331357,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/kb-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5f7f06e4b3",
@@ -331667,9 +332230,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "974000",
-        "city": "Réunion",
+        "street": "3 CHEMIN JEAN THIMOTÉE",
+        "postal_code": "97450",
+        "city": "SAINT-LOUIS",
         "department": "974",
         "department_name": "La Reunion",
         "region": "La Reunion"
@@ -331687,7 +332250,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BENARD Kevin",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -331699,7 +332268,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/patrimavenir/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_655d1fa046",
@@ -336172,9 +336742,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "196 IMPASSE DU LOTISSEMEN TURRI",
         "postal_code": "83000",
-        "city": "Var",
+        "city": "TOULON",
         "department": "83",
         "department_name": "Var",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -336188,7 +336758,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PARRA Lili Stéphanie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -336200,7 +336776,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/l-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_673a1241c5",
@@ -347187,9 +347764,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "HAMEAU FRACCIASCA",
+        "postal_code": "20253",
+        "city": "PATRIMONIO",
         "department": "",
         "department_name": "",
         "region": ""
@@ -347209,7 +347786,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LAZZARINI Marie-Paule",
+          "role": "-",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -347221,7 +347804,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lazzarini/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dcbcef2adb",
@@ -347283,9 +347867,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "5 RUE DES VILLARMAINS",
+        "postal_code": "92210",
+        "city": "SAINT-CLOUD",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -347299,7 +347883,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BERREBI Linda",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -347311,7 +347901,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lb-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5b02993345",
@@ -347320,9 +347911,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "65 AVENUE JEAN MOULIN",
+        "postal_code": "69720",
+        "city": "SAINT LAURENT DE MURE",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -347336,7 +347927,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BUFFARD Laure",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -347348,7 +347945,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lb-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b7dbe8b1c1",
@@ -347700,9 +348298,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "204 AVENUE DE FRONTON",
+        "postal_code": "31200",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -347716,7 +348314,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CREMERE Laurence",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -347728,7 +348332,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lc-location/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_6d0f99e2b3",
@@ -347963,9 +348568,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "06000",
-        "city": "Alpes Maritimes",
+        "street": "4, CHEMIN DU ROSAIRE, VILLA LA CLÉMENTE",
+        "postal_code": "06500",
+        "city": "MENTON",
         "department": "06",
         "department_name": "Alpes-Maritimes",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -347979,7 +348584,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CESARI Lauriane",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -347991,7 +348602,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lc-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_4f4541d125",
@@ -359250,9 +359862,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "212 AVENUE PASTEUR",
+        "postal_code": "33270",
+        "city": "FLOIRAC",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -359270,7 +359882,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JARDRI Alexandre",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -359282,7 +359900,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lexa/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_1699af8e73",
@@ -359569,9 +360188,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "81000",
-        "city": "Tarn",
+        "street": "CHEMIN DE LA PRADELLE",
+        "postal_code": "81120",
+        "city": "LAMILLARIE",
         "department": "81",
         "department_name": "Tarn",
         "region": "Occitanie"
@@ -359585,7 +360204,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FLOTTARD Laura",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -359597,7 +360222,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lf-courtage-2/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_fefd723c69",
@@ -359606,9 +360232,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "14, RUE JEAN FOUCAUD BATIMENT D4",
+        "postal_code": "69120",
+        "city": "VAULX EN VELIN",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -359622,7 +360248,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FOSSARD Lionel",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -359634,7 +360266,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lf-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_02ad0a404b",
@@ -360391,9 +361024,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "74000",
-        "city": "Haute Savoie",
+        "street": "129 ROUTE DE BUBLENS",
+        "postal_code": "74350",
+        "city": "ALLONZIER LA CAILLE",
         "department": "74",
         "department_name": "Haute-Savoie",
         "region": "Auvergne-Rhone-Alpes"
@@ -360407,7 +361040,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LUSIGNET Charlotte",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -360419,7 +361058,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lgm-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b476c58ae4",
@@ -362333,9 +362973,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "11 RUE BARTHÉLÉMY THIMONNIER",
         "postal_code": "01000",
-        "city": "Ain",
+        "city": "BOURG EN BRESSE",
         "department": "01",
         "department_name": "Ain",
         "region": "Auvergne-Rhone-Alpes"
@@ -362349,7 +362989,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ANCEAU Sebastien",
+          "role": "Directeur General Serpinet H",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -362361,7 +363007,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/link-conseils-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_21a067b7e1",
@@ -364257,9 +364904,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "83000",
-        "city": "Var",
+        "street": "1296 AVENUE AUGUSTE RENOIR",
+        "postal_code": "83500",
+        "city": "LA SEYNE SUR MER",
         "department": "83",
         "department_name": "Var",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -364273,7 +364920,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MAHDAD CHAAOUANE Leila",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -364285,7 +364938,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lmc-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ade68f996d",
@@ -370778,9 +371432,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "26 ROUTE DE TRÉHÉ",
+        "postal_code": "44117",
+        "city": "SAINT ANDRE DES EAUX",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -370796,7 +371450,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LECORRS Séverine",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -370808,7 +371468,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lv-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_666c862eb6",
@@ -372694,9 +373355,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "LOT U PINU, LA MARANA",
+        "postal_code": "20290",
+        "city": "LUCCIANA",
         "department": "",
         "department_name": "",
         "region": ""
@@ -372712,7 +373373,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ROSSI Elodie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -372724,7 +373391,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/lavenue-du-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_f5484e04ba",
@@ -373617,9 +374285,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "56B RUE JEAN GAUTHERIN",
         "postal_code": "58000",
-        "city": "Nièvre",
+        "city": "NEVERS",
         "department": "58",
         "department_name": "Nievre",
         "region": "Bourgogne-Franche-Comte"
@@ -373633,7 +374301,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CHARETIER Valerie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -373645,7 +374319,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/m-h-conseils-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_519391bf59",
@@ -385903,9 +386578,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "RESIDENCE SPORTING PARK, 12 B CHEMIN DU SEMINAIRE,",
+        "postal_code": "31200",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -385921,7 +386596,13 @@
         "Assurance",
         "Immobilier"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BONNET Marc",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -385933,7 +386614,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mb-conseils-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_50a394b08e",
@@ -391029,9 +391711,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "BATIMENT N, 2 CHEMINEMENT DU CLAIR BOIS",
+        "postal_code": "31500",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -391051,7 +391733,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MERLY Nicolas",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -391063,7 +391751,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/merly-nicolas/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_6d01e5dd2d",
@@ -392650,9 +393339,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "82000",
-        "city": "Tarn et Garonne",
+        "street": "158 C ROUTE DE FINAHN",
+        "postal_code": "82710",
+        "city": "BRESSOLS",
         "department": "82",
         "department_name": "Tarn-et-Garonne",
         "region": "Occitanie"
@@ -392666,7 +393355,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FILIPPA Maxime",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -392678,7 +393373,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sarl-mf-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_aeaec3037d",
@@ -393469,9 +394165,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "39 CHEMIN DU PELOSSET",
+        "postal_code": "69570",
+        "city": "DARDILLY",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -393485,7 +394181,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DE GATELLIER Emeric",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -393497,7 +394199,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mg-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_0b8c0b324f",
@@ -397407,9 +398110,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "66 AVENUE DE LA LIBÉRATION RESIDENCE COTE JARDIN - APPARTEMENT 20",
+        "postal_code": "33700",
+        "city": "MÉRIGNAC",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -397429,7 +398132,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LABORDE Morgane",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -397441,7 +398150,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/laborde-morgane/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_06b93cb9c7",
@@ -400208,9 +400918,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "71BIS RUE GEORGES LENOTRE",
+        "postal_code": "78120",
+        "city": "RAMBOUILLET",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -400230,7 +400940,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LAFORGE Alexandre",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -400242,7 +400958,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/globodyne/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dd5cad40d7",
@@ -404984,9 +405701,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "974000",
-        "city": "Réunion",
+        "street": "20 PLACE DU GÉNÉRAL DE GAULLE",
+        "postal_code": "97460",
+        "city": "SAINT-PAUL",
         "department": "974",
         "department_name": "La Reunion",
         "region": "La Reunion"
@@ -405006,7 +405723,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MOSHFEGHI Pantea",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -405018,7 +405741,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/diarra-pantea/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7f7405c2f2",
@@ -406168,9 +406892,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "10 BIS CHEMIN DES MARCHANDS",
+        "postal_code": "78770",
+        "city": "GOUPILLIÈRES",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -406190,7 +406914,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PEDRO Marlène",
+          "role": "E",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -406202,7 +406932,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mpatrimoine-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_db69292a57",
@@ -406211,9 +406942,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "14000",
-        "city": "Calvados",
+        "street": "PARC ATHENA, IMMEUBLE PASEO, 12 RUE FERDINAND BUISSON",
+        "postal_code": "14280",
+        "city": "SAINT-CONTEST",
         "department": "14",
         "department_name": "Calvados",
         "region": "Normandie"
@@ -406227,7 +406958,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PAIN Pierre",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -406239,7 +406976,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mpf-conseil-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3ef54420a6",
@@ -406570,9 +407308,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "37000",
-        "city": "Indre et Loire",
+        "street": "137 ROUTE DE LA PINSONNERIE",
+        "postal_code": "37230",
+        "city": "FONDETTES",
         "department": "37",
         "department_name": "Indre-et-Loire",
         "region": "Centre-Val de Loire"
@@ -406586,7 +407324,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SOUCHU Melanie",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -406598,7 +407342,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ms-conseils-2/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_d913d07770",
@@ -406726,9 +407471,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "29000",
-        "city": "Finistère",
+        "street": "187 ROUTE DU CHATEAU D'EAU",
+        "postal_code": "29170",
+        "city": "SAINT EVARZEC",
         "department": "29",
         "department_name": "Finistere",
         "region": "Bretagne"
@@ -406742,7 +407487,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SCUDELLER Marina",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -406754,7 +407505,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ms-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_453ecb288e",
@@ -406817,9 +407569,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "29 BIS RUE DE LA CHÈZINE",
+        "postal_code": "44100",
+        "city": "NANTES",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -406833,7 +407585,13 @@
       "specialties": [
         "France M&A"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MICHEL Stèphane",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -406845,7 +407603,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ms-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_68c35d52b0",
@@ -410372,9 +411131,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "RÉSIDENCE LE BASTIO 2",
+        "postal_code": "20600",
+        "city": "FURIANI",
         "department": "",
         "department_name": "",
         "region": ""
@@ -410388,7 +411147,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MARIANI Jean Philippe",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -410400,7 +411165,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/mediterranee-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8c5b201fd9",
@@ -410820,9 +411586,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "67000",
-        "city": "Bas Rhin",
+        "street": "5 RUE PRINCIPALE",
+        "postal_code": "67350",
+        "city": "RINGENDORF",
         "department": "67",
         "department_name": "Bas-Rhin",
         "region": "Grand Est"
@@ -410838,7 +411604,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ARNOULD Nadia",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -410850,7 +411622,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/nadia-bouteldja/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_39da0225fd",
@@ -412686,9 +413459,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "18 RUE BEFFROY",
+        "postal_code": "92200",
+        "city": "NEUILLY SUR SEINE",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -412702,7 +413475,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BENHAMOU Nathalie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -412714,7 +413493,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/nb-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_63824a7660",
@@ -412956,9 +413736,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "1 RUE DU GUESCLIN",
         "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "city": "NANTES",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -412978,7 +413758,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "COTTE Nicolas",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -412990,7 +413776,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/nca-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_e671367df6",
@@ -416830,9 +417617,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "LE QUERCY",
         "postal_code": "06000",
-        "city": "Alpes Maritimes",
+        "city": "NICE",
         "department": "06",
         "department_name": "Alpes-Maritimes",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -416846,7 +417633,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AUTRAN Emmanuel",
+          "role": "Gerant Fanniere F",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -416858,7 +417651,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/nice-patrimoine-investissements/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_0eb3c1fe35",
@@ -421751,9 +422545,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "16 ROUTE DE TEILLOUX",
+        "postal_code": "69490",
+        "city": "SAINT-ROMAIN-DE-POPEY",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -421773,7 +422567,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PUYDEBOIS Nicolas",
+          "role": "President",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -421785,7 +422585,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/np-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_62a0b8d7b0",
@@ -424807,9 +425608,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "113 RUE DE LA REPUBLIQUE",
+        "postal_code": "13002",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -424823,7 +425624,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BROUILLET Christophe",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -424835,7 +425642,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ocean-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_fb03bba0d1",
@@ -426830,9 +427638,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "67000",
-        "city": "Bas Rhin",
+        "street": "52 ROUTE DE BISCHWILLER",
+        "postal_code": "67300",
+        "city": "SCHILTIGHEIM",
         "department": "67",
         "department_name": "Bas-Rhin",
         "region": "Grand Est"
@@ -426846,7 +427654,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GOLDSTEIN Olivier",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -426858,7 +427672,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/og-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_162a1aeba5",
@@ -426867,9 +427682,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "06000",
-        "city": "Alpes Maritimes",
+        "street": "IMMEUBLE TECHNOPARK",
+        "postal_code": "06150",
+        "city": "CANNES-LA-BOCCA",
         "department": "06",
         "department_name": "Alpes-Maritimes",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -426883,7 +427698,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GEORGIN Olivier",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -426895,7 +427716,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/og-finance-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c3fef0a12a",
@@ -429363,9 +430185,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "87000",
-        "city": "Haute Vienne",
+        "street": "10 BOULEVARD DES ARCADES",
+        "postal_code": "87100",
+        "city": "LIMOGES",
         "department": "87",
         "department_name": "Haute-Vienne",
         "region": "Nouvelle-Aquitaine"
@@ -429381,7 +430203,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DECLUNDER Nadine",
+          "role": "Gerante",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -429393,7 +430221,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ona-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_9e2a2bc26b",
@@ -432450,9 +433279,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "1 AVENUE DE LA DIVISION DU GÉNÉRAL LECLERC",
+        "postal_code": "78200",
+        "city": "MANTES LA JOLIE",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -432462,7 +433291,13 @@
       "website": "",
       "activities": [],
       "specialties": [],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ALJAMI zakaria",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -432474,7 +433309,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/optimass/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_1bd1b46713",
@@ -435278,9 +436114,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "8 BIS RUE DE LOURDES",
+        "postal_code": "31300",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -435294,7 +436130,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LOLMEDE Simon",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -435306,7 +436148,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/origami-groupe/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_2ce74c794a",
@@ -436281,9 +437124,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "91000",
-        "city": "Essonne",
+        "street": "7 PLACE NICOLAS TARKHOFF",
+        "postal_code": "91400",
+        "city": "ORSAY",
         "department": "91",
         "department_name": "Essonne",
         "region": "Ile-de-France"
@@ -436297,7 +437140,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AUBERT Celine",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -436309,7 +437158,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/orsay-patrimoine-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_380eec5810",
@@ -439317,9 +440167,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "34000",
-        "city": "Hérault",
+        "street": "2 CHEMIN DU FESQUET",
+        "postal_code": "34830",
+        "city": "CLAPIERS",
         "department": "34",
         "department_name": "Herault",
         "region": "Occitanie"
@@ -439333,7 +440183,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PACE Eric",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -439345,7 +440201,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pace-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dfe70a9194",
@@ -448342,9 +449199,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "EDEN ROC V 45 RUE DE LA TURBINE",
+        "postal_code": "13008",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -448364,7 +449221,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BRAU Florence",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -448376,7 +449239,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/patrimoine-sa/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b6bc3f7268",
@@ -457646,9 +458510,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "21000",
-        "city": "Côte d'Or",
+        "street": "8 A IMPASSE DU CLOS DE CLUNY",
+        "postal_code": "21200",
+        "city": "BEAUNE",
         "department": "21",
         "department_name": "Cote-d'Or",
         "region": "Bourgogne-Franche-Comte"
@@ -457668,7 +458532,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GALLET Pierre",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -457680,7 +458550,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pg-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_d620eaeefd",
@@ -457689,9 +458560,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "63000",
-        "city": "Puy de Dôme",
+        "street": "16 RUE DU COMMERCE",
+        "postal_code": "63200",
+        "city": "RIOM",
         "department": "63",
         "department_name": "Puy-de-Dome",
         "region": "Auvergne-Rhone-Alpes"
@@ -457707,7 +458578,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AUGUIN Gaetan",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -457719,7 +458596,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/p-g-a/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_1bd6782991",
@@ -462412,9 +463290,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "64000",
-        "city": "Pyrénées Atlantiques",
+        "street": "3 RUE ITURRIA",
+        "postal_code": "64600",
+        "city": "ANGLET",
         "department": "64",
         "department_name": "Pyrenees-Atlantiques",
         "region": "Nouvelle-Aquitaine"
@@ -462428,7 +463306,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CARACOSTEA-BALAN Cyril",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -462440,7 +463324,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pilea-conseils/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ca0a22cec9",
@@ -462557,9 +463442,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "36 BOULEVARD TELLENE",
+        "postal_code": "13007",
+        "city": "MARSEILLE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -462579,7 +463464,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FERNIER Pierre-Emmanuel",
+          "role": "C",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -462591,7 +463482,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pilome-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_aa9c45b3fc",
@@ -463602,9 +464494,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "79000",
-        "city": "Deux Sèvres",
+        "street": "2 RUE DES JARDINS DE RHÉ",
+        "postal_code": "79410",
+        "city": "SAINT GELAIS",
         "department": "79",
         "department_name": "Deux-Sevres",
         "region": "Nouvelle-Aquitaine"
@@ -463618,7 +464510,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JUIN Pierre",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -463630,7 +464528,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pj-conseil-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3defeaa3ae",
@@ -463803,9 +464702,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "62000",
-        "city": "Pas de Calais",
+        "street": "119 ROUTE DE SAINT OMER 62280 SAINT-MARTIN-BOULOGNE",
+        "postal_code": "62280",
+        "city": "SAINT MARTIN BOULOGNE",
         "department": "62",
         "department_name": "Pas-de-Calais",
         "region": "Hauts-de-France"
@@ -463819,7 +464718,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LEDOUX Philippe",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -463831,7 +464736,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/philippe-ledoux/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7ec8a76e3c",
@@ -466055,9 +466961,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "42000",
-        "city": "Loire",
+        "street": "12 RUE ALSACE LORRAINE",
+        "postal_code": "42300",
+        "city": "ROANNE",
         "department": "42",
         "department_name": "Loire",
         "region": "Auvergne-Rhone-Alpes"
@@ -466071,7 +466977,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PEZZETTI Pascaline",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -466083,7 +466995,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/pm-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_45b45e2ae5",
@@ -475832,9 +476745,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "8 AVENUE ROGER LAPEBIE ZONE INDUSTRIELLE CHANTELOISEAU",
+        "postal_code": "33140",
+        "city": "VILLENAVE D'ORNON",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -475848,7 +476761,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "FOUCAUD Marion",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -475860,7 +476779,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/protection-pluriel-sud-bassin/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_43b90ccaf8",
@@ -480298,9 +481218,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "23 RUE DESBIEY",
         "postal_code": "33000",
-        "city": "Gironde",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -480316,7 +481236,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ARDOUIN Anne-Flore",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -480328,7 +481254,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/ra-conseils-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ccff9f50b6",
@@ -480337,9 +481264,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "6 RUE VIRGINIE HÉRIOT",
         "postal_code": "17000",
-        "city": "Charente Maritime",
+        "city": "LA ROCHELLE",
         "department": "17",
         "department_name": "Charente-Maritime",
         "region": "Nouvelle-Aquitaine"
@@ -480357,7 +481284,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DUMAS MADASSAMY Raoul",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -480369,7 +481302,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/blue-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7fc137207e",
@@ -481440,9 +482374,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "86000",
-        "city": "Vienne",
+        "street": "2 RUE DES PRUNELLIERS",
+        "postal_code": "86170",
+        "city": "CISSÉ",
         "department": "86",
         "department_name": "Vienne",
         "region": "Nouvelle-Aquitaine"
@@ -481462,7 +482396,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "RAPAUD Philippe",
+          "role": "D",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -481474,7 +482414,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rapaud-philippe/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3ed1be9789",
@@ -482294,9 +483235,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "75 RUE STEPHANE PITARD",
         "postal_code": "37000",
-        "city": "Indre et Loire",
+        "city": "TOURS",
         "department": "37",
         "department_name": "Indre-et-Loire",
         "region": "Centre-Val de Loire"
@@ -482310,7 +483251,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CHIFFRAY Robin",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -482322,7 +483269,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rc-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_57c2d4e4a9",
@@ -482895,9 +483843,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "42 RUE DU RAISIN",
         "postal_code": "68000",
-        "city": "Haut Rhin",
+        "city": "COLMAR",
         "department": "68",
         "department_name": "Haut-Rhin",
         "region": "Grand Est"
@@ -482917,7 +483865,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ANCEL Guillaume",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -482929,7 +483883,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/reaccel-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8f63612243",
@@ -484595,9 +485550,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "12 AVENUE ROLAND CORRAO",
+        "postal_code": "13700",
+        "city": "MARIGNANE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -484611,7 +485566,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "AY Ugur",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -484623,7 +485584,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/reka-consulting/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8fc6633b39",
@@ -486721,9 +487683,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "215 RUE SAMUEL MORSE BÂTIMENT LE TRIADE 3",
         "postal_code": "34000",
-        "city": "Hérault",
+        "city": "MONTPELLIER",
         "department": "34",
         "department_name": "Herault",
         "region": "Occitanie"
@@ -486737,7 +487699,13 @@
       "specialties": [
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "VABRE Grégory",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -486749,7 +487717,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rg-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_230c91818c",
@@ -490811,9 +491780,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "34000",
-        "city": "Hérault",
+        "street": "1124 ANCIEN CHEMIN DU MOULIN",
+        "postal_code": "34270",
+        "city": "LES MATELLES",
         "department": "34",
         "department_name": "Herault",
         "region": "Occitanie"
@@ -490827,7 +491796,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LAFONT Romain",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -490839,7 +491814,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rl-finances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3d4785a58e",
@@ -490848,9 +491824,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "69 RUE LEYTEIRE",
         "postal_code": "33000",
-        "city": "Gironde",
+        "city": "BORDEAUX",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -490866,7 +491842,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "RABAULT Pierre-Alain",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -490878,7 +491860,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/rln-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_46e127c998",
@@ -491146,9 +492129,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "4 RUE GABRIEL CHEVALLIER",
+        "postal_code": "69009",
+        "city": "LYON",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -491168,7 +492151,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LACONDEMINE Pierre",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -491180,7 +492169,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/roca-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7e68b92f7f",
@@ -496449,9 +497439,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "233 GRANDE RUE",
+        "postal_code": "69600",
+        "city": "OULLINS-PIERRE-BÉNITE",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -496467,7 +497457,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MARTINS Quentin",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -496479,7 +497475,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/resonance-gestion-privee/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c82ab7620c",
@@ -496877,9 +497874,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "77000",
-        "city": "Seine et Marne",
+        "street": "RDC - APPARTEMENT A03, 3 PASSAGE CRAPART NACU",
+        "postal_code": "77340",
+        "city": "PONTAULT-COMBAULT",
         "department": "77",
         "department_name": "Seine-et-Marne",
         "region": "Ile-de-France"
@@ -496893,7 +497890,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SANTHIRAKUMAR Sarujan",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -496905,7 +497908,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sm-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_1ed84732f1",
@@ -497038,9 +498042,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "4 RUE JEAN COUNE",
+        "postal_code": "44600",
+        "city": "SAINT-NAZAIRE",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -497056,7 +498060,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ALLENOU Sophie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -497068,7 +498078,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/s-a-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5f995c944a",
@@ -501554,9 +502565,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "07000",
-        "city": "Ardèche",
+        "street": "1 ALLÉE DES PÂQUERETTES",
+        "postal_code": "07410",
+        "city": "COLOMBIER-LE-VIEUX",
         "department": "07",
         "department_name": "Ardeche",
         "region": "Auvergne-Rhone-Alpes"
@@ -501570,7 +502581,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SAPET Céline",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -501582,7 +502599,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sapet-michelas-immobiler/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_922db0b8d1",
@@ -504197,9 +505215,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "20 B RUE D'ETIGNY",
         "postal_code": "64000",
-        "city": "Pyrénées Atlantiques",
+        "city": "PAU",
         "department": "64",
         "department_name": "Pyrenees-Atlantiques",
         "region": "Nouvelle-Aquitaine"
@@ -504213,7 +505231,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MOURLAN Marie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -504225,7 +505249,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sarl-hc-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_abe1f088fc",
@@ -506836,9 +507861,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "18 RUE LAGARDE IMMEUBLE HEREMETUA - BP 4543",
+        "postal_code": "98713",
+        "city": "PAPEETE",
         "department": "",
         "department_name": "",
         "region": ""
@@ -506852,7 +507877,13 @@
       "specialties": [
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BERCEGOL Philippe",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -506864,7 +507895,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/defisc-polynesie/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_f165e851bb",
@@ -507678,9 +508710,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "13000",
-        "city": "Bouches du Rhône",
+        "street": "CHÄTEAU DE LA PIOLINE 260 GUILLAUME DU VAIR",
+        "postal_code": "13090",
+        "city": "AIX-ENPROVENCE",
         "department": "13",
         "department_name": "Bouches-du-Rhone",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -507694,7 +508726,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CLAPOT Olivier",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -507706,7 +508744,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/patrimoine-provence/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_981c30e589",
@@ -509786,9 +510825,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "26000",
-        "city": "Drôme",
+        "street": "415 CHEMIN DU PONT DU MANSON",
+        "postal_code": "26740",
+        "city": "MONTBOUCHER SUR JABRON",
         "department": "26",
         "department_name": "Drome",
         "region": "Auvergne-Rhone-Alpes"
@@ -509804,7 +510843,13 @@
         "Assurance",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BOUTIN Sebastien",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -509816,7 +510861,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sb-patrimoine-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_609c98d583",
@@ -509882,9 +510928,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "44000",
-        "city": "Loire Atlantique",
+        "street": "44 RUE DE FLORIDE",
+        "postal_code": "44100",
+        "city": "NANTES",
         "department": "44",
         "department_name": "Loire-Atlantique",
         "region": "Pays de la Loire"
@@ -509898,7 +510944,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "BOTROS Sébastien",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -509910,7 +510962,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sbc-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c7a6f6e1ea",
@@ -510191,9 +511244,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "38000",
-        "city": "Isère",
+        "street": "4 RUE DE L INDUSTRIE",
+        "postal_code": "38760",
+        "city": "VARCES- ALLIERES- ET- RISSET",
         "department": "38",
         "department_name": "Isere",
         "region": "Auvergne-Rhone-Alpes"
@@ -510207,7 +511260,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "CAMPINS Sophie",
+          "role": "Gerante",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -510219,7 +511278,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sc-patrimoine-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_208de38911",
@@ -521368,9 +522428,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "95000",
-        "city": "Val d'Oise",
+        "street": "27 RUE DE LA REPUBLIQUE",
+        "postal_code": "95190",
+        "city": "GOUSSAINVILLE",
         "department": "95",
         "department_name": "Val-d'Oise",
         "region": "Ile-de-France"
@@ -521386,7 +522446,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SAPMAZ Samet",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -521398,7 +522464,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sjs-courtage/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c12d4fab65",
@@ -526857,9 +527924,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "26 PALMENTO",
+        "postal_code": "20220",
+        "city": "SANTA REPARATA DI BALAGNA",
         "department": "",
         "department_name": "",
         "region": ""
@@ -526873,7 +527940,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MAZZONI Nathalie",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -526885,7 +527958,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sophia-audit-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_36c3e13e76",
@@ -528526,9 +529600,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "39 TER RUE MARYSE BASTIE",
+        "postal_code": "78300",
+        "city": "POISSY",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -528544,7 +529618,13 @@
         "Assurance",
         "Crédit"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "PIERRE Sophie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -528556,7 +529636,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sp-finance-conseil/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_70bcaee2d5",
@@ -532891,9 +533972,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "92000",
-        "city": "Hauts de Seine",
+        "street": "65 RUE DANTON",
+        "postal_code": "92300",
+        "city": "LEVALLOIS PERRET",
         "department": "92",
         "department_name": "Hauts-de-Seine",
         "region": "Ile-de-France"
@@ -532907,7 +533988,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "SOUANEF Bruno",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -532919,7 +534006,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/strategie-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ca68066f96",
@@ -539270,9 +540358,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "33000",
-        "city": "Gironde",
+        "street": "43 CHEMIN DE LA PROCESSION",
+        "postal_code": "33260",
+        "city": "LA TESTE DE BUCH",
         "department": "33",
         "department_name": "Gironde",
         "region": "Nouvelle-Aquitaine"
@@ -539286,7 +540374,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "MERLAUD Carole",
+          "role": "Gerante",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -539298,7 +540392,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/tandm-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_959e79a131",
@@ -544362,9 +545457,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "34000",
-        "city": "Hérault",
+        "street": "21 RUE PIERRE ET AUGUSTE MASSALOUP BP 145",
+        "postal_code": "34140",
+        "city": "MEZE",
         "department": "34",
         "department_name": "Herault",
         "region": "Occitanie"
@@ -544378,7 +545473,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DE NITTO Jerome",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -544390,7 +545491,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/sarl-thau-courtage-assurances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_acc81fb100",
@@ -545256,9 +546358,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "33/43 AVENUE GEORGES POMPIDOU",
+        "postal_code": "31130",
+        "city": "BALMA",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -545272,7 +546374,13 @@
       "specialties": [
         "Immobilier"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DE GALBERT Hervé",
+          "role": "President",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -545284,7 +546392,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/theseis/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_21c824068a",
@@ -553223,9 +554332,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "1, ROUTE DES TROQUES",
+        "postal_code": "69630",
+        "city": "CHAPONOST",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -553239,7 +554348,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GEYER Jean-Christophe",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -553251,7 +554366,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/trya-gestion-privee/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_4393df7157",
@@ -556630,9 +557746,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "78000",
-        "city": "Yvelines",
+        "street": "6 RUE DES ACACIAS",
+        "postal_code": "78150",
+        "city": "LE CHESNAY",
         "department": "78",
         "department_name": "Yvelines",
         "region": "Ile-de-France"
@@ -556652,7 +557768,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "DOS SANTOS Virginie",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -556664,7 +557786,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/v-a-conseil-2/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_c622930df5",
@@ -561454,9 +562577,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "RÉSIDENCE LIBERTA",
+        "postal_code": "20260",
+        "city": "CALVI",
         "department": "",
         "department_name": "",
         "region": ""
@@ -561470,7 +562593,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "VAZZOLER Christian",
+          "role": "Gerant",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -561482,7 +562611,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/vazzoler-christian/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_ba4b1a610c",
@@ -561657,9 +562787,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "69000",
-        "city": "Rhône-Alpes",
+        "street": "67 AVENUE GALLINE",
+        "postal_code": "69100",
+        "city": "VILLEURBANNE",
         "department": "69",
         "department_name": "Rhone",
         "region": "Auvergne-Rhone-Alpes"
@@ -561677,7 +562807,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "GARCIA Anthony",
+          "role": "G",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -561689,7 +562825,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/cabinet-anthony-garcia-sarl/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_7defb50bf6",
@@ -569864,9 +571001,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "94000",
-        "city": "Val de Marne",
+        "street": "6 RUE FAVIER",
+        "postal_code": "94360",
+        "city": "BRY-SUR-MARNE",
         "department": "94",
         "department_name": "Val-de-Marne",
         "region": "Ile-de-France"
@@ -569880,7 +571017,13 @@
       "specialties": [
         "France M&A"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "JUGUET Vincent",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -569892,7 +571035,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/vj-finance/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_8e2c0fbb2c",
@@ -570057,9 +571201,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "31000",
-        "city": "Haute Garonne",
+        "street": "8 ALLEE DE LA JANELLE",
+        "postal_code": "31380",
+        "city": "GRAGNAGUE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -570079,7 +571223,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "NOCAUDIE Vivien",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -570091,7 +571241,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/vn-conseil-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_d072977f58",
@@ -571664,9 +572815,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "RÉSIDENCE LIBERTA RTE DE SANTORE",
+        "postal_code": "20260",
+        "city": "CALVI",
         "department": "",
         "department_name": "",
         "region": ""
@@ -571684,7 +572835,13 @@
         "Crédit",
         "Immobilier"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "VAZZOLER Christian",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -571696,7 +572853,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/vzr-invest/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_98b9cd9726",
@@ -571967,9 +573125,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
-        "postal_code": "",
-        "city": "",
+        "street": "RUE ANTOINE FILIPPI",
+        "postal_code": "20137",
+        "city": "PORTO VECCHIO",
         "department": "",
         "department_name": "",
         "region": ""
@@ -571983,7 +573141,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "WAGNER Philippe",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -571995,7 +573159,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/w-consultant/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_3667417050",
@@ -577289,9 +578454,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "29 BOULEVARD DE STRASBOURG",
         "postal_code": "31000",
-        "city": "Haute Garonne",
+        "city": "TOULOUSE",
         "department": "31",
         "department_name": "Haute-Garonne",
         "region": "Occitanie"
@@ -577309,7 +578474,13 @@
         "Crédit",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "ORTEGA Xavier",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -577321,7 +578492,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/xo-finances/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_5c0dd426a5",
@@ -577691,9 +578863,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "21 BIS RUE DE CHAUMONT",
         "postal_code": "86000",
-        "city": "Vienne",
+        "city": "POITIERS",
         "department": "86",
         "department_name": "Vienne",
         "region": "Nouvelle-Aquitaine"
@@ -577713,7 +578885,13 @@
         "Immobilier",
         "Patrimoine"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "HOFFMANN Yannis",
+          "role": "P",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -577725,7 +578903,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/yh-conseil-et-patrimoine/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_96298f8193",
@@ -580782,9 +581961,9 @@
       "siren": "",
       "orias_number": "",
       "address": {
-        "street": "",
+        "street": "5 AVENUE GÉNÉRAL ESTIENNE",
         "postal_code": "06000",
-        "city": "Alpes Maritimes",
+        "city": "NICE",
         "department": "06",
         "department_name": "Alpes-Maritimes",
         "region": "Provence-Alpes-Cote d'Azur"
@@ -580798,7 +581977,13 @@
       "specialties": [
         "Assurance"
       ],
-      "directors": [],
+      "directors": [
+        {
+          "name": "LAYET César",
+          "role": "Représentant légal",
+          "source": "cncef"
+        }
+      ],
       "associations": {
         "cncef": {
           "member": true
@@ -580810,7 +581995,8 @@
       "is_new": false,
       "source_urls": {
         "cncef": "https://www.cncef.org/annuaire/zephir-patrimoine-investissements/"
-      }
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_dc16e8859b",
