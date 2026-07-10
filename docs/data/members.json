@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T09:57:56.657759+00:00",
+  "last_updated": "2026-07-10T10:20:50.226981+00:00",
   "scrape_status": {
     "cncgp": {
       "status": "success",
@@ -49,7 +49,7 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-09T10:21:35.506017+00:00",
+      "timestamp": "2026-07-10T10:20:50.226981+00:00",
       "websites": 460,
       "emails": 7438
     },
@@ -157,7 +157,7 @@
       },
       "contacts_enrich": {
         "status": "success",
-        "timestamp": "2026-07-09T10:21:35.506017+00:00",
+        "timestamp": "2026-07-10T10:20:50.226981+00:00",
         "websites": 460,
         "emails": 7438
       },
@@ -172,7 +172,7 @@
         "fixed": 168
       }
     },
-    "last_updated": "2026-07-10T09:57:56.657759+00:00"
+    "last_updated": "2026-07-10T10:20:50.226981+00:00"
   },
   "members": [
     {
@@ -242774,51 +242774,6 @@
       }
     },
     {
-      "id": "cgp_f248893a21",
-      "company_name": "FILLENANCE PATRIMOINE",
-      "company_name_normalized": "fillenance patrimoine",
-      "siren": "",
-      "orias_number": "",
-      "address": {
-        "street": "44 BOULEVARD RODIN",
-        "postal_code": "92130",
-        "city": "ISSY LES MOULINEAUX",
-        "department": "92",
-        "department_name": "Hauts-de-Seine",
-        "region": "Ile-de-France"
-      },
-      "phone": "",
-      "email": "",
-      "website": "",
-      "activities": [
-        "CIF",
-        "COA"
-      ],
-      "specialties": [
-        "Patrimoine",
-        "Assurance"
-      ],
-      "directors": [
-        {
-          "name": "DILLMANN Adeline",
-          "role": "P"
-        }
-      ],
-      "associations": {
-        "cncef": {
-          "member": true
-        }
-      },
-      "groupement": null,
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-07-10",
-      "is_new": false,
-      "source_urls": {
-        "cncef": "https://www.cncef.org/annuaire/fillenance-patrimoine/"
-      },
-      "address_detail_done": true
-    },
-    {
       "id": "cgp_ec966a0d9f",
       "company_name": "FILLENANCE PATRIMOINE",
       "company_name_normalized": "fillenance patrimoine",
@@ -242875,6 +242830,51 @@
       "data_gouv": {
         "etat_administratif": "A"
       }
+    },
+    {
+      "id": "cgp_f248893a21",
+      "company_name": "FILLENANCE PATRIMOINE",
+      "company_name_normalized": "fillenance patrimoine",
+      "siren": "",
+      "orias_number": "",
+      "address": {
+        "street": "44 BOULEVARD RODIN",
+        "postal_code": "92130",
+        "city": "ISSY LES MOULINEAUX",
+        "department": "92",
+        "department_name": "Hauts-de-Seine",
+        "region": "Ile-de-France"
+      },
+      "phone": "",
+      "email": "",
+      "website": "",
+      "activities": [
+        "CIF",
+        "COA"
+      ],
+      "specialties": [
+        "Patrimoine",
+        "Assurance"
+      ],
+      "directors": [
+        {
+          "name": "DILLMANN Adeline",
+          "role": "P"
+        }
+      ],
+      "associations": {
+        "cncef": {
+          "member": true
+        }
+      },
+      "groupement": null,
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-10",
+      "is_new": false,
+      "source_urls": {
+        "cncef": "https://www.cncef.org/annuaire/fillenance-patrimoine/"
+      },
+      "address_detail_done": true
     },
     {
       "id": "cgp_b74163e459",
