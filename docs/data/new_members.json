@@ -1,21 +1,5 @@
 {
-  "last_updated": "2026-07-09",
-  "count": 1,
-  "new_members": [
-    {
-      "id": "cgp_131f15c66a",
-      "company_name": "WEALTHY GESTION PRIVEE",
-      "city": "Montpellier",
-      "department": "34",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-09",
-      "phone": "",
-      "email": ""
-    }
-  ]
+  "last_updated": "2026-07-10",
+  "count": 0,
+  "new_members": []
 }
