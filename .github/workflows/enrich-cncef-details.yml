@@ -1,8 +1,9 @@
 name: Enrich CNCEF addresses (detail pages)
 
 on:
-  schedule:
-    - cron: '30 6 * * *'   # Daily 06:30 UTC (after CNCEF scrape at 06:00)
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '30 6 * * *'   # Daily 06:30 UTC (after CNCEF scrape at 06:00)
   workflow_dispatch:
 
 permissions:

@@ -1,8 +1,9 @@
 name: Scrape CNCGP
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:

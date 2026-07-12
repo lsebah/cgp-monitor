@@ -1,8 +1,9 @@
 name: Scrape ANACOFI + AFFO
 
 on:
-  schedule:
-    - cron: '0 3 * * *'   # Daily 03:00 UTC (05:00 Paris été)
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '0 3 * * *'   # Daily 03:00 UTC (05:00 Paris été)
   workflow_dispatch:
 
 permissions:

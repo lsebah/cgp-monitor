@@ -1,8 +1,9 @@
 name: Enrich data.gouv
 
 on:
-  schedule:
-    - cron: '0 5 * * *'   # Daily 05:00 UTC (before the association scrapes)
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '0 5 * * *'   # Daily 05:00 UTC (before the association scrapes)
   workflow_dispatch:
 
 permissions:

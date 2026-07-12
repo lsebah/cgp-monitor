@@ -1,8 +1,9 @@
 name: Scrape CNCEF
 
 on:
-  schedule:
-    - cron: '0 4 * * *'
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:

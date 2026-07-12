@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "checked_at": "2026-07-12T18:15:44.401198+00:00",
+  "checks": [
+    {
+      "name": "freshness",
+      "ok": true,
+      "detail": "last_updated=2026-07-12T09:00:25 (il y a 0.4 j, max 8)"
+    },
+    {
+      "name": "total_members",
+      "ok": true,
+      "detail": "10351 membres (attendu 8000-15000)"
+    },
+    {
+      "name": "floor_cncgp",
+      "ok": true,
+      "detail": "cncgp=2536 (plancher 1600)"
+    },
+    {
+      "name": "floor_cncef",
+      "ok": true,
+      "detail": "cncef=4974 (plancher 2800)"
+    },
+    {
+      "name": "floor_anacofi",
+      "ok": true,
+      "detail": "anacofi=3138 (plancher 1900)"
+    },
+    {
+      "name": "stats_coherence",
+      "ok": true,
+      "detail": "stats=10351 vs members=10351"
+    },
+    {
+      "name": "unique_ids",
+      "ok": true,
+      "detail": "0 doublons d'ID"
+    }
+  ]
+}

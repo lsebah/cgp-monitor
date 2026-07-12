@@ -282,6 +282,45 @@ async function cloudSave() {
 // ============================================================
 // DATA LOADING
 // ============================================================
+// Boucle de contrôle côté client : bandeau visible si les données sont
+// obsolètes (refresh hebdo raté) ou si le health check serveur a signalé
+// un problème (docs/data/health.json, publié par health-check.yml).
+const STALE_DAYS = 8;   // refresh hebdo (lundi 14h) + marge d'1 jour
+async function renderHealthBanner(lastUpdated) {
+    let banner = document.getElementById('healthBanner');
+    const msgs = [];
+    let level = 'warn';
+
+    if (lastUpdated) {
+        const ageDays = (Date.now() - new Date(lastUpdated).getTime()) / 86400000;
+        if (ageDays > STALE_DAYS) {
+            msgs.push(`Donnees non rafraichies depuis ${Math.floor(ageDays)} jours ` +
+                      `(refresh hebdo attendu chaque lundi 14h).`);
+            level = 'error';
+        }
+    }
+    try {
+        const r = await fetch('data/health.json', { cache: 'no-cache' });
+        if (r.ok) {
+            const h = await r.json();
+            if (h.status && h.status !== 'ok') {
+                const fails = (h.checks || []).filter(c => !c.ok).map(c => c.detail);
+                msgs.push(`Controle automatique: ${h.status.toUpperCase()} — ` + fails.join(' ; '));
+                if (h.status === 'error') level = 'error';
+            }
+        }
+    } catch (e) { /* health.json absent = pas d'alerte */ }
+
+    if (!msgs.length) { if (banner) banner.remove(); return; }
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'healthBanner';
+        document.body.prepend(banner);
+    }
+    banner.className = 'health-banner ' + level;
+    banner.textContent = '⚠️ ' + msgs.join(' | ');
+}
+
 async function loadData() {
     try {
         const [membersResp, newResp, groupResp, cartoResp] = await Promise.all([
@@ -334,6 +373,7 @@ async function loadData() {
                 document.getElementById('lastUpdate').textContent =
                     `Mis a jour: ${d.toLocaleDateString('fr-FR')} ${d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
             }
+            renderHealthBanner(data.last_updated);
 
             // Populate department filter
             const depts = new Set();

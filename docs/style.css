@@ -1048,3 +1048,13 @@ body {
     .groupements-grid { grid-template-columns: 1fr; }
     .assoc-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Bandeau d'alerte de la boucle de contrôle (données obsolètes / health check) */
+.health-banner {
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.health-banner.warn { background: #fff3cd; color: #7a5c00; border-bottom: 1px solid #ffe08a; }
+.health-banner.error { background: #fdecea; color: #b3261e; border-bottom: 1px solid #f5c2c0; }

@@ -1,8 +1,9 @@
 name: Enrich Contacts (website + email)
 
 on:
-  schedule:
-    - cron: '0 7 * * *'   # Daily 07:00 UTC (after discovery at 05:30)
+  # Cron quotidien désactivé — refresh hebdo via weekly-refresh.yml (lundi 14h Paris)
+  # schedule:
+  #   - cron: '0 7 * * *'   # Daily 07:00 UTC (after discovery at 05:30)
   workflow_dispatch:
 
 permissions:
