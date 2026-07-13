@@ -1,12 +1,12 @@
 {
-  "total_members": 10351,
+  "total_members": 10275,
   "new_today": 0,
-  "new_this_week": 2309,
-  "new_this_month": 2463,
+  "new_this_week": 2241,
+  "new_this_month": 2387,
   "by_association": {
     "anacofi": 3138,
-    "cncef": 4974,
-    "cncgp": 2536,
+    "cncef": 4909,
+    "cncgp": 2525,
     "ucgp": 63,
     "leaders_league": 34,
     "registre": 5,
@@ -14,58 +14,58 @@
     "affo": 20
   },
   "by_activity": {
-    "CIF": 7157,
-    "COA": 4262,
-    "IOBSP": 1949,
-    "Immobilier": 1003
+    "CIF": 7144,
+    "COA": 4210,
+    "IOBSP": 1927,
+    "Immobilier": 999
   },
   "by_department": {
-    "75": 1707,
-    "69": 549,
-    "92": 465,
-    "33": 418,
-    "31": 409,
-    "13": 376,
-    "44": 330,
-    "06": 305,
-    "78": 286,
+    "75": 1703,
+    "69": 544,
+    "92": 463,
+    "33": 416,
+    "31": 406,
+    "13": 374,
+    "44": 327,
+    "06": 304,
+    "78": 283,
     "34": 263,
-    "38": 231,
-    "59": 231,
-    "67": 200,
-    "37": 189,
-    "83": 181,
-    "94": 181,
-    "35": 169,
+    "38": 228,
+    "59": 228,
+    "67": 199,
+    "37": 188,
+    "83": 179,
+    "94": 178,
+    "35": 168,
     "64": 141,
-    "77": 131,
-    "21": 116
+    "77": 129,
+    "74": 115
   },
   "total_departments": 100,
   "scrape_status": {
     "cncgp": {
       "status": "success",
       "count": 2632,
-      "timestamp": "2026-07-12T08:23:05.349808+00:00",
-      "duration_s": 568.7
+      "timestamp": "2026-07-13T15:14:25.960022+00:00",
+      "duration_s": 560.8
     },
     "cncef": {
       "status": "success",
-      "count": 4792,
-      "timestamp": "2026-07-12T06:23:43.840566+00:00",
-      "duration_s": 2634.3
+      "count": 4793,
+      "timestamp": "2026-07-13T14:27:32.241406+00:00",
+      "duration_s": 2812.6
     },
     "anacofi": {
       "status": "success",
       "count": 0,
-      "timestamp": "2026-07-12T05:54:27.027022+00:00",
-      "duration_s": 4.7
+      "timestamp": "2026-07-13T14:26:26.763407+00:00",
+      "duration_s": 4.1
     },
     "affo": {
       "status": "success",
       "count": 20,
-      "timestamp": "2026-07-12T05:54:27.027022+00:00",
-      "duration_s": 1.9
+      "timestamp": "2026-07-13T14:26:26.763407+00:00",
+      "duration_s": 2.5
     },
     "registre_manual": {
       "status": "success",
@@ -80,9 +80,9 @@
     },
     "datagouv_enrich": {
       "status": "success",
-      "timestamp": "2026-07-12T07:24:26.646819+00:00",
-      "missing_creation_date": 4440,
-      "purged_closed": 70
+      "timestamp": "2026-07-13T15:24:52.035191+00:00",
+      "missing_creation_date": 2419,
+      "purged_closed": 87
     },
     "registre_recent": {
       "status": "disabled",
@@ -91,8 +91,8 @@
     },
     "contacts_enrich": {
       "status": "success",
-      "timestamp": "2026-07-12T09:00:25.980530+00:00",
-      "websites": 461,
+      "timestamp": "2026-07-13T15:38:45.586187+00:00",
+      "websites": 459,
       "emails": 7438
     },
     "closed_cleanup": {
@@ -102,9 +102,9 @@
     },
     "cncef_detail_enrich": {
       "status": "success",
-      "timestamp": "2026-07-12T08:36:43.645945+00:00",
-      "fixed": 181
+      "timestamp": "2026-07-13T15:36:18.303137+00:00",
+      "fixed": 136
     }
   },
-  "last_updated": "2026-07-12T09:00:25.980530+00:00"
+  "last_updated": "2026-07-13T15:38:45.586187+00:00"
 }
