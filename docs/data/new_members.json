@@ -1,5 +1,396 @@
 {
-  "last_updated": "2026-07-13",
-  "count": 0,
-  "new_members": []
+  "last_updated": "2026-07-20",
+  "count": 26,
+  "new_members": [
+    {
+      "id": "cgp_35970454f1",
+      "company_name": "CAP PRÉVOYANCE ET PATRIMOINE",
+      "city": "Pessac",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33682366789",
+      "email": ""
+    },
+    {
+      "id": "cgp_83a6a6e1a7",
+      "company_name": "THE JAS PATRIMOINE",
+      "city": "St Clément De Rivière",
+      "department": "34",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33768596849",
+      "email": ""
+    },
+    {
+      "id": "cgp_a5802d7119",
+      "company_name": "CYRUS CONSEIL NANTES",
+      "city": "Nantes",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33679012230",
+      "email": ""
+    },
+    {
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "city": "Saint Amand Les Eaux",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33680598611",
+      "email": ""
+    },
+    {
+      "id": "cgp_f72570eb0b",
+      "company_name": "ACACIAS INVESTISSEMENT & CONSEIL PATRIMONIAL",
+      "city": "Melsheim",
+      "department": "67",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33786480498",
+      "email": ""
+    },
+    {
+      "id": "cgp_d2ebf830ae",
+      "company_name": "APERTIO PARTNERS II",
+      "city": "Champagne-Au-Mont-D'Or",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33660469716",
+      "email": ""
+    },
+    {
+      "id": "cgp_74a6429c07",
+      "company_name": "CABINET GIRAUD THOMAS",
+      "city": "Charly",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33670043699",
+      "email": ""
+    },
+    {
+      "id": "cgp_5b473b6880",
+      "company_name": "CYRUS CONSEIL LYON",
+      "city": "Lyon",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33472983838",
+      "email": ""
+    },
+    {
+      "id": "cgp_9318d3494e",
+      "company_name": "LA CONSEILLÈRE",
+      "city": "Lyon",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33642062418",
+      "email": ""
+    },
+    {
+      "id": "cgp_63b4175d61",
+      "company_name": "ONYX MONTS D'OR PATRIMOINE",
+      "city": "Albigny-Sur-Saône",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33760666832",
+      "email": ""
+    },
+    {
+      "id": "cgp_627ae38ea9",
+      "company_name": "EQUANCE*",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0aa74362ed",
+      "company_name": "FINANCIERE SAINT LAMBERT",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3b9f5ae52e",
+      "company_name": "OLIFAN GROUP",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_690c92a8c7",
+      "company_name": "SCALE INVESTISSEMENTS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33603000245",
+      "email": ""
+    },
+    {
+      "id": "cgp_24852181ba",
+      "company_name": "S O P",
+      "city": "Saint-Maur-Des-Fosses",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_33e991920a",
+      "company_name": "CYRUS CONSEIL CAEN",
+      "city": "Saint Contest",
+      "department": "14",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33231869515",
+      "email": ""
+    },
+    {
+      "id": "cgp_855e90d152",
+      "company_name": "CYRUS CONSEIL DIJON",
+      "city": "Dijon",
+      "department": "21",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33380780672",
+      "email": ""
+    },
+    {
+      "id": "cgp_35a065608d",
+      "company_name": "SARL LITTORAL PATRIMOINE",
+      "city": "Saint Brieuc",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_7fed5f61b0",
+      "company_name": "KALYOR CAPITAL",
+      "city": "Notre-Dame D",
+      "department": "37",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33760539854",
+      "email": ""
+    },
+    {
+      "id": "cgp_f62086df45",
+      "company_name": "CODEX - Conseil Patrimonial",
+      "city": "La Chaussee St Victor",
+      "department": "41",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33783255526",
+      "email": ""
+    },
+    {
+      "id": "cgp_8514ef7dfa",
+      "company_name": "CLARTE PATRIMOINE CONSEIL",
+      "city": "Saint-Lambert-La-Potherie",
+      "department": "49",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33616868389",
+      "email": ""
+    },
+    {
+      "id": "cgp_9dd60b5c04",
+      "company_name": "KENTEL PATRIMOINE - CONSEIL ET INVESTISSEMENT",
+      "city": "Ploemeur",
+      "department": "56",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33617466906",
+      "email": ""
+    },
+    {
+      "id": "cgp_be64990c62",
+      "company_name": "OPALE STRATEGIE PATRIMONIALE",
+      "city": "Saint-Martin-Boulogne",
+      "department": "62",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33630117735",
+      "email": ""
+    },
+    {
+      "id": "cgp_b59638ecc0",
+      "company_name": "ALTA PATRIMONIA",
+      "city": "La Farlede",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33687818169",
+      "email": ""
+    },
+    {
+      "id": "cgp_3435a8750b",
+      "company_name": "OPTIMISATION PATRIMONIALE",
+      "city": "Sanary Sur Mer",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33663043294",
+      "email": ""
+    },
+    {
+      "id": "cgp_bf8aa8d085",
+      "company_name": "KIZUNA GESTION PRIVÉE",
+      "city": "Charmes",
+      "department": "88",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-20",
+      "phone": "+33634181528",
+      "email": ""
+    }
+  ]
 }
