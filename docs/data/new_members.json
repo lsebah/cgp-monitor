@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-07-20",
-  "count": 26,
+  "last_updated": "2026-07-27",
+  "count": 19,
   "new_members": [
     {
-      "id": "cgp_35970454f1",
-      "company_name": "CAP PRÉVOYANCE ET PATRIMOINE",
-      "city": "Pessac",
-      "department": "33",
+      "id": "cgp_fac5170575",
+      "company_name": "SYNKYNDINEO",
+      "city": "Noves",
+      "department": "13",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
-      "phone": "+33682366789",
+      "first_seen": "2026-07-27",
+      "phone": "+33769697505",
       "email": ""
     },
     {
-      "id": "cgp_83a6a6e1a7",
-      "company_name": "THE JAS PATRIMOINE",
-      "city": "St Clément De Rivière",
+      "id": "cgp_500c034631",
+      "company_name": "GENESIA CONSEIL PRIVE",
+      "city": "Beziers",
       "department": "34",
       "activities": [
         "CIF"
@@ -28,8 +28,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
-      "phone": "+33768596849",
+      "first_seen": "2026-07-27",
+      "phone": "+33785131392",
       "email": ""
     },
     {
@@ -43,68 +43,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33679012230",
-      "email": ""
-    },
-    {
-      "id": "cgp_15f62f3a66",
-      "company_name": "ENVAIN PATRIMOINE",
-      "city": "Saint Amand Les Eaux",
-      "department": "59",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33680598611",
-      "email": ""
-    },
-    {
-      "id": "cgp_f72570eb0b",
-      "company_name": "ACACIAS INVESTISSEMENT & CONSEIL PATRIMONIAL",
-      "city": "Melsheim",
-      "department": "67",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33786480498",
-      "email": ""
-    },
-    {
-      "id": "cgp_d2ebf830ae",
-      "company_name": "APERTIO PARTNERS II",
-      "city": "Champagne-Au-Mont-D'Or",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33660469716",
-      "email": ""
-    },
-    {
-      "id": "cgp_74a6429c07",
-      "company_name": "CABINET GIRAUD THOMAS",
-      "city": "Charly",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33670043699",
       "email": ""
     },
     {
@@ -118,38 +58,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33472983838",
-      "email": ""
-    },
-    {
-      "id": "cgp_9318d3494e",
-      "company_name": "LA CONSEILLÈRE",
-      "city": "Lyon",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33642062418",
-      "email": ""
-    },
-    {
-      "id": "cgp_63b4175d61",
-      "company_name": "ONYX MONTS D'OR PATRIMOINE",
-      "city": "Albigny-Sur-Saône",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33760666832",
       "email": ""
     },
     {
@@ -163,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "",
       "email": ""
     },
@@ -178,8 +88,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_9cabd38a19",
+      "company_name": "GREYVALE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-27",
+      "phone": "+33685354087",
+      "email": ""
+    },
+    {
+      "id": "cgp_b596c8a48c",
+      "company_name": "JOUBERTIN",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-27",
+      "phone": "+33146229155",
       "email": ""
     },
     {
@@ -193,13 +133,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_690c92a8c7",
-      "company_name": "SCALE INVESTISSEMENTS",
+      "id": "cgp_3a558e4c7e",
+      "company_name": "PARALLEL PARTNERS",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -208,8 +148,53 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
-      "phone": "+33603000245",
+      "first_seen": "2026-07-27",
+      "phone": "+33672599448",
+      "email": ""
+    },
+    {
+      "id": "cgp_6c8fe5b5b2",
+      "company_name": "SAINT-ROCH PARTNERS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-27",
+      "phone": "+33681174857",
+      "email": ""
+    },
+    {
+      "id": "cgp_e677d51e8d",
+      "company_name": "FARIAD SAMIRA",
+      "city": "Boulogne Billancourt",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-27",
+      "phone": "+33745145167",
+      "email": ""
+    },
+    {
+      "id": "cgp_9d434d2188",
+      "company_name": "KMB CAPITAL FRANCE",
+      "city": "Neuilly-Sur-Seine",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-07-27",
+      "phone": "+33687454484",
       "email": ""
     },
     {
@@ -223,7 +208,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33143971155",
       "email": ""
     },
@@ -238,7 +223,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33231869515",
       "email": ""
     },
@@ -253,7 +238,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33380780672",
       "email": ""
     },
@@ -268,98 +253,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_7fed5f61b0",
-      "company_name": "KALYOR CAPITAL",
-      "city": "Notre-Dame D",
-      "department": "37",
+      "id": "cgp_2f8bd76eee",
+      "company_name": "LANNOY CONSEIL ET PATRIMOINE",
+      "city": "Boissières",
+      "department": "30",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
-      "phone": "+33760539854",
-      "email": ""
-    },
-    {
-      "id": "cgp_f62086df45",
-      "company_name": "CODEX - Conseil Patrimonial",
-      "city": "La Chaussee St Victor",
-      "department": "41",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33783255526",
-      "email": ""
-    },
-    {
-      "id": "cgp_8514ef7dfa",
-      "company_name": "CLARTE PATRIMOINE CONSEIL",
-      "city": "Saint-Lambert-La-Potherie",
-      "department": "49",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33616868389",
-      "email": ""
-    },
-    {
-      "id": "cgp_9dd60b5c04",
-      "company_name": "KENTEL PATRIMOINE - CONSEIL ET INVESTISSEMENT",
-      "city": "Ploemeur",
-      "department": "56",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33617466906",
-      "email": ""
-    },
-    {
-      "id": "cgp_be64990c62",
-      "company_name": "OPALE STRATEGIE PATRIMONIALE",
-      "city": "Saint-Martin-Boulogne",
-      "department": "62",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33630117735",
-      "email": ""
-    },
-    {
-      "id": "cgp_b59638ecc0",
-      "company_name": "ALTA PATRIMONIA",
-      "city": "La Farlede",
-      "department": "83",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33687818169",
+      "first_seen": "2026-07-27",
+      "phone": "+33687099977",
       "email": ""
     },
     {
@@ -373,23 +283,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-20",
+      "first_seen": "2026-07-27",
       "phone": "+33663043294",
-      "email": ""
-    },
-    {
-      "id": "cgp_bf8aa8d085",
-      "company_name": "KIZUNA GESTION PRIVÉE",
-      "city": "Charmes",
-      "department": "88",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-20",
-      "phone": "+33634181528",
       "email": ""
     }
   ]
