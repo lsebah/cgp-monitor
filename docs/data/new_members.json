@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-27",
-  "count": 19,
+  "last_updated": "2026-08-03",
+  "count": 17,
   "new_members": [
     {
-      "id": "cgp_fac5170575",
-      "company_name": "SYNKYNDINEO",
-      "city": "Noves",
+      "id": "cgp_96fa05aa20",
+      "company_name": "ATM CONSEIL",
+      "city": "Aix-En-Provence",
       "department": "13",
       "activities": [
         "CIF"
@@ -13,23 +13,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
-      "phone": "+33769697505",
+      "first_seen": "2026-08-03",
+      "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_500c034631",
-      "company_name": "GENESIA CONSEIL PRIVE",
-      "city": "Beziers",
-      "department": "34",
+      "id": "cgp_6afbf5036b",
+      "company_name": "AEVOM",
+      "city": "Toulouse",
+      "department": "31",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
-      "phone": "+33785131392",
+      "first_seen": "2026-08-03",
+      "phone": "+33681380481",
       "email": ""
     },
     {
@@ -43,8 +43,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33679012230",
+      "email": ""
+    },
+    {
+      "id": "cgp_ea88a754b7",
+      "company_name": "HESTIA'VENIR & PATRIMOINE",
+      "city": "Nantes",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-03",
+      "phone": "+33174344057",
+      "email": ""
+    },
+    {
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "city": "Saint Amand Les Eaux",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-03",
+      "phone": "+33680598611",
       "email": ""
     },
     {
@@ -58,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33472983838",
       "email": ""
     },
@@ -73,7 +103,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "",
       "email": ""
     },
@@ -88,13 +118,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_9cabd38a19",
-      "company_name": "GREYVALE",
+      "id": "cgp_69ec146dd2",
+      "company_name": "LA MANUFACTURE",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -103,23 +133,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
-      "phone": "+33685354087",
-      "email": ""
-    },
-    {
-      "id": "cgp_b596c8a48c",
-      "company_name": "JOUBERTIN",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-27",
-      "phone": "+33146229155",
+      "first_seen": "2026-08-03",
+      "phone": "+33681958387",
       "email": ""
     },
     {
@@ -133,68 +148,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_3a558e4c7e",
-      "company_name": "PARALLEL PARTNERS",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-27",
-      "phone": "+33672599448",
-      "email": ""
-    },
-    {
-      "id": "cgp_6c8fe5b5b2",
-      "company_name": "SAINT-ROCH PARTNERS",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-27",
-      "phone": "+33681174857",
-      "email": ""
-    },
-    {
-      "id": "cgp_e677d51e8d",
-      "company_name": "FARIAD SAMIRA",
-      "city": "Boulogne Billancourt",
-      "department": "92",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-27",
-      "phone": "+33745145167",
-      "email": ""
-    },
-    {
-      "id": "cgp_9d434d2188",
-      "company_name": "KMB CAPITAL FRANCE",
-      "city": "Neuilly-Sur-Seine",
-      "department": "92",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-07-27",
-      "phone": "+33687454484",
       "email": ""
     },
     {
@@ -208,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33143971155",
       "email": ""
     },
@@ -223,8 +178,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33231869515",
+      "email": ""
+    },
+    {
+      "id": "cgp_e8e300d8e6",
+      "company_name": "UNI PATRIMOINE",
+      "city": "Caen",
+      "department": "14",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-03",
+      "phone": "+33671304213",
       "email": ""
     },
     {
@@ -238,7 +208,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33380780672",
       "email": ""
     },
@@ -253,23 +223,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_2f8bd76eee",
-      "company_name": "LANNOY CONSEIL ET PATRIMOINE",
-      "city": "Boissières",
-      "department": "30",
+      "id": "cgp_7eb396fcad",
+      "company_name": "LE PHARE ASSURANCE",
+      "city": "Ramatuelle",
+      "department": "83",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
-      "phone": "+33687099977",
+      "first_seen": "2026-08-03",
+      "phone": "+33648248608",
       "email": ""
     },
     {
@@ -283,7 +253,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-07-27",
+      "first_seen": "2026-08-03",
       "phone": "+33663043294",
       "email": ""
     }
