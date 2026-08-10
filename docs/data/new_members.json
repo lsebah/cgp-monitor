@@ -1,35 +1,20 @@
 {
-  "last_updated": "2026-08-03",
-  "count": 17,
+  "last_updated": "2026-08-10",
+  "count": 16,
   "new_members": [
     {
-      "id": "cgp_96fa05aa20",
-      "company_name": "ATM CONSEIL",
-      "city": "Aix-En-Provence",
-      "department": "13",
+      "id": "cgp_a86e40ba05",
+      "company_name": "LUC ETIENNE CONSEIL PATRIMONIAL",
+      "city": "Cannes",
+      "department": "06",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_6afbf5036b",
-      "company_name": "AEVOM",
-      "city": "Toulouse",
-      "department": "31",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-03",
-      "phone": "+33681380481",
+      "first_seen": "2026-08-10",
+      "phone": "+33982344731",
       "email": ""
     },
     {
@@ -43,23 +28,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33679012230",
-      "email": ""
-    },
-    {
-      "id": "cgp_ea88a754b7",
-      "company_name": "HESTIA'VENIR & PATRIMOINE",
-      "city": "Nantes",
-      "department": "44",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-03",
-      "phone": "+33174344057",
       "email": ""
     },
     {
@@ -73,7 +43,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33680598611",
       "email": ""
     },
@@ -88,7 +58,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33472983838",
       "email": ""
     },
@@ -103,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "",
       "email": ""
     },
@@ -118,23 +88,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_69ec146dd2",
-      "company_name": "LA MANUFACTURE",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-03",
-      "phone": "+33681958387",
       "email": ""
     },
     {
@@ -148,8 +103,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_e44fbb6f84",
+      "company_name": "RB2M LIFE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-10",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_b7df91b66b",
+      "company_name": "BLUMARA",
+      "city": "Neuilly Sur Seine",
+      "department": "92",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-10",
+      "phone": "+33687454484",
       "email": ""
     },
     {
@@ -163,7 +148,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33143971155",
       "email": ""
     },
@@ -178,23 +163,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33231869515",
-      "email": ""
-    },
-    {
-      "id": "cgp_e8e300d8e6",
-      "company_name": "UNI PATRIMOINE",
-      "city": "Caen",
-      "department": "14",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-03",
-      "phone": "+33671304213",
       "email": ""
     },
     {
@@ -208,7 +178,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33380780672",
       "email": ""
     },
@@ -223,23 +193,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_7eb396fcad",
-      "company_name": "LE PHARE ASSURANCE",
-      "city": "Ramatuelle",
-      "department": "83",
+      "id": "cgp_7b3fd1dabe",
+      "company_name": "LA FINANCIERE DES BOIS NOIRS",
+      "city": "Chabreloche",
+      "department": "63",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
-      "phone": "+33648248608",
+      "first_seen": "2026-08-10",
+      "phone": "+33680968482",
+      "email": ""
+    },
+    {
+      "id": "cgp_e0e47a2498",
+      "company_name": "COFIDEST GESTION PRIVEE",
+      "city": "Thonon-Les-Bains",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-10",
+      "phone": "+33626626618",
       "email": ""
     },
     {
@@ -253,7 +238,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-03",
+      "first_seen": "2026-08-10",
       "phone": "+33663043294",
       "email": ""
     }
