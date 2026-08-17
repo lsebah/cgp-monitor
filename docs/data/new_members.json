@@ -1,22 +1,7 @@
 {
-  "last_updated": "2026-08-10",
-  "count": 16,
+  "last_updated": "2026-08-17",
+  "count": 12,
   "new_members": [
-    {
-      "id": "cgp_a86e40ba05",
-      "company_name": "LUC ETIENNE CONSEIL PATRIMONIAL",
-      "city": "Cannes",
-      "department": "06",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-10",
-      "phone": "+33982344731",
-      "email": ""
-    },
     {
       "id": "cgp_a5802d7119",
       "company_name": "CYRUS CONSEIL NANTES",
@@ -28,7 +13,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33679012230",
       "email": ""
     },
@@ -43,7 +28,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33680598611",
       "email": ""
     },
@@ -58,7 +43,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33472983838",
       "email": ""
     },
@@ -73,7 +58,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "",
       "email": ""
     },
@@ -88,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "",
       "email": ""
     },
@@ -103,13 +88,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_e44fbb6f84",
-      "company_name": "RB2M LIFE",
+      "id": "cgp_1af0931ad9",
+      "company_name": "REZULT",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -118,23 +103,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_b7df91b66b",
-      "company_name": "BLUMARA",
-      "city": "Neuilly Sur Seine",
-      "department": "92",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-10",
-      "phone": "+33687454484",
+      "first_seen": "2026-08-17",
+      "phone": "+33664742564",
       "email": ""
     },
     {
@@ -148,7 +118,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33143971155",
       "email": ""
     },
@@ -163,7 +133,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33231869515",
       "email": ""
     },
@@ -178,7 +148,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33380780672",
       "email": ""
     },
@@ -193,38 +163,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33678821214",
-      "email": ""
-    },
-    {
-      "id": "cgp_7b3fd1dabe",
-      "company_name": "LA FINANCIERE DES BOIS NOIRS",
-      "city": "Chabreloche",
-      "department": "63",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-10",
-      "phone": "+33680968482",
-      "email": ""
-    },
-    {
-      "id": "cgp_e0e47a2498",
-      "company_name": "COFIDEST GESTION PRIVEE",
-      "city": "Thonon-Les-Bains",
-      "department": "74",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-10",
-      "phone": "+33626626618",
       "email": ""
     },
     {
@@ -238,7 +178,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-10",
+      "first_seen": "2026-08-17",
       "phone": "+33663043294",
       "email": ""
     }
