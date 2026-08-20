@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "checked_at": "2026-08-17T17:32:22.136440+00:00",
+  "checked_at": "2026-08-20T08:25:02.369313+00:00",
   "checks": [
     {
       "name": "freshness",
       "ok": true,
-      "detail": "last_updated=2026-08-17T13:19:19 (il y a 0.2 j, max 8)"
+      "detail": "last_updated=2026-08-17T13:19:19 (il y a 2.8 j, max 8)"
     },
     {
       "name": "total_members",
