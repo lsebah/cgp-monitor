@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-24",
   "count": 12,
   "new_members": [
     {
@@ -13,7 +13,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33679012230",
       "email": ""
     },
@@ -28,7 +28,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33680598611",
       "email": ""
     },
@@ -43,8 +43,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33472983838",
+      "email": ""
+    },
+    {
+      "id": "cgp_1125483c56",
+      "company_name": "ARCLINES CAPITAL",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-08-24",
+      "phone": "+33621410960",
       "email": ""
     },
     {
@@ -58,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "",
       "email": ""
     },
@@ -73,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "",
       "email": ""
     },
@@ -88,23 +103,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_1af0931ad9",
-      "company_name": "REZULT",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-08-17",
-      "phone": "+33664742564",
       "email": ""
     },
     {
@@ -118,7 +118,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33143971155",
       "email": ""
     },
@@ -133,7 +133,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33231869515",
       "email": ""
     },
@@ -148,7 +148,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33380780672",
       "email": ""
     },
@@ -163,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33678821214",
       "email": ""
     },
@@ -178,7 +178,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-08-17",
+      "first_seen": "2026-08-24",
       "phone": "+33663043294",
       "email": ""
     }
