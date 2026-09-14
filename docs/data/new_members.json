@@ -1,5 +1,231 @@
 {
-  "last_updated": "2026-09-07",
-  "count": 0,
-  "new_members": []
+  "last_updated": "2026-09-14",
+  "count": 15,
+  "new_members": [
+    {
+      "id": "cgp_30bce107fc",
+      "company_name": "@EXPERT FAMILY",
+      "city": "Vitré",
+      "department": "35",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33974972662",
+      "email": ""
+    },
+    {
+      "id": "cgp_a5802d7119",
+      "company_name": "CYRUS CONSEIL NANTES",
+      "city": "Nantes",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33679012230",
+      "email": ""
+    },
+    {
+      "id": "cgp_15f62f3a66",
+      "company_name": "ENVAIN PATRIMOINE",
+      "city": "Saint Amand Les Eaux",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33680598611",
+      "email": ""
+    },
+    {
+      "id": "cgp_5b473b6880",
+      "company_name": "CYRUS CONSEIL LYON",
+      "city": "Lyon",
+      "department": "69",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33472983838",
+      "email": ""
+    },
+    {
+      "id": "cgp_627ae38ea9",
+      "company_name": "EQUANCE*",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0aa74362ed",
+      "company_name": "FINANCIERE SAINT LAMBERT",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_c1cafbfe76",
+      "company_name": "IROKO",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_3b9f5ae52e",
+      "company_name": "OLIFAN GROUP",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_257f3b04d7",
+      "company_name": "SECULAR ACCESS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33617559969",
+      "email": ""
+    },
+    {
+      "id": "cgp_24852181ba",
+      "company_name": "S O P",
+      "city": "Saint-Maur-Des-Fosses",
+      "department": "94",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_33e991920a",
+      "company_name": "CYRUS CONSEIL CAEN",
+      "city": "Saint Contest",
+      "department": "14",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33231869515",
+      "email": ""
+    },
+    {
+      "id": "cgp_70aa620d00",
+      "company_name": "ELITE INVEST PATRIMOINE",
+      "city": "Nice",
+      "department": "16",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33651193536",
+      "email": ""
+    },
+    {
+      "id": "cgp_855e90d152",
+      "company_name": "CYRUS CONSEIL DIJON",
+      "city": "Dijon",
+      "department": "21",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33380780672",
+      "email": ""
+    },
+    {
+      "id": "cgp_35a065608d",
+      "company_name": "SARL LITTORAL PATRIMOINE",
+      "city": "Saint Brieuc",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_3435a8750b",
+      "company_name": "OPTIMISATION PATRIMONIALE",
+      "city": "Sanary Sur Mer",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-14",
+      "phone": "+33663043294",
+      "email": ""
+    }
+  ]
 }
