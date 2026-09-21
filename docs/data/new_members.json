@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-09-14",
-  "count": 15,
+  "last_updated": "2026-09-21",
+  "count": 19,
   "new_members": [
     {
-      "id": "cgp_30bce107fc",
-      "company_name": "@EXPERT FAMILY",
-      "city": "Vitré",
-      "department": "35",
+      "id": "cgp_7e6b6a89a3",
+      "company_name": "CAMELLIA INVEST",
+      "city": "Bordeaux",
+      "department": "33",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
-      "phone": "+33974972662",
+      "first_seen": "2026-09-21",
+      "phone": "+33669728468",
       "email": ""
     },
     {
@@ -28,7 +28,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33679012230",
       "email": ""
     },
@@ -43,8 +43,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33680598611",
+      "email": ""
+    },
+    {
+      "id": "cgp_7f4f0622c4",
+      "company_name": "K PATRIMOINE",
+      "city": "Villeneuve D'Ascq",
+      "department": "59",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-21",
+      "phone": "+33362658050",
       "email": ""
     },
     {
@@ -58,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33472983838",
       "email": ""
     },
@@ -73,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "",
       "email": ""
     },
@@ -88,22 +103,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_c1cafbfe76",
-      "company_name": "IROKO",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "",
       "email": ""
     },
@@ -118,13 +118,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_257f3b04d7",
-      "company_name": "SECULAR ACCESS",
+      "id": "cgp_dff0a3c0f2",
+      "company_name": "SEAPF",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -133,8 +133,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
-      "phone": "+33617559969",
+      "first_seen": "2026-09-21",
+      "phone": "+33146229155",
       "email": ""
     },
     {
@@ -148,8 +148,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_012398fc6a",
+      "company_name": "PERENEA",
+      "city": "Bellerive-Sur-Allier",
+      "department": "03",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-21",
+      "phone": "+33669956200",
       "email": ""
     },
     {
@@ -163,23 +178,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33231869515",
       "email": ""
     },
     {
-      "id": "cgp_70aa620d00",
-      "company_name": "ELITE INVEST PATRIMOINE",
-      "city": "Nice",
-      "department": "16",
+      "id": "cgp_2eb96a6718",
+      "company_name": "KLEROS GESTION PRIVÉE",
+      "city": "Saint-Georges-De-Didonne",
+      "department": "17",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
-      "phone": "+33651193536",
+      "first_seen": "2026-09-21",
+      "phone": "+33750262568",
       "email": ""
     },
     {
@@ -193,8 +208,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33380780672",
+      "email": ""
+    },
+    {
+      "id": "cgp_7bafe2865e",
+      "company_name": "ROUDENN PATRIMOINE",
+      "city": "Lamballe Armor",
+      "department": "22",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-21",
+      "phone": "+33674721268",
       "email": ""
     },
     {
@@ -208,8 +238,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_8856a841ce",
+      "company_name": "MERAVA PARTNERS",
+      "city": "Nîmes",
+      "department": "30",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-21",
+      "phone": "+33628401311",
       "email": ""
     },
     {
@@ -223,8 +268,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-09-14",
+      "first_seen": "2026-09-21",
       "phone": "+33663043294",
+      "email": ""
+    },
+    {
+      "id": "cgp_f321c2c3fd",
+      "company_name": "BG CONSEILS & PATRIMOINE",
+      "city": "Sainte-Marie",
+      "department": "974",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-09-21",
+      "phone": "+33684301425",
       "email": ""
     }
   ]
