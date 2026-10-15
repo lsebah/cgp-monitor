@@ -1,11 +1,11 @@
 {
   "status": "warn",
-  "checked_at": "2026-10-12T23:33:25.401377+00:00",
+  "checked_at": "2026-10-15T12:56:58.772785+00:00",
   "checks": [
     {
       "name": "freshness",
       "ok": true,
-      "detail": "last_updated=2026-10-12T21:12:22 (il y a 0.1 j, max 8)"
+      "detail": "last_updated=2026-10-12T21:12:22 (il y a 2.7 j, max 8)"
     },
     {
       "name": "total_members",
