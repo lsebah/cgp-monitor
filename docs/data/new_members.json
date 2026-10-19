@@ -1,67 +1,7 @@
 {
-  "last_updated": "2026-10-12",
-  "count": 22,
+  "last_updated": "2026-10-19",
+  "count": 16,
   "new_members": [
-    {
-      "id": "cgp_ef9525d2e7",
-      "company_name": "HIMPACTE",
-      "city": "Nice",
-      "department": "06",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33649306527",
-      "email": ""
-    },
-    {
-      "id": "cgp_15012b49da",
-      "company_name": "PIERRE GHIGOU",
-      "city": "Cannes",
-      "department": "06",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33660728776",
-      "email": ""
-    },
-    {
-      "id": "cgp_4a38b38a7f",
-      "company_name": "SAS VALDO FAMILY OFFICE",
-      "city": "Cannes",
-      "department": "06",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33785105550",
-      "email": ""
-    },
-    {
-      "id": "cgp_d1d0ec83ca",
-      "company_name": "INVEST",
-      "city": "Colomiers",
-      "department": "31",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33686142174",
-      "email": ""
-    },
     {
       "id": "cgp_a5802d7119",
       "company_name": "CYRUS CONSEIL NANTES",
@@ -73,7 +13,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33679012230",
       "email": ""
     },
@@ -88,23 +28,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33680598611",
-      "email": ""
-    },
-    {
-      "id": "cgp_b4d45bda18",
-      "company_name": "EXPANSION PATRIMOINE",
-      "city": "Lille",
-      "department": "59",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33610646545",
       "email": ""
     },
     {
@@ -118,13 +43,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33472983838",
       "email": ""
     },
     {
-      "id": "cgp_60c660025b",
-      "company_name": "FITEKK",
+      "id": "cgp_dc6d9cd30c",
+      "company_name": "LIRIANE PATRIMOINE",
       "city": "Lyon",
       "department": "69",
       "activities": [
@@ -133,23 +58,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
-      "phone": "+33633857295",
+      "first_seen": "2026-10-19",
+      "phone": "+33670502717",
       "email": ""
     },
     {
-      "id": "cgp_39e66ac1cd",
-      "company_name": "BLACKPEARL WEALTH MANAGEMENT",
-      "city": "Paris",
-      "department": "75",
+      "id": "cgp_bc873d3b9c",
+      "company_name": "WF CAPITAL",
+      "city": "Dardily",
+      "department": "69",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
-      "phone": "+33750866414",
+      "first_seen": "2026-10-19",
+      "phone": "+33671317849",
       "email": ""
     },
     {
@@ -163,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "",
       "email": ""
     },
@@ -178,7 +103,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "",
       "email": ""
     },
@@ -193,13 +118,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_77180e1afb",
-      "company_name": "ORMELLO",
+      "id": "cgp_316e378c2b",
+      "company_name": "PATRIMOINES &CIE",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -208,8 +133,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
-      "phone": "+33620841678",
+      "first_seen": "2026-10-19",
+      "phone": "+33630328006",
+      "email": ""
+    },
+    {
+      "id": "cgp_e4a569ca1f",
+      "company_name": "PREVALENCE",
+      "city": "Le Vésinet",
+      "department": "78",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-19",
+      "phone": "+33140262852",
       "email": ""
     },
     {
@@ -223,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33143971155",
       "email": ""
     },
@@ -238,7 +178,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33231869515",
       "email": ""
     },
@@ -253,7 +193,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33380780672",
       "email": ""
     },
@@ -268,14 +208,14 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_2b2810c6b2",
-      "company_name": "GRICOURT CONSEIL",
-      "city": "Orléans",
+      "id": "cgp_aca612a3a1",
+      "company_name": "L&E ASSOCIÉS",
+      "city": "Olivet",
       "department": "45",
       "activities": [
         "CIF"
@@ -283,23 +223,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
-      "phone": "+33238810664",
-      "email": ""
-    },
-    {
-      "id": "cgp_9418604629",
-      "company_name": "GL CONSEIL",
-      "city": "Camblain Chatelain",
-      "department": "62",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33321013783",
+      "first_seen": "2026-10-19",
+      "phone": "+33683864519",
       "email": ""
     },
     {
@@ -313,23 +238,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-12",
+      "first_seen": "2026-10-19",
       "phone": "+33663043294",
-      "email": ""
-    },
-    {
-      "id": "cgp_039c64f173",
-      "company_name": "YEMA CONSEILS",
-      "city": "Fort De France",
-      "department": "972",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-12",
-      "phone": "+33696052120",
       "email": ""
     }
   ]
