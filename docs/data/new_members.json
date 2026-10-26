@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-10-19",
-  "count": 16,
+  "last_updated": "2026-10-26",
+  "count": 20,
   "new_members": [
+    {
+      "id": "cgp_46d0c4e3b8",
+      "company_name": "AS'SURANCES & CONSEIL",
+      "city": "Cestas",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33632768735",
+      "email": ""
+    },
+    {
+      "id": "cgp_4a7830e538",
+      "company_name": "CABINET ANAIS DAUBINET",
+      "city": "La Turballe",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33768447904",
+      "email": ""
+    },
     {
       "id": "cgp_a5802d7119",
       "company_name": "CYRUS CONSEIL NANTES",
@@ -13,7 +43,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33679012230",
       "email": ""
     },
@@ -28,7 +58,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33680598611",
       "email": ""
     },
@@ -43,38 +73,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33472983838",
-      "email": ""
-    },
-    {
-      "id": "cgp_dc6d9cd30c",
-      "company_name": "LIRIANE PATRIMOINE",
-      "city": "Lyon",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-19",
-      "phone": "+33670502717",
-      "email": ""
-    },
-    {
-      "id": "cgp_bc873d3b9c",
-      "company_name": "WF CAPITAL",
-      "city": "Dardily",
-      "department": "69",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-19",
-      "phone": "+33671317849",
       "email": ""
     },
     {
@@ -88,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "",
       "email": ""
     },
@@ -103,7 +103,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "",
       "email": ""
     },
@@ -118,38 +118,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_316e378c2b",
-      "company_name": "PATRIMOINES &CIE",
-      "city": "Paris",
-      "department": "75",
+      "id": "cgp_21c4ec99a4",
+      "company_name": "CABINET LOUIS DUFOUR",
+      "city": "Saint-Aubin-De-Crétot",
+      "department": "76",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
-      "phone": "+33630328006",
+      "first_seen": "2026-10-26",
+      "phone": "+33781869176",
       "email": ""
     },
     {
-      "id": "cgp_e4a569ca1f",
-      "company_name": "PREVALENCE",
-      "city": "Le Vésinet",
-      "department": "78",
+      "id": "cgp_9d9ddbb65d",
+      "company_name": "EURIAL",
+      "city": "Issy-Les-Moulineaux",
+      "department": "92",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
-      "phone": "+33140262852",
+      "first_seen": "2026-10-26",
+      "phone": "+33155957705",
       "email": ""
     },
     {
@@ -163,8 +163,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33143971155",
+      "email": ""
+    },
+    {
+      "id": "cgp_7901a9eca2",
+      "company_name": "SIGMA FINANCE",
+      "city": "Villars-Colmars",
+      "department": "04",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33661831652",
       "email": ""
     },
     {
@@ -178,8 +193,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33231869515",
+      "email": ""
+    },
+    {
+      "id": "cgp_865039ffb0",
+      "company_name": "PATRIMOINE PLUS",
+      "city": "Tournon-Sur-Rhône",
+      "department": "17",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33786117899",
       "email": ""
     },
     {
@@ -193,7 +223,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33380780672",
       "email": ""
     },
@@ -208,23 +238,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_aca612a3a1",
-      "company_name": "L&E ASSOCIÉS",
-      "city": "Olivet",
-      "department": "45",
+      "id": "cgp_08835dbb4c",
+      "company_name": "BARBAULT FINANCIAL ADVISORY",
+      "city": "Saint-Barthélemy-D'Anjou",
+      "department": "49",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
-      "phone": "+33683864519",
+      "first_seen": "2026-10-26",
+      "phone": "+33621101101",
+      "email": ""
+    },
+    {
+      "id": "cgp_6d94581deb",
+      "company_name": "PILOT 4 GEST",
+      "city": "Baden",
+      "department": "56",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33626552252",
       "email": ""
     },
     {
@@ -238,8 +283,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-19",
+      "first_seen": "2026-10-26",
       "phone": "+33663043294",
+      "email": ""
+    },
+    {
+      "id": "cgp_b417eafdc5",
+      "company_name": "CABINET LEBRUN ALLAN",
+      "city": "Franconville",
+      "department": "95",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-10-26",
+      "phone": "+33651129580",
       "email": ""
     }
   ]
