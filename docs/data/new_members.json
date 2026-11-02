@@ -1,26 +1,11 @@
 {
-  "last_updated": "2026-10-26",
-  "count": 20,
+  "last_updated": "2026-11-02",
+  "count": 17,
   "new_members": [
     {
-      "id": "cgp_46d0c4e3b8",
-      "company_name": "AS'SURANCES & CONSEIL",
-      "city": "Cestas",
-      "department": "33",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-26",
-      "phone": "+33632768735",
-      "email": ""
-    },
-    {
-      "id": "cgp_4a7830e538",
-      "company_name": "CABINET ANAIS DAUBINET",
-      "city": "La Turballe",
+      "id": "cgp_4edf872571",
+      "company_name": "CABINET CLÉMENT LONGEPE",
+      "city": "Carquefou",
       "department": "44",
       "activities": [
         "CIF"
@@ -28,8 +13,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
-      "phone": "+33768447904",
+      "first_seen": "2026-11-02",
+      "phone": "+33630849390",
       "email": ""
     },
     {
@@ -43,7 +28,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33679012230",
       "email": ""
     },
@@ -58,7 +43,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33680598611",
       "email": ""
     },
@@ -73,7 +58,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33472983838",
       "email": ""
     },
@@ -88,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "",
       "email": ""
     },
@@ -103,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "",
       "email": ""
     },
@@ -118,29 +103,14 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_21c4ec99a4",
-      "company_name": "CABINET LOUIS DUFOUR",
-      "city": "Saint-Aubin-De-Crétot",
-      "department": "76",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-26",
-      "phone": "+33781869176",
-      "email": ""
-    },
-    {
-      "id": "cgp_9d9ddbb65d",
-      "company_name": "EURIAL",
-      "city": "Issy-Les-Moulineaux",
+      "id": "cgp_28dff1003a",
+      "company_name": "CARE",
+      "city": "Courbevoie",
       "department": "92",
       "activities": [
         "CIF"
@@ -148,8 +118,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
-      "phone": "+33155957705",
+      "first_seen": "2026-11-02",
+      "phone": "+33660796998",
       "email": ""
     },
     {
@@ -163,23 +133,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33143971155",
-      "email": ""
-    },
-    {
-      "id": "cgp_7901a9eca2",
-      "company_name": "SIGMA FINANCE",
-      "city": "Villars-Colmars",
-      "department": "04",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-26",
-      "phone": "+33661831652",
       "email": ""
     },
     {
@@ -193,23 +148,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33231869515",
-      "email": ""
-    },
-    {
-      "id": "cgp_865039ffb0",
-      "company_name": "PATRIMOINE PLUS",
-      "city": "Tournon-Sur-Rhône",
-      "department": "17",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-26",
-      "phone": "+33786117899",
       "email": ""
     },
     {
@@ -223,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33380780672",
       "email": ""
     },
@@ -238,38 +178,68 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33678821214",
       "email": ""
     },
     {
-      "id": "cgp_08835dbb4c",
-      "company_name": "BARBAULT FINANCIAL ADVISORY",
-      "city": "Saint-Barthélemy-D'Anjou",
-      "department": "49",
+      "id": "cgp_673118f1be",
+      "company_name": "OPTION PATRIMOINE",
+      "city": "Bayonne",
+      "department": "64",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
-      "phone": "+33621101101",
+      "first_seen": "2026-11-02",
+      "phone": "+33534274000",
       "email": ""
     },
     {
-      "id": "cgp_6d94581deb",
-      "company_name": "PILOT 4 GEST",
-      "city": "Baden",
-      "department": "56",
+      "id": "cgp_2d1672b054",
+      "company_name": "CABINET GUERIN YOANN",
+      "city": "Le Mans",
+      "department": "72",
       "activities": [
         "CIF"
       ],
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
-      "phone": "+33626552252",
+      "first_seen": "2026-11-02",
+      "phone": "+33621493264",
+      "email": ""
+    },
+    {
+      "id": "cgp_9e01fa2b8a",
+      "company_name": "CABINET LOU MENGES-HILLAU",
+      "city": "Annecy",
+      "department": "74",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-02",
+      "phone": "+33673958800",
+      "email": ""
+    },
+    {
+      "id": "cgp_63d0544d06",
+      "company_name": "EI MAXIME VERHOEVEN",
+      "city": "Saint Raphael",
+      "department": "83",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-02",
+      "phone": "+33662962459",
       "email": ""
     },
     {
@@ -283,23 +253,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-10-26",
+      "first_seen": "2026-11-02",
       "phone": "+33663043294",
-      "email": ""
-    },
-    {
-      "id": "cgp_b417eafdc5",
-      "company_name": "CABINET LEBRUN ALLAN",
-      "city": "Franconville",
-      "department": "95",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-10-26",
-      "phone": "+33651129580",
       "email": ""
     }
   ]
