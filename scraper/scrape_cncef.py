@@ -89,9 +89,19 @@ def main():
     # Fast additive merge (no fuzzy matching — O(N) instead of O(N²))
     logger.info(">>> Fast additive merge...")
     t1 = datetime.now(timezone.utc)
+    # Keys, most reliable first: the CNCEF detail URL (stable slug, present on
+    # every CNCEF member since the 08/2026 scrapes), the SIREN, then the
+    # normalised name + city, then the name alone — the September 2026 layout
+    # of cncef.org no longer prints the city on the cards, so a name+city key
+    # would have re-created the whole directory as "new" members.
+    url_idx = {}
     siren_idx = {}
     name_city_idx = {}
+    name_idx = {}
     for m in existing_members:
+        u = (m.get("source_urls") or {}).get("cncef")
+        if u:
+            url_idx[u.rstrip("/")] = m
         s = m.get("siren")
         if s:
             siren_idx[s] = m
@@ -99,25 +109,36 @@ def main():
         city = normalize_city(m.get("address", {}).get("city", ""))
         if nn:
             name_city_idx[(nn, city)] = m
+            name_idx.setdefault(nn, m)
 
     new_members = []
     matched = 0
     for o in cncef:
+        u = (o.get("source_urls") or {}).get("cncef", "").rstrip("/")
         s = o.get("siren")
         nn = o.get("company_name_normalized") or normalize_name(o.get("company_name", ""))
         city = normalize_city(o.get("address", {}).get("city", ""))
 
         match = None
-        if s and s in siren_idx:
+        if u and u in url_idx:
+            match = url_idx[u]
+        elif s and s in siren_idx:
             match = siren_idx[s]
         elif nn and (nn, city) in name_city_idx:
             match = name_city_idx[(nn, city)]
+        elif nn and not city and nn in name_idx:
+            match = name_idx[nn]
 
         if match:
             match.setdefault("associations", {})["cncef"] = o.get("associations", {}).get("cncef", {"member": True})
             acts = set(match.get("activities", [])) | set(o.get("activities", []))
             match["activities"] = list(acts)
             match["last_seen"] = today
+            if u:
+                match.setdefault("source_urls", {})["cncef"] = o["source_urls"]["cncef"]
+            # A region read on the card fills a blank, never replaces an address.
+            if o.get("address", {}).get("region") and not match.get("address", {}).get("region"):
+                match.setdefault("address", {})["region"] = o["address"]["region"]
             matched += 1
         else:
             o["first_seen"] = today
@@ -125,10 +146,13 @@ def main():
             o["is_new"] = True
             existing_members.append(o)
             new_members.append(o)
+            if u:
+                url_idx[u] = o
             if s:
                 siren_idx[s] = o
             if nn:
                 name_city_idx[(nn, city)] = o
+                name_idx.setdefault(nn, o)
 
     for m in existing_members:
         m.setdefault("is_new", False)

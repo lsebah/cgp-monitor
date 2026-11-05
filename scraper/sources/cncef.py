@@ -2,17 +2,19 @@
 CNCEF Scraper - Chambre Nationale des Conseils Experts Financiers
 Scrapes the directory at https://www.cncef.org/annuaire/ via HTML pagination.
 
-HTML structure (verified April 2026):
-- Grid container: div.annuaire__grid
-- Each card: div.annuaire__item
-  - Name: h2.annuaire__item__name
-  - Location: p.annuaire__item__place  (e.g. "Paris (75)")
-  - Activities: div.annuaire__item__tag-list ul li  (e.g. "Assurance", "Credit", "Patrimoine")
-  - Detail link: div.annuaire__item__bottom a.annuaire__item__button
-- Pagination: ul.pagination
-  - Current: li.current
-  - Next: li.next.btn > a
-  - Pages numbered 1..411
+HTML structure (site redesigned early September 2026 — the old selectors
+returned 0 cards from 07/09/2026 and the anti-regression guard froze the data;
+verified 05/11/2026):
+- Grid container: div.archive__grid
+- Each card: div.entry-fiche_annuaire  (old: div.annuaire__item)
+  - Name: h2.entry-fiche_annuaire__name
+  - Location: p.entry-fiche_annuaire__place  — now the REGION only
+    ("Nouvelle-Aquitaine"); the city/department come from the detail page
+    (enrich_cncef_details.py). Old layout: "Paris (75)".
+  - Activities: ul.entry-fiche_annuaire__domains li .pill  (CIF, IAS, IOBSP, IMMO, M&A)
+  - Detail link: a.entry-fiche_annuaire__button  (https://www.cncef.org/annuaire/<slug>/)
+- Pagination: ul.pagination, pages /annuaire/page/N/, 12 per page, ~400 pages
+Both layouts are accepted so a rollback of the site does not break the scrape.
 """
 import logging
 import re
@@ -25,6 +27,15 @@ logger = logging.getLogger(__name__)
 
 ANNUAIRE_URL = "https://www.cncef.org/annuaire/"
 
+# French regions as the new cards print them (lower-cased for the test)
+REGIONS = {
+    "auvergne-rhône-alpes", "auvergne-rhone-alpes", "bourgogne-franche-comté", "bourgogne-franche-comte",
+    "bretagne", "centre-val de loire", "corse", "grand est", "hauts-de-france", "île-de-france",
+    "ile-de-france", "normandie", "nouvelle-aquitaine", "occitanie", "pays de la loire",
+    "provence-alpes-côte d'azur", "provence-alpes-cote d'azur", "guadeloupe", "martinique",
+    "guyane", "la réunion", "la reunion", "mayotte", "outre-mer",
+}
+
 # Map CNCEF activity labels to standard codes
 ACTIVITY_MAP = {
     "assurance": "COA",
@@ -35,36 +46,54 @@ ACTIVITY_MAP = {
     "expertise financiere": "CIF",
     "immobilier": "Immobilier",
     "france m&a": "CIF",
+    # Pills of the September 2026 layout
+    "cif": "CIF",
+    "ias": "COA",
+    "iobsp": "IOBSP",
+    "immo": "Immobilier",
+    "m&a": "CIF",
 }
+
+# Selectors of both layouts (new first)
+SEL_CARD = "div.entry-fiche_annuaire, div.annuaire__item"
+SEL_NAME = ".entry-fiche_annuaire__name, .annuaire__item__name"
+SEL_PLACE = ".entry-fiche_annuaire__place, .annuaire__item__place"
+SEL_ACTIVITY = ".entry-fiche_annuaire__domain .pill, .entry-fiche_annuaire__domain, .annuaire__item__tag-list li"
+SEL_DETAIL = "a.entry-fiche_annuaire__button, a.annuaire__item__button"
+CARD_MARKERS = ("entry-fiche_annuaire", "annuaire__item")
 
 
 def _parse_card(card):
-    """Parse a single .annuaire__item card."""
-    name_el = card.select_one(".annuaire__item__name")
+    """Parse a single member card (either layout)."""
+    name_el = card.select_one(SEL_NAME)
     if not name_el:
         return None
-    name = name_el.get_text(strip=True)
+    name = re.sub(r"\s+", " ", name_el.get_text(strip=True))
     if not name or len(name) < 2:
         return None
 
-    # Location: "Paris (75)" or "Isere (38)"
-    place_el = card.select_one(".annuaire__item__place")
+    # Location: old layout "Paris (75)" / "Isere (38)"; new layout: the region
+    # alone ("Nouvelle-Aquitaine"), which is NOT a city — kept apart.
+    place_el = card.select_one(SEL_PLACE)
     city = ""
     department = ""
+    region = ""
     if place_el:
-        place_text = place_el.get_text(strip=True)
-        dept_match = re.search(r'\((\d{2,3})\)', place_text)
+        place_text = re.sub(r"\s+", " ", place_el.get_text(strip=True))
+        dept_match = re.search(r'\((\d{2,3}|2A|2B)\)', place_text)
         if dept_match:
             department = dept_match.group(1)
-            city = re.sub(r'\s*\(\d{2,3}\)\s*', '', place_text).strip()
+            city = re.sub(r'\s*\((\d{2,3}|2A|2B)\)\s*', '', place_text).strip()
+        elif place_text.lower() in REGIONS:
+            region = place_text
         else:
             city = place_text
 
-    # Activities from tag-list
+    # Activities from the pills / tag-list (deduplicated, order kept)
     raw_activities = []
-    for li in card.select(".annuaire__item__tag-list li"):
-        text = li.get_text(strip=True)
-        if text:
+    for li in card.select(SEL_ACTIVITY):
+        text = re.sub(r"\s+", " ", li.get_text(strip=True))
+        if text and text not in raw_activities:
             raw_activities.append(text)
 
     # Map to standard codes
@@ -76,13 +105,14 @@ def _parse_card(card):
             activities.append(mapped)
 
     # Detail link
-    detail_link = card.select_one("a.annuaire__item__button")
+    detail_link = card.select_one(SEL_DETAIL)
     detail_url = detail_link.get("href", "") if detail_link else ""
 
     return {
         "name": name,
         "city": city,
         "department": department,
+        "region": region,
         "activities": activities,
         "specialties": specialties,
         "detail_url": detail_url,
@@ -107,6 +137,21 @@ def _parse_detail_page(url):
         soup = BeautifulSoup(resp.text, "lxml")
         info = {}
 
+        # --- September 2026 layout: the contacts are a structured list
+        #     <li><p class="fiche-contact__list__name">OZOUX Eric</p>
+        #         <p class="fiche-contact__list__fonction">Représentant légal</p></li>
+        for li in soup.select(".fiche-contact__list li"):
+            n_el = li.select_one(".fiche-contact__list__name")
+            f_el = li.select_one(".fiche-contact__list__fonction")
+            if not n_el:
+                continue
+            name = re.sub(r"\s+", " ", n_el.get_text(strip=True))
+            role = re.sub(r"\s+", " ", f_el.get_text(strip=True)) if f_el else ""
+            if 3 < len(name) < 60 and (not role or re.search(r"repr[ée]sentant|g[ée]rant|pr[ée]sident|dirigeant|directeur", role, re.I)):
+                info["director_name"] = name
+                info["director_role"] = role or "Représentant légal"
+                break
+
         # --- "Siège social" block: typically a row with the label followed by
         # the address in the same container.
         for el in soup.find_all(string=re.compile(r"Si[èe]ge social", re.I)):
@@ -122,8 +167,8 @@ def _parse_detail_page(url):
                 info["city"] = m.group(3).strip()
                 break
 
-        # --- "Représentant légal" block: "NAME [Représentant légal] [- ROLE]"
-        for el in soup.find_all(string=re.compile(r"Repr[ée]sentant l[ée]gal", re.I)):
+        # --- Old layout, "Représentant légal" block: "NAME [Représentant légal] [- ROLE]"
+        for el in [] if info.get("director_name") else soup.find_all(string=re.compile(r"Repr[ée]sentant l[ée]gal", re.I)):
             block = el.parent.find_parent("div") or el.parent
             text = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
             # Expected: "NOM Prénom Représentant légal[- ROLE]"
@@ -196,7 +241,7 @@ def _fetch_page(page_num):
     try:
         r = _get_session().get(url, timeout=15)
         if r.status_code == 200:
-            if "annuaire__item" in r.text:
+            if any(marker in r.text for marker in CARD_MARKERS):
                 return (page_num, "ok", r.text)
             return (page_num, "end", "")
         if r.status_code == 404:
@@ -257,7 +302,7 @@ def scrape_cncef(max_pages=450, enrich_details=False):
     # Phase 3: parse sequentially (fast, in-memory)
     for page_num in sorted(pages.keys()):
         soup = BeautifulSoup(pages[page_num], "lxml")
-        cards = soup.select("div.annuaire__item")
+        cards = soup.select(SEL_CARD)
         for card in cards:
             data = _parse_card(card)
             if not data:
@@ -289,6 +334,10 @@ def scrape_cncef(max_pages=450, enrich_details=False):
                 source="cncef",
                 source_url=data["detail_url"],
             )
+            # New layout: the card only says the region; keep it so the map /
+            # filters have something until the detail page gives the city.
+            if data.get("region") and not member["address"].get("region"):
+                member["address"]["region"] = data["region"]
             members.append(member)
 
     logger.info(f"CNCEF: Total = {len(members)} members across {len(pages)} pages")
