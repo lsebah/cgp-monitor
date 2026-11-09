@@ -1,67 +1,7 @@
 {
-  "last_updated": "2026-11-05",
-  "count": 29,
+  "last_updated": "2026-11-09",
+  "count": 13,
   "new_members": [
-    {
-      "id": "cgp_a9b8b85e7f",
-      "company_name": "MAXINE",
-      "city": "Combaillaux",
-      "department": "34",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33660973836",
-      "email": ""
-    },
-    {
-      "id": "cgp_901033fa19",
-      "company_name": "CHALONO HUGO - BKAP CONSEIL",
-      "city": "Le Vivier Sur Mer",
-      "department": "35",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33612851780",
-      "email": ""
-    },
-    {
-      "id": "cgp_8df30ca6b5",
-      "company_name": "LYSEA",
-      "city": "Noyal Sur Vilaine",
-      "department": "35",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33601780335",
-      "email": ""
-    },
-    {
-      "id": "cgp_de543fb1c0",
-      "company_name": "SYNOS PATRIMOINE",
-      "city": "Rennes",
-      "department": "35",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33299547444",
-      "email": ""
-    },
     {
       "id": "cgp_a5802d7119",
       "company_name": "CYRUS CONSEIL NANTES",
@@ -73,8 +13,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33679012230",
+      "email": ""
+    },
+    {
+      "id": "cgp_ba502cad94",
+      "company_name": "SARL COLBERT FUSAC",
+      "city": "Nantes",
+      "department": "44",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-09",
+      "phone": "+33649587121",
       "email": ""
     },
     {
@@ -88,7 +43,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33680598611",
       "email": ""
     },
@@ -103,23 +58,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33472983838",
-      "email": ""
-    },
-    {
-      "id": "cgp_01d75aa753",
-      "company_name": "AIRIAL PARTNERS",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33769458464",
       "email": ""
     },
     {
@@ -133,7 +73,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "",
       "email": ""
     },
@@ -148,14 +88,14 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_950ffab85c",
-      "company_name": "INVESTISSEUR AVERTI",
-      "city": "Paris",
+      "id": "cgp_3d1d06d1d4",
+      "company_name": "LLA CAPITAL",
+      "city": "Le Mans",
       "department": "75",
       "activities": [
         "CIF"
@@ -163,23 +103,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
-      "phone": "+33607272355",
-      "email": ""
-    },
-    {
-      "id": "cgp_93c601efd9",
-      "company_name": "LAVALETTE CAPITAL AND ADVISORY",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33612581494",
+      "first_seen": "2026-11-09",
+      "phone": "+33783763371",
       "email": ""
     },
     {
@@ -193,83 +118,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "",
-      "email": ""
-    },
-    {
-      "id": "cgp_3e748b0ebd",
-      "company_name": "ORFÉDIS",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33769931227",
-      "email": ""
-    },
-    {
-      "id": "cgp_d36fecfcfe",
-      "company_name": "PLUTOMIA",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33669309044",
-      "email": ""
-    },
-    {
-      "id": "cgp_52f662b635",
-      "company_name": "CABINET RIVKA NAVIN",
-      "city": "Boissy-Le-Cutté",
-      "department": "91",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33767862895",
-      "email": ""
-    },
-    {
-      "id": "cgp_a4573b6dd7",
-      "company_name": "CONSTANCE GESTION PRIVÉE",
-      "city": "Sermaise",
-      "department": "91",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33606966894",
-      "email": ""
-    },
-    {
-      "id": "cgp_57cf4b522a",
-      "company_name": "GB CONSEIL PRIVÉ",
-      "city": "Saint Maurice",
-      "department": "94",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33750746070",
       "email": ""
     },
     {
@@ -283,7 +133,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33143971155",
       "email": ""
     },
@@ -298,23 +148,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33231869515",
-      "email": ""
-    },
-    {
-      "id": "cgp_9164325688",
-      "company_name": "ATLANTIQUE CONSEIL & INVESTISSEMENT",
-      "city": "Chatelaillon-Plage",
-      "department": "17",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33782929613",
       "email": ""
     },
     {
@@ -328,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33380780672",
       "email": ""
     },
@@ -343,83 +178,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33678821214",
-      "email": ""
-    },
-    {
-      "id": "cgp_a3a88225fb",
-      "company_name": "PLATINIUM PATRIMOINE GESTION PRIVEE",
-      "city": "Roche-Lez-Beaupré",
-      "department": "25",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33786428710",
-      "email": ""
-    },
-    {
-      "id": "cgp_e594ff3bf8",
-      "company_name": "LAURENT LE GRIN CONSEIL",
-      "city": "Saint-Pierre-Quiberon",
-      "department": "56",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33651755043",
-      "email": ""
-    },
-    {
-      "id": "cgp_92fcf9d5e6",
-      "company_name": "MILCENT CAPITAL",
-      "city": "Mulhouse",
-      "department": "68",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33764061935",
-      "email": ""
-    },
-    {
-      "id": "cgp_53851ae034",
-      "company_name": "MA CGP",
-      "city": "Le Mans",
-      "department": "72",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33663601288",
-      "email": ""
-    },
-    {
-      "id": "cgp_effd2867df",
-      "company_name": "BLASQUEZ CAPITAL MANAGEMENT",
-      "city": "Annecy",
-      "department": "74",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-05",
-      "phone": "+33648559884",
       "email": ""
     },
     {
@@ -433,7 +193,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-05",
+      "first_seen": "2026-11-09",
       "phone": "+33663043294",
       "email": ""
     }
