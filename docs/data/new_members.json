@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-09",
-  "count": 13,
+  "last_updated": "2026-11-16",
+  "count": 14,
   "new_members": [
     {
       "id": "cgp_a5802d7119",
@@ -13,23 +13,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33679012230",
-      "email": ""
-    },
-    {
-      "id": "cgp_ba502cad94",
-      "company_name": "SARL COLBERT FUSAC",
-      "city": "Nantes",
-      "department": "44",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-09",
-      "phone": "+33649587121",
       "email": ""
     },
     {
@@ -43,7 +28,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33680598611",
       "email": ""
     },
@@ -58,8 +43,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33472983838",
+      "email": ""
+    },
+    {
+      "id": "cgp_6877549c84",
+      "company_name": "AELIOS CAPITAL PARTNERS",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-16",
+      "phone": "+33631398401",
+      "email": ""
+    },
+    {
+      "id": "cgp_c76654b903",
+      "company_name": "DURAK ET FRÈRES",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-16",
+      "phone": "+33629956326",
       "email": ""
     },
     {
@@ -73,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "",
       "email": ""
     },
@@ -88,14 +103,14 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_3d1d06d1d4",
-      "company_name": "LLA CAPITAL",
-      "city": "Le Mans",
+      "id": "cgp_814829e526",
+      "company_name": "KITOWN ADVISORY",
+      "city": "Paris",
       "department": "75",
       "activities": [
         "CIF"
@@ -103,8 +118,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
-      "phone": "+33783763371",
+      "first_seen": "2026-11-16",
+      "phone": "+33682972695",
       "email": ""
     },
     {
@@ -118,7 +133,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "",
       "email": ""
     },
@@ -133,7 +148,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33143971155",
       "email": ""
     },
@@ -148,7 +163,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33231869515",
       "email": ""
     },
@@ -163,7 +178,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33380780672",
       "email": ""
     },
@@ -178,7 +193,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33678821214",
       "email": ""
     },
@@ -193,7 +208,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-09",
+      "first_seen": "2026-11-16",
       "phone": "+33663043294",
       "email": ""
     }
