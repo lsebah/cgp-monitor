@@ -1,7 +1,82 @@
 {
-  "last_updated": "2026-11-16",
-  "count": 14,
+  "last_updated": "2026-11-23",
+  "count": 21,
   "new_members": [
+    {
+      "id": "cgp_1df4ac0ee4",
+      "company_name": "AMELIA CONSEIL",
+      "city": "Marseille",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33645241195",
+      "email": ""
+    },
+    {
+      "id": "cgp_48f4943222",
+      "company_name": "GEFAC PATRIMOINE",
+      "city": "Marseille",
+      "department": "13",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33659579848",
+      "email": ""
+    },
+    {
+      "id": "cgp_713d8f7122",
+      "company_name": "ANCILE PATRIMOINE",
+      "city": "Montastruc La Conseillere",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33662200768",
+      "email": ""
+    },
+    {
+      "id": "cgp_aac585714c",
+      "company_name": "PIERRE BLANCHE OFFICE",
+      "city": "Toulouse",
+      "department": "31",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33683204697",
+      "email": ""
+    },
+    {
+      "id": "cgp_bfb061cfde",
+      "company_name": "LVCA",
+      "city": "Bordeaux",
+      "department": "33",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33661263955",
+      "email": ""
+    },
     {
       "id": "cgp_a5802d7119",
       "company_name": "CYRUS CONSEIL NANTES",
@@ -13,7 +88,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33679012230",
       "email": ""
     },
@@ -28,7 +103,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33680598611",
       "email": ""
     },
@@ -43,38 +118,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33472983838",
-      "email": ""
-    },
-    {
-      "id": "cgp_6877549c84",
-      "company_name": "AELIOS CAPITAL PARTNERS",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-16",
-      "phone": "+33631398401",
-      "email": ""
-    },
-    {
-      "id": "cgp_c76654b903",
-      "company_name": "DURAK ET FRÈRES",
-      "city": "Paris",
-      "department": "75",
-      "activities": [
-        "CIF"
-      ],
-      "associations": [
-        "cncgp"
-      ],
-      "first_seen": "2026-11-16",
-      "phone": "+33629956326",
       "email": ""
     },
     {
@@ -88,7 +133,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "",
       "email": ""
     },
@@ -103,13 +148,13 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "",
       "email": ""
     },
     {
-      "id": "cgp_814829e526",
-      "company_name": "KITOWN ADVISORY",
+      "id": "cgp_906863b7c6",
+      "company_name": "FRAMATONG CGP",
       "city": "Paris",
       "department": "75",
       "activities": [
@@ -118,8 +163,8 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
-      "phone": "+33682972695",
+      "first_seen": "2026-11-23",
+      "phone": "+33146220222",
       "email": ""
     },
     {
@@ -133,8 +178,38 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "",
+      "email": ""
+    },
+    {
+      "id": "cgp_0c541e5a43",
+      "company_name": "SPORTVISOR PRIVATE OFFICE",
+      "city": "Paris",
+      "department": "75",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33749347978",
+      "email": ""
+    },
+    {
+      "id": "cgp_53b007b0b3",
+      "company_name": "LP WEALTH",
+      "city": "Sartrouville",
+      "department": "78",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33777963033",
       "email": ""
     },
     {
@@ -148,7 +223,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33143971155",
       "email": ""
     },
@@ -163,7 +238,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33231869515",
       "email": ""
     },
@@ -178,7 +253,7 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33380780672",
       "email": ""
     },
@@ -193,8 +268,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33678821214",
+      "email": ""
+    },
+    {
+      "id": "cgp_f341b6f386",
+      "company_name": "TERRENCIA PATRIMOINE",
+      "city": "Auch",
+      "department": "32",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33631147295",
       "email": ""
     },
     {
@@ -208,8 +298,23 @@
       "associations": [
         "cncgp"
       ],
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-23",
       "phone": "+33663043294",
+      "email": ""
+    },
+    {
+      "id": "cgp_b1f3478438",
+      "company_name": "ALPHA PATRIMOINE ET CONSEILS",
+      "city": "Jaunay Marigny - Jaunay Clan",
+      "department": "86",
+      "activities": [
+        "CIF"
+      ],
+      "associations": [
+        "cncgp"
+      ],
+      "first_seen": "2026-11-23",
+      "phone": "+33625265143",
       "email": ""
     }
   ]
