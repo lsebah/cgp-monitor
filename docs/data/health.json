@@ -1,26 +1,26 @@
 {
   "status": "ok",
-  "checked_at": "2026-11-19T16:55:53.689940+00:00",
+  "checked_at": "2026-11-24T03:12:23.718713+00:00",
   "checks": [
     {
       "name": "freshness",
       "ok": true,
-      "detail": "last_updated=2026-11-16T22:20:16 (il y a 2.8 j, max 8)"
+      "detail": "last_updated=2026-11-23T23:57:13 (il y a 0.1 j, max 8)"
     },
     {
       "name": "total_members",
       "ok": true,
-      "detail": "10381 membres (attendu 8000-15000)"
+      "detail": "10317 membres (attendu 8000-15000)"
     },
     {
       "name": "floor_cncgp",
       "ok": true,
-      "detail": "cncgp=2653 (plancher 1600)"
+      "detail": "cncgp=2661 (plancher 1600)"
     },
     {
       "name": "floor_cncef",
       "ok": true,
-      "detail": "cncef=4904 (plancher 2800)"
+      "detail": "cncef=4832 (plancher 2800)"
     },
     {
       "name": "floor_anacofi",
@@ -30,7 +30,7 @@
     {
       "name": "stats_coherence",
       "ok": true,
-      "detail": "stats=10381 vs members=10381"
+      "detail": "stats=10317 vs members=10317"
     },
     {
       "name": "unique_ids",
